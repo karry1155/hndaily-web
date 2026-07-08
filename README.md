@@ -33,3 +33,16 @@ python3 scripts/preview.py
 ```
 
 Open `http://127.0.0.1:8765`.
+
+## Scheduled Job Boundary
+
+The future scheduled job should:
+
+1. Run the crawler from `HNDAILY_SKILL_DIR`.
+2. Store raw crawler output under ignored local data directories.
+3. Generate publishable daily digest JSON under `content/daily/`.
+4. Validate the digest with `scripts/validate_digest.py`.
+5. Render `site/` with `scripts/render_site.py`.
+6. Sync `site/` or the chosen publishable output to the cloud host.
+
+Raw files, temporary files, logs, PDFs, audio, and caches must remain outside git.
