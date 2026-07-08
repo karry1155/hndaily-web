@@ -5,6 +5,7 @@ node_modules/
 # Build output
 dist/
 build/
+site/
 .next/
 .astro/
 .vercel/
@@ -31,4 +32,3 @@ data/pdf/
 .DS_Store
 .idea/
 .vscode/
-
