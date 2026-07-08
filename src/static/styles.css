@@ -407,14 +407,60 @@ a:hover {
     padding: 28px 0;
   }
 
+  .primary-nav,
+  .date-rail {
+    padding: 12px 16px;
+  }
+
+  .primary-nav {
+    gap: 12px;
+  }
+
+  .brand {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .brand span {
+    min-height: 38px;
+  }
+
   .primary-nav nav,
   .rail-list,
   .category-grid {
     grid-template-columns: 1fr;
   }
 
+  .primary-nav nav {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 8px;
+  }
+
+  .primary-nav nav a {
+    padding: 9px 10px;
+    text-align: center;
+  }
+
   .tabs {
     width: 100%;
+  }
+
+  .tabs a,
+  .date-link {
+    padding: 9px 10px;
+  }
+
+  .date-rail {
+    gap: 10px;
+  }
+
+  .date-rail h2 {
+    font-size: 20px;
+  }
+
+  .rail-list {
+    gap: 8px;
+    padding-bottom: 0;
   }
 
   .content-shell {
