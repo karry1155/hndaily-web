@@ -1,0 +1,34 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build output
+dist/
+build/
+.next/
+.astro/
+.vercel/
+.netlify/
+
+# Local generated newspaper data and intermediate artifacts
+data/raw/
+data/intermediate/
+data/cache/
+data/tmp/
+data/audio/
+data/pdf/
+*.tmp
+*.log
+*.mp3
+*.pdf
+
+# Local environment
+.env
+.env.*
+!.env.example
+
+# OS/editor noise
+.DS_Store
+.idea/
+.vscode/
+
