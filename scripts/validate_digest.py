@@ -6,6 +6,7 @@ import re
 import sys
 from pathlib import Path
 from typing import Any
+from datetime import datetime
 
 CATEGORIES = [
     "民生/办事",
@@ -32,10 +33,27 @@ def is_non_empty_string(value: Any) -> bool:
     return isinstance(value, str) and bool(value.strip())
 
 
-def validate_sources(sources: Any, errors: list[str], weekly: bool) -> None:
+def is_int(value: Any) -> bool:
+    return type(value) is int
+
+
+def is_iso_datetime_string(value: Any) -> bool:
+    if not is_non_empty_string(value):
+        return False
+    if "T" not in value:
+        return False
+    try:
+        datetime.fromisoformat(value.replace("Z", "+00:00"))
+    except ValueError:
+        return False
+    return True
+
+
+def validate_sources(sources: Any, errors: list[str], weekly: bool, *, min_items: int = 0) -> None:
     require(isinstance(sources, list), "sources must be an array", errors)
     if not isinstance(sources, list):
         return
+    require(len(sources) >= min_items, f"sources must contain at least {min_items} item(s)", errors)
     for index, source in enumerate(sources):
         require(isinstance(source, dict), f"sources[{index}] must be an object", errors)
         if not isinstance(source, dict):
@@ -56,8 +74,8 @@ def validate_daily(data: dict[str, Any]) -> list[str]:
     require(data.get("type") == "daily", "type must be daily", errors)
     require(DATE_RE.match(str(data.get("date", ""))) is not None, "date must be ISO date", errors)
     require(is_non_empty_string(data.get("source")), "source is required", errors)
-    require(isinstance(data.get("page_count"), int) and data["page_count"] >= 0, "page_count must be >= 0", errors)
-    require(isinstance(data.get("article_count"), int) and data["article_count"] >= 0, "article_count must be >= 0", errors)
+    require(is_int(data.get("page_count")) and data["page_count"] >= 0, "page_count must be >= 0", errors)
+    require(is_int(data.get("article_count")) and data["article_count"] >= 0, "article_count must be >= 0", errors)
     require(data.get("reading_minutes") == 5, "daily reading_minutes must be 5", errors)
 
     top_items = data.get("top_items")
@@ -73,7 +91,7 @@ def validate_daily(data: dict[str, Any]) -> list[str]:
             require(item.get("category") in CATEGORIES, f"top_items[{index}].category is invalid", errors)
             require(is_non_empty_string(item.get("why_it_matters")), f"top_items[{index}].why_it_matters is required", errors)
             require(isinstance(item.get("key_facts"), list), f"top_items[{index}].key_facts must be an array", errors)
-            validate_sources(item.get("sources"), errors, weekly=False)
+            validate_sources(item.get("sources"), errors, weekly=False, min_items=1)
             require(item.get("confidence") in CONFIDENCE, f"top_items[{index}].confidence is invalid", errors)
 
     categories = data.get("categories")
@@ -82,8 +100,21 @@ def validate_daily(data: dict[str, Any]) -> list[str]:
         for category in CATEGORIES:
             require(category in categories, f"missing category {category}", errors)
             require(isinstance(categories.get(category), list), f"category {category} must be an array", errors)
+            if not isinstance(categories.get(category), list):
+                continue
+            for index, item in enumerate(categories.get(category)):
+                require(isinstance(item, dict), f"categories[{category}][{index}] must be an object", errors)
+                if not isinstance(item, dict):
+                    continue
+                require(is_non_empty_string(item.get("title")), f"categories[{category}][{index}].title is required", errors)
+                require(is_non_empty_string(item.get("summary")), f"categories[{category}][{index}].summary is required", errors)
+                validate_sources(item.get("sources"), errors, weekly=False)
+                if category == "已跳过":
+                    require(is_non_empty_string(item.get("skip_reason")), f"categories[{category}][{index}].skip_reason is required", errors)
+                else:
+                    require("skip_reason" not in item or item.get("skip_reason") in (None, ""), f"categories[{category}][{index}].skip_reason is not allowed", errors)
 
-    require(is_non_empty_string(data.get("generated_at")), "generated_at is required", errors)
+    require(is_iso_datetime_string(data.get("generated_at")), "generated_at must be an ISO datetime string", errors)
     return errors
 
 
@@ -105,13 +136,13 @@ def validate_weekly(data: dict[str, Any]) -> list[str]:
             require(isinstance(item, dict), f"top_items[{index}] must be an object", errors)
             if not isinstance(item, dict):
                 continue
-            require(item.get("rank") == index + 1, f"top_items[{index}].rank must be {index + 1}", errors)
+            require(is_int(item.get("rank")) and item.get("rank") == index + 1, f"top_items[{index}].rank must be {index + 1}", errors)
             require(is_non_empty_string(item.get("title")), f"top_items[{index}].title is required", errors)
             require(is_non_empty_string(item.get("why_it_matters")), f"top_items[{index}].why_it_matters is required", errors)
-            validate_sources(item.get("sources"), errors, weekly=True)
+            validate_sources(item.get("sources"), errors, weekly=True, min_items=1)
     require(isinstance(data.get("themes"), list), "themes must be an array", errors)
     require(isinstance(data.get("watch_next"), list), "watch_next must be an array", errors)
-    require(is_non_empty_string(data.get("generated_at")), "generated_at is required", errors)
+    require(is_iso_datetime_string(data.get("generated_at")), "generated_at must be an ISO datetime string", errors)
     return errors
 
 
