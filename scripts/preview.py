@@ -12,7 +12,7 @@ PORT = 8765
 
 
 def main() -> int:
-    if not SITE.exists():
+    if not SITE.is_dir():
         print("site/ does not exist. Run: python3 scripts/render_site.py")
         return 1
     handler = http.server.SimpleHTTPRequestHandler
