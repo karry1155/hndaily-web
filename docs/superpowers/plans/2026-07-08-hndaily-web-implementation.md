@@ -19,6 +19,7 @@
 - Daily page includes fixed category sections below the top items.
 - Weekly page aggregates a week into a 15-minute report instead of concatenating seven daily pages.
 - Layout must work on mobile and desktop without text overflow.
+- Visual direction follows `https://aihot.virxact.com/daily`: dark interface, left primary navigation, secondary date/report navigation, centered editorial hero, compact bordered "今日看点" panel, and category content below. Use 海南日报精读 branding and do not copy AI HOT logos or brand text.
 
 ---
 
@@ -651,48 +652,82 @@ Create `src/templates/base.html`:
 Create `src/templates/daily.html`:
 
 ```html
-<main class="shell">
-  <header class="hero">
-    <p class="eyebrow">$source · $page_count 版 · $article_count 篇</p>
-    <h1>海南日报精读</h1>
-    <p class="subhead">$date · 约 $reading_minutes 分钟</p>
-  </header>
-  <section class="panel">
-    <div class="section-heading">
-      <h2>今日看点</h2>
-      <span>最多 5 条</span>
-    </div>
-    <div class="signals">$signals</div>
-  </section>
-  <section class="category-grid">$categories</section>
-</main>
+<div class="app-shell">
+  <aside class="primary-nav">
+    <a class="brand" href="/">
+      <span>HN</span><strong>DAILY</strong>
+    </a>
+    <nav>
+      <a href="/" class="active">日报</a>
+      <a href="/weekly/">周报</a>
+      <a href="#categories">分类</a>
+    </nav>
+  </aside>
+  <aside class="date-rail">
+    <div class="tabs"><a class="active" href="/">日报</a><a href="/weekly/">周报</a></div>
+    <h2>归档</h2>
+    <a class="date-link active" href="/daily/$date/">$date<span>$article_count 篇</span></a>
+  </aside>
+  <main class="content-shell">
+    <header class="hero">
+      <p class="eyebrow">$source · $page_count 版 · $article_count 篇 · HN DAILY</p>
+      <h1><span>海南</span>日报精读</h1>
+      <p class="subhead">$date · 约 $reading_minutes 分钟</p>
+    </header>
+    <section class="panel highlight-panel">
+      <div class="section-heading">
+        <h2>今日看点</h2>
+        <span>$article_count 篇报道 · 约 $reading_minutes 分钟</span>
+      </div>
+      <div class="signals">$signals</div>
+    </section>
+    <section id="categories" class="category-grid">$categories</section>
+  </main>
+</div>
 ```
 
 Create `src/templates/weekly.html`:
 
 ```html
-<main class="shell">
-  <header class="hero">
-    <p class="eyebrow">$start 至 $end</p>
-    <h1>海南日报周报</h1>
-    <p class="subhead">$week · 约 $reading_minutes 分钟</p>
-  </header>
-  <section class="panel">
-    <div class="section-heading">
-      <h2>本周看点</h2>
-      <span>最多 15 条</span>
-    </div>
-    <div class="signals">$signals</div>
-  </section>
-  <section class="panel">
-    <h2>趋势主题</h2>
-    <ul class="theme-list">$themes</ul>
-  </section>
-  <section class="panel">
-    <h2>继续关注</h2>
-    <ul class="theme-list">$watch_next</ul>
-  </section>
-</main>
+<div class="app-shell">
+  <aside class="primary-nav">
+    <a class="brand" href="/">
+      <span>HN</span><strong>DAILY</strong>
+    </a>
+    <nav>
+      <a href="/">日报</a>
+      <a href="/weekly/" class="active">周报</a>
+      <a href="#themes">主题</a>
+    </nav>
+  </aside>
+  <aside class="date-rail">
+    <div class="tabs"><a href="/">日报</a><a class="active" href="/weekly/">周报</a></div>
+    <h2>周报</h2>
+    <a class="date-link active" href="/weekly/$week/">$week<span>$start 至 $end</span></a>
+  </aside>
+  <main class="content-shell">
+    <header class="hero">
+      <p class="eyebrow">$start 至 $end · HN WEEKLY</p>
+      <h1><span>海南</span>日报周报</h1>
+      <p class="subhead">$week · 约 $reading_minutes 分钟</p>
+    </header>
+    <section class="panel highlight-panel">
+      <div class="section-heading">
+        <h2>本周看点</h2>
+        <span>最多 15 条</span>
+      </div>
+      <div class="signals">$signals</div>
+    </section>
+    <section id="themes" class="panel">
+      <h2>趋势主题</h2>
+      <ul class="theme-list">$themes</ul>
+    </section>
+    <section class="panel">
+      <h2>继续关注</h2>
+      <ul class="theme-list">$watch_next</ul>
+    </section>
+  </main>
+</div>
 ```
 
 - [ ] **Step 3: Create responsive CSS and JS**
@@ -1201,4 +1236,3 @@ git commit -m "fix: polish responsive digest layout"
 ```
 
 If no source files changed, do not create an empty commit.
-
