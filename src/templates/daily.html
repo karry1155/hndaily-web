@@ -1,0 +1,32 @@
+<div class="app-shell">
+  <aside class="primary-nav">
+    <a class="brand" href="/">
+      <span>HN</span><strong>DAILY</strong>
+    </a>
+    <nav>
+      <a href="/" class="active">日报</a>
+      <a href="/weekly/">周报</a>
+      <a href="#categories">分类</a>
+    </nav>
+  </aside>
+  <aside class="date-rail">
+    <div class="tabs"><a class="active" href="/">日报</a><a href="/weekly/">周报</a></div>
+    <h2>归档</h2>
+    <div class="rail-list">$daily_links</div>
+  </aside>
+  <main class="content-shell">
+    <header class="hero">
+      <p class="eyebrow">$source · $page_count 版 · $article_count 篇 · HN DAILY</p>
+      <h1><span>海南</span>日报精读</h1>
+      <p class="subhead">$date · 约 $reading_minutes 分钟</p>
+    </header>
+    <section class="panel highlight-panel">
+      <div class="section-heading">
+        <h2>今日看点</h2>
+        <span>$article_count 篇报道 · 约 $reading_minutes 分钟</span>
+      </div>
+      <div class="signals">$signals</div>
+    </section>
+    <section id="categories" class="category-grid">$categories</section>
+  </main>
+</div>
