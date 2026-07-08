@@ -1,0 +1,43 @@
+{
+  "type": "daily",
+  "date": "2026-07-08",
+  "source": "海南日报",
+  "page_count": 8,
+  "article_count": 35,
+  "reading_minutes": 5,
+  "top_items": [
+    {
+      "rank": 1,
+      "title": "海南住房公积金可用于交物业费",
+      "category": "民生/办事",
+      "why_it_matters": "这会直接影响有公积金账户的居民日常支出安排。",
+      "key_facts": ["影响事项：物业费支付", "原文来源：第001版"],
+      "sources": [
+        {
+          "headline": "海南能用住房公积金交物业费了",
+          "page": "001",
+          "url": "http://news.hndaily.cn/html/2026-07/08/content_58469_20380144.htm"
+        }
+      ],
+      "confidence": "full_text"
+    }
+  ],
+  "categories": {
+    "民生/办事": [],
+    "政策/监管": [],
+    "产业/项目": [],
+    "经济/数据": [],
+    "城市/出行/风险": [],
+    "人事/反腐": [],
+    "重要但不必精读": [],
+    "已跳过": [
+      {
+        "title": "公益广告",
+        "summary": "广告版不进入精读。",
+        "sources": [],
+        "skip_reason": "公益广告"
+      }
+    ]
+  },
+  "generated_at": "2026-07-08T09:00:00+08:00"
+}
