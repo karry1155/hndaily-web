@@ -12,6 +12,7 @@ site/
 .netlify/
 
 # Local generated newspaper data and intermediate artifacts
+.superpowers/
 data/raw/
 data/intermediate/
 data/cache/
