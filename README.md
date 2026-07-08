@@ -12,3 +12,24 @@
 
 项目已初始化为独立 git 仓库。正式实现前先完成实施计划。
 
+## Local Workflow
+
+Validate a digest:
+
+```bash
+python3 scripts/validate_digest.py content/daily/YYYY-MM-DD.json
+```
+
+Render the static site:
+
+```bash
+python3 scripts/render_site.py
+```
+
+Preview locally:
+
+```bash
+python3 scripts/preview.py
+```
+
+Open `http://127.0.0.1:8765`.
