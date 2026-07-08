@@ -7,6 +7,7 @@ import shutil
 from pathlib import Path
 from string import Template
 from typing import Any
+from urllib.parse import urlparse
 
 ROOT = Path(__file__).resolve().parents[1]
 CONTENT_DAILY = ROOT / "content" / "daily"
@@ -35,6 +36,13 @@ def esc(value: Any) -> str:
     return html.escape(str(value), quote=True)
 
 
+def is_http_url(url: Any) -> bool:
+    if not isinstance(url, str):
+        return False
+    parsed = urlparse(url.strip())
+    return parsed.scheme in {"http", "https"}
+
+
 def load_template(name: str) -> Template:
     return Template((TEMPLATES / name).read_text(encoding="utf-8"))
 
@@ -56,9 +64,11 @@ def source_links(sources: list[dict[str, Any]]) -> str:
         label = f"第{source.get('page', '')}版 · {source.get('headline', '')}"
         if source.get("date"):
             label = f"{source.get('date', '')} · {label}"
-        links.append(
-            f'<a href="{esc(source.get("url", ""))}" target="_blank" rel="noreferrer">{esc(label)}</a>'
-        )
+        url = source.get("url", "")
+        if is_http_url(url):
+            links.append(f'<a href="{esc(url)}" target="_blank" rel="noreferrer">{esc(label)}</a>')
+        else:
+            links.append(esc(label))
     return "".join(f"<li>{link}</li>" for link in links)
 
 
