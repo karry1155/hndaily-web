@@ -1,0 +1,66 @@
+import json
+import tempfile
+import unittest
+from pathlib import Path
+
+from scripts.finalize_radar import FinalizeError, build_items, finalize_to_store
+from scripts.radar_adapter import adapt_hndaily
+from scripts.radar_model import build_model_input
+from scripts.radar_store import load_items
+from tests.radar_fixtures import model_output_for, raw_issue
+
+
+class FinalizeRadarTests(unittest.TestCase):
+    def test_source_fields_are_injected_from_raw_and_title_is_not_rewritten(self):
+        raw = raw_issue()
+        candidates, _ = adapt_hndaily(raw)
+        model_input = build_model_input(candidates)
+        items, audit = build_items(raw, model_input, model_output_for(model_input, 9))
+        self.assertEqual(items[0]["block"]["title"], raw["pages"][0]["articles"][0]["title"])
+        self.assertEqual(items[0]["block"]["original_url"], raw["pages"][0]["articles"][0]["url"])
+        self.assertEqual(audit["selected_count"], len(items))
+
+    def test_more_than_eight_qualified_items_are_persisted(self):
+        raw = raw_issue(article_count=11)
+        candidates, _ = adapt_hndaily(raw)
+        model_input = build_model_input(candidates)
+        with tempfile.TemporaryDirectory() as tmp:
+            finalize_to_store(raw, model_input, model_output_for(model_input, 9), Path(tmp), Path(tmp) / "audit.json", "2026-07-10")
+            self.assertEqual(len(load_items(Path(tmp))), 11)
+
+    def test_replacement_is_recorded_in_audit(self):
+        raw = raw_issue()
+        candidates, _ = adapt_hndaily(raw)
+        model_input = build_model_input(candidates)
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            audit = root / "audit.json"
+            finalize_to_store(raw, model_input, model_output_for(model_input, 8), root, audit, "2026-07-10")
+            finalize_to_store(raw, model_input, model_output_for(model_input, 9), root, audit, "2026-07-10")
+            payload = json.loads(audit.read_text(encoding="utf-8"))
+            self.assertEqual(len(payload["replaced_items"]), 4)
+            self.assertEqual(payload["replaced_items"][0]["previous_schema_version"], 3)
+
+    def test_rerun_replaces_only_same_source_and_date_selection(self):
+        raw = raw_issue(article_count=2)
+        candidates, _ = adapt_hndaily(raw)
+        model_input = build_model_input(candidates)
+        first = model_output_for(model_input, 9)
+        second = model_output_for(model_input, 9)
+        second["items"][1]["hainan_relevance"] = 0
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            finalize_to_store(raw, model_input, first, root, root / "audit.json", "2026-07-10")
+            finalize_to_store(raw, model_input, second, root, root / "audit.json", "2026-07-10")
+            self.assertEqual(len(load_items(root)), 1)
+
+    def test_invalid_output_does_not_replace_existing_library(self):
+        raw = raw_issue()
+        candidates, _ = adapt_hndaily(raw)
+        model_input = build_model_input(candidates)
+        output = model_output_for(model_input)
+        output["items"][0]["title"] = "模型越权"
+        with tempfile.TemporaryDirectory() as tmp:
+            with self.assertRaises(FinalizeError):
+                finalize_to_store(raw, model_input, output, Path(tmp), Path(tmp) / "audit.json", "2026-07-10")
+            self.assertEqual(load_items(Path(tmp)), [])
