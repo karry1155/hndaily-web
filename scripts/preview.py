@@ -12,9 +12,8 @@ PORT = 8765
 
 
 def main() -> int:
-    if not SITE.is_dir():
-        print("site/ does not exist. Run: python3 scripts/render_site.py")
-        return 1
+    from scripts.radar_render import build_site
+    build_site(ROOT / "content", SITE)
     handler = partial(http.server.SimpleHTTPRequestHandler, directory=str(SITE))
     with socketserver.TCPServer(("127.0.0.1", PORT), handler) as httpd:
         print(f"Serving http://127.0.0.1:{PORT}")

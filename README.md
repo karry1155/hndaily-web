@@ -1,5 +1,9 @@
 # 海南日报精读网页
 
+新版产品为“海南信息雷达”：来源无关、按日持久化、无精选数量上限，并提供全部、分类、日期与详情路由。
+
+Radar 流水线先运行 `bash scripts/run_radar_pipeline.sh YYYY-MM-DD`。首次返回退出码 2 和 `STATUS=MODEL_OUTPUT_REQUIRED`；按操作文档写入精确模型输出后重跑，成功返回 `STATUS=COMPLETE`。随后运行 `python3 scripts/preview.py`，访问 <http://127.0.0.1:8765>。
+
 这个目录是未来同步到云端的网页项目。它负责展示本地定时任务生成好的海南日报精读内容，包括每日 5 分钟日报和每周 15 分钟周报。
 
 ## 项目边界

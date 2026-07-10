@@ -11,6 +11,9 @@ from pathlib import Path
 from string import Template
 from urllib.parse import urlparse
 
+if __package__ in (None, ""):
+    sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+
 from scripts.radar_contract import validate_stored_item
 from scripts.render_site import render_base, render_weekly
 
