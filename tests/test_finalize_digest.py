@@ -10,6 +10,21 @@ from scripts.prepare_model_input import build_model_input
 from tests.test_prepare_model_input import raw_issue
 
 
+def distinct_raw_issue(article_count=4):
+    raw = raw_issue(article_count=article_count)
+    topics = [
+        "住房公积金物业费办理条件和线上申请渠道",
+        "固体废物回收拆解监管体系和专项执法行动",
+        "洋浦港保税能源物流国际转运业务进展",
+        "住宅小区电力抄表到户改造覆盖居民情况",
+        "大学生科技见习岗位征集对象与截止日期",
+        "省属国资科技创新债券发行规模和票面利率",
+    ]
+    for index, article in enumerate(raw["pages"][0]["articles"]):
+        article["content"] = topics[index] * 3
+    return raw
+
+
 def semantic_output(model_input):
     return {
         "schema_version": model_input["schema_version"],
@@ -44,7 +59,7 @@ def semantic_output(model_input):
 
 class FinalizeDigestTests(unittest.TestCase):
     def setUp(self):
-        self.raw = raw_issue()
+        self.raw = distinct_raw_issue()
         self.model_input, self.prefilter = build_model_input(self.raw)
         self.model_output = semantic_output(self.model_input)
 
@@ -52,18 +67,19 @@ class FinalizeDigestTests(unittest.TestCase):
         digest, audit = build_digest(self.raw, self.model_input, self.model_output)
 
         self.assertEqual(len(digest["top_items"]), 4)
-        for index, item in enumerate(digest["top_items"], 1):
-            raw_article = self.raw["pages"][0]["articles"][index - 1]
+        for item in digest["top_items"]:
+            source_index = int(item["master_candidate_id"][1:]) - 1
+            raw_article = self.raw["pages"][0]["articles"][source_index]
             self.assertEqual(
                 item["sources"],
                 [{"headline": raw_article["title"], "page": "001", "url": raw_article["url"]}],
             )
-            self.assertEqual(item["summary"], f"原始标题 {index}的事实摘要。")
+            self.assertEqual(item["summary"], f"{raw_article['title']}的事实摘要。")
         self.assertEqual(len(audit["articles"]), 4)
         self.assertTrue(all(item["selected"] for item in audit["articles"]))
 
     def test_splits_top_four_and_more_items_without_padding(self):
-        raw = raw_issue(article_count=6)
+        raw = distinct_raw_issue(article_count=6)
         model_input, _ = build_model_input(raw)
 
         digest, _ = build_digest(raw, model_input, semantic_output(model_input))

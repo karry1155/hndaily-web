@@ -5,59 +5,208 @@
   "page_count": 8,
   "article_count": 35,
   "reading_minutes": 5,
-  "input_fingerprint": "d22089c15ee981081409eafa5a63c91be62b41d63a23596137631332769e0cd6",
-  "prompt_version": "digest-v1",
+  "input_fingerprint": "2e7b033761b97f15b8947924946c8b31ba60d6e2ed90a08d3e67892d74671c59",
+  "prompt_version": "editorial-v1",
+  "selected_count": 8,
+  "selection_threshold": 65,
+  "hainan_relevance_threshold": 6,
+  "ranking_version": "editorial-v1",
   "top_items": [
     {
       "rank": 1,
-      "title": "科技强国建设进入九年冲刺期",
-      "summary": "新华社梳理我国科技强国建设的战略路径与阶段性成果，重点包括强化基础研究、推动科技与产业融合、改革人才评价以及扩大国际科技合作。文章指出，距离建成科技强国和基本实现社会主义现代化目标还有9年。",
-      "category": "重要但不必精读",
-      "why_it_matters": "它集中呈现未来几年国家科技投入、产业升级和人才政策的主要方向，可作为判断相关政策与产业机会的背景框架。",
+      "title": "海南公积金可按年提取支付物业费",
+      "summary": "7月6日起，符合条件的海南缴存人家庭每年可提取一次住房公积金支付省内自住房物业费，家庭年额度不超过1万元。",
+      "category": "民生/办事",
+      "why_it_matters": "缴存人可以立即通过线上或线下渠道办理，直接改变家庭物业费支出方式。",
       "key_facts": [
-        "2025年我国“新三样”出口规模接近1.3万亿元",
-        "我国高新技术企业超过50万家、专精特新中小企业超过14万家",
-        "2025年我国首次进入全球创新指数前十"
+        "家庭每年合计提取额度不超过1万元",
+        "可通过海易办APP、海南政务服务网或公积金窗口办理",
+        "有未结清公积金贷款时账户余额须足以偿还3个月贷款"
       ],
       "sources": [
         {
-          "headline": "为民族复兴积聚磅礴伟力",
+          "headline": "海南能用住房公积金交物业费了",
           "page": "001",
-          "url": "http://news.hndaily.cn/html/2026-07/08/content_58464_19684640.htm"
+          "url": "http://news.hndaily.cn/html/2026-07/08/content_58464_19684644.htm"
         }
       ],
-      "confidence": "full_text"
+      "confidence": "full_text",
+      "event_id": "E005",
+      "master_candidate_id": "A005",
+      "semantic_scores": {
+        "hainan_relevance": 10,
+        "actionability": 10,
+        "impact_scope": 8,
+        "novelty": 9,
+        "information_density": 10
+      },
+      "score_reasons": {
+        "hainan_relevance": "政策适用于海南缴存人和省内自住房",
+        "actionability": "给出立即可用的办理渠道和资格条件",
+        "impact_scope": "覆盖符合条件的缴存人家庭",
+        "novelty": "新增公积金支付物业费用途",
+        "information_density": "包含额度、频次、房产范围和办理方式"
+      },
+      "base_score": 94.5,
+      "adjustments": [
+        {
+          "rule": "front_page",
+          "points": 4,
+          "reason": "头版文章"
+        }
+      ],
+      "final_score": 98.5,
+      "score_explanation": "基础语义分 94.5；+4 头版文章；= 最终分 98.5"
     },
     {
       "rank": 2,
-      "title": "多地发生严重汛情，中央要求排查重点风险区",
-      "summary": "广西、湖北、甘肃等地因降雨和大风发生水库溃坝、山体滑坡等灾害并造成人员伤亡。中央要求开展抢险救援、伤员救治和群众安置，同时排查江河湖泊、病险水库及地质灾害易发区。",
-      "category": "重要但不必精读",
-      "why_it_matters": "极端天气仍处于高发阶段，风险排查、预警和应急准备会直接影响居民出行与生命财产安全。",
+      "title": "海南1772个小区启动电力抄表到户改造",
+      "summary": "截至6月30日，海南已有1772个小区启动电力抄表到户改造，涉及79.36万户，十五五期间将基本实现全覆盖。",
+      "category": "民生/办事",
+      "why_it_matters": "改造直接关系居民电费透明度、缴费便利和供电维修责任。",
       "key_facts": [
-        "重点任务包括抢险救援、伤员救治、群众安置和防范次生灾害",
-        "风险排查范围包括江河湖泊、病险水库和地质灾害易发区",
-        "国家有关部门被要求密切关注雨情汛情并加强监测预警"
+        "1772个小区已启动，涉及79.36万户",
+        "较原计划任务超额77.2%",
+        "三年行动计划覆盖3000余个非直供小区"
       ],
       "sources": [
         {
-          "headline": "要全力组织抢险救援、伤员救治、群众安置 扎实做好防灾救灾各项工作 确保人民群众生命财产安全",
-          "page": "001",
-          "url": "http://news.hndaily.cn/html/2026-07/08/content_58464_19684641.htm"
+          "headline": "我省今年已有1772个小区启动电力抄表到户改造",
+          "page": "003",
+          "url": "http://news.hndaily.cn/html/2026-07/08/content_58466_19684669.htm"
         }
       ],
-      "confidence": "full_text"
+      "confidence": "full_text",
+      "event_id": "E014",
+      "master_candidate_id": "A015",
+      "semantic_scores": {
+        "hainan_relevance": 10,
+        "actionability": 9,
+        "impact_scope": 9,
+        "novelty": 8,
+        "information_density": 9
+      },
+      "score_reasons": {
+        "hainan_relevance": "覆盖海南住宅小区",
+        "actionability": "影响居民缴费和小区改造配合",
+        "impact_scope": "已涉及79.36万户",
+        "novelty": "公布最新进度并超额完成阶段任务",
+        "information_density": "含小区数、户数、超额比例和长期目标"
+      },
+      "base_score": 91.5,
+      "adjustments": [
+        {
+          "rule": "local_news_page",
+          "points": 3,
+          "reason": "海南本地新闻版"
+        }
+      ],
+      "final_score": 94.5,
+      "score_explanation": "基础语义分 91.5；+3 海南本地新闻版；= 最终分 94.5"
     },
     {
       "rank": 3,
-      "title": "海南将专项整治固废并打击废旧家电非法拆解",
-      "summary": "海南省委常委会部署固体废物专项整治，要求依法打击废旧家电非法拆解，建设规范回收和拆解利用体系，并对多类固废开展全链条排查。",
-      "category": "重要但不必精读",
-      "why_it_matters": "整治将影响废旧家电回收、再生资源利用及相关企业合规，后续可能带来更明确的回收标准和执法要求。",
+      "title": "海南多部门公布整改与服务实效",
+      "summary": "海南多个省直部门和重点园区公布整改进展，涉及市县资规帮服、闲置土地处置、医疗服务和市场监管等具体措施。",
+      "category": "政策/监管",
+      "why_it_matters": "集中呈现多个会影响企业办事、项目推进和公共服务的实际变化。",
       "key_facts": [
-        "专项整治将依法严厉打击废旧家电非法拆解",
-        "海南将建立再生资源回收、利用、拆解全链条标准体系",
-        "排查覆盖生活垃圾、建筑垃圾、废旧机动车、工业固废、医疗废物和电动自行车电池"
+        "资规帮服覆盖全岛18个市县",
+        "今年上半年累计处置闲置土地6681亩",
+        "针对科研用房利用率问题出台5项优化改革举措"
+      ],
+      "sources": [
+        {
+          "headline": "以实破题 以效作答",
+          "page": "002",
+          "url": "http://news.hndaily.cn/html/2026-07/08/content_58465_19684656.htm"
+        }
+      ],
+      "confidence": "full_text",
+      "event_id": "E010",
+      "master_candidate_id": "A011",
+      "semantic_scores": {
+        "hainan_relevance": 10,
+        "actionability": 8,
+        "impact_scope": 8,
+        "novelty": 8,
+        "information_density": 10
+      },
+      "score_reasons": {
+        "hainan_relevance": "全部案例来自海南部门和园区",
+        "actionability": "包含企业帮服和事项处置机制",
+        "impact_scope": "覆盖多部门、园区和18个市县",
+        "novelty": "披露多项近期整改成果",
+        "information_density": "正文含大量措施和量化进展"
+      },
+      "base_score": 88.0,
+      "adjustments": [
+        {
+          "rule": "local_news_page",
+          "points": 3,
+          "reason": "海南本地新闻版"
+        }
+      ],
+      "final_score": 91.0,
+      "score_explanation": "基础语义分 88.0；+3 海南本地新闻版；= 最终分 91.0"
+    },
+    {
+      "rank": 4,
+      "title": "海南启动大学生科技见习计划",
+      "summary": "海南面向离校两年内未就业毕业生和2026届毕业生征集科技见习岗位，见习期3至12个月，岗位征集截至7月10日。",
+      "category": "民生/办事",
+      "why_it_matters": "符合条件的毕业生和用人单位有明确且临近截止的参与机会。",
+      "key_facts": [
+        "全省计划征集100个见习岗位",
+        "设置学术、科普、编辑、国际和科创助理5类岗位",
+        "岗位征集截止2026年7月10日"
+      ],
+      "sources": [
+        {
+          "headline": "海南启动2026年大学生科技见习计划",
+          "page": "003",
+          "url": "http://news.hndaily.cn/html/2026-07/08/content_58466_19684674.htm"
+        }
+      ],
+      "confidence": "full_text",
+      "event_id": "E017",
+      "master_candidate_id": "A018",
+      "semantic_scores": {
+        "hainan_relevance": 10,
+        "actionability": 9,
+        "impact_scope": 6,
+        "novelty": 8,
+        "information_density": 10
+      },
+      "score_reasons": {
+        "hainan_relevance": "海南省级见习计划",
+        "actionability": "对象、平台、期限和保障明确",
+        "impact_scope": "面向全省毕业生和用人单位",
+        "novelty": "本年度计划刚启动且首次系统设岗",
+        "information_density": "包含岗位数、类别、时长、优先对象和截止日"
+      },
+      "base_score": 86.5,
+      "adjustments": [
+        {
+          "rule": "local_news_page",
+          "points": 3,
+          "reason": "海南本地新闻版"
+        }
+      ],
+      "final_score": 89.5,
+      "score_explanation": "基础语义分 86.5；+3 海南本地新闻版；= 最终分 89.5"
+    }
+  ],
+  "more_items": [
+    {
+      "rank": 5,
+      "title": "海南部署固体废物全链条专项整治",
+      "summary": "省委常委会部署固废专项整治，将打击废旧家电非法拆解并建立回收、利用、拆解全链条标准体系。",
+      "category": "政策/监管",
+      "why_it_matters": "整治将直接影响海南固废处理、再生资源企业和地方监管。",
+      "key_facts": [
+        "依法严厉打击废旧家电非法拆解",
+        "排查生活垃圾、建筑垃圾、工业固废、医疗废物和电池等领域"
       ],
       "sources": [
         {
@@ -66,18 +215,369 @@
           "url": "http://news.hndaily.cn/html/2026-07/08/content_58464_19684642.htm"
         }
       ],
-      "confidence": "full_text"
+      "confidence": "full_text",
+      "event_id": "E003",
+      "master_candidate_id": "A003",
+      "semantic_scores": {
+        "hainan_relevance": 10,
+        "actionability": 7,
+        "impact_scope": 8,
+        "novelty": 7,
+        "information_density": 9
+      },
+      "score_reasons": {
+        "hainan_relevance": "海南省委直接部署全省整治",
+        "actionability": "明确执法、标准建设和排查动作",
+        "impact_scope": "覆盖多类固废和全省监管主体",
+        "novelty": "提出专项整治和全链条标准",
+        "information_density": "列出对象、措施和责任边界"
+      },
+      "base_score": 83.0,
+      "adjustments": [
+        {
+          "rule": "front_page",
+          "points": 4,
+          "reason": "头版文章"
+        }
+      ],
+      "final_score": 87.0,
+      "score_explanation": "基础语义分 83.0；+4 头版文章；= 最终分 87.0"
+    },
+    {
+      "rank": 6,
+      "title": "三亚海洋文旅和智能养殖新业态加速落地",
+      "summary": "三亚发展夜钓、纯电休闲渔船和智能养殖平台等海洋新业态，夜钓项目使相关游艇夜间出航率稳定在95%以上。",
+      "category": "产业/项目",
+      "why_it_matters": "反映三亚文旅消费和深远海养殖的新项目与经营数据。",
+      "key_facts": [
+        "海南首艘纯电智能休闲渔船6月在蜈支洲岛启航",
+        "鑫环1号智能养殖平台在三亚湾投产",
+        "夜钓带动夜间游艇出航率达到95%以上"
+      ],
+      "sources": [
+        {
+          "headline": "不只看海吃海，三亚这片海“玩出花”",
+          "page": "003",
+          "url": "http://news.hndaily.cn/html/2026-07/08/content_58466_19684677.htm"
+        }
+      ],
+      "confidence": "full_text",
+      "event_id": "E020",
+      "master_candidate_id": "A021",
+      "semantic_scores": {
+        "hainan_relevance": 10,
+        "actionability": 5,
+        "impact_scope": 7,
+        "novelty": 8,
+        "information_density": 9
+      },
+      "score_reasons": {
+        "hainan_relevance": "项目全部位于三亚",
+        "actionability": "对文旅和海洋产业经营者有决策参考",
+        "impact_scope": "涉及滨海旅游和海洋养殖",
+        "novelty": "多项新船和平台近期落地",
+        "information_density": "包含项目、日期和运营比例"
+      },
+      "base_score": 77.5,
+      "adjustments": [
+        {
+          "rule": "local_news_page",
+          "points": 3,
+          "reason": "海南本地新闻版"
+        }
+      ],
+      "final_score": 80.5,
+      "score_explanation": "基础语义分 77.5；+3 海南本地新闻版；= 最终分 80.5"
+    },
+    {
+      "rank": 7,
+      "title": "海南首届环保科技奖启动提名",
+      "summary": "2026年度首届海南省环境保护科学技术奖启动提名，设置5类奖项，申报截至9月30日。",
+      "category": "产业/项目",
+      "why_it_matters": "符合条件的科研机构、高校、专家和青年学者可据此准备提名。",
+      "key_facts": [
+        "设自然科学、技术发明、科技进步、科普和青年科学家5类奖",
+        "青年科学家奖面向40周岁以下学者",
+        "提名截止2026年9月30日"
+      ],
+      "sources": [
+        {
+          "headline": "首届海南省环境保护科学技术奖提名工作启动",
+          "page": "002",
+          "url": "http://news.hndaily.cn/html/2026-07/08/content_58465_19684657.htm"
+        }
+      ],
+      "confidence": "full_text",
+      "event_id": "E011",
+      "master_candidate_id": "A012",
+      "semantic_scores": {
+        "hainan_relevance": 9,
+        "actionability": 7,
+        "impact_scope": 5,
+        "novelty": 8,
+        "information_density": 9
+      },
+      "score_reasons": {
+        "hainan_relevance": "海南省级奖项",
+        "actionability": "有明确对象、提名方式和截止日",
+        "impact_scope": "主要影响环保科研群体",
+        "novelty": "首届奖项首次启动",
+        "information_density": "列出奖项、资格和日期"
+      },
+      "base_score": 75.5,
+      "adjustments": [
+        {
+          "rule": "local_news_page",
+          "points": 3,
+          "reason": "海南本地新闻版"
+        }
+      ],
+      "final_score": 78.5,
+      "score_explanation": "基础语义分 75.5；+3 海南本地新闻版；= 最终分 78.5"
+    },
+    {
+      "rank": 8,
+      "title": "海南国资运营发行5亿元科创债",
+      "summary": "海南国资运营发行首期5亿元科技创新债券，票面利率1.8%，认购倍数4.26倍，期限3+2年。",
+      "category": "经济/数据",
+      "why_it_matters": "为观察海南国资融资成本和科创产业资本投入提供了新数据。",
+      "key_facts": [
+        "发行规模5亿元",
+        "票面利率1.8%",
+        "认购倍数4.26倍，期限3+2年"
+      ],
+      "sources": [
+        {
+          "headline": "海南国资运营5亿元科创债首发成功",
+          "page": "002",
+          "url": "http://news.hndaily.cn/html/2026-07/08/content_58465_19684661.htm"
+        }
+      ],
+      "confidence": "full_text",
+      "event_id": "E013",
+      "master_candidate_id": "A014",
+      "semantic_scores": {
+        "hainan_relevance": 9,
+        "actionability": 3,
+        "impact_scope": 8,
+        "novelty": 9,
+        "information_density": 10
+      },
+      "score_reasons": {
+        "hainan_relevance": "海南省属国资企业融资",
+        "actionability": "主要供投资和产业观察",
+        "impact_scope": "涉及省属资本和科创产业",
+        "novelty": "首期科创债刚完成发行",
+        "information_density": "发行规模、利率、倍数和期限齐全"
+      },
+      "base_score": 74.0,
+      "adjustments": [
+        {
+          "rule": "local_news_page",
+          "points": 3,
+          "reason": "海南本地新闻版"
+        }
+      ],
+      "final_score": 77.0,
+      "score_explanation": "基础语义分 74.0；+3 海南本地新闻版；= 最终分 77.0"
     }
   ],
   "categories": {
-    "民生/办事": [],
-    "政策/监管": [],
-    "产业/项目": [],
-    "经济/数据": [],
+    "民生/办事": [
+      {
+        "title": "海南公积金可按年提取支付物业费",
+        "summary": "7月6日起，符合条件的海南缴存人家庭每年可提取一次住房公积金支付省内自住房物业费，家庭年额度不超过1万元。",
+        "sources": [
+          {
+            "headline": "海南能用住房公积金交物业费了",
+            "page": "001",
+            "url": "http://news.hndaily.cn/html/2026-07/08/content_58464_19684644.htm"
+          }
+        ],
+        "event_id": "E005",
+        "final_score": 98.5
+      },
+      {
+        "title": "海南1772个小区启动电力抄表到户改造",
+        "summary": "截至6月30日，海南已有1772个小区启动电力抄表到户改造，涉及79.36万户，十五五期间将基本实现全覆盖。",
+        "sources": [
+          {
+            "headline": "我省今年已有1772个小区启动电力抄表到户改造",
+            "page": "003",
+            "url": "http://news.hndaily.cn/html/2026-07/08/content_58466_19684669.htm"
+          }
+        ],
+        "event_id": "E014",
+        "final_score": 94.5
+      },
+      {
+        "title": "海南启动大学生科技见习计划",
+        "summary": "海南面向离校两年内未就业毕业生和2026届毕业生征集科技见习岗位，见习期3至12个月，岗位征集截至7月10日。",
+        "sources": [
+          {
+            "headline": "海南启动2026年大学生科技见习计划",
+            "page": "003",
+            "url": "http://news.hndaily.cn/html/2026-07/08/content_58466_19684674.htm"
+          }
+        ],
+        "event_id": "E017",
+        "final_score": 89.5
+      }
+    ],
+    "政策/监管": [
+      {
+        "title": "海南多部门公布整改与服务实效",
+        "summary": "海南多个省直部门和重点园区公布整改进展，涉及市县资规帮服、闲置土地处置、医疗服务和市场监管等具体措施。",
+        "sources": [
+          {
+            "headline": "以实破题 以效作答",
+            "page": "002",
+            "url": "http://news.hndaily.cn/html/2026-07/08/content_58465_19684656.htm"
+          }
+        ],
+        "event_id": "E010",
+        "final_score": 91.0
+      },
+      {
+        "title": "海南部署固体废物全链条专项整治",
+        "summary": "省委常委会部署固废专项整治，将打击废旧家电非法拆解并建立回收、利用、拆解全链条标准体系。",
+        "sources": [
+          {
+            "headline": "压实责任抓实整改举一反三\n牢牢守住生态环境保护底线",
+            "page": "001",
+            "url": "http://news.hndaily.cn/html/2026-07/08/content_58464_19684642.htm"
+          }
+        ],
+        "event_id": "E003",
+        "final_score": 87.0
+      }
+    ],
+    "产业/项目": [
+      {
+        "title": "三亚海洋文旅和智能养殖新业态加速落地",
+        "summary": "三亚发展夜钓、纯电休闲渔船和智能养殖平台等海洋新业态，夜钓项目使相关游艇夜间出航率稳定在95%以上。",
+        "sources": [
+          {
+            "headline": "不只看海吃海，三亚这片海“玩出花”",
+            "page": "003",
+            "url": "http://news.hndaily.cn/html/2026-07/08/content_58466_19684677.htm"
+          }
+        ],
+        "event_id": "E020",
+        "final_score": 80.5
+      },
+      {
+        "title": "海南首届环保科技奖启动提名",
+        "summary": "2026年度首届海南省环境保护科学技术奖启动提名，设置5类奖项，申报截至9月30日。",
+        "sources": [
+          {
+            "headline": "首届海南省环境保护科学技术奖提名工作启动",
+            "page": "002",
+            "url": "http://news.hndaily.cn/html/2026-07/08/content_58465_19684657.htm"
+          }
+        ],
+        "event_id": "E011",
+        "final_score": 78.5
+      }
+    ],
+    "经济/数据": [
+      {
+        "title": "海南国资运营发行5亿元科创债",
+        "summary": "海南国资运营发行首期5亿元科技创新债券，票面利率1.8%，认购倍数4.26倍，期限3+2年。",
+        "sources": [
+          {
+            "headline": "海南国资运营5亿元科创债首发成功",
+            "page": "002",
+            "url": "http://news.hndaily.cn/html/2026-07/08/content_58465_19684661.htm"
+          }
+        ],
+        "event_id": "E013",
+        "final_score": 77.0
+      }
+    ],
     "城市/出行/风险": [],
     "人事/反腐": [],
     "重要但不必精读": [],
-    "已跳过": []
+    "已跳过": [
+      {
+        "title": "导读",
+        "summary": "由确定性预过滤排除。",
+        "sources": [
+          {
+            "headline": "导读",
+            "page": "001",
+            "url": "http://news.hndaily.cn/html/2026-07/08/content_58464_19684650.htm"
+          }
+        ],
+        "skip_reason": "guide",
+        "candidate_id": "A010"
+      },
+      {
+        "title": "中共琼崖一大\n锻造坚强领导体系的时代借鉴",
+        "summary": "由确定性预过滤排除。",
+        "sources": [
+          {
+            "headline": "中共琼崖一大\n锻造坚强领导体系的时代借鉴",
+            "page": "004",
+            "url": "http://news.hndaily.cn/html/2026-07/08/content_58467_19684685.htm"
+          }
+        ],
+        "skip_reason": "theory_weekly",
+        "candidate_id": "A023"
+      },
+      {
+        "title": "琼崖革命“红旗不倒”的精神根脉",
+        "summary": "由确定性预过滤排除。",
+        "sources": [
+          {
+            "headline": "琼崖革命“红旗不倒”的精神根脉",
+            "page": "004",
+            "url": "http://news.hndaily.cn/html/2026-07/08/content_58467_19684689.htm"
+          }
+        ],
+        "skip_reason": "theory_weekly",
+        "candidate_id": "A024"
+      },
+      {
+        "title": "中国共产党为什么能的关键密码",
+        "summary": "由确定性预过滤排除。",
+        "sources": [
+          {
+            "headline": "中国共产党为什么能的关键密码",
+            "page": "005",
+            "url": "http://news.hndaily.cn/html/2026-07/08/content_58468_19684701.htm"
+          }
+        ],
+        "skip_reason": "theory_weekly",
+        "candidate_id": "A025"
+      },
+      {
+        "title": "以文化浸润夯实高校\n铸牢中华民族共同体意识教育根基",
+        "summary": "由确定性预过滤排除。",
+        "sources": [
+          {
+            "headline": "以文化浸润夯实高校\n铸牢中华民族共同体意识教育根基",
+            "page": "005",
+            "url": "http://news.hndaily.cn/html/2026-07/08/content_58468_19684703.htm"
+          }
+        ],
+        "skip_reason": "theory_weekly",
+        "candidate_id": "A026"
+      },
+      {
+        "title": "以正确政绩观引领提升改革攻坚能力",
+        "summary": "由确定性预过滤排除。",
+        "sources": [
+          {
+            "headline": "以正确政绩观引领提升改革攻坚能力",
+            "page": "005",
+            "url": "http://news.hndaily.cn/html/2026-07/08/content_58468_19684704.htm"
+          }
+        ],
+        "skip_reason": "theory_weekly",
+        "candidate_id": "A027"
+      }
+    ]
   },
-  "generated_at": "2026-07-09T19:07:29-07:00"
+  "generated_at": "2026-07-10T00:53:56-07:00"
 }

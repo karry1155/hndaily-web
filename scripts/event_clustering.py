@@ -9,6 +9,8 @@ LEAD_NGRAM_SIZE = 3
 LEAD_CHARACTERS = 500
 TITLE_SIMILARITY_THRESHOLD = 0.78
 LEAD_SIMILARITY_THRESHOLD = 0.72
+TITLE_CONTAINMENT_THRESHOLD = 0.15
+LEAD_CONTAINMENT_THRESHOLD = 0.45
 _NON_WORD_RE = re.compile(r"[\W_]+", re.UNICODE)
 
 
@@ -30,24 +32,33 @@ def jaccard(left: set[str], right: set[str]) -> float:
     return len(left & right) / len(left | right)
 
 
+def containment(left: set[str], right: set[str]) -> float:
+    if not left or not right:
+        return 0.0
+    return len(left & right) / min(len(left), len(right))
+
+
 def _is_duplicate(left: dict[str, Any], right: dict[str, Any]) -> bool:
     left_title = normalize_text(left.get("original_title"))
     right_title = normalize_text(right.get("original_title"))
     if left_title and left_title == right_title:
         return True
-    title_similarity = jaccard(
-        ngrams(left_title, TITLE_NGRAM_SIZE),
-        ngrams(right_title, TITLE_NGRAM_SIZE),
-    )
+    left_title_ngrams = ngrams(left_title, TITLE_NGRAM_SIZE)
+    right_title_ngrams = ngrams(right_title, TITLE_NGRAM_SIZE)
+    title_similarity = jaccard(left_title_ngrams, right_title_ngrams)
     if title_similarity >= TITLE_SIMILARITY_THRESHOLD:
         return True
     left_lead = normalize_text(left.get("content"))[:LEAD_CHARACTERS]
     right_lead = normalize_text(right.get("content"))[:LEAD_CHARACTERS]
-    lead_similarity = jaccard(
-        ngrams(left_lead, LEAD_NGRAM_SIZE),
-        ngrams(right_lead, LEAD_NGRAM_SIZE),
+    left_lead_ngrams = ngrams(left_lead, LEAD_NGRAM_SIZE)
+    right_lead_ngrams = ngrams(right_lead, LEAD_NGRAM_SIZE)
+    lead_similarity = jaccard(left_lead_ngrams, right_lead_ngrams)
+    if lead_similarity >= LEAD_SIMILARITY_THRESHOLD:
+        return True
+    return (
+        containment(left_title_ngrams, right_title_ngrams) >= TITLE_CONTAINMENT_THRESHOLD
+        and containment(left_lead_ngrams, right_lead_ngrams) >= LEAD_CONTAINMENT_THRESHOLD
     )
-    return lead_similarity >= LEAD_SIMILARITY_THRESHOLD
 
 
 def _page_number(value: Any) -> int:

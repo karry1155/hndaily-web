@@ -49,6 +49,36 @@ class EventClusteringTests(unittest.TestCase):
         self.assertEqual(events[0]["member_candidate_ids"], ["A001", "A002"])
         self.assertEqual(events[1]["member_candidate_ids"], ["A003"])
 
+    def test_real_sample_merges_front_page_flood_brief_with_inside_report(self):
+        import json
+        from pathlib import Path
+
+        from scripts.editorial_filter import evaluate_issue
+
+        raw_path = Path(__file__).resolve().parents[2] / "hndaily-skill" / "_data" / "2026-07-08.json"
+        raw = json.loads(raw_path.read_text(encoding="utf-8"))
+        records = {item["candidate_id"]: item for item in evaluate_issue(raw)}
+        candidates = []
+        for candidate_id in ("A002", "A028", "A031"):
+            item = dict(records[candidate_id])
+            item.update(
+                semantic_scores={"hainan_relevance": 2, "information_density": 8},
+                final_score=50,
+                title=item["original_title"],
+                summary="摘要",
+                why_it_matters="理由",
+                key_facts=["事实"],
+                category="城市/出行/风险",
+                confidence="full_text",
+            )
+            candidates.append(item)
+
+        events = cluster_candidates(candidates)
+        member_sets = [set(event["member_candidate_ids"]) for event in events]
+
+        self.assertIn({"A002", "A028"}, member_sets)
+        self.assertIn({"A031"}, member_sets)
+
 
 if __name__ == "__main__":
     unittest.main()
