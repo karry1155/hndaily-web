@@ -7,6 +7,8 @@ dist/
 build/
 site/
 .worktrees/
+.site.radar-staging/
+.site.radar-backup/
 .next/
 .astro/
 .vercel/
@@ -18,12 +20,16 @@ data/raw/
 data/intermediate/
 data/cache/
 data/tmp/
+data/tmp/radar-*/
 data/audio/
 data/pdf/
 *.tmp
 *.log
 *.mp3
 *.pdf
+
+content/.items.radar-backup/
+content/.indexes.radar-backup/
 
 # Local environment
 .env

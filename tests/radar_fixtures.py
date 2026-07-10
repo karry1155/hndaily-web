@@ -1,3 +1,8 @@
+import json
+import shutil
+from pathlib import Path
+
+
 def raw_issue(article_count=4, date="2026-07-08"):
     articles = [
         {
@@ -150,3 +155,27 @@ def stored_item(
             "original_url": f"https://example.test/articles/{index}",
         },
     }
+
+
+def write_content_library(root: Path, count: int, include_weekly_fixture=False):
+    from scripts.radar_indexes import build_indexes
+
+    items = [stored_item(index, category="民生") for index in range(1, count + 1)]
+    for item in items:
+        path = root / "items" / item["published_date"] / f"{item['item_id']}.json"
+        path.parent.mkdir(parents=True, exist_ok=True)
+        temporary = path.with_name(f".{path.name}.tmp")
+        temporary.write_text(json.dumps(item, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        temporary.replace(path)
+    for relative, payload in build_indexes(items, "2026-07-10").items():
+        path = root / "indexes" / relative
+        path.parent.mkdir(parents=True, exist_ok=True)
+        temporary = path.with_name(f".{path.name}.tmp")
+        temporary.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+        temporary.replace(path)
+    if include_weekly_fixture:
+        fixture = Path(__file__).resolve().parents[1] / "scripts/fixtures/weekly-valid.json"
+        target = root / "weekly/2026-W28.json"
+        target.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copy2(fixture, target)
+    return items
