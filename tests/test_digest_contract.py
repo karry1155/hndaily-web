@@ -30,6 +30,23 @@ class DigestContractTests(unittest.TestCase):
         self.assertIn(summary, rendered)
         self.assertLess(rendered.index(summary), rendered.index('<p class="why">'))
 
+    def test_daily_contract_allows_four_top_and_four_more_with_continuous_ranks(self):
+        item = self.digest["top_items"][0]
+        self.digest["top_items"] = [dict(item, rank=index) for index in range(1, 5)]
+        self.digest["more_items"] = [dict(item, rank=index) for index in range(5, 9)]
+        self.digest["selected_count"] = 8
+
+        self.assertEqual(validate_daily(self.digest), [])
+
+    def test_daily_contract_rejects_more_than_eight_or_discontinuous_ranks(self):
+        item = self.digest["top_items"][0]
+        self.digest["more_items"] = [dict(item, rank=7)]
+        self.digest["selected_count"] = 2
+
+        errors = validate_daily(self.digest)
+
+        self.assertTrue(any("rank" in error for error in errors))
+
 
 if __name__ == "__main__":
     unittest.main()

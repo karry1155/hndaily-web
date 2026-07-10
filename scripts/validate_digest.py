@@ -20,6 +20,13 @@ CATEGORIES = [
 ]
 
 CONFIDENCE = {"full_text", "short_item", "headline_only", "partial"}
+SCORE_FIELDS = {
+    "hainan_relevance",
+    "actionability",
+    "impact_scope",
+    "novelty",
+    "information_density",
+}
 DATE_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 WEEK_RE = re.compile(r"^\d{4}-W\d{2}$")
 
@@ -35,6 +42,10 @@ def is_non_empty_string(value: Any) -> bool:
 
 def is_int(value: Any) -> bool:
     return type(value) is int
+
+
+def is_number(value: Any) -> bool:
+    return type(value) in (int, float)
 
 
 def is_iso_datetime_string(value: Any) -> bool:
@@ -79,21 +90,53 @@ def validate_daily(data: dict[str, Any]) -> list[str]:
     require(data.get("reading_minutes") == 5, "daily reading_minutes must be 5", errors)
 
     top_items = data.get("top_items")
+    more_items = data.get("more_items")
     require(isinstance(top_items, list), "top_items must be an array", errors)
+    require(isinstance(more_items, list), "more_items must be an array", errors)
     if isinstance(top_items, list):
-        require(len(top_items) <= 5, "daily top_items must contain at most 5 items", errors)
-        for index, item in enumerate(top_items):
-            require(isinstance(item, dict), f"top_items[{index}] must be an object", errors)
+        require(len(top_items) <= 4, "daily top_items must contain at most 4 items", errors)
+    if isinstance(more_items, list):
+        require(len(more_items) <= 4, "daily more_items must contain at most 4 items", errors)
+    combined = (
+        top_items + more_items
+        if isinstance(top_items, list) and isinstance(more_items, list)
+        else []
+    )
+    require(len(combined) <= 8, "daily selected items must contain at most 8 items", errors)
+    require(
+        is_int(data.get("selected_count")) and data.get("selected_count") == len(combined),
+        "selected_count must equal selected item count",
+        errors,
+    )
+    require(data.get("selection_threshold") == 65, "selection_threshold must be 65", errors)
+    require(data.get("hainan_relevance_threshold") == 6, "hainan_relevance_threshold must be 6", errors)
+    require(data.get("ranking_version") == "editorial-v1", "ranking_version must be editorial-v1", errors)
+    for index, item in enumerate(combined):
+            location = "top_items" if index < len(top_items or []) else "more_items"
+            location_index = index if location == "top_items" else index - len(top_items or [])
+            require(isinstance(item, dict), f"{location}[{location_index}] must be an object", errors)
             if not isinstance(item, dict):
                 continue
-            require(is_int(item.get("rank")) and item.get("rank") == index + 1, f"top_items[{index}].rank must be {index + 1}", errors)
-            require(is_non_empty_string(item.get("title")), f"top_items[{index}].title is required", errors)
-            require(is_non_empty_string(item.get("summary")), f"top_items[{index}].summary is required", errors)
-            require(item.get("category") in CATEGORIES, f"top_items[{index}].category is invalid", errors)
-            require(is_non_empty_string(item.get("why_it_matters")), f"top_items[{index}].why_it_matters is required", errors)
-            require(isinstance(item.get("key_facts"), list), f"top_items[{index}].key_facts must be an array", errors)
+            prefix = f"{location}[{location_index}]"
+            require(is_int(item.get("rank")) and item.get("rank") == index + 1, f"{prefix}.rank must be {index + 1}", errors)
+            require(is_non_empty_string(item.get("title")), f"{prefix}.title is required", errors)
+            require(is_non_empty_string(item.get("summary")), f"{prefix}.summary is required", errors)
+            require(item.get("category") in CATEGORIES and item.get("category") != "已跳过", f"{prefix}.category is invalid", errors)
+            require(is_non_empty_string(item.get("why_it_matters")), f"{prefix}.why_it_matters is required", errors)
+            require(isinstance(item.get("key_facts"), list), f"{prefix}.key_facts must be an array", errors)
             validate_sources(item.get("sources"), errors, weekly=False, min_items=1)
-            require(item.get("confidence") in CONFIDENCE, f"top_items[{index}].confidence is invalid", errors)
+            require(item.get("confidence") in CONFIDENCE, f"{prefix}.confidence is invalid", errors)
+            require(is_non_empty_string(item.get("event_id")), f"{prefix}.event_id is required", errors)
+            require(is_non_empty_string(item.get("master_candidate_id")), f"{prefix}.master_candidate_id is required", errors)
+            scores = item.get("semantic_scores")
+            require(isinstance(scores, dict) and set(scores) == SCORE_FIELDS, f"{prefix}.semantic_scores is invalid", errors)
+            if isinstance(scores, dict):
+                for field in SCORE_FIELDS:
+                    require(type(scores.get(field)) is int and 0 <= scores.get(field, -1) <= 10, f"{prefix}.semantic_scores.{field} is invalid", errors)
+            require(is_number(item.get("base_score")), f"{prefix}.base_score is required", errors)
+            require(is_number(item.get("final_score")), f"{prefix}.final_score is required", errors)
+            require(isinstance(item.get("adjustments"), list), f"{prefix}.adjustments must be an array", errors)
+            require(is_non_empty_string(item.get("score_explanation")), f"{prefix}.score_explanation is required", errors)
 
     categories = data.get("categories")
     require(isinstance(categories, dict), "categories must be an object", errors)

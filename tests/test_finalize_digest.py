@@ -49,7 +49,7 @@ class FinalizeDigestTests(unittest.TestCase):
         self.model_output = semantic_output(self.model_input)
 
     def test_injects_canonical_sources_from_raw_json(self):
-        digest = build_digest(self.raw, self.model_input, self.model_output)
+        digest, audit = build_digest(self.raw, self.model_input, self.model_output)
 
         self.assertEqual(len(digest["top_items"]), 4)
         for index, item in enumerate(digest["top_items"], 1):
@@ -59,6 +59,19 @@ class FinalizeDigestTests(unittest.TestCase):
                 [{"headline": raw_article["title"], "page": "001", "url": raw_article["url"]}],
             )
             self.assertEqual(item["summary"], f"原始标题 {index}的事实摘要。")
+        self.assertEqual(len(audit["articles"]), 4)
+        self.assertTrue(all(item["selected"] for item in audit["articles"]))
+
+    def test_splits_top_four_and_more_items_without_padding(self):
+        raw = raw_issue(article_count=6)
+        model_input, _ = build_model_input(raw)
+
+        digest, _ = build_digest(raw, model_input, semantic_output(model_input))
+
+        self.assertEqual([item["rank"] for item in digest["top_items"]], [1, 2, 3, 4])
+        self.assertEqual([item["rank"] for item in digest["more_items"]], [5, 6])
+        self.assertEqual(digest["selected_count"], 6)
+        self.assertEqual(len(digest["categories"]["民生/办事"]), 6)
 
     def test_rejects_source_fields_from_model(self):
         self.model_output["items"][0]["url"] = "http://evil.test/fake"
@@ -111,13 +124,16 @@ class FinalizeDigestTests(unittest.TestCase):
     def test_invalid_output_does_not_replace_existing_digest(self):
         with tempfile.TemporaryDirectory() as tmp:
             output_path = Path(tmp) / "digest.json"
+            audit_path = Path(tmp) / "audit.json"
             output_path.write_text('{"existing": true}\n', encoding="utf-8")
+            audit_path.write_text('{"existing_audit": true}\n', encoding="utf-8")
             self.model_output["items"][0]["sources"] = []
 
             with self.assertRaises(ModelOutputError):
-                finalize_to_path(self.raw, self.model_input, self.model_output, output_path)
+                finalize_to_path(self.raw, self.model_input, self.model_output, output_path, audit_path)
 
             self.assertEqual(json.loads(output_path.read_text(encoding="utf-8")), {"existing": True})
+            self.assertEqual(json.loads(audit_path.read_text(encoding="utf-8")), {"existing_audit": True})
 
     def test_cli_runs_as_a_direct_script(self):
         with tempfile.TemporaryDirectory() as tmp:
@@ -127,6 +143,7 @@ class FinalizeDigestTests(unittest.TestCase):
             input_path = directory / "input.json"
             model_path = directory / "model.json"
             output_path = directory / "digest.json"
+            audit_path = directory / "audit.json"
             raw_path.write_text(json.dumps(self.raw, ensure_ascii=False), encoding="utf-8")
             input_path.write_text(json.dumps(self.model_input, ensure_ascii=False), encoding="utf-8")
             model_path.write_text(json.dumps(self.model_output, ensure_ascii=False), encoding="utf-8")
@@ -139,6 +156,7 @@ class FinalizeDigestTests(unittest.TestCase):
                     str(input_path),
                     str(model_path),
                     str(output_path),
+                    str(audit_path),
                 ],
                 cwd=root,
                 text=True,
@@ -148,6 +166,7 @@ class FinalizeDigestTests(unittest.TestCase):
 
             self.assertEqual(result.returncode, 0, result.stderr)
             self.assertTrue(output_path.is_file())
+            self.assertTrue(audit_path.is_file())
 
 
 if __name__ == "__main__":

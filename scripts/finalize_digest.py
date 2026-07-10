@@ -11,8 +11,15 @@ if __package__ in (None, ""):
     sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 from scripts.editorial_filter import evaluate_issue
+from scripts.event_clustering import cluster_candidates
 from scripts.editorial_scoring import SCORE_FIELDS, ScoringError, score_candidate, validate_semantic_item
 from scripts.prepare_model_input import build_model_input
+from scripts.select_digest import (
+    FINAL_SCORE_THRESHOLD,
+    HAINAN_RELEVANCE_THRESHOLD,
+    TOP_COUNT,
+    select_events,
+)
 from scripts.validate_digest import CATEGORIES, validate_daily
 
 
@@ -91,35 +98,80 @@ def build_digest(
     raw: dict[str, Any],
     model_input: dict[str, Any],
     model_output: dict[str, Any],
-) -> dict[str, Any]:
-    expected_input, _prefilter = build_model_input(raw)
+) -> tuple[dict[str, Any], dict[str, Any]]:
+    expected_input, prefilter = build_model_input(raw)
     if model_input != expected_input:
-        raise ModelOutputError("model input does not match the first articles in raw JSON")
+        raise ModelOutputError("model input does not match filtered candidates in raw JSON")
     semantic_items = _validate_model_output(model_input, model_output)
-    selected = [record for record in evaluate_issue(raw) if record["passed"]]
-
-    top_items = []
-    for rank, (semantic, article) in enumerate(zip(semantic_items, selected), 1):
+    records = evaluate_issue(raw)
+    passed = [record for record in records if record["passed"]]
+    scored_candidates: list[dict[str, Any]] = []
+    for semantic, article in zip(semantic_items, passed):
         scoring = score_candidate(article, semantic)
-        top_items.append(
+        candidate = dict(article)
+        candidate.update(
             {
-                "rank": rank,
                 "title": semantic["title"].strip(),
                 "summary": semantic["summary"].strip(),
-                "category": semantic["suggested_category"],
                 "why_it_matters": semantic["why_it_matters"].strip(),
                 "key_facts": [fact.strip() for fact in semantic["key_facts"]],
-                "sources": [
-                    {
-                        "headline": article["original_title"],
-                        "page": article["page"],
-                        "url": article["url"],
-                    }
-                ],
                 "confidence": semantic["confidence"],
+                "category": semantic["suggested_category"],
                 **scoring,
             }
         )
+        scored_candidates.append(candidate)
+
+    events = cluster_candidates(scored_candidates)
+    selected_events, event_decisions = select_events(events)
+
+    def publish_item(event: dict[str, Any]) -> dict[str, Any]:
+        return {
+            "rank": event["rank"],
+            "title": event["title"],
+            "summary": event["summary"],
+            "category": event["category"],
+            "why_it_matters": event["why_it_matters"],
+            "key_facts": event["key_facts"],
+            "sources": event["sources"],
+            "confidence": event["confidence"],
+            "event_id": event["event_id"],
+            "master_candidate_id": event["master_candidate_id"],
+            "semantic_scores": event["semantic_scores"],
+            "score_reasons": event["score_reasons"],
+            "base_score": event["base_score"],
+            "adjustments": event["adjustments"],
+            "final_score": event["final_score"],
+            "score_explanation": event["score_explanation"],
+        }
+
+    published = [publish_item(event) for event in selected_events]
+    categories: dict[str, list[dict[str, Any]]] = {category: [] for category in CATEGORIES}
+    for item in published:
+        categories[item["category"]].append(
+            {
+                "title": item["title"],
+                "summary": item["summary"],
+                "sources": item["sources"],
+                "event_id": item["event_id"],
+                "final_score": item["final_score"],
+            }
+        )
+    for record in records:
+        if not record["passed"]:
+            categories["已跳过"].append(
+                {
+                    "title": record["original_title"],
+                    "summary": "由确定性预过滤排除。",
+                    "sources": [{
+                        "headline": record["original_title"],
+                        "page": record["page"],
+                        "url": record["url"],
+                    }],
+                    "skip_reason": record["skip_reason"],
+                    "candidate_id": record["candidate_id"],
+                }
+            )
 
     digest = {
         "type": "daily",
@@ -130,14 +182,63 @@ def build_digest(
         "reading_minutes": 5,
         "input_fingerprint": model_input["input_fingerprint"],
         "prompt_version": model_input["prompt_version"],
-        "top_items": top_items,
-        "categories": {category: [] for category in CATEGORIES},
+        "selected_count": len(published),
+        "selection_threshold": FINAL_SCORE_THRESHOLD,
+        "hainan_relevance_threshold": HAINAN_RELEVANCE_THRESHOLD,
+        "ranking_version": "editorial-v1",
+        "top_items": published[:TOP_COUNT],
+        "more_items": published[TOP_COUNT:],
+        "categories": categories,
         "generated_at": datetime.now().astimezone().replace(microsecond=0).isoformat(),
     }
     errors = validate_daily(digest)
     if errors:
         raise ModelOutputError("invalid finalized digest: " + "; ".join(errors))
-    return digest
+
+    event_by_member = {
+        candidate_id: event
+        for event in event_decisions
+        for candidate_id in event["member_candidate_ids"]
+    }
+    scored_by_id = {candidate["candidate_id"]: candidate for candidate in scored_candidates}
+    audit_articles: list[dict[str, Any]] = []
+    for record in records:
+        audit_item = dict(record)
+        if record["passed"]:
+            scored = scored_by_id[record["candidate_id"]]
+            event = event_by_member[record["candidate_id"]]
+            audit_item.update({
+                "semantic_scores": scored["semantic_scores"],
+                "score_reasons": scored["score_reasons"],
+                "base_score": scored["base_score"],
+                "adjustments": scored["adjustments"],
+                "final_score": scored["final_score"],
+                "category": scored["category"],
+                "event_id": event["event_id"],
+                "master_candidate_id": event["master_candidate_id"],
+                "selected": bool(event.get("selected")) and record["candidate_id"] == event["master_candidate_id"],
+                "unselected_reason": (
+                    "duplicate_event"
+                    if record["candidate_id"] != event["master_candidate_id"]
+                    else event.get("unselected_reason")
+                ),
+                "rank": event.get("rank") if record["candidate_id"] == event["master_candidate_id"] else None,
+            })
+        else:
+            audit_item.update(selected=False, unselected_reason=record["skip_reason"], rank=None)
+        audit_articles.append(audit_item)
+
+    audit = {
+        "schema_version": 2,
+        "date": raw.get("date"),
+        "article_count": raw.get("article_count"),
+        "input_fingerprint": model_input["input_fingerprint"],
+        "prompt_version": model_input["prompt_version"],
+        "prefilter": prefilter,
+        "articles": audit_articles,
+        "events": event_decisions,
+    }
+    return digest, audit
 
 
 def finalize_to_path(
@@ -145,13 +246,18 @@ def finalize_to_path(
     model_input: dict[str, Any],
     model_output: dict[str, Any],
     output_path: Path,
-) -> dict[str, Any]:
-    digest = build_digest(raw, model_input, model_output)
-    output_path.parent.mkdir(parents=True, exist_ok=True)
-    temporary = output_path.with_name(f".{output_path.name}.tmp")
-    temporary.write_text(json.dumps(digest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    temporary.replace(output_path)
-    return digest
+    audit_path: Path,
+) -> tuple[dict[str, Any], dict[str, Any]]:
+    digest, audit = build_digest(raw, model_input, model_output)
+    for path in (output_path, audit_path):
+        path.parent.mkdir(parents=True, exist_ok=True)
+    audit_temporary = audit_path.with_name(f".{audit_path.name}.tmp")
+    output_temporary = output_path.with_name(f".{output_path.name}.tmp")
+    audit_temporary.write_text(json.dumps(audit, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    output_temporary.write_text(json.dumps(digest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    audit_temporary.replace(audit_path)
+    output_temporary.replace(output_path)
+    return digest, audit
 
 
 def _read_object(path: Path) -> dict[str, Any]:
@@ -162,15 +268,15 @@ def _read_object(path: Path) -> dict[str, Any]:
 
 
 def main(argv: list[str]) -> int:
-    if len(argv) != 5:
+    if len(argv) != 6:
         print(
-            "Usage: finalize_digest.py RAW_JSON MODEL_INPUT_JSON MODEL_OUTPUT_JSON OUTPUT_JSON",
+            "Usage: finalize_digest.py RAW_JSON MODEL_INPUT_JSON MODEL_OUTPUT_JSON OUTPUT_JSON AUDIT_JSON",
             file=sys.stderr,
         )
         return 1
     try:
         raw, model_input, model_output = (_read_object(Path(value)) for value in argv[1:4])
-        finalize_to_path(raw, model_input, model_output, Path(argv[4]))
+        finalize_to_path(raw, model_input, model_output, Path(argv[4]), Path(argv[5]))
     except (OSError, json.JSONDecodeError, ModelOutputError, ValueError) as exc:
         print(f"ERROR: {exc}", file=sys.stderr)
         return 1
