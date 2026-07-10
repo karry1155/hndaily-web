@@ -32,3 +32,35 @@ def raw_issue_with_skips():
     raw = raw_issue(article_count=2)
     raw["pages"][0]["articles"][1]["title"] = "导读"
     return raw
+
+
+def model_output_for(model_input, score=8):
+    return {
+        "schema_version": model_input["schema_version"],
+        "prompt_version": model_input["prompt_version"],
+        "input_fingerprint": model_input["input_fingerprint"],
+        "items": [
+            {
+                "candidate_id": item["candidate_id"],
+                "ai_summary": f"{item['title']}的正文事实摘要。",
+                "category": "民生",
+                "hainan_relevance": score,
+                "actionability": score,
+                "impact_scope": score,
+                "timeliness": score,
+                "information_density": score,
+                "score_reasons": {
+                    "hainan_relevance": "直接涉及海南",
+                    "actionability": "包含可采用的信息",
+                    "impact_scope": "影响本地读者",
+                    "timeliness": "属于当前出版日期",
+                    "information_density": "正文包含具体事实",
+                },
+                "opportunity_lifecycle": "not_applicable",
+                "deadline_date": None,
+                "deadline_text": None,
+                "deadline_evidence": None,
+            }
+            for item in model_input["items"]
+        ],
+    }

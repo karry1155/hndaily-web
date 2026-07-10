@@ -41,7 +41,7 @@ def require_exact_fields(
     unknown = sorted(set(value) - expected)
     if missing or unknown:
         raise ContractError(
-            f"{location} fields missing={missing} unknown={unknown}"
+            f"{location} fields missing={missing} unknown fields={unknown}"
         )
 
 
