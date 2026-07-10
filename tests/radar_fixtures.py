@@ -93,3 +93,60 @@ def scored_item(
         },
         "final_score": final_score,
     }
+
+
+def stored_item(
+    index,
+    *,
+    date="2026-07-10",
+    category="民生",
+    deadline=None,
+    lifecycle=None,
+    title=None,
+    summary=None,
+    content=None,
+):
+    lifecycle = lifecycle or ("dated" if deadline else "not_applicable")
+    return {
+        "schema_version": 3,
+        "item_id": f"item-{index:03d}",
+        "published_date": date,
+        "collected_date": "2026-07-10",
+        "category": category,
+        "semantic_scores": {
+            "hainan_relevance": 8,
+            "actionability": 8,
+            "impact_scope": 8,
+            "timeliness": 8,
+            "information_density": 8,
+        },
+        "score_reasons": {
+            "hainan_relevance": "海南",
+            "actionability": "可行动",
+            "impact_scope": "有影响",
+            "timeliness": "当前",
+            "information_density": "具体",
+        },
+        "base_score": 80.0,
+        "final_score": 80.0,
+        "selected": True,
+        "daily_rank": index,
+        "unselected_reason": None,
+        "opportunity": {
+            "lifecycle": lifecycle,
+            "deadline_date": deadline,
+            "deadline_text": f"{deadline}截止" if deadline else None,
+            "evidence": (
+                f"{deadline}截止"
+                if deadline
+                else ("长期有效" if lifecycle == "ongoing" else None)
+            ),
+        },
+        "block": {
+            "source": "海南日报",
+            "title": title or f"原始标题 {index}",
+            "content": content or f"第 {index} 篇完整正文。",
+            "ai_summary": summary or f"第 {index} 篇摘要。",
+            "original_url": f"https://example.test/articles/{index}",
+        },
+    }

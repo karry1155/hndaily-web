@@ -24,6 +24,29 @@ SOURCE_CANDIDATE_FIELDS = {
     "published_date",
     "collected_date",
 }
+BLOCK_FIELDS = {"source", "title", "content", "ai_summary", "original_url"}
+OPPORTUNITY_FIELDS = {
+    "lifecycle",
+    "deadline_date",
+    "deadline_text",
+    "evidence",
+}
+STORED_ITEM_FIELDS = {
+    "schema_version",
+    "item_id",
+    "published_date",
+    "collected_date",
+    "category",
+    "semantic_scores",
+    "score_reasons",
+    "base_score",
+    "final_score",
+    "selected",
+    "daily_rank",
+    "unselected_reason",
+    "opportunity",
+    "block",
+}
 
 
 class ContractError(ValueError):
@@ -77,3 +100,87 @@ def validate_source_candidate(candidate: dict[str, Any]) -> None:
     validate_iso_date(
         candidate.get("collected_date"), "source candidate.collected_date"
     )
+
+
+def validate_stored_item(item: dict[str, Any]) -> None:
+    require_exact_fields(item, STORED_ITEM_FIELDS, "stored item")
+    if item.get("schema_version") != SCHEMA_VERSION:
+        raise ContractError("stored item schema_version is invalid")
+    for field in ("item_id", "published_date", "collected_date", "category"):
+        if not non_empty(item.get(field)):
+            raise ContractError(f"stored item.{field} is required")
+    validate_iso_date(item["published_date"], "stored item.published_date")
+    validate_iso_date(item["collected_date"], "stored item.collected_date")
+    if item["category"] not in CATEGORIES:
+        raise ContractError("stored item.category is invalid")
+    if (
+        item.get("selected") is not True
+        or type(item.get("daily_rank")) is not int
+        or item["daily_rank"] < 1
+    ):
+        raise ContractError(
+            "stored item must be selected with a positive daily_rank"
+        )
+    scores = item.get("semantic_scores")
+    reasons = item.get("score_reasons")
+    if not isinstance(scores, dict) or set(scores) != set(SCORE_FIELDS):
+        raise ContractError("stored item.semantic_scores is invalid")
+    if not isinstance(reasons, dict) or set(reasons) != set(SCORE_FIELDS):
+        raise ContractError("stored item.score_reasons is invalid")
+    for field in SCORE_FIELDS:
+        if type(scores.get(field)) is not int or not 0 <= scores[field] <= 10:
+            raise ContractError(
+                f"stored item.semantic_scores.{field} is invalid"
+            )
+        if not non_empty(reasons.get(field)):
+            raise ContractError(f"stored item.score_reasons.{field} is required")
+    if type(item.get("base_score")) not in (int, float) or type(
+        item.get("final_score")
+    ) not in (int, float):
+        raise ContractError("stored item scores must be numeric")
+    block = item.get("block")
+    if not isinstance(block, dict):
+        raise ContractError("stored item.block must be an object")
+    require_exact_fields(block, BLOCK_FIELDS, "block")
+    for field in ("source", "title", "content", "ai_summary"):
+        if not non_empty(block.get(field)):
+            raise ContractError(f"block.{field} is required")
+    validate_http_url(block.get("original_url"), "block.original_url")
+    opportunity = item.get("opportunity")
+    if not isinstance(opportunity, dict):
+        raise ContractError("stored item.opportunity must be an object")
+    require_exact_fields(opportunity, OPPORTUNITY_FIELDS, "opportunity")
+    lifecycle = opportunity.get("lifecycle")
+    if lifecycle not in {"dated", "ongoing", "unspecified", "not_applicable"}:
+        raise ContractError("opportunity.lifecycle is invalid")
+    deadline_values = [
+        opportunity.get("deadline_date"),
+        opportunity.get("deadline_text"),
+        opportunity.get("evidence"),
+    ]
+    if item["category"] != "机会" and (
+        lifecycle != "not_applicable"
+        or any(value is not None for value in deadline_values)
+    ):
+        raise ContractError("non-opportunity lifecycle is invalid")
+    if item["category"] == "机会" and lifecycle not in {
+        "dated",
+        "ongoing",
+        "unspecified",
+    }:
+        raise ContractError("opportunity item lifecycle is invalid")
+    if lifecycle == "dated":
+        validate_iso_date(
+            opportunity.get("deadline_date"), "opportunity.deadline_date"
+        )
+        if not all(non_empty(value) for value in deadline_values[1:]):
+            raise ContractError("dated opportunity evidence is required")
+    elif lifecycle == "ongoing":
+        if (
+            opportunity.get("deadline_date") is not None
+            or opportunity.get("deadline_text") is not None
+            or not non_empty(opportunity.get("evidence"))
+        ):
+            raise ContractError("ongoing opportunity evidence is required")
+    elif any(value is not None for value in deadline_values):
+        raise ContractError("non-dated opportunity fields must be null")
