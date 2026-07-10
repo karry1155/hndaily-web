@@ -12,7 +12,12 @@ Required top-level fields:
 - `page_count`: integer greater than or equal to 0.
 - `article_count`: integer greater than or equal to 0.
 - `reading_minutes`: integer, expected value `5`.
-- `top_items`: array with 0 to 5 items.
+- `selected_count`: integer from 0 to 8.
+- `selection_threshold`: must be `65` in V1.
+- `hainan_relevance_threshold`: must be `6` in V1.
+- `ranking_version`: must be `"editorial-v1"`.
+- `top_items`: array with 0 to 4 items, ranks 1–4.
+- `more_items`: array with 0 to 4 items, continuing ranks 5–8.
 - `categories`: object keyed by fixed category name.
 - `generated_at`: ISO datetime string.
 
@@ -26,6 +31,10 @@ Required `top_items` fields:
 - `key_facts`: array of source-grounded facts.
 - `sources`: array with at least one source object.
 - `confidence`: one of `full_text`, `short_item`, `headline_only`, `partial`.
+- `event_id` and `master_candidate_id`: deterministic event and canonical article IDs.
+- `semantic_scores`: exactly five 0–10 integer model scores.
+- `score_reasons`: one source-grounded reason for each semantic score.
+- `base_score`, `adjustments`, `final_score`, `score_explanation`: code-owned score trace.
 
 Required source object fields:
 
@@ -50,6 +59,8 @@ Category items require:
 - `summary`
 - `sources`
 - `skip_reason` only when the category is `已跳过`
+
+`top_items` and `more_items` are one deterministic ranking split for display. V1 never pads low-scoring content to a minimum count. Model output cannot set rank, selection, or final score.
 
 ## Weekly Digest
 

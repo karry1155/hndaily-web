@@ -47,6 +47,27 @@ class DigestContractTests(unittest.TestCase):
 
         self.assertTrue(any("rank" in error for error in errors))
 
+    def test_daily_renderer_separates_top_four_from_more_items(self):
+        item = self.digest["top_items"][0]
+        self.digest["top_items"] = [dict(item, rank=index, title=f"重点 {index}") for index in range(1, 5)]
+        self.digest["more_items"] = [dict(item, rank=index, title=f"其余 {index}") for index in range(5, 7)]
+        self.digest["selected_count"] = 6
+
+        rendered = render_daily(self.digest, [self.digest])
+
+        top_heading = rendered.index("今日重点")
+        more_heading = rendered.index("今日还值得看")
+        self.assertLess(top_heading, rendered.index("重点 1"))
+        self.assertLess(rendered.index("重点 4"), more_heading)
+        self.assertLess(more_heading, rendered.index("其余 5"))
+        self.assertEqual(rendered.count("其余 5"), 1)
+
+    def test_daily_renderer_does_not_pad_empty_more_section(self):
+        rendered = render_daily(self.digest, [self.digest])
+
+        self.assertIn("今日没有更多达到精选线的条目", rendered)
+        self.assertEqual(rendered.count(self.digest["top_items"][0]["title"]), 1)
+
 
 if __name__ == "__main__":
     unittest.main()

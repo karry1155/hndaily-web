@@ -97,16 +97,23 @@ def render_weekly_archive(current_week: str, weekly_reports: list[dict[str, Any]
     return "".join(links)
 
 
-def render_daily(data: dict[str, Any], daily_reports: list[dict[str, Any]]) -> str:
+def render_signal_cards(
+    source_items: list[dict[str, Any]],
+    *,
+    empty_title: str,
+    empty_reason: str,
+) -> str:
     items = []
-    for item in data.get("top_items", []):
+    for item in source_items:
         facts = "".join(f"<li>{esc(fact)}</li>" for fact in item.get("key_facts", []))
+        score = item.get("final_score")
+        score_text = f" · 最终分 {esc(score)}" if score is not None else ""
         items.append(
             f"""
             <article class="signal-card">
               <div class="signal-rank">{int(item.get("rank", 0)):02d}</div>
               <div class="signal-main">
-                <div class="signal-meta">{esc(item.get("category", ""))} · {esc(item.get("confidence", ""))}</div>
+                <div class="signal-meta">{esc(item.get("category", ""))} · {esc(item.get("confidence", ""))}{score_text}</div>
                 <h2>{esc(item.get("title", ""))}</h2>
                 <p class="summary">{esc(item.get("summary", ""))}</p>
                 <p class="why">{esc(item.get("why_it_matters", ""))}</p>
@@ -118,16 +125,33 @@ def render_daily(data: dict[str, Any], daily_reports: list[dict[str, Any]]) -> s
         )
     if not items:
         items.append(
-            """
+            f"""
             <article class="signal-card empty-card">
               <div class="signal-rank">--</div>
               <div class="signal-main">
-                <h2>今日暂无高价值条目</h2>
-                <p class="why">等待下一次日报生成。</p>
+                <h2>{esc(empty_title)}</h2>
+                <p class="why">{esc(empty_reason)}</p>
               </div>
             </article>
             """
         )
+
+    return "".join(items)
+
+
+def render_daily(data: dict[str, Any], daily_reports: list[dict[str, Any]]) -> str:
+    top_items = data.get("top_items", [])
+    more_items = data.get("more_items", [])
+    top_signals = render_signal_cards(
+        top_items,
+        empty_title="今日暂无达到精选线的重点",
+        empty_reason="今日没有项目同时通过海南相关性和最终分资格线。",
+    )
+    more_signals = render_signal_cards(
+        more_items,
+        empty_title="今日没有更多达到精选线的条目",
+        empty_reason="不使用低分内容补足篇数。",
+    )
 
     categories = []
     category_data = data.get("categories", {})
@@ -157,7 +181,10 @@ def render_daily(data: dict[str, Any], daily_reports: list[dict[str, Any]]) -> s
         page_count=esc(data.get("page_count", "")),
         article_count=esc(data.get("article_count", "")),
         reading_minutes=esc(data.get("reading_minutes", "")),
-        signals="".join(items),
+        signals=top_signals,
+        more_signals=more_signals,
+        top_count=esc(len(top_items)),
+        more_count=esc(len(more_items)),
         categories="".join(categories),
         daily_links=render_daily_archive(str(data.get("date", "")), daily_reports),
     )

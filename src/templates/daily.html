@@ -22,10 +22,17 @@
     </header>
     <section class="panel highlight-panel">
       <div class="section-heading">
-        <h2>今日看点</h2>
-        <span>$article_count 篇报道 · 约 $reading_minutes 分钟</span>
+        <h2>今日重点</h2>
+        <span>$top_count 项 · 来自确定性总排名前 4</span>
       </div>
       <div class="signals">$signals</div>
+    </section>
+    <section class="panel more-panel">
+      <div class="section-heading">
+        <h2>今日还值得看</h2>
+        <span>$more_count 项 · 总排名第 5–8</span>
+      </div>
+      <div class="signals">$more_signals</div>
     </section>
     <section id="categories" class="category-grid">$categories</section>
   </main>

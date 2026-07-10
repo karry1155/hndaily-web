@@ -240,6 +240,10 @@ a:hover {
   margin-top: 6px;
 }
 
+.more-panel {
+  margin-top: 22px;
+}
+
 .section-heading {
   display: flex;
   justify-content: space-between;

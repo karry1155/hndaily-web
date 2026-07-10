@@ -49,12 +49,12 @@ Raw files, temporary files, logs, PDFs, audio, and caches must remain outside gi
 
 ## Codex Digest Pipeline
 
-Prepare the first three crawler articles for Codex:
+Prepare every article for deterministic filtering and the full set of eligible candidates for Codex:
 
 ```bash
 bash scripts/run_daily_pipeline.sh
 ```
 
-The command prints `RAW_JSON`, `MODEL_INPUT_JSON`, and `MODEL_OUTPUT_JSON`. The model input intentionally contains no URL or source object. Codex writes only semantic fields to the reported model-output path; `scripts/finalize_digest.py` then copies the canonical headline, page, and URL from the raw crawler JSON.
+The command prints `RAW_JSON`, `MODEL_INPUT_JSON`, `MODEL_OUTPUT_JSON`, `PREFILTER_JSON`, and `EDITORIAL_AUDIT_JSON`. Every raw article appears in the prefilter audit. The model input contains no URL or source object and includes every candidate that passes the high-confidence filters. Codex writes semantic fields and five 0–10 integer scores to the reported model-output path; code then computes final scores, deduplicates events, applies `hainan_relevance >= 6` and `final_score >= 65`, and publishes at most eight items without padding.
 
 See [docs/codex-digest-generation.md](docs/codex-digest-generation.md) for the exact automation steps and output contract.
