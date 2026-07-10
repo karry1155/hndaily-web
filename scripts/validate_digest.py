@@ -88,6 +88,7 @@ def validate_daily(data: dict[str, Any]) -> list[str]:
                 continue
             require(is_int(item.get("rank")) and item.get("rank") == index + 1, f"top_items[{index}].rank must be {index + 1}", errors)
             require(is_non_empty_string(item.get("title")), f"top_items[{index}].title is required", errors)
+            require(is_non_empty_string(item.get("summary")), f"top_items[{index}].summary is required", errors)
             require(item.get("category") in CATEGORIES, f"top_items[{index}].category is invalid", errors)
             require(is_non_empty_string(item.get("why_it_matters")), f"top_items[{index}].why_it_matters is required", errors)
             require(isinstance(item.get("key_facts"), list), f"top_items[{index}].key_facts must be an array", errors)

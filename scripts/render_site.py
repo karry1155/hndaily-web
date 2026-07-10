@@ -108,6 +108,7 @@ def render_daily(data: dict[str, Any], daily_reports: list[dict[str, Any]]) -> s
               <div class="signal-main">
                 <div class="signal-meta">{esc(item.get("category", ""))} · {esc(item.get("confidence", ""))}</div>
                 <h2>{esc(item.get("title", ""))}</h2>
+                <p class="summary">{esc(item.get("summary", ""))}</p>
                 <p class="why">{esc(item.get("why_it_matters", ""))}</p>
                 <ul class="facts">{facts}</ul>
                 <ul class="sources">{source_links(item.get("sources", []))}</ul>

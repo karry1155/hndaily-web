@@ -20,6 +20,7 @@ Required `top_items` fields:
 
 - `rank`: integer starting at 1.
 - `title`: readable rewritten title.
+- `summary`: concise, source-grounded description of what happened.
 - `category`: one fixed category name.
 - `why_it_matters`: one sentence explaining why this is worth attention today.
 - `key_facts`: array of source-grounded facts.
