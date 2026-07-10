@@ -64,3 +64,32 @@ def model_output_for(model_input, score=8):
             for item in model_input["items"]
         ],
     }
+
+
+def semantic_item(**overrides):
+    value = model_output_for(
+        {
+            "schema_version": 3,
+            "prompt_version": "radar-v1",
+            "input_fingerprint": "fixture",
+            "items": [
+                {"candidate_id": "A001", "title": "标题", "content": "正文"}
+            ],
+        }
+    )["items"][0]
+    value.update(overrides)
+    return value
+
+
+def scored_item(
+    index, date="2026-07-10", final_score=70, relevance=8, density=7
+):
+    return {
+        "item_id": f"item-{index:03d}",
+        "published_date": date,
+        "semantic_scores": {
+            "hainan_relevance": relevance,
+            "information_density": density,
+        },
+        "final_score": final_score,
+    }
