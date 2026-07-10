@@ -39,9 +39,14 @@ class PipelineCliTests(unittest.TestCase):
             lines = dict(line.split("=", 1) for line in result.stdout.splitlines() if "=" in line)
             self.assertEqual(lines["RAW_JSON"], str(raw_path))
             self.assertTrue(Path(lines["MODEL_INPUT_JSON"]).is_file())
+            self.assertTrue(Path(lines["PREFILTER_JSON"]).is_file())
             self.assertEqual(
                 lines["MODEL_OUTPUT_JSON"],
                 str(temporary_root / "intermediate" / "2026-07-08.model-output.json"),
+            )
+            self.assertEqual(
+                lines["EDITORIAL_AUDIT_JSON"],
+                str(temporary_root / "intermediate" / "2026-07-08.editorial-audit.json"),
             )
             self.assertNotIn("这是第", result.stdout)
 

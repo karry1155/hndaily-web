@@ -23,6 +23,19 @@ def semantic_output(model_input):
                 "why_it_matters": "这件事包含今天值得关注的明确变化。",
                 "key_facts": ["事实一", "事实二"],
                 "confidence": "full_text",
+                "suggested_category": "民生/办事",
+                "hainan_relevance": 8,
+                "actionability": 8,
+                "impact_scope": 7,
+                "novelty": 6,
+                "information_density": 8,
+                "score_reasons": {
+                    "hainan_relevance": "涉及海南",
+                    "actionability": "可以行动",
+                    "impact_scope": "影响多人",
+                    "novelty": "包含变化",
+                    "information_density": "包含事实",
+                },
             }
             for item in model_input["items"]
         ],
@@ -32,13 +45,13 @@ def semantic_output(model_input):
 class FinalizeDigestTests(unittest.TestCase):
     def setUp(self):
         self.raw = raw_issue()
-        self.model_input = build_model_input(self.raw)
+        self.model_input, self.prefilter = build_model_input(self.raw)
         self.model_output = semantic_output(self.model_input)
 
     def test_injects_canonical_sources_from_raw_json(self):
         digest = build_digest(self.raw, self.model_input, self.model_output)
 
-        self.assertEqual(len(digest["top_items"]), 3)
+        self.assertEqual(len(digest["top_items"]), 4)
         for index, item in enumerate(digest["top_items"], 1):
             raw_article = self.raw["pages"][0]["articles"][index - 1]
             self.assertEqual(
@@ -52,6 +65,22 @@ class FinalizeDigestTests(unittest.TestCase):
 
         with self.assertRaisesRegex(ModelOutputError, "unknown fields.*url"):
             build_digest(self.raw, self.model_input, self.model_output)
+
+    def test_rejects_unknown_category_score_range_and_model_decisions(self):
+        mutations = [
+            ("suggested_category", "随意分类"),
+            ("hainan_relevance", 11),
+            ("actionability", 1.5),
+            ("selected", True),
+            ("final_score", 99),
+            ("rank", 1),
+        ]
+        for field, value in mutations:
+            output = semantic_output(self.model_input)
+            output["items"][0][field] = value
+            with self.subTest(field=field):
+                with self.assertRaises(ModelOutputError):
+                    build_digest(self.raw, self.model_input, output)
 
     def test_rejects_missing_extra_duplicate_and_reordered_ids(self):
         mutations = []

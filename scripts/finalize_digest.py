@@ -10,7 +10,9 @@ from typing import Any
 if __package__ in (None, ""):
     sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-from scripts.prepare_model_input import build_model_input, select_articles
+from scripts.editorial_filter import evaluate_issue
+from scripts.editorial_scoring import SCORE_FIELDS, ScoringError, score_candidate, validate_semantic_item
+from scripts.prepare_model_input import build_model_input
 from scripts.validate_digest import CATEGORIES, validate_daily
 
 
@@ -22,6 +24,13 @@ MODEL_ITEM_FIELDS = {
     "why_it_matters",
     "key_facts",
     "confidence",
+    "suggested_category",
+    "hainan_relevance",
+    "actionability",
+    "impact_scope",
+    "novelty",
+    "information_density",
+    "score_reasons",
 }
 MODEL_CONFIDENCE = {"full_text", "short_item", "partial"}
 
@@ -69,6 +78,12 @@ def _validate_model_output(model_input: dict[str, Any], model_output: dict[str, 
             raise ModelOutputError(f"items[{index}].key_facts must contain non-empty strings")
         if item.get("confidence") not in MODEL_CONFIDENCE:
             raise ModelOutputError(f"items[{index}].confidence is invalid")
+        if item.get("suggested_category") not in set(CATEGORIES) - {"已跳过"}:
+            raise ModelOutputError(f"items[{index}].suggested_category is invalid")
+        try:
+            validate_semantic_item(item, f"items[{index}]")
+        except ScoringError as exc:
+            raise ModelOutputError(str(exc)) from exc
     return items
 
 
@@ -77,30 +92,32 @@ def build_digest(
     model_input: dict[str, Any],
     model_output: dict[str, Any],
 ) -> dict[str, Any]:
-    expected_input = build_model_input(raw)
+    expected_input, _prefilter = build_model_input(raw)
     if model_input != expected_input:
         raise ModelOutputError("model input does not match the first articles in raw JSON")
     semantic_items = _validate_model_output(model_input, model_output)
-    selected = select_articles(raw)
+    selected = [record for record in evaluate_issue(raw) if record["passed"]]
 
     top_items = []
-    for rank, (semantic, (page, article)) in enumerate(zip(semantic_items, selected), 1):
+    for rank, (semantic, article) in enumerate(zip(semantic_items, selected), 1):
+        scoring = score_candidate(article, semantic)
         top_items.append(
             {
                 "rank": rank,
                 "title": semantic["title"].strip(),
                 "summary": semantic["summary"].strip(),
-                "category": "重要但不必精读",
+                "category": semantic["suggested_category"],
                 "why_it_matters": semantic["why_it_matters"].strip(),
                 "key_facts": [fact.strip() for fact in semantic["key_facts"]],
                 "sources": [
                     {
-                        "headline": article["title"],
-                        "page": page["page"],
+                        "headline": article["original_title"],
+                        "page": article["page"],
                         "url": article["url"],
                     }
                 ],
                 "confidence": semantic["confidence"],
+                **scoring,
             }
         )
 

@@ -35,29 +35,31 @@ def raw_issue(article_count=4):
 
 
 class BuildModelInputTests(unittest.TestCase):
-    def test_selects_first_three_and_exposes_only_semantic_input(self):
-        result = build_model_input(raw_issue())
+    def test_uses_all_candidates_and_exposes_only_semantic_input(self):
+        result, audit = build_model_input(raw_issue())
 
-        self.assertEqual([item["candidate_id"] for item in result["items"]], ["A001", "A002", "A003"])
+        self.assertEqual([item["candidate_id"] for item in result["items"]], ["A001", "A002", "A003", "A004"])
         self.assertEqual(result["items"][0]["original_title"], "原始标题 1")
-        self.assertEqual(result["items"][2]["content"], "这是第 3 篇文章的正文。")
+        self.assertEqual(result["items"][3]["content"], "这是第 4 篇文章的正文。")
         for item in result["items"]:
-            self.assertEqual(set(item), {"candidate_id", "original_title", "content"})
+            self.assertEqual(set(item), {"candidate_id", "original_title", "content", "length_band"})
         self.assertEqual(set(result), {"schema_version", "prompt_version", "input_fingerprint", "items"})
+        self.assertEqual(len(audit["items"]), 4)
 
     def test_fingerprint_is_stable_and_changes_with_selected_content(self):
         raw = raw_issue()
-        first = build_model_input(raw)
-        second = build_model_input(copy.deepcopy(raw))
+        first, _ = build_model_input(raw)
+        second, _ = build_model_input(copy.deepcopy(raw))
         raw["pages"][0]["articles"][0]["content"] += "变化"
-        changed = build_model_input(raw)
+        changed, _ = build_model_input(raw)
 
         self.assertEqual(first["input_fingerprint"], second["input_fingerprint"])
         self.assertNotEqual(first["input_fingerprint"], changed["input_fingerprint"])
 
-    def test_uses_all_articles_when_issue_has_fewer_than_three(self):
-        result = build_model_input(raw_issue(article_count=2))
+    def test_uses_all_articles_when_issue_is_small(self):
+        result, audit = build_model_input(raw_issue(article_count=2))
         self.assertEqual([item["candidate_id"] for item in result["items"]], ["A001", "A002"])
+        self.assertEqual(len(audit["items"]), 2)
 
     def test_rejects_selected_article_missing_canonical_url(self):
         raw = raw_issue()
@@ -65,6 +67,21 @@ class BuildModelInputTests(unittest.TestCase):
 
         with self.assertRaisesRegex(InputError, "url"):
             build_model_input(raw)
+
+    def test_real_sample_evaluates_all_articles_and_keeps_actionable_item(self):
+        import json
+        from pathlib import Path
+
+        raw_path = Path(__file__).resolve().parents[2] / "hndaily-skill" / "_data" / "2026-07-08.json"
+        raw = json.loads(raw_path.read_text(encoding="utf-8"))
+
+        result, audit = build_model_input(raw)
+
+        self.assertEqual(len(audit["items"]), 35)
+        self.assertTrue(any(
+            item["original_title"] == "海南能用住房公积金交物业费了"
+            for item in result["items"]
+        ))
 
     def test_rejects_declared_article_count_mismatch(self):
         raw = raw_issue()
