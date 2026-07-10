@@ -7,6 +7,9 @@ from datetime import datetime
 from pathlib import Path
 from typing import Any
 
+if __package__ in (None, ""):
+    sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+
 from scripts.prepare_model_input import build_model_input, select_articles
 from scripts.validate_digest import CATEGORIES, validate_daily
 

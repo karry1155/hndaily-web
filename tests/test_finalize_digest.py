@@ -1,4 +1,6 @@
 import json
+import subprocess
+import sys
 import tempfile
 import unittest
 from pathlib import Path
@@ -87,6 +89,36 @@ class FinalizeDigestTests(unittest.TestCase):
                 finalize_to_path(self.raw, self.model_input, self.model_output, output_path)
 
             self.assertEqual(json.loads(output_path.read_text(encoding="utf-8")), {"existing": True})
+
+    def test_cli_runs_as_a_direct_script(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(__file__).resolve().parents[1]
+            directory = Path(tmp)
+            raw_path = directory / "raw.json"
+            input_path = directory / "input.json"
+            model_path = directory / "model.json"
+            output_path = directory / "digest.json"
+            raw_path.write_text(json.dumps(self.raw, ensure_ascii=False), encoding="utf-8")
+            input_path.write_text(json.dumps(self.model_input, ensure_ascii=False), encoding="utf-8")
+            model_path.write_text(json.dumps(self.model_output, ensure_ascii=False), encoding="utf-8")
+
+            result = subprocess.run(
+                [
+                    sys.executable,
+                    str(root / "scripts" / "finalize_digest.py"),
+                    str(raw_path),
+                    str(input_path),
+                    str(model_path),
+                    str(output_path),
+                ],
+                cwd=root,
+                text=True,
+                capture_output=True,
+                check=False,
+            )
+
+            self.assertEqual(result.returncode, 0, result.stderr)
+            self.assertTrue(output_path.is_file())
 
 
 if __name__ == "__main__":

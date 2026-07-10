@@ -46,3 +46,15 @@ The future scheduled job should:
 6. Sync `site/` or the chosen publishable output to the cloud host.
 
 Raw files, temporary files, logs, PDFs, audio, and caches must remain outside git.
+
+## Codex Digest Pipeline
+
+Prepare the first three crawler articles for Codex:
+
+```bash
+bash scripts/run_daily_pipeline.sh
+```
+
+The command prints `RAW_JSON`, `MODEL_INPUT_JSON`, and `MODEL_OUTPUT_JSON`. The model input intentionally contains no URL or source object. Codex writes only semantic fields to the reported model-output path; `scripts/finalize_digest.py` then copies the canonical headline, page, and URL from the raw crawler JSON.
+
+See [docs/codex-digest-generation.md](docs/codex-digest-generation.md) for the exact automation steps and output contract.
