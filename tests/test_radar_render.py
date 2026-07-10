@@ -1,10 +1,16 @@
 import unittest
+from pathlib import Path
 
 from scripts.radar_render import render_index, render_item
 from tests.radar_fixtures import stored_item
 
 
 class RadarRenderTests(unittest.TestCase):
+    def test_radar_css_overrides_legacy_three_column_shell(self):
+        css = (Path(__file__).resolve().parents[1] / "src/static/styles.css").read_text(encoding="utf-8")
+        self.assertIn(".radar-shell { grid-template-columns: 216px minmax(0, 1fr); }", css)
+        self.assertIn(".ai-summary { margin: 28px 0; padding: 20px; background: var(--panel); }", css)
+
     def test_all_view_renders_focus_and_card_only_public_fields(self):
         item = stored_item(1, title="科技见习 <计划>", summary="摘要 <script>x</script>")
         summary = {

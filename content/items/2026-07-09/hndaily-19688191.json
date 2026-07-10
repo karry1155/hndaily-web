@@ -1,0 +1,39 @@
+{
+  "schema_version": 3,
+  "item_id": "hndaily-19688191",
+  "published_date": "2026-07-09",
+  "collected_date": "2026-07-10",
+  "category": "产业",
+  "semantic_scores": {
+    "hainan_relevance": 9,
+    "actionability": 7,
+    "impact_scope": 7,
+    "timeliness": 8,
+    "information_density": 8
+  },
+  "score_reasons": {
+    "hainan_relevance": "正文直接涉及海南、省内机构或具体市县",
+    "actionability": "正文包含可供读者采用的具体信息",
+    "impact_scope": "事项影响相关行业或公众",
+    "timeliness": "内容属于当前出版日期",
+    "information_density": "正文包含明确主体、措施或事实"
+  },
+  "base_score": 78.5,
+  "final_score": 78.5,
+  "opportunity": {
+    "lifecycle": "not_applicable",
+    "deadline_date": null,
+    "deadline_text": null,
+    "evidence": null
+  },
+  "block": {
+    "source": "海南日报",
+    "title": "国外自媒体达人走进五指山市体验雨林风光与民族非遗",
+    "content": "本报五指山7月8日电（海南日报全媒体记者黄富国）7月7日至8日，欧亚青年自媒体达人来到五指山市，通过实地采风、全天直播等形式，面向全球海外粉丝推介五指山热带雨林生态、非遗传承与乡村振兴发展成果。\n\n参与本次活动的国外自媒体达人全网海外粉丝总量超千万，内容覆盖TikTok、YouTube等海外主流社交平台。\n\n7日下午，采风团队走进方诺寨热带雨林景区、海南热带雨林国家公园五指山片区，沉浸式体验雨林风光；在祥蓝迷手工茶坊，专业技师全程指导外籍达人体验采茶、手工炒茶，让外籍达人感受五指山原生态雨林茶产业的魅力。\n\n8日，直播主场设在毛纳村宝山竹屋，非遗展演、民俗互动轮番上演，黎陶非遗老师现场实操教学，黎族竹木器乐表演、黎锦织造、竹竿舞、共同舞等互动项目轮番上演。\n\n未来，五指山市将持续依托省级国际传播平台，深挖雨林、民族特色文旅资源，持续开展国际化对外宣传活动，不断提升五指山市的知名度与美誉度。",
+    "ai_summary": "本报五指山7月8日电（海南日报全媒体记者黄富国）7月7日至8日，欧亚青年自媒体达人来到五指山市，通过实地采风、全天直播等形式，面向全球海外粉丝推介五指山热带雨林生态、非遗传承与乡村振兴发展成果。",
+    "original_url": "http://news.hndaily.cn/html/2026-07/09/content_58469_19688191.htm"
+  },
+  "selected": true,
+  "daily_rank": 8,
+  "unselected_reason": null
+}

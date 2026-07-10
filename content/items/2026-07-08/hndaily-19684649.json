@@ -1,0 +1,39 @@
+{
+  "schema_version": 3,
+  "item_id": "hndaily-19684649",
+  "published_date": "2026-07-08",
+  "collected_date": "2026-07-10",
+  "category": "观察",
+  "semantic_scores": {
+    "hainan_relevance": 9,
+    "actionability": 7,
+    "impact_scope": 7,
+    "timeliness": 8,
+    "information_density": 8
+  },
+  "score_reasons": {
+    "hainan_relevance": "正文直接涉及海南、省内机构或具体市县",
+    "actionability": "正文包含可供读者采用的具体信息",
+    "impact_scope": "事项影响相关行业或公众",
+    "timeliness": "内容属于当前出版日期",
+    "information_density": "正文包含明确主体、措施或事实"
+  },
+  "base_score": 78.5,
+  "final_score": 78.5,
+  "opportunity": {
+    "lifecycle": "not_applicable",
+    "deadline_date": null,
+    "deadline_text": null,
+    "evidence": null
+  },
+  "block": {
+    "source": "海南日报",
+    "title": "全国首单保税LNG罐箱国际转运业务落地洋浦",
+    "content": "7月7日，20个保税LNG（液化天然气）罐箱在洋浦国际集装箱码头装船启航，驶向越南，标志着全国首单保税LNG罐箱国际转运业务在洋浦落地。据了解，装载保税LNG罐箱的香港籍船舶“永盛99”轮自越南抵达广东装货后来到洋浦转运，最终驶往越南。\n\n文/海南日报全媒体记者 吴心怡 图/洋浦海事局",
+    "ai_summary": "7月7日，20个保税LNG（液化天然气）罐箱在洋浦国际集装箱码头装船启航，驶向越南，标志着全国首单保税LNG罐箱国际转运业务在洋浦落地。",
+    "original_url": "http://news.hndaily.cn/html/2026-07/08/content_58464_19684649.htm"
+  },
+  "selected": true,
+  "daily_rank": 7,
+  "unselected_reason": null
+}

@@ -4,6 +4,13 @@
 
 Radar 流水线先运行 `bash scripts/run_radar_pipeline.sh YYYY-MM-DD`。首次返回退出码 2 和 `STATUS=MODEL_OUTPUT_REQUIRED`；按操作文档写入精确模型输出后重跑，成功返回 `STATUS=COMPLETE`。随后运行 `python3 scripts/preview.py`，访问 <http://127.0.0.1:8765>。
 
+## Verified datasets
+
+- 2026-07-08：8 版、35 篇原始文章、20 篇入选。
+- 2026-07-09：7 版、28 篇原始文章、17 篇入选；由 2026-07-10 的真实抓取独立生成，未复用 7 月 8 日模型输出。
+- 验证命令：`RADAR_REAL_DATA_REQUIRED=1 python3 -m unittest discover -s tests -v`。
+- 验证日期：2026-07-10。
+
 这个目录是未来同步到云端的网页项目。它负责展示本地定时任务生成好的海南日报精读内容，包括每日 5 分钟日报和每周 15 分钟周报。
 
 ## 项目边界
