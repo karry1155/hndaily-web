@@ -177,7 +177,7 @@ def public_issue_item(index, date="2026-07-10", title=None):
 
 
 def write_content_library(root: Path, count: int, include_weekly_fixture=False):
-    from scripts.radar_indexes import build_indexes
+    from scripts.radar_indexes import build_indexes, build_issue_date_index, build_search_indexes
 
     items = [stored_item(index, category="民生") for index in range(1, count + 1)]
     for item in items:
@@ -192,6 +192,19 @@ def write_content_library(root: Path, count: int, include_weekly_fixture=False):
         temporary = path.with_name(f".{path.name}.tmp")
         temporary.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         temporary.replace(path)
+    issue_items = [public_issue_item(index) for index in range(1, count + 1)]
+    for item in issue_items:
+        path = root / "issue-items" / item["published_date"] / f"{item['item_id']}.json"
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(json.dumps(item, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    issue = {"schema_version": 3, "date": "2026-07-10", "source": "海南日报", "page_count": 1, "scored_article_count": count, "pages": [{"page_number": "001", "page_name": "头版", "page_url": "https://example.test/page-001", "pdf_url": "https://example.test/page-001.pdf", "articles": [{"item_id": item["item_id"], "title": item["block"]["title"], "page_sequence": item["page_sequence"], "detail_path": f"/items/{item['published_date']}/{item['item_id']}/"} for item in issue_items]}]}
+    (root / "issues").mkdir(parents=True, exist_ok=True)
+    (root / "issues/2026-07-10.json").write_text(json.dumps(issue, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    extra = {**build_search_indexes(items, issue_items), "issues.json": build_issue_date_index([issue])}
+    for relative, payload in extra.items():
+        path = root / "indexes" / relative
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     if include_weekly_fixture:
         fixture = Path(__file__).resolve().parents[1] / "scripts/fixtures/weekly-valid.json"
         target = root / "weekly/2026-W28.json"

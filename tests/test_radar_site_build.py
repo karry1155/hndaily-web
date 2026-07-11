@@ -14,6 +14,10 @@ class RadarSiteBuildTests(unittest.TestCase):
             self.assertTrue((site / "index.html").is_file())
             self.assertTrue((site / "page/2/index.html").is_file())
             self.assertTrue((site / "category/livelihood/index.html").is_file())
+            self.assertTrue((site / "all/index.html").is_file())
+            self.assertTrue((site / "all/2026-07-10/index.html").is_file())
+            self.assertTrue((site / "about/index.html").is_file())
+            self.assertTrue((site / "changelog/index.html").is_file())
             self.assertTrue((site / "date/2026-07-10/index.html").is_file())
             self.assertEqual(validate_internal_links(site), [])
 

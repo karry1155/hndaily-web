@@ -15,10 +15,11 @@ if __package__ in (None, ""):
     sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 from scripts.radar_contract import validate_stored_item
+from scripts.radar_issue import validate_public_issue, validate_public_issue_item
 from scripts.render_site import render_base, render_weekly
 
 ROOT = Path(__file__).resolve().parents[1]
-PRODUCT_NAME = "海南信息雷达"
+PRODUCT_NAME = "HN·HOT"
 CATEGORY_PATHS = {
     "全部": "/", "机会": "/category/opportunity/",
     "民生": "/category/livelihood/", "产业": "/category/industry/",
@@ -31,12 +32,36 @@ def _template(name):
     return Template((ROOT / "src/templates" / name).read_text(encoding="utf-8"))
 
 
-def _card(item):
+def _title_row(item, rank=None):
+    number = "" if rank is None else f'<span class="title-rank">{rank}</span>'
     return (
-        f'<a class="radar-card" href="{html.escape(item["detail_path"], quote=True)}">'
-        f'<span class="card-source">{html.escape(item["source"])}</span>'
-        f'<h3>{html.escape(item["title"])}</h3>'
-        f'<p>{html.escape(item["ai_summary"])}</p></a>'
+        f'<a class="title-row" data-search-title="{html.escape(item["title"], quote=True)}" '
+        f'href="{html.escape(item["detail_path"], quote=True)}">{number}'
+        f'<span>{html.escape(item["title"])}</span></a>'
+    )
+
+
+NAV_ITEMS = (("精选", "/"), ("全部信息", "/all/"), ("AI 日报", "/daily/"))
+MORE_ITEMS = (("关于", "/about/"), ("更新日志", "/changelog/"))
+
+
+def render_primary_nav(active):
+    def links(items):
+        result = []
+        for label, path in items:
+            current = ' class="active" aria-current="page"' if label == active else ""
+            result.append(f'<a href="{path}"{current}>{label}</a>')
+        return "".join(result)
+    return (
+        '<aside class="primary-nav"><a class="brand" href="/">HN·HOT</a>'
+        '<button class="nav-toggle" type="button" aria-expanded="false">菜单</button>'
+        f'<div class="nav-body"><span class="nav-label">内容</span><nav>{links(NAV_ITEMS)}</nav>'
+        f'<span class="nav-label">更多</span><nav>{links(MORE_ITEMS)}</nav>'
+        '<div class="theme-switch" aria-label="主题">'
+        '<button type="button" data-theme-choice="dark" aria-label="深色">深</button>'
+        '<button type="button" data-theme-choice="system" aria-label="跟随系统">系统</button>'
+        '<button type="button" data-theme-choice="light" aria-label="亮色">亮</button>'
+        '</div></div></aside>'
     )
 
 
@@ -47,7 +72,7 @@ def render_index(index, focus, active_category):
         links += f'<a href="{path}"{active}>{name}</a>'
     focus_section = ""
     if focus is not None:
-        focus_section = '<section class="focus-section"><h2>当下重点</h2>' + "".join(_card(item) for item in focus["items"]) + "</section>"
+        focus_section = '<section class="focus-section"><div class="section-heading"><h2>当下重点</h2></div><div class="title-list">' + "".join(_title_row(item, item["focus_rank"]) for item in focus["items"]) + "</div></section>"
     groups = []
     current = None
     for item in index["items"]:
@@ -55,8 +80,8 @@ def render_index(index, focus, active_category):
             if current is not None:
                 groups.append("</div></section>")
             current = item["published_date"]
-            groups.append(f'<section class="date-group"><h2>{html.escape(current)}</h2><div class="card-list">')
-        groups.append(_card(item))
+            groups.append(f'<section class="date-group" data-search-group><h2>{html.escape(current)}</h2><div class="title-list">')
+        groups.append(_title_row(item))
     if current is not None:
         groups.append("</div></section>")
     if not groups:
@@ -66,18 +91,48 @@ def render_index(index, focus, active_category):
     pagination = "" if pages <= 1 else f'<span>第 {page} / {pages} 页</span>'
     updated = focus.get("updated_through") if focus else max((item["published_date"] for item in index["items"]), default="—")
     return _template("radar-index.html").safe_substitute(
-        product_name=PRODUCT_NAME, category_links=links,
+        nav=render_primary_nav("精选"), category_links=links,
         view_title=html.escape(active_category), updated_through=html.escape(updated),
         focus_section=focus_section, date_groups="".join(groups), pagination=pagination,
     )
 
 
+def render_issue(issue):
+    validate_public_issue(issue)
+    pages = []
+    for page in issue["pages"]:
+        title = f'第{page["page_number"]}版：{page["page_name"]}'
+        articles = "".join(_title_row(article) for article in page["articles"])
+        pages.append(
+            '<section class="issue-page" data-search-group><header>'
+            f'<div><a class="issue-page-title" href="{html.escape(page["page_url"], quote=True)}" target="_blank" rel="noopener noreferrer">{html.escape(title)}</a>'
+            f'<span>{len(page["articles"])} 篇</span></div>'
+            f'<a class="pdf-link" href="{html.escape(page["pdf_url"], quote=True)}" target="_blank" rel="noopener noreferrer">下载 PDF</a>'
+            f'</header><div class="title-list">{articles}</div></section>'
+        )
+    return _template("radar-issue.html").safe_substitute(
+        nav=render_primary_nav("全部信息"), date=html.escape(issue["date"]),
+        page_count=issue["page_count"], article_count=issue["scored_article_count"],
+        pages="".join(pages),
+    )
+
+
 def render_item(item):
-    validate_stored_item(item)
+    if "category" in item:
+        validate_stored_item(item)
+        back_path = CATEGORY_PATHS[item["category"]]
+        back_label = item["category"]
+        category = item["category"]
+    else:
+        validate_public_issue_item(item)
+        back_path = f'/all/{item["published_date"]}/'
+        back_label = "全部信息"
+        category = f'第{item["page_number"]}版 · {item["page_name"]}'
     block = item["block"]
     paragraphs = [part.strip() for part in re.split(r"\n\s*\n", block["content"].replace("\r\n", "\n")) if part.strip()]
     return _template("radar-item.html").safe_substitute(
-        category_path=CATEGORY_PATHS[item["category"]], category=html.escape(item["category"]),
+        category_path=back_path, category=html.escape(category),
+        back_label=html.escape(back_label),
         published_date=html.escape(item["published_date"]), title=html.escape(block["title"]),
         original_url=html.escape(block["original_url"], quote=True), ai_summary=html.escape(block["ai_summary"]),
         body_paragraphs="".join(f"<p>{html.escape(part)}</p>" for part in paragraphs),
@@ -152,6 +207,41 @@ def build_site(content_root, site_root):
         for path in sorted((content_root / "items").glob("*/*.json")):
             item = _read(path); validate_stored_item(item)
             _write(staging / f"items/{item['published_date']}/{item['item_id']}/index.html", render_item(item))
+        selected_by_key = {}
+        for path in sorted((content_root / "items").glob("*/*.json")):
+            item = _read(path)
+            selected_by_key[(item["published_date"], item["item_id"])] = item
+        issues = []
+        for path in sorted((content_root / "issues").glob("*.json")):
+            issue = _read(path); validate_public_issue(issue); issues.append(issue)
+            _write(staging / f"all/{issue['date']}/index.html", render_issue(issue))
+        if issues:
+            latest = max(issues, key=lambda value: value["date"])
+            _write(staging / "all/index.html", render_issue(latest))
+        else:
+            _write(staging / "all/index.html", f'<div class="app-shell radar-shell">{render_primary_nav("全部信息")}<main class="content-shell prose-page"><h1>全部信息</h1><p>暂无内容</p></main></div>')
+        for path in sorted((content_root / "issue-items").glob("*/*.json")):
+            item = _read(path); validate_public_issue_item(item)
+            key = (item["published_date"], item["item_id"])
+            selected = selected_by_key.get(key)
+            if selected is not None:
+                for field in ("title", "content", "original_url"):
+                    if selected["block"][field] != item["block"][field]:
+                        raise ValueError(f"selected/issue item mismatch: {item['item_id']}")
+                continue
+            _write(staging / f"items/{item['published_date']}/{item['item_id']}/index.html", render_item(item))
+        _write(staging / "about/index.html", _template("about.html").safe_substitute(nav=render_primary_nav("关于")))
+        _write(staging / "changelog/index.html", _template("changelog.html").safe_substitute(nav=render_primary_nav("更新日志")))
+        daily = [_read(path) for path in sorted((content_root / "daily").glob("*.json"))]
+        if daily:
+            report = daily[-1]
+            rows = []
+            for item in report.get("top_items", []) + report.get("more_items", []):
+                rows.append(f'<div class="daily-entry"><h2>{html.escape(item.get("title", ""))}</h2><p>{html.escape(item.get("summary", ""))}</p></div>')
+            body = f'<div class="app-shell radar-shell">{render_primary_nav("AI 日报")}<main class="content-shell prose-page"><h1>AI 日报</h1><time>{html.escape(report.get("date", ""))}</time>{"".join(rows)}</main></div>'
+            _write(staging / "daily/index.html", body)
+        else:
+            _write(staging / "daily/index.html", f'<div class="app-shell radar-shell">{render_primary_nav("AI 日报")}<main class="content-shell prose-page"><h1>AI 日报</h1><p>暂无日报</p></main></div>')
         weekly = [_read(path) for path in sorted((content_root / "weekly").glob("*.json"))]
         for report in weekly:
             rendered = render_weekly(report, weekly)
