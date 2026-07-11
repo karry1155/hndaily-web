@@ -2,7 +2,7 @@
 
 新版产品为“海南信息雷达”：来源无关、按日持久化、无精选数量上限，并提供全部、分类、日期与详情路由。
 
-Radar 流水线先运行 `bash scripts/run_radar_pipeline.sh YYYY-MM-DD`。首次返回退出码 2 和 `STATUS=MODEL_OUTPUT_REQUIRED`；按操作文档写入精确模型输出后重跑，成功返回 `STATUS=COMPLETE`。随后运行 `python3 scripts/preview.py`，访问 <http://127.0.0.1:8765>。
+Radar 流水线先运行 `bash scripts/run_radar_pipeline.sh YYYY-MM-DD`。首次返回退出码 2 和 `STATUS=MODEL_OUTPUT_REQUIRED`；按操作文档写入精确模型输出后重跑，成功返回 `STATUS=COMPLETE`。随后运行 `python3 -m scripts.preview`，访问 <http://127.0.0.1:8765>。
 
 ## Verified datasets
 
@@ -40,10 +40,20 @@ python3 scripts/render_site.py
 Preview locally:
 
 ```bash
-python3 scripts/preview.py
+python3 -m scripts.preview
 ```
 
 Open `http://127.0.0.1:8765`.
+
+## Public Routes
+
+- `/`：精选、分类、搜索、当下重点和按日期排列的精选标题。
+- `/all/`：最新一期完整读报。
+- `/all/YYYY-MM-DD/`：按原报版面浏览所有参与 AI 评分的文章，并访问原版 HTML 与 PDF。
+- `/daily/`：AI 日报。
+- `/about/`、`/changelog/`：关于与更新日志。
+
+原始抓取、预过滤和评分审计仍保存在忽略的本地目录；公开站点只发布精选内容与精简后的完整读报数据。
 
 ## Scheduled Job Boundary
 

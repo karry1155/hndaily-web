@@ -30,3 +30,17 @@ class RadarRealDateTests(unittest.TestCase):
         raw_0708 = json.loads(paths[0].read_text(encoding="utf-8")); raw_0709 = json.loads(paths[1].read_text(encoding="utf-8"))
         self.assertEqual(raw_0708["date"], "2026-07-08"); self.assertEqual(raw_0709["date"], "2026-07-09")
         self.assertNotEqual([a["url"] for p in raw_0708["pages"] for a in p["articles"]], [a["url"] for p in raw_0709["pages"] for a in p["articles"]])
+
+    def test_real_dates_publish_scored_articles_by_newspaper_page(self):
+        for date, page_count, scored_count in (
+            ("2026-07-08", 8, 29),
+            ("2026-07-09", 7, 27),
+        ):
+            issue = json.loads((ROOT / "content/issues" / f"{date}.json").read_text(encoding="utf-8"))
+            self.assertEqual(issue["page_count"], page_count)
+            self.assertEqual(issue["scored_article_count"], scored_count)
+            self.assertEqual(scored_count, len(list((ROOT / "content/issue-items" / date).glob("*.json"))))
+            self.assertEqual(
+                [page["page_number"] for page in issue["pages"]],
+                sorted(page["page_number"] for page in issue["pages"]),
+            )

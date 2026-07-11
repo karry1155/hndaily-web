@@ -13,13 +13,20 @@ def _link_or_copy(source, target):
 def prepare_staged_content(content_root, staged_content):
     if staged_content.exists(): shutil.rmtree(staged_content)
     staged_content.mkdir(parents=True)
-    for name in ("items", "indexes", "weekly"):
+    for name in ("items", "issue-items", "issues", "indexes", "daily", "weekly"):
         source = content_root / name
         if source.exists(): shutil.copytree(source, staged_content / name, copy_function=_link_or_copy)
 
 
 def publish_staged_generation(content_root, staged_content, site_root, staged_site, audit_path, staged_audit, *, fail_after_content=False):
-    entries = [(content_root / "items", staged_content / "items"), (content_root / "indexes", staged_content / "indexes"), (site_root, staged_site), (audit_path, staged_audit)]
+    entries = [
+        (content_root / "items", staged_content / "items"),
+        (content_root / "issue-items", staged_content / "issue-items"),
+        (content_root / "issues", staged_content / "issues"),
+        (content_root / "indexes", staged_content / "indexes"),
+        (site_root, staged_site),
+        (audit_path, staged_audit),
+    ]
     journal = []
     try:
         for index, (target, staged) in enumerate(entries):
@@ -30,7 +37,7 @@ def publish_staged_generation(content_root, staged_content, site_root, staged_si
             had = target.exists()
             if had: target.replace(backup)
             staged.replace(target); journal.append((target, backup, had))
-            if fail_after_content and index == 1: raise RuntimeError("injected publish failure")
+            if fail_after_content and index == 3: raise RuntimeError("injected publish failure")
     except Exception:
         for target, backup, had in reversed(journal):
             if target.exists(): shutil.rmtree(target) if target.is_dir() else target.unlink()

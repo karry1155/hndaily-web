@@ -1,0 +1,227 @@
+{
+  "schema_version": 3,
+  "date": "2026-07-09",
+  "source": "海南日报",
+  "page_count": 7,
+  "scored_article_count": 27,
+  "pages": [
+    {
+      "page_number": "001",
+      "page_name": "头版",
+      "page_url": "http://news.hndaily.cn/html/2026-07/09/node_58464.htm",
+      "pdf_url": "http://news.hndaily.cn/resfile/2026-07-09/001/hnrb20260709001.pdf",
+      "articles": [
+        {
+          "item_id": "hndaily-19688148",
+          "title": "《习近平关于基层工作方法的重要论述学习读本》出版发行",
+          "page_sequence": 1,
+          "detail_path": "/items/2026-07-09/hndaily-19688148/"
+        },
+        {
+          "item_id": "hndaily-19688149",
+          "title": "国家科学技术奖励大会两院院士大会中国科协第十一次全国代表大会在京召开",
+          "page_sequence": 2,
+          "detail_path": "/items/2026-07-09/hndaily-19688149/"
+        },
+        {
+          "item_id": "hndaily-19688150",
+          "title": "省政府与中国汽车技术研究中心有限公司签约",
+          "page_sequence": 3,
+          "detail_path": "/items/2026-07-09/hndaily-19688150/"
+        },
+        {
+          "item_id": "hndaily-19688151",
+          "title": "一张“纸”里的45亿元自贸港外贸账",
+          "page_sequence": 4,
+          "detail_path": "/items/2026-07-09/hndaily-19688151/"
+        },
+        {
+          "item_id": "hndaily-19688152",
+          "title": "文明身影，汇成最美风景",
+          "page_sequence": 5,
+          "detail_path": "/items/2026-07-09/hndaily-19688152/"
+        }
+      ]
+    },
+    {
+      "page_number": "002",
+      "page_name": "要闻",
+      "page_url": "http://news.hndaily.cn/html/2026-07/09/node_58465.htm",
+      "pdf_url": "http://news.hndaily.cn/resfile/2026-07-09/002/hnrb20260709002.pdf",
+      "articles": [
+        {
+          "item_id": "hndaily-19688159",
+          "title": "在国家科学技术奖励大会、两院院士大会、中国科协第十一次全国代表大会上的讲话",
+          "page_sequence": 1,
+          "detail_path": "/items/2026-07-09/hndaily-19688159/"
+        },
+        {
+          "item_id": "hndaily-19688160",
+          "title": "勇攀高峰，向着科技强国目标坚定迈进",
+          "page_sequence": 2,
+          "detail_path": "/items/2026-07-09/hndaily-19688160/"
+        },
+        {
+          "item_id": "hndaily-19688162",
+          "title": "关键攻坚期的一次科技盛会",
+          "page_sequence": 3,
+          "detail_path": "/items/2026-07-09/hndaily-19688162/"
+        }
+      ]
+    },
+    {
+      "page_number": "003",
+      "page_name": "要闻",
+      "page_url": "http://news.hndaily.cn/html/2026-07/09/node_58466.htm",
+      "pdf_url": "http://news.hndaily.cn/resfile/2026-07-09/003/hnrb20260709003.pdf",
+      "articles": [
+        {
+          "item_id": "hndaily-19688168",
+          "title": "中共中央 国务院关于2025年度国家科学技术奖励的决定",
+          "page_sequence": 1,
+          "detail_path": "/items/2026-07-09/hndaily-19688168/"
+        },
+        {
+          "item_id": "hndaily-19688170",
+          "title": "“深刻影响了世界历史进程”",
+          "page_sequence": 2,
+          "detail_path": "/items/2026-07-09/hndaily-19688170/"
+        },
+        {
+          "item_id": "hndaily-19688172",
+          "title": "同心同行 推动世界共同发展",
+          "page_sequence": 3,
+          "detail_path": "/items/2026-07-09/hndaily-19688172/"
+        }
+      ]
+    },
+    {
+      "page_number": "004",
+      "page_name": "本省新闻 关注2026年上半年海南好人发布",
+      "page_url": "http://news.hndaily.cn/html/2026-07/09/node_58467.htm",
+      "pdf_url": "http://news.hndaily.cn/resfile/2026-07-09/004/hnrb20260709004.pdf",
+      "articles": [
+        {
+          "item_id": "hndaily-19689849",
+          "title": "24束光，从不同角落，照向同一个地方",
+          "page_sequence": 1,
+          "detail_path": "/items/2026-07-09/hndaily-19689849/"
+        }
+      ]
+    },
+    {
+      "page_number": "006",
+      "page_name": "本省新闻",
+      "page_url": "http://news.hndaily.cn/html/2026-07/09/node_58469.htm",
+      "pdf_url": "http://news.hndaily.cn/resfile/2026-07-09/006/hnrb20260709006.pdf",
+      "articles": [
+        {
+          "item_id": "hndaily-19688186",
+          "title": "3万学子乐享一枕清凉",
+          "page_sequence": 1,
+          "detail_path": "/items/2026-07-09/hndaily-19688186/"
+        },
+        {
+          "item_id": "hndaily-19688187",
+          "title": "那一刻，善意就是通用语言",
+          "page_sequence": 2,
+          "detail_path": "/items/2026-07-09/hndaily-19688187/"
+        },
+        {
+          "item_id": "hndaily-19688190",
+          "title": "“雷公马海小文陪你美滩”三亚启动",
+          "page_sequence": 3,
+          "detail_path": "/items/2026-07-09/hndaily-19688190/"
+        },
+        {
+          "item_id": "hndaily-19688191",
+          "title": "国外自媒体达人走进五指山市体验雨林风光与民族非遗",
+          "page_sequence": 4,
+          "detail_path": "/items/2026-07-09/hndaily-19688191/"
+        },
+        {
+          "item_id": "hndaily-19688192",
+          "title": "一张“纸”里的45亿元自贸港外贸账",
+          "page_sequence": 5,
+          "detail_path": "/items/2026-07-09/hndaily-19688192/"
+        },
+        {
+          "item_id": "hndaily-19688193",
+          "title": "扎根侨乡办实事 履职一线映初心",
+          "page_sequence": 6,
+          "detail_path": "/items/2026-07-09/hndaily-19688193/"
+        }
+      ]
+    },
+    {
+      "page_number": "007",
+      "page_name": "本省新闻",
+      "page_url": "http://news.hndaily.cn/html/2026-07/09/node_58470.htm",
+      "pdf_url": "http://news.hndaily.cn/resfile/2026-07-09/007/hnrb20260709007.pdf",
+      "articles": [
+        {
+          "item_id": "hndaily-19688201",
+          "title": "沙渔塘变身众人向往的模样",
+          "page_sequence": 1,
+          "detail_path": "/items/2026-07-09/hndaily-19688201/"
+        },
+        {
+          "item_id": "hndaily-19688202",
+          "title": "周杰伦本年巡演收官站定档三亚",
+          "page_sequence": 2,
+          "detail_path": "/items/2026-07-09/hndaily-19688202/"
+        },
+        {
+          "item_id": "hndaily-19688204",
+          "title": "海南首个植物提取原料获备案",
+          "page_sequence": 3,
+          "detail_path": "/items/2026-07-09/hndaily-19688204/"
+        },
+        {
+          "item_id": "hndaily-19688205",
+          "title": "要让锦山牛肉干更有“嚼头”",
+          "page_sequence": 4,
+          "detail_path": "/items/2026-07-09/hndaily-19688205/"
+        },
+        {
+          "item_id": "hndaily-19688209",
+          "title": "深耕考后经济 接好青春流量",
+          "page_sequence": 5,
+          "detail_path": "/items/2026-07-09/hndaily-19688209/"
+        },
+        {
+          "item_id": "hndaily-19688211",
+          "title": "正视工薪家庭暑期“带娃难”",
+          "page_sequence": 6,
+          "detail_path": "/items/2026-07-09/hndaily-19688211/"
+        },
+        {
+          "item_id": "hndaily-19688213",
+          "title": "图书腰封上的浮夸“妖风”当休矣",
+          "page_sequence": 7,
+          "detail_path": "/items/2026-07-09/hndaily-19688213/"
+        },
+        {
+          "item_id": "hndaily-19688214",
+          "title": "医师“速成”医德何在",
+          "page_sequence": 8,
+          "detail_path": "/items/2026-07-09/hndaily-19688214/"
+        }
+      ]
+    },
+    {
+      "page_number": "008",
+      "page_name": "中国新闻",
+      "page_url": "http://news.hndaily.cn/html/2026-07/09/node_58471.htm",
+      "pdf_url": "http://news.hndaily.cn/resfile/2026-07-09/008/hnrb20260709008.pdf",
+      "articles": [
+        {
+          "item_id": "hndaily-19688223",
+          "title": "书写强军兴军的新时代答卷",
+          "page_sequence": 1,
+          "detail_path": "/items/2026-07-09/hndaily-19688223/"
+        }
+      ]
+    }
+  ]
+}
