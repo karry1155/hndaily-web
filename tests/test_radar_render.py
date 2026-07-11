@@ -25,6 +25,18 @@ class RadarRenderTests(unittest.TestCase):
         self.assertIn(".radar-shell { grid-template-columns: 216px minmax(0, 1fr); }", css)
         self.assertIn(".ai-summary { margin: 28px 0; padding: 20px; background: var(--panel); }", css)
 
+    def test_final_visual_cascade_preserves_ranking_responsive_sidebar_and_light_tabs(self):
+        css = (Path(__file__).resolve().parents[1] / "src/static/styles.css").read_text(encoding="utf-8")
+        marker = css.index("/* HN·HOT final visual cascade. */")
+        final = css[marker:]
+        self.assertIn(".focus-rank-1 { color: #f17888; }", final)
+        self.assertIn(".focus-rank-2 { color: #e5b936; }", final)
+        self.assertIn(".focus-rank-3 { color: #38c7df; }", final)
+        self.assertIn(".focus-rank-4 { color: #71839b; }", final)
+        self.assertIn("@media (min-width: 761px) and (max-width: 1180px)", final)
+        self.assertIn('html[data-theme="light"] .category-tabs', final)
+        self.assertIn('html[data-theme="light"] .category-tabs a.active', final)
+
     def test_all_view_renders_focus_and_title_only_public_fields(self):
         item = stored_item(1, title="科技见习 <计划>", summary="摘要 <script>x</script>")
         summary = {
@@ -35,6 +47,8 @@ class RadarRenderTests(unittest.TestCase):
         }
         rendered = render_index({"page": 1, "page_count": 1, "items": [summary]}, {"updated_through": "2026-07-10", "items": [{**summary, "focus_rank": 1}]}, "全部")
         self.assertIn("当下重点", rendered)
+        self.assertIn("<h1>精选</h1>", rendered)
+        self.assertIn("更新至 2026-07-10", rendered)
         self.assertIn("科技见习 &lt;计划&gt;", rendered)
         self.assertNotIn("<script>", rendered)
         self.assertNotIn("最终分", rendered)

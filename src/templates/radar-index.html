@@ -1,8 +1,10 @@
 <div class="app-shell radar-shell">
   $nav
   <main class="content-shell radar-content" data-search-scope="selected">
-    <header class="radar-header"><h1>$view_title</h1></header>
-    <section class="content-tools"><nav class="category-tabs" aria-label="精选分类">$category_links</nav><label class="search-box"><span class="sr-only">搜索精选标题</span><input type="search" data-search-input="selected" placeholder="搜索标题"></label></section>
+    <section class="content-tools">
+      <header class="radar-header"><h1>$view_title</h1><span>更新至 $updated_through</span></header>
+      <div class="tool-filter-row"><nav class="category-tabs" aria-label="精选分类">$category_links</nav><label class="search-box"><span class="sr-only">搜索精选标题或摘要</span><input type="search" data-search-input="selected" placeholder="搜索标题或摘要"></label></div>
+    </section>
     $focus_section
     <section class="radar-feed">$date_groups</section>
     <p class="empty-state" data-search-empty hidden>没有匹配结果</p>

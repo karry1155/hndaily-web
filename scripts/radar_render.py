@@ -128,7 +128,7 @@ def render_index(index, focus, active_category):
     updated = focus.get("updated_through") if focus else max((item["published_date"] for item in index["items"]), default="—")
     return _template("radar-index.html").safe_substitute(
         nav=render_primary_nav("精选"), category_links=links,
-        view_title=html.escape(active_category), updated_through=html.escape(updated),
+        view_title=html.escape("精选" if active_category == "全部" else active_category), updated_through=html.escape(updated),
         focus_section=focus_section, date_groups="".join(groups), pagination=pagination,
     )
 
