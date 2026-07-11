@@ -4,9 +4,28 @@ from pathlib import Path
 
 from scripts.radar_store import commit_generation, load_items
 from tests.radar_fixtures import stored_item
+from scripts.radar_issue import build_public_issue
+from scripts.radar_adapter import adapt_hndaily
+from scripts.radar_model import build_model_input, validate_model_output
+from scripts.radar_scoring import score_semantic
+from tests.radar_fixtures import model_output_for, raw_issue
 
 
 class RadarStoreTests(unittest.TestCase):
+    def _issue(self):
+        raw = raw_issue(article_count=2)
+        candidates, _ = adapt_hndaily(raw)
+        model_input = build_model_input(candidates)
+        semantic = validate_model_output(model_input, model_output_for(model_input), candidates)
+        return build_public_issue(raw, candidates, semantic, [score_semantic(item) for item in semantic])
+
+    def test_stores_public_issue_and_issue_items(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            issue, issue_items = self._issue()
+            commit_generation(root, [], {}, {"2026-07-08"}, issues=[issue], issue_items=issue_items)
+            self.assertTrue((root / "issues/2026-07-08.json").is_file())
+            self.assertEqual(len(list((root / "issue-items/2026-07-08").glob("*.json"))), 2)
     def test_same_item_id_is_upserted_without_duplicate(self):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)

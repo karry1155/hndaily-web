@@ -22,13 +22,33 @@ def _summary(item: dict[str, Any]) -> dict[str, Any]:
         "published_date": item["published_date"],
         "daily_rank": item["daily_rank"],
         "category": item["category"],
-        "source": item["block"]["source"],
         "title": item["block"]["title"],
-        "ai_summary": item["block"]["ai_summary"],
         "detail_path": (
             f"/items/{item['published_date']}/{item['item_id']}/"
         ),
     }
+
+
+def build_search_indexes(selected_items, issue_items):
+    def rows(values):
+        return [
+            {
+                "item_id": item["item_id"],
+                "published_date": item["published_date"],
+                "title": item["block"]["title"],
+                "detail_path": f'/items/{item["published_date"]}/{item["item_id"]}/',
+            }
+            for item in values
+        ]
+    return {
+        "search-selected.json": {"items": rows(selected_items)},
+        "search-issues.json": {"items": rows(issue_items)},
+    }
+
+
+def build_issue_date_index(issues):
+    dates = sorted((issue["date"] for issue in issues), reverse=True)
+    return {"latest_date": dates[0] if dates else None, "dates": dates}
 
 
 def _pages(prefix, values, page_size, stem="page"):

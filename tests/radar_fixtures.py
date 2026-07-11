@@ -157,6 +157,25 @@ def stored_item(
     }
 
 
+def public_issue_item(index, date="2026-07-10", title=None):
+    return {
+        "schema_version": 3,
+        "item_id": f"issue-{index:03d}",
+        "published_date": date,
+        "collected_date": date,
+        "page_number": "001",
+        "page_name": "头版",
+        "page_sequence": index,
+        "block": {
+            "source": "海南日报",
+            "title": title or f"全部标题 {index}",
+            "content": f"全部正文 {index}",
+            "ai_summary": f"摘要 {index}",
+            "original_url": f"https://example.test/issues/{index}",
+        },
+    }
+
+
 def write_content_library(root: Path, count: int, include_weekly_fixture=False):
     from scripts.radar_indexes import build_indexes
 

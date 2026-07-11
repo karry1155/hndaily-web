@@ -10,11 +10,16 @@ if __package__ in (None, ""):
 
 from scripts.radar_adapter import adapt_hndaily
 from scripts.radar_contract import PROMPT_VERSION, SCHEMA_VERSION, ContractError
-from scripts.radar_indexes import build_indexes
+from scripts.radar_indexes import (
+    build_indexes, build_issue_date_index, build_search_indexes,
+)
+from scripts.radar_issue import build_public_issue
 from scripts.radar_model import build_model_input, validate_model_output
 from scripts.radar_scoring import score_semantic
 from scripts.radar_select import select_items
-from scripts.radar_store import commit_generation, load_items
+from scripts.radar_store import (
+    commit_generation, load_issue_items, load_issues, load_items,
+)
 
 
 class FinalizeError(ValueError):
@@ -22,6 +27,13 @@ class FinalizeError(ValueError):
 
 
 def build_items(raw, model_input, model_output):
+    selected, _issue, _issue_items, audit = build_generation(
+        raw, model_input, model_output
+    )
+    return selected, audit
+
+
+def build_generation(raw, model_input, model_output):
     candidates, prefilter = adapt_hndaily(raw)
     expected_input = build_model_input(candidates)
     if model_input != expected_input:
@@ -53,8 +65,11 @@ def build_items(raw, model_input, model_output):
                 },
             }
         )
+    issue, issue_items = build_public_issue(
+        raw, candidates, semantic_items, scored
+    )
     selected, decisions = select_items(scored)
-    return selected, {
+    return selected, issue, issue_items, {
         "schema_version": SCHEMA_VERSION,
         "published_date": raw["date"],
         "input_fingerprint": model_input["input_fingerprint"],
@@ -74,7 +89,9 @@ def _write_json_atomic(path, value):
 
 def finalize_to_store(raw, model_input, model_output, content_root, audit_path, as_of):
     try:
-        incoming, audit = build_items(raw, model_input, model_output)
+        incoming, issue, issue_items, audit = build_generation(
+            raw, model_input, model_output
+        )
         existing = load_items(content_root)
         source = str(raw.get("source", "")).strip()
         published_date = raw.get("date")
@@ -105,8 +122,23 @@ def finalize_to_store(raw, model_input, model_output, content_root, audit_path, 
                     }
                 )
         audit["replaced_items"] = replaced
+        existing_issues = load_issues(content_root)
+        merged_issues = [
+            value for value in existing_issues
+            if value["date"] != published_date
+        ] + [issue]
+        existing_issue_items = load_issue_items(content_root)
+        merged_issue_items = [
+            value for value in existing_issue_items
+            if value["published_date"] != published_date
+        ] + issue_items
         indexes = build_indexes(merged, as_of)
-        commit_generation(content_root, merged, indexes, {published_date})
+        indexes.update(build_search_indexes(merged, merged_issue_items))
+        indexes["issues.json"] = build_issue_date_index(merged_issues)
+        commit_generation(
+            content_root, merged, indexes, {published_date},
+            issues=[issue], issue_items=issue_items,
+        )
         _write_json_atomic(audit_path, audit)
         return audit
     except FinalizeError:

@@ -28,6 +28,26 @@ class FinalizeRadarTests(unittest.TestCase):
             finalize_to_store(raw, model_input, model_output_for(model_input, 9), Path(tmp), Path(tmp) / "audit.json", "2026-07-10")
             self.assertEqual(len(load_items(Path(tmp))), 11)
 
+    def test_every_scored_candidate_is_published_to_full_issue(self):
+        raw = raw_issue(article_count=3)
+        candidates, _ = adapt_hndaily(raw)
+        model_input = build_model_input(candidates)
+        output = model_output_for(model_input, 9)
+        output["items"][2]["hainan_relevance"] = 0
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            finalize_to_store(raw, model_input, output, root, root / "audit.json", "2026-07-10")
+            issue = json.loads((root / "issues/2026-07-08.json").read_text(encoding="utf-8"))
+            self.assertEqual(issue["scored_article_count"], 3)
+            self.assertEqual(len(list((root / "issue-items/2026-07-08").glob("*.json"))), 3)
+            self.assertEqual(len(load_items(root)), 2)
+            selected_search = json.loads((root / "indexes/search-selected.json").read_text(encoding="utf-8"))
+            issue_search = json.loads((root / "indexes/search-issues.json").read_text(encoding="utf-8"))
+            issue_dates = json.loads((root / "indexes/issues.json").read_text(encoding="utf-8"))
+            self.assertEqual(len(selected_search["items"]), 2)
+            self.assertEqual(len(issue_search["items"]), 3)
+            self.assertEqual(issue_dates["latest_date"], "2026-07-08")
+
     def test_replacement_is_recorded_in_audit(self):
         raw = raw_issue()
         candidates, _ = adapt_hndaily(raw)
