@@ -81,7 +81,7 @@ def _nav_icon(label):
     return f'<svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true">{paths}</svg>'
 
 
-def render_primary_nav(active):
+def render_primary_nav(active, mobile_meta=""):
     def links(items):
         result = []
         for label, path in items:
@@ -90,6 +90,7 @@ def render_primary_nav(active):
         return "".join(result)
     return (
         '<aside class="primary-nav"><a class="brand" href="/">HN·HOT</a>'
+        f'{mobile_meta}'
         '<button class="nav-toggle" type="button" aria-expanded="false">菜单</button>'
         f'<div class="nav-body"><span class="nav-label">内容</span><nav>{links(NAV_ITEMS)}</nav>'
         f'<span class="nav-label">更多</span><nav>{links(MORE_ITEMS)}</nav>'
@@ -116,7 +117,7 @@ def render_index(index, focus, active_category):
             if current is not None:
                 groups.append("</div></section>")
             current = item["published_date"]
-            groups.append(f'<section class="date-group" data-search-group><h2>{html.escape(current)}</h2><div class="title-list">')
+            groups.append(f'<section class="date-group" data-search-group><h2>{html.escape(current)} 精选</h2><div class="title-list">')
         groups.append(_selected_row(item, show_summary=True))
     if current is not None:
         groups.append("</div></section>")
@@ -127,7 +128,7 @@ def render_index(index, focus, active_category):
     pagination = "" if pages <= 1 else f'<span>第 {page} / {pages} 页</span>'
     updated = focus.get("updated_through") if focus else max((item["published_date"] for item in index["items"]), default="—")
     return _template("radar-index.html").safe_substitute(
-        nav=render_primary_nav("精选"), category_links=links,
+        nav=render_primary_nav("精选", f'<span class="mobile-updated">更新至 {html.escape(updated)}</span>'), category_links=links,
         view_title=html.escape("精选" if active_category == "全部" else active_category), updated_through=html.escape(updated),
         focus_section=focus_section, date_groups="".join(groups), pagination=pagination,
     )

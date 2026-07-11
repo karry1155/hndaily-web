@@ -169,6 +169,75 @@ html[data-theme="light"] .selected-row:hover { background: linear-gradient(90deg
   .category-tabs a { flex: 0 0 auto; }
 }
 
+/* HN·HOT mobile layout. */
+.mobile-updated { display: none; }
+@media (max-width: 760px) {
+  body { padding-bottom: 70px; }
+  .radar-shell .primary-nav {
+    position: sticky;
+    top: 0;
+    z-index: 30;
+    min-height: 64px;
+    padding: 12px 18px;
+    background: var(--bg-elevated);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+  }
+  .radar-shell .brand { justify-content: flex-start; width: auto; font-size: 20px; }
+  .mobile-updated { display: block; margin-left: auto; color: var(--muted); font-size: 12px; white-space: nowrap; }
+  .radar-shell .nav-toggle { display: none; }
+  .radar-shell .nav-body,
+  .radar-shell .primary-nav.nav-open .nav-body {
+    position: fixed;
+    inset: auto 0 0;
+    z-index: 40;
+    display: block;
+    padding: 7px 10px max(7px, env(safe-area-inset-bottom));
+    border: 0;
+    border-top: 1px solid var(--line);
+    background: color-mix(in srgb, var(--bg-elevated) 94%, transparent);
+    box-shadow: 0 -10px 30px rgba(16,24,40,.08);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+  }
+  .radar-shell .nav-label,
+  .radar-shell .nav-body nav:nth-of-type(2),
+  .radar-shell .theme-switch { display: none; }
+  .radar-shell .nav-body nav:first-of-type {
+    display: grid;
+    grid-template-columns: repeat(4,minmax(0,1fr));
+    gap: 4px;
+  }
+  .radar-shell .nav-body nav:first-of-type a {
+    display: flex;
+    min-width: 0;
+    padding: 3px 2px;
+    border: 0;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2px;
+    color: var(--muted);
+    background: transparent;
+    box-shadow: none;
+    font-size: 11px;
+    text-align: center;
+  }
+  .radar-shell .nav-body nav:first-of-type a.active { color: var(--accent); }
+  .radar-shell .nav-body .nav-icon { width: 21px; height: 21px; }
+  .radar-content { display: flex; flex-direction: column; padding-top: 16px; }
+  .radar-content .focus-section { order: 1; }
+  .radar-content .content-tools { order: 2; }
+  .radar-content .radar-feed { order: 3; }
+  .radar-content .empty-state { order: 4; }
+  .radar-content .pagination { order: 5; }
+  .radar-content .search-box { display: none; }
+  .content-tools .radar-header { margin-bottom: 8px; padding-bottom: 8px; }
+  .content-tools .radar-header h1 { font-size: 17px; }
+  .content-tools .radar-header span { display: none; }
+  .focus-section { margin-bottom: 14px; }
+  .date-group h2 { font-size: 15px; }
+}
+
 /* HN·HOT final visual cascade. Keep this block after legacy digest rules. */
 .content-tools {
   display: block;
@@ -895,6 +964,35 @@ html[data-theme="light"] .primary-nav { background: rgba(255,255,255,.94); }
 }
 
 /* HN·HOT EOF cascade anchor. */
+.mobile-updated { display: none; }
+@media (max-width: 760px) {
+  body { padding-bottom: 70px; }
+  .radar-shell .primary-nav { position: sticky; top: 0; z-index: 30; min-height: 64px; padding: 12px 18px; background: var(--bg-elevated); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); }
+  .radar-shell .brand { justify-content: flex-start; width: auto; font-size: 20px; }
+  .mobile-updated { display: block; margin-left: auto; color: var(--muted); font-size: 12px; white-space: nowrap; }
+  .radar-shell .nav-toggle { display: none; }
+  .radar-shell .nav-body,
+  .radar-shell .primary-nav.nav-open .nav-body { position: fixed; inset: auto 0 0; z-index: 40; display: block; padding: 7px 10px max(7px,env(safe-area-inset-bottom)); border: 0; border-top: 1px solid var(--line); background: color-mix(in srgb,var(--bg-elevated) 94%,transparent); box-shadow: 0 -10px 30px rgba(16,24,40,.08); backdrop-filter: blur(24px); -webkit-backdrop-filter: blur(24px); }
+  .radar-shell .nav-label,
+  .radar-shell .nav-body nav:nth-of-type(2),
+  .radar-shell .theme-switch { display: none; }
+  .radar-shell .nav-body nav:first-of-type { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 4px; }
+  .radar-shell .nav-body nav:first-of-type a { display: flex; min-width: 0; padding: 3px 2px; border: 0; flex-direction: column; justify-content: center; gap: 2px; color: var(--muted); background: transparent; box-shadow: none; font-size: 11px; text-align: center; }
+  .radar-shell .nav-body nav:first-of-type a.active { color: var(--accent); }
+  .radar-shell .nav-body .nav-icon { width: 21px; height: 21px; }
+  .radar-content { display: flex; flex-direction: column; padding-top: 16px; }
+  .radar-content .focus-section { order: 1; }
+  .radar-content .content-tools { order: 2; }
+  .radar-content .radar-feed { order: 3; }
+  .radar-content .empty-state { order: 4; }
+  .radar-content .pagination { order: 5; }
+  .radar-content .search-box { display: none; }
+  .content-tools .radar-header { margin-bottom: 8px; padding-bottom: 8px; }
+  .content-tools .radar-header h1 { font-size: 17px; }
+  .content-tools .radar-header span { display: none; }
+  .focus-section { margin-bottom: 14px; }
+  .date-group h2 { font-size: 15px; }
+}
 /* HN·HOT final visual cascade. */
 .content-tools { display: block; margin: 0 0 18px; padding: 17px 20px 15px; border-radius: 16px; }
 .content-tools .radar-header { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin: 0 0 13px; padding-bottom: 12px; border-bottom: 1px solid var(--line-soft); }

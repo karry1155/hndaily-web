@@ -49,6 +49,8 @@ class RadarRenderTests(unittest.TestCase):
         self.assertIn("当下重点", rendered)
         self.assertIn("<h1>精选</h1>", rendered)
         self.assertIn("更新至 2026-07-10", rendered)
+        self.assertIn('<span class="mobile-updated">更新至 2026-07-10</span>', rendered)
+        self.assertIn("<h2>2026-07-10 精选</h2>", rendered)
         self.assertIn("科技见习 &lt;计划&gt;", rendered)
         self.assertNotIn("<script>", rendered)
         self.assertNotIn("最终分", rendered)
@@ -56,6 +58,16 @@ class RadarRenderTests(unittest.TestCase):
         self.assertIn('data-search-scope="selected"', rendered)
         self.assertIn("focus-rank-1", rendered)
         self.assertIn("data-star-id", rendered)
+
+    def test_mobile_home_uses_bottom_navigation_focus_first_and_hides_search(self):
+        css = (Path(__file__).resolve().parents[1] / "src/static/styles.css").read_text(encoding="utf-8")
+        marker = css.index("/* HN·HOT mobile layout. */")
+        mobile = css[marker:]
+        self.assertIn("position: fixed", mobile)
+        self.assertIn("bottom: 0", mobile)
+        self.assertIn(".radar-content .focus-section { order: 1; }", mobile)
+        self.assertIn(".radar-content .content-tools { order: 2; }", mobile)
+        self.assertIn(".radar-content .search-box { display: none; }", mobile)
 
     def test_formal_category_hides_focus(self):
         rendered = render_index({"page": 1, "page_count": 1, "items": []}, None, "民生")
