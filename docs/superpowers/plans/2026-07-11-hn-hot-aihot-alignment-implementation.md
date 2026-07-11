@@ -698,3 +698,33 @@ Expected: only known local audit screenshots under ignored or intentionally untr
 Run: `git log -7 --oneline`
 
 Expected: one focused commit per completed task.
+
+---
+
+### Task 8: Premium Glass, Summaries, Focus Colors, and Local Favorites
+
+**Files:**
+- Modify: `scripts/radar_indexes.py`
+- Modify: `scripts/radar_render.py`
+- Modify: `src/templates/radar-index.html`
+- Create: `src/templates/starred.html`
+- Modify: `src/static/styles.css`
+- Modify: `src/static/app.js`
+- Modify: `tests/test_radar_indexes.py`
+- Modify: `tests/test_radar_render.py`
+- Modify: `tests/test_radar_site_build.py`
+
+**Interfaces:**
+- Selected index rows expose `ai_summary` for date rows while focus rendering ignores it.
+- Favorite buttons use `data-star-id`, `data-star-title`, `data-star-summary`, `data-star-date`, and `data-star-path`.
+- Browser persistence uses `localStorage["hn-hot-starred"]` as a JSON array of item IDs.
+- `/starred/` renders saved items client-side from embedded selected search data.
+
+- [ ] Write failing index, render, route, and static-asset contract tests.
+- [ ] Verify failures are caused by missing summaries, rank classes, favorite controls, and `/starred/`.
+- [ ] Restore `ai_summary` to selected indexes and render title/summary date rows.
+- [ ] Render four rank color classes and bookmark buttons without changing focus title-only behavior.
+- [ ] Add `/starred/`, sidebar navigation, local persistence, toggle state, and empty state.
+- [ ] Replace the dark theme surface hierarchy with approved Premium Glass tokens and restrained transitions.
+- [ ] Run focused tests, full real-data tests, static build, and desktop/mobile browser comparison.
+- [ ] Commit the revision as one independently verified UI feature.
