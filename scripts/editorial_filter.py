@@ -92,6 +92,8 @@ def evaluate_issue(raw: dict[str, Any]) -> list[dict[str, Any]]:
                 "candidate_id": f"A{index:03d}",
                 "page": page_number.strip(),
                 "page_name": page_name.strip(),
+                "page_url": page.get("page_url"),
+                "pdf_url": page.get("pdf_url"),
                 "seq": article.get("seq"),
                 "original_title": title.strip(),
                 "url": url.strip(),

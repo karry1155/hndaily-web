@@ -23,6 +23,11 @@ SOURCE_CANDIDATE_FIELDS = {
     "original_url",
     "published_date",
     "collected_date",
+    "page_number",
+    "page_name",
+    "page_url",
+    "pdf_url",
+    "page_sequence",
 }
 BLOCK_FIELDS = {"source", "title", "content", "ai_summary", "original_url"}
 OPPORTUNITY_FIELDS = {
@@ -88,12 +93,21 @@ def validate_http_url(value: Any, location: str) -> str:
 
 def validate_source_candidate(candidate: dict[str, Any]) -> None:
     require_exact_fields(candidate, SOURCE_CANDIDATE_FIELDS, "source candidate")
-    for field in ("candidate_id", "item_id", "source", "title", "content"):
+    for field in (
+        "candidate_id", "item_id", "source", "title", "content",
+        "page_number", "page_name",
+    ):
         if not non_empty(candidate.get(field)):
             raise ContractError(f"source candidate.{field} is required")
     validate_http_url(
         candidate.get("original_url"), "source candidate.original_url"
     )
+    if not candidate["page_number"].isdigit() or len(candidate["page_number"]) != 3:
+        raise ContractError("source candidate.page_number is invalid")
+    if type(candidate.get("page_sequence")) is not int or candidate["page_sequence"] < 1:
+        raise ContractError("source candidate.page_sequence is invalid")
+    validate_http_url(candidate.get("page_url"), "source candidate.page_url")
+    validate_http_url(candidate.get("pdf_url"), "source candidate.pdf_url")
     validate_iso_date(
         candidate.get("published_date"), "source candidate.published_date"
     )

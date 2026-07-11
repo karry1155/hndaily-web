@@ -42,6 +42,11 @@ def adapt_hndaily(
             "original_url": record["url"],
             "published_date": published_date,
             "collected_date": collected_date,
+            "page_number": record["page"],
+            "page_name": record["page_name"],
+            "page_url": record["page_url"],
+            "pdf_url": record["pdf_url"],
+            "page_sequence": record["seq"],
         }
         validate_source_candidate(candidate)
         candidates.append(candidate)
