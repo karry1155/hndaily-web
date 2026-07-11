@@ -41,8 +41,44 @@ def _title_row(item, rank=None):
     )
 
 
-NAV_ITEMS = (("精选", "/"), ("全部信息", "/all/"), ("AI 日报", "/daily/"))
+def _bookmark_button(item):
+    return (
+        f'<button class="bookmark-button" type="button" aria-label="收藏 {html.escape(item["title"], quote=True)}" '
+        f'data-star-id="{html.escape(item["item_id"], quote=True)}" '
+        f'data-star-title="{html.escape(item["title"], quote=True)}" '
+        f'data-star-summary="{html.escape(item.get("ai_summary", ""), quote=True)}" '
+        f'data-star-date="{html.escape(item["published_date"], quote=True)}" '
+        f'data-star-path="{html.escape(item["detail_path"], quote=True)}">'
+        '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3.75A1.75 1.75 0 0 1 7.75 2h8.5A1.75 1.75 0 0 1 18 3.75v17l-6-3.75-6 3.75z"/></svg></button>'
+    )
+
+
+def _selected_row(item, rank=None, show_summary=False):
+    rank_markup = "" if rank is None else f'<span class="title-rank focus-rank-{rank}">{rank}</span>'
+    summary = f'<p>{html.escape(item.get("ai_summary", ""))}</p>' if show_summary else ""
+    return (
+        f'<article class="selected-row" data-search-title="{html.escape(item["title"], quote=True)}">'
+        f'{rank_markup}<a href="{html.escape(item["detail_path"], quote=True)}"><strong>{html.escape(item["title"])}</strong>{summary}</a>'
+        f'{_bookmark_button(item)}</article>'
+    )
+
+
+NAV_ITEMS = (("精选", "/"), ("全部信息", "/all/"), ("AI 日报", "/daily/"), ("收藏", "/starred/"))
 MORE_ITEMS = (("关于", "/about/"), ("更新日志", "/changelog/"))
+
+NAV_ICON_PATHS = {
+    "精选": '<path d="m12 3 1.4 4.1L17.5 8.5l-4.1 1.4L12 14l-1.4-4.1-4.1-1.4 4.1-1.4z"/><path d="m18 14 .8 2.2L21 17l-2.2.8L18 20l-.8-2.2L15 17l2.2-.8z"/>',
+    "全部信息": '<path d="M8 6h13M8 12h13M8 18h13"/><path d="M3 6h.01M3 12h.01M3 18h.01"/>',
+    "AI 日报": '<path d="M6 2h9l4 4v16H6z"/><path d="M14 2v5h5M9 13h6M9 17h4"/>',
+    "收藏": '<path d="M6 3.75A1.75 1.75 0 0 1 7.75 2h8.5A1.75 1.75 0 0 1 18 3.75v17l-6-3.75-6 3.75z"/>',
+    "关于": '<circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/>',
+    "更新日志": '<path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5M12 7v5l3 2"/>',
+}
+
+
+def _nav_icon(label):
+    paths = NAV_ICON_PATHS[label]
+    return f'<svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true">{paths}</svg>'
 
 
 def render_primary_nav(active):
@@ -50,7 +86,7 @@ def render_primary_nav(active):
         result = []
         for label, path in items:
             current = ' class="active" aria-current="page"' if label == active else ""
-            result.append(f'<a href="{path}"{current}>{label}</a>')
+            result.append(f'<a href="{path}"{current}>{_nav_icon(label)}<span>{label}</span></a>')
         return "".join(result)
     return (
         '<aside class="primary-nav"><a class="brand" href="/">HN·HOT</a>'
@@ -72,7 +108,7 @@ def render_index(index, focus, active_category):
         links += f'<a href="{path}"{active}>{name}</a>'
     focus_section = ""
     if focus is not None:
-        focus_section = '<section class="focus-section"><div class="section-heading"><h2>当下重点</h2></div><div class="title-list">' + "".join(_title_row(item, item["focus_rank"]) for item in focus["items"]) + "</div></section>"
+        focus_section = '<section class="focus-section glass-panel"><div class="section-heading"><h2>当下重点</h2></div><div class="title-list">' + "".join(_selected_row(item, item["focus_rank"]) for item in focus["items"]) + "</div></section>"
     groups = []
     current = None
     for item in index["items"]:
@@ -81,7 +117,7 @@ def render_index(index, focus, active_category):
                 groups.append("</div></section>")
             current = item["published_date"]
             groups.append(f'<section class="date-group" data-search-group><h2>{html.escape(current)}</h2><div class="title-list">')
-        groups.append(_title_row(item))
+        groups.append(_selected_row(item, show_summary=True))
     if current is not None:
         groups.append("</div></section>")
     if not groups:
@@ -232,6 +268,9 @@ def build_site(content_root, site_root):
             _write(staging / f"items/{item['published_date']}/{item['item_id']}/index.html", render_item(item))
         _write(staging / "about/index.html", _template("about.html").safe_substitute(nav=render_primary_nav("关于")))
         _write(staging / "changelog/index.html", _template("changelog.html").safe_substitute(nav=render_primary_nav("更新日志")))
+        search_selected = _read(content_root / "indexes/search-selected.json")
+        catalog = json.dumps(search_selected.get("items", []), ensure_ascii=False).replace("<", "\\u003c")
+        _write(staging / "starred/index.html", _template("starred.html").safe_substitute(nav=render_primary_nav("收藏"), catalog=catalog))
         daily = [_read(path) for path in sorted((content_root / "daily").glob("*.json"))]
         if daily:
             report = daily[-1]

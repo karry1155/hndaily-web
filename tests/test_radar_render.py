@@ -17,6 +17,8 @@ class RadarRenderTests(unittest.TestCase):
         self.assertIn('html[data-theme="light"]', css)
         self.assertIn("prefers-color-scheme", base)
         self.assertIn("@media (max-width: 760px)", css)
+        self.assertIn("hn-hot-starred", js)
+        self.assertIn("backdrop-filter", css)
 
     def test_radar_css_overrides_legacy_three_column_shell(self):
         css = (Path(__file__).resolve().parents[1] / "src/static/styles.css").read_text(encoding="utf-8")
@@ -28,7 +30,7 @@ class RadarRenderTests(unittest.TestCase):
         summary = {
             "item_id": item["item_id"], "published_date": item["published_date"],
             "daily_rank": 1, "category": "机会",
-            "title": item["block"]["title"],
+            "title": item["block"]["title"], "ai_summary": item["block"]["ai_summary"],
             "detail_path": f"/items/{item['published_date']}/{item['item_id']}/",
         }
         rendered = render_index({"page": 1, "page_count": 1, "items": [summary]}, {"updated_through": "2026-07-10", "items": [{**summary, "focus_rank": 1}]}, "全部")
@@ -36,8 +38,10 @@ class RadarRenderTests(unittest.TestCase):
         self.assertIn("科技见习 &lt;计划&gt;", rendered)
         self.assertNotIn("<script>", rendered)
         self.assertNotIn("最终分", rendered)
-        self.assertNotIn("摘要", rendered)
+        self.assertEqual(rendered.count("<p>摘要 &lt;script&gt;x&lt;/script&gt;</p>"), 1)
         self.assertIn('data-search-scope="selected"', rendered)
+        self.assertIn("focus-rank-1", rendered)
+        self.assertIn("data-star-id", rendered)
 
     def test_formal_category_hides_focus(self):
         rendered = render_index({"page": 1, "page_count": 1, "items": []}, None, "民生")

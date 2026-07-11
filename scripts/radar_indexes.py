@@ -23,6 +23,7 @@ def _summary(item: dict[str, Any]) -> dict[str, Any]:
         "daily_rank": item["daily_rank"],
         "category": item["category"],
         "title": item["block"]["title"],
+        "ai_summary": item["block"]["ai_summary"],
         "detail_path": (
             f"/items/{item['published_date']}/{item['item_id']}/"
         ),
@@ -36,6 +37,7 @@ def build_search_indexes(selected_items, issue_items):
                 "item_id": item["item_id"],
                 "published_date": item["published_date"],
                 "title": item["block"]["title"],
+                "ai_summary": item["block"]["ai_summary"],
                 "detail_path": f'/items/{item["published_date"]}/{item["item_id"]}/',
             }
             for item in values

@@ -12,14 +12,14 @@ class RadarIndexTests(unittest.TestCase):
         self.assertEqual(len(indexes["all/page-002.json"]["items"]), 1)
         self.assertNotIn("content", str(indexes["all/page-001.json"]))
 
-    def test_selected_indexes_are_title_only(self):
+    def test_selected_indexes_include_summary_for_date_feed(self):
         indexes = build_indexes([stored_item(1, summary="私有摘要")], "2026-07-10")
         row = indexes["all/page-001.json"]["items"][0]
         self.assertEqual(
             set(row),
-            {"item_id", "published_date", "daily_rank", "category", "title", "detail_path"},
+            {"item_id", "published_date", "daily_rank", "category", "title", "ai_summary", "detail_path"},
         )
-        self.assertNotIn("私有摘要", str(indexes))
+        self.assertEqual(row["ai_summary"], "私有摘要")
 
     def test_search_indexes_separate_selected_and_issue_titles(self):
         indexes = build_search_indexes(
