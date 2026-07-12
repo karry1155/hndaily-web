@@ -62,6 +62,14 @@ def _selected_row(item, rank=None):
     reason = html.escape(item.get("recommendation_reason", ""))
     score = item.get("final_score")
     score_label = f"{score:g}" if isinstance(score, (int, float)) else "—"
+    entities = item.get("entities") or {}
+    actor = next((value.get("name") for value in entities.get("actors", []) if value.get("name")), "")
+    location = next((value.get("name") for value in entities.get("locations", []) if value.get("name")), "")
+    entity_label = " · ".join(value for value in (actor, location) if value)
+    entity_markup = (
+        f'<span class="story-entities">{html.escape(entity_label)}</span>'
+        if rank is not None and entity_label else ""
+    )
     search_text = html.escape(
         " ".join((item["title"], item.get("ai_summary", ""), item.get("recommendation_reason", ""))),
         quote=True,
@@ -70,7 +78,7 @@ def _selected_row(item, rank=None):
         f'<article class="selected-story{modifier}" data-selected-id="{html.escape(item["item_id"], quote=True)}" '
         f'data-search-text="{search_text}">'
         f'{rank_markup}<a class="story-main" href="{html.escape(item["detail_path"], quote=True)}">'
-        f'<strong class="story-title">{title}</strong>'
+        f'<strong class="story-title">{title}</strong>{entity_markup}'
         f'<p class="story-summary">{summary}</p>'
         f'<p class="story-reason"><span>推荐理由：</span>{reason}</p></a>'
         f'<div class="story-actions"><span class="story-score" title="最终分">{score_label}</span>'
@@ -345,6 +353,11 @@ def build_site(content_root, site_root):
                 continue
             _write(staging / f"items/{item['published_date']}/{item['item_id']}/index.html", render_item(item))
         _write(staging / "about/index.html", _template("about.html").safe_substitute(nav=render_primary_nav("关于")))
+        scoring_audit = ROOT / "docs/scoring-system-audit.html"
+        if scoring_audit.is_file():
+            target = staging / "scoring-audit/index.html"
+            target.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copy2(scoring_audit, target)
         _write(staging / "changelog/index.html", _template("changelog.html").safe_substitute(nav=render_primary_nav("更新日志")))
         search_selected = _read(content_root / "indexes/search-selected.json")
         catalog = json.dumps(search_selected.get("items", []), ensure_ascii=False).replace("<", "\\u003c")

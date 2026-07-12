@@ -16,8 +16,8 @@ class RadarRenderTests(unittest.TestCase):
         self.assertIn("data-search-input", js)
         self.assertIn('html[data-theme="light"]', css)
         self.assertIn("prefers-color-scheme", base)
-        self.assertIn("styles.css?v=20260712-3", base)
-        self.assertIn("app.js?v=20260712-3", base)
+        self.assertIn("styles.css?v=20260712-4", base)
+        self.assertIn("app.js?v=20260712-4", base)
         self.assertIn("@media (max-width: 760px)", css)
         self.assertIn("hn-hot-starred", js)
         self.assertIn("backdrop-filter", css)
@@ -49,6 +49,7 @@ class RadarRenderTests(unittest.TestCase):
             "title": item["block"]["title"], "ai_summary": item["block"]["ai_summary"],
             "recommendation_reason": item["block"]["recommendation_reason"],
             "final_score": item["final_score"],
+            "entities": {"actors":[{"name":"冯飞","type":"person","role":"省委书记","evidence":"冯飞"}],"locations":[{"location_id":"hainan-sansha","name":"三沙市","code":"460300","level":"prefecture","evidence":"三沙市"}],"action":"调研","action_evidence":"调研"},
             "detail_path": f"/items/{item['published_date']}/{item['item_id']}/",
         }
         manifest = {"dates": ["2026-07-10"], "feeds": ["/static/selected-feed/2026-07-10.json"]}
@@ -71,6 +72,7 @@ class RadarRenderTests(unittest.TestCase):
         self.assertIn("7月10日 · 周五", rendered)
         self.assertIn('data-search-scope="selected"', rendered)
         self.assertIn("focus-rank-1", rendered)
+        self.assertIn('class="story-entities">冯飞 · 三沙市</span>', rendered)
         self.assertIn("data-star-id", rendered)
         self.assertNotIn("pagination", rendered)
 
@@ -97,6 +99,7 @@ class RadarRenderTests(unittest.TestCase):
         self.assertIn("-webkit-line-clamp: 2", mobile)
         self.assertIn("grid-template-columns: 28px minmax(0, 1fr) 68px", mobile)
         self.assertIn("backdrop-filter: none", mobile)
+        self.assertIn("align-items: center", mobile)
         self.assertIn("background: var(--rank-1)", mobile)
         self.assertIn(".story-list { border: 0", mobile)
 
@@ -115,7 +118,7 @@ class RadarRenderTests(unittest.TestCase):
 
     def test_issue_page_links_page_pdf_and_local_articles(self):
         issue = {
-            "schema_version": 4, "source": "海南日报",
+            "schema_version": 5, "source": "海南日报",
             "date": "2026-07-08", "page_count": 2, "scored_article_count": 1,
             "pages": [
                 {"page_number": "001", "page_name": "头版", "page_url": "https://example.test/page-001", "pdf_url": "https://example.test/page-001.pdf", "articles": [{"item_id": "hndaily-1", "title": "头版文章", "page_sequence": 1, "detail_path": "/items/2026-07-08/hndaily-1/"}]},

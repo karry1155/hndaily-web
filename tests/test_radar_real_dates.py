@@ -15,7 +15,7 @@ class RadarRealDateTests(unittest.TestCase):
         for published_date in ("2026-07-08", "2026-07-09"):
             for path in (ROOT / "content/items" / published_date).glob("*.json"):
                 item = json.loads(path.read_text(encoding="utf-8"))
-                self.assertEqual(item["schema_version"], 4)
+                self.assertEqual(item["schema_version"], 5)
                 reason = item["block"]["recommendation_reason"].strip()
                 summary = item["block"]["ai_summary"].strip()
                 self.assertTrue(reason)

@@ -4,8 +4,8 @@ from datetime import date
 from typing import Any
 from urllib.parse import urlparse
 
-SCHEMA_VERSION = 4
-PROMPT_VERSION = "radar-v2"
+SCHEMA_VERSION = 5
+PROMPT_VERSION = "radar-v3"
 CATEGORIES = ("机会", "民生", "产业", "政策", "城市", "观察")
 SCORE_FIELDS = (
     "hainan_relevance",
@@ -51,6 +51,7 @@ STORED_ITEM_FIELDS = {
     "daily_rank",
     "unselected_reason",
     "opportunity",
+    "entities",
     "block",
 }
 
@@ -211,3 +212,16 @@ def validate_stored_item(item: dict[str, Any]) -> None:
             raise ContractError("ongoing opportunity evidence is required")
     elif any(value is not None for value in deadline_values):
         raise ContractError("non-dated opportunity fields must be null")
+    entities = item.get("entities")
+    if not isinstance(entities, dict) or set(entities) != {"actors", "locations", "action", "action_evidence"}:
+        raise ContractError("stored item.entities is invalid")
+    if not isinstance(entities["actors"], list) or not isinstance(entities["locations"], list):
+        raise ContractError("stored item entity lists are invalid")
+    for actor in entities["actors"]:
+        if not isinstance(actor, dict) or set(actor) != {"name", "type", "role", "evidence"}:
+            raise ContractError("stored item actor is invalid")
+    for location in entities["locations"]:
+        if not isinstance(location, dict) or set(location) != {"location_id", "name", "code", "level", "evidence"}:
+            raise ContractError("stored item location is invalid")
+    if not isinstance(entities["action"], str) or not isinstance(entities["action_evidence"], str):
+        raise ContractError("stored item action is invalid")

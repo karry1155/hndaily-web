@@ -20,7 +20,7 @@ class RadarIndexTests(unittest.TestCase):
         row = indexes["all/page-001.json"]["items"][0]
         self.assertEqual(
             set(row),
-            {"item_id", "published_date", "daily_rank", "category", "title", "ai_summary", "recommendation_reason", "final_score", "detail_path"},
+            {"item_id", "published_date", "daily_rank", "category", "title", "ai_summary", "recommendation_reason", "final_score", "entities", "detail_path"},
         )
         self.assertEqual(row["ai_summary"], "私有摘要")
         self.assertEqual(row["recommendation_reason"], "这条信息揭示海南本地变化。")

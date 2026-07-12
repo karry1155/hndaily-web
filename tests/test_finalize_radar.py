@@ -11,6 +11,22 @@ from tests.radar_fixtures import model_output_for, raw_issue
 
 
 class FinalizeRadarTests(unittest.TestCase):
+    def test_resolves_model_location_to_canonical_stored_entity(self):
+        raw = raw_issue(article_count=1)
+        raw["pages"][0]["articles"][0]["title"] = "三沙调研"
+        raw["pages"][0]["articles"][0]["content"] = "省委书记冯飞在三沙市调研经济社会发展情况。"
+        candidates = adapt_hndaily(raw)[0]
+        model_input = build_model_input(candidates)
+        output = model_output_for(model_input, 9)
+        output["items"][0].update({
+            "actors": [{"name":"冯飞","type":"person","role":"省委书记","evidence":"省委书记冯飞在三沙市调研"}],
+            "location_mentions": [{"location_id":"hainan-sansha","evidence":"三沙市"}],
+            "action": "调研经济社会发展情况",
+            "action_evidence": "调研经济社会发展情况",
+        })
+        items, _ = build_items(raw, model_input, output)
+        self.assertEqual(items[0]["entities"]["locations"][0]["name"], "三沙市")
+        self.assertEqual(items[0]["entities"]["locations"][0]["code"], "460300")
     def test_source_fields_are_injected_from_raw_and_title_is_not_rewritten(self):
         raw = raw_issue()
         candidates, _ = adapt_hndaily(raw)
@@ -63,7 +79,7 @@ class FinalizeRadarTests(unittest.TestCase):
             finalize_to_store(raw, model_input, model_output_for(model_input, 9), root, audit, "2026-07-10")
             payload = json.loads(audit.read_text(encoding="utf-8"))
             self.assertEqual(len(payload["replaced_items"]), 4)
-            self.assertEqual(payload["replaced_items"][0]["previous_schema_version"], 4)
+            self.assertEqual(payload["replaced_items"][0]["previous_schema_version"], 5)
 
     def test_rerun_replaces_only_same_source_and_date_selection(self):
         raw = raw_issue(article_count=2)

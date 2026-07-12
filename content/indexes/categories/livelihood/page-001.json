@@ -11,6 +11,27 @@
       "ai_summary": "本报讯（海南日报全媒体记者李磊）近日，省委书记冯飞在三沙市调研树立和践行正确政绩观学习教育及经济社会发展情况。",
       "recommendation_reason": "事项直接关联居民可感知的服务或权益变化，读者可借“把学习教育成果转化为高质量发展实绩\n坚决守好祖国南大门”判断自身需要关注的时间点和影响。",
       "final_score": 80.0,
+      "entities": {
+        "actors": [
+          {
+            "name": "冯飞",
+            "type": "person",
+            "role": "省委书记",
+            "evidence": "省委书记冯飞在三沙市调研"
+          }
+        ],
+        "locations": [
+          {
+            "location_id": "hainan-sansha",
+            "name": "三沙市",
+            "code": "460300",
+            "level": "prefecture",
+            "evidence": "在三沙市调研"
+          }
+        ],
+        "action": "调研学习教育及经济社会发展情况",
+        "action_evidence": "调研树立和践行正确政绩观学习教育及经济社会发展情况"
+      },
       "detail_path": "/items/2026-07-10/hndaily-19691669/"
     },
     {
@@ -22,6 +43,12 @@
       "ai_summary": "■ 韩慧 暑假在即，“神兽”出笼，“孩子去哪儿”让不少家长发愁。",
       "recommendation_reason": "暑期托管是工薪家庭的高频痛点，文章有助于判断公共服务供给与家庭需求之间的缺口。",
       "final_score": 78.5,
+      "entities": {
+        "actors": [],
+        "locations": [],
+        "action": "",
+        "action_evidence": ""
+      },
       "detail_path": "/items/2026-07-09/hndaily-19688211/"
     },
     {
@@ -33,6 +60,12 @@
       "ai_summary": "■ 李萌 整改整治是学习教育的落脚点，也是检验作风的试金石。",
       "recommendation_reason": "文章点出整改工作最常见的形式主义风险，有助于理解政策执行为何不能止于完成任务。",
       "final_score": 78.5,
+      "entities": {
+        "actors": [],
+        "locations": [],
+        "action": "",
+        "action_evidence": ""
+      },
       "detail_path": "/items/2026-07-08/hndaily-19684646/"
     },
     {
@@ -44,6 +77,12 @@
       "ai_summary": "本报讯 （海南日报全媒体记者周晓梦 通讯员彭怡）近日，由水利部相关单位支持的第七届“节水在身边”全国短视频大赛评选结果揭晓。",
       "recommendation_reason": "获奖作品展示海南节水传播的有效表达方式，也可观察公共议题如何借短视频扩大影响。",
       "final_score": 78.5,
+      "entities": {
+        "actors": [],
+        "locations": [],
+        "action": "",
+        "action_evidence": ""
+      },
       "detail_path": "/items/2026-07-08/hndaily-19684673/"
     },
     {
@@ -55,6 +94,12 @@
       "ai_summary": "本报讯 （海南日报全媒体记者王子豪）7月5日至7月8日，2026年海南省拳击锦标赛暨海南省第七届运动会测试赛在琼海市开赛。",
       "recommendation_reason": "赛事兼具省运会测试功能，可用于判断琼海场馆运行、组织能力和本地体育消费潜力。",
       "final_score": 78.5,
+      "entities": {
+        "actors": [],
+        "locations": [],
+        "action": "",
+        "action_evidence": ""
+      },
       "detail_path": "/items/2026-07-08/hndaily-19684676/"
     }
   ]

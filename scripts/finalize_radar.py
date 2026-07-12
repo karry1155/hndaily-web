@@ -15,6 +15,7 @@ from scripts.radar_indexes import (
 )
 from scripts.radar_issue import build_public_issue
 from scripts.radar_model import build_model_input, validate_model_output
+from scripts.radar_locations import load_location_catalog, resolve_location_mentions
 from scripts.radar_scoring import score_semantic
 from scripts.radar_select import select_items
 from scripts.radar_store import (
@@ -40,6 +41,7 @@ def build_generation(raw, model_input, model_output):
         raise FinalizeError("model input does not match adapted raw candidates")
     semantic_items = validate_model_output(model_input, model_output, candidates)
     scored = []
+    catalog = load_location_catalog()
     for candidate, semantic in zip(candidates, semantic_items):
         scoring = score_semantic(semantic)
         scored.append(
@@ -55,6 +57,20 @@ def build_generation(raw, model_input, model_output):
                     "deadline_date": semantic["deadline_date"],
                     "deadline_text": semantic["deadline_text"],
                     "evidence": semantic["deadline_evidence"],
+                },
+                "entities": {
+                    "actors": semantic["actors"],
+                    "locations": resolve_location_mentions(
+                        semantic["location_mentions"],
+                        find_candidates := next(
+                            row["location_candidates"]
+                            for row in model_input["items"]
+                            if row["candidate_id"] == candidate["candidate_id"]
+                        ),
+                        catalog,
+                    ),
+                    "action": semantic["action"].strip(),
+                    "action_evidence": semantic["action_evidence"].strip(),
                 },
                 "block": {
                     "source": candidate["source"],

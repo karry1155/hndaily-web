@@ -17,6 +17,30 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 class RadarModelTests(unittest.TestCase):
+    def _candidate(self):
+        candidate = adapt_hndaily(raw_issue(article_count=1))[0][0]
+        candidate["title"] = "三沙调研"
+        candidate["content"] = "冯飞在三沙市调研"
+        return candidate
+
+    def test_model_input_limits_locations_to_article_candidates(self):
+        candidates = [self._candidate()]
+        model_input = build_model_input(candidates)
+        self.assertEqual(
+            model_input["items"][0]["location_candidates"],
+            [{"location_id": "hainan-sansha", "name": "三沙市", "level": "prefecture"}],
+        )
+
+    def test_rejects_location_outside_article_candidates(self):
+        candidates = [self._candidate()]
+        model_input = build_model_input(candidates)
+        output = model_output_for(model_input)
+        output["items"][0]["location_mentions"] = [
+            {"location_id": "hainan-sanya", "evidence": "三亚市"}
+        ]
+        with self.assertRaisesRegex(ModelOutputError, "location_id"):
+            validate_model_output(model_input, output, candidates)
+
     def setUp(self):
         self.candidates, _ = adapt_hndaily(raw_issue())
         self.model_input = build_model_input(self.candidates)
@@ -25,7 +49,7 @@ class RadarModelTests(unittest.TestCase):
     def test_input_exposes_only_id_title_and_content(self):
         self.assertEqual(
             set(self.model_input["items"][0]),
-            {"candidate_id", "title", "content"},
+            {"candidate_id", "title", "content", "location_candidates"},
         )
         self.assertNotIn("original_url", str(self.model_input))
 

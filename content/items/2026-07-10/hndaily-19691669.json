@@ -1,5 +1,5 @@
 {
-  "schema_version": 4,
+  "schema_version": 5,
   "item_id": "hndaily-19691669",
   "published_date": "2026-07-10",
   "collected_date": "2026-07-12",
@@ -36,5 +36,26 @@
   },
   "selected": true,
   "daily_rank": 1,
-  "unselected_reason": null
+  "unselected_reason": null,
+  "entities": {
+    "actors": [
+      {
+        "name": "冯飞",
+        "type": "person",
+        "role": "省委书记",
+        "evidence": "省委书记冯飞在三沙市调研"
+      }
+    ],
+    "locations": [
+      {
+        "location_id": "hainan-sansha",
+        "name": "三沙市",
+        "code": "460300",
+        "level": "prefecture",
+        "evidence": "在三沙市调研"
+      }
+    ],
+    "action": "调研学习教育及经济社会发展情况",
+    "action_evidence": "调研树立和践行正确政绩观学习教育及经济社会发展情况"
+  }
 }

@@ -1,5 +1,5 @@
 {
-  "schema_version": 4,
+  "schema_version": 5,
   "item_id": "hndaily-19691671",
   "published_date": "2026-07-10",
   "collected_date": "2026-07-12",
@@ -36,5 +36,26 @@
   },
   "selected": true,
   "daily_rank": 3,
-  "unselected_reason": null
+  "unselected_reason": null,
+  "entities": {
+    "actors": [
+      {
+        "name": "省政协",
+        "type": "government",
+        "role": null,
+        "evidence": "省政协八届常委会第二十四次会议"
+      }
+    ],
+    "locations": [
+      {
+        "location_id": "hainan-haikou",
+        "name": "海口市",
+        "code": "460100",
+        "level": "prefecture",
+        "evidence": "在海口召开"
+      }
+    ],
+    "action": "召开八届常委会第二十四次会议",
+    "action_evidence": "省政协八届常委会第二十四次会议在海口召开"
+  }
 }

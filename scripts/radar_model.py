@@ -15,6 +15,7 @@ from scripts.radar_contract import (
     require_exact_fields,
     validate_iso_date,
 )
+from scripts.radar_locations import find_location_candidates, load_location_catalog
 
 ENVELOPE_FIELDS = {
     "schema_version",
@@ -33,8 +34,13 @@ MODEL_ITEM_FIELDS = {
     "deadline_date",
     "deadline_text",
     "deadline_evidence",
+    "actors",
+    "location_mentions",
+    "action",
+    "action_evidence",
 }
 LIFECYCLES = {"dated", "ongoing", "unspecified", "not_applicable"}
+ACTOR_TYPES = {"person", "organization", "government", "company"}
 
 
 class ModelOutputError(ContractError):
@@ -42,11 +48,15 @@ class ModelOutputError(ContractError):
 
 
 def build_model_input(candidates: list[dict[str, Any]]) -> dict[str, Any]:
+    catalog = load_location_catalog()
     items = [
         {
             "candidate_id": item["candidate_id"],
             "title": item["title"],
             "content": item["content"],
+            "location_candidates": find_location_candidates(
+                item["title"], item["content"], catalog
+            ),
         }
         for item in candidates
     ]
@@ -113,6 +123,40 @@ def validate_model_output(
                     raise ModelOutputError(
                         f"items[{index}].{field} must be 0..10 integer"
                     )
+            source_text = normalized_text(candidate["title"] + candidate["content"])
+            actors = item.get("actors")
+            if not isinstance(actors, list) or len(actors) > 5:
+                raise ModelOutputError(f"items[{index}].actors is invalid")
+            for actor in actors:
+                if not isinstance(actor, dict) or set(actor) != {"name", "type", "role", "evidence"}:
+                    raise ModelOutputError(f"items[{index}].actors fields are invalid")
+                if not non_empty(actor.get("name")) or actor.get("type") not in ACTOR_TYPES:
+                    raise ModelOutputError(f"items[{index}].actors value is invalid")
+                if actor.get("role") is not None and not non_empty(actor.get("role")):
+                    raise ModelOutputError(f"items[{index}].actors role is invalid")
+                if not non_empty(actor.get("evidence")) or normalized_text(actor["evidence"]) not in source_text:
+                    raise ModelOutputError(f"items[{index}].actors evidence is invalid")
+            mentions = item.get("location_mentions")
+            allowed_ids = {
+                row["location_id"] for row in model_input["items"][index]["location_candidates"]
+            }
+            if not isinstance(mentions, list) or len(mentions) > 5:
+                raise ModelOutputError(f"items[{index}].location_mentions is invalid")
+            for mention in mentions:
+                if not isinstance(mention, dict) or set(mention) != {"location_id", "evidence"}:
+                    raise ModelOutputError(f"items[{index}].location_mentions fields are invalid")
+                if mention.get("location_id") not in allowed_ids:
+                    raise ModelOutputError(f"items[{index}].location_id is outside candidates")
+                if not non_empty(mention.get("evidence")) or normalized_text(mention["evidence"]) not in source_text:
+                    raise ModelOutputError(f"items[{index}].location evidence is invalid")
+            action = item.get("action")
+            action_evidence = item.get("action_evidence")
+            if not isinstance(action, str) or len(action.strip()) > 60:
+                raise ModelOutputError(f"items[{index}].action is invalid")
+            if bool(action.strip()) != bool(isinstance(action_evidence, str) and action_evidence.strip()):
+                raise ModelOutputError(f"items[{index}].action evidence pair is invalid")
+            if action.strip() and normalized_text(action_evidence) not in source_text:
+                raise ModelOutputError(f"items[{index}].action_evidence is invalid")
             reasons = item.get("score_reasons")
             if not isinstance(reasons, dict) or set(reasons) != set(SCORE_FIELDS):
                 raise ModelOutputError(

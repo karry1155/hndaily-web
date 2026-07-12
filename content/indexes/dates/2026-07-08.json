@@ -10,6 +10,12 @@
       "ai_summary": "本报海口7月7日讯（海南日报全媒体记者黎鹏）7月7日，省委常委会召开会议，研究部署我省固体废物专项整治工作。",
       "recommendation_reason": "固废专项整治进入省级统筹阶段，可据此判断海南生态治理下一步的责任链条和执行重点。",
       "final_score": 78.5,
+      "entities": {
+        "actors": [],
+        "locations": [],
+        "action": "",
+        "action_evidence": ""
+      },
       "detail_path": "/items/2026-07-08/hndaily-19684642/"
     },
     {
@@ -21,6 +27,12 @@
       "ai_summary": "本报海口7月7日讯（海南日报全媒体记者陈蔚林）7月7日，由国际武术联合会主办的第四届武术套路世界杯在海口开幕。",
       "recommendation_reason": "国际赛事落地海口，是观察海南体育赛事经济、城市曝光和文旅联动能力的具体窗口。",
       "final_score": 78.5,
+      "entities": {
+        "actors": [],
+        "locations": [],
+        "action": "",
+        "action_evidence": ""
+      },
       "detail_path": "/items/2026-07-08/hndaily-19684643/"
     },
     {
@@ -32,6 +44,12 @@
       "ai_summary": "本报讯（海南日报全媒体记者孙慧）7月6日起，海南开展提取住房公积金支付物业费业务。",
       "recommendation_reason": "政策直接改变居民公积金使用场景，涉及家庭日常支出，具有明确的办事价值。",
       "final_score": 78.5,
+      "entities": {
+        "actors": [],
+        "locations": [],
+        "action": "",
+        "action_evidence": ""
+      },
       "detail_path": "/items/2026-07-08/hndaily-19684644/"
     },
     {
@@ -43,6 +61,12 @@
       "ai_summary": "本报海口7月7日讯（海南日报全媒体记者陈卓斌）7月7日，省委农村工作领导小组2026年第3次全体会议在海口召开。",
       "recommendation_reason": "会议释放海南农业农村工作的最新部署信号，适合关注乡村产业和基层政策资源的读者。",
       "final_score": 78.5,
+      "entities": {
+        "actors": [],
+        "locations": [],
+        "action": "",
+        "action_evidence": ""
+      },
       "detail_path": "/items/2026-07-08/hndaily-19684645/"
     },
     {
@@ -54,6 +78,12 @@
       "ai_summary": "■ 李萌 整改整治是学习教育的落脚点，也是检验作风的试金石。",
       "recommendation_reason": "文章点出整改工作最常见的形式主义风险，有助于理解政策执行为何不能止于完成任务。",
       "final_score": 78.5,
+      "entities": {
+        "actors": [],
+        "locations": [],
+        "action": "",
+        "action_evidence": ""
+      },
       "detail_path": "/items/2026-07-08/hndaily-19684646/"
     },
     {
@@ -65,6 +95,12 @@
       "ai_summary": "本报海口7月7日讯（海南日报全媒体记者陈蔚林）7月7日，省委书记冯飞、省长刘小明在海口与南方电网公司董事长、党组书记钱朝阳一行举行工作会谈。",
       "recommendation_reason": "政企高层会谈往往对应后续能源基础设施投入，值得追踪海南电网保障与新能源布局。",
       "final_score": 78.5,
+      "entities": {
+        "actors": [],
+        "locations": [],
+        "action": "",
+        "action_evidence": ""
+      },
       "detail_path": "/items/2026-07-08/hndaily-19684648/"
     },
     {
@@ -76,6 +112,12 @@
       "ai_summary": "7月7日，20个保税LNG（液化天然气）罐箱在洋浦国际集装箱码头装船启航，驶向越南，标志着全国首单保税LNG罐箱国际转运业务在洋浦落地。",
       "recommendation_reason": "全国首单业务验证洋浦保税转运的新模式，是自贸港航运和能源贸易能力的实质性进展。",
       "final_score": 78.5,
+      "entities": {
+        "actors": [],
+        "locations": [],
+        "action": "",
+        "action_evidence": ""
+      },
       "detail_path": "/items/2026-07-08/hndaily-19684649/"
     },
     {
@@ -87,6 +129,12 @@
       "ai_summary": "■ 海南日报全媒体记者 近期，省自然资源和规划厅、省工业和信息化厅、省卫生健康委、省司法厅、省住房和城乡建设厅、省水务厅、省市场监督管理局、省知识产权局、博鳌乐城国际医疗旅游先行区管理局等省直单位和重点园区，在省委树立和践行正确政绩观学习教育工作专班指导下，聚焦发展所需和群众所盼，找准薄弱环节攻坚，紧盯顽瘴痼疾整治，积极推动树立和践行正确政绩观学习教育整改整治工作取得实效。",
       "recommendation_reason": "多个省直部门和园区的整改案例集中出现，可横向观察海南治理从问题识别到结果交付的变化。",
       "final_score": 78.5,
+      "entities": {
+        "actors": [],
+        "locations": [],
+        "action": "",
+        "action_evidence": ""
+      },
       "detail_path": "/items/2026-07-08/hndaily-19684656/"
     },
     {
@@ -98,6 +146,12 @@
       "ai_summary": "本报海口7月7日讯（海南日报全媒体记者周晓梦）7月7日，海南日报全媒体记者从省环境科学学会获悉，该学会近日正式启动2026年度首届海南省环境保护科学技术奖提名工作，旨在调动环保科技工作者积极性，激励环保科技创新。",
       "recommendation_reason": "首设环保科技奖将影响本地科研激励和项目申报，对环保机构与科研团队具有直接信息价值。",
       "final_score": 78.5,
+      "entities": {
+        "actors": [],
+        "locations": [],
+        "action": "",
+        "action_evidence": ""
+      },
       "detail_path": "/items/2026-07-08/hndaily-19684657/"
     },
     {
@@ -109,6 +163,12 @@
       "ai_summary": "本报海口7月7日讯（海南日报全媒体记者刘梦晓）经过在香港和澳门为期三个月的巡回宣讲、企业招募及岗位适配等前期筹备，2026年海南自贸港“逐浪计划”港澳大学生暑期实习迎新会于7月7日在海口举办。",
       "recommendation_reason": "计划把港澳青年、海南企业与实习岗位连接起来，是观察自贸港人才吸引力和岗位供给的样本。",
       "final_score": 78.5,
+      "entities": {
+        "actors": [],
+        "locations": [],
+        "action": "",
+        "action_evidence": ""
+      },
       "detail_path": "/items/2026-07-08/hndaily-19684659/"
     },
     {
@@ -120,6 +180,12 @@
       "ai_summary": "本报讯（海南日报全媒体记者邵长春）7月6日，海南省国有资本运营有限公司（以下简称海南国资运营）2026年面向专业投资者非公开发行首期科技创新债券顺利发行，刷新了海南省属企业成立后成功发行债券的速度纪录。",
       "recommendation_reason": "5亿元科创债快速落地，提供了海南省属企业融资效率和科创资本工具使用情况的量化信号。",
       "final_score": 78.5,
+      "entities": {
+        "actors": [],
+        "locations": [],
+        "action": "",
+        "action_evidence": ""
+      },
       "detail_path": "/items/2026-07-08/hndaily-19684661/"
     },
     {
@@ -131,6 +197,12 @@
       "ai_summary": "本报讯 （海南日报全媒体记者孙慧）海南日报全媒体记者近日从省住房和城乡建设厅获悉，截至6月30日，我省共有1772个小区启动电力抄表到户改造，涉及小区居民79.36万户，较原计划任务超额77.2%。",
       "recommendation_reason": "覆盖近八十万户的改造进度与超额完成比例，能直接衡量一项民生基础设施工程的实际推进速度。",
       "final_score": 78.5,
+      "entities": {
+        "actors": [],
+        "locations": [],
+        "action": "",
+        "action_evidence": ""
+      },
       "detail_path": "/items/2026-07-08/hndaily-19684669/"
     },
     {
@@ -142,6 +214,12 @@
       "ai_summary": "■ 海南日报全媒体记者 刘杰 7月7日清晨，三亚市育才生态区那受村，驻村第一书记肖春雷踩着带有露气的田埂，快步走进紫色释迦示范种植基地。",
       "recommendation_reason": "村集体收入四年增长超十倍的案例提供了可验证的乡村经营结果，值得研究其产业与组织方法。",
       "final_score": 78.5,
+      "entities": {
+        "actors": [],
+        "locations": [],
+        "action": "",
+        "action_evidence": ""
+      },
       "detail_path": "/items/2026-07-08/hndaily-19684671/"
     },
     {
@@ -153,6 +231,12 @@
       "ai_summary": "本报讯 （海南日报全媒体记者周晓梦 通讯员彭怡）近日，由水利部相关单位支持的第七届“节水在身边”全国短视频大赛评选结果揭晓。",
       "recommendation_reason": "获奖作品展示海南节水传播的有效表达方式，也可观察公共议题如何借短视频扩大影响。",
       "final_score": 78.5,
+      "entities": {
+        "actors": [],
+        "locations": [],
+        "action": "",
+        "action_evidence": ""
+      },
       "detail_path": "/items/2026-07-08/hndaily-19684673/"
     },
     {
@@ -164,6 +248,12 @@
       "ai_summary": "本报讯 （海南日报全媒体记者邱江华）为促进高校毕业生就业，加强青年科技人才培养，海南省2026年大学生科技见习计划试点工作于近日正式启动。",
       "recommendation_reason": "科技见习计划同时回应毕业生就业和青年科研培养，相关学生、高校与用人单位都可据此行动。",
       "final_score": 78.5,
+      "entities": {
+        "actors": [],
+        "locations": [],
+        "action": "",
+        "action_evidence": ""
+      },
       "detail_path": "/items/2026-07-08/hndaily-19684674/"
     },
     {
@@ -175,6 +265,12 @@
       "ai_summary": "近日，海南大学儋州校区热带高效农业产教融合创新平台项目主体结构全面封顶，项目建设迎来关键阶段性节点。",
       "recommendation_reason": "主体封顶意味着热带农业产教融合平台进入新阶段，后续设备、科研和人才合作值得跟进。",
       "final_score": 78.5,
+      "entities": {
+        "actors": [],
+        "locations": [],
+        "action": "",
+        "action_evidence": ""
+      },
       "detail_path": "/items/2026-07-08/hndaily-19684675/"
     },
     {
@@ -186,6 +282,12 @@
       "ai_summary": "本报讯 （海南日报全媒体记者王子豪）7月5日至7月8日，2026年海南省拳击锦标赛暨海南省第七届运动会测试赛在琼海市开赛。",
       "recommendation_reason": "赛事兼具省运会测试功能，可用于判断琼海场馆运行、组织能力和本地体育消费潜力。",
       "final_score": 78.5,
+      "entities": {
+        "actors": [],
+        "locations": [],
+        "action": "",
+        "action_evidence": ""
+      },
       "detail_path": "/items/2026-07-08/hndaily-19684676/"
     },
     {
@@ -197,6 +299,12 @@
       "ai_summary": "■ 海南日报全媒体记者 李艳玫 暮色浸染三亚海棠湾，蜈支洲岛旅游码头灯火次第亮起，打破夏日滨海夜晚的宁静。",
       "recommendation_reason": "夜间海洋旅游的新玩法反映三亚从观光向体验消费延伸，适合观察文旅产品升级。",
       "final_score": 78.5,
+      "entities": {
+        "actors": [],
+        "locations": [],
+        "action": "",
+        "action_evidence": ""
+      },
       "detail_path": "/items/2026-07-08/hndaily-19684677/"
     },
     {
@@ -208,6 +316,12 @@
       "ai_summary": "本报讯 （海南日报全媒体记者刘阳秀）近日，“强国复兴有我”——2026年昌江黎族自治县“春风村雨”文化惠民（送戏下乡）演出活动启动，首站走进昌江王下乡三派村。",
       "recommendation_reason": "文化惠民活动进入乡村一线，可观察公共文化供给是否真正覆盖偏远地区和基层需求。",
       "final_score": 78.5,
+      "entities": {
+        "actors": [],
+        "locations": [],
+        "action": "",
+        "action_evidence": ""
+      },
       "detail_path": "/items/2026-07-08/hndaily-19684679/"
     },
     {
@@ -219,6 +333,12 @@
       "ai_summary": "“105年不懈奋斗，展示了马克思主义的强大生命力。",
       "recommendation_reason": "文章从百年政党实践讨论马克思主义生命力，为理解重大纪念节点的理论叙事提供完整语境。",
       "final_score": 78.5,
+      "entities": {
+        "actors": [],
+        "locations": [],
+        "action": "",
+        "action_evidence": ""
+      },
       "detail_path": "/items/2026-07-08/hndaily-19684718/"
     }
   ]

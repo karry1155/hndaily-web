@@ -26,6 +26,7 @@ def _summary(item: dict[str, Any]) -> dict[str, Any]:
         "ai_summary": item["block"]["ai_summary"],
         "recommendation_reason": item["block"]["recommendation_reason"],
         "final_score": item["final_score"],
+        "entities": item["entities"],
         "detail_path": (
             f"/items/{item['published_date']}/{item['item_id']}/"
         ),
@@ -44,6 +45,7 @@ def build_search_indexes(selected_items, issue_items):
                     {
                         "recommendation_reason": item["block"]["recommendation_reason"],
                         "final_score": item["final_score"],
+                        "entities": item["entities"],
                     }
                     if include_reason else {}
                 ),

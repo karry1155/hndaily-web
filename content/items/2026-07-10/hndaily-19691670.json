@@ -1,5 +1,5 @@
 {
-  "schema_version": 4,
+  "schema_version": 5,
   "item_id": "hndaily-19691670",
   "published_date": "2026-07-10",
   "collected_date": "2026-07-12",
@@ -36,5 +36,26 @@
   },
   "selected": true,
   "daily_rank": 2,
-  "unselected_reason": null
+  "unselected_reason": null,
+  "entities": {
+    "actors": [
+      {
+        "name": "刘小明",
+        "type": "person",
+        "role": "省长",
+        "evidence": "省长刘小明来到白沙黎族自治县"
+      }
+    ],
+    "locations": [
+      {
+        "location_id": "hainan-baisha",
+        "name": "白沙黎族自治县",
+        "code": "469025",
+        "level": "county",
+        "evidence": "来到白沙黎族自治县"
+      }
+    ],
+    "action": "调研乡村振兴并参加联合主题党日活动",
+    "action_evidence": "参加所在的省政府办公厅秘书一处党支部与南训村党委联合主题党日活动"
+  }
 }

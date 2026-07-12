@@ -1,5 +1,5 @@
 {
-  "schema_version": 4,
+  "schema_version": 5,
   "item_id": "hndaily-19688150",
   "published_date": "2026-07-09",
   "collected_date": "2026-07-10",
@@ -36,5 +36,11 @@
   },
   "selected": true,
   "daily_rank": 1,
-  "unselected_reason": null
+  "unselected_reason": null,
+  "entities": {
+    "actors": [],
+    "locations": [],
+    "action": "",
+    "action_evidence": ""
+  }
 }

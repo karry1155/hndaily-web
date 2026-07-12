@@ -11,6 +11,27 @@
       "ai_summary": "本报讯（海南日报全媒体记者李磊）近日，省委书记冯飞在三沙市调研树立和践行正确政绩观学习教育及经济社会发展情况。",
       "recommendation_reason": "事项直接关联居民可感知的服务或权益变化，读者可借“把学习教育成果转化为高质量发展实绩\n坚决守好祖国南大门”判断自身需要关注的时间点和影响。",
       "final_score": 80.0,
+      "entities": {
+        "actors": [
+          {
+            "name": "冯飞",
+            "type": "person",
+            "role": "省委书记",
+            "evidence": "省委书记冯飞在三沙市调研"
+          }
+        ],
+        "locations": [
+          {
+            "location_id": "hainan-sansha",
+            "name": "三沙市",
+            "code": "460300",
+            "level": "prefecture",
+            "evidence": "在三沙市调研"
+          }
+        ],
+        "action": "调研学习教育及经济社会发展情况",
+        "action_evidence": "调研树立和践行正确政绩观学习教育及经济社会发展情况"
+      },
       "detail_path": "/items/2026-07-10/hndaily-19691669/"
     },
     {
@@ -22,6 +43,27 @@
       "ai_summary": "本报牙叉7月9日电（海南日报全媒体记者陈蔚林）7月9日，结合树立和践行正确政绩观学习教育，省长刘小明来到白沙黎族自治县乡村振兴联系点，以普通党员身份参加所在的省政府办公厅秘书一处党支部与南训村党委联合主题党日活动。",
       "recommendation_reason": "这条信息为判断海南相关产业的项目进度、市场机会或资源流向提供了具体信号，值得继续追踪“树牢正确政绩观 深耕乡村振兴一线\n齐心协力让老百姓过上更好日子”的后续落地。",
       "final_score": 80.0,
+      "entities": {
+        "actors": [
+          {
+            "name": "刘小明",
+            "type": "person",
+            "role": "省长",
+            "evidence": "省长刘小明来到白沙黎族自治县"
+          }
+        ],
+        "locations": [
+          {
+            "location_id": "hainan-baisha",
+            "name": "白沙黎族自治县",
+            "code": "469025",
+            "level": "county",
+            "evidence": "来到白沙黎族自治县"
+          }
+        ],
+        "action": "调研乡村振兴并参加联合主题党日活动",
+        "action_evidence": "参加所在的省政府办公厅秘书一处党支部与南训村党委联合主题党日活动"
+      },
       "detail_path": "/items/2026-07-10/hndaily-19691670/"
     },
     {
@@ -33,6 +75,27 @@
       "ai_summary": "本报海口7月9日讯（海南日报全媒体记者黎鹏 通讯员李发强）7月8日至9日，省政协八届常委会第二十四次会议在海口召开，围绕“推进崖州湾科技城科技创新和产业创新深度融合发展”协商建言并举行学习讲座。",
       "recommendation_reason": "这条信息为判断海南相关产业的项目进度、市场机会或资源流向提供了具体信号，值得继续追踪“省政协八届常委会第二十四次会议召开”的后续落地。",
       "final_score": 80.0,
+      "entities": {
+        "actors": [
+          {
+            "name": "省政协",
+            "type": "government",
+            "role": null,
+            "evidence": "省政协八届常委会第二十四次会议"
+          }
+        ],
+        "locations": [
+          {
+            "location_id": "hainan-haikou",
+            "name": "海口市",
+            "code": "460100",
+            "level": "prefecture",
+            "evidence": "在海口召开"
+          }
+        ],
+        "action": "召开八届常委会第二十四次会议",
+        "action_evidence": "省政协八届常委会第二十四次会议在海口召开"
+      },
       "detail_path": "/items/2026-07-10/hndaily-19691671/"
     },
     {
@@ -44,6 +107,12 @@
       "ai_summary": "本报讯（海南日报全媒体记者邵长春 通讯员郭卫华 王涵璐 林寿南 莫若慧）海南日报全媒体记者从南方电网海南电网公司获悉，截至6月底，海南新能源装机规模达1271万千瓦，占全省总装机比例达50.1％。",
       "recommendation_reason": "这条信息为判断海南相关产业的项目进度、市场机会或资源流向提供了具体信号，值得继续追踪“新能源撑起海南电力“半壁江山””的后续落地。",
       "final_score": 80.0,
+      "entities": {
+        "actors": [],
+        "locations": [],
+        "action": "",
+        "action_evidence": ""
+      },
       "detail_path": "/items/2026-07-10/hndaily-19691672/"
     },
     {
@@ -55,6 +124,12 @@
       "ai_summary": "本报海口7月9日讯（海南日报全媒体记者曹马志 通讯员童子杨）2026年过半，海南离岛免税交出了一份含金量十足的成绩单。",
       "recommendation_reason": "这条信息为判断海南相关产业的项目进度、市场机会或资源流向提供了具体信号，值得继续追踪“上半年海南离岛免税购物金额近200亿元”的后续落地。",
       "final_score": 80.0,
+      "entities": {
+        "actors": [],
+        "locations": [],
+        "action": "",
+        "action_evidence": ""
+      },
       "detail_path": "/items/2026-07-10/hndaily-19691673/"
     },
     {
@@ -66,6 +141,12 @@
       "ai_summary": "本报海口7月9日讯（海南日报全媒体记者陈蔚林）7月9日，全省固体废物专项整治工作部署会议在海口召开，研究部署下一步重点工作。",
       "recommendation_reason": "报道释放了政策执行和治理重点的最新信号，有助于判断“以最坚决的态度、最迅速的行动、最有力的措施\n扛起生态环境保护政治责任”将如何影响海南的实际工作。",
       "final_score": 80.0,
+      "entities": {
+        "actors": [],
+        "locations": [],
+        "action": "",
+        "action_evidence": ""
+      },
       "detail_path": "/items/2026-07-10/hndaily-19691674/"
     },
     {
@@ -77,6 +158,12 @@
       "ai_summary": "■ 海南日报全媒体记者 陈明艳 前些年，海口商业进入了“狂飙突进”的阶段。",
       "recommendation_reason": "这条信息为判断海南相关产业的项目进度、市场机会或资源流向提供了具体信号，值得继续追踪“这届海口商圈，开始赚“慢钱””的后续落地。",
       "final_score": 80.0,
+      "entities": {
+        "actors": [],
+        "locations": [],
+        "action": "",
+        "action_evidence": ""
+      },
       "detail_path": "/items/2026-07-10/hndaily-19691675/"
     },
     {
@@ -88,6 +175,12 @@
       "ai_summary": "A02",
       "recommendation_reason": "文章提供了超出单一事件的背景和趋势线索，适合通过“文明如光，照见自贸港“精气神””理解其更长期的社会影响。",
       "final_score": 80.0,
+      "entities": {
+        "actors": [],
+        "locations": [],
+        "action": "",
+        "action_evidence": ""
+      },
       "detail_path": "/items/2026-07-10/hndaily-19691678/"
     },
     {
@@ -99,6 +192,12 @@
       "ai_summary": "■ 海南日报全媒体记者 袁宇 通讯员 岳承乾 曹志成 海口市龙华区遵谭镇东谭村，古榕亭亭如盖。",
       "recommendation_reason": "这条信息为判断海南相关产业的项目进度、市场机会或资源流向提供了具体信号，值得继续追踪“把“理论食材”烹成“家常好菜””的后续落地。",
       "final_score": 80.0,
+      "entities": {
+        "actors": [],
+        "locations": [],
+        "action": "",
+        "action_evidence": ""
+      },
       "detail_path": "/items/2026-07-10/hndaily-19691685/"
     },
     {
@@ -110,6 +209,12 @@
       "ai_summary": "■ 李萌 连日来，琼州大地上，文明之花竞相绽放。7月8日，2026年上半年“海南好人”发布，24位（组）榜样人物光荣入选，同一天，“雷公马海小文陪你美滩”主题活动启动，中外游客志愿者接力倡议，许下守护碧海银滩的承诺……从“好人”发布到美滩行动，从典型引领到全民参与，海南正以新时代文明实践，为自贸港建设凝聚起蓬勃的精神力量。 精神文明建设，是海南自贸港不可或缺",
       "recommendation_reason": "这条信息为判断海南相关产业的项目进度、市场机会或资源流向提供了具体信号，值得继续追踪“文明如光，照见自贸港“精气神””的后续落地。",
       "final_score": 80.0,
+      "entities": {
+        "actors": [],
+        "locations": [],
+        "action": "",
+        "action_evidence": ""
+      },
       "detail_path": "/items/2026-07-10/hndaily-19691687/"
     },
     {
@@ -121,6 +226,12 @@
       "ai_summary": "本报海口7月9日讯（海南日报全媒体记者王洪旭）7月9日，海南自由贸易港汽车产业创新发展研讨会在海口举办。",
       "recommendation_reason": "这条信息为判断海南相关产业的项目进度、市场机会或资源流向提供了具体信号，值得继续追踪“国内首个出口车辆定型湿热道路试验基地在琼揭牌成立”的后续落地。",
       "final_score": 80.0,
+      "entities": {
+        "actors": [],
+        "locations": [],
+        "action": "",
+        "action_evidence": ""
+      },
       "detail_path": "/items/2026-07-10/hndaily-19691688/"
     },
     {
@@ -132,6 +243,12 @@
       "ai_summary": "■ 海南日报全媒体记者 曹马志 志同道合者，不以山海为远。",
       "recommendation_reason": "这条信息为判断海南相关产业的项目进度、市场机会或资源流向提供了具体信号，值得继续追踪“这场特别“对话”，海南与迪拜碰撞开放火花”的后续落地。",
       "final_score": 80.0,
+      "entities": {
+        "actors": [],
+        "locations": [],
+        "action": "",
+        "action_evidence": ""
+      },
       "detail_path": "/items/2026-07-10/hndaily-19691690/"
     },
     {
@@ -143,6 +260,12 @@
       "ai_summary": "委员： 林娜（女）",
       "recommendation_reason": "文章提供了超出单一事件的背景和趋势线索，适合通过“政协第八届海南省委员会增补委员名单”理解其更长期的社会影响。",
       "final_score": 80.0,
+      "entities": {
+        "actors": [],
+        "locations": [],
+        "action": "",
+        "action_evidence": ""
+      },
       "detail_path": "/items/2026-07-10/hndaily-19691691/"
     },
     {
@@ -154,6 +277,12 @@
       "ai_summary": "因工作需要，何清同志提出辞去常务委员、委员申请。依照《中国人民政治协商会议章程》及有关规定，政协第八届海南省委员会常务委员会第二十四次会议决定：接受何清同志辞去政协第八届海南省委员会常务委员、委员，报全体会议备案。",
       "recommendation_reason": "报道释放了政策执行和治理重点的最新信号，有助于判断“关于接受何清同志辞去政协第八届海南省委员会常务委员、委员的决定”将如何影响海南的实际工作。",
       "final_score": 80.0,
+      "entities": {
+        "actors": [],
+        "locations": [],
+        "action": "",
+        "action_evidence": ""
+      },
       "detail_path": "/items/2026-07-10/hndaily-19691692/"
     },
     {
@@ -165,6 +294,12 @@
       "ai_summary": "任命： 林娜同志为中国人民政治协商会议第八届海南省委员会文化文史和学习委员会专职副主任。",
       "recommendation_reason": "报道释放了政策执行和治理重点的最新信号，有助于判断“政协第八届海南省委员会专门委员会副主任任命名单”将如何影响海南的实际工作。",
       "final_score": 80.0,
+      "entities": {
+        "actors": [],
+        "locations": [],
+        "action": "",
+        "action_evidence": ""
+      },
       "detail_path": "/items/2026-07-10/hndaily-19691693/"
     },
     {
@@ -176,6 +311,12 @@
       "ai_summary": "■ 海南日报全媒体记者 林博新 一墙的奖状，是他们家最好的“装修”；清贫家境、母亲病重，虽生活在边远的乡村，却挡不住少年向上的决心。",
       "recommendation_reason": "文章提供了超出单一事件的背景和趋势线索，适合通过“一面奖状墙，是家里最好的“装修””理解其更长期的社会影响。",
       "final_score": 80.0,
+      "entities": {
+        "actors": [],
+        "locations": [],
+        "action": "",
+        "action_evidence": ""
+      },
       "detail_path": "/items/2026-07-10/hndaily-19691699/"
     },
     {
@@ -187,6 +328,12 @@
       "ai_summary": "本报讯（海南日报全媒体记者曹马志 通讯员汪蓓）为提升中小学生风险防范意识和应急自救能力，预防水上安全事故发生，海南海事局联合海南省教育厅将共同举办2026年“水上安全知识云课堂”网络直播宣教活动。",
       "recommendation_reason": "内容连接城市运行与本地生活场景，可据此观察“全省“水上安全知识云课堂”网络直播7月12日开展”对公共服务和区域发展的实际影响。",
       "final_score": 80.0,
+      "entities": {
+        "actors": [],
+        "locations": [],
+        "action": "",
+        "action_evidence": ""
+      },
       "detail_path": "/items/2026-07-10/hndaily-19691700/"
     },
     {
@@ -198,6 +345,12 @@
       "ai_summary": "■ 海报集团全媒体记者 丁文文 百年前，法国学者萨维纳用脚步丈量海南，以一部《海南岛志》为世界留下了这片热带岛屿珍贵的文化底片。",
       "recommendation_reason": "内容连接城市运行与本地生活场景，可据此观察“一场跨越百年的时空对话”对公共服务和区域发展的实际影响。",
       "final_score": 80.0,
+      "entities": {
+        "actors": [],
+        "locations": [],
+        "action": "",
+        "action_evidence": ""
+      },
       "detail_path": "/items/2026-07-10/hndaily-19691701/"
     },
     {
@@ -209,6 +362,12 @@
       "ai_summary": "本报讯（海南日报全媒体记者吴心怡）7月8日，由儋州市人民政府主办的2026海南自由贸易港航运制度开放创新交流会在洋浦举办。",
       "recommendation_reason": "这条信息为判断海南相关产业的项目进度、市场机会或资源流向提供了具体信号，值得继续追踪“海南自贸港航运制度开放创新交流会举办”的后续落地。",
       "final_score": 80.0,
+      "entities": {
+        "actors": [],
+        "locations": [],
+        "action": "",
+        "action_evidence": ""
+      },
       "detail_path": "/items/2026-07-10/hndaily-19691702/"
     },
     {
@@ -220,6 +379,12 @@
       "ai_summary": "本报海口7月9日讯（海南日报全媒体记者习霁鸿）7月9日，“环海南大学科技创新圈”成果推介对接交流活动（食品生物制造成果推介专场）在海南大学城西教学点举行。",
       "recommendation_reason": "这条信息为判断海南相关产业的项目进度、市场机会或资源流向提供了具体信号，值得继续追踪““环海南大学科技创新圈”成果推介对接交流活动举办”的后续落地。",
       "final_score": 80.0,
+      "entities": {
+        "actors": [],
+        "locations": [],
+        "action": "",
+        "action_evidence": ""
+      },
       "detail_path": "/items/2026-07-10/hndaily-19691703/"
     }
   ]

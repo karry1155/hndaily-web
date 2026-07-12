@@ -1,0 +1,27 @@
+{
+  "version": "2026-07-12",
+  "source": "国家统计局行政区划代码、海南省人民政府市县政府名录",
+  "verified_on": "2026-07-12",
+  "divisions": [
+    {"location_id":"hainan","name":"海南省","code":"460000","level":"province","aliases":["海南"]},
+    {"location_id":"hainan-haikou","name":"海口市","code":"460100","level":"prefecture","aliases":["海口"]},
+    {"location_id":"hainan-sanya","name":"三亚市","code":"460200","level":"prefecture","aliases":["三亚"]},
+    {"location_id":"hainan-sansha","name":"三沙市","code":"460300","level":"prefecture","aliases":["三沙"]},
+    {"location_id":"hainan-danzhou","name":"儋州市","code":"460400","level":"prefecture","aliases":["儋州"]},
+    {"location_id":"hainan-wuzhishan","name":"五指山市","code":"469001","level":"county","aliases":["五指山"]},
+    {"location_id":"hainan-qionghai","name":"琼海市","code":"469002","level":"county","aliases":["琼海"]},
+    {"location_id":"hainan-wenchang","name":"文昌市","code":"469005","level":"county","aliases":["文昌"]},
+    {"location_id":"hainan-wanning","name":"万宁市","code":"469006","level":"county","aliases":["万宁"]},
+    {"location_id":"hainan-dongfang","name":"东方市","code":"469007","level":"county","aliases":["东方"]},
+    {"location_id":"hainan-dingan","name":"定安县","code":"469021","level":"county","aliases":["定安"]},
+    {"location_id":"hainan-tunchang","name":"屯昌县","code":"469022","level":"county","aliases":["屯昌"]},
+    {"location_id":"hainan-chengmai","name":"澄迈县","code":"469023","level":"county","aliases":["澄迈"]},
+    {"location_id":"hainan-lingao","name":"临高县","code":"469024","level":"county","aliases":["临高"]},
+    {"location_id":"hainan-baisha","name":"白沙黎族自治县","code":"469025","level":"county","aliases":["白沙县","白沙"]},
+    {"location_id":"hainan-changjiang","name":"昌江黎族自治县","code":"469026","level":"county","aliases":["昌江县","昌江"]},
+    {"location_id":"hainan-ledong","name":"乐东黎族自治县","code":"469027","level":"county","aliases":["乐东县","乐东"]},
+    {"location_id":"hainan-lingshui","name":"陵水黎族自治县","code":"469028","level":"county","aliases":["陵水县","陵水"]},
+    {"location_id":"hainan-baoting","name":"保亭黎族苗族自治县","code":"469029","level":"county","aliases":["保亭县","保亭"]},
+    {"location_id":"hainan-qiongzhong","name":"琼中黎族苗族自治县","code":"469030","level":"county","aliases":["琼中县","琼中"]}
+  ]
+}
