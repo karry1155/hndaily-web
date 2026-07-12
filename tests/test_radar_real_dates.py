@@ -31,6 +31,29 @@ class RadarRealDateTests(unittest.TestCase):
             self.assertTrue((site / "date/2026-07-08/index.html").is_file())
             self.assertTrue((site / "date/2026-07-09/index.html").is_file())
 
+    def test_real_july_10_is_newest_and_recent_manifest_has_three_dates(self):
+        self.assertTrue((ROOT / "content/items/2026-07-10").is_dir())
+        manifest = json.loads(
+            (ROOT / "content/indexes/recent-selected.json").read_text(
+                encoding="utf-8"
+            )
+        )
+        self.assertEqual(
+            manifest["dates"],
+            ["2026-07-10", "2026-07-09", "2026-07-08"],
+        )
+        with tempfile.TemporaryDirectory() as tmp:
+            site = Path(tmp) / "site"
+            build_site(ROOT / "content", site)
+            homepage = (site / "index.html").read_text(encoding="utf-8")
+            self.assertIn("7月10日", homepage)
+            self.assertTrue(
+                (site / "static/selected-feed/2026-07-09.json").is_file()
+            )
+            self.assertTrue(
+                (site / "static/selected-feed/2026-07-08.json").is_file()
+            )
+
     def test_local_real_0708_and_0709_sources_are_distinct(self):
         required = os.environ.get("RADAR_REAL_DATA_REQUIRED") == "1"
         paths = [SKILL_DATA / "2026-07-08.json", SKILL_DATA / "2026-07-09.json"]

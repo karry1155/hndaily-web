@@ -1,0 +1,40 @@
+{
+  "schema_version": 4,
+  "item_id": "hndaily-19691732",
+  "published_date": "2026-07-10",
+  "collected_date": "2026-07-12",
+  "category": "产业",
+  "semantic_scores": {
+    "hainan_relevance": 8,
+    "actionability": 8,
+    "impact_scope": 8,
+    "timeliness": 8,
+    "information_density": 8
+  },
+  "score_reasons": {
+    "hainan_relevance": "正文直接涉及海南本地事项",
+    "actionability": "包含可供读者或相关主体判断的具体信息",
+    "impact_scope": "对相关行业、地区或公共服务对象具有现实影响",
+    "timeliness": "属于当前出版日期的最新报道",
+    "information_density": "正文提供了事件主体、进展和背景信息"
+  },
+  "base_score": 80.0,
+  "final_score": 80.0,
+  "opportunity": {
+    "lifecycle": "not_applicable",
+    "deadline_date": null,
+    "deadline_text": null,
+    "evidence": null
+  },
+  "block": {
+    "source": "海南日报",
+    "title": "海垦集团与新疆生产建设兵团共谋合作",
+    "content": "本报讯（海南日报全媒体记者邓钰 通讯员陈晖濠）日前，海南省农垦投资控股集团有限公司（以下简称海垦集团）派出考察队伍到新疆生产建设兵团，实地学习现代农业、文旅融合、口岸贸易和跨境合作等领域的先进经验，并在优势互补、产业协同、加强协作等方面达成合作共识，共谋发展新路径。\n\n考察期间，海垦集团一行拜访当地军垦博物馆、文旅企业、物流园区等，详细了解新疆农副产品销售渠道、品牌建设以及文旅项目建设情况等。\n\n双方表示，双方产业各具优势、互补性强、合作空间广阔，可共同抢抓机遇，在康养文旅、热带特色高效农业等领域加强战略合作和产业协同，实现优势互补、互利共赢；进一步畅通农副产品流通渠道，搭建琼疆合作平台，打造农副产品绿色通道，提升两地农副产品流通效率。",
+    "ai_summary": "本报讯（海南日报全媒体记者邓钰 通讯员陈晖濠）日前，海南省农垦投资控股集团有限公司（以下简称海垦集团）派出考察队伍到新疆生产建设兵团，实地学习现代农业、文旅融合、口岸贸易和跨境合作等领域的先进经验，并在优势互补、产业协同、加强协作等方面达成合作共识，共谋发展新路径。",
+    "recommendation_reason": "这条信息为判断海南相关产业的项目进度、市场机会或资源流向提供了具体信号，值得继续追踪“海垦集团与新疆生产建设兵团共谋合作”的后续落地。",
+    "original_url": "http://news.hndaily.cn/html/2026-07/10/content_58468_19691732.htm"
+  },
+  "selected": true,
+  "daily_rank": 33,
+  "unselected_reason": null
+}

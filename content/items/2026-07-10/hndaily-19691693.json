@@ -1,0 +1,40 @@
+{
+  "schema_version": 4,
+  "item_id": "hndaily-19691693",
+  "published_date": "2026-07-10",
+  "collected_date": "2026-07-12",
+  "category": "政策",
+  "semantic_scores": {
+    "hainan_relevance": 8,
+    "actionability": 8,
+    "impact_scope": 8,
+    "timeliness": 8,
+    "information_density": 8
+  },
+  "score_reasons": {
+    "hainan_relevance": "正文直接涉及海南本地事项",
+    "actionability": "包含可供读者或相关主体判断的具体信息",
+    "impact_scope": "对相关行业、地区或公共服务对象具有现实影响",
+    "timeliness": "属于当前出版日期的最新报道",
+    "information_density": "正文提供了事件主体、进展和背景信息"
+  },
+  "base_score": 80.0,
+  "final_score": 80.0,
+  "opportunity": {
+    "lifecycle": "not_applicable",
+    "deadline_date": null,
+    "deadline_text": null,
+    "evidence": null
+  },
+  "block": {
+    "source": "海南日报",
+    "title": "政协第八届海南省委员会专门委员会副主任任命名单",
+    "content": "任命：\n\n林娜同志为中国人民政治协商会议第八届海南省委员会文化文史和学习委员会专职副主任。",
+    "ai_summary": "任命： 林娜同志为中国人民政治协商会议第八届海南省委员会文化文史和学习委员会专职副主任。",
+    "recommendation_reason": "报道释放了政策执行和治理重点的最新信号，有助于判断“政协第八届海南省委员会专门委员会副主任任命名单”将如何影响海南的实际工作。",
+    "original_url": "http://news.hndaily.cn/html/2026-07/10/content_58465_19691693.htm"
+  },
+  "selected": true,
+  "daily_rank": 15,
+  "unselected_reason": null
+}

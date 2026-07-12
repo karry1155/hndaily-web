@@ -1,0 +1,40 @@
+{
+  "schema_version": 4,
+  "item_id": "hndaily-19691692",
+  "published_date": "2026-07-10",
+  "collected_date": "2026-07-12",
+  "category": "政策",
+  "semantic_scores": {
+    "hainan_relevance": 8,
+    "actionability": 8,
+    "impact_scope": 8,
+    "timeliness": 8,
+    "information_density": 8
+  },
+  "score_reasons": {
+    "hainan_relevance": "正文直接涉及海南本地事项",
+    "actionability": "包含可供读者或相关主体判断的具体信息",
+    "impact_scope": "对相关行业、地区或公共服务对象具有现实影响",
+    "timeliness": "属于当前出版日期的最新报道",
+    "information_density": "正文提供了事件主体、进展和背景信息"
+  },
+  "base_score": 80.0,
+  "final_score": 80.0,
+  "opportunity": {
+    "lifecycle": "not_applicable",
+    "deadline_date": null,
+    "deadline_text": null,
+    "evidence": null
+  },
+  "block": {
+    "source": "海南日报",
+    "title": "关于接受何清同志辞去政协第八届海南省委员会常务委员、委员的决定",
+    "content": "因工作需要，何清同志提出辞去常务委员、委员申请。依照《中国人民政治协商会议章程》及有关规定，政协第八届海南省委员会常务委员会第二十四次会议决定：接受何清同志辞去政协第八届海南省委员会常务委员、委员，报全体会议备案。",
+    "ai_summary": "因工作需要，何清同志提出辞去常务委员、委员申请。依照《中国人民政治协商会议章程》及有关规定，政协第八届海南省委员会常务委员会第二十四次会议决定：接受何清同志辞去政协第八届海南省委员会常务委员、委员，报全体会议备案。",
+    "recommendation_reason": "报道释放了政策执行和治理重点的最新信号，有助于判断“关于接受何清同志辞去政协第八届海南省委员会常务委员、委员的决定”将如何影响海南的实际工作。",
+    "original_url": "http://news.hndaily.cn/html/2026-07/10/content_58465_19691692.htm"
+  },
+  "selected": true,
+  "daily_rank": 14,
+  "unselected_reason": null
+}

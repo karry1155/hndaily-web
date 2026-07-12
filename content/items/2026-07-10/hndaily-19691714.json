@@ -1,0 +1,40 @@
+{
+  "schema_version": 4,
+  "item_id": "hndaily-19691714",
+  "published_date": "2026-07-10",
+  "collected_date": "2026-07-12",
+  "category": "城市",
+  "semantic_scores": {
+    "hainan_relevance": 8,
+    "actionability": 8,
+    "impact_scope": 8,
+    "timeliness": 8,
+    "information_density": 8
+  },
+  "score_reasons": {
+    "hainan_relevance": "正文直接涉及海南本地事项",
+    "actionability": "包含可供读者或相关主体判断的具体信息",
+    "impact_scope": "对相关行业、地区或公共服务对象具有现实影响",
+    "timeliness": "属于当前出版日期的最新报道",
+    "information_density": "正文提供了事件主体、进展和背景信息"
+  },
+  "base_score": 80.0,
+  "final_score": 80.0,
+  "opportunity": {
+    "lifecycle": "not_applicable",
+    "deadline_date": null,
+    "deadline_text": null,
+    "evidence": null
+  },
+  "block": {
+    "source": "海南日报",
+    "title": "东方市人民政府党组成员、副市长符乃贤接受纪律审查和监察调查",
+    "content": "本报海口7月9日讯（海南日报全媒体记者袁宇）7月9日，海南日报全媒体记者从省纪委监委获悉，东方市人民政府党组成员、副市长符乃贤涉嫌严重违纪违法，主动投案，目前正接受海南省纪委监委纪律审查和监察调查。",
+    "ai_summary": "本报海口7月9日讯（海南日报全媒体记者袁宇）7月9日，海南日报全媒体记者从省纪委监委获悉，东方市人民政府党组成员、副市长符乃贤涉嫌严重违纪违法，主动投案，目前正接受海南省纪委监委纪律审查和监察调查。",
+    "recommendation_reason": "内容连接城市运行与本地生活场景，可据此观察“东方市人民政府党组成员、副市长符乃贤接受纪律审查和监察调查”对公共服务和区域发展的实际影响。",
+    "original_url": "http://news.hndaily.cn/html/2026-07/10/content_58467_19691714.htm"
+  },
+  "selected": true,
+  "daily_rank": 25,
+  "unselected_reason": null
+}

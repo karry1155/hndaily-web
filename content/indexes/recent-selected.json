@@ -1,9 +1,11 @@
 {
   "dates": [
+    "2026-07-10",
     "2026-07-09",
     "2026-07-08"
   ],
   "feeds": [
+    "/static/selected-feed/2026-07-10.json",
     "/static/selected-feed/2026-07-09.json",
     "/static/selected-feed/2026-07-08.json"
   ]
