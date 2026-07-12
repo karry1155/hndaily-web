@@ -16,8 +16,8 @@ class RadarRenderTests(unittest.TestCase):
         self.assertIn("data-search-input", js)
         self.assertIn('html[data-theme="light"]', css)
         self.assertIn("prefers-color-scheme", base)
-        self.assertIn("styles.css?v=20260712-2", base)
-        self.assertIn("app.js?v=20260712-2", base)
+        self.assertIn("styles.css?v=20260712-3", base)
+        self.assertIn("app.js?v=20260712-3", base)
         self.assertIn("@media (max-width: 760px)", css)
         self.assertIn("hn-hot-starred", js)
         self.assertIn("backdrop-filter", css)
@@ -35,7 +35,7 @@ class RadarRenderTests(unittest.TestCase):
         self.assertIn(".selected-header", css)
         self.assertIn(".search-submit", css)
         self.assertIn(".story-reason", css)
-        self.assertIn(".theme-toggle-track", css)
+        self.assertIn(".theme-toggle-thumb", css)
         self.assertIn(".category-tabs a.active::after", css)
         mobile = css[css.index("@media (max-width: 760px)"):]
         self.assertIn(".selected-story .story-summary { display: none; }", mobile)
@@ -48,22 +48,27 @@ class RadarRenderTests(unittest.TestCase):
             "daily_rank": 1, "category": "机会",
             "title": item["block"]["title"], "ai_summary": item["block"]["ai_summary"],
             "recommendation_reason": item["block"]["recommendation_reason"],
+            "final_score": item["final_score"],
             "detail_path": f"/items/{item['published_date']}/{item['item_id']}/",
         }
         manifest = {"dates": ["2026-07-10"], "feeds": ["/static/selected-feed/2026-07-10.json"]}
         rendered = render_index({"page": 1, "page_count": 1, "items": [summary]}, {"updated_through": "2026-07-10", "items": [{**summary, "focus_rank": 1}]}, "全部", manifest)
         self.assertIn("新闻精选", rendered)
         self.assertNotIn("当下重点", rendered)
-        self.assertIn('<strong class="current-date">7月10日</strong>', rendered)
-        self.assertIn('<span class="current-date-meta">星期五 · 1 条</span>', rendered)
+        self.assertIn('<strong class="selected-title">精选</strong>', rendered)
+        self.assertIn('<span class="selected-subtitle">2026年7月10日 星期五</span>', rendered)
+        self.assertIn('<strong class="mobile-date-today">今天</strong>', rendered)
+        self.assertIn('<span class="mobile-date-meta">7月10日 周五</span>', rendered)
         self.assertIn('class="search-submit"', rendered)
         self.assertIn('data-selected-feed-manifest', rendered)
         self.assertIn("科技见习 &lt;计划&gt;", rendered)
         self.assertNotIn("<script>", rendered)
-        self.assertNotIn("最终分", rendered)
+        self.assertIn('title="最终分"', rendered)
         self.assertIn('class="story-summary"', rendered)
         self.assertIn('class="story-reason"', rendered)
-        self.assertIn("为什么值得读", rendered)
+        self.assertIn("推荐理由：", rendered)
+        self.assertNotIn("为什么值得读", rendered)
+        self.assertIn("7月10日 · 周五", rendered)
         self.assertIn('data-search-scope="selected"', rendered)
         self.assertIn("focus-rank-1", rendered)
         self.assertIn("data-star-id", rendered)
@@ -75,6 +80,9 @@ class RadarRenderTests(unittest.TestCase):
         self.assertIn("position: fixed", mobile)
         self.assertIn("inset: auto 0 0", mobile)
         self.assertIn(".selected-search { display: none; }", mobile)
+        self.assertIn(".selected-header { display: none; }", mobile)
+        self.assertIn(".focus-section { order: 1; }", mobile)
+        self.assertIn(".category-tabs { order: 2;", mobile)
 
     def test_mobile_density_refresh_is_open_compact_and_safe_area_aware(self):
         css = (Path(__file__).resolve().parents[1] / "src/static/styles.css").read_text(encoding="utf-8")
@@ -87,8 +95,10 @@ class RadarRenderTests(unittest.TestCase):
         self.assertIn("overflow-x: auto", css)
         self.assertIn("scrollbar-width: none", css)
         self.assertIn("-webkit-line-clamp: 2", mobile)
-        self.assertIn("grid-template-columns: 28px minmax(0, 1fr) 40px", mobile)
+        self.assertIn("grid-template-columns: 28px minmax(0, 1fr) 68px", mobile)
         self.assertIn("backdrop-filter: none", mobile)
+        self.assertIn("background: var(--rank-1)", mobile)
+        self.assertIn(".story-list { border: 0", mobile)
 
     def test_formal_category_hides_focus(self):
         rendered = render_index({"page": 1, "page_count": 1, "items": []}, None, "民生", {"dates": [], "feeds": []})

@@ -25,6 +25,7 @@ def _summary(item: dict[str, Any]) -> dict[str, Any]:
         "title": item["block"]["title"],
         "ai_summary": item["block"]["ai_summary"],
         "recommendation_reason": item["block"]["recommendation_reason"],
+        "final_score": item["final_score"],
         "detail_path": (
             f"/items/{item['published_date']}/{item['item_id']}/"
         ),
@@ -40,7 +41,10 @@ def build_search_indexes(selected_items, issue_items):
                 "title": item["block"]["title"],
                 "ai_summary": item["block"]["ai_summary"],
                 **(
-                    {"recommendation_reason": item["block"]["recommendation_reason"]}
+                    {
+                        "recommendation_reason": item["block"]["recommendation_reason"],
+                        "final_score": item["final_score"],
+                    }
                     if include_reason else {}
                 ),
                 "detail_path": f'/items/{item["published_date"]}/{item["item_id"]}/',
@@ -53,10 +57,8 @@ def build_search_indexes(selected_items, issue_items):
     }
 
 
-def build_recent_selected_feeds(items, limit=3):
-    dates = sorted(
-        {item["published_date"] for item in items}, reverse=True
-    )[:limit]
+def build_selected_feeds(items):
+    dates = sorted({item["published_date"] for item in items}, reverse=True)
     ordered = sorted(
         items, key=lambda item: (item["daily_rank"], item["item_id"])
     )
@@ -138,7 +140,7 @@ def build_indexes(items, as_of, page_size=20):
             "date": published_date,
             "items": [_summary(item) for item in same_date],
         }
-    indexes.update(build_recent_selected_feeds(items))
+    indexes.update(build_selected_feeds(items))
     for category in CATEGORIES:
         category_items = [
             item for item in ordered if item["category"] == category

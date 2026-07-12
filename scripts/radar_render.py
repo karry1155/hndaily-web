@@ -60,6 +60,8 @@ def _selected_row(item, rank=None):
     title = html.escape(item["title"])
     summary = html.escape(item.get("ai_summary", ""))
     reason = html.escape(item.get("recommendation_reason", ""))
+    score = item.get("final_score")
+    score_label = f"{score:g}" if isinstance(score, (int, float)) else "—"
     search_text = html.escape(
         " ".join((item["title"], item.get("ai_summary", ""), item.get("recommendation_reason", ""))),
         quote=True,
@@ -70,18 +72,40 @@ def _selected_row(item, rank=None):
         f'{rank_markup}<a class="story-main" href="{html.escape(item["detail_path"], quote=True)}">'
         f'<strong class="story-title">{title}</strong>'
         f'<p class="story-summary">{summary}</p>'
-        f'<p class="story-reason"><span>为什么值得读</span>{reason}</p></a>'
-        f'{_bookmark_button(item)}</article>'
+        f'<p class="story-reason"><span>推荐理由：</span>{reason}</p></a>'
+        f'<div class="story-actions"><span class="story-score" title="最终分">{score_label}</span>'
+        f'{_bookmark_button(item)}</div></article>'
     )
 
 
-def _feed_date_heading(value, count):
+def _feed_date_heading(value, count, is_latest=False):
     parsed = date.fromisoformat(value)
     weekdays = ("星期一", "星期二", "星期三", "星期四", "星期五", "星期六", "星期日")
     return (
+        '<span class="desktop-feed-date">'
         f'<strong class="current-date">{parsed.month}月{parsed.day}日</strong>'
-        f'<span class="current-date-meta">{weekdays[parsed.weekday()]} · {count} 条</span>'
+        f'<span class="current-date-meta">{weekdays[parsed.weekday()]} · {count} 条</span></span>'
+        '<span class="mobile-feed-date">'
+        + ('<strong class="mobile-date-today">今天</strong>' if is_latest else '')
+        + f'<span class="mobile-date-meta">{parsed.month}月{parsed.day}日 周{weekdays[parsed.weekday()][-1]}</span></span>'
     )
+
+
+def _selected_header_heading(value):
+    parsed = date.fromisoformat(value)
+    weekdays = ("星期一", "星期二", "星期三", "星期四", "星期五", "星期六", "星期日")
+    return (
+        '<strong class="selected-title">精选</strong>'
+        f'<span class="selected-subtitle">{parsed.year}年{parsed.month}月{parsed.day}日 {weekdays[parsed.weekday()]}</span>'
+    )
+
+
+def _mobile_updated(value):
+    if value == "—":
+        return "暂无更新"
+    parsed = date.fromisoformat(value)
+    weekdays = ("一", "二", "三", "四", "五", "六", "日")
+    return f'{parsed.month}月{parsed.day}日 · 周{weekdays[parsed.weekday()]}'
 
 
 NAV_ITEMS = (("精选", "/"), ("全部信息", "/all/"), ("AI 日报", "/daily/"), ("收藏", "/starred/"))
@@ -115,9 +139,12 @@ def render_primary_nav(active, mobile_meta=""):
         '<button class="nav-toggle" type="button" aria-expanded="false">菜单</button>'
         f'<div class="nav-body"><span class="nav-label">内容</span><nav>{links(NAV_ITEMS)}</nav>'
         f'<span class="nav-label">更多</span><nav>{links(MORE_ITEMS)}</nav>'
-        '<button class="theme-toggle" type="button" role="switch" aria-checked="false" data-theme-toggle>'
-        '<span aria-hidden="true" class="theme-toggle-track"><span></span></span>'
-        '<span class="sr-only">切换亮色或暗色主题</span></button></div></aside>'
+        '<div class="theme-toggle" role="group" aria-label="主题" data-theme-toggle>'
+        '<span class="theme-toggle-thumb" aria-hidden="true" data-theme-thumb data-pos="system"></span>'
+        '<button class="theme-toggle-opt" type="button" data-theme-choice="dark" aria-label="深色主题">☾</button>'
+        '<button class="theme-toggle-opt" type="button" data-theme-choice="system" aria-label="跟随系统">▣</button>'
+        '<button class="theme-toggle-opt" type="button" data-theme-choice="light" aria-label="亮色主题">☼</button>'
+        '</div></div></aside>'
     )
 
 
@@ -138,7 +165,7 @@ def render_index(index, focus, active_category, manifest=None):
                 groups.append("</div></section>")
             current = item["published_date"]
             count = sum(value["published_date"] == current for value in index["items"])
-            heading = _feed_date_heading(current, count)
+            heading = _feed_date_heading(current, count, current == latest_date)
             groups.append(f'<section class="date-group" data-feed-date="{current}"><h2>{heading}</h2><div class="story-list">')
         groups.append(_selected_row(item))
     if current is not None:
@@ -147,9 +174,9 @@ def render_index(index, focus, active_category, manifest=None):
         groups.append(f'<p class="empty-state">今日暂无{html.escape(active_category)}精选</p>')
     updated = focus.get("updated_through") if focus else max((item["published_date"] for item in index["items"]), default="—")
     manifest = manifest or {"dates": [latest_date] if latest_date else [], "feeds": []}
-    heading = _feed_date_heading(latest_date, len(index["items"])) if latest_date else '<strong class="current-date">暂无内容</strong>'
+    heading = _selected_header_heading(latest_date) if latest_date else '<strong class="selected-title">精选</strong><span class="selected-subtitle">暂无内容</span>'
     return _template("radar-index.html").safe_substitute(
-        nav=render_primary_nav("精选", f'<span class="mobile-updated">更新至 {html.escape(updated)}</span>'), category_links=links,
+        nav=render_primary_nav("精选", f'<span class="mobile-updated">{html.escape(_mobile_updated(updated))}</span>'), category_links=links,
         active_category=html.escape(active_category, quote=True), date_heading=heading,
         focus_section=focus_section, date_groups="".join(groups),
         feed_manifest=json.dumps(manifest, ensure_ascii=False).replace("<", "\\u003c"),

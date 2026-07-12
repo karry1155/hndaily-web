@@ -18,9 +18,14 @@ class SelectedHomeJavaScriptTests(unittest.TestCase):
         self.assertIn("recommendation_reason", js)
         self.assertIn("searching: false", js)
         self.assertIn("selectedFeedState.searching", js)
-        self.assertNotIn('choice === "system"', js)
+        self.assertIn('choice === "system"', js)
+        self.assertIn("final_score", js)
+        self.assertIn("推荐理由：", js)
 
-    def test_theme_control_has_switch_semantics(self):
+    def test_theme_control_has_three_explicit_modes(self):
         rendered = render_primary_nav("精选")
-        self.assertIn('role="switch"', rendered)
+        self.assertIn('role="group"', rendered)
         self.assertIn("data-theme-toggle", rendered)
+        self.assertIn('data-theme-choice="dark"', rendered)
+        self.assertIn('data-theme-choice="system"', rendered)
+        self.assertIn('data-theme-choice="light"', rendered)

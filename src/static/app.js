@@ -6,30 +6,34 @@ const themeMedia = matchMedia("(prefers-color-scheme: dark)");
 
 function storedTheme() {
   const value = localStorage.getItem(THEME_KEY);
-  return value === "light" || value === "dark" ? value : null;
+  return ["dark", "system", "light"].includes(value) ? value : "system";
 }
 
 function applyTheme(choice) {
-  const resolved = choice || (themeMedia.matches ? "dark" : "light");
-  document.documentElement.dataset.themeChoice = choice || "system";
+  const resolved = choice === "system" ? (themeMedia.matches ? "dark" : "light") : choice;
+  document.documentElement.dataset.themeChoice = choice;
   document.documentElement.dataset.theme = resolved;
-  document.querySelectorAll("[data-theme-toggle]").forEach((button) => {
-    button.setAttribute("aria-checked", String(resolved === "light"));
+  document.querySelectorAll("[data-theme-toggle]").forEach((control) => {
+    control.querySelector("[data-theme-thumb]").dataset.pos = choice;
+    control.querySelectorAll("[data-theme-choice]").forEach((button) => {
+      button.classList.toggle("active", button.dataset.themeChoice === choice);
+      button.setAttribute("aria-pressed", String(button.dataset.themeChoice === choice));
+    });
   });
 }
 
 applyTheme(storedTheme());
 
-document.querySelectorAll("[data-theme-toggle]").forEach((button) => {
+document.querySelectorAll("[data-theme-choice]").forEach((button) => {
   button.addEventListener("click", () => {
-    const next = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
-    localStorage.setItem(THEME_KEY, next);
-    applyTheme(next);
+    const choice = button.dataset.themeChoice;
+    localStorage.setItem(THEME_KEY, choice);
+    applyTheme(choice);
   });
 });
 
 themeMedia.addEventListener("change", () => {
-  if (!storedTheme()) applyTheme(null);
+  if (storedTheme() === "system") applyTheme("system");
 });
 
 document.querySelectorAll("[data-search-input]").forEach((input) => {
@@ -114,14 +118,21 @@ function selectedStory(item) {
   const reason = document.createElement("p");
   reason.className = "story-reason";
   const label = document.createElement("span");
-  label.textContent = "为什么值得读";
+  label.textContent = "推荐理由：";
   reason.append(label, item.recommendation_reason || "");
   link.append(title, summary, reason);
-  article.append(link, bookmarkButton(item));
+  const actions = document.createElement("div");
+  actions.className = "story-actions";
+  const score = document.createElement("span");
+  score.className = "story-score";
+  score.title = "最终分";
+  score.textContent = Number.isFinite(item.final_score) ? String(item.final_score) : "—";
+  actions.append(score, bookmarkButton(item));
+  article.append(link, actions);
   return article;
 }
 
-function dateHeading(value, count) {
+function dateHeading(value, count, isLatest = false) {
   const parts = value.split("-").map(Number);
   const parsed = new Date(Date.UTC(parts[0], parts[1] - 1, parts[2]));
   const weekdays = ["星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六"];
@@ -132,7 +143,22 @@ function dateHeading(value, count) {
   const meta = document.createElement("span");
   meta.className = "current-date-meta";
   meta.textContent = `${weekdays[parsed.getUTCDay()]} · ${count} 条`;
-  heading.append(dateLabel, meta);
+  const desktop = document.createElement("span");
+  desktop.className = "desktop-feed-date";
+  desktop.append(dateLabel, meta);
+  const mobile = document.createElement("span");
+  mobile.className = "mobile-feed-date";
+  if (isLatest) {
+    const today = document.createElement("strong");
+    today.className = "mobile-date-today";
+    today.textContent = "今天";
+    mobile.append(today);
+  }
+  const mobileMeta = document.createElement("span");
+  mobileMeta.className = "mobile-date-meta";
+  mobileMeta.textContent = `${parts[1]}月${parts[2]}日 周${weekdays[parsed.getUTCDay()].slice(-1)}`;
+  mobile.append(mobileMeta);
+  heading.append(desktop, mobile);
   return heading;
 }
 
@@ -141,7 +167,7 @@ function renderSelectedDate(payload, activeCategory = "全部") {
   const section = document.createElement("section");
   section.className = "date-group";
   section.dataset.feedDate = payload.date;
-  section.append(dateHeading(payload.date, items.length));
+  section.append(dateHeading(payload.date, items.length, payload.date === selectedFeedState.dates[0]));
   const list = document.createElement("div");
   list.className = "story-list";
   items.forEach((item) => list.append(selectedStory(item)));

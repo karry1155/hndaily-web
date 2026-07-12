@@ -20,12 +20,13 @@ class RadarIndexTests(unittest.TestCase):
         row = indexes["all/page-001.json"]["items"][0]
         self.assertEqual(
             set(row),
-            {"item_id", "published_date", "daily_rank", "category", "title", "ai_summary", "recommendation_reason", "detail_path"},
+            {"item_id", "published_date", "daily_rank", "category", "title", "ai_summary", "recommendation_reason", "final_score", "detail_path"},
         )
         self.assertEqual(row["ai_summary"], "私有摘要")
         self.assertEqual(row["recommendation_reason"], "这条信息揭示海南本地变化。")
+        self.assertEqual(row["final_score"], 80.0)
 
-    def test_recent_selected_feeds_publish_newest_three_nonempty_dates(self):
+    def test_selected_feeds_publish_all_nonempty_dates(self):
         items = [
             stored_item(1, date="2026-07-07"),
             stored_item(2, date="2026-07-08"),
@@ -35,9 +36,9 @@ class RadarIndexTests(unittest.TestCase):
         indexes = build_indexes(items, "2026-07-10")
         self.assertEqual(
             indexes["recent-selected.json"]["dates"],
-            ["2026-07-10", "2026-07-09", "2026-07-08"],
+            ["2026-07-10", "2026-07-09", "2026-07-08", "2026-07-07"],
         )
-        self.assertNotIn("selected-feed/2026-07-07.json", indexes)
+        self.assertIn("selected-feed/2026-07-07.json", indexes)
         self.assertEqual(indexes["selected-feed/2026-07-10.json"]["count"], 1)
 
     def test_search_indexes_separate_selected_and_issue_titles(self):
