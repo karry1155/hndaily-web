@@ -11,6 +11,16 @@ SKILL_DATA = ROOT.parent / "hndaily-skill" / "_data"
 
 
 class RadarRealDateTests(unittest.TestCase):
+    def test_committed_selected_items_have_distinct_recommendation_reasons(self):
+        for published_date in ("2026-07-08", "2026-07-09"):
+            for path in (ROOT / "content/items" / published_date).glob("*.json"):
+                item = json.loads(path.read_text(encoding="utf-8"))
+                self.assertEqual(item["schema_version"], 4)
+                reason = item["block"]["recommendation_reason"].strip()
+                summary = item["block"]["ai_summary"].strip()
+                self.assertTrue(reason)
+                self.assertNotEqual("".join(reason.split()), "".join(summary.split()))
+
     def test_committed_two_date_library_renders_both_dates(self):
         self.assertTrue((ROOT / "content/items/2026-07-08").is_dir())
         self.assertTrue((ROOT / "content/items/2026-07-09").is_dir())
