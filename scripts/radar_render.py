@@ -54,23 +54,34 @@ def _bookmark_button(item):
     )
 
 
-def _selected_row(item, rank=None, show_summary=False):
+def _selected_row(item, rank=None):
     rank_markup = "" if rank is None else f'<span class="title-rank focus-rank-{rank}">{rank}</span>'
-    summary = f'<p>{html.escape(item.get("ai_summary", ""))}</p>' if show_summary else ""
+    modifier = " focus-story" if rank is not None else ""
+    title = html.escape(item["title"])
+    summary = html.escape(item.get("ai_summary", ""))
+    reason = html.escape(item.get("recommendation_reason", ""))
+    search_text = html.escape(
+        " ".join((item["title"], item.get("ai_summary", ""), item.get("recommendation_reason", ""))),
+        quote=True,
+    )
     return (
-        f'<article class="selected-row" data-search-title="{html.escape(item["title"], quote=True)}">'
-        f'{rank_markup}<a href="{html.escape(item["detail_path"], quote=True)}"><strong>{html.escape(item["title"])}</strong>{summary}</a>'
+        f'<article class="selected-story{modifier}" data-selected-id="{html.escape(item["item_id"], quote=True)}" '
+        f'data-search-text="{search_text}">'
+        f'{rank_markup}<a class="story-main" href="{html.escape(item["detail_path"], quote=True)}">'
+        f'<strong class="story-title">{title}</strong>'
+        f'<p class="story-summary">{summary}</p>'
+        f'<p class="story-reason"><span>为什么值得读</span>{reason}</p></a>'
         f'{_bookmark_button(item)}</article>'
     )
 
 
-def _feed_date_heading(value, is_latest=False):
+def _feed_date_heading(value, count):
     parsed = date.fromisoformat(value)
-    weekdays = ("周一", "周二", "周三", "周四", "周五", "周六", "周日")
-    detail = f"{parsed.month}月{parsed.day}日 {weekdays[parsed.weekday()]}"
-    if is_latest:
-        return f"<strong>今天</strong><span>{detail}</span>"
-    return f"<span>{detail}</span>"
+    weekdays = ("星期一", "星期二", "星期三", "星期四", "星期五", "星期六", "星期日")
+    return (
+        f'<strong class="current-date">{parsed.month}月{parsed.day}日</strong>'
+        f'<span class="current-date-meta">{weekdays[parsed.weekday()]} · {count} 条</span>'
+    )
 
 
 NAV_ITEMS = (("精选", "/"), ("全部信息", "/all/"), ("AI 日报", "/daily/"), ("收藏", "/starred/"))
@@ -104,22 +115,20 @@ def render_primary_nav(active, mobile_meta=""):
         '<button class="nav-toggle" type="button" aria-expanded="false">菜单</button>'
         f'<div class="nav-body"><span class="nav-label">内容</span><nav>{links(NAV_ITEMS)}</nav>'
         f'<span class="nav-label">更多</span><nav>{links(MORE_ITEMS)}</nav>'
-        '<div class="theme-switch" aria-label="主题">'
-        '<button type="button" data-theme-choice="dark" aria-label="深色">深</button>'
-        '<button type="button" data-theme-choice="system" aria-label="跟随系统">系统</button>'
-        '<button type="button" data-theme-choice="light" aria-label="亮色">亮</button>'
-        '</div></div></aside>'
+        '<button class="theme-toggle" type="button" role="switch" aria-checked="false" data-theme-toggle>'
+        '<span aria-hidden="true" class="theme-toggle-track"><span></span></span>'
+        '<span class="sr-only">切换亮色或暗色主题</span></button></div></aside>'
     )
 
 
-def render_index(index, focus, active_category):
+def render_index(index, focus, active_category, manifest=None):
     links = ""
     for name, path in CATEGORY_PATHS.items():
         active = ' class="active"' if name == active_category else ""
         links += f'<a href="{path}"{active}>{name}</a>'
     focus_section = ""
     if focus is not None:
-        focus_section = '<section class="focus-section glass-panel"><div class="section-heading"><h2>时下要闻</h2></div><div class="title-list">' + "".join(_selected_row(item, item["focus_rank"]) for item in focus["items"]) + "</div></section>"
+        focus_section = '<section class="focus-section"><div class="section-heading"><h2>新闻精选</h2></div><div class="focus-list">' + "".join(_selected_row(item, item["focus_rank"]) for item in focus["items"]) + "</div></section>"
     groups = []
     current = None
     latest_date = index["items"][0]["published_date"] if index["items"] else None
@@ -128,21 +137,22 @@ def render_index(index, focus, active_category):
             if current is not None:
                 groups.append("</div></section>")
             current = item["published_date"]
-            heading = _feed_date_heading(current, current == latest_date)
-            groups.append(f'<section class="date-group" data-search-group><h2>{heading}</h2><div class="title-list">')
-        groups.append(_selected_row(item, show_summary=True))
+            count = sum(value["published_date"] == current for value in index["items"])
+            heading = _feed_date_heading(current, count)
+            groups.append(f'<section class="date-group" data-feed-date="{current}"><h2>{heading}</h2><div class="story-list">')
+        groups.append(_selected_row(item))
     if current is not None:
         groups.append("</div></section>")
     if not groups:
         groups.append(f'<p class="empty-state">今日暂无{html.escape(active_category)}精选</p>')
-    page = index.get("page", 1)
-    pages = index.get("page_count", 1)
-    pagination = "" if pages <= 1 else f'<span>第 {page} / {pages} 页</span>'
     updated = focus.get("updated_through") if focus else max((item["published_date"] for item in index["items"]), default="—")
+    manifest = manifest or {"dates": [latest_date] if latest_date else [], "feeds": []}
+    heading = _feed_date_heading(latest_date, len(index["items"])) if latest_date else '<strong class="current-date">暂无内容</strong>'
     return _template("radar-index.html").safe_substitute(
         nav=render_primary_nav("精选", f'<span class="mobile-updated">更新至 {html.escape(updated)}</span>'), category_links=links,
-        view_title=html.escape("新闻精选" if active_category == "全部" else active_category), updated_through=html.escape(updated),
-        focus_section=focus_section, date_groups="".join(groups), pagination=pagination,
+        active_category=html.escape(active_category, quote=True), date_heading=heading,
+        focus_section=focus_section, date_groups="".join(groups),
+        feed_manifest=json.dumps(manifest, ensure_ascii=False).replace("<", "\\u003c"),
     )
 
 
@@ -178,12 +188,18 @@ def render_item(item):
         back_label = "全部信息"
         category = f'第{item["page_number"]}版 · {item["page_name"]}'
     block = item["block"]
+    recommendation_section = (
+        '<section class="recommendation-reason"><h2>推荐理由</h2>'
+        f'<p>{html.escape(block["recommendation_reason"])}</p></section>'
+        if "category" in item else ""
+    )
     paragraphs = [part.strip() for part in re.split(r"\n\s*\n", block["content"].replace("\r\n", "\n")) if part.strip()]
     return _template("radar-item.html").safe_substitute(
         category_path=back_path, category=html.escape(category),
         back_label=html.escape(back_label),
         published_date=html.escape(item["published_date"]), title=html.escape(block["title"]),
         original_url=html.escape(block["original_url"], quote=True), ai_summary=html.escape(block["ai_summary"]),
+        recommendation_section=recommendation_section,
         body_paragraphs="".join(f"<p>{html.escape(part)}</p>" for part in paragraphs),
     )
 
@@ -232,24 +248,46 @@ def build_site(content_root, site_root):
     try:
         shutil.copytree(ROOT / "src/static", staging / "static")
         focus = _read(content_root / "indexes/focus.json")
-        for path in sorted((content_root / "indexes/all").glob("page-*.json")):
-            data = _read(path); number = data["page"]
-            target = staging / ("index.html" if number == 1 else f"page/{number}/index.html")
-            _write(target, render_index(data, focus, "全部"))
+        manifest = _read(content_root / "indexes/recent-selected.json")
+        feed_payloads = {}
+        for published_date in manifest["dates"]:
+            source = content_root / f"indexes/selected-feed/{published_date}.json"
+            payload = _read(source)
+            feed_payloads[published_date] = payload
+            target = staging / f"static/selected-feed/{published_date}.json"
+            target.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copy2(source, target)
+        latest_date = manifest["dates"][0] if manifest["dates"] else None
+        latest_items = feed_payloads.get(latest_date, {}).get("items", [])
+        _write(
+            staging / "index.html",
+            render_index(
+                {"page": 1, "page_count": 1, "items": latest_items},
+                focus,
+                "全部",
+                manifest,
+            ),
+        )
         slug_to_name = {value: key for key, value in {k: v.strip('/').split('/')[-1] for k, v in CATEGORY_PATHS.items() if k != "全部"}.items()}
         for name, route in CATEGORY_PATHS.items():
             if name in {"全部", "机会"}: continue
             slug = route.strip("/").split("/")[-1]
-            for path in sorted((content_root / f"indexes/categories/{slug}").glob("page-*.json")):
-                data = _read(path); number = data["page"]
-                target = staging / f"category/{slug}" / ("index.html" if number == 1 else f"page/{number}/index.html")
-                _write(target, render_index(data, None, name))
+            items = [item for item in latest_items if item["category"] == name]
+            _write(
+                staging / f"category/{slug}/index.html",
+                render_index(
+                    {"page": 1, "page_count": 1, "items": items},
+                    None,
+                    name,
+                    manifest,
+                ),
+            )
         for stem, suffix in (("active-page", ""), ("expired-page", "expired")):
             for path in sorted((content_root / "indexes/categories/opportunity").glob(f"{stem}-*.json")):
                 data = _read(path); number = data["page"]
                 base = staging / "category/opportunity" / suffix
                 target = base / ("index.html" if number == 1 else f"page/{number}/index.html")
-                _write(target, render_index(data, None, "机会"))
+                _write(target, render_index(data, None, "机会", manifest))
         for path in sorted((content_root / "indexes/dates").glob("*.json")):
             data = _read(path)
             _write(staging / f"date/{data['date']}/index.html", render_index({"page": 1, "page_count": 1, "items": data["items"]}, None, "全部"))

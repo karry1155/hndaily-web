@@ -7,12 +7,13 @@ from tests.radar_fixtures import write_content_library
 
 
 class RadarSiteBuildTests(unittest.TestCase):
-    def test_builds_all_category_date_detail_and_pagination_routes(self):
+    def test_builds_selected_feed_routes_without_pagination(self):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp); content = root / "content"; site = root / "site"
             write_content_library(content, 21); build_site(content, site)
             self.assertTrue((site / "index.html").is_file())
-            self.assertTrue((site / "page/2/index.html").is_file())
+            self.assertFalse((site / "page/2/index.html").exists())
+            self.assertTrue((site / "static/selected-feed/2026-07-10.json").is_file())
             self.assertTrue((site / "category/livelihood/index.html").is_file())
             self.assertTrue((site / "all/index.html").is_file())
             self.assertTrue((site / "all/2026-07-10/index.html").is_file())
