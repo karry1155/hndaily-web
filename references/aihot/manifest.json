@@ -1,0 +1,46 @@
+{
+  "benchmark": "AIHOT",
+  "homepage": "https://aihot.virxact.com/",
+  "captured_at_utc": "2026-07-12T04:00:28Z",
+  "captured_at_local": "2026-07-11T21:00:28-07:00",
+  "purpose": "Internal HN·HOT design benchmark reference",
+  "files": [
+    {
+      "path": "raw/index.html",
+      "url": "https://aihot.virxact.com/",
+      "bytes": 314250,
+      "sha256": "5095d649fc3f3d6a880e95eee6d04cc9f9695cebd80e37a60b600f206751d178"
+    },
+    {
+      "path": "raw/css/87099075f9ee2c44.css",
+      "url": "https://aihot.virxact.com/_next/static/css/87099075f9ee2c44.css",
+      "bytes": 32519,
+      "sha256": "ebf45158906497c380b8fae2d1497eedcad6b8fc7012d20cfc1eedeff0719ce2"
+    },
+    {
+      "path": "raw/css/1b8c5bd4d2d706ba.css",
+      "url": "https://aihot.virxact.com/_next/static/css/1b8c5bd4d2d706ba.css",
+      "bytes": 63472,
+      "sha256": "b4619cd9dd0d11d1b967f9b54c3f7241550ab3048df859d1a68a2f0feedf6c63"
+    },
+    {
+      "path": "raw/css/8e2da32904e2f863.css",
+      "url": "https://aihot.virxact.com/_next/static/css/8e2da32904e2f863.css",
+      "bytes": 46279,
+      "sha256": "b13cae171290d76e5432b9b7d20221e29a4086425ee8299218e481875d3c279a"
+    },
+    {
+      "path": "screenshots/mobile-393x852.png",
+      "viewport": { "width": 393, "height": 852 },
+      "bytes": 43511,
+      "sha256": "c2d3abce078cbf16e25aa8ba475b52fca2cac79e00e6a98192861353aa533a26"
+    },
+    {
+      "path": "screenshots/desktop-1440x1000.png",
+      "viewport": { "width": 1440, "height": 1000 },
+      "bytes": 112940,
+      "sha256": "c4e6bd5449f21ddb3328325dfdb3995436f262517e06712796a29472391aeebb"
+    }
+  ]
+}
+
