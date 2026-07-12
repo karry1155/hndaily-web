@@ -20,22 +20,23 @@ class RadarRenderTests(unittest.TestCase):
         self.assertIn("hn-hot-starred", js)
         self.assertIn("backdrop-filter", css)
 
-    def test_radar_css_overrides_legacy_three_column_shell(self):
+    def test_radar_css_uses_compact_sidebar_and_item_panels(self):
         css = (Path(__file__).resolve().parents[1] / "src/static/styles.css").read_text(encoding="utf-8")
-        self.assertIn(".radar-shell { grid-template-columns: 216px minmax(0, 1fr); }", css)
-        self.assertIn(".ai-summary { margin: 28px 0; padding: 20px; background: var(--panel); }", css)
+        self.assertIn("--sidebar: 216px", css)
+        self.assertIn("grid-template-columns: var(--sidebar) minmax(0, 1fr)", css)
+        self.assertIn(".ai-summary, .recommendation-reason", css)
 
-    def test_final_visual_cascade_preserves_ranking_responsive_sidebar_and_light_tabs(self):
+    def test_selected_home_has_one_authoritative_responsive_visual_system(self):
         css = (Path(__file__).resolve().parents[1] / "src/static/styles.css").read_text(encoding="utf-8")
-        marker = css.index("/* HN·HOT final visual cascade. */")
-        final = css[marker:]
-        self.assertIn(".focus-rank-1 { color: #f17888; }", final)
-        self.assertIn(".focus-rank-2 { color: #e5b936; }", final)
-        self.assertIn(".focus-rank-3 { color: #38c7df; }", final)
-        self.assertIn(".focus-rank-4 { color: #71839b; }", final)
-        self.assertIn("@media (min-width: 761px) and (max-width: 1180px)", final)
-        self.assertIn('html[data-theme="light"] .category-tabs', final)
-        self.assertIn('html[data-theme="light"] .category-tabs a.active', final)
+        self.assertEqual(css.count("/* Selected homepage */"), 1)
+        self.assertNotIn("/* HN·HOT final visual cascade. */", css)
+        self.assertIn(".selected-header", css)
+        self.assertIn(".search-submit", css)
+        self.assertIn(".story-reason", css)
+        self.assertIn(".theme-toggle-track", css)
+        self.assertIn(".category-tabs a.active::after", css)
+        mobile = css[css.index("@media (max-width: 760px)"):]
+        self.assertIn(".selected-story .story-summary { display: none; }", mobile)
 
     def test_all_view_renders_focus_and_title_only_public_fields(self):
         item = stored_item(1, title="科技见习 <计划>", summary="摘要 <script>x</script>")
@@ -43,63 +44,50 @@ class RadarRenderTests(unittest.TestCase):
             "item_id": item["item_id"], "published_date": item["published_date"],
             "daily_rank": 1, "category": "机会",
             "title": item["block"]["title"], "ai_summary": item["block"]["ai_summary"],
+            "recommendation_reason": item["block"]["recommendation_reason"],
             "detail_path": f"/items/{item['published_date']}/{item['item_id']}/",
         }
-        rendered = render_index({"page": 1, "page_count": 1, "items": [summary]}, {"updated_through": "2026-07-10", "items": [{**summary, "focus_rank": 1}]}, "全部")
-        self.assertIn("时下要闻", rendered)
+        manifest = {"dates": ["2026-07-10"], "feeds": ["/static/selected-feed/2026-07-10.json"]}
+        rendered = render_index({"page": 1, "page_count": 1, "items": [summary]}, {"updated_through": "2026-07-10", "items": [{**summary, "focus_rank": 1}]}, "全部", manifest)
+        self.assertIn("新闻精选", rendered)
         self.assertNotIn("当下重点", rendered)
-        self.assertIn("<h1>新闻精选</h1>", rendered)
-        self.assertIn("更新至 2026-07-10", rendered)
-        self.assertIn('<span class="mobile-updated">更新至 2026-07-10</span>', rendered)
-        self.assertIn('<h2><strong>今天</strong><span>7月10日 周五</span></h2>', rendered)
+        self.assertIn('<strong class="current-date">7月10日</strong>', rendered)
+        self.assertIn('<span class="current-date-meta">星期五 · 1 条</span>', rendered)
+        self.assertIn('class="search-submit"', rendered)
+        self.assertIn('data-selected-feed-manifest', rendered)
         self.assertIn("科技见习 &lt;计划&gt;", rendered)
         self.assertNotIn("<script>", rendered)
         self.assertNotIn("最终分", rendered)
-        self.assertEqual(rendered.count("<p>摘要 &lt;script&gt;x&lt;/script&gt;</p>"), 1)
+        self.assertIn('class="story-summary"', rendered)
+        self.assertIn('class="story-reason"', rendered)
+        self.assertIn("为什么值得读", rendered)
         self.assertIn('data-search-scope="selected"', rendered)
         self.assertIn("focus-rank-1", rendered)
         self.assertIn("data-star-id", rendered)
+        self.assertNotIn("pagination", rendered)
 
     def test_mobile_home_uses_bottom_navigation_focus_first_and_hides_search(self):
         css = (Path(__file__).resolve().parents[1] / "src/static/styles.css").read_text(encoding="utf-8")
-        marker = css.index("/* HN·HOT mobile layout. */")
-        mobile = css[marker:]
+        mobile = css[css.index("@media (max-width: 760px)"):]
         self.assertIn("position: fixed", mobile)
-        self.assertIn("bottom: 0", mobile)
-        self.assertIn(".radar-content .focus-section { order: 1; }", mobile)
-        self.assertIn(".radar-content .content-tools { order: 2; }", mobile)
-        self.assertIn(".radar-content .search-box { display: none; }", mobile)
+        self.assertIn("inset: auto 0 0", mobile)
+        self.assertIn(".selected-search { display: none; }", mobile)
 
     def test_mobile_density_refresh_is_open_compact_and_safe_area_aware(self):
         css = (Path(__file__).resolve().parents[1] / "src/static/styles.css").read_text(encoding="utf-8")
-        marker = css.index("/* HN·HOT mobile density refresh. */")
-        mobile = css[marker:]
-        self.assertIn("@media (max-width: 760px)", mobile)
-        self.assertIn("-webkit-backdrop-filter: none", mobile)
-        self.assertIn("padding: 9px 18px;\n    border-bottom: 0;", mobile)
-        self.assertIn(".focus-section .selected-row:first-child { border-top: 0; }", mobile)
-        self.assertIn("font-size: 15px", mobile)
-        self.assertIn("font-weight: 800", mobile)
-        self.assertIn("letter-spacing: .04em", mobile)
-        self.assertIn("background: var(--bg)", mobile)
-        self.assertIn('html[data-theme="light"] .radar-shell .primary-nav', mobile)
-        self.assertIn(".date-group h2 strong", mobile)
-        self.assertIn(".date-group h2 span", mobile)
+        mobile = css[css.index("@media (max-width: 760px)"):]
+        self.assertIn("@media (max-width: 760px)", css)
         self.assertIn("position: fixed", mobile)
         self.assertIn("inset: auto 0 0", mobile)
         self.assertIn("z-index: 40", mobile)
-        self.assertIn("padding-bottom: calc(64px + env(safe-area-inset-bottom))", mobile)
-        self.assertIn("overflow-x: auto", mobile)
-        self.assertIn("scrollbar-width: none", mobile)
-        self.assertIn("border: 0", mobile)
-        self.assertIn("box-shadow: none", mobile)
+        self.assertIn("padding-bottom: calc(66px + env(safe-area-inset-bottom))", mobile)
+        self.assertIn("overflow-x: auto", css)
+        self.assertIn("scrollbar-width: none", css)
         self.assertIn("-webkit-line-clamp: 2", mobile)
-        self.assertIn("-webkit-line-clamp: 3", mobile)
-        self.assertIn("grid-template-columns: 26px minmax(0,1fr) 32px", mobile)
-        self.assertNotIn("@media (min-width: 761px)", mobile)
+        self.assertIn("grid-template-columns: 28px minmax(0, 1fr) 40px", mobile)
 
     def test_formal_category_hides_focus(self):
-        rendered = render_index({"page": 1, "page_count": 1, "items": []}, None, "民生")
+        rendered = render_index({"page": 1, "page_count": 1, "items": []}, None, "民生", {"dates": [], "feeds": []})
         self.assertNotIn("当下重点", rendered)
         self.assertIn("今日暂无民生精选", rendered)
 
@@ -108,11 +96,12 @@ class RadarRenderTests(unittest.TestCase):
         rendered = render_item(item)
         self.assertEqual(rendered.count(item["block"]["original_url"]), 2)
         self.assertLess(rendered.index("AI 摘要"), rendered.index("第一段"))
+        self.assertLess(rendered.index("推荐理由"), rendered.index("第一段"))
         self.assertIn("第二段 &lt;script&gt;x&lt;/script&gt;", rendered)
 
     def test_issue_page_links_page_pdf_and_local_articles(self):
         issue = {
-            "schema_version": 3, "source": "海南日报",
+            "schema_version": 4, "source": "海南日报",
             "date": "2026-07-08", "page_count": 2, "scored_article_count": 1,
             "pages": [
                 {"page_number": "001", "page_name": "头版", "page_url": "https://example.test/page-001", "pdf_url": "https://example.test/page-001.pdf", "articles": [{"item_id": "hndaily-1", "title": "头版文章", "page_sequence": 1, "detail_path": "/items/2026-07-08/hndaily-1/"}]},
