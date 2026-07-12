@@ -64,11 +64,13 @@ def _selected_row(item, rank=None, show_summary=False):
     )
 
 
-def _feed_date_label(value, is_latest=False):
+def _feed_date_heading(value, is_latest=False):
     parsed = date.fromisoformat(value)
     weekdays = ("周一", "周二", "周三", "周四", "周五", "周六", "周日")
-    prefix = "今天 " if is_latest else ""
-    return f"{prefix}{parsed.month}月{parsed.day}日 {weekdays[parsed.weekday()]}"
+    detail = f"{parsed.month}月{parsed.day}日 {weekdays[parsed.weekday()]}"
+    if is_latest:
+        return f"<strong>今天</strong><span>{detail}</span>"
+    return f"<span>{detail}</span>"
 
 
 NAV_ITEMS = (("精选", "/"), ("全部信息", "/all/"), ("AI 日报", "/daily/"), ("收藏", "/starred/"))
@@ -126,8 +128,8 @@ def render_index(index, focus, active_category):
             if current is not None:
                 groups.append("</div></section>")
             current = item["published_date"]
-            label = _feed_date_label(current, current == latest_date)
-            groups.append(f'<section class="date-group" data-search-group><h2>{html.escape(label)}</h2><div class="title-list">')
+            heading = _feed_date_heading(current, current == latest_date)
+            groups.append(f'<section class="date-group" data-search-group><h2>{heading}</h2><div class="title-list">')
         groups.append(_selected_row(item, show_summary=True))
     if current is not None:
         groups.append("</div></section>")
