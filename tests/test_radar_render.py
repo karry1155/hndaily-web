@@ -46,7 +46,8 @@ class RadarRenderTests(unittest.TestCase):
             "detail_path": f"/items/{item['published_date']}/{item['item_id']}/",
         }
         rendered = render_index({"page": 1, "page_count": 1, "items": [summary]}, {"updated_through": "2026-07-10", "items": [{**summary, "focus_rank": 1}]}, "全部")
-        self.assertIn("当下重点", rendered)
+        self.assertIn("时下要闻", rendered)
+        self.assertNotIn("当下重点", rendered)
         self.assertIn("<h1>精选</h1>", rendered)
         self.assertIn("更新至 2026-07-10", rendered)
         self.assertIn('<span class="mobile-updated">更新至 2026-07-10</span>', rendered)
@@ -75,6 +76,8 @@ class RadarRenderTests(unittest.TestCase):
         mobile = css[marker:]
         self.assertIn("@media (max-width: 760px)", mobile)
         self.assertIn("-webkit-backdrop-filter: none", mobile)
+        self.assertIn("padding: 9px 18px;\n    border-bottom: 0;", mobile)
+        self.assertIn(".focus-section .selected-row:first-child { border-top: 0; }", mobile)
         self.assertIn("position: fixed", mobile)
         self.assertIn("inset: auto 0 0", mobile)
         self.assertIn("z-index: 40", mobile)

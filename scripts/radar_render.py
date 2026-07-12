@@ -109,7 +109,7 @@ def render_index(index, focus, active_category):
         links += f'<a href="{path}"{active}>{name}</a>'
     focus_section = ""
     if focus is not None:
-        focus_section = '<section class="focus-section glass-panel"><div class="section-heading"><h2>当下重点</h2></div><div class="title-list">' + "".join(_selected_row(item, item["focus_rank"]) for item in focus["items"]) + "</div></section>"
+        focus_section = '<section class="focus-section glass-panel"><div class="section-heading"><h2>时下要闻</h2></div><div class="title-list">' + "".join(_selected_row(item, item["focus_rank"]) for item in focus["items"]) + "</div></section>"
     groups = []
     current = None
     for item in index["items"]:

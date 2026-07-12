@@ -175,6 +175,7 @@ html[data-theme="light"] .selected-row:hover { background: linear-gradient(90deg
   .radar-shell .primary-nav {
     min-height: 52px;
     padding: 9px 18px;
+    border-bottom: 0;
     backdrop-filter: none;
     -webkit-backdrop-filter: none;
   }
@@ -1157,6 +1158,7 @@ html[data-theme="light"] .selected-row:hover { background: linear-gradient(90deg
   .radar-shell .primary-nav {
     min-height: 52px;
     padding: 9px 18px;
+    border-bottom: 0;
     backdrop-filter: none;
     -webkit-backdrop-filter: none;
   }
@@ -1165,6 +1167,7 @@ html[data-theme="light"] .selected-row:hover { background: linear-gradient(90deg
   .focus-section .section-heading { padding: 0 0 4px; border-bottom: 0; }
   .focus-section .section-heading h2 { font-size: 17px; font-weight: 650; }
   .focus-section .selected-row { grid-template-columns: 26px minmax(0,1fr) 32px; gap: 8px; padding: 8px 0; }
+  .focus-section .selected-row:first-child { border-top: 0; }
   .focus-section .selected-row strong { display: -webkit-box; overflow: hidden; font-size: 13.5px; line-height: 1.42; -webkit-box-orient: vertical; -webkit-line-clamp: 2; }
   .focus-section .title-rank { display: grid; width: 24px; height: 24px; border-radius: 6px; place-items: center; color: #fff; font-size: 12px; }
   .focus-section .focus-rank-1 { background: #d85762; }
