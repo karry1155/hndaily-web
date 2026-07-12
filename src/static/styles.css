@@ -1165,7 +1165,13 @@ html[data-theme="light"] .selected-row:hover { background: linear-gradient(90deg
   .radar-content { padding: 12px 0 calc(20px + env(safe-area-inset-bottom)); }
   .focus-section { margin: 0 16px 18px; padding: 12px 16px 6px; border-radius: 10px; box-shadow: none; }
   .focus-section .section-heading { padding: 0 0 4px; border-bottom: 0; }
-  .focus-section .section-heading h2 { font-size: 17px; font-weight: 650; }
+  .focus-section .section-heading h2 {
+    font-family: system-ui, -apple-system, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "HarmonyOS Sans SC", "Microsoft YaHei", sans-serif;
+    font-size: 15px;
+    font-weight: 800;
+    line-height: 1.5;
+    letter-spacing: .04em;
+  }
   .focus-section .selected-row { grid-template-columns: 26px minmax(0,1fr) 32px; gap: 8px; padding: 8px 0; }
   .focus-section .selected-row:first-child { border-top: 0; }
   .focus-section .selected-row strong { display: -webkit-box; overflow: hidden; font-size: 13.5px; line-height: 1.42; -webkit-box-orient: vertical; -webkit-line-clamp: 2; }

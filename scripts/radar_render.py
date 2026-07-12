@@ -6,6 +6,7 @@ import json
 import re
 import shutil
 import sys
+from datetime import date
 from html.parser import HTMLParser
 from pathlib import Path
 from string import Template
@@ -63,6 +64,13 @@ def _selected_row(item, rank=None, show_summary=False):
     )
 
 
+def _feed_date_label(value, is_latest=False):
+    parsed = date.fromisoformat(value)
+    weekdays = ("周一", "周二", "周三", "周四", "周五", "周六", "周日")
+    prefix = "今天 " if is_latest else ""
+    return f"{prefix}{parsed.month}月{parsed.day}日 {weekdays[parsed.weekday()]}"
+
+
 NAV_ITEMS = (("精选", "/"), ("全部信息", "/all/"), ("AI 日报", "/daily/"), ("收藏", "/starred/"))
 MORE_ITEMS = (("关于", "/about/"), ("更新日志", "/changelog/"))
 
@@ -112,12 +120,14 @@ def render_index(index, focus, active_category):
         focus_section = '<section class="focus-section glass-panel"><div class="section-heading"><h2>时下要闻</h2></div><div class="title-list">' + "".join(_selected_row(item, item["focus_rank"]) for item in focus["items"]) + "</div></section>"
     groups = []
     current = None
+    latest_date = index["items"][0]["published_date"] if index["items"] else None
     for item in index["items"]:
         if item["published_date"] != current:
             if current is not None:
                 groups.append("</div></section>")
             current = item["published_date"]
-            groups.append(f'<section class="date-group" data-search-group><h2>{html.escape(current)} 精选</h2><div class="title-list">')
+            label = _feed_date_label(current, current == latest_date)
+            groups.append(f'<section class="date-group" data-search-group><h2>{html.escape(label)}</h2><div class="title-list">')
         groups.append(_selected_row(item, show_summary=True))
     if current is not None:
         groups.append("</div></section>")
@@ -129,7 +139,7 @@ def render_index(index, focus, active_category):
     updated = focus.get("updated_through") if focus else max((item["published_date"] for item in index["items"]), default="—")
     return _template("radar-index.html").safe_substitute(
         nav=render_primary_nav("精选", f'<span class="mobile-updated">更新至 {html.escape(updated)}</span>'), category_links=links,
-        view_title=html.escape("精选" if active_category == "全部" else active_category), updated_through=html.escape(updated),
+        view_title=html.escape("新闻精选" if active_category == "全部" else active_category), updated_through=html.escape(updated),
         focus_section=focus_section, date_groups="".join(groups), pagination=pagination,
     )
 
