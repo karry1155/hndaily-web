@@ -69,6 +69,21 @@ class RadarRenderTests(unittest.TestCase):
         self.assertIn(".radar-content .content-tools { order: 2; }", mobile)
         self.assertIn(".radar-content .search-box { display: none; }", mobile)
 
+    def test_mobile_density_refresh_is_open_compact_and_safe_area_aware(self):
+        css = (Path(__file__).resolve().parents[1] / "src/static/styles.css").read_text(encoding="utf-8")
+        marker = css.index("/* HN·HOT mobile density refresh. */")
+        mobile = css[marker:]
+        self.assertIn("@media (max-width: 760px)", mobile)
+        self.assertIn("padding-bottom: calc(64px + env(safe-area-inset-bottom))", mobile)
+        self.assertIn("overflow-x: auto", mobile)
+        self.assertIn("scrollbar-width: none", mobile)
+        self.assertIn("border: 0", mobile)
+        self.assertIn("box-shadow: none", mobile)
+        self.assertIn("-webkit-line-clamp: 2", mobile)
+        self.assertIn("-webkit-line-clamp: 3", mobile)
+        self.assertIn("grid-template-columns: 26px minmax(0,1fr) 32px", mobile)
+        self.assertNotIn("@media (min-width: 761px)", mobile)
+
     def test_formal_category_hides_focus(self):
         rendered = render_index({"page": 1, "page_count": 1, "items": []}, None, "民生")
         self.assertNotIn("当下重点", rendered)
