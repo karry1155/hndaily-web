@@ -156,6 +156,7 @@ const selectedFeedState = {
   loaded: new Set(),
   failed: null,
   loading: false,
+  searching: false,
 };
 
 async function fetchSelectedDate(date) {
@@ -181,7 +182,7 @@ function nextUnloadedDate() {
 }
 
 async function loadSelectedDate(date) {
-  if (!date || selectedFeedState.loading || selectedFeedState.loaded.has(date)) return;
+  if (!date || selectedFeedState.searching || selectedFeedState.loading || selectedFeedState.loaded.has(date)) return;
   const feed = document.querySelector("[data-selected-feed]");
   const loader = document.querySelector("[data-feed-loader]");
   const activeCategory = document.querySelector("[data-selected-category]")?.dataset.selectedCategory || "全部";
@@ -189,6 +190,7 @@ async function loadSelectedDate(date) {
   loader.textContent = "正在加载…";
   try {
     const payload = await fetchSelectedDate(date);
+    if (selectedFeedState.searching) return;
     feed.append(renderSelectedDate(payload, activeCategory));
     selectedFeedState.loaded.add(date);
     selectedFeedState.failed = null;
@@ -219,10 +221,12 @@ async function runSelectedSearch(query) {
   const empty = document.querySelector("[data-search-empty]");
   const activeCategory = document.querySelector("[data-selected-category]")?.dataset.selectedCategory || "全部";
   if (!normalized) {
+    selectedFeedState.searching = false;
     restoreProgressiveFeed(feed, activeCategory);
     empty.hidden = true;
     return;
   }
+  selectedFeedState.searching = true;
   const payloads = await Promise.all(selectedFeedState.dates.map(fetchSelectedDate));
   feed.replaceChildren();
   payloads.forEach((payload) => {

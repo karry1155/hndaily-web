@@ -16,6 +16,8 @@ class SelectedHomeJavaScriptTests(unittest.TestCase):
         self.assertIn("data-load-more", js)
         self.assertIn("加载失败，重试", js)
         self.assertIn("recommendation_reason", js)
+        self.assertIn("searching: false", js)
+        self.assertIn("selectedFeedState.searching", js)
         self.assertNotIn('choice === "system"', js)
 
     def test_theme_control_has_switch_semantics(self):

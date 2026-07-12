@@ -16,6 +16,8 @@ class RadarRenderTests(unittest.TestCase):
         self.assertIn("data-search-input", js)
         self.assertIn('html[data-theme="light"]', css)
         self.assertIn("prefers-color-scheme", base)
+        self.assertIn("styles.css?v=20260712-2", base)
+        self.assertIn("app.js?v=20260712-2", base)
         self.assertIn("@media (max-width: 760px)", css)
         self.assertIn("hn-hot-starred", js)
         self.assertIn("backdrop-filter", css)
@@ -37,6 +39,7 @@ class RadarRenderTests(unittest.TestCase):
         self.assertIn(".category-tabs a.active::after", css)
         mobile = css[css.index("@media (max-width: 760px)"):]
         self.assertIn(".selected-story .story-summary { display: none; }", mobile)
+        self.assertIn(".focus-story .story-reason { display: none; }", mobile)
 
     def test_all_view_renders_focus_and_title_only_public_fields(self):
         item = stored_item(1, title="科技见习 <计划>", summary="摘要 <script>x</script>")
@@ -85,6 +88,7 @@ class RadarRenderTests(unittest.TestCase):
         self.assertIn("scrollbar-width: none", css)
         self.assertIn("-webkit-line-clamp: 2", mobile)
         self.assertIn("grid-template-columns: 28px minmax(0, 1fr) 40px", mobile)
+        self.assertIn("backdrop-filter: none", mobile)
 
     def test_formal_category_hides_focus(self):
         rendered = render_index({"page": 1, "page_count": 1, "items": []}, None, "民生", {"dates": [], "feeds": []})

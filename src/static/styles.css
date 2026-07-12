@@ -147,7 +147,7 @@ a:focus-visible, button:focus-visible, input:focus-visible { outline: 2px solid 
 @media (max-width: 760px) {
   body { padding-bottom: calc(66px + env(safe-area-inset-bottom)); }
   .radar-shell { display: block; }
-  .primary-nav { position: sticky; top: 0; height: 58px; padding: 10px 16px; border: 0; flex-direction: row; align-items: center; background: color-mix(in srgb, var(--bg-elevated) 94%, transparent); backdrop-filter: blur(18px); }
+  .primary-nav { position: sticky; top: 0; height: 58px; padding: 10px 16px; border: 0; flex-direction: row; align-items: center; background: var(--bg-elevated); backdrop-filter: none; -webkit-backdrop-filter: none; }
   .brand { padding: 0; font-size: 21px; }
   .mobile-updated { display: block; margin-left: auto; color: var(--muted); font-size: 11px; }
   .nav-toggle { display: none; }
@@ -175,6 +175,7 @@ a:focus-visible, button:focus-visible, input:focus-visible { outline: 2px solid 
   .selected-story .story-summary { display: none; }
   .selected-story .story-reason { display: block; margin-top: 5px; padding-top: 0; border-top: 0; font-size: 12px; line-height: 1.48; }
   .selected-story .story-reason span { display: none; }
+  .focus-story .story-reason { display: none; }
   .issue-content { padding-inline: 16px; }
   .issue-header { align-items: stretch; flex-direction: column; }
   .search-box { width: 100%; margin: 0; }
