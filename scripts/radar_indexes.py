@@ -24,6 +24,7 @@ def _summary(item: dict[str, Any]) -> dict[str, Any]:
         "category": item["category"],
         "title": item["block"]["title"],
         "ai_summary": item["block"]["ai_summary"],
+        "recommendation_reason": item["block"]["recommendation_reason"],
         "detail_path": (
             f"/items/{item['published_date']}/{item['item_id']}/"
         ),
@@ -31,20 +32,57 @@ def _summary(item: dict[str, Any]) -> dict[str, Any]:
 
 
 def build_search_indexes(selected_items, issue_items):
-    def rows(values):
+    def rows(values, include_reason=False):
         return [
             {
                 "item_id": item["item_id"],
                 "published_date": item["published_date"],
                 "title": item["block"]["title"],
                 "ai_summary": item["block"]["ai_summary"],
+                **(
+                    {"recommendation_reason": item["block"]["recommendation_reason"]}
+                    if include_reason else {}
+                ),
                 "detail_path": f'/items/{item["published_date"]}/{item["item_id"]}/',
             }
             for item in values
         ]
     return {
-        "search-selected.json": {"items": rows(selected_items)},
+        "search-selected.json": {"items": rows(selected_items, True)},
         "search-issues.json": {"items": rows(issue_items)},
+    }
+
+
+def build_recent_selected_feeds(items, limit=3):
+    dates = sorted(
+        {item["published_date"] for item in items}, reverse=True
+    )[:limit]
+    ordered = sorted(
+        items, key=lambda item: (item["daily_rank"], item["item_id"])
+    )
+    payloads = {
+        f"selected-feed/{published_date}.json": {
+            "date": published_date,
+            "count": sum(
+                item["published_date"] == published_date for item in items
+            ),
+            "items": [
+                _summary(item)
+                for item in ordered
+                if item["published_date"] == published_date
+            ],
+        }
+        for published_date in dates
+    }
+    return {
+        "recent-selected.json": {
+            "dates": dates,
+            "feeds": [
+                f"/static/selected-feed/{published_date}.json"
+                for published_date in dates
+            ],
+        },
+        **payloads,
     }
 
 
@@ -100,6 +138,7 @@ def build_indexes(items, as_of, page_size=20):
             "date": published_date,
             "items": [_summary(item) for item in same_date],
         }
+    indexes.update(build_recent_selected_feeds(items))
     for category in CATEGORIES:
         category_items = [
             item for item in ordered if item["category"] == category
