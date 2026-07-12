@@ -74,6 +74,9 @@ class RadarRenderTests(unittest.TestCase):
         marker = css.index("/* HN·HOT mobile density refresh. */")
         mobile = css[marker:]
         self.assertIn("@media (max-width: 760px)", mobile)
+        self.assertIn("position: fixed", mobile)
+        self.assertIn("inset: auto 0 0", mobile)
+        self.assertIn("z-index: 40", mobile)
         self.assertIn("padding-bottom: calc(64px + env(safe-area-inset-bottom))", mobile)
         self.assertIn("overflow-x: auto", mobile)
         self.assertIn("scrollbar-width: none", mobile)

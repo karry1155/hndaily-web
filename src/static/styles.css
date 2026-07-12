@@ -1182,7 +1182,19 @@ html[data-theme="light"] .selected-row:hover { background: linear-gradient(90deg
   html[data-theme="light"] .category-tabs { border: 0; background: transparent; box-shadow: none; }
   html[data-theme="light"] .category-tabs a.active { border-color: transparent; color: #fff; background: var(--accent); box-shadow: none; }
   .radar-shell .nav-body,
-  .radar-shell .primary-nav.nav-open .nav-body { padding: 5px 10px max(5px,env(safe-area-inset-bottom)); }
+  .radar-shell .primary-nav.nav-open .nav-body {
+    position: fixed;
+    inset: auto 0 0;
+    z-index: 40;
+    display: block;
+    padding: 5px 10px max(5px,env(safe-area-inset-bottom));
+    border: 0;
+    border-top: 1px solid var(--line);
+    background: color-mix(in srgb,var(--bg-elevated) 94%,transparent);
+    box-shadow: 0 -10px 30px rgba(16,24,40,.08);
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+  }
   .radar-shell .nav-body nav:first-of-type a { gap: 1px; padding: 2px; font-size: 10px; }
   .radar-shell .nav-body .nav-icon { width: 19px; height: 19px; }
 }
