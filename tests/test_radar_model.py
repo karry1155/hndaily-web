@@ -56,6 +56,18 @@ class RadarModelTests(unittest.TestCase):
         with self.assertRaisesRegex(ModelOutputError, "deadline_evidence"):
             validate_model_output(self.model_input, invalid, self.candidates)
 
+    def test_recommendation_reason_is_required(self):
+        invalid = copy.deepcopy(self.output)
+        del invalid["items"][0]["recommendation_reason"]
+        with self.assertRaisesRegex(ModelOutputError, "recommendation_reason"):
+            validate_model_output(self.model_input, invalid, self.candidates)
+
+    def test_recommendation_reason_must_not_equal_summary(self):
+        invalid = copy.deepcopy(self.output)
+        invalid["items"][0]["recommendation_reason"] = invalid["items"][0]["ai_summary"]
+        with self.assertRaisesRegex(ModelOutputError, "must differ from ai_summary"):
+            validate_model_output(self.model_input, invalid, self.candidates)
+
     def test_prepare_cli_writes_model_input_and_full_prefilter_audit(self):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)

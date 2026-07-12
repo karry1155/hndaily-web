@@ -61,6 +61,7 @@ def build_generation(raw, model_input, model_output):
                     "title": candidate["title"],
                     "content": candidate["content"],
                     "ai_summary": semantic["ai_summary"].strip(),
+                    "recommendation_reason": semantic["recommendation_reason"].strip(),
                     "original_url": candidate["original_url"],
                 },
             }

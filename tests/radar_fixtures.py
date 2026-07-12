@@ -48,6 +48,7 @@ def model_output_for(model_input, score=8):
             {
                 "candidate_id": item["candidate_id"],
                 "ai_summary": f"{item['title']}的正文事实摘要。",
+                "recommendation_reason": f"{item['title']}包含影响海南读者判断的具体信号，值得继续追踪。",
                 "category": "民生",
                 "hainan_relevance": score,
                 "actionability": score,
@@ -74,8 +75,8 @@ def model_output_for(model_input, score=8):
 def semantic_item(**overrides):
     value = model_output_for(
         {
-            "schema_version": 3,
-            "prompt_version": "radar-v1",
+            "schema_version": 4,
+            "prompt_version": "radar-v2",
             "input_fingerprint": "fixture",
             "items": [
                 {"candidate_id": "A001", "title": "标题", "content": "正文"}
@@ -109,11 +110,12 @@ def stored_item(
     lifecycle=None,
     title=None,
     summary=None,
+    reason=None,
     content=None,
 ):
     lifecycle = lifecycle or ("dated" if deadline else "not_applicable")
     return {
-        "schema_version": 3,
+        "schema_version": 4,
         "item_id": f"item-{index:03d}",
         "published_date": date,
         "collected_date": "2026-07-10",
@@ -152,6 +154,7 @@ def stored_item(
             "title": title or f"原始标题 {index}",
             "content": content or f"第 {index} 篇完整正文。",
             "ai_summary": summary or f"第 {index} 篇摘要。",
+            "recommendation_reason": reason or f"第 {index} 篇内容提供了值得继续追踪的海南本地信号。",
             "original_url": f"https://example.test/articles/{index}",
         },
     }
@@ -159,7 +162,7 @@ def stored_item(
 
 def public_issue_item(index, date="2026-07-10", title=None):
     return {
-        "schema_version": 3,
+        "schema_version": 4,
         "item_id": f"issue-{index:03d}",
         "published_date": date,
         "collected_date": date,
@@ -197,7 +200,7 @@ def write_content_library(root: Path, count: int, include_weekly_fixture=False):
         path = root / "issue-items" / item["published_date"] / f"{item['item_id']}.json"
         path.parent.mkdir(parents=True, exist_ok=True)
         path.write_text(json.dumps(item, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    issue = {"schema_version": 3, "date": "2026-07-10", "source": "海南日报", "page_count": 1, "scored_article_count": count, "pages": [{"page_number": "001", "page_name": "头版", "page_url": "https://example.test/page-001", "pdf_url": "https://example.test/page-001.pdf", "articles": [{"item_id": item["item_id"], "title": item["block"]["title"], "page_sequence": item["page_sequence"], "detail_path": f"/items/{item['published_date']}/{item['item_id']}/"} for item in issue_items]}]}
+    issue = {"schema_version": 4, "date": "2026-07-10", "source": "海南日报", "page_count": 1, "scored_article_count": count, "pages": [{"page_number": "001", "page_name": "头版", "page_url": "https://example.test/page-001", "pdf_url": "https://example.test/page-001.pdf", "articles": [{"item_id": item["item_id"], "title": item["block"]["title"], "page_sequence": item["page_sequence"], "detail_path": f"/items/{item['published_date']}/{item['item_id']}/"} for item in issue_items]}]}
     (root / "issues").mkdir(parents=True, exist_ok=True)
     (root / "issues/2026-07-10.json").write_text(json.dumps(issue, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     extra = {**build_search_indexes(items, issue_items), "issues.json": build_issue_date_index([issue])}

@@ -11,6 +11,7 @@ from scripts.radar_contract import (
     SCORE_FIELDS,
     ContractError,
     non_empty,
+    normalized_text,
     require_exact_fields,
     validate_iso_date,
 )
@@ -24,6 +25,7 @@ ENVELOPE_FIELDS = {
 MODEL_ITEM_FIELDS = {
     "candidate_id",
     "ai_summary",
+    "recommendation_reason",
     "category",
     *SCORE_FIELDS,
     "score_reasons",
@@ -67,10 +69,6 @@ def build_model_input(candidates: list[dict[str, Any]]) -> dict[str, Any]:
     }
 
 
-def _normalized(value: str) -> str:
-    return "".join(value.split())
-
-
 def validate_model_output(
     model_input: dict[str, Any],
     model_output: dict[str, Any],
@@ -97,6 +95,16 @@ def validate_model_output(
             if not non_empty(item.get("ai_summary")):
                 raise ModelOutputError(
                     f"items[{index}].ai_summary is required"
+                )
+            if not non_empty(item.get("recommendation_reason")):
+                raise ModelOutputError(
+                    f"items[{index}].recommendation_reason is required"
+                )
+            if normalized_text(item["recommendation_reason"]) == normalized_text(
+                item["ai_summary"]
+            ):
+                raise ModelOutputError(
+                    f"items[{index}].recommendation_reason must differ from ai_summary"
                 )
             if item.get("category") not in CATEGORIES:
                 raise ModelOutputError(f"items[{index}].category is invalid")
@@ -144,7 +152,7 @@ def validate_model_output(
                     raise ModelOutputError(
                         f"items[{index}] dated opportunity fields are required"
                     )
-                if _normalized(item["deadline_evidence"]) not in _normalized(
+                if normalized_text(item["deadline_evidence"]) not in normalized_text(
                     candidate["content"]
                 ):
                     raise ModelOutputError(
@@ -159,7 +167,7 @@ def validate_model_output(
                     raise ModelOutputError(
                         f"items[{index}] ongoing opportunity evidence is required"
                     )
-                if _normalized(item["deadline_evidence"]) not in _normalized(
+                if normalized_text(item["deadline_evidence"]) not in normalized_text(
                     candidate["content"]
                 ):
                     raise ModelOutputError(

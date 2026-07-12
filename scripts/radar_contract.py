@@ -4,8 +4,8 @@ from datetime import date
 from typing import Any
 from urllib.parse import urlparse
 
-SCHEMA_VERSION = 3
-PROMPT_VERSION = "radar-v1"
+SCHEMA_VERSION = 4
+PROMPT_VERSION = "radar-v2"
 CATEGORIES = ("机会", "民生", "产业", "政策", "城市", "观察")
 SCORE_FIELDS = (
     "hainan_relevance",
@@ -30,6 +30,7 @@ SOURCE_CANDIDATE_FIELDS = {
     "page_sequence",
 }
 BLOCK_FIELDS = {"source", "title", "content", "ai_summary", "original_url"}
+SELECTED_BLOCK_FIELDS = {*BLOCK_FIELDS, "recommendation_reason"}
 OPPORTUNITY_FIELDS = {
     "lifecycle",
     "deadline_date",
@@ -60,6 +61,10 @@ class ContractError(ValueError):
 
 def non_empty(value: Any) -> bool:
     return isinstance(value, str) and bool(value.strip())
+
+
+def normalized_text(value: str) -> str:
+    return "".join(value.split())
 
 
 def require_exact_fields(
@@ -155,10 +160,18 @@ def validate_stored_item(item: dict[str, Any]) -> None:
     block = item.get("block")
     if not isinstance(block, dict):
         raise ContractError("stored item.block must be an object")
-    require_exact_fields(block, BLOCK_FIELDS, "block")
-    for field in ("source", "title", "content", "ai_summary"):
+    require_exact_fields(block, SELECTED_BLOCK_FIELDS, "block")
+    for field in (
+        "source", "title", "content", "ai_summary", "recommendation_reason",
+    ):
         if not non_empty(block.get(field)):
             raise ContractError(f"block.{field} is required")
+    if normalized_text(block["recommendation_reason"]) == normalized_text(
+        block["ai_summary"]
+    ):
+        raise ContractError(
+            "block.recommendation_reason must differ from ai_summary"
+        )
     validate_http_url(block.get("original_url"), "block.original_url")
     opportunity = item.get("opportunity")
     if not isinstance(opportunity, dict):

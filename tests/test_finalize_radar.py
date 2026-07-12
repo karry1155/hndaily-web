@@ -18,6 +18,10 @@ class FinalizeRadarTests(unittest.TestCase):
         items, audit = build_items(raw, model_input, model_output_for(model_input, 9))
         self.assertEqual(items[0]["block"]["title"], raw["pages"][0]["articles"][0]["title"])
         self.assertEqual(items[0]["block"]["original_url"], raw["pages"][0]["articles"][0]["url"])
+        self.assertEqual(
+            items[0]["block"]["recommendation_reason"],
+            model_output_for(model_input, 9)["items"][0]["recommendation_reason"],
+        )
         self.assertEqual(audit["selected_count"], len(items))
 
     def test_more_than_eight_qualified_items_are_persisted(self):
@@ -59,7 +63,7 @@ class FinalizeRadarTests(unittest.TestCase):
             finalize_to_store(raw, model_input, model_output_for(model_input, 9), root, audit, "2026-07-10")
             payload = json.loads(audit.read_text(encoding="utf-8"))
             self.assertEqual(len(payload["replaced_items"]), 4)
-            self.assertEqual(payload["replaced_items"][0]["previous_schema_version"], 3)
+            self.assertEqual(payload["replaced_items"][0]["previous_schema_version"], 4)
 
     def test_rerun_replaces_only_same_source_and_date_selection(self):
         raw = raw_issue(article_count=2)
