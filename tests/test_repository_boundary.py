@@ -8,12 +8,10 @@ SKILL_NAME = "hndaily" + "-skill"
 
 class RepositoryBoundaryTests(unittest.TestCase):
     def test_active_runtime_has_no_external_crawler_dependency(self):
-        runtime_files = [
-            ROOT / "scripts/run_radar_pipeline.sh",
-            ROOT / "scripts/run_daily_pipeline.sh",
-            ROOT / "scripts/crawler.py",
-            ROOT / ".env.example",
-        ]
+        tracked_runtime_paths = subprocess.check_output(
+            ["git", "-C", str(ROOT), "ls-files", "--", "scripts", ".env.example"],
+            text=True,
+        ).splitlines()
         forbidden = (
             "HNDAILY_SKILL_DIR",
             f"/Users/skr/Work/hndaily/{SKILL_NAME}",
@@ -21,7 +19,10 @@ class RepositoryBoundaryTests(unittest.TestCase):
             "HNDAILY_INTERMEDIATE_DIR",
             "data/intermediate",
         )
-        for path in runtime_files:
+        self.assertIn(".env.example", tracked_runtime_paths)
+        self.assertIn("scripts/run_radar_pipeline.sh", tracked_runtime_paths)
+        for relative_path in tracked_runtime_paths:
+            path = ROOT / relative_path
             text = path.read_text(encoding="utf-8")
             for value in forbidden:
                 self.assertNotIn(value, text, f"{path}: {value}")
@@ -50,6 +51,18 @@ class RepositoryBoundaryTests(unittest.TestCase):
             "data/json/model-output/",
             "data/json/audits/",
             "prompts/article-enrichment/v1/",
+        ):
+            self.assertIn(value, readme)
+
+    def test_json_readme_documents_isolated_editorial_v1_artifacts(self):
+        readme = (ROOT / "data/json/README.md").read_text(encoding="utf-8")
+        for value in (
+            "model-input/editorial-v1/YYYY-MM-DD.json",
+            "model-output/editorial-v1/YYYY-MM-DD.json",
+            "audits/editorial-v1/YYYY-MM-DD.prefilter.json",
+            "audits/editorial-v1/YYYY-MM-DD.editorial-audit.json",
+            "incompatible",
+            "isolated",
         ):
             self.assertIn(value, readme)
 

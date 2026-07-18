@@ -358,6 +358,9 @@ def main(argv: list[str]) -> int:
         return 2
 
     payload = crawl(date, front_html)
+    if payload["page_count"] == 0:
+        print(f"NO_ISSUE: no pages found for {date.isoformat()}", file=sys.stderr)
+        return 3
 
     out_path = OUTPUT_DIR / f"{date.isoformat()}.json"
     _write_json_atomic(out_path, payload)
@@ -366,8 +369,6 @@ def main(argv: list[str]) -> int:
         f"date={date.isoformat()} pages={payload['page_count']} articles={payload['article_count']}",
         file=sys.stderr,
     )
-    if payload["page_count"] == 0:
-        print(f"WARN: 该日期暂无版面 ({date.isoformat()})", file=sys.stderr)
     return 0
 
 

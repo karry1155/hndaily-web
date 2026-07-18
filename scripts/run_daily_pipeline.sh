@@ -4,9 +4,9 @@ set -euo pipefail
 WEB_DIR="${HNDAILY_WEB_DIR:-$(cd "$(dirname "$0")/.." && pwd)}"
 JSON_ROOT="${HNDAILY_JSON_ROOT:-$WEB_DIR/data/json}"
 RAW_DIR="${HNDAILY_DATA_DIR:-$JSON_ROOT/raw}"
-MODEL_INPUT_DIR="$JSON_ROOT/model-input"
-MODEL_OUTPUT_DIR="$JSON_ROOT/model-output"
-AUDIT_DIR="$JSON_ROOT/audits"
+MODEL_INPUT_DIR="$JSON_ROOT/model-input/editorial-v1"
+MODEL_OUTPUT_DIR="$JSON_ROOT/model-output/editorial-v1"
+AUDIT_DIR="$JSON_ROOT/audits/editorial-v1"
 DATE_ARG="${HNDAILY_DATE:-}"
 
 mkdir -p "$RAW_DIR" "$MODEL_INPUT_DIR" "$MODEL_OUTPUT_DIR" "$AUDIT_DIR" "$WEB_DIR/data/tmp"
