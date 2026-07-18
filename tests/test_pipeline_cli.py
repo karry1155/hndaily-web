@@ -17,12 +17,13 @@ class PipelineCliTests(unittest.TestCase):
             temporary_root = Path(tmp)
             raw_path = temporary_root / "2026-07-08.json"
             raw_path.write_text(json.dumps(raw_issue(), ensure_ascii=False), encoding="utf-8")
+            json_root = temporary_root / "data/json"
             env = os.environ.copy()
             env.update(
                 {
                     "HNDAILY_WEB_DIR": str(ROOT),
                     "HNDAILY_RAW_JSON": str(raw_path),
-                    "HNDAILY_INTERMEDIATE_DIR": str(temporary_root / "intermediate"),
+                    "HNDAILY_JSON_ROOT": str(json_root),
                 }
             )
 
@@ -38,15 +39,23 @@ class PipelineCliTests(unittest.TestCase):
             self.assertEqual(result.returncode, 0, result.stderr)
             lines = dict(line.split("=", 1) for line in result.stdout.splitlines() if "=" in line)
             self.assertEqual(lines["RAW_JSON"], str(raw_path))
-            self.assertTrue(Path(lines["MODEL_INPUT_JSON"]).is_file())
-            self.assertTrue(Path(lines["PREFILTER_JSON"]).is_file())
             self.assertEqual(
-                lines["MODEL_OUTPUT_JSON"],
-                str(temporary_root / "intermediate" / "2026-07-08.model-output.json"),
+                Path(lines["MODEL_INPUT_JSON"]),
+                json_root / "model-input/2026-07-08.json",
+            )
+            self.assertTrue(Path(lines["MODEL_INPUT_JSON"]).is_file())
+            self.assertEqual(
+                Path(lines["MODEL_OUTPUT_JSON"]),
+                json_root / "model-output/2026-07-08.json",
             )
             self.assertEqual(
-                lines["EDITORIAL_AUDIT_JSON"],
-                str(temporary_root / "intermediate" / "2026-07-08.editorial-audit.json"),
+                Path(lines["PREFILTER_JSON"]),
+                json_root / "audits/2026-07-08.prefilter.json",
+            )
+            self.assertTrue(Path(lines["PREFILTER_JSON"]).is_file())
+            self.assertEqual(
+                Path(lines["EDITORIAL_AUDIT_JSON"]),
+                json_root / "audits/2026-07-08.editorial-audit.json",
             )
             self.assertNotIn("这是第", result.stdout)
 
