@@ -16,6 +16,7 @@ site/
 
 # Local generated newspaper data and intermediate artifacts
 .superpowers/
+data/json/raw/
 data/raw/
 data/intermediate/
 data/cache/
