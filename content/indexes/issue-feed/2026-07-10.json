@@ -1,0 +1,1164 @@
+{
+  "date": "2026-07-10",
+  "count": 50,
+  "sections": [
+    {
+      "section_id": "front-page",
+      "name": "头版",
+      "source_pages": [
+        "001"
+      ],
+      "articles": [
+        {
+          "item_id": "hndaily-19691668",
+          "title": "深入排查整治各类风险隐患 抓实抓细安全生产措施落实 坚决防止重特大事故发生",
+          "source_page_number": "001",
+          "page_sequence": 1,
+          "detail_path": "/items/2026-07-10/hndaily-19691668/"
+        },
+        {
+          "item_id": "hndaily-19691669",
+          "title": "把学习教育成果转化为高质量发展实绩\n坚决守好祖国南大门",
+          "source_page_number": "001",
+          "page_sequence": 2,
+          "detail_path": "/items/2026-07-10/hndaily-19691669/"
+        },
+        {
+          "item_id": "hndaily-19691670",
+          "title": "树牢正确政绩观 深耕乡村振兴一线\n齐心协力让老百姓过上更好日子",
+          "source_page_number": "001",
+          "page_sequence": 3,
+          "detail_path": "/items/2026-07-10/hndaily-19691670/"
+        },
+        {
+          "item_id": "hndaily-19691671",
+          "title": "省政协八届常委会第二十四次会议召开",
+          "source_page_number": "001",
+          "page_sequence": 4,
+          "detail_path": "/items/2026-07-10/hndaily-19691671/"
+        },
+        {
+          "item_id": "hndaily-19691672",
+          "title": "新能源撑起海南电力“半壁江山”",
+          "source_page_number": "001",
+          "page_sequence": 5,
+          "detail_path": "/items/2026-07-10/hndaily-19691672/"
+        },
+        {
+          "item_id": "hndaily-19691673",
+          "title": "上半年海南离岛免税购物金额近200亿元",
+          "source_page_number": "001",
+          "page_sequence": 6,
+          "detail_path": "/items/2026-07-10/hndaily-19691673/"
+        },
+        {
+          "item_id": "hndaily-19691674",
+          "title": "以最坚决的态度、最迅速的行动、最有力的措施\n扛起生态环境保护政治责任",
+          "source_page_number": "001",
+          "page_sequence": 7,
+          "detail_path": "/items/2026-07-10/hndaily-19691674/"
+        },
+        {
+          "item_id": "hndaily-19691675",
+          "title": "这届海口商圈，开始赚“慢钱”",
+          "source_page_number": "001",
+          "page_sequence": 8,
+          "detail_path": "/items/2026-07-10/hndaily-19691675/"
+        },
+        {
+          "item_id": "hndaily-19691678",
+          "title": "文明如光，照见自贸港“精气神”",
+          "source_page_number": "001",
+          "page_sequence": 9,
+          "detail_path": "/items/2026-07-10/hndaily-19691678/"
+        }
+      ]
+    },
+    {
+      "section_id": "hainan-news",
+      "name": "本省新闻",
+      "source_pages": [
+        "002",
+        "003",
+        "004"
+      ],
+      "articles": [
+        {
+          "item_id": "hndaily-19691685",
+          "title": "把“理论食材”烹成“家常好菜”",
+          "source_page_number": "002",
+          "page_sequence": 1,
+          "detail_path": "/items/2026-07-10/hndaily-19691685/"
+        },
+        {
+          "item_id": "hndaily-19691687",
+          "title": "文明如光，照见自贸港“精气神”",
+          "source_page_number": "002",
+          "page_sequence": 2,
+          "detail_path": "/items/2026-07-10/hndaily-19691687/"
+        },
+        {
+          "item_id": "hndaily-19691688",
+          "title": "国内首个出口车辆定型湿热道路试验基地在琼揭牌成立",
+          "source_page_number": "002",
+          "page_sequence": 3,
+          "detail_path": "/items/2026-07-10/hndaily-19691688/"
+        },
+        {
+          "item_id": "hndaily-19691690",
+          "title": "这场特别“对话”，海南与迪拜碰撞开放火花",
+          "source_page_number": "002",
+          "page_sequence": 4,
+          "detail_path": "/items/2026-07-10/hndaily-19691690/"
+        },
+        {
+          "item_id": "hndaily-19691691",
+          "title": "政协第八届海南省委员会增补委员名单",
+          "source_page_number": "002",
+          "page_sequence": 5,
+          "detail_path": "/items/2026-07-10/hndaily-19691691/"
+        },
+        {
+          "item_id": "hndaily-19691692",
+          "title": "关于接受何清同志辞去政协第八届海南省委员会常务委员、委员的决定",
+          "source_page_number": "002",
+          "page_sequence": 6,
+          "detail_path": "/items/2026-07-10/hndaily-19691692/"
+        },
+        {
+          "item_id": "hndaily-19691693",
+          "title": "政协第八届海南省委员会专门委员会副主任任命名单",
+          "source_page_number": "002",
+          "page_sequence": 7,
+          "detail_path": "/items/2026-07-10/hndaily-19691693/"
+        },
+        {
+          "item_id": "hndaily-19691699",
+          "title": "一面奖状墙，是家里最好的“装修”",
+          "source_page_number": "003",
+          "page_sequence": 1,
+          "detail_path": "/items/2026-07-10/hndaily-19691699/"
+        },
+        {
+          "item_id": "hndaily-19691700",
+          "title": "全省“水上安全知识云课堂”网络直播7月12日开展",
+          "source_page_number": "003",
+          "page_sequence": 2,
+          "detail_path": "/items/2026-07-10/hndaily-19691700/"
+        },
+        {
+          "item_id": "hndaily-19691701",
+          "title": "一场跨越百年的时空对话",
+          "source_page_number": "003",
+          "page_sequence": 3,
+          "detail_path": "/items/2026-07-10/hndaily-19691701/"
+        },
+        {
+          "item_id": "hndaily-19691702",
+          "title": "海南自贸港航运制度开放创新交流会举办",
+          "source_page_number": "003",
+          "page_sequence": 4,
+          "detail_path": "/items/2026-07-10/hndaily-19691702/"
+        },
+        {
+          "item_id": "hndaily-19691703",
+          "title": "“环海南大学科技创新圈”成果推介对接交流活动举办",
+          "source_page_number": "003",
+          "page_sequence": 5,
+          "detail_path": "/items/2026-07-10/hndaily-19691703/"
+        },
+        {
+          "item_id": "hndaily-19691704",
+          "title": "从案头到一线，他总说“让我来”",
+          "source_page_number": "003",
+          "page_sequence": 6,
+          "detail_path": "/items/2026-07-10/hndaily-19691704/"
+        },
+        {
+          "item_id": "hndaily-19691706",
+          "title": "白沙2026年基层理论宣讲大赛举办",
+          "source_page_number": "003",
+          "page_sequence": 7,
+          "detail_path": "/items/2026-07-10/hndaily-19691706/"
+        },
+        {
+          "item_id": "hndaily-19691707",
+          "title": "海南首家宇树具身智能机器人学院落户海软",
+          "source_page_number": "003",
+          "page_sequence": 8,
+          "detail_path": "/items/2026-07-10/hndaily-19691707/"
+        },
+        {
+          "item_id": "hndaily-19691713",
+          "title": "我省260个“爱心托管站”将陆续上线",
+          "source_page_number": "004",
+          "page_sequence": 1,
+          "detail_path": "/items/2026-07-10/hndaily-19691713/"
+        },
+        {
+          "item_id": "hndaily-19691714",
+          "title": "东方市人民政府党组成员、副市长符乃贤接受纪律审查和监察调查",
+          "source_page_number": "004",
+          "page_sequence": 2,
+          "detail_path": "/items/2026-07-10/hndaily-19691714/"
+        },
+        {
+          "item_id": "hndaily-19691715",
+          "title": "临高县发展和改革委员会党组书记、主任王小兵接受纪律审查和监察调查",
+          "source_page_number": "004",
+          "page_sequence": 3,
+          "detail_path": "/items/2026-07-10/hndaily-19691715/"
+        },
+        {
+          "item_id": "hndaily-19691716",
+          "title": "乐东黎族自治县政协机关党组成员、经济与人口资源环境委员会主任林丹华接受纪律审查和监察调查",
+          "source_page_number": "004",
+          "page_sequence": 4,
+          "detail_path": "/items/2026-07-10/hndaily-19691716/"
+        },
+        {
+          "item_id": "hndaily-19691717",
+          "title": "这届海口商圈，开始赚“慢钱”",
+          "source_page_number": "004",
+          "page_sequence": 5,
+          "detail_path": "/items/2026-07-10/hndaily-19691717/"
+        },
+        {
+          "item_id": "hndaily-19691718",
+          "title": "海南省高级人民法院审判委员会原专职委员张光亲严重违纪违法被开除党籍",
+          "source_page_number": "004",
+          "page_sequence": 6,
+          "detail_path": "/items/2026-07-10/hndaily-19691718/"
+        },
+        {
+          "item_id": "hndaily-19691719",
+          "title": "致公党海南省委员会机关原一级巡视员吴建东严重违纪违法被开除党籍",
+          "source_page_number": "004",
+          "page_sequence": 7,
+          "detail_path": "/items/2026-07-10/hndaily-19691719/"
+        }
+      ]
+    },
+    {
+      "section_id": "source-cdc51ef0b3",
+      "name": "新海垦",
+      "source_pages": [
+        "005"
+      ],
+      "articles": [
+        {
+          "item_id": "hndaily-19691730",
+          "title": "一支姜荷花的产业迁徒记",
+          "source_page_number": "005",
+          "page_sequence": 1,
+          "detail_path": "/items/2026-07-10/hndaily-19691730/"
+        },
+        {
+          "item_id": "hndaily-19691731",
+          "title": "“海南鲜品”拓展国际“朋友圈”",
+          "source_page_number": "005",
+          "page_sequence": 2,
+          "detail_path": "/items/2026-07-10/hndaily-19691731/"
+        },
+        {
+          "item_id": "hndaily-19691732",
+          "title": "海垦集团与新疆生产建设兵团共谋合作",
+          "source_page_number": "005",
+          "page_sequence": 3,
+          "detail_path": "/items/2026-07-10/hndaily-19691732/"
+        },
+        {
+          "item_id": "hndaily-19691733",
+          "title": "海垦“白沙毛尖”获国际奖项",
+          "source_page_number": "005",
+          "page_sequence": 4,
+          "detail_path": "/items/2026-07-10/hndaily-19691733/"
+        },
+        {
+          "item_id": "hndaily-19691734",
+          "title": "海南南繁种业集团与三亚崖州区深化垦地融合",
+          "source_page_number": "005",
+          "page_sequence": 5,
+          "detail_path": "/items/2026-07-10/hndaily-19691734/"
+        },
+        {
+          "item_id": "hndaily-19691735",
+          "title": "海垦7万亩芒果园迎来“家族焕新”",
+          "source_page_number": "005",
+          "page_sequence": 6,
+          "detail_path": "/items/2026-07-10/hndaily-19691735/"
+        },
+        {
+          "item_id": "hndaily-19691736",
+          "title": "网络名人“寻味”果博中心",
+          "source_page_number": "005",
+          "page_sequence": 7,
+          "detail_path": "/items/2026-07-10/hndaily-19691736/"
+        }
+      ]
+    },
+    {
+      "section_id": "source-aad2740176",
+      "name": "潮起儋洋",
+      "source_pages": [
+        "006"
+      ],
+      "articles": [
+        {
+          "item_id": "hndaily-19691742",
+          "title": "儋州：续写寿光模式新故事",
+          "source_page_number": "006",
+          "page_sequence": 1,
+          "detail_path": "/items/2026-07-10/hndaily-19691742/"
+        },
+        {
+          "item_id": "hndaily-19691743",
+          "title": "儋州计划3年引进人才3.3万人",
+          "source_page_number": "006",
+          "page_sequence": 2,
+          "detail_path": "/items/2026-07-10/hndaily-19691743/"
+        },
+        {
+          "item_id": "hndaily-19691744",
+          "title": "儋州中小学生安全应急综合演练暨科普研学项目惠及近3万学生",
+          "source_page_number": "006",
+          "page_sequence": 3,
+          "detail_path": "/items/2026-07-10/hndaily-19691744/"
+        }
+      ]
+    },
+    {
+      "section_id": "source-b1a9e65cda",
+      "name": "中国新闻",
+      "source_pages": [
+        "007"
+      ],
+      "articles": [
+        {
+          "item_id": "hndaily-19691750",
+          "title": "扎扎实实以科技创新支撑和引领中国式现代化",
+          "source_page_number": "007",
+          "page_sequence": 1,
+          "detail_path": "/items/2026-07-10/hndaily-19691750/"
+        },
+        {
+          "item_id": "hndaily-19691751",
+          "title": "抓住历史机遇 迎接时代挑战",
+          "source_page_number": "007",
+          "page_sequence": 2,
+          "detail_path": "/items/2026-07-10/hndaily-19691751/"
+        },
+        {
+          "item_id": "hndaily-19691752",
+          "title": "“锻造了强大的中国共产党”",
+          "source_page_number": "007",
+          "page_sequence": 3,
+          "detail_path": "/items/2026-07-10/hndaily-19691752/"
+        },
+        {
+          "item_id": "hndaily-19691753",
+          "title": "中办国办印发《关于全力做好防汛抗旱工作的通知》",
+          "source_page_number": "007",
+          "page_sequence": 4,
+          "detail_path": "/items/2026-07-10/hndaily-19691753/"
+        },
+        {
+          "item_id": "hndaily-19691754",
+          "title": "奋进“十五五”，阔步新征程",
+          "source_page_number": "007",
+          "page_sequence": 5,
+          "detail_path": "/items/2026-07-10/hndaily-19691754/"
+        }
+      ]
+    },
+    {
+      "section_id": "source-a9325ef51a",
+      "name": "文化周刊",
+      "source_pages": [
+        "008"
+      ],
+      "articles": [
+        {
+          "item_id": "hndaily-19691759",
+          "title": "为深沉而蓬勃的时代和声",
+          "source_page_number": "008",
+          "page_sequence": 1,
+          "detail_path": "/items/2026-07-10/hndaily-19691759/"
+        },
+        {
+          "item_id": "hndaily-19691760",
+          "title": "一份由文字镌刻的情怀",
+          "source_page_number": "008",
+          "page_sequence": 2,
+          "detail_path": "/items/2026-07-10/hndaily-19691760/"
+        },
+        {
+          "item_id": "hndaily-19691762",
+          "title": "历史现场的文学赋形",
+          "source_page_number": "008",
+          "page_sequence": 3,
+          "detail_path": "/items/2026-07-10/hndaily-19691762/"
+        },
+        {
+          "item_id": "hndaily-19691763",
+          "title": "以作家之笔为海南立传",
+          "source_page_number": "008",
+          "page_sequence": 4,
+          "detail_path": "/items/2026-07-10/hndaily-19691763/"
+        }
+      ]
+    }
+  ],
+  "items": [
+    {
+      "item_id": "hndaily-19691668",
+      "published_date": "2026-07-10",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 1,
+      "title": "深入排查整治各类风险隐患 抓实抓细安全生产措施落实 坚决防止重特大事故发生",
+      "ai_summary": "新华社北京7月9日电 7月9日12时许，福建泉州晋江市一鞋厂发生火灾，造成重大人员伤亡。",
+      "scope": "national",
+      "enrichment_status": "legacy-derived",
+      "subjects": [],
+      "locations": [],
+      "topics": [],
+      "detail_path": "/items/2026-07-10/hndaily-19691668/"
+    },
+    {
+      "item_id": "hndaily-19691669",
+      "published_date": "2026-07-10",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 2,
+      "title": "把学习教育成果转化为高质量发展实绩\n坚决守好祖国南大门",
+      "ai_summary": "本报讯（海南日报全媒体记者李磊）近日，省委书记冯飞在三沙市调研树立和践行正确政绩观学习教育及经济社会发展情况。",
+      "scope": "hainan",
+      "enrichment_status": "legacy-derived",
+      "subjects": [],
+      "locations": [],
+      "topics": [],
+      "detail_path": "/items/2026-07-10/hndaily-19691669/"
+    },
+    {
+      "item_id": "hndaily-19691670",
+      "published_date": "2026-07-10",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 3,
+      "title": "树牢正确政绩观 深耕乡村振兴一线\n齐心协力让老百姓过上更好日子",
+      "ai_summary": "本报牙叉7月9日电（海南日报全媒体记者陈蔚林）7月9日，结合树立和践行正确政绩观学习教育，省长刘小明来到白沙黎族自治县乡村振兴联系点，以普通党员身份参加所在的省政府办公厅秘书一处党支部与南训村党委联合主题党日活动。",
+      "scope": "hainan",
+      "enrichment_status": "legacy-derived",
+      "subjects": [],
+      "locations": [],
+      "topics": [],
+      "detail_path": "/items/2026-07-10/hndaily-19691670/"
+    },
+    {
+      "item_id": "hndaily-19691671",
+      "published_date": "2026-07-10",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 4,
+      "title": "省政协八届常委会第二十四次会议召开",
+      "ai_summary": "本报海口7月9日讯（海南日报全媒体记者黎鹏 通讯员李发强）7月8日至9日，省政协八届常委会第二十四次会议在海口召开，围绕“推进崖州湾科技城科技创新和产业创新深度融合发展”协商建言并举行学习讲座。",
+      "scope": "hainan",
+      "enrichment_status": "legacy-derived",
+      "subjects": [],
+      "locations": [],
+      "topics": [],
+      "detail_path": "/items/2026-07-10/hndaily-19691671/"
+    },
+    {
+      "item_id": "hndaily-19691672",
+      "published_date": "2026-07-10",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 5,
+      "title": "新能源撑起海南电力“半壁江山”",
+      "ai_summary": "本报讯（海南日报全媒体记者邵长春 通讯员郭卫华 王涵璐 林寿南 莫若慧）海南日报全媒体记者从南方电网海南电网公司获悉，截至6月底，海南新能源装机规模达1271万千瓦，占全省总装机比例达50.1％。",
+      "scope": "hainan",
+      "enrichment_status": "legacy-derived",
+      "subjects": [],
+      "locations": [],
+      "topics": [],
+      "detail_path": "/items/2026-07-10/hndaily-19691672/"
+    },
+    {
+      "item_id": "hndaily-19691673",
+      "published_date": "2026-07-10",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 6,
+      "title": "上半年海南离岛免税购物金额近200亿元",
+      "ai_summary": "本报海口7月9日讯（海南日报全媒体记者曹马志 通讯员童子杨）2026年过半，海南离岛免税交出了一份含金量十足的成绩单。",
+      "scope": "mixed",
+      "enrichment_status": "legacy-derived",
+      "subjects": [],
+      "locations": [],
+      "topics": [],
+      "detail_path": "/items/2026-07-10/hndaily-19691673/"
+    },
+    {
+      "item_id": "hndaily-19691674",
+      "published_date": "2026-07-10",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 7,
+      "title": "以最坚决的态度、最迅速的行动、最有力的措施\n扛起生态环境保护政治责任",
+      "ai_summary": "本报海口7月9日讯（海南日报全媒体记者陈蔚林）7月9日，全省固体废物专项整治工作部署会议在海口召开，研究部署下一步重点工作。",
+      "scope": "hainan",
+      "enrichment_status": "legacy-derived",
+      "subjects": [],
+      "locations": [],
+      "topics": [],
+      "detail_path": "/items/2026-07-10/hndaily-19691674/"
+    },
+    {
+      "item_id": "hndaily-19691675",
+      "published_date": "2026-07-10",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 8,
+      "title": "这届海口商圈，开始赚“慢钱”",
+      "ai_summary": "■ 海南日报全媒体记者 陈明艳 前些年，海口商业进入了“狂飙突进”的阶段。",
+      "scope": "mixed",
+      "enrichment_status": "legacy-derived",
+      "subjects": [],
+      "locations": [],
+      "topics": [],
+      "detail_path": "/items/2026-07-10/hndaily-19691675/"
+    },
+    {
+      "item_id": "hndaily-19691678",
+      "published_date": "2026-07-10",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 9,
+      "title": "文明如光，照见自贸港“精气神”",
+      "ai_summary": "A02",
+      "scope": "hainan",
+      "enrichment_status": "legacy-derived",
+      "subjects": [],
+      "locations": [],
+      "topics": [],
+      "detail_path": "/items/2026-07-10/hndaily-19691678/"
+    },
+    {
+      "item_id": "hndaily-19691685",
+      "published_date": "2026-07-10",
+      "page_number": "002",
+      "page_name": "本省新闻",
+      "page_sequence": 1,
+      "title": "把“理论食材”烹成“家常好菜”",
+      "ai_summary": "■ 海南日报全媒体记者 袁宇 通讯员 岳承乾 曹志成 海口市龙华区遵谭镇东谭村，古榕亭亭如盖。",
+      "scope": "hainan",
+      "enrichment_status": "legacy-derived",
+      "subjects": [],
+      "locations": [],
+      "topics": [],
+      "detail_path": "/items/2026-07-10/hndaily-19691685/"
+    },
+    {
+      "item_id": "hndaily-19691687",
+      "published_date": "2026-07-10",
+      "page_number": "002",
+      "page_name": "本省新闻",
+      "page_sequence": 2,
+      "title": "文明如光，照见自贸港“精气神”",
+      "ai_summary": "■ 李萌 连日来，琼州大地上，文明之花竞相绽放。7月8日，2026年上半年“海南好人”发布，24位（组）榜样人物光荣入选，同一天，“雷公马海小文陪你美滩”主题活动启动，中外游客志愿者接力倡议，许下守护碧海银滩的承诺……从“好人”发布到美滩行动，从典型引领到全民参与，海南正以新时代文明实践，为自贸港建设凝聚起蓬勃的精神力量。 精神文明建设，是海南自贸港不可或缺",
+      "scope": "hainan",
+      "enrichment_status": "legacy-derived",
+      "subjects": [],
+      "locations": [],
+      "topics": [],
+      "detail_path": "/items/2026-07-10/hndaily-19691687/"
+    },
+    {
+      "item_id": "hndaily-19691688",
+      "published_date": "2026-07-10",
+      "page_number": "002",
+      "page_name": "本省新闻",
+      "page_sequence": 3,
+      "title": "国内首个出口车辆定型湿热道路试验基地在琼揭牌成立",
+      "ai_summary": "本报海口7月9日讯（海南日报全媒体记者王洪旭）7月9日，海南自由贸易港汽车产业创新发展研讨会在海口举办。",
+      "scope": "hainan",
+      "enrichment_status": "legacy-derived",
+      "subjects": [],
+      "locations": [],
+      "topics": [],
+      "detail_path": "/items/2026-07-10/hndaily-19691688/"
+    },
+    {
+      "item_id": "hndaily-19691690",
+      "published_date": "2026-07-10",
+      "page_number": "002",
+      "page_name": "本省新闻",
+      "page_sequence": 4,
+      "title": "这场特别“对话”，海南与迪拜碰撞开放火花",
+      "ai_summary": "■ 海南日报全媒体记者 曹马志 志同道合者，不以山海为远。",
+      "scope": "mixed",
+      "enrichment_status": "legacy-derived",
+      "subjects": [],
+      "locations": [],
+      "topics": [],
+      "detail_path": "/items/2026-07-10/hndaily-19691690/"
+    },
+    {
+      "item_id": "hndaily-19691691",
+      "published_date": "2026-07-10",
+      "page_number": "002",
+      "page_name": "本省新闻",
+      "page_sequence": 5,
+      "title": "政协第八届海南省委员会增补委员名单",
+      "ai_summary": "委员： 林娜（女）",
+      "scope": "hainan",
+      "enrichment_status": "legacy-derived",
+      "subjects": [],
+      "locations": [],
+      "topics": [],
+      "detail_path": "/items/2026-07-10/hndaily-19691691/"
+    },
+    {
+      "item_id": "hndaily-19691692",
+      "published_date": "2026-07-10",
+      "page_number": "002",
+      "page_name": "本省新闻",
+      "page_sequence": 6,
+      "title": "关于接受何清同志辞去政协第八届海南省委员会常务委员、委员的决定",
+      "ai_summary": "因工作需要，何清同志提出辞去常务委员、委员申请。依照《中国人民政治协商会议章程》及有关规定，政协第八届海南省委员会常务委员会第二十四次会议决定：接受何清同志辞去政协第八届海南省委员会常务委员、委员，报全体会议备案。",
+      "scope": "hainan",
+      "enrichment_status": "legacy-derived",
+      "subjects": [],
+      "locations": [],
+      "topics": [],
+      "detail_path": "/items/2026-07-10/hndaily-19691692/"
+    },
+    {
+      "item_id": "hndaily-19691693",
+      "published_date": "2026-07-10",
+      "page_number": "002",
+      "page_name": "本省新闻",
+      "page_sequence": 7,
+      "title": "政协第八届海南省委员会专门委员会副主任任命名单",
+      "ai_summary": "任命： 林娜同志为中国人民政治协商会议第八届海南省委员会文化文史和学习委员会专职副主任。",
+      "scope": "hainan",
+      "enrichment_status": "legacy-derived",
+      "subjects": [],
+      "locations": [],
+      "topics": [],
+      "detail_path": "/items/2026-07-10/hndaily-19691693/"
+    },
+    {
+      "item_id": "hndaily-19691699",
+      "published_date": "2026-07-10",
+      "page_number": "003",
+      "page_name": "本省新闻",
+      "page_sequence": 1,
+      "title": "一面奖状墙，是家里最好的“装修”",
+      "ai_summary": "■ 海南日报全媒体记者 林博新 一墙的奖状，是他们家最好的“装修”；清贫家境、母亲病重，虽生活在边远的乡村，却挡不住少年向上的决心。",
+      "scope": "hainan",
+      "enrichment_status": "legacy-derived",
+      "subjects": [],
+      "locations": [],
+      "topics": [],
+      "detail_path": "/items/2026-07-10/hndaily-19691699/"
+    },
+    {
+      "item_id": "hndaily-19691700",
+      "published_date": "2026-07-10",
+      "page_number": "003",
+      "page_name": "本省新闻",
+      "page_sequence": 2,
+      "title": "全省“水上安全知识云课堂”网络直播7月12日开展",
+      "ai_summary": "本报讯（海南日报全媒体记者曹马志 通讯员汪蓓）为提升中小学生风险防范意识和应急自救能力，预防水上安全事故发生，海南海事局联合海南省教育厅将共同举办2026年“水上安全知识云课堂”网络直播宣教活动。",
+      "scope": "hainan",
+      "enrichment_status": "legacy-derived",
+      "subjects": [],
+      "locations": [],
+      "topics": [],
+      "detail_path": "/items/2026-07-10/hndaily-19691700/"
+    },
+    {
+      "item_id": "hndaily-19691701",
+      "published_date": "2026-07-10",
+      "page_number": "003",
+      "page_name": "本省新闻",
+      "page_sequence": 3,
+      "title": "一场跨越百年的时空对话",
+      "ai_summary": "■ 海报集团全媒体记者 丁文文 百年前，法国学者萨维纳用脚步丈量海南，以一部《海南岛志》为世界留下了这片热带岛屿珍贵的文化底片。",
+      "scope": "mixed",
+      "enrichment_status": "legacy-derived",
+      "subjects": [],
+      "locations": [],
+      "topics": [],
+      "detail_path": "/items/2026-07-10/hndaily-19691701/"
+    },
+    {
+      "item_id": "hndaily-19691702",
+      "published_date": "2026-07-10",
+      "page_number": "003",
+      "page_name": "本省新闻",
+      "page_sequence": 4,
+      "title": "海南自贸港航运制度开放创新交流会举办",
+      "ai_summary": "本报讯（海南日报全媒体记者吴心怡）7月8日，由儋州市人民政府主办的2026海南自由贸易港航运制度开放创新交流会在洋浦举办。",
+      "scope": "mixed",
+      "enrichment_status": "legacy-derived",
+      "subjects": [],
+      "locations": [],
+      "topics": [],
+      "detail_path": "/items/2026-07-10/hndaily-19691702/"
+    },
+    {
+      "item_id": "hndaily-19691703",
+      "published_date": "2026-07-10",
+      "page_number": "003",
+      "page_name": "本省新闻",
+      "page_sequence": 5,
+      "title": "“环海南大学科技创新圈”成果推介对接交流活动举办",
+      "ai_summary": "本报海口7月9日讯（海南日报全媒体记者习霁鸿）7月9日，“环海南大学科技创新圈”成果推介对接交流活动（食品生物制造成果推介专场）在海南大学城西教学点举行。",
+      "scope": "hainan",
+      "enrichment_status": "legacy-derived",
+      "subjects": [],
+      "locations": [],
+      "topics": [],
+      "detail_path": "/items/2026-07-10/hndaily-19691703/"
+    },
+    {
+      "item_id": "hndaily-19691704",
+      "published_date": "2026-07-10",
+      "page_number": "003",
+      "page_name": "本省新闻",
+      "page_sequence": 6,
+      "title": "从案头到一线，他总说“让我来”",
+      "ai_summary": "■ 海南日报全媒体记者 刘梦晓 7月9日清晨，海南省委省直机关工委纪检监察室副主任黄峰早早地坐在办公桌前，谋划着一天的工作。",
+      "scope": "hainan",
+      "enrichment_status": "legacy-derived",
+      "subjects": [],
+      "locations": [],
+      "topics": [],
+      "detail_path": "/items/2026-07-10/hndaily-19691704/"
+    },
+    {
+      "item_id": "hndaily-19691706",
+      "published_date": "2026-07-10",
+      "page_number": "003",
+      "page_name": "本省新闻",
+      "page_sequence": 7,
+      "title": "白沙2026年基层理论宣讲大赛举办",
+      "ai_summary": "本报牙叉7月9日电（海南日报全媒体记者祁夏 曾毓慧）“让政策红利覆盖老百姓！”“讲好白沙实践故事！”7月9日，一句句接地气的话从白沙黎族自治县2026年“理响自贸港 白沙实践见真章”基层理论宣讲大赛复赛现场传出。",
+      "scope": "hainan",
+      "enrichment_status": "legacy-derived",
+      "subjects": [],
+      "locations": [],
+      "topics": [],
+      "detail_path": "/items/2026-07-10/hndaily-19691706/"
+    },
+    {
+      "item_id": "hndaily-19691707",
+      "published_date": "2026-07-10",
+      "page_number": "003",
+      "page_name": "本省新闻",
+      "page_sequence": 8,
+      "title": "海南首家宇树具身智能机器人学院落户海软",
+      "ai_summary": "本报嘉积7月9日电（海南日报全媒体记者陈子仪）7月9日，海南软件职业技术学院（以下简称海软）与宇树科技有限责任公司（以下简称宇树科技）在琼海正式签约，双方共建海南首家宇树具身智能机器人学院，全力打造海南具身智能机器人职业教育新高地。",
+      "scope": "hainan",
+      "enrichment_status": "legacy-derived",
+      "subjects": [],
+      "locations": [],
+      "topics": [],
+      "detail_path": "/items/2026-07-10/hndaily-19691707/"
+    },
+    {
+      "item_id": "hndaily-19691713",
+      "published_date": "2026-07-10",
+      "page_number": "004",
+      "page_name": "本省新闻",
+      "page_sequence": 1,
+      "title": "我省260个“爱心托管站”将陆续上线",
+      "ai_summary": "本报海口7月9日讯（海南日报全媒体记者李梦楠）7月9日，海南日报全媒体记者从共青团海南省委获悉，今年暑期，全省将陆续上线260个乡镇（街道）“爱心托管站”，开展日常看护、思想引导、课业辅导等关爱服务活动，缓解暑期家庭“看护难”问题。",
+      "scope": "hainan",
+      "enrichment_status": "legacy-derived",
+      "subjects": [],
+      "locations": [],
+      "topics": [],
+      "detail_path": "/items/2026-07-10/hndaily-19691713/"
+    },
+    {
+      "item_id": "hndaily-19691714",
+      "published_date": "2026-07-10",
+      "page_number": "004",
+      "page_name": "本省新闻",
+      "page_sequence": 2,
+      "title": "东方市人民政府党组成员、副市长符乃贤接受纪律审查和监察调查",
+      "ai_summary": "本报海口7月9日讯（海南日报全媒体记者袁宇）7月9日，海南日报全媒体记者从省纪委监委获悉，东方市人民政府党组成员、副市长符乃贤涉嫌严重违纪违法，主动投案，目前正接受海南省纪委监委纪律审查和监察调查。",
+      "scope": "hainan",
+      "enrichment_status": "legacy-derived",
+      "subjects": [],
+      "locations": [],
+      "topics": [],
+      "detail_path": "/items/2026-07-10/hndaily-19691714/"
+    },
+    {
+      "item_id": "hndaily-19691715",
+      "published_date": "2026-07-10",
+      "page_number": "004",
+      "page_name": "本省新闻",
+      "page_sequence": 3,
+      "title": "临高县发展和改革委员会党组书记、主任王小兵接受纪律审查和监察调查",
+      "ai_summary": "本报海口7月9日讯（海南日报全媒体记者袁宇）7月9日，海南日报全媒体记者从省纪委监委获悉，临高县发展和改革委员会党组书记、主任王小兵涉嫌严重违纪违法，目前正接受海南省纪委监委纪律审查和监察调查。",
+      "scope": "hainan",
+      "enrichment_status": "legacy-derived",
+      "subjects": [],
+      "locations": [],
+      "topics": [],
+      "detail_path": "/items/2026-07-10/hndaily-19691715/"
+    },
+    {
+      "item_id": "hndaily-19691716",
+      "published_date": "2026-07-10",
+      "page_number": "004",
+      "page_name": "本省新闻",
+      "page_sequence": 4,
+      "title": "乐东黎族自治县政协机关党组成员、经济与人口资源环境委员会主任林丹华接受纪律审查和监察调查",
+      "ai_summary": "本报海口7月9日讯（海南日报全媒体记者袁宇）7月9日，海南日报全媒体记者从省纪委监委获悉，乐东黎族自治县政协机关党组成员、经济与人口资源环境委员会主任林丹华涉嫌严重违纪违法，目前正接受海南省纪委监委纪律审查和监察调查。",
+      "scope": "hainan",
+      "enrichment_status": "legacy-derived",
+      "subjects": [],
+      "locations": [],
+      "topics": [],
+      "detail_path": "/items/2026-07-10/hndaily-19691716/"
+    },
+    {
+      "item_id": "hndaily-19691717",
+      "published_date": "2026-07-10",
+      "page_number": "004",
+      "page_name": "本省新闻",
+      "page_sequence": 5,
+      "title": "这届海口商圈，开始赚“慢钱”",
+      "ai_summary": "上接A01版 消费者不再被迫赶路，开启“随地大小坐”模式。",
+      "scope": "hainan",
+      "enrichment_status": "legacy-derived",
+      "subjects": [],
+      "locations": [],
+      "topics": [],
+      "detail_path": "/items/2026-07-10/hndaily-19691717/"
+    },
+    {
+      "item_id": "hndaily-19691718",
+      "published_date": "2026-07-10",
+      "page_number": "004",
+      "page_name": "本省新闻",
+      "page_sequence": 6,
+      "title": "海南省高级人民法院审判委员会原专职委员张光亲严重违纪违法被开除党籍",
+      "ai_summary": "本报海口7月9日讯（海南日报全媒体记者袁宇）7月9日，海南日报全媒体记者从省纪委监委获悉，经海南省委批准，海南省纪委监委对海南省高级人民法院审判委员会原专职委员张光亲严重违纪违法问题进行了立案审查调查。",
+      "scope": "hainan",
+      "enrichment_status": "legacy-derived",
+      "subjects": [],
+      "locations": [],
+      "topics": [],
+      "detail_path": "/items/2026-07-10/hndaily-19691718/"
+    },
+    {
+      "item_id": "hndaily-19691719",
+      "published_date": "2026-07-10",
+      "page_number": "004",
+      "page_name": "本省新闻",
+      "page_sequence": 7,
+      "title": "致公党海南省委员会机关原一级巡视员吴建东严重违纪违法被开除党籍",
+      "ai_summary": "本报海口7月9日讯（海南日报全媒体记者袁宇）7月9日，海南日报全媒体记者从省纪委监委获悉，经海南省委批准，海南省纪委监委对致公党海南省委员会机关原一级巡视员吴建东严重违纪违法问题进行了立案审查调查。",
+      "scope": "hainan",
+      "enrichment_status": "legacy-derived",
+      "subjects": [],
+      "locations": [],
+      "topics": [],
+      "detail_path": "/items/2026-07-10/hndaily-19691719/"
+    },
+    {
+      "item_id": "hndaily-19691730",
+      "published_date": "2026-07-10",
+      "page_number": "005",
+      "page_name": "新海垦",
+      "page_sequence": 1,
+      "title": "一支姜荷花的产业迁徒记",
+      "ai_summary": "■ 海南日报全媒体记者 邓钰 在海口市龙华区海南农垦种植基地里，盛放的花朵点亮了盛夏的绚烂——亭亭玉立的枝干上，花朵尽数绽放，姿态优美，由纯白、水粉到嫣红，层层叠叠，如佳人娉婷，眼眸含笑。",
+      "scope": "hainan",
+      "enrichment_status": "legacy-derived",
+      "subjects": [],
+      "locations": [],
+      "topics": [],
+      "detail_path": "/items/2026-07-10/hndaily-19691730/"
+    },
+    {
+      "item_id": "hndaily-19691731",
+      "published_date": "2026-07-10",
+      "page_number": "005",
+      "page_name": "新海垦",
+      "page_sequence": 2,
+      "title": "“海南鲜品”拓展国际“朋友圈”",
+      "ai_summary": "本报讯（海南日报全媒体记者邓钰 通讯员蔡昊）日前，洪都拉斯投资与商贸对接交流活动在北京举行。",
+      "scope": "mixed",
+      "enrichment_status": "legacy-derived",
+      "subjects": [],
+      "locations": [],
+      "topics": [],
+      "detail_path": "/items/2026-07-10/hndaily-19691731/"
+    },
+    {
+      "item_id": "hndaily-19691732",
+      "published_date": "2026-07-10",
+      "page_number": "005",
+      "page_name": "新海垦",
+      "page_sequence": 3,
+      "title": "海垦集团与新疆生产建设兵团共谋合作",
+      "ai_summary": "本报讯（海南日报全媒体记者邓钰 通讯员陈晖濠）日前，海南省农垦投资控股集团有限公司（以下简称海垦集团）派出考察队伍到新疆生产建设兵团，实地学习现代农业、文旅融合、口岸贸易和跨境合作等领域的先进经验，并在优势互补、产业协同、加强协作等方面达成合作共识，共谋发展新路径。",
+      "scope": "hainan",
+      "enrichment_status": "legacy-derived",
+      "subjects": [],
+      "locations": [],
+      "topics": [],
+      "detail_path": "/items/2026-07-10/hndaily-19691732/"
+    },
+    {
+      "item_id": "hndaily-19691733",
+      "published_date": "2026-07-10",
+      "page_number": "005",
+      "page_name": "新海垦",
+      "page_sequence": 4,
+      "title": "海垦“白沙毛尖”获国际奖项",
+      "ai_summary": "本报讯（海南日报全媒体记者邓钰 通讯员庄艳）近日，在备受瞩目的第十一届亚太茶茗大奖评选中，海南农垦白沙茶业股份有限公司选送的“白沙毛尖”茶样，凭借卓越的品质和独特的风味，从众多参评产品中脱颖而出，荣获绿茶组“银奖”。",
+      "scope": "mixed",
+      "enrichment_status": "legacy-derived",
+      "subjects": [],
+      "locations": [],
+      "topics": [],
+      "detail_path": "/items/2026-07-10/hndaily-19691733/"
+    },
+    {
+      "item_id": "hndaily-19691734",
+      "published_date": "2026-07-10",
+      "page_number": "005",
+      "page_name": "新海垦",
+      "page_sequence": 5,
+      "title": "海南南繁种业集团与三亚崖州区深化垦地融合",
+      "ai_summary": "本报讯（海南日报全媒体记者邓钰 通讯员吕鳌）日前，海南南繁种业集团有限公司与三亚市崖州区政府举行垦地融合工作座谈会，双方围绕深化垦地合作、推进民生改善等事宜进行深入交流。",
+      "scope": "hainan",
+      "enrichment_status": "legacy-derived",
+      "subjects": [],
+      "locations": [],
+      "topics": [],
+      "detail_path": "/items/2026-07-10/hndaily-19691734/"
+    },
+    {
+      "item_id": "hndaily-19691735",
+      "published_date": "2026-07-10",
+      "page_number": "005",
+      "page_name": "新海垦",
+      "page_sequence": 6,
+      "title": "海垦7万亩芒果园迎来“家族焕新”",
+      "ai_summary": "■ 海南日报全媒体记者 邓钰 通讯员 南方 七月盛夏，三亚海棠区，阳光透过繁密的芒果叶，在土地上洒下斑驳光影。",
+      "scope": "hainan",
+      "enrichment_status": "legacy-derived",
+      "subjects": [],
+      "locations": [],
+      "topics": [],
+      "detail_path": "/items/2026-07-10/hndaily-19691735/"
+    },
+    {
+      "item_id": "hndaily-19691736",
+      "published_date": "2026-07-10",
+      "page_number": "005",
+      "page_name": "新海垦",
+      "page_sequence": 7,
+      "title": "网络名人“寻味”果博中心",
+      "ai_summary": "本报讯（海南日报全媒体记者邓钰 通讯员陈思思）日前，位于保亭黎族苗族自治县保城镇的七仙岭全球热带水果博览中心（以下简称果博中心）迎来了一群特别的访客。",
+      "scope": "mixed",
+      "enrichment_status": "legacy-derived",
+      "subjects": [],
+      "locations": [],
+      "topics": [],
+      "detail_path": "/items/2026-07-10/hndaily-19691736/"
+    },
+    {
+      "item_id": "hndaily-19691742",
+      "published_date": "2026-07-10",
+      "page_number": "006",
+      "page_name": "潮起儋洋",
+      "page_sequence": 1,
+      "title": "儋州：续写寿光模式新故事",
+      "ai_summary": "■ 海南日报全媒体记者 吴心怡 7月9日，儋州市雅星镇贾思勰现代农业科技示范基地的大棚里空荡荡的。",
+      "scope": "hainan",
+      "enrichment_status": "legacy-derived",
+      "subjects": [],
+      "locations": [],
+      "topics": [],
+      "detail_path": "/items/2026-07-10/hndaily-19691742/"
+    },
+    {
+      "item_id": "hndaily-19691743",
+      "published_date": "2026-07-10",
+      "page_number": "006",
+      "page_name": "潮起儋洋",
+      "page_sequence": 2,
+      "title": "儋州计划3年引进人才3.3万人",
+      "ai_summary": "本报讯 （海南日报全媒体记者吴心怡）到2028年，儋州将引进各类人才3.3万人以上，培养技能人才2万人以上，为儋洋高质量发展提供坚实人才保障。",
+      "scope": "hainan",
+      "enrichment_status": "legacy-derived",
+      "subjects": [],
+      "locations": [],
+      "topics": [],
+      "detail_path": "/items/2026-07-10/hndaily-19691743/"
+    },
+    {
+      "item_id": "hndaily-19691744",
+      "published_date": "2026-07-10",
+      "page_number": "006",
+      "page_name": "潮起儋洋",
+      "page_sequence": 3,
+      "title": "儋州中小学生安全应急综合演练暨科普研学项目惠及近3万学生",
+      "ai_summary": "本报讯 （海南日报全媒体记者吴心怡 通讯员覃凯）握拳、顶腹、发力……近日，在儋州市教育示范性综合实践基地的训练馆里，身着校服的孩子们正两两一组，反复演练海姆立克急救法。",
+      "scope": "hainan",
+      "enrichment_status": "legacy-derived",
+      "subjects": [],
+      "locations": [],
+      "topics": [],
+      "detail_path": "/items/2026-07-10/hndaily-19691744/"
+    },
+    {
+      "item_id": "hndaily-19691750",
+      "published_date": "2026-07-10",
+      "page_number": "007",
+      "page_name": "中国新闻",
+      "page_sequence": 1,
+      "title": "扎扎实实以科技创新支撑和引领中国式现代化",
+      "ai_summary": "■ 人民日报评论员 科技兴则民族兴，科技强则国家强。 7月8日，国家科学技术奖励大会、中国科学院第二十二次院士大会和中国工程院第十八次院士大会、中国科学技术协会第十一次全国代表大会隆重召开，习近平总书记出席大会，为国家最高科学技术奖获得者等颁奖并发表重要讲话。 从党和国家事业发展全局的战略高度出发，习近平总书记充分肯定近年来我国科技事业取得的重大成就，深刻分",
+      "scope": "national",
+      "enrichment_status": "legacy-derived",
+      "subjects": [],
+      "locations": [],
+      "topics": [],
+      "detail_path": "/items/2026-07-10/hndaily-19691750/"
+    },
+    {
+      "item_id": "hndaily-19691751",
+      "published_date": "2026-07-10",
+      "page_number": "007",
+      "page_name": "中国新闻",
+      "page_sequence": 2,
+      "title": "抓住历史机遇 迎接时代挑战",
+      "ai_summary": "“十五五”开局之年，国家科学技术奖励大会、两院院士大会、中国科协第十一次全国代表大会7月8日上午在京召开。",
+      "scope": "national",
+      "enrichment_status": "legacy-derived",
+      "subjects": [],
+      "locations": [],
+      "topics": [],
+      "detail_path": "/items/2026-07-10/hndaily-19691751/"
+    },
+    {
+      "item_id": "hndaily-19691752",
+      "published_date": "2026-07-10",
+      "page_number": "007",
+      "page_name": "中国新闻",
+      "page_sequence": 3,
+      "title": "“锻造了强大的中国共产党”",
+      "ai_summary": "“105年不懈奋斗，锻造了强大的中国共产党。”7月1日，在庆祝中国共产党成立105周年大会上，习近平总书记深刻揭示我们党百余年奋斗的伟大成就和历史意义。 百年磨砺，苦难辉煌。从成立时只有50多名党员，到如今作为领导着14亿多人口大国的世界第一大执政党，中国共产党始终站在时代潮流最前列、站在攻坚克难最前沿，带领中国人民创造了彪炳史册的历史伟业，书写了波澜壮阔的",
+      "scope": "national",
+      "enrichment_status": "legacy-derived",
+      "subjects": [],
+      "locations": [],
+      "topics": [],
+      "detail_path": "/items/2026-07-10/hndaily-19691752/"
+    },
+    {
+      "item_id": "hndaily-19691753",
+      "published_date": "2026-07-10",
+      "page_number": "007",
+      "page_name": "中国新闻",
+      "page_sequence": 4,
+      "title": "中办国办印发《关于全力做好防汛抗旱工作的通知》",
+      "ai_summary": "新华社北京7月9日电 近日，中共中央办公厅、国务院办公厅印发《关于全力做好防汛抗旱工作的通知》（以下简称《通知》），对全力做好防汛抗旱、抢险救灾各项工作作出部署。",
+      "scope": "national",
+      "enrichment_status": "legacy-derived",
+      "subjects": [],
+      "locations": [],
+      "topics": [],
+      "detail_path": "/items/2026-07-10/hndaily-19691753/"
+    },
+    {
+      "item_id": "hndaily-19691754",
+      "published_date": "2026-07-10",
+      "page_number": "007",
+      "page_name": "中国新闻",
+      "page_sequence": 5,
+      "title": "奋进“十五五”，阔步新征程",
+      "ai_summary": "“通过！” 2026年3月12日，人民大会堂万人大礼堂。",
+      "scope": "national",
+      "enrichment_status": "legacy-derived",
+      "subjects": [],
+      "locations": [],
+      "topics": [],
+      "detail_path": "/items/2026-07-10/hndaily-19691754/"
+    },
+    {
+      "item_id": "hndaily-19691759",
+      "published_date": "2026-07-10",
+      "page_number": "008",
+      "page_name": "文化周刊",
+      "page_sequence": 1,
+      "title": "为深沉而蓬勃的时代和声",
+      "ai_summary": "■ 海南日报全媒体记者 王才丰 编者按 近日，重大题材长篇报告文学《封关》新书首发式在海口举行。",
+      "scope": "hainan",
+      "enrichment_status": "legacy-derived",
+      "subjects": [],
+      "locations": [],
+      "topics": [],
+      "detail_path": "/items/2026-07-10/hndaily-19691759/"
+    },
+    {
+      "item_id": "hndaily-19691760",
+      "published_date": "2026-07-10",
+      "page_number": "008",
+      "page_name": "文化周刊",
+      "page_sequence": 2,
+      "title": "一份由文字镌刻的情怀",
+      "ai_summary": "■ 吴辰 “文章，经国之大业，不朽之盛事”，在海南自贸港封关运作六个月之际，康景林的长篇报告文学《封关》问世。",
+      "scope": "hainan",
+      "enrichment_status": "legacy-derived",
+      "subjects": [],
+      "locations": [],
+      "topics": [],
+      "detail_path": "/items/2026-07-10/hndaily-19691760/"
+    },
+    {
+      "item_id": "hndaily-19691762",
+      "published_date": "2026-07-10",
+      "page_number": "008",
+      "page_name": "文化周刊",
+      "page_sequence": 3,
+      "title": "历史现场的文学赋形",
+      "ai_summary": "■ 汪荣 在《讲故事的人》一文中，德国哲学家本雅明区分了两种不同的故事类型：水手故事和农夫故事。",
+      "scope": "hainan",
+      "enrichment_status": "legacy-derived",
+      "subjects": [],
+      "locations": [],
+      "topics": [],
+      "detail_path": "/items/2026-07-10/hndaily-19691762/"
+    },
+    {
+      "item_id": "hndaily-19691763",
+      "published_date": "2026-07-10",
+      "page_number": "008",
+      "page_name": "文化周刊",
+      "page_sequence": 4,
+      "title": "以作家之笔为海南立传",
+      "ai_summary": "■ 王学振 2025年12月18日，海南自由贸易港全岛封关，这是中国对外开放史上具有里程碑意义的重要事件。",
+      "scope": "hainan",
+      "enrichment_status": "legacy-derived",
+      "subjects": [],
+      "locations": [],
+      "topics": [],
+      "detail_path": "/items/2026-07-10/hndaily-19691763/"
+    }
+  ]
+}

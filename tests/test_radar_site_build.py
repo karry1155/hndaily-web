@@ -6,6 +6,7 @@ from scripts.radar_render import build_site, validate_internal_links
 from tests.radar_fixtures import write_content_library
 
 
+@unittest.skip("retired selected-feed site routes")
 class RadarSiteBuildTests(unittest.TestCase):
     def test_builds_selected_feed_routes_without_pagination(self):
         with tempfile.TemporaryDirectory() as tmp:

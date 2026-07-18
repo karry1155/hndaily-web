@@ -4,8 +4,8 @@ from datetime import date
 from typing import Any
 from urllib.parse import urlparse
 
-SCHEMA_VERSION = 5
-PROMPT_VERSION = "radar-v3"
+SCHEMA_VERSION = 7
+PROMPT_VERSION = "hnhot-v1"
 CATEGORIES = ("机会", "民生", "产业", "政策", "城市", "观察")
 SCORE_FIELDS = (
     "hainan_relevance",
@@ -124,7 +124,9 @@ def validate_source_candidate(candidate: dict[str, Any]) -> None:
 
 def validate_stored_item(item: dict[str, Any]) -> None:
     require_exact_fields(item, STORED_ITEM_FIELDS, "stored item")
-    if item.get("schema_version") != SCHEMA_VERSION:
+    # Selected-item records are a retired schema-v5 compatibility surface.
+    # HNHOT publishes every valid article through issue-items instead.
+    if item.get("schema_version") != 5:
         raise ContractError("stored item schema_version is invalid")
     for field in ("item_id", "published_date", "collected_date", "category"):
         if not non_empty(item.get(field)):

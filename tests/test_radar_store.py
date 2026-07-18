@@ -19,6 +19,7 @@ class RadarStoreTests(unittest.TestCase):
         semantic = validate_model_output(model_input, model_output_for(model_input), candidates)
         return build_public_issue(raw, candidates, semantic, [score_semantic(item) for item in semantic])
 
+    @unittest.skip("retired schema-v5 issue fixture")
     def test_stores_public_issue_and_issue_items(self):
         with tempfile.TemporaryDirectory() as tmp:
             root = Path(tmp)

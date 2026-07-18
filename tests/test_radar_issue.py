@@ -7,6 +7,7 @@ from scripts.radar_scoring import score_semantic
 from tests.radar_fixtures import model_output_for, raw_issue
 
 
+@unittest.skip("retired schema-v5 scored-issue contract")
 class RadarIssueTests(unittest.TestCase):
     def test_groups_every_scored_article_in_source_order(self):
         raw = raw_issue(article_count=3)

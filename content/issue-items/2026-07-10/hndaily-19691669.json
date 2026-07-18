@@ -1,11 +1,25 @@
 {
-  "schema_version": 5,
+  "schema_version": 7,
   "item_id": "hndaily-19691669",
   "published_date": "2026-07-10",
   "collected_date": "2026-07-12",
   "page_number": "001",
   "page_name": "头版",
   "page_sequence": 2,
+  "author": "",
+  "enrichment_status": "legacy-derived",
+  "scope": "hainan",
+  "scope_evidence": "把学习教育成果转化为高质量发展实绩\n坚决守好祖国南大门",
+  "subjects": [],
+  "locations": [],
+  "topics": [],
+  "event_relation": {
+    "relation": "none",
+    "event_id": null,
+    "event_name": null,
+    "evidence": null,
+    "update_summary": null
+  },
   "block": {
     "source": "海南日报",
     "title": "把学习教育成果转化为高质量发展实绩\n坚决守好祖国南大门",

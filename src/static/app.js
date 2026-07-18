@@ -1,63 +1,5 @@
-document.documentElement.classList.add("js-ready");
-
 const THEME_KEY = "hn-hot-theme";
 const STAR_KEY = "hn-hot-starred";
-const themeMedia = matchMedia("(prefers-color-scheme: dark)");
-
-function storedTheme() {
-  const value = localStorage.getItem(THEME_KEY);
-  return ["dark", "system", "light"].includes(value) ? value : "system";
-}
-
-function applyTheme(choice) {
-  const resolved = choice === "system" ? (themeMedia.matches ? "dark" : "light") : choice;
-  document.documentElement.dataset.themeChoice = choice;
-  document.documentElement.dataset.theme = resolved;
-  document.querySelectorAll("[data-theme-toggle]").forEach((control) => {
-    control.querySelector("[data-theme-thumb]").dataset.pos = choice;
-    control.querySelectorAll("[data-theme-choice]").forEach((button) => {
-      button.classList.toggle("active", button.dataset.themeChoice === choice);
-      button.setAttribute("aria-pressed", String(button.dataset.themeChoice === choice));
-    });
-  });
-}
-
-applyTheme(storedTheme());
-
-document.querySelectorAll("[data-theme-choice]").forEach((button) => {
-  button.addEventListener("click", () => {
-    const choice = button.dataset.themeChoice;
-    localStorage.setItem(THEME_KEY, choice);
-    applyTheme(choice);
-  });
-});
-
-themeMedia.addEventListener("change", () => {
-  if (storedTheme() === "system") applyTheme("system");
-});
-
-document.querySelectorAll("[data-search-input]").forEach((input) => {
-  input.addEventListener("input", () => {
-    const query = input.value.trim().toLocaleLowerCase("zh-CN");
-    const scope = input.closest("[data-search-scope]");
-    scope.querySelectorAll("[data-search-title]").forEach((row) => {
-      row.hidden = query !== "" && !row.dataset.searchTitle.toLocaleLowerCase("zh-CN").includes(query);
-    });
-    scope.querySelectorAll("[data-search-group]").forEach((group) => {
-      group.hidden = !group.querySelector("[data-search-title]:not([hidden])");
-    });
-    const empty = scope.querySelector("[data-search-empty]");
-    if (empty) empty.hidden = Boolean(scope.querySelector("[data-search-title]:not([hidden])"));
-  });
-});
-
-document.querySelectorAll(".nav-toggle").forEach((button) => {
-  button.addEventListener("click", () => {
-    const expanded = button.getAttribute("aria-expanded") === "true";
-    button.setAttribute("aria-expanded", String(!expanded));
-    button.closest(".primary-nav").classList.toggle("nav-open", !expanded);
-  });
-});
 
 function readStars() {
   try {
@@ -68,252 +10,85 @@ function readStars() {
   }
 }
 
-function writeStars(ids) {
-  localStorage.setItem(STAR_KEY, JSON.stringify(ids));
-}
-
 function syncStarButtons() {
-  const saved = new Set(readStars());
+  const stars = new Set(readStars());
   document.querySelectorAll("[data-star-id]").forEach((button) => {
-    const active = saved.has(button.dataset.starId);
+    const active = stars.has(button.dataset.starId);
     button.classList.toggle("is-starred", active);
     button.setAttribute("aria-pressed", String(active));
   });
 }
 
 document.addEventListener("click", (event) => {
-  const button = event.target.closest("[data-star-id]");
-  if (!button) return;
-  const saved = new Set(readStars());
-  if (saved.has(button.dataset.starId)) saved.delete(button.dataset.starId);
-  else saved.add(button.dataset.starId);
-  writeStars([...saved]);
-  syncStarButtons();
+  const star = event.target.closest("[data-star-id]");
+  if (star) {
+    const stars = new Set(readStars());
+    if (stars.has(star.dataset.starId)) stars.delete(star.dataset.starId);
+    else stars.add(star.dataset.starId);
+    localStorage.setItem(STAR_KEY, JSON.stringify([...stars]));
+    syncStarButtons();
+    renderStarred();
+  }
+  if (event.target.closest("[data-theme-cycle]")) {
+    const next = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
+    document.documentElement.dataset.theme = next;
+    document.documentElement.dataset.themeChoice = next;
+    localStorage.setItem(THEME_KEY, next);
+  }
 });
 
-function bookmarkButton(item) {
+document.querySelectorAll("[data-search-input]").forEach((input) => {
+  input.addEventListener("input", () => {
+    const query = input.value.trim().toLocaleLowerCase("zh-CN");
+    const main = input.closest("main");
+    const cards = [...main.querySelectorAll("[data-search-card]")];
+    cards.forEach((card) => {
+      card.hidden = query !== "" && !card.dataset.searchText.toLocaleLowerCase("zh-CN").includes(query);
+    });
+    main.querySelectorAll(".date-group, .logical-section").forEach((group) => {
+      group.hidden = !group.querySelector("[data-search-card]:not([hidden])");
+    });
+    const empty = main.querySelector("[data-search-empty]");
+    if (empty) empty.hidden = cards.some((card) => !card.hidden);
+  });
+});
+
+function makeStarredCard(item) {
+  const article = document.createElement("article");
+  article.className = "story-card";
+  const scope = document.createElement("span");
+  scope.className = `scope-badge scope-${item.scope}`;
+  scope.textContent = {national: "N", hainan: "H", mixed: "M"}[item.scope] || "–";
+  const link = document.createElement("a");
+  link.className = "story-copy";
+  link.href = item.detail_path;
+  const title = document.createElement("h3");
+  title.textContent = item.title;
+  const summary = document.createElement("p");
+  summary.textContent = item.ai_summary || "这篇历史报道尚待重新生成结构化摘要。";
+  link.append(title, summary);
   const button = document.createElement("button");
   button.type = "button";
   button.className = "bookmark-button";
   button.dataset.starId = item.item_id;
-  button.setAttribute("aria-label", `收藏 ${item.title}`);
-  button.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3.75A1.75 1.75 0 0 1 7.75 2h8.5A1.75 1.75 0 0 1 18 3.75v17l-6-3.75-6 3.75z"/></svg>';
-  return button;
-}
-
-function selectedStory(item) {
-  const article = document.createElement("article");
-  article.className = "selected-story";
-  article.dataset.selectedId = item.item_id;
-  article.dataset.searchText = [item.title, item.ai_summary, item.recommendation_reason].join(" ");
-  const link = document.createElement("a");
-  link.className = "story-main";
-  link.href = item.detail_path;
-  const title = document.createElement("strong");
-  title.className = "story-title";
-  title.textContent = item.title;
-  const summary = document.createElement("p");
-  summary.className = "story-summary";
-  summary.textContent = item.ai_summary || "";
-  const reason = document.createElement("p");
-  reason.className = "story-reason";
-  const label = document.createElement("span");
-  label.textContent = "推荐理由：";
-  reason.append(label, item.recommendation_reason || "");
-  link.append(title, summary, reason);
-  const actions = document.createElement("div");
-  actions.className = "story-actions";
-  const score = document.createElement("span");
-  score.className = "story-score";
-  score.title = "最终分";
-  score.textContent = Number.isFinite(item.final_score) ? String(item.final_score) : "—";
-  actions.append(score, bookmarkButton(item));
-  article.append(link, actions);
+  button.setAttribute("aria-label", `取消收藏 ${item.title}`);
+  button.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4h12v17l-6-4-6 4z"/></svg>';
+  article.append(scope, link, button);
   return article;
 }
 
-function dateHeading(value, count, isLatest = false) {
-  const parts = value.split("-").map(Number);
-  const parsed = new Date(Date.UTC(parts[0], parts[1] - 1, parts[2]));
-  const weekdays = ["星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六"];
-  const heading = document.createElement("h2");
-  const dateLabel = document.createElement("strong");
-  dateLabel.className = "current-date";
-  dateLabel.textContent = `${parts[1]}月${parts[2]}日`;
-  const meta = document.createElement("span");
-  meta.className = "current-date-meta";
-  meta.textContent = `${weekdays[parsed.getUTCDay()]} · ${count} 条`;
-  const desktop = document.createElement("span");
-  desktop.className = "desktop-feed-date";
-  desktop.append(dateLabel, meta);
-  const mobile = document.createElement("span");
-  mobile.className = "mobile-feed-date";
-  if (isLatest) {
-    const today = document.createElement("strong");
-    today.className = "mobile-date-today";
-    today.textContent = "今天";
-    mobile.append(today);
-  }
-  const mobileMeta = document.createElement("span");
-  mobileMeta.className = "mobile-date-meta";
-  mobileMeta.textContent = `${parts[1]}月${parts[2]}日 周${weekdays[parsed.getUTCDay()].slice(-1)}`;
-  mobile.append(mobileMeta);
-  heading.append(desktop, mobile);
-  return heading;
-}
-
-function renderSelectedDate(payload, activeCategory = "全部") {
-  const items = payload.items.filter((item) => activeCategory === "全部" || item.category === activeCategory);
-  const section = document.createElement("section");
-  section.className = "date-group";
-  section.dataset.feedDate = payload.date;
-  section.append(dateHeading(payload.date, items.length, payload.date === selectedFeedState.dates[0]));
-  const list = document.createElement("div");
-  list.className = "story-list";
-  items.forEach((item) => list.append(selectedStory(item)));
-  section.append(list);
-  return section;
-}
-
-const selectedFeedState = {
-  dates: [],
-  paths: new Map(),
-  payloads: new Map(),
-  loaded: new Set(),
-  failed: null,
-  loading: false,
-  searching: false,
-};
-
-async function fetchSelectedDate(date) {
-  if (selectedFeedState.payloads.has(date)) return selectedFeedState.payloads.get(date);
-  const response = await fetch(selectedFeedState.paths.get(date));
-  if (!response.ok) throw new Error(`feed ${date} returned ${response.status}`);
-  const payload = await response.json();
-  if (payload.date !== date || !Array.isArray(payload.items)) throw new Error(`feed ${date} is invalid`);
-  selectedFeedState.payloads.set(date, payload);
-  return payload;
-}
-
-function loaderButton(text, date) {
-  const button = document.createElement("button");
-  button.type = "button";
-  button.dataset.loadMore = date;
-  button.textContent = text;
-  return button;
-}
-
-function nextUnloadedDate() {
-  return selectedFeedState.dates.find((date) => !selectedFeedState.loaded.has(date));
-}
-
-async function loadSelectedDate(date) {
-  if (!date || selectedFeedState.searching || selectedFeedState.loading || selectedFeedState.loaded.has(date)) return;
-  const feed = document.querySelector("[data-selected-feed]");
-  const loader = document.querySelector("[data-feed-loader]");
-  const activeCategory = document.querySelector("[data-selected-category]")?.dataset.selectedCategory || "全部";
-  selectedFeedState.loading = true;
-  loader.textContent = "正在加载…";
-  try {
-    const payload = await fetchSelectedDate(date);
-    if (selectedFeedState.searching) return;
-    feed.append(renderSelectedDate(payload, activeCategory));
-    selectedFeedState.loaded.add(date);
-    selectedFeedState.failed = null;
-    loader.replaceChildren();
-    const next = nextUnloadedDate();
-    if (!next) return;
-    if (!("IntersectionObserver" in window)) loader.append(loaderButton("加载更多", next));
-  } catch (_) {
-    selectedFeedState.failed = date;
-    loader.replaceChildren(loaderButton("加载失败，重试", date));
-  } finally {
-    selectedFeedState.loading = false;
-    syncStarButtons();
-  }
-}
-
-function restoreProgressiveFeed(feed, activeCategory) {
-  feed.replaceChildren();
-  selectedFeedState.loaded.forEach((date) => {
-    const payload = selectedFeedState.payloads.get(date);
-    if (payload) feed.append(renderSelectedDate(payload, activeCategory));
-  });
-}
-
-async function runSelectedSearch(query) {
-  const normalized = query.trim().toLocaleLowerCase("zh-CN");
-  const feed = document.querySelector("[data-selected-feed]");
-  const empty = document.querySelector("[data-search-empty]");
-  const activeCategory = document.querySelector("[data-selected-category]")?.dataset.selectedCategory || "全部";
-  if (!normalized) {
-    selectedFeedState.searching = false;
-    restoreProgressiveFeed(feed, activeCategory);
-    empty.hidden = true;
-    return;
-  }
-  selectedFeedState.searching = true;
-  const payloads = await Promise.all(selectedFeedState.dates.map(fetchSelectedDate));
-  feed.replaceChildren();
-  payloads.forEach((payload) => {
-    const items = payload.items.filter((item) => {
-      if (activeCategory !== "全部" && item.category !== activeCategory) return false;
-      return [item.title, item.ai_summary, item.recommendation_reason]
-        .join(" ").toLocaleLowerCase("zh-CN").includes(normalized);
-    });
-    if (items.length) feed.append(renderSelectedDate({...payload, items}, activeCategory));
-  });
-  empty.hidden = Boolean(feed.children.length);
-  syncStarButtons();
-}
-
-function initSelectedFeed() {
-  const source = document.querySelector("[data-selected-feed-manifest]");
-  if (!source) return;
-  let manifest;
-  try { manifest = JSON.parse(source.textContent); } catch (_) { return; }
-  selectedFeedState.dates = Array.isArray(manifest.dates) ? manifest.dates : [];
-  selectedFeedState.dates.forEach((date, index) => selectedFeedState.paths.set(date, manifest.feeds[index]));
-  document.querySelectorAll("[data-feed-date]").forEach((section) => {
-    selectedFeedState.loaded.add(section.dataset.feedDate);
-  });
-  const loader = document.querySelector("[data-feed-loader]");
-  const next = nextUnloadedDate();
-  if (next && "IntersectionObserver" in window) {
-    const observer = new IntersectionObserver((entries) => {
-      if (entries.some((entry) => entry.isIntersecting)) loadSelectedDate(nextUnloadedDate());
-    }, {rootMargin: "500px 0px"});
-    observer.observe(loader);
-  } else if (next) {
-    loader.append(loaderButton("加载更多", next));
-  }
-  document.querySelector("[data-selected-search]")?.addEventListener("submit", (event) => {
-    event.preventDefault();
-    runSelectedSearch(event.currentTarget.querySelector("input").value).catch(() => {
-      loader.replaceChildren(loaderButton("加载失败，重试", selectedFeedState.failed || nextUnloadedDate()));
-    });
-  });
-}
-
-document.addEventListener("click", (event) => {
-  const button = event.target.closest("[data-load-more]");
-  if (button) loadSelectedDate(button.dataset.loadMore);
-});
-
-function renderStarredPage() {
+function renderStarred() {
   const target = document.querySelector("[data-starred-list]");
   const source = document.getElementById("starred-catalog");
   if (!target || !source) return;
   let catalog = [];
   try { catalog = JSON.parse(source.textContent); } catch (_) { catalog = []; }
-  const saved = new Set(readStars());
-  const selected = catalog.filter((item) => saved.has(item.item_id));
-  target.replaceChildren();
-  selected.forEach((item) => target.append(selectedStory(item)));
+  const stars = new Set(readStars());
+  const selected = catalog.filter((item) => stars.has(item.item_id));
+  target.replaceChildren(...selected.map(makeStarredCard));
   const empty = document.querySelector("[data-starred-empty]");
   if (empty) empty.hidden = selected.length > 0;
 }
 
 syncStarButtons();
-initSelectedFeed();
-renderStarredPage();
+renderStarred();

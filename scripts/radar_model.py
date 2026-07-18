@@ -2,81 +2,72 @@ from __future__ import annotations
 
 import hashlib
 import json
+from pathlib import Path
 from typing import Any
 
 from scripts.radar_contract import (
-    CATEGORIES,
     PROMPT_VERSION,
     SCHEMA_VERSION,
-    SCORE_FIELDS,
     ContractError,
     non_empty,
     normalized_text,
     require_exact_fields,
-    validate_iso_date,
 )
 from scripts.radar_locations import find_location_candidates, load_location_catalog
 
-ENVELOPE_FIELDS = {
-    "schema_version",
-    "prompt_version",
-    "input_fingerprint",
-    "items",
-}
+ROOT = Path(__file__).resolve().parents[1]
+ENVELOPE_FIELDS = {"schema_version", "prompt_version", "input_fingerprint", "items"}
 MODEL_ITEM_FIELDS = {
-    "candidate_id",
-    "ai_summary",
-    "recommendation_reason",
-    "category",
-    *SCORE_FIELDS,
-    "score_reasons",
-    "opportunity_lifecycle",
-    "deadline_date",
-    "deadline_text",
-    "deadline_evidence",
-    "actors",
-    "location_mentions",
-    "action",
-    "action_evidence",
+    "candidate_id", "ai_summary", "scope", "scope_evidence", "subjects",
+    "location_mentions", "topic_mentions", "event_relation",
 }
-LIFECYCLES = {"dated", "ongoing", "unspecified", "not_applicable"}
-ACTOR_TYPES = {"person", "organization", "government", "company"}
+SUBJECT_TYPES = {"person", "government", "organization", "company", "project"}
+SCOPES = {"national", "hainan", "mixed"}
 
 
 class ModelOutputError(ContractError):
     pass
 
 
-def build_model_input(candidates: list[dict[str, Any]]) -> dict[str, Any]:
-    catalog = load_location_catalog()
+def _topic_catalog() -> list[dict[str, Any]]:
+    payload = json.loads((ROOT / "config/topics.json").read_text(encoding="utf-8"))
+    return payload["topics"]
+
+
+def build_model_input(
+    candidates: list[dict[str, Any]], event_candidates: list[dict[str, Any]] | None = None
+) -> dict[str, Any]:
+    locations = load_location_catalog()
+    topics = [
+        {"topic_id": row["topic_id"], "name": row["name"], "aliases": row["aliases"]}
+        for row in _topic_catalog()
+    ]
+    events = list(event_candidates or [])
     items = [
         {
             "candidate_id": item["candidate_id"],
             "title": item["title"],
             "content": item["content"],
-            "location_candidates": find_location_candidates(
-                item["title"], item["content"], catalog
-            ),
+            "location_candidates": find_location_candidates(item["title"], item["content"], locations),
+            "topic_candidates": topics,
+            "event_candidates": events,
         }
         for item in candidates
     ]
-    payload = {
-        "schema_version": SCHEMA_VERSION,
-        "prompt_version": PROMPT_VERSION,
-        "items": items,
-    }
-    canonical = json.dumps(
-        payload,
-        ensure_ascii=False,
-        sort_keys=True,
-        separators=(",", ":"),
-    )
+    payload = {"schema_version": SCHEMA_VERSION, "prompt_version": PROMPT_VERSION, "items": items}
+    canonical = json.dumps(payload, ensure_ascii=False, sort_keys=True, separators=(",", ":"))
     return {
         **payload,
-        "input_fingerprint": hashlib.sha256(
-            canonical.encode("utf-8")
-        ).hexdigest(),
+        "input_fingerprint": hashlib.sha256(canonical.encode("utf-8")).hexdigest(),
     }
+
+
+def _evidence(value: Any, source_text: str, location: str) -> str:
+    if not non_empty(value) or len(value) > 240:
+        raise ModelOutputError(f"{location} is invalid")
+    if normalized_text(value) not in source_text:
+        raise ModelOutputError(f"{location} is not in source")
+    return value.strip()
 
 
 def validate_model_output(
@@ -92,135 +83,85 @@ def validate_model_output(
         items = model_output.get("items")
         if not isinstance(items, list):
             raise ModelOutputError("model output items must be an array")
-        expected_ids = [item["candidate_id"] for item in candidates]
-        actual_ids = [
-            item.get("candidate_id")
-            for item in items
-            if isinstance(item, dict)
-        ]
-        if actual_ids != expected_ids:
+        if [row.get("candidate_id") for row in items if isinstance(row, dict)] != [
+            row["candidate_id"] for row in candidates
+        ]:
             raise ModelOutputError("candidate_id order mismatch")
-        for index, (item, candidate) in enumerate(zip(items, candidates)):
-            require_exact_fields(item, MODEL_ITEM_FIELDS, f"items[{index}]")
-            if not non_empty(item.get("ai_summary")):
-                raise ModelOutputError(
-                    f"items[{index}].ai_summary is required"
-                )
-            if not non_empty(item.get("recommendation_reason")):
-                raise ModelOutputError(
-                    f"items[{index}].recommendation_reason is required"
-                )
-            if normalized_text(item["recommendation_reason"]) == normalized_text(
-                item["ai_summary"]
-            ):
-                raise ModelOutputError(
-                    f"items[{index}].recommendation_reason must differ from ai_summary"
-                )
-            if item.get("category") not in CATEGORIES:
-                raise ModelOutputError(f"items[{index}].category is invalid")
-            for field in SCORE_FIELDS:
-                if type(item.get(field)) is not int or not 0 <= item[field] <= 10:
-                    raise ModelOutputError(
-                        f"items[{index}].{field} must be 0..10 integer"
-                    )
+
+        for index, (item, candidate, input_item) in enumerate(zip(items, candidates, model_input["items"])):
+            location = f"items[{index}]"
+            require_exact_fields(item, MODEL_ITEM_FIELDS, location)
+            summary = item.get("ai_summary")
+            if summary is not None and (not non_empty(summary) or len(summary) > 300):
+                raise ModelOutputError(f"{location}.ai_summary is invalid")
+            if item.get("scope") not in SCOPES:
+                raise ModelOutputError(f"{location}.scope is invalid")
             source_text = normalized_text(candidate["title"] + candidate["content"])
-            actors = item.get("actors")
-            if not isinstance(actors, list) or len(actors) > 5:
-                raise ModelOutputError(f"items[{index}].actors is invalid")
-            for actor in actors:
-                if not isinstance(actor, dict) or set(actor) != {"name", "type", "role", "evidence"}:
-                    raise ModelOutputError(f"items[{index}].actors fields are invalid")
-                if not non_empty(actor.get("name")) or actor.get("type") not in ACTOR_TYPES:
-                    raise ModelOutputError(f"items[{index}].actors value is invalid")
-                if actor.get("role") is not None and not non_empty(actor.get("role")):
-                    raise ModelOutputError(f"items[{index}].actors role is invalid")
-                if not non_empty(actor.get("evidence")) or normalized_text(actor["evidence"]) not in source_text:
-                    raise ModelOutputError(f"items[{index}].actors evidence is invalid")
+            _evidence(item.get("scope_evidence"), source_text, f"{location}.scope_evidence")
+
+            subjects = item.get("subjects")
+            if not isinstance(subjects, list) or len(subjects) > 8:
+                raise ModelOutputError(f"{location}.subjects is invalid")
+            for subject in subjects:
+                require_exact_fields(subject, {"name", "type", "role", "evidence"}, f"{location}.subject")
+                if not non_empty(subject.get("name")) or len(subject["name"]) > 80:
+                    raise ModelOutputError(f"{location}.subject.name is invalid")
+                if subject.get("type") not in SUBJECT_TYPES:
+                    raise ModelOutputError(f"{location}.subject.type is invalid")
+                if subject.get("role") is not None and (
+                    not non_empty(subject["role"]) or len(subject["role"]) > 80
+                ):
+                    raise ModelOutputError(f"{location}.subject.role is invalid")
+                _evidence(subject.get("evidence"), source_text, f"{location}.subject.evidence")
+
+            allowed_locations = {row["location_id"] for row in input_item["location_candidates"]}
             mentions = item.get("location_mentions")
-            allowed_ids = {
-                row["location_id"] for row in model_input["items"][index]["location_candidates"]
-            }
             if not isinstance(mentions, list) or len(mentions) > 5:
-                raise ModelOutputError(f"items[{index}].location_mentions is invalid")
+                raise ModelOutputError(f"{location}.location_mentions is invalid")
             for mention in mentions:
-                if not isinstance(mention, dict) or set(mention) != {"location_id", "evidence"}:
-                    raise ModelOutputError(f"items[{index}].location_mentions fields are invalid")
-                if mention.get("location_id") not in allowed_ids:
-                    raise ModelOutputError(f"items[{index}].location_id is outside candidates")
-                if not non_empty(mention.get("evidence")) or normalized_text(mention["evidence"]) not in source_text:
-                    raise ModelOutputError(f"items[{index}].location evidence is invalid")
-            action = item.get("action")
-            action_evidence = item.get("action_evidence")
-            if not isinstance(action, str) or len(action.strip()) > 60:
-                raise ModelOutputError(f"items[{index}].action is invalid")
-            if bool(action.strip()) != bool(isinstance(action_evidence, str) and action_evidence.strip()):
-                raise ModelOutputError(f"items[{index}].action evidence pair is invalid")
-            if action.strip() and normalized_text(action_evidence) not in source_text:
-                raise ModelOutputError(f"items[{index}].action_evidence is invalid")
-            reasons = item.get("score_reasons")
-            if not isinstance(reasons, dict) or set(reasons) != set(SCORE_FIELDS):
-                raise ModelOutputError(
-                    f"items[{index}].score_reasons is invalid"
-                )
-            lifecycle = item.get("opportunity_lifecycle")
-            if lifecycle not in LIFECYCLES:
-                raise ModelOutputError(
-                    f"items[{index}].opportunity_lifecycle is invalid"
-                )
-            deadline_values = [
-                item.get("deadline_date"),
-                item.get("deadline_text"),
-                item.get("deadline_evidence"),
-            ]
-            if item["category"] != "机会" and (
-                lifecycle != "not_applicable"
-                or any(value is not None for value in deadline_values)
-            ):
-                raise ModelOutputError(
-                    f"items[{index}] non-opportunity lifecycle is invalid"
-                )
-            if item["category"] == "机会" and lifecycle not in {
-                "dated",
-                "ongoing",
-                "unspecified",
-            }:
-                raise ModelOutputError(
-                    f"items[{index}] opportunity lifecycle is invalid"
-                )
-            if lifecycle == "dated":
-                validate_iso_date(
-                    item.get("deadline_date"),
-                    f"items[{index}].deadline_date",
-                )
-                if not all(non_empty(value) for value in deadline_values[1:]):
-                    raise ModelOutputError(
-                        f"items[{index}] dated opportunity fields are required"
-                    )
-                if normalized_text(item["deadline_evidence"]) not in normalized_text(
-                    candidate["content"]
-                ):
-                    raise ModelOutputError(
-                        f"items[{index}].deadline_evidence is not in content"
-                    )
-            elif lifecycle == "ongoing":
-                if (
-                    item.get("deadline_date") is not None
-                    or item.get("deadline_text") is not None
-                    or not non_empty(item.get("deadline_evidence"))
-                ):
-                    raise ModelOutputError(
-                        f"items[{index}] ongoing opportunity evidence is required"
-                    )
-                if normalized_text(item["deadline_evidence"]) not in normalized_text(
-                    candidate["content"]
-                ):
-                    raise ModelOutputError(
-                        f"items[{index}].deadline_evidence is not in content"
-                    )
-            elif any(value is not None for value in deadline_values):
-                raise ModelOutputError(
-                    f"items[{index}] deadline fields must be null"
-                )
+                require_exact_fields(mention, {"location_id", "evidence"}, f"{location}.location")
+                if mention.get("location_id") not in allowed_locations:
+                    raise ModelOutputError(f"{location}.location_id is outside candidates")
+                _evidence(mention.get("evidence"), source_text, f"{location}.location.evidence")
+
+            allowed_topics = {row["topic_id"] for row in input_item["topic_candidates"]}
+            topics = item.get("topic_mentions")
+            if not isinstance(topics, list) or len(topics) > 5:
+                raise ModelOutputError(f"{location}.topic_mentions is invalid")
+            for topic in topics:
+                require_exact_fields(topic, {"topic_id", "evidence"}, f"{location}.topic")
+                if topic.get("topic_id") not in allowed_topics:
+                    raise ModelOutputError(f"{location}.topic_id is outside candidates")
+                _evidence(topic.get("evidence"), source_text, f"{location}.topic.evidence")
+
+            relation = item.get("event_relation")
+            if not isinstance(relation, dict):
+                raise ModelOutputError(f"{location}.event_relation is invalid")
+            require_exact_fields(
+                relation, {"relation", "event_id", "event_name", "evidence", "update_summary"},
+                f"{location}.event_relation",
+            )
+            kind = relation.get("relation")
+            if kind == "none":
+                if any(relation.get(key) is not None for key in ("event_id", "event_name", "evidence", "update_summary")):
+                    raise ModelOutputError(f"{location}.event_relation none values are invalid")
+            elif kind == "existing":
+                allowed_events = {row["event_id"] for row in input_item["event_candidates"]}
+                if relation.get("event_id") not in allowed_events or relation.get("event_name") is not None:
+                    raise ModelOutputError(f"{location}.event_relation existing target is invalid")
+                _evidence(relation.get("evidence"), source_text, f"{location}.event_relation.evidence")
+                if not non_empty(relation.get("update_summary")) or len(relation["update_summary"]) > 180:
+                    raise ModelOutputError(f"{location}.event_relation.update_summary is invalid")
+            elif kind == "new":
+                if relation.get("event_id") is not None or not non_empty(relation.get("event_name")):
+                    raise ModelOutputError(f"{location}.event_relation new target is invalid")
+                if len(relation["event_name"]) > 120:
+                    raise ModelOutputError(f"{location}.event_relation.event_name is invalid")
+                _evidence(relation.get("evidence"), source_text, f"{location}.event_relation.evidence")
+                if not non_empty(relation.get("update_summary")) or len(relation["update_summary"]) > 180:
+                    raise ModelOutputError(f"{location}.event_relation.update_summary is invalid")
+            else:
+                raise ModelOutputError(f"{location}.event_relation.relation is invalid")
         return items
     except ContractError as exc:
         if isinstance(exc, ModelOutputError):

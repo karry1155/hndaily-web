@@ -28,8 +28,18 @@ bash scripts/run_radar_pipeline.sh YYYY-MM-DD
 - `data/json/model-output/`
 - `data/json/audits/`
 
-HNHOT 下一版结构化提示词和严格输出契约位于
-`prompts/article-enrichment/v1/`。当前公开 schema 的切换由后续实施阶段完成。
+HNHOT 当前结构化提示词和严格输出契约位于
+`prompts/article-enrichment/v1/`，运行时契约为 `schema_version: 7` /
+`prompt_version: hnhot-v1`。发布流程保留每一篇有效报道，不再评分、推荐或二次精选。
+
+仓库内附带的 schema-v5 演示数据可就地迁移：
+
+```bash
+python3 scripts/migrate_hnhot_content.py content
+python3 scripts/radar_render.py content site
+```
+
+迁移内容标记为 `enrichment_status: legacy-derived`，不会冒充模型输出；之后正常运行流水线时，会按日期替换为有原文证据的 `complete` 结构化结果。
 
 ## Verified datasets
 

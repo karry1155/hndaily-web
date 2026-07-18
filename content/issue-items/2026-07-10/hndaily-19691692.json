@@ -1,11 +1,25 @@
 {
-  "schema_version": 5,
+  "schema_version": 7,
   "item_id": "hndaily-19691692",
   "published_date": "2026-07-10",
   "collected_date": "2026-07-12",
   "page_number": "002",
   "page_name": "本省新闻",
   "page_sequence": 6,
+  "author": "",
+  "enrichment_status": "legacy-derived",
+  "scope": "hainan",
+  "scope_evidence": "关于接受何清同志辞去政协第八届海南省委员会常务委员、委员的决定",
+  "subjects": [],
+  "locations": [],
+  "topics": [],
+  "event_relation": {
+    "relation": "none",
+    "event_id": null,
+    "event_name": null,
+    "evidence": null,
+    "update_summary": null
+  },
   "block": {
     "source": "海南日报",
     "title": "关于接受何清同志辞去政协第八届海南省委员会常务委员、委员的决定",

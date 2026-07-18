@@ -1,11 +1,25 @@
 {
-  "schema_version": 5,
+  "schema_version": 7,
   "item_id": "hndaily-19684675",
   "published_date": "2026-07-08",
   "collected_date": "2026-07-10",
   "page_number": "003",
   "page_name": "本省新闻",
   "page_sequence": 5,
+  "author": "",
+  "enrichment_status": "legacy-derived",
+  "scope": "hainan",
+  "scope_evidence": "海南大学产教融合项目全面封顶",
+  "subjects": [],
+  "locations": [],
+  "topics": [],
+  "event_relation": {
+    "relation": "none",
+    "event_id": null,
+    "event_name": null,
+    "evidence": null,
+    "update_summary": null
+  },
   "block": {
     "source": "海南日报",
     "title": "海南大学产教融合项目全面封顶",

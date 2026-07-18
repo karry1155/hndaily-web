@@ -1,11 +1,25 @@
 {
-  "schema_version": 5,
+  "schema_version": 7,
   "item_id": "hndaily-19691752",
   "published_date": "2026-07-10",
   "collected_date": "2026-07-12",
   "page_number": "007",
   "page_name": "中国新闻",
   "page_sequence": 3,
+  "author": "",
+  "enrichment_status": "legacy-derived",
+  "scope": "national",
+  "scope_evidence": "“锻造了强大的中国共产党”",
+  "subjects": [],
+  "locations": [],
+  "topics": [],
+  "event_relation": {
+    "relation": "none",
+    "event_id": null,
+    "event_name": null,
+    "evidence": null,
+    "update_summary": null
+  },
   "block": {
     "source": "海南日报",
     "title": "“锻造了强大的中国共产党”",

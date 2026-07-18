@@ -1,11 +1,25 @@
 {
-  "schema_version": 5,
+  "schema_version": 7,
   "item_id": "hndaily-19691699",
   "published_date": "2026-07-10",
   "collected_date": "2026-07-12",
   "page_number": "003",
   "page_name": "本省新闻",
   "page_sequence": 1,
+  "author": "",
+  "enrichment_status": "legacy-derived",
+  "scope": "hainan",
+  "scope_evidence": "一面奖状墙，是家里最好的“装修”",
+  "subjects": [],
+  "locations": [],
+  "topics": [],
+  "event_relation": {
+    "relation": "none",
+    "event_id": null,
+    "event_name": null,
+    "evidence": null,
+    "update_summary": null
+  },
   "block": {
     "source": "海南日报",
     "title": "一面奖状墙，是家里最好的“装修”",

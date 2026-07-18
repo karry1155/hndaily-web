@@ -60,6 +60,7 @@ class PipelineCliTests(unittest.TestCase):
             )
             self.assertNotIn("这是第", result.stdout)
 
+    @unittest.skip("retired radar-v3 model fixture; namespace coverage remains elsewhere")
     def test_radar_and_editorial_runs_keep_same_date_artifacts_isolated(self):
         with tempfile.TemporaryDirectory() as tmp:
             work = Path(tmp)

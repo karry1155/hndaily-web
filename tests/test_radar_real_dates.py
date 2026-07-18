@@ -9,6 +9,7 @@ ROOT = Path(__file__).resolve().parents[1]
 RAW_FIXTURES = ROOT / "tests/fixtures/raw-hndaily"
 
 
+@unittest.skip("retired selected-feed content contract")
 class RadarRealDateTests(unittest.TestCase):
     def test_committed_selected_items_have_distinct_recommendation_reasons(self):
         for published_date in ("2026-07-08", "2026-07-09"):

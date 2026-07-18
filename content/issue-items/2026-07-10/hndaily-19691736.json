@@ -1,11 +1,25 @@
 {
-  "schema_version": 5,
+  "schema_version": 7,
   "item_id": "hndaily-19691736",
   "published_date": "2026-07-10",
   "collected_date": "2026-07-12",
   "page_number": "005",
   "page_name": "新海垦",
   "page_sequence": 7,
+  "author": "",
+  "enrichment_status": "legacy-derived",
+  "scope": "mixed",
+  "scope_evidence": "网络名人“寻味”果博中心",
+  "subjects": [],
+  "locations": [],
+  "topics": [],
+  "event_relation": {
+    "relation": "none",
+    "event_id": null,
+    "event_name": null,
+    "evidence": null,
+    "update_summary": null
+  },
   "block": {
     "source": "海南日报",
     "title": "网络名人“寻味”果博中心",

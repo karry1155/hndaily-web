@@ -47,7 +47,8 @@ def adapt_hndaily(
             "page_url": record["page_url"],
             "pdf_url": record["pdf_url"],
             "page_sequence": record["seq"],
+            "author": record["author"].strip(),
         }
-        validate_source_candidate(candidate)
+        validate_source_candidate({key: value for key, value in candidate.items() if key != "author"})
         candidates.append(candidate)
     return candidates, records

@@ -1,11 +1,25 @@
 {
-  "schema_version": 5,
+  "schema_version": 7,
   "item_id": "hndaily-19684673",
   "published_date": "2026-07-08",
   "collected_date": "2026-07-10",
   "page_number": "003",
   "page_name": "本省新闻",
   "page_sequence": 3,
+  "author": "",
+  "enrichment_status": "legacy-derived",
+  "scope": "mixed",
+  "scope_evidence": "海南两部作品在全国节水短视频大赛中获奖",
+  "subjects": [],
+  "locations": [],
+  "topics": [],
+  "event_relation": {
+    "relation": "none",
+    "event_id": null,
+    "event_name": null,
+    "evidence": null,
+    "update_summary": null
+  },
   "block": {
     "source": "海南日报",
     "title": "海南两部作品在全国节水短视频大赛中获奖",

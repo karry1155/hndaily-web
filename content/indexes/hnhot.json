@@ -1,0 +1,18 @@
+{
+  "latest_date": "2026-07-10",
+  "dates": [
+    "2026-07-10",
+    "2026-07-09",
+    "2026-07-08"
+  ],
+  "front_page_feeds": [
+    "/static/front-page/2026-07-10.json",
+    "/static/front-page/2026-07-09.json",
+    "/static/front-page/2026-07-08.json"
+  ],
+  "issue_feeds": [
+    "/static/issue-feed/2026-07-10.json",
+    "/static/issue-feed/2026-07-09.json",
+    "/static/issue-feed/2026-07-08.json"
+  ]
+}

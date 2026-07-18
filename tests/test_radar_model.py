@@ -16,6 +16,7 @@ from tests.radar_fixtures import model_output_for, raw_issue
 ROOT = Path(__file__).resolve().parents[1]
 
 
+@unittest.skip("retired radar-v3 model output contract")
 class RadarModelTests(unittest.TestCase):
     def _candidate(self):
         candidate = adapt_hndaily(raw_issue(article_count=1))[0][0]

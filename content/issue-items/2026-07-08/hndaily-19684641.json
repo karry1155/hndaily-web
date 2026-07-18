@@ -1,11 +1,25 @@
 {
-  "schema_version": 5,
+  "schema_version": 7,
   "item_id": "hndaily-19684641",
   "published_date": "2026-07-08",
   "collected_date": "2026-07-10",
   "page_number": "001",
   "page_name": "头版",
   "page_sequence": 2,
+  "author": "",
+  "enrichment_status": "legacy-derived",
+  "scope": "national",
+  "scope_evidence": "要全力组织抢险救援、伤员救治、群众安置 扎实做好防灾救灾各项工作 确保人民群众生命财产安全",
+  "subjects": [],
+  "locations": [],
+  "topics": [],
+  "event_relation": {
+    "relation": "none",
+    "event_id": null,
+    "event_name": null,
+    "evidence": null,
+    "update_summary": null
+  },
   "block": {
     "source": "海南日报",
     "title": "要全力组织抢险救援、伤员救治、群众安置 扎实做好防灾救灾各项工作 确保人民群众生命财产安全",

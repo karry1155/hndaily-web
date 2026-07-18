@@ -1,11 +1,25 @@
 {
-  "schema_version": 5,
+  "schema_version": 7,
   "item_id": "hndaily-19691673",
   "published_date": "2026-07-10",
   "collected_date": "2026-07-12",
   "page_number": "001",
   "page_name": "头版",
   "page_sequence": 6,
+  "author": "",
+  "enrichment_status": "legacy-derived",
+  "scope": "mixed",
+  "scope_evidence": "上半年海南离岛免税购物金额近200亿元",
+  "subjects": [],
+  "locations": [],
+  "topics": [],
+  "event_relation": {
+    "relation": "none",
+    "event_id": null,
+    "event_name": null,
+    "evidence": null,
+    "update_summary": null
+  },
   "block": {
     "source": "海南日报",
     "title": "上半年海南离岛免税购物金额近200亿元",

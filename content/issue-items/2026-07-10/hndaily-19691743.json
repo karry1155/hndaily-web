@@ -1,11 +1,25 @@
 {
-  "schema_version": 5,
+  "schema_version": 7,
   "item_id": "hndaily-19691743",
   "published_date": "2026-07-10",
   "collected_date": "2026-07-12",
   "page_number": "006",
   "page_name": "潮起儋洋",
   "page_sequence": 2,
+  "author": "",
+  "enrichment_status": "legacy-derived",
+  "scope": "hainan",
+  "scope_evidence": "儋州计划3年引进人才3.3万人",
+  "subjects": [],
+  "locations": [],
+  "topics": [],
+  "event_relation": {
+    "relation": "none",
+    "event_id": null,
+    "event_name": null,
+    "evidence": null,
+    "update_summary": null
+  },
   "block": {
     "source": "海南日报",
     "title": "儋州计划3年引进人才3.3万人",

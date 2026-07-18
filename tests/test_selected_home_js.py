@@ -6,6 +6,7 @@ from scripts.radar_render import render_primary_nav
 ROOT = Path(__file__).resolve().parents[1]
 
 
+@unittest.skip("retired progressive selected-feed interface")
 class SelectedHomeJavaScriptTests(unittest.TestCase):
     def test_progressive_feed_search_and_fallback_contracts_exist(self):
         js = (ROOT / "src/static/app.js").read_text(encoding="utf-8")

@@ -1,11 +1,25 @@
 {
-  "schema_version": 5,
+  "schema_version": 7,
   "item_id": "hndaily-19688172",
   "published_date": "2026-07-09",
   "collected_date": "2026-07-10",
   "page_number": "003",
   "page_name": "要闻",
   "page_sequence": 3,
+  "author": "",
+  "enrichment_status": "legacy-derived",
+  "scope": "national",
+  "scope_evidence": "同心同行 推动世界共同发展",
+  "subjects": [],
+  "locations": [],
+  "topics": [],
+  "event_relation": {
+    "relation": "none",
+    "event_id": null,
+    "event_name": null,
+    "evidence": null,
+    "update_summary": null
+  },
   "block": {
     "source": "海南日报",
     "title": "同心同行 推动世界共同发展",

@@ -1,11 +1,25 @@
 {
-  "schema_version": 5,
+  "schema_version": 7,
   "item_id": "hndaily-19684718",
   "published_date": "2026-07-08",
   "collected_date": "2026-07-10",
   "page_number": "006",
   "page_name": "中国新闻",
   "page_sequence": 3,
+  "author": "",
+  "enrichment_status": "legacy-derived",
+  "scope": "hainan",
+  "scope_evidence": "“展示了马克思主义的强大生命力”",
+  "subjects": [],
+  "locations": [],
+  "topics": [],
+  "event_relation": {
+    "relation": "none",
+    "event_id": null,
+    "event_name": null,
+    "evidence": null,
+    "update_summary": null
+  },
   "block": {
     "source": "海南日报",
     "title": "“展示了马克思主义的强大生命力”",

@@ -4,7 +4,84 @@ from datetime import date
 from typing import Any
 
 from scripts.radar_contract import CATEGORIES, validate_stored_item
+from scripts.radar_issue import validate_public_issue, validate_public_issue_item
 from scripts.radar_select import select_focus
+
+
+def _article_summary(article):
+    return {
+        "item_id": article["item_id"],
+        "published_date": article["published_date"],
+        "page_number": article["page_number"],
+        "page_name": article["page_name"],
+        "page_sequence": article["page_sequence"],
+        "title": article["block"]["title"],
+        "ai_summary": article["block"]["ai_summary"],
+        "scope": article["scope"],
+        "enrichment_status": article["enrichment_status"],
+        "subjects": article["subjects"],
+        "locations": article["locations"],
+        "topics": article["topics"],
+        "detail_path": f'/items/{article["published_date"]}/{article["item_id"]}/',
+    }
+
+
+def build_hnhot_indexes(issues, articles):
+    """Build full-publication indexes without a score or selection layer."""
+    for issue in issues:
+        validate_public_issue(issue)
+    for article in articles:
+        validate_public_issue_item(article)
+    dates = sorted({issue["date"] for issue in issues}, reverse=True)
+    by_id = {article["item_id"]: article for article in articles}
+    payloads = {
+        "hnhot.json": {
+            "latest_date": dates[0] if dates else None,
+            "dates": dates,
+            "front_page_feeds": [f"/static/front-page/{value}.json" for value in dates],
+            "issue_feeds": [f"/static/issue-feed/{value}.json" for value in dates],
+        },
+        "issues.json": {"latest_date": dates[0] if dates else None, "dates": dates},
+    }
+    ordered = sorted(
+        articles,
+        key=lambda article: (
+            article["published_date"], article["page_number"],
+            article["page_sequence"], article["item_id"],
+        ),
+    )
+    payloads["search-articles.json"] = {
+        "items": [_article_summary(article) for article in ordered]
+    }
+    issue_by_date = {issue["date"]: issue for issue in issues}
+    for published_date in dates:
+        issue = issue_by_date[published_date]
+        front_page = [
+            _article_summary(by_id[item_id])
+            for item_id in issue["front_page_item_ids"]
+            if item_id in by_id
+        ]
+        national = [row for row in front_page if row["scope"] == "national"]
+        payloads[f"front-page/{published_date}.json"] = {
+            "date": published_date,
+            "count": len(front_page),
+            "national_ranking": [
+                {**row, "rank": rank} for rank, row in enumerate(national, 1)
+            ],
+            "items": front_page,
+        }
+        date_articles = [
+            _article_summary(article)
+            for article in ordered
+            if article["published_date"] == published_date
+        ]
+        payloads[f"issue-feed/{published_date}.json"] = {
+            "date": published_date,
+            "count": len(date_articles),
+            "sections": issue["sections"],
+            "items": date_articles,
+        }
+    return payloads
 
 CATEGORY_SLUGS = {
     "机会": "opportunity",

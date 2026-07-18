@@ -1,11 +1,25 @@
 {
-  "schema_version": 5,
+  "schema_version": 7,
   "item_id": "hndaily-19684649",
   "published_date": "2026-07-08",
   "collected_date": "2026-07-10",
   "page_number": "001",
   "page_name": "头版",
   "page_sequence": 9,
+  "author": "",
+  "enrichment_status": "legacy-derived",
+  "scope": "mixed",
+  "scope_evidence": "全国首单保税LNG罐箱国际转运业务落地洋浦",
+  "subjects": [],
+  "locations": [],
+  "topics": [],
+  "event_relation": {
+    "relation": "none",
+    "event_id": null,
+    "event_name": null,
+    "evidence": null,
+    "update_summary": null
+  },
   "block": {
     "source": "海南日报",
     "title": "全国首单保税LNG罐箱国际转运业务落地洋浦",

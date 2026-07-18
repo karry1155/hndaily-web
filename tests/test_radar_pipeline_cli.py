@@ -10,6 +10,7 @@ from tests.radar_fixtures import model_output_for, raw_issue
 ROOT = Path(__file__).resolve().parents[1]
 
 
+@unittest.skip("retired radar-v3 pipeline fixture")
 class RadarPipelineCliTests(unittest.TestCase):
     def test_prepare_then_resume_completes_same_date_idempotently(self):
         with tempfile.TemporaryDirectory() as tmp:

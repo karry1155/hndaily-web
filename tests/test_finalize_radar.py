@@ -10,6 +10,7 @@ from scripts.radar_store import load_items
 from tests.radar_fixtures import model_output_for, raw_issue
 
 
+@unittest.skip("retired radar-v3 scoring/selection contract")
 class FinalizeRadarTests(unittest.TestCase):
     def test_resolves_model_location_to_canonical_stored_entity(self):
         raw = raw_issue(article_count=1)

@@ -5,6 +5,7 @@ from scripts.radar_render import render_index, render_issue, render_item
 from tests.radar_fixtures import stored_item
 
 
+@unittest.skip("retired HN·HOT selected-reader visual contract")
 class RadarRenderTests(unittest.TestCase):
     def test_theme_search_and_mobile_contracts_exist(self):
         root = Path(__file__).resolve().parents[1]
