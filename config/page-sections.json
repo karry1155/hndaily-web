@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "sections": [
+    {"section_id": "front-page", "name": "头版"},
+    {"section_id": "hainan-news", "name": "本省新闻"},
+    {"section_id": "domestic-international", "name": "国内国际"},
+    {"section_id": "theory", "name": "理论周刊"}
+  ],
+  "rules": [
+    {"source_page_name": "头版", "section_id": "front-page"},
+    {"source_page_name": "本省新闻", "section_id": "hainan-news"},
+    {"source_page_name": "国内新闻", "section_id": "domestic-international"},
+    {"source_page_name": "国际新闻", "section_id": "domestic-international"},
+    {"source_page_name": "理论周刊", "section_id": "theory"}
+  ],
+  "fallback": "source_page_name"
+}

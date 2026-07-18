@@ -1,0 +1,97 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hnhot.local/schema/article-enrichment-v1.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "prompt_version", "input_fingerprint", "items"],
+  "properties": {
+    "schema_version": {"const": 7},
+    "prompt_version": {"const": "hnhot-v1"},
+    "input_fingerprint": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "items": {"type": "array", "items": {"$ref": "#/$defs/item"}}
+  },
+  "$defs": {
+    "evidence": {"type": "string", "minLength": 1, "maxLength": 240},
+    "subject": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "type", "role", "evidence"],
+      "properties": {
+        "name": {"type": "string", "minLength": 1, "maxLength": 80},
+        "type": {"enum": ["person", "government", "organization", "company", "project"]},
+        "role": {"type": ["string", "null"], "maxLength": 80},
+        "evidence": {"$ref": "#/$defs/evidence"}
+      }
+    },
+    "location": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["location_id", "evidence"],
+      "properties": {
+        "location_id": {"type": "string", "minLength": 1, "maxLength": 80},
+        "evidence": {"$ref": "#/$defs/evidence"}
+      }
+    },
+    "topic": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["topic_id", "evidence"],
+      "properties": {
+        "topic_id": {"type": "string", "minLength": 1, "maxLength": 80},
+        "evidence": {"$ref": "#/$defs/evidence"}
+      }
+    },
+    "event_relation": {
+      "oneOf": [
+        {
+          "type": "object", "additionalProperties": false,
+          "required": ["relation", "event_id", "event_name", "evidence", "update_summary"],
+          "properties": {
+            "relation": {"const": "existing"},
+            "event_id": {"type": "string", "minLength": 1},
+            "event_name": {"type": "null"},
+            "evidence": {"$ref": "#/$defs/evidence"},
+            "update_summary": {"type": "string", "minLength": 1, "maxLength": 180}
+          }
+        },
+        {
+          "type": "object", "additionalProperties": false,
+          "required": ["relation", "event_id", "event_name", "evidence", "update_summary"],
+          "properties": {
+            "relation": {"const": "new"},
+            "event_id": {"type": "null"},
+            "event_name": {"type": "string", "minLength": 1, "maxLength": 120},
+            "evidence": {"$ref": "#/$defs/evidence"},
+            "update_summary": {"type": "string", "minLength": 1, "maxLength": 180}
+          }
+        },
+        {
+          "type": "object", "additionalProperties": false,
+          "required": ["relation", "event_id", "event_name", "evidence", "update_summary"],
+          "properties": {
+            "relation": {"const": "none"},
+            "event_id": {"type": "null"},
+            "event_name": {"type": "null"},
+            "evidence": {"type": "null"},
+            "update_summary": {"type": "null"}
+          }
+        }
+      ]
+    },
+    "item": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["candidate_id", "ai_summary", "scope", "scope_evidence", "subjects", "location_mentions", "topic_mentions", "event_relation"],
+      "properties": {
+        "candidate_id": {"type": "string", "minLength": 1},
+        "ai_summary": {"type": ["string", "null"], "maxLength": 300},
+        "scope": {"enum": ["national", "hainan", "mixed"]},
+        "scope_evidence": {"$ref": "#/$defs/evidence"},
+        "subjects": {"type": "array", "maxItems": 8, "items": {"$ref": "#/$defs/subject"}},
+        "location_mentions": {"type": "array", "maxItems": 5, "items": {"$ref": "#/$defs/location"}},
+        "topic_mentions": {"type": "array", "maxItems": 5, "items": {"$ref": "#/$defs/topic"}},
+        "event_relation": {"$ref": "#/$defs/event_relation"}
+      }
+    }
+  }
+}

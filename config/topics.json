@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "topics": [
+    {"topic_id": "policy-governance", "name": "政策治理", "aliases": ["政策", "政务", "治理"]},
+    {"topic_id": "industry-projects", "name": "产业项目", "aliases": ["产业", "项目", "招商"]},
+    {"topic_id": "economy-data", "name": "经济数据", "aliases": ["经济", "统计", "消费"]},
+    {"topic_id": "livelihood-services", "name": "民生服务", "aliases": ["民生", "公共服务", "办事"]},
+    {"topic_id": "urban-rural", "name": "城乡建设", "aliases": ["城市", "乡村振兴", "基础设施"]},
+    {"topic_id": "ecology", "name": "生态环境", "aliases": ["生态", "环保", "自然资源"]},
+    {"topic_id": "culture-tourism-sports", "name": "文旅体育", "aliases": ["文化", "旅游", "体育"]},
+    {"topic_id": "education-talent", "name": "教育人才", "aliases": ["教育", "人才", "就业"]},
+    {"topic_id": "health", "name": "医疗健康", "aliases": ["医疗", "健康", "卫生"]},
+    {"topic_id": "external-relations", "name": "对外交流", "aliases": ["外事", "国际", "区域合作"]}
+  ]
+}
