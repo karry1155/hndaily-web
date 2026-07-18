@@ -14,9 +14,14 @@ site/
 .vercel/
 .netlify/
 
-# Local generated newspaper data and intermediate artifacts
 .superpowers/
+
+# Local generated newspaper data and intermediate artifacts
 data/json/raw/
+data/json/model-input/
+data/json/model-output/
+data/json/audits/
+# Legacy locations remain ignored during migration; active code must not write them.
 data/raw/
 data/intermediate/
 data/cache/
