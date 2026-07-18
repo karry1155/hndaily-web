@@ -1,5 +1,4 @@
 import json
-import os
 import tempfile
 import unittest
 from pathlib import Path
@@ -7,7 +6,7 @@ from pathlib import Path
 from scripts.radar_render import build_site
 
 ROOT = Path(__file__).resolve().parents[1]
-SKILL_DATA = ROOT.parent / "hndaily-skill" / "_data"
+RAW_FIXTURES = ROOT / "tests/fixtures/raw-hndaily"
 
 
 class RadarRealDateTests(unittest.TestCase):
@@ -55,14 +54,18 @@ class RadarRealDateTests(unittest.TestCase):
             )
 
     def test_local_real_0708_and_0709_sources_are_distinct(self):
-        required = os.environ.get("RADAR_REAL_DATA_REQUIRED") == "1"
-        paths = [SKILL_DATA / "2026-07-08.json", SKILL_DATA / "2026-07-09.json"]
-        if not all(path.is_file() for path in paths):
-            if required: self.fail("RADAR_REAL_DATA_REQUIRED=1 but a real raw date is missing")
-            self.skipTest("local ignored crawler data is unavailable")
-        raw_0708 = json.loads(paths[0].read_text(encoding="utf-8")); raw_0709 = json.loads(paths[1].read_text(encoding="utf-8"))
-        self.assertEqual(raw_0708["date"], "2026-07-08"); self.assertEqual(raw_0709["date"], "2026-07-09")
-        self.assertNotEqual([a["url"] for p in raw_0708["pages"] for a in p["articles"]], [a["url"] for p in raw_0709["pages"] for a in p["articles"]])
+        paths = [
+            RAW_FIXTURES / "2026-07-08.json",
+            RAW_FIXTURES / "2026-07-09.json",
+        ]
+        raw_0708 = json.loads(paths[0].read_text(encoding="utf-8"))
+        raw_0709 = json.loads(paths[1].read_text(encoding="utf-8"))
+        self.assertEqual(raw_0708["date"], "2026-07-08")
+        self.assertEqual(raw_0709["date"], "2026-07-09")
+        self.assertNotEqual(
+            [a["url"] for p in raw_0708["pages"] for a in p["articles"]],
+            [a["url"] for p in raw_0709["pages"] for a in p["articles"]],
+        )
 
     def test_real_dates_publish_scored_articles_by_newspaper_page(self):
         for date, page_count, scored_count in (

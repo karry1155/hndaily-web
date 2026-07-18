@@ -1,7 +1,11 @@
 import copy
+import json
 import unittest
+from pathlib import Path
 
 from scripts.prepare_model_input import InputError, build_model_input
+
+RAW_FIXTURES = Path(__file__).resolve().parent / "fixtures/raw-hndaily"
 
 
 def raw_issue(article_count=4):
@@ -69,10 +73,7 @@ class BuildModelInputTests(unittest.TestCase):
             build_model_input(raw)
 
     def test_real_sample_evaluates_all_articles_and_keeps_actionable_item(self):
-        import json
-        from pathlib import Path
-
-        raw_path = Path(__file__).resolve().parents[2] / "hndaily-skill" / "_data" / "2026-07-08.json"
+        raw_path = RAW_FIXTURES / "2026-07-08.json"
         raw = json.loads(raw_path.read_text(encoding="utf-8"))
 
         result, audit = build_model_input(raw)

@@ -1,6 +1,10 @@
+import json
 import unittest
+from pathlib import Path
 
 from scripts.event_clustering import cluster_candidates
+
+RAW_FIXTURES = Path(__file__).resolve().parent / "fixtures/raw-hndaily"
 
 
 def scored(candidate_id, title, content, *, density=7, final_score=70, page="001", seq=1):
@@ -50,12 +54,9 @@ class EventClusteringTests(unittest.TestCase):
         self.assertEqual(events[1]["member_candidate_ids"], ["A003"])
 
     def test_real_sample_merges_front_page_flood_brief_with_inside_report(self):
-        import json
-        from pathlib import Path
-
         from scripts.editorial_filter import evaluate_issue
 
-        raw_path = Path(__file__).resolve().parents[2] / "hndaily-skill" / "_data" / "2026-07-08.json"
+        raw_path = RAW_FIXTURES / "2026-07-08.json"
         raw = json.loads(raw_path.read_text(encoding="utf-8"))
         records = {item["candidate_id"]: item for item in evaluate_issue(raw)}
         candidates = []

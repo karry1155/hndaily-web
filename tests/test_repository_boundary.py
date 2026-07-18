@@ -1,7 +1,9 @@
+import subprocess
 import unittest
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
+SKILL_NAME = "hndaily" + "-skill"
 
 
 class RepositoryBoundaryTests(unittest.TestCase):
@@ -14,8 +16,8 @@ class RepositoryBoundaryTests(unittest.TestCase):
         ]
         forbidden = (
             "HNDAILY_SKILL_DIR",
-            "/Users/skr/Work/hndaily/hndaily-skill",
-            "../hndaily-skill",
+            f"/Users/skr/Work/hndaily/{SKILL_NAME}",
+            f"../{SKILL_NAME}",
             "HNDAILY_INTERMEDIATE_DIR",
             "data/intermediate",
         )
@@ -23,6 +25,20 @@ class RepositoryBoundaryTests(unittest.TestCase):
             text = path.read_text(encoding="utf-8")
             for value in forbidden:
                 self.assertNotIn(value, text, f"{path}: {value}")
+
+    def test_tracked_tests_have_no_adjacent_skill_fixtures(self):
+        tracked_paths = subprocess.check_output(
+            ["git", "-C", str(ROOT), "ls-files", "tests"], text=True
+        ).splitlines()
+        parent_markers = ("ROOT" + ".parent /", "parents[" + "2] /")
+        for relative_path in tracked_paths:
+            path = ROOT / relative_path
+            if path.suffix != ".py":
+                continue
+            text = path.read_text(encoding="utf-8")
+            self.assertNotIn(SKILL_NAME, text, f"{path}: adjacent skill fixture")
+            for marker in parent_markers:
+                self.assertNotIn(marker, text, f"{path}: parent fixture path")
 
     def test_readme_names_canonical_json_outputs(self):
         readme = (ROOT / "README.md").read_text(encoding="utf-8")
