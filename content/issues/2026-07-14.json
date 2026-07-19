@@ -1,0 +1,817 @@
+{
+  "schema_version": 7,
+  "date": "2026-07-14",
+  "source": "海南日报",
+  "page_count": 8,
+  "article_count": 52,
+  "pages": [
+    {
+      "page_number": "001",
+      "page_name": "头版",
+      "page_url": "http://news.hndaily.cn/html/2026-07/14/node_58464.htm",
+      "pdf_url": "http://news.hndaily.cn/resfile/2026-07-14/001/hnrb20260714001.pdf",
+      "articles": [
+        {
+          "item_id": "hndaily-20260714-58464-19700602",
+          "title": "习近平将出席2026世界人工智能大会暨\n人工智能全球治理高级别会议开幕式并发表主旨讲话",
+          "page_sequence": 1,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58464-19700602/"
+        },
+        {
+          "item_id": "hndaily-20260714-58464-19700605",
+          "title": "守护三十载，她把“隔离区”变成“家”",
+          "page_sequence": 2,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58464-19700605/"
+        },
+        {
+          "item_id": "hndaily-20260714-58464-19700606",
+          "title": "全面贯彻习近平强军思想\n共同巩固军政军民团结良好态势",
+          "page_sequence": 3,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58464-19700606/"
+        },
+        {
+          "item_id": "hndaily-20260714-58464-19700607",
+          "title": "压实整改责任 完善产业体系 形成监管闭环\n深入推进“无废岛”建设",
+          "page_sequence": 4,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58464-19700607/"
+        },
+        {
+          "item_id": "hndaily-20260714-58464-19700608",
+          "title": "以初心为“药”，治愈偏见与孤独",
+          "page_sequence": 5,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58464-19700608/"
+        },
+        {
+          "item_id": "hndaily-20260714-58464-19700610",
+          "title": "部署防汛救灾、安全生产等工作",
+          "page_sequence": 6,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58464-19700610/"
+        },
+        {
+          "item_id": "hndaily-20260714-58464-19700611",
+          "title": "从首个旅游强国规划看海南的“位”与“为”",
+          "page_sequence": 7,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58464-19700611/"
+        },
+        {
+          "item_id": "hndaily-20260714-58464-19700612",
+          "title": "研究加快构建和完善海南民宿产业与制度双体系工作",
+          "page_sequence": 8,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58464-19700612/"
+        }
+      ]
+    },
+    {
+      "page_number": "002",
+      "page_name": "本省新闻",
+      "page_url": "http://news.hndaily.cn/html/2026-07/14/node_58465.htm",
+      "pdf_url": "http://news.hndaily.cn/resfile/2026-07-14/002/hnrb20260714002.pdf",
+      "articles": [
+        {
+          "item_id": "hndaily-20260714-58465-19700620",
+          "title": "收房之前先“挑刺” 装修风格可“自选”",
+          "page_sequence": 1,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58465-19700620/"
+        },
+        {
+          "item_id": "hndaily-20260714-58465-19700621",
+          "title": "省人大常委会党组（扩大）会议暨\n理论学习中心组2026年第六次学习会议召开",
+          "page_sequence": 2,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58465-19700621/"
+        },
+        {
+          "item_id": "hndaily-20260714-58465-19700622",
+          "title": "首批“海南工匠”培育启动",
+          "page_sequence": 3,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58465-19700622/"
+        },
+        {
+          "item_id": "hndaily-20260714-58465-19700623",
+          "title": "政校企强强联合\n攻关低空经济",
+          "page_sequence": 4,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58465-19700623/"
+        },
+        {
+          "item_id": "hndaily-20260714-58465-19700624",
+          "title": "海南果蔬汁走俏海外",
+          "page_sequence": 5,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58465-19700624/"
+        },
+        {
+          "item_id": "hndaily-20260714-58465-19700625",
+          "title": "海南省幼儿园“一对一”精准帮扶\n民族地区培训项目开班",
+          "page_sequence": 6,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58465-19700625/"
+        },
+        {
+          "item_id": "hndaily-20260714-58465-19700626",
+          "title": "守护三十载，她把“隔离区”变成“家”",
+          "page_sequence": 7,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58465-19700626/"
+        },
+        {
+          "item_id": "hndaily-20260714-58465-19700627",
+          "title": "部署防汛救灾、安全生产等工作",
+          "page_sequence": 8,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58465-19700627/"
+        },
+        {
+          "item_id": "hndaily-20260714-58465-19700628",
+          "title": "以初心为“药”，治愈偏见与孤独",
+          "page_sequence": 9,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58465-19700628/"
+        },
+        {
+          "item_id": "hndaily-20260714-58465-19700629",
+          "title": "研究加快构建和完善海南民宿产业与制度双体系工作",
+          "page_sequence": 10,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58465-19700629/"
+        }
+      ]
+    },
+    {
+      "page_number": "003",
+      "page_name": "本省新闻",
+      "page_url": "http://news.hndaily.cn/html/2026-07/14/node_58466.htm",
+      "pdf_url": "http://news.hndaily.cn/resfile/2026-07-14/003/hnrb20260714003.pdf",
+      "articles": [
+        {
+          "item_id": "hndaily-20260714-58466-19700635",
+          "title": "从“追着政策跑”到“围着人才转”",
+          "page_sequence": 1,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58466-19700635/"
+        },
+        {
+          "item_id": "hndaily-20260714-58466-19700636",
+          "title": "从首个旅游强国规划看海南的“位”与“为”",
+          "page_sequence": 2,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58466-19700636/"
+        },
+        {
+          "item_id": "hndaily-20260714-58466-19700637",
+          "title": "公交线上的“热血先锋”",
+          "page_sequence": 3,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58466-19700637/"
+        },
+        {
+          "item_id": "hndaily-20260714-58466-19700640",
+          "title": "18支队伍赛村歌",
+          "page_sequence": 4,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58466-19700640/"
+        },
+        {
+          "item_id": "hndaily-20260714-58466-19700641",
+          "title": "文昌蓬莱：一粒小胡椒富民大产业",
+          "page_sequence": 5,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58466-19700641/"
+        }
+      ]
+    },
+    {
+      "page_number": "004",
+      "page_name": "本省新闻",
+      "page_url": "http://news.hndaily.cn/html/2026-07/14/node_58467.htm",
+      "pdf_url": "http://news.hndaily.cn/resfile/2026-07-14/004/hnrb20260714004.pdf",
+      "articles": [
+        {
+          "item_id": "hndaily-20260714-58467-19700649",
+          "title": "省图书馆举办网络文学IP主题实物沉浸展",
+          "page_sequence": 1,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58467-19700649/"
+        },
+        {
+          "item_id": "hndaily-20260714-58467-19700650",
+          "title": "暑假校外培训机构怎么选？",
+          "page_sequence": 2,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58467-19700650/"
+        },
+        {
+          "item_id": "hndaily-20260714-58467-19700651",
+          "title": "全面织牢暑期防溺水“安全网”",
+          "page_sequence": 3,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58467-19700651/"
+        },
+        {
+          "item_id": "hndaily-20260714-58467-19700653",
+          "title": "定安县退役军人事务局党组成员、副局长\n（正科级）符中华接受纪律审查和监察调查",
+          "page_sequence": 4,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58467-19700653/"
+        },
+        {
+          "item_id": "hndaily-20260714-58467-19700654",
+          "title": "快乐暑假\n有学有玩",
+          "page_sequence": 5,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58467-19700654/"
+        },
+        {
+          "item_id": "hndaily-20260714-58467-19700655",
+          "title": "万宁市农业农村局原党组书记、局长唐敏智接受纪律审查和监察调查",
+          "page_sequence": 6,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58467-19700655/"
+        },
+        {
+          "item_id": "hndaily-20260714-58467-19700657",
+          "title": "陵水黎族自治县城乡建设集团有限公司党委书记、董事长陈新龙接受纪律审查和监察调查",
+          "page_sequence": 7,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58467-19700657/"
+        },
+        {
+          "item_id": "hndaily-20260714-58467-19700658",
+          "title": "乐东黎族自治县水务局党组成员、县移民安置\n办公室主任陈永孝接受纪律审查和监察调查",
+          "page_sequence": 8,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58467-19700658/"
+        },
+        {
+          "item_id": "hndaily-20260714-58467-19700661",
+          "title": "学急救学手工 特色课程“玩中学”",
+          "page_sequence": 9,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58467-19700661/"
+        },
+        {
+          "item_id": "hndaily-20260714-58467-19700662",
+          "title": "加时又加料 展览“菜单”新",
+          "page_sequence": 10,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58467-19700662/"
+        },
+        {
+          "item_id": "hndaily-20260714-58467-19700663",
+          "title": "海南省社会保险服务中心原党组成员、副主任王三防严重违纪违法被开除党籍和公职",
+          "page_sequence": 11,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58467-19700663/"
+        },
+        {
+          "item_id": "hndaily-20260714-58467-19700664",
+          "title": "放假不放养 陪伴不断档",
+          "page_sequence": 12,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58467-19700664/"
+        },
+        {
+          "item_id": "hndaily-20260714-58467-19700665",
+          "title": "学音乐学书法 主题研学乐趣多",
+          "page_sequence": 13,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58467-19700665/"
+        }
+      ]
+    },
+    {
+      "page_number": "005",
+      "page_name": "中国新闻",
+      "page_url": "http://news.hndaily.cn/html/2026-07/14/node_58468.htm",
+      "pdf_url": "http://news.hndaily.cn/resfile/2026-07-14/005/hnrb20260714005.pdf",
+      "articles": [
+        {
+          "item_id": "hndaily-20260714-58468-19700671",
+          "title": "“顺应发展潮流，始终走在时代前列”",
+          "page_sequence": 1,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58468-19700671/"
+        },
+        {
+          "item_id": "hndaily-20260714-58468-19700672",
+          "title": "完善自然资源资产管理制度体系",
+          "page_sequence": 2,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58468-19700672/"
+        },
+        {
+          "item_id": "hndaily-20260714-58468-19700673",
+          "title": "国家发展改革委安排3000万元\n支持河北暴雨洪涝灾害灾后应急恢复",
+          "page_sequence": 3,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58468-19700673/"
+        },
+        {
+          "item_id": "hndaily-20260714-58468-19700674",
+          "title": "国务院印发《国民健康“十五五”规划》",
+          "page_sequence": 4,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58468-19700674/"
+        },
+        {
+          "item_id": "hndaily-20260714-58468-19700675",
+          "title": "国务院批复同意《扩大消费“十五五”规划》",
+          "page_sequence": 5,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58468-19700675/"
+        },
+        {
+          "item_id": "hndaily-20260714-58468-19700676",
+          "title": "14部门部署开展康复辅助器具产业\n扩能提质三年行动",
+          "page_sequence": 6,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58468-19700676/"
+        },
+        {
+          "item_id": "hndaily-20260714-58468-19700677",
+          "title": "国家发展改革委、商务部有关负责人\n解读《扩大消费“十五五”规划》",
+          "page_sequence": 7,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58468-19700677/"
+        }
+      ]
+    },
+    {
+      "page_number": "006",
+      "page_name": "中国/世界新闻",
+      "page_url": "http://news.hndaily.cn/html/2026-07/14/node_58469.htm",
+      "pdf_url": "http://news.hndaily.cn/resfile/2026-07-14/006/hnrb20260714006.pdf",
+      "articles": [
+        {
+          "item_id": "hndaily-20260714-58469-19700684",
+          "title": "《习近平谈治国理政》第五卷\n吉尔吉斯斯坦推介会在比什凯克举行",
+          "page_sequence": 1,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58469-19700684/"
+        },
+        {
+          "item_id": "hndaily-20260714-58469-19700685",
+          "title": "为加强全球人工智能发展治理注入中国动力",
+          "page_sequence": 2,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58469-19700685/"
+        },
+        {
+          "item_id": "hndaily-20260714-58469-19700686",
+          "title": "2026世界人工智能大会令人期待",
+          "page_sequence": 3,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58469-19700686/"
+        }
+      ]
+    },
+    {
+      "page_number": "007",
+      "page_name": "健康周刊",
+      "page_url": "http://news.hndaily.cn/html/2026-07/14/node_58470.htm",
+      "pdf_url": "http://news.hndaily.cn/resfile/2026-07-14/007/hnrb20260714007.pdf",
+      "articles": [
+        {
+          "item_id": "hndaily-20260714-58470-19700695",
+          "title": "新“九包” 包精准康养！",
+          "page_sequence": 1,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58470-19700695/"
+        },
+        {
+          "item_id": "hndaily-20260714-58470-19700696",
+          "title": "当心这种极易漏诊的罕见病",
+          "page_sequence": 2,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58470-19700696/"
+        },
+        {
+          "item_id": "hndaily-20260714-58470-19700700",
+          "title": "三伏至，冬病夏治正当时！",
+          "page_sequence": 3,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58470-19700700/"
+        }
+      ]
+    },
+    {
+      "page_number": "008",
+      "page_name": "教育周刊",
+      "page_url": "http://news.hndaily.cn/html/2026-07/14/node_58471.htm",
+      "pdf_url": "http://news.hndaily.cn/resfile/2026-07-14/008/hnrb20260714008.pdf",
+      "articles": [
+        {
+          "item_id": "hndaily-20260714-58471-19700718",
+          "title": "国际教育创新岛尽显“磁吸力”",
+          "page_sequence": 1,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58471-19700718/"
+        },
+        {
+          "item_id": "hndaily-20260714-58471-19700719",
+          "title": "共情是家访的“入场券”",
+          "page_sequence": 2,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58471-19700719/"
+        },
+        {
+          "item_id": "hndaily-20260714-58471-19700722",
+          "title": "莫让“流量镰刀”收割童真",
+          "page_sequence": 3,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58471-19700722/"
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "section_id": "front-page",
+      "name": "头版",
+      "source_pages": [
+        "001"
+      ],
+      "articles": [
+        {
+          "item_id": "hndaily-20260714-58464-19700602",
+          "title": "习近平将出席2026世界人工智能大会暨\n人工智能全球治理高级别会议开幕式并发表主旨讲话",
+          "source_page_number": "001",
+          "page_sequence": 1,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58464-19700602/"
+        },
+        {
+          "item_id": "hndaily-20260714-58464-19700605",
+          "title": "守护三十载，她把“隔离区”变成“家”",
+          "source_page_number": "001",
+          "page_sequence": 2,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58464-19700605/"
+        },
+        {
+          "item_id": "hndaily-20260714-58464-19700606",
+          "title": "全面贯彻习近平强军思想\n共同巩固军政军民团结良好态势",
+          "source_page_number": "001",
+          "page_sequence": 3,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58464-19700606/"
+        },
+        {
+          "item_id": "hndaily-20260714-58464-19700607",
+          "title": "压实整改责任 完善产业体系 形成监管闭环\n深入推进“无废岛”建设",
+          "source_page_number": "001",
+          "page_sequence": 4,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58464-19700607/"
+        },
+        {
+          "item_id": "hndaily-20260714-58464-19700608",
+          "title": "以初心为“药”，治愈偏见与孤独",
+          "source_page_number": "001",
+          "page_sequence": 5,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58464-19700608/"
+        },
+        {
+          "item_id": "hndaily-20260714-58464-19700610",
+          "title": "部署防汛救灾、安全生产等工作",
+          "source_page_number": "001",
+          "page_sequence": 6,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58464-19700610/"
+        },
+        {
+          "item_id": "hndaily-20260714-58464-19700611",
+          "title": "从首个旅游强国规划看海南的“位”与“为”",
+          "source_page_number": "001",
+          "page_sequence": 7,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58464-19700611/"
+        },
+        {
+          "item_id": "hndaily-20260714-58464-19700612",
+          "title": "研究加快构建和完善海南民宿产业与制度双体系工作",
+          "source_page_number": "001",
+          "page_sequence": 8,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58464-19700612/"
+        }
+      ]
+    },
+    {
+      "section_id": "hainan-news",
+      "name": "本省新闻",
+      "source_pages": [
+        "002",
+        "003",
+        "004"
+      ],
+      "articles": [
+        {
+          "item_id": "hndaily-20260714-58465-19700620",
+          "title": "收房之前先“挑刺” 装修风格可“自选”",
+          "source_page_number": "002",
+          "page_sequence": 1,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58465-19700620/"
+        },
+        {
+          "item_id": "hndaily-20260714-58465-19700621",
+          "title": "省人大常委会党组（扩大）会议暨\n理论学习中心组2026年第六次学习会议召开",
+          "source_page_number": "002",
+          "page_sequence": 2,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58465-19700621/"
+        },
+        {
+          "item_id": "hndaily-20260714-58465-19700622",
+          "title": "首批“海南工匠”培育启动",
+          "source_page_number": "002",
+          "page_sequence": 3,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58465-19700622/"
+        },
+        {
+          "item_id": "hndaily-20260714-58465-19700623",
+          "title": "政校企强强联合\n攻关低空经济",
+          "source_page_number": "002",
+          "page_sequence": 4,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58465-19700623/"
+        },
+        {
+          "item_id": "hndaily-20260714-58465-19700624",
+          "title": "海南果蔬汁走俏海外",
+          "source_page_number": "002",
+          "page_sequence": 5,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58465-19700624/"
+        },
+        {
+          "item_id": "hndaily-20260714-58465-19700625",
+          "title": "海南省幼儿园“一对一”精准帮扶\n民族地区培训项目开班",
+          "source_page_number": "002",
+          "page_sequence": 6,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58465-19700625/"
+        },
+        {
+          "item_id": "hndaily-20260714-58465-19700626",
+          "title": "守护三十载，她把“隔离区”变成“家”",
+          "source_page_number": "002",
+          "page_sequence": 7,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58465-19700626/"
+        },
+        {
+          "item_id": "hndaily-20260714-58465-19700627",
+          "title": "部署防汛救灾、安全生产等工作",
+          "source_page_number": "002",
+          "page_sequence": 8,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58465-19700627/"
+        },
+        {
+          "item_id": "hndaily-20260714-58465-19700628",
+          "title": "以初心为“药”，治愈偏见与孤独",
+          "source_page_number": "002",
+          "page_sequence": 9,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58465-19700628/"
+        },
+        {
+          "item_id": "hndaily-20260714-58465-19700629",
+          "title": "研究加快构建和完善海南民宿产业与制度双体系工作",
+          "source_page_number": "002",
+          "page_sequence": 10,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58465-19700629/"
+        },
+        {
+          "item_id": "hndaily-20260714-58466-19700635",
+          "title": "从“追着政策跑”到“围着人才转”",
+          "source_page_number": "003",
+          "page_sequence": 1,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58466-19700635/"
+        },
+        {
+          "item_id": "hndaily-20260714-58466-19700636",
+          "title": "从首个旅游强国规划看海南的“位”与“为”",
+          "source_page_number": "003",
+          "page_sequence": 2,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58466-19700636/"
+        },
+        {
+          "item_id": "hndaily-20260714-58466-19700637",
+          "title": "公交线上的“热血先锋”",
+          "source_page_number": "003",
+          "page_sequence": 3,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58466-19700637/"
+        },
+        {
+          "item_id": "hndaily-20260714-58466-19700640",
+          "title": "18支队伍赛村歌",
+          "source_page_number": "003",
+          "page_sequence": 4,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58466-19700640/"
+        },
+        {
+          "item_id": "hndaily-20260714-58466-19700641",
+          "title": "文昌蓬莱：一粒小胡椒富民大产业",
+          "source_page_number": "003",
+          "page_sequence": 5,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58466-19700641/"
+        },
+        {
+          "item_id": "hndaily-20260714-58467-19700649",
+          "title": "省图书馆举办网络文学IP主题实物沉浸展",
+          "source_page_number": "004",
+          "page_sequence": 1,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58467-19700649/"
+        },
+        {
+          "item_id": "hndaily-20260714-58467-19700650",
+          "title": "暑假校外培训机构怎么选？",
+          "source_page_number": "004",
+          "page_sequence": 2,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58467-19700650/"
+        },
+        {
+          "item_id": "hndaily-20260714-58467-19700651",
+          "title": "全面织牢暑期防溺水“安全网”",
+          "source_page_number": "004",
+          "page_sequence": 3,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58467-19700651/"
+        },
+        {
+          "item_id": "hndaily-20260714-58467-19700653",
+          "title": "定安县退役军人事务局党组成员、副局长\n（正科级）符中华接受纪律审查和监察调查",
+          "source_page_number": "004",
+          "page_sequence": 4,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58467-19700653/"
+        },
+        {
+          "item_id": "hndaily-20260714-58467-19700654",
+          "title": "快乐暑假\n有学有玩",
+          "source_page_number": "004",
+          "page_sequence": 5,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58467-19700654/"
+        },
+        {
+          "item_id": "hndaily-20260714-58467-19700655",
+          "title": "万宁市农业农村局原党组书记、局长唐敏智接受纪律审查和监察调查",
+          "source_page_number": "004",
+          "page_sequence": 6,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58467-19700655/"
+        },
+        {
+          "item_id": "hndaily-20260714-58467-19700657",
+          "title": "陵水黎族自治县城乡建设集团有限公司党委书记、董事长陈新龙接受纪律审查和监察调查",
+          "source_page_number": "004",
+          "page_sequence": 7,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58467-19700657/"
+        },
+        {
+          "item_id": "hndaily-20260714-58467-19700658",
+          "title": "乐东黎族自治县水务局党组成员、县移民安置\n办公室主任陈永孝接受纪律审查和监察调查",
+          "source_page_number": "004",
+          "page_sequence": 8,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58467-19700658/"
+        },
+        {
+          "item_id": "hndaily-20260714-58467-19700661",
+          "title": "学急救学手工 特色课程“玩中学”",
+          "source_page_number": "004",
+          "page_sequence": 9,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58467-19700661/"
+        },
+        {
+          "item_id": "hndaily-20260714-58467-19700662",
+          "title": "加时又加料 展览“菜单”新",
+          "source_page_number": "004",
+          "page_sequence": 10,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58467-19700662/"
+        },
+        {
+          "item_id": "hndaily-20260714-58467-19700663",
+          "title": "海南省社会保险服务中心原党组成员、副主任王三防严重违纪违法被开除党籍和公职",
+          "source_page_number": "004",
+          "page_sequence": 11,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58467-19700663/"
+        },
+        {
+          "item_id": "hndaily-20260714-58467-19700664",
+          "title": "放假不放养 陪伴不断档",
+          "source_page_number": "004",
+          "page_sequence": 12,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58467-19700664/"
+        },
+        {
+          "item_id": "hndaily-20260714-58467-19700665",
+          "title": "学音乐学书法 主题研学乐趣多",
+          "source_page_number": "004",
+          "page_sequence": 13,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58467-19700665/"
+        }
+      ]
+    },
+    {
+      "section_id": "source-b1a9e65cda",
+      "name": "中国新闻",
+      "source_pages": [
+        "005"
+      ],
+      "articles": [
+        {
+          "item_id": "hndaily-20260714-58468-19700671",
+          "title": "“顺应发展潮流，始终走在时代前列”",
+          "source_page_number": "005",
+          "page_sequence": 1,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58468-19700671/"
+        },
+        {
+          "item_id": "hndaily-20260714-58468-19700672",
+          "title": "完善自然资源资产管理制度体系",
+          "source_page_number": "005",
+          "page_sequence": 2,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58468-19700672/"
+        },
+        {
+          "item_id": "hndaily-20260714-58468-19700673",
+          "title": "国家发展改革委安排3000万元\n支持河北暴雨洪涝灾害灾后应急恢复",
+          "source_page_number": "005",
+          "page_sequence": 3,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58468-19700673/"
+        },
+        {
+          "item_id": "hndaily-20260714-58468-19700674",
+          "title": "国务院印发《国民健康“十五五”规划》",
+          "source_page_number": "005",
+          "page_sequence": 4,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58468-19700674/"
+        },
+        {
+          "item_id": "hndaily-20260714-58468-19700675",
+          "title": "国务院批复同意《扩大消费“十五五”规划》",
+          "source_page_number": "005",
+          "page_sequence": 5,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58468-19700675/"
+        },
+        {
+          "item_id": "hndaily-20260714-58468-19700676",
+          "title": "14部门部署开展康复辅助器具产业\n扩能提质三年行动",
+          "source_page_number": "005",
+          "page_sequence": 6,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58468-19700676/"
+        },
+        {
+          "item_id": "hndaily-20260714-58468-19700677",
+          "title": "国家发展改革委、商务部有关负责人\n解读《扩大消费“十五五”规划》",
+          "source_page_number": "005",
+          "page_sequence": 7,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58468-19700677/"
+        }
+      ]
+    },
+    {
+      "section_id": "source-de455894df",
+      "name": "中国/世界新闻",
+      "source_pages": [
+        "006"
+      ],
+      "articles": [
+        {
+          "item_id": "hndaily-20260714-58469-19700684",
+          "title": "《习近平谈治国理政》第五卷\n吉尔吉斯斯坦推介会在比什凯克举行",
+          "source_page_number": "006",
+          "page_sequence": 1,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58469-19700684/"
+        },
+        {
+          "item_id": "hndaily-20260714-58469-19700685",
+          "title": "为加强全球人工智能发展治理注入中国动力",
+          "source_page_number": "006",
+          "page_sequence": 2,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58469-19700685/"
+        },
+        {
+          "item_id": "hndaily-20260714-58469-19700686",
+          "title": "2026世界人工智能大会令人期待",
+          "source_page_number": "006",
+          "page_sequence": 3,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58469-19700686/"
+        }
+      ]
+    },
+    {
+      "section_id": "source-13124aa471",
+      "name": "健康周刊",
+      "source_pages": [
+        "007"
+      ],
+      "articles": [
+        {
+          "item_id": "hndaily-20260714-58470-19700695",
+          "title": "新“九包” 包精准康养！",
+          "source_page_number": "007",
+          "page_sequence": 1,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58470-19700695/"
+        },
+        {
+          "item_id": "hndaily-20260714-58470-19700696",
+          "title": "当心这种极易漏诊的罕见病",
+          "source_page_number": "007",
+          "page_sequence": 2,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58470-19700696/"
+        },
+        {
+          "item_id": "hndaily-20260714-58470-19700700",
+          "title": "三伏至，冬病夏治正当时！",
+          "source_page_number": "007",
+          "page_sequence": 3,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58470-19700700/"
+        }
+      ]
+    },
+    {
+      "section_id": "source-ee1eb4c295",
+      "name": "教育周刊",
+      "source_pages": [
+        "008"
+      ],
+      "articles": [
+        {
+          "item_id": "hndaily-20260714-58471-19700718",
+          "title": "国际教育创新岛尽显“磁吸力”",
+          "source_page_number": "008",
+          "page_sequence": 1,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58471-19700718/"
+        },
+        {
+          "item_id": "hndaily-20260714-58471-19700719",
+          "title": "共情是家访的“入场券”",
+          "source_page_number": "008",
+          "page_sequence": 2,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58471-19700719/"
+        },
+        {
+          "item_id": "hndaily-20260714-58471-19700722",
+          "title": "莫让“流量镰刀”收割童真",
+          "source_page_number": "008",
+          "page_sequence": 3,
+          "detail_path": "/items/2026-07-14/hndaily-20260714-58471-19700722/"
+        }
+      ]
+    }
+  ],
+  "front_page_item_ids": [
+    "hndaily-20260714-58464-19700602",
+    "hndaily-20260714-58464-19700605",
+    "hndaily-20260714-58464-19700606",
+    "hndaily-20260714-58464-19700607",
+    "hndaily-20260714-58464-19700608",
+    "hndaily-20260714-58464-19700610",
+    "hndaily-20260714-58464-19700611",
+    "hndaily-20260714-58464-19700612"
+  ]
+}

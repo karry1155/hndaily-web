@@ -13,6 +13,7 @@ from scripts.radar_contract import (
     non_empty,
     require_exact_fields,
     validate_http_url,
+    validate_item_id,
     validate_iso_date,
 )
 from scripts.radar_locations import (
@@ -22,8 +23,8 @@ from scripts.radar_locations import (
 )
 
 ROOT = Path(__file__).resolve().parents[1]
-SCOPES = {"national", "hainan", "mixed"}
-ENRICHMENT_STATUSES = {"complete", "legacy-derived", "pending"}
+SCOPES = {"national", "hainan", "domestic", "mixed", "foreign"}
+ENRICHMENT_STATUSES = {"complete"}
 ISSUE_FIELDS = {
     "schema_version", "date", "source", "page_count", "article_count",
     "pages", "sections", "front_page_item_ids",
@@ -112,82 +113,6 @@ def build_sections(pages: list[dict[str, Any]]) -> list[dict[str, Any]]:
     return [sections[section_id] for section_id in order]
 
 
-def _legacy_scope(item: dict[str, Any]) -> str:
-    title = item["block"]["title"]
-    lead = item["block"].get("content", "")[:260]
-    text = title + lead
-    hainan_terms = (
-        "海南", "自贸港", "海口", "三亚", "三沙", "儋州", "琼海", "文昌",
-        "万宁", "东方", "五指山", "定安", "屯昌", "澄迈", "临高", "白沙",
-        "昌江", "乐东", "陵水", "保亭", "琼中",
-    )
-    national_terms = (
-        "新华社", "中共中央", "国务院", "全国", "国际", "全球", "世界",
-        "外交", "中央军委", "国家主席", "迪拜", "东盟",
-    )
-    has_hainan = any(term in text for term in hainan_terms)
-    has_national = any(term in text for term in national_terms)
-    if has_hainan and has_national:
-        return "mixed"
-    if has_hainan:
-        return "hainan"
-    return "national"
-
-
-def upgrade_legacy_issue_item(item: dict[str, Any]) -> dict[str, Any]:
-    if item.get("schema_version") == SCHEMA_VERSION:
-        return item
-    if item.get("schema_version") != 5:
-        raise ContractError("unsupported public issue item schema_version")
-    scope = _legacy_scope(item)
-    title = item["block"]["title"].strip()
-    upgraded = {
-        "schema_version": SCHEMA_VERSION,
-        "item_id": item["item_id"],
-        "published_date": item["published_date"],
-        "collected_date": item["collected_date"],
-        "page_number": item["page_number"],
-        "page_name": item["page_name"],
-        "page_sequence": item["page_sequence"],
-        "author": item.get("author", ""),
-        "enrichment_status": "legacy-derived",
-        "scope": scope,
-        "scope_evidence": title[:240],
-        "subjects": [],
-        "locations": [],
-        "topics": [],
-        "event_relation": {
-            "relation": "none", "event_id": None, "event_name": None,
-            "evidence": None, "update_summary": None,
-        },
-        "block": item["block"],
-    }
-    validate_public_issue_item(upgraded)
-    return upgraded
-
-
-def upgrade_legacy_issue(issue: dict[str, Any]) -> dict[str, Any]:
-    if issue.get("schema_version") == SCHEMA_VERSION:
-        return issue
-    if issue.get("schema_version") != 5:
-        raise ContractError("unsupported public issue schema_version")
-    pages = issue["pages"]
-    upgraded = {
-        "schema_version": SCHEMA_VERSION,
-        "date": issue["date"],
-        "source": issue["source"],
-        "page_count": issue["page_count"],
-        "article_count": issue["scored_article_count"],
-        "pages": pages,
-        "sections": build_sections(pages),
-        "front_page_item_ids": [
-            row["item_id"] for page in pages if page["page_number"] == "001" for row in page["articles"]
-        ],
-    }
-    validate_public_issue(upgraded)
-    return upgraded
-
-
 def validate_public_issue_item(item: dict[str, Any]) -> None:
     require_exact_fields(item, ISSUE_ITEM_FIELDS, "public issue item")
     if item.get("schema_version") != SCHEMA_VERSION:
@@ -195,6 +120,7 @@ def validate_public_issue_item(item: dict[str, Any]) -> None:
     for field in ("item_id", "page_number", "page_name"):
         if not non_empty(item.get(field)):
             raise ContractError(f"public issue item.{field} is required")
+    validate_item_id(item.get("item_id"), "public issue item.item_id")
     validate_iso_date(item.get("published_date"), "public issue item.published_date")
     validate_iso_date(item.get("collected_date"), "public issue item.collected_date")
     if type(item.get("page_sequence")) is not int or item["page_sequence"] < 1:
@@ -253,6 +179,7 @@ def validate_public_issue(issue: dict[str, Any]) -> None:
         sequences = []
         for article in page["articles"]:
             require_exact_fields(article, ISSUE_ARTICLE_FIELDS, "public issue article")
+            validate_item_id(article.get("item_id"), "public issue article.item_id")
             sequences.append(article["page_sequence"])
         if sequences != sorted(sequences):
             raise ContractError("public issue articles are not ordered")
@@ -261,12 +188,18 @@ def validate_public_issue(issue: dict[str, Any]) -> None:
         raise ContractError("public issue.article_count is invalid")
     if not isinstance(issue.get("front_page_item_ids"), list):
         raise ContractError("public issue.front_page_item_ids is invalid")
+    for item_id in issue["front_page_item_ids"]:
+        validate_item_id(item_id, "public issue.front_page_item_ids item")
     for section in issue.get("sections", []):
         require_exact_fields(section, SECTION_FIELDS, "public issue section")
         if not non_empty(section["name"]) or not isinstance(section["source_pages"], list):
             raise ContractError("public issue section is invalid")
         for article in section["articles"]:
             require_exact_fields(article, SECTION_ARTICLE_FIELDS, "public issue section article")
+            validate_item_id(
+                article.get("item_id"),
+                "public issue section article.item_id",
+            )
     if not isinstance(issue.get("sections"), list):
         raise ContractError("public issue.sections is invalid")
 

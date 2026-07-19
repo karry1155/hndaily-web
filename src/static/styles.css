@@ -92,13 +92,23 @@ button, input { font: inherit; }
 .scope-tabs a.active { color: var(--ink); font-weight: 750; }
 .scope-tabs a.active::after { content: ""; position: absolute; right: 0; bottom: 0; left: 0; height: 2px; background: var(--accent); }
 
-.national-ranking { margin: 4px 0 31px; overflow: hidden; border: 1px solid var(--line); border-radius: 12px; background: var(--paper); box-shadow: var(--shadow); }
+.ranking-dashboard { display: grid; margin: 4px 0 31px; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; gap: 14px; }
+.national-ranking { --ranking-accent: #426786; overflow: hidden; border: 1px solid var(--line); border-radius: 12px; background: var(--paper); box-shadow: var(--shadow); }
+.ranking-world { --ranking-accent: #806aa3; }
 .national-ranking > header { display: flex; padding: 15px 17px 12px; align-items: flex-end; justify-content: space-between; gap: 20px; border-bottom: 1px solid var(--line-soft); }
+.national-ranking .eyebrow { color: var(--ranking-accent); }
 .national-ranking h2 { margin: 1px 0 0; font-family: Georgia, "Noto Serif CJK SC", serif; font-size: 20px; }
 .national-ranking > header > span { color: var(--muted); font-size: 11px; }
 .ranking-list .story-card { grid-template-columns: 31px 28px minmax(0, 1fr) 42px; padding-block: 10px; }
 .ranking-list .story-card p { display: none; }
-.ranking-number { display: grid; width: 25px; height: 25px; align-self: center; border-radius: 6px; color: #fff; background: var(--accent); place-items: center; font: 700 12px Georgia, serif; }
+.ranking-number { display: grid; width: 25px; height: 25px; align-self: center; border-radius: 6px; color: #fff; background: var(--ranking-accent, var(--accent)); place-items: center; font: 700 12px Georgia, serif; }
+.ranking-empty { margin: 0; padding: 13px 17px 15px; color: var(--muted); font-size: 12px; }
+.ranking-panel.is-empty { display: flex; padding: 12px 14px; align-items: center; justify-content: space-between; gap: 14px; box-shadow: none; }
+.ranking-panel.is-empty > header { padding: 0; align-items: center; border: 0; }
+.ranking-panel.is-empty > header > div { display: flex; align-items: baseline; gap: 8px; }
+.ranking-panel.is-empty .eyebrow, .ranking-panel.is-empty > header > span { display: none; }
+.ranking-panel.is-empty h2 { margin: 0; font-size: 15px; white-space: nowrap; }
+.ranking-panel.is-empty .ranking-empty { padding: 0; font-size: 11px; text-align: right; }
 
 .date-group { margin: 0 0 30px; }
 .date-group > header { display: flex; padding: 0 2px 8px; align-items: baseline; gap: 10px; }
@@ -110,7 +120,9 @@ button, input { font: inherit; }
 .scope-badge { display: grid; width: 25px; height: 25px; margin-top: 1px; border: 1px solid currentColor; border-radius: 50%; place-items: center; font: 800 11px Georgia, serif; }
 .scope-national { color: #426786; }
 .scope-hainan { color: #3a7a58; }
+.scope-domestic { color: #b08543; }
 .scope-mixed { color: #a15b34; }
+.scope-foreign { color: #806aa3; }
 .scope-pending { color: var(--muted); }
 .story-copy { min-width: 0; }
 .story-copy h3 { margin: 0; font-family: Georgia, "Noto Serif CJK SC", serif; font-size: 16px; font-weight: 700; line-height: 1.48; }
@@ -135,6 +147,50 @@ button, input { font: inherit; }
 .all-row span { font-family: Georgia, "Noto Serif CJK SC", serif; font-size: 15px; }
 .all-row svg { width: 16px; height: 16px; fill: none; stroke: var(--muted); stroke-width: 1.5; }
 
+.issue-section-tabs { padding: 16px 0 18px; flex-wrap: wrap; gap: 8px; border-bottom: 1px solid var(--line); }
+.issue-section-tabs a { display: inline-flex; padding: 5px 11px; align-items: center; gap: 6px; border: 1px solid var(--line); border-radius: 999px; }
+.issue-section-tabs a span { color: var(--muted); font-size: 10px; }
+.issue-section-tabs a.active { border-color: var(--accent); color: #fff; background: var(--accent); }
+.issue-section-tabs a.active::after { display: none; }
+.issue-section-tabs a.active span { color: currentColor; }
+.issue-section { padding-top: 26px; scroll-margin-top: 18px; }
+.issue-section > header { margin-bottom: 10px; }
+.issue-section-meta { display: flex; align-items: center; justify-content: flex-end; gap: 8px; color: var(--muted); font-size: 11px; }
+.section-pdf-link, .section-pdf-menu summary { display: inline-flex; min-height: 30px; padding: 4px 9px; align-items: center; border: 1px solid color-mix(in srgb, var(--accent) 38%, var(--line)); border-radius: 999px; color: var(--accent); background: color-mix(in srgb, var(--accent-soft) 52%, transparent); font-size: 10px; font-weight: 750; letter-spacing: .03em; }
+.section-pdf-link:hover, .section-pdf-menu summary:hover { border-color: var(--accent); }
+.section-pdf-menu { position: relative; }
+.section-pdf-menu summary { cursor: pointer; list-style: none; }
+.section-pdf-menu summary::-webkit-details-marker { display: none; }
+.section-pdf-menu > div { position: absolute; top: calc(100% + 6px); right: 0; z-index: 20; display: grid; min-width: 94px; padding: 5px; gap: 2px; border: 1px solid var(--line); border-radius: 8px; background: var(--paper); box-shadow: var(--shadow); }
+.section-pdf-menu > div a { padding: 7px 9px; border-radius: 5px; color: var(--ink); white-space: nowrap; }
+.section-pdf-menu > div a:hover { color: var(--accent); background: var(--accent-soft); }
+.issue-story-list { box-shadow: var(--shadow); }
+.back-to-top { position: fixed; right: 24px; bottom: 24px; z-index: 45; padding: 9px 13px; border: 1px solid color-mix(in srgb, var(--accent) 70%, #fff); border-radius: 999px; color: #fff; background: var(--accent); box-shadow: var(--shadow); font-size: 11px; font-weight: 750; }
+
+.archive-section-picker { padding: 22px 0 6px; border-bottom: 1px solid var(--line); }
+.archive-results-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 20px; }
+.archive-results-heading h2 { margin: 0; font-family: Georgia, "Noto Serif CJK SC", serif; font-size: 21px; }
+.archive-results-heading span { color: var(--muted); font-size: 11px; }
+.archive-tabs { padding: 13px 0 15px; flex-wrap: wrap; gap: 8px; }
+.archive-tabs a { display: inline-flex; padding: 5px 11px; align-items: center; gap: 6px; border: 1px solid var(--line); border-radius: 999px; }
+.archive-tabs a span { color: var(--muted); font-size: 10px; }
+.archive-tabs a.active { border-color: var(--accent); color: #fff; background: var(--accent); }
+.archive-tabs a.active::after { display: none; }
+.archive-tabs a.active span { color: currentColor; }
+.archive-overview { padding-top: 25px; }
+.archive-issues { display: grid; margin-top: 13px; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 15px; }
+.archive-issue { min-width: 0; }
+.archive-issue > header { display: flex; margin-bottom: 8px; align-items: baseline; justify-content: space-between; gap: 14px; }
+.archive-issue > header > div { display: flex; align-items: baseline; gap: 8px; }
+.archive-issue h3 { margin: 0; font-family: Georgia, "Noto Serif CJK SC", serif; font-size: 18px; }
+.archive-issue header span { color: var(--muted); font-size: 11px; }
+.archive-preview .story-card { grid-template-columns: 25px minmax(0, 1fr) 34px; gap: 8px; padding: 11px 9px; }
+.archive-preview .story-copy h3 { font-size: 14px; }
+.archive-preview .story-copy p { -webkit-line-clamp: 2; }
+.archive-issue-link { display: block; margin-top: 7px; padding: 8px 2px; color: var(--accent); font-size: 12px; font-weight: 650; }
+.archive-page > .archive-results-heading { padding: 25px 2px 11px; }
+.archive-page [data-archive-search-results] { padding-top: 23px; }
+
 .item-page { width: min(790px, 100%); padding: 48px 48px 100px; }
 .back-link { display: inline-block; margin-bottom: 26px; color: var(--muted); }
 .item-meta { display: flex; margin-bottom: 13px; align-items: center; gap: 10px; color: var(--muted); font-size: 12px; }
@@ -152,12 +208,37 @@ button, input { font: inherit; }
 .more-card { display: grid; min-height: 132px; padding: 21px; align-content: space-between; border: 1px solid var(--line); border-radius: 11px; background: var(--paper); }
 .more-card strong { font: 700 19px Georgia, "Noto Serif CJK SC", serif; }
 .more-card span { color: var(--muted); font-size: 12px; }
+.scope-guide { margin-top: 34px; padding-top: 27px; border-top: 1px solid var(--line); }
+.scope-guide > header h2 { margin: 5px 0 0; font-family: Georgia, "Noto Serif CJK SC", serif; font-size: 23px; }
+.scope-guide-list { display: grid; margin-top: 16px; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+.scope-guide-row { display: grid; min-width: 0; padding: 15px; grid-template-columns: 25px minmax(0, 1fr); align-items: start; gap: 11px; border: 1px solid var(--line); border-radius: 9px; background: var(--paper); }
+.scope-guide-row strong { font-size: 14px; }
+.scope-guide-row p { margin: 4px 0 0; color: var(--muted); font-size: 12px; line-height: 1.55; }
 .placeholder-panel, .prose-block { margin-top: 25px; padding: 27px; border: 1px solid var(--line); border-radius: 11px; background: var(--paper); }
 .placeholder-panel strong { font: 700 20px Georgia, "Noto Serif CJK SC", serif; }
 .placeholder-panel p, .prose-block p { color: var(--muted); }
+.report-browser { margin-top: 25px; }
+.report-period-tabs { display: inline-grid; padding: 3px; grid-template-columns: repeat(3, minmax(72px, 1fr)); border: 1px solid var(--line); border-radius: 999px; background: var(--paper); }
+.report-period-tabs button, .report-date-tabs button { border: 0; color: var(--muted); background: transparent; cursor: pointer; }
+.report-period-tabs button { min-height: 34px; padding: 6px 16px; border-radius: 999px; font-weight: 650; }
+.report-period-tabs button.active { color: #fff; background: var(--accent); }
+.report-date-tabs { display: flex; margin-top: 14px; overflow-x: auto; gap: 8px; scrollbar-width: none; }
+.report-date-tabs[hidden] { display: none; }
+.report-date-tabs::-webkit-scrollbar { display: none; }
+.report-date-tabs button { flex: 0 0 auto; min-height: 34px; padding: 6px 14px; border: 1px solid var(--line); border-radius: 999px; }
+.report-date-tabs button.active { border-color: var(--ink); color: var(--bg); background: var(--ink); }
+.report-development { margin-top: 28px; padding: 27px; border: 1px solid var(--line); border-radius: 11px; background: var(--paper); }
+.report-development h2 { margin: 7px 0 0; font-family: Georgia, "Noto Serif CJK SC", serif; font-size: 23px; }
+.report-development p { max-width: 620px; margin: 12px 0 0; color: var(--muted); line-height: 1.8; }
+
+@media (min-width: 761px) and (max-width: 900px) {
+  .archive-page .page-header { align-items: flex-start; flex-direction: column; gap: 15px; }
+  .archive-page .site-search { width: 100%; }
+  .archive-issues { grid-template-columns: 1fr; gap: 24px; }
+}
 
 @media (max-width: 760px) {
-  body { padding-bottom: calc(68px + env(safe-area-inset-bottom)); }
+  .radar-shell:not(.item-shell) { padding-bottom: calc(68px + env(safe-area-inset-bottom)); }
   .radar-shell { display: block; }
   .primary-nav { position: sticky; top: 0; height: 57px; padding: 10px 16px; flex-direction: row; align-items: center; border-bottom: 1px solid var(--line-soft); }
   .brand { padding: 0; font-size: 21px; }
@@ -166,6 +247,7 @@ button, input { font: inherit; }
   .primary-nav nav { position: fixed; inset: auto 0 0; z-index: 50; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0; padding: 5px 8px max(5px, env(safe-area-inset-bottom)); border-top: 1px solid var(--line); color: var(--ink); background: color-mix(in srgb, var(--paper) 95%, transparent); backdrop-filter: blur(18px); }
   .primary-nav nav a { min-height: 50px; padding: 4px 2px; flex-direction: column; justify-content: center; gap: 1px; border-radius: 0; color: var(--muted); font-size: 10px; }
   .primary-nav nav a:hover, .primary-nav nav a.active { color: var(--accent); background: transparent; }
+  .item-shell .primary-nav nav { display: none; }
   .nav-icon { width: 20px; height: 20px; }
   .desktop-tools { display: none; }
   .content-shell { width: 100%; padding: 19px 16px 36px; }
@@ -176,7 +258,8 @@ button, input { font: inherit; }
   .scope-tabs a { padding: 6px 13px; border: 1px solid var(--line); border-radius: 999px; font-size: 12px; }
   .scope-tabs a.active { border-color: var(--accent); color: #fff; background: var(--accent); }
   .scope-tabs a.active::after { display: none; }
-  .national-ranking { margin-bottom: 23px; border-radius: 9px; box-shadow: none; }
+  .ranking-dashboard { margin-bottom: 23px; grid-template-columns: 1fr; gap: 10px; }
+  .national-ranking { border-radius: 9px; box-shadow: none; }
   .national-ranking > header { padding: 12px; }
   .national-ranking h2 { font-size: 17px; }
   .ranking-list .story-card { grid-template-columns: 28px 25px minmax(0, 1fr) 34px; gap: 7px; padding: 9px 8px; }
@@ -189,12 +272,30 @@ button, input { font: inherit; }
   .logical-section > header { align-items: flex-start; flex-direction: column; gap: 2px; }
   .logical-section h2 { font-size: 19px; }
   .all-row span { font-size: 14px; }
+  .issue-section-tabs { flex-wrap: nowrap; padding-block: 12px 14px; }
+  .issue-section-tabs a { padding: 6px 12px; }
+  .issue-section { padding-top: 22px; scroll-margin-top: 64px; }
+  .issue-section > header { align-items: baseline; flex-direction: row; gap: 12px; }
+  .issue-section-meta { flex: 0 0 auto; }
+  .issue-story-list { box-shadow: none; }
+  .back-to-top { right: 14px; bottom: calc(67px + env(safe-area-inset-bottom)); }
+  .archive-section-picker { padding-top: 18px; }
+  .archive-results-heading h2 { font-size: 19px; }
+  .archive-tabs { flex-wrap: nowrap; padding-block: 11px 14px; }
+  .archive-tabs a { padding: 6px 12px; }
+  .archive-issues { grid-template-columns: 1fr; gap: 24px; }
+  .archive-issue h3 { font-size: 17px; }
+  .archive-page [data-archive-search-results] { padding-top: 20px; }
   .item-page { padding: 26px 18px 55px; }
   .item-page h1 { font-size: 27px; }
   .ai-summary { margin: 24px -2px; padding: 18px; box-shadow: none; }
   .source-body p { font-size: 15px; line-height: 1.9; }
   .more-grid { grid-template-columns: 1fr; }
   .more-card { min-height: 112px; }
+  .scope-guide-list { grid-template-columns: 1fr; }
+  .report-period-tabs { display: grid; width: 100%; }
+  .report-period-tabs button { padding-inline: 10px; }
+  .report-development { margin-top: 23px; padding: 21px 18px; }
 }
 
 @media (prefers-reduced-motion: reduce) {

@@ -26,6 +26,10 @@ class HnhotAssetTests(unittest.TestCase):
         item = schema["$defs"]["item"]
         self.assertFalse(item["additionalProperties"])
         self.assertEqual(
+            item["properties"]["scope"]["enum"],
+            ["national", "hainan", "domestic", "mixed", "foreign"],
+        )
+        self.assertEqual(
             set(item["required"]),
             {
                 "candidate_id", "ai_summary", "scope", "scope_evidence",
@@ -75,8 +79,48 @@ class HnhotAssetTests(unittest.TestCase):
             relation = variant["properties"]["relation"]["const"]
             for key, expected_shape in expected_event_shapes[relation].items():
                 self.assertEqual(variant["properties"][key], expected_shape)
-        for token in ("national", "hainan", "mixed", "不得猜测", "原文证据"):
+        for token in (
+            "national", "hainan", "domestic", "mixed", "foreign", "不得猜测", "原文证据",
+            "本地生活", "跨境贸易", "外国人在琼服务", "海南救援队赴广西救灾",
+            "国际事件仅作为文章由头",
+        ):
             self.assertIn(token, prompt)
+
+    def test_seed_data_uses_local_and_open_scope_boundary(self):
+        expected = {
+            "2026-07-12": {
+                "hndaily-20260712-58464-19696009": "hainan",
+                "hndaily-20260712-58464-19696011": "mixed",
+                "hndaily-20260712-58464-19696012": "hainan",
+                "hndaily-20260712-58464-19696013": "domestic",
+                "hndaily-20260712-58464-19696014": "mixed",
+            },
+            "2026-07-13": {
+                "hndaily-20260713-58464-19697250": "hainan",
+                "hndaily-20260713-58464-19697253": "hainan",
+                "hndaily-20260713-58464-19697254": "mixed",
+                "hndaily-20260713-58464-19697255": "mixed",
+                "hndaily-20260713-58464-19697256": "hainan",
+                "hndaily-20260713-58464-19697257": "hainan",
+                "hndaily-20260713-58464-19697258": "mixed",
+                "hndaily-20260713-58466-19697282": "domestic",
+                "hndaily-20260713-58483-19698010": "national",
+                "hndaily-20260713-58484-19698015": "national",
+            },
+            "2026-07-14": {
+                "hndaily-20260714-58464-19700602": "national",
+                "hndaily-20260714-58464-19700611": "mixed",
+                "hndaily-20260714-58465-19700623": "domestic",
+                "hndaily-20260714-58465-19700624": "mixed",
+                "hndaily-20260714-58469-19700684": "foreign",
+                "hndaily-20260714-58471-19700718": "mixed",
+            },
+        }
+        for published_date, items in expected.items():
+            for item_id, scope in items.items():
+                path = ROOT / "content" / "issue-items" / published_date / f"{item_id}.json"
+                payload = json.loads(path.read_text(encoding="utf-8"))
+                self.assertEqual(payload["scope"], scope, item_id)
 
     def test_controlled_catalogs_have_unique_ids_and_exact_fields(self):
         topics = json.loads((ROOT / "config/topics.json").read_text(encoding="utf-8"))
@@ -99,13 +143,14 @@ class HnhotAssetTests(unittest.TestCase):
         self.assertEqual(sections["fallback"], "source_page_name")
         self.assertEqual(
             [section["section_id"] for section in sections["sections"]],
-            ["front-page", "hainan-news", "domestic-international", "theory"],
+            ["front-page", "hainan-news", "world-news", "domestic-international", "theory"],
         )
         self.assertEqual(
             sections["rules"],
             [
                 {"source_page_name": "头版", "section_id": "front-page"},
                 {"source_page_name": "本省新闻", "section_id": "hainan-news"},
+                {"source_page_name": "世界新闻", "section_id": "world-news"},
                 {"source_page_name": "国内新闻", "section_id": "domestic-international"},
                 {"source_page_name": "国际新闻", "section_id": "domestic-international"},
                 {"source_page_name": "理论周刊", "section_id": "theory"},

@@ -9,9 +9,9 @@ from typing import Any
 if __package__ in (None, ""):
     sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-from scripts.editorial_filter import InputError
 from scripts.radar_adapter import adapt_hndaily
 from scripts.radar_contract import ContractError, SCHEMA_VERSION
+from scripts.radar_filter import InputError
 from scripts.radar_model import build_model_input
 
 

@@ -3,21 +3,27 @@ from __future__ import annotations
 import hashlib
 import re
 from typing import Any
+from urllib.parse import urlsplit
 
-from scripts.editorial_filter import evaluate_issue
-from scripts.radar_contract import validate_iso_date, validate_source_candidate
+from scripts.radar_contract import (
+    ContractError,
+    canonicalize_source_url,
+    validate_iso_date,
+    validate_source_candidate,
+)
+from scripts.radar_filter import evaluate_issue
 
-CONTENT_ID_RE = re.compile(r"content_\d+_(\d+)\.htm(?:\?.*)?$")
+CONTENT_ID_RE = re.compile(r"(?:^|/)content_(\d+)_(\d+)\.htm$")
 
 
-def _stable_id(url: str, published_date: str, title: str) -> str:
-    match = CONTENT_ID_RE.search(url)
+def _stable_id(url: str, published_date: str) -> str:
+    date_key = published_date.replace("-", "")
+    match = CONTENT_ID_RE.search(urlsplit(url).path)
     if match:
-        return f"hndaily-{match.group(1)}"
-    digest = hashlib.sha256(
-        f"{published_date}\n{title}".encode("utf-8")
-    ).hexdigest()[:16]
-    return f"hndaily-{published_date}-{digest}"
+        return f"hndaily-{date_key}-{match.group(1)}-{match.group(2)}"
+    canonical_url = canonicalize_source_url(url)
+    digest = hashlib.sha256(canonical_url.encode("utf-8")).hexdigest()[:16]
+    return f"hndaily-{date_key}-url-{digest}"
 
 
 def adapt_hndaily(
@@ -28,14 +34,22 @@ def adapt_hndaily(
     collected_date = validate_iso_date(fetched_at[:10], "raw.fetched_at")
     records = evaluate_issue(raw)
     candidates = []
+    canonical_urls_by_id: dict[str, str] = {}
     for record in records:
         if not record["passed"]:
             continue
+        item_id = _stable_id(record["url"], published_date)
+        canonical_url = canonicalize_source_url(record["url"])
+        previous_url = canonical_urls_by_id.get(item_id)
+        if previous_url is not None and previous_url != canonical_url:
+            raise ContractError(
+                f"item_id collision: {item_id} maps to both "
+                f"{previous_url} and {canonical_url}"
+            )
+        canonical_urls_by_id[item_id] = canonical_url
         candidate = {
             "candidate_id": record["candidate_id"],
-            "item_id": _stable_id(
-                record["url"], published_date, record["original_title"]
-            ),
+            "item_id": item_id,
             "source": str(raw.get("source", "")).strip(),
             "title": record["original_title"],
             "content": record["content"].strip(),

@@ -41,6 +41,12 @@ document.querySelectorAll("[data-search-input]").forEach((input) => {
   input.addEventListener("input", () => {
     const query = input.value.trim().toLocaleLowerCase("zh-CN");
     const main = input.closest("main");
+    const archiveDefault = main.querySelector("[data-archive-default]");
+    const archiveResults = main.querySelector("[data-archive-search-results]");
+    if (archiveDefault && archiveResults) {
+      archiveDefault.hidden = query !== "";
+      archiveResults.hidden = query === "";
+    }
     const cards = [...main.querySelectorAll("[data-search-card]")];
     cards.forEach((card) => {
       card.hidden = query !== "" && !card.dataset.searchText.toLocaleLowerCase("zh-CN").includes(query);
@@ -58,7 +64,13 @@ function makeStarredCard(item) {
   article.className = "story-card";
   const scope = document.createElement("span");
   scope.className = `scope-badge scope-${item.scope}`;
-  scope.textContent = {national: "N", hainan: "H", mixed: "M"}[item.scope] || "–";
+  scope.textContent = {national: "N", hainan: "H", domestic: "D", mixed: "M", foreign: "F"}[item.scope] || "–";
+  const scopeLabel = {
+    hainan: "H · 海南本地", domestic: "D · 国内关联", mixed: "M · 海南开放",
+    national: "N · 全国", foreign: "F · 全球",
+  }[item.scope] || "尚未分类";
+  scope.title = scopeLabel;
+  scope.setAttribute("aria-label", scopeLabel);
   const link = document.createElement("a");
   link.className = "story-copy";
   link.href = item.detail_path;
@@ -90,5 +102,41 @@ function renderStarred() {
   if (empty) empty.hidden = selected.length > 0;
 }
 
+document.querySelectorAll("[data-report-browser]").forEach((browser) => {
+  const syncReportState = () => {
+    const period = browser.dataset.reportPeriod;
+    const date = browser.dataset.reportDate;
+    const dateTabs = browser.querySelector("[data-report-date-tabs]");
+    const showDates = period === "日报";
+    if (dateTabs) dateTabs.hidden = !showDates;
+    browser.querySelector("[data-report-selection]").textContent = showDates ? `${period} · ${date}` : period;
+    browser.querySelector("[data-report-title]").textContent = `${period}能力正在建设`;
+  };
+  browser.querySelectorAll("[data-report-control]").forEach((control) => {
+    control.addEventListener("click", (event) => {
+      const button = event.target.closest("[data-report-value]");
+      if (!button) return;
+      control.querySelectorAll("[data-report-value]").forEach((candidate) => {
+        const active = candidate === button;
+        candidate.classList.toggle("active", active);
+        candidate.setAttribute("aria-pressed", String(active));
+      });
+      if (control.dataset.reportControl === "period") browser.dataset.reportPeriod = button.dataset.reportValue;
+      if (control.dataset.reportControl === "date") browser.dataset.reportDate = button.dataset.reportValue;
+      syncReportState();
+    });
+  });
+  syncReportState();
+});
+
 syncStarButtons();
 renderStarred();
+
+const backToTop = document.querySelector("[data-back-to-top]");
+if (backToTop) {
+  const syncBackToTop = () => {
+    backToTop.hidden = window.scrollY < 360;
+  };
+  window.addEventListener("scroll", syncBackToTop, { passive: true });
+  syncBackToTop();
+}

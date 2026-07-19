@@ -1,0 +1,44 @@
+{
+  "schema_version": 7,
+  "item_id": "hndaily-20260713-58466-19697280",
+  "published_date": "2026-07-13",
+  "collected_date": "2026-07-19",
+  "page_number": "003",
+  "page_name": "本省新闻",
+  "page_sequence": 2,
+  "author": "",
+  "enrichment_status": "complete",
+  "scope": "hainan",
+  "scope_evidence": "海南启动赤潮灾害Ⅲ级应急响应",
+  "subjects": [],
+  "locations": [
+    {
+      "location_id": "hainan-ledong",
+      "name": "乐东黎族自治县",
+      "code": "469027",
+      "level": "county",
+      "evidence": "乐东"
+    }
+  ],
+  "topics": [
+    {
+      "topic_id": "ecology",
+      "name": "生态环境",
+      "evidence": "海南启动赤潮灾害Ⅲ级应急响应"
+    }
+  ],
+  "event_relation": {
+    "relation": "none",
+    "event_id": null,
+    "event_name": null,
+    "evidence": null,
+    "update_summary": null
+  },
+  "block": {
+    "source": "海南日报",
+    "title": "海南启动赤潮灾害Ⅲ级应急响应",
+    "content": "本报海口7月12日讯（海南日报全媒体记者李梦瑶）7月12日11时 ，海南省海洋灾害应急专项工作办公室启动赤潮灾害Ⅲ级应急响应。\n\n近期，我省有部分海域新出现赤潮灾害，造成乐东、三亚部分海水养殖点鱼类死亡。海南省海洋监测预报中心联合多家海洋技术力量持续对海南西线海口至三亚近岸海域开展赤潮跟踪监测。监测结果显示，乐东海域多环马格里夫藻近似种密度偏高，近两日结果对比藻种密度略有下降，但赤潮影响仍在继续；三亚海域多环马格里夫藻近似种密度已超过赤潮暴发基准阈值，水色异常现象是由多环马格里夫藻近似种赤潮引起。\n\n鉴于赤潮灾害造成新增经济损失、灾害复杂走势和防灾减灾救灾需要，根据自然资源部《赤潮灾害应急预案》和《海南省海洋灾害应急预案》相关规定，海南省海洋灾害应急专项工作办公室决定启动赤潮灾害Ⅲ级应急响应，请沿海市县和省直有关部门严格落实好各项赤潮应急处置和防灾减灾措施。",
+    "ai_summary": "乐东、三亚部分海域赤潮造成养殖鱼类死亡，海南已启动Ⅲ级应急响应并持续监测近岸海域。",
+    "original_url": "http://news.hndaily.cn/html/2026-07/13/content_58466_19697280.htm"
+  }
+}

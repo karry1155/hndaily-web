@@ -1,0 +1,36 @@
+{
+  "schema_version": 7,
+  "item_id": "hndaily-20260714-58466-19700641",
+  "published_date": "2026-07-14",
+  "collected_date": "2026-07-19",
+  "page_number": "003",
+  "page_name": "本省新闻",
+  "page_sequence": 5,
+  "author": "",
+  "enrichment_status": "complete",
+  "scope": "hainan",
+  "scope_evidence": "文昌蓬莱：一粒小胡椒富民大产业",
+  "subjects": [],
+  "locations": [],
+  "topics": [
+    {
+      "topic_id": "industry-projects",
+      "name": "产业项目",
+      "evidence": "文昌蓬莱：一粒小胡椒富民大产业"
+    }
+  ],
+  "event_relation": {
+    "relation": "none",
+    "event_id": null,
+    "event_name": null,
+    "evidence": null,
+    "update_summary": null
+  },
+  "block": {
+    "source": "海南日报",
+    "title": "文昌蓬莱：一粒小胡椒富民大产业",
+    "content": "7月12日，文昌市蓬莱镇石壁村胡椒种植园内，椒农在田地里忙着采摘胡椒。\n\n据介绍，文昌市蓬莱镇是海南核心胡椒主产区之一，全镇种植面积达3.23万亩，超八成农户种植胡椒，2024年产干果近4800吨，产业总产值超1.7亿元。依托火山红壤优势，当地打造胡椒主题产业小镇，联动热科院专家开展标准化种植培训，配套机械化加工生产线，开发胡椒酱、胡椒洗护、调味食品等深加工产品，打造“蓬莱仙椒”品牌。\n\n该镇同步推进农文旅融合，建设胡椒生活馆、研学民宿，借乡村排球等活动拓宽销路，延伸产业链条，稳定农户增收，以特色香料产业激活乡村振兴内生动力。海南日报全媒体记者 王程龙 摄",
+    "ai_summary": "文昌蓬莱镇胡椒种植面积达3.23万亩、产业产值超1.7亿元，并通过深加工和农文旅融合带动农户增收。",
+    "original_url": "http://news.hndaily.cn/html/2026-07/14/content_58466_19700641.htm"
+  }
+}

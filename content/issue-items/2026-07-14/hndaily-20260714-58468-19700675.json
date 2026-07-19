@@ -1,0 +1,36 @@
+{
+  "schema_version": 7,
+  "item_id": "hndaily-20260714-58468-19700675",
+  "published_date": "2026-07-14",
+  "collected_date": "2026-07-19",
+  "page_number": "005",
+  "page_name": "中国新闻",
+  "page_sequence": 5,
+  "author": "",
+  "enrichment_status": "complete",
+  "scope": "national",
+  "scope_evidence": "国务院批复同意《扩大消费“十五五”规划》",
+  "subjects": [],
+  "locations": [],
+  "topics": [
+    {
+      "topic_id": "economy-data",
+      "name": "经济数据",
+      "evidence": "国务院批复同意《扩大消费“十五五”规划》"
+    }
+  ],
+  "event_relation": {
+    "relation": "none",
+    "event_id": null,
+    "event_name": null,
+    "evidence": null,
+    "update_summary": null
+  },
+  "block": {
+    "source": "海南日报",
+    "title": "国务院批复同意《扩大消费“十五五”规划》",
+    "content": "新华社北京7月13日电 据中国政府网13日消息，国务院印发关于《扩大消费“十五五”规划》的批复，原则同意《扩大消费“十五五”规划》。\n\n批复指出，规划实施要坚持扩大内需这个战略基点，深入实施提振消费专项行动，扩大服务消费，升级商品消费，丰富业态场景，提升消费能力，优化消费环境，健全制度政策，完善扩大居民消费长效机制，更好发挥消费对经济发展的基础性作用。\n\n批复要求，各省、自治区、直辖市人民政府要把扩大消费作为本地区“十五五”时期经济和社会发展的重要任务，加强组织领导，明确工作责任，因地制宜探索扩大消费有效途径，结合实际落实好规划提出的目标任务和政策措施。",
+    "ai_summary": "扩大消费“十五五”规划将重点扩大服务消费、升级商品消费、丰富消费场景并改善消费环境。",
+    "original_url": "http://news.hndaily.cn/html/2026-07/14/content_58468_19700675.htm"
+  }
+}

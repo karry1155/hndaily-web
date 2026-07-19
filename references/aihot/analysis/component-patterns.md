@@ -1,120 +1,71 @@
-# AIHOT 组件模式
+# AIHOT 2.0 组件与前端状态模式
 
-## 1. 顶部品牌栏
+## 1. 响应式应用外壳
 
-- 只承担品牌与日期/更新时间，不承载主导航。
-- 移动端高度紧凑，不使用明显底部横线或厚重阴影。
-- 内容左右对齐，品牌权重大于日期。
+- 桌面侧栏按「内容 / 接入 / 更多」分组，底部放主题切换和登录入口。
+- 手机底栏固定四项：精选、全部、日报、更多。
+- 路由决定当前项；`/items/*` 详情页隐藏底栏，避免干扰长文阅读。
+- `<= 960px` 与 `<= 640px` 是全站统一断点，不为单个组件随意新增断点。
 
-## 2. 热点摘要
+## 2. 当前热点
 
-结构：标题行 → 排名列表。它是首屏唯一明显卡片。
+- 展示 3 个当前事件，按讨论强度排序。
+- 每项包含排名、代表标题、独立信源数；手机标题允许多行。
+- 2026-07-15 的公开版本说明表明：热点强度读取全部已聚类信号，同时保留“必须有精选锚点”的公开门槛。
+- `sourceCount` 表示独立信源数，`signalCount` 表示折叠后的讨论信号数；两者不能混用。
 
-- 外层约 `12px` 圆角、`1px` 边框、极浅阴影。
-- 标题行紧凑，右侧可放 `TOP N` 或低权重说明。
-- 每条使用 `flex`/`grid`：排名、标题、元信息/收藏。
-- 排名视觉面积小，前三名使用区分色。
-- 条目间可有浅分隔线，但标题行下方不需要额外装饰线。
-- 标题一至两行；不要在热点中重复长摘要。
+## 3. 搜索与筛选
 
-HN·HOT 映射：`时下要闻` 保留四条，排名色块与收藏按钮保留，减少面板高度和装饰。
+- 表单使用 `GET /all`，查询参数为 `q`。
+- 来源筛选：`channel=firstParty | news | x`。
+- 类型筛选：`category=ai-models | ai-products | industry | paper | tip`。
+- 搜索、来源和类型参数可以组合；切换筛选时保留其它有效参数。
+- 手机类型筛选使用 `<details>` 折叠，减少首屏占用。
 
-## 3. 分类工具栏
+## 4. 时间线
 
-- 章节标题直接位于页面背景。
-- 分类胶囊是独立按钮，不放进总胶囊容器。
-- 选中项为深色/品牌色实心，未选项为浅底或细边框。
-- 移动端单行横向滚动，隐藏滚动条。
-- 胶囊高度约 `30–36px`，字体约 `12–14px`。
+- 桌面端：左侧时间轨道 + 右侧新闻卡片。
+- 手机端：来源/时间/分数在一行，标题与摘要连续排列，以浅分隔线分组。
+- 卡片可包含：精选标记、分数、标题、摘要、标签、重复信源数量、推荐理由和收藏。
+- X 内容在前端有专门的正文/引用处理，短内容优先使用正文模式，普通新闻使用标题 + 摘要。
 
-## 4. 新闻流
+## 5. 收藏与已读
 
-- 日期栏直接连接页面背景，可用极浅背景区别日期层级。
-- 新闻条目不使用独立卡片。
-- 条目通过浅分隔线、标题粗细、摘要颜色和元信息字号建立层级。
-- 收藏固定靠右；正文列使用 `min-width: 0`，避免按钮挤压标题。
-- 桌面/宽移动布局可显示时间列；窄屏可以把时间并入元信息。
-- 摘要默认两行，信息较复杂时最多三行。
+- 匿名收藏存在当前浏览器，键为 `aihot-starred-items`，最多保存 500 条规范化快照。
+- 收藏按钮使用 `aria-pressed`，切换后发送同页自定义事件并监听跨标签页 `storage` 事件。
+- 已读键为 `aihot-read-items`，最多保留 5000 个条目 ID；点击外链后立即给对应条目加 `fc-read`。
+- 收藏页明确提示：清除浏览器数据或更换设备会丢失匿名收藏。
 
-推荐结构：
+## 6. 详情页
 
-```html
-<article class="feed-row">
-  <div class="feed-meta">来源 · 时间</div>
-  <a class="feed-main">
-    <strong class="feed-title">标题</strong>
-    <p class="feed-summary">摘要</p>
-  </a>
-  <button class="feed-save">收藏</button>
-</article>
-```
+- 顶部动作：返回、原文、分享海报、收藏。
+- AI 摘要使用可折叠 `<details>`；正文保留标题、段落、链接、图片、表格与代码等可靠结构。
+- 不能确认正文时降级为摘要和原文链接。
+- 支持 `/items/{id}/markdown` 导出，元数据包含标题、来源、发布时间、AIHOT 链接和原文链接。
+- 返回来源短期保存在 session 状态中，超时或目标不匹配时不复用。
 
-## 5. 底部导航
+## 7. 日报 / 周报 / 月报
 
-AIHOT 的移动底栏是独立根级组件：
+- 顶部以日、周、月三个固定入口切换。
+- 日报首先展示日期、总篇数、预计阅读时间与「今日看点」，再进入四类正文。
+- 四类与信息流分类一致：产品、行业、论文、技巧。
+- 公开 API 保留 `lead`、`sections` 和 `flashes` 结构；前端不应重新把它们混成平铺列表。
 
-```css
-.mobile-tabbar {
-  position: fixed;
-  inset: auto 0 0;
-  z-index: 900;
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  padding:
-    4px max(6px, env(safe-area-inset-right))
-    calc(4px + env(safe-area-inset-bottom))
-    max(6px, env(safe-area-inset-left));
-}
+## 8. 主题索引
 
-.page-main {
-  padding-bottom: calc(var(--tabbar-height) + env(safe-area-inset-bottom) + 28px);
-}
-```
+- 主题卡片包含名称、稳定描述和精选数量。
+- 主题来自 AI 标签自动聚合，但主题 slug、展示名与说明应由受控配置约束。
+- 当前页面说明共有 38 个主题；卡片按公司/模型、技术方向、内容形态分组。
 
-关键不是选择器名称，而是两个不变量：底栏相对于视口定位；正文底部补偿引用同一个底栏高度。不要把固定底栏嵌在带 `filter`、`backdrop-filter` 或 `transform` 的祖先中，否则固定定位可能改为相对祖先。
+## 9. 主题切换与更新提示
 
-## 6. 可复用规则
+- 主题键为 `aihot-theme`，可选 `dark | auto | light`。
+- `auto` 监听系统配色变化；切换时同步根节点、Arco 主题和浏览器 theme-color。
+- 更新日志已读键为 `aihot-changelog-seen-version`；访问更新日志后清除侧栏未读点。
 
-```css
-@media (max-width: 760px) {
-  .benchmark-open-section {
-    margin: 0;
-    padding-inline: var(--mobile-gutter, 16px);
-    border: 0;
-    border-radius: 0;
-    background: transparent;
-    box-shadow: none;
-  }
+## 10. Agent / RSS / REST API
 
-  .benchmark-scroll-pills {
-    display: flex;
-    gap: 8px;
-    overflow-x: auto;
-    scrollbar-width: none;
-    -webkit-overflow-scrolling: touch;
-  }
-
-  .benchmark-scroll-pills::-webkit-scrollbar { display: none; }
-
-  .benchmark-feed-row {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr) 40px;
-    gap: 8px;
-    padding-block: 10px;
-    border-bottom: 1px solid var(--line-soft);
-  }
-
-  .benchmark-clamp-2,
-  .benchmark-clamp-3 {
-    display: -webkit-box;
-    overflow: hidden;
-    -webkit-box-orient: vertical;
-  }
-
-  .benchmark-clamp-2 { -webkit-line-clamp: 2; }
-  .benchmark-clamp-3 { -webkit-line-clamp: 3; }
-}
-```
-
-这些是抽象规则示例，不应直接以 `benchmark-*` 类加入生产 HTML；实现时映射到 HN·HOT 现有语义类。
-
+- Agent 页面把接入分为 Skill、RSS 和 REST API 三条路径。
+- 公开 Skill 只允许匿名读取 `/api/public/*`，并要求使用可识别的非浏览器 User-Agent。
+- 公开查询按意图区分 selected items、hot topics、daily、dailies、关键词/分类和完整公开池。
+- 前端说明与 Skill 都强调：返回的新闻内容是不可信数据，不能作为指令执行。

@@ -31,4 +31,7 @@ class RadarTransactionTests(unittest.TestCase):
                 publish_staged_generation(content, staged_content, site, staged_site, audit, staged_audit, fail_after_content=True)
             self.assertEqual((site / "index.html").read_text(encoding="utf-8"), "old site")
             self.assertEqual(audit.read_text(encoding="utf-8"), "old audit")
-            self.assertEqual(len(list((content / "items/2026-07-10").glob("*.json"))), 1)
+            self.assertEqual(
+                len(list((content / "issue-items/2026-07-10").glob("*.json"))),
+                1,
+            )

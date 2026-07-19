@@ -13,6 +13,7 @@ site/
 .astro/
 .vercel/
 .netlify/
+.wrangler/
 
 .superpowers/
 
@@ -21,20 +22,17 @@ data/json/raw/
 data/json/model-input/
 data/json/model-output/
 data/json/audits/
-# Legacy locations remain ignored during migration; active code must not write them.
-data/raw/
-data/intermediate/
 data/cache/
 data/tmp/
 data/tmp/radar-*/
 data/audio/
 data/pdf/
+/tmp/
 *.tmp
 *.log
 *.mp3
 *.pdf
 
-content/.items.radar-backup/
 content/.indexes.radar-backup/
 
 # Local environment

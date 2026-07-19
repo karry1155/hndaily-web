@@ -1,0 +1,36 @@
+{
+  "schema_version": 7,
+  "item_id": "hndaily-20260714-58468-19700672",
+  "published_date": "2026-07-14",
+  "collected_date": "2026-07-19",
+  "page_number": "005",
+  "page_name": "中国新闻",
+  "page_sequence": 2,
+  "author": "",
+  "enrichment_status": "complete",
+  "scope": "national",
+  "scope_evidence": "完善自然资源资产管理制度体系",
+  "subjects": [],
+  "locations": [],
+  "topics": [
+    {
+      "topic_id": "ecology",
+      "name": "生态环境",
+      "evidence": "完善自然资源资产管理制度体系"
+    }
+  ],
+  "event_relation": {
+    "relation": "none",
+    "event_id": null,
+    "event_name": null,
+    "evidence": null,
+    "update_summary": null
+  },
+  "block": {
+    "source": "海南日报",
+    "title": "完善自然资源资产管理制度体系",
+    "content": "据新华社电 中共中央办公厅、国务院办公厅日前印发《关于完善自然资源资产管理制度体系的意见》。《意见》提出，以健全自然资源资产产权制度为主线，强化自然资源整体保护，促进自然资源资产高效配置，维护自然资源资产所有者权益，健全自然资源资产管理体制机制，加强监督管理，守牢资源安全底线，为推进人与自然和谐共生的现代化提供有力支撑和保障。\n\n主要目标是，到2030年，自然资源资产管理制度体系更加健全，履职主体更加明确、资产家底更加清晰、整体保护更加有力、资产配置更加高效、考核监督更加完善，各类自然资源资产和全部国土空间得到有效保护，自然资源资产管理水平明显提升。到2035年，自然资源资产管理体制机制运转顺畅，系统完备的自然资源资产管理制度体系全面建立，自然资源资产管理水平全面提升。",
+    "ai_summary": "国家提出到2030年进一步健全自然资源资产管理制度，到2035年全面建立系统完备的管理体系。",
+    "original_url": "http://news.hndaily.cn/html/2026-07/14/content_58468_19700672.htm"
+  }
+}

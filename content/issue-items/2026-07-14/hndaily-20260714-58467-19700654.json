@@ -1,0 +1,36 @@
+{
+  "schema_version": 7,
+  "item_id": "hndaily-20260714-58467-19700654",
+  "published_date": "2026-07-14",
+  "collected_date": "2026-07-19",
+  "page_number": "004",
+  "page_name": "本省新闻",
+  "page_sequence": 5,
+  "author": "",
+  "enrichment_status": "complete",
+  "scope": "hainan",
+  "scope_evidence": "快乐暑假\n有学有玩",
+  "subjects": [],
+  "locations": [],
+  "topics": [
+    {
+      "topic_id": "education-talent",
+      "name": "教育人才",
+      "evidence": "快乐暑假\n有学有玩"
+    }
+  ],
+  "event_relation": {
+    "relation": "none",
+    "event_id": null,
+    "event_name": null,
+    "evidence": null,
+    "update_summary": null
+  },
+  "block": {
+    "source": "海南日报",
+    "title": "快乐暑假\n有学有玩",
+    "content": "海南多地开启暑期托管服务，以多元化的公益课程缓解学生暑期“看护难”问题，让孩子们度过一个丰富多彩的假期。",
+    "ai_summary": "海南多地推出公益暑期托管和兴趣课程，缓解家庭假期儿童看护难题。",
+    "original_url": "http://news.hndaily.cn/html/2026-07/14/content_58467_19700654.htm"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "schema_version": 7,
+  "item_id": "hndaily-20260713-58471-19697343",
+  "published_date": "2026-07-13",
+  "collected_date": "2026-07-19",
+  "page_number": "008",
+  "page_name": "文化周刊",
+  "page_sequence": 5,
+  "author": "",
+  "enrichment_status": "complete",
+  "scope": "national",
+  "scope_evidence": "夏季稻熟时节（外一首）",
+  "subjects": [],
+  "locations": [],
+  "topics": [
+    {
+      "topic_id": "culture-tourism-sports",
+      "name": "文旅体育",
+      "evidence": "夏季稻熟时节（外一首）"
+    }
+  ],
+  "event_relation": {
+    "relation": "none",
+    "event_id": null,
+    "event_name": null,
+    "evidence": null,
+    "update_summary": null
+  },
+  "block": {
+    "source": "海南日报",
+    "title": "夏季稻熟时节（外一首）",
+    "content": "■ 倪俊宇\n\n那穿越四季晨风夕雨的\n\n多彩憧憬，把田野\n\n铺成无垠的金黄\n\n照亮汗珠与露珠上的光芒\n\n熏香翠芽与绿叶间的鸟鸣\n\n田园间的小路，蜿蜒出\n\n旧时牧笛的韵律\n\n牵我的心绪，在一垅垅\n\n激情的灿烂中，寻觅\n\n篱笆上丝瓜花的笑靥\n\n老井旁浸湿的乳名……\n\n村前那不肯走远的\n\n小溪涟漪，洇进\n\n多少暮色中不散的炊烟\n\n看，酸豆树摇，三角梅动\n\n是你，抚摸过老屋檐角\n\n携花香的风，吹我\n\n乡思如春色般葱茏……\n\n★故乡那口老井\n\n哦老井，睁着失眠的眼睛\n\n总看到母亲躬着腰挑水\n\n挑起炊烟袅袅的日出日落\n\n那甘甜的井水，喂养了\n\n我童年斑斓的遐想……\n\n井水。渗入花朵和果实\n\n养着一方烟火味的风俗\n\n那汲水或高或低的谣曲\n\n缠绕井边繁茂的酸豆树\n\n那井水清甜甜的情意\n\n滋润乡亲黄土般憨厚的心\n\n井台上，戏谑打闹的欢声\n\n或轻或重地咬住岁月不放\n\n有时，井畔清脆的蛙鸣\n\n也是一首乡情的唐诗\n\n会擦亮曙色与夕照……\n\n哟，家乡井水，只一捧挹进心口\n\n血脉里就会时时听到回音\n\n你的深刻，使所有探家的人\n\n在你的面前都低下头来",
+    "ai_summary": "两首诗描写夏日稻熟和乡村劳作景象，记录人与土地相伴的季节记忆。",
+    "original_url": "http://news.hndaily.cn/html/2026-07/13/content_58471_19697343.htm"
+  }
+}

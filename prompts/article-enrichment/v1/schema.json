@@ -85,7 +85,7 @@
       "properties": {
         "candidate_id": {"type": "string", "minLength": 1},
         "ai_summary": {"type": ["string", "null"], "maxLength": 300},
-        "scope": {"enum": ["national", "hainan", "mixed"]},
+        "scope": {"enum": ["national", "hainan", "domestic", "mixed", "foreign"]},
         "scope_evidence": {"$ref": "#/$defs/evidence"},
         "subjects": {"type": "array", "maxItems": 8, "items": {"$ref": "#/$defs/subject"}},
         "location_mentions": {"type": "array", "maxItems": 5, "items": {"$ref": "#/$defs/location"}},

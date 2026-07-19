@@ -1,0 +1,36 @@
+{
+  "schema_version": 7,
+  "item_id": "hndaily-20260713-58469-19697326",
+  "published_date": "2026-07-13",
+  "collected_date": "2026-07-19",
+  "page_number": "006",
+  "page_name": "世界新闻",
+  "page_sequence": 2,
+  "author": "",
+  "enrichment_status": "complete",
+  "scope": "foreign",
+  "scope_evidence": "乌克兰总统泽连斯基宣布将重组内阁",
+  "subjects": [],
+  "locations": [],
+  "topics": [
+    {
+      "topic_id": "external-relations",
+      "name": "对外交流",
+      "evidence": "乌克兰总统泽连斯基宣布将重组内阁"
+    }
+  ],
+  "event_relation": {
+    "relation": "none",
+    "event_id": null,
+    "event_name": null,
+    "evidence": null,
+    "update_summary": null
+  },
+  "block": {
+    "source": "海南日报",
+    "title": "乌克兰总统泽连斯基宣布将重组内阁",
+    "content": "新华社基辅7月12日电 （记者李东旭）乌克兰总统泽连斯基12日在社交媒体发文称，为保障新的政治战略的落实，他决定重组内阁。\n\n泽连斯基说，他当天与乌总理斯维里坚科讨论了内阁调整的细节并决定对内阁进行重组。他感谢斯维里坚科担任总理期间“清晰、稳定和高效”的工作，并已提议她负责一个“新的领域的工作”。\n\n泽连斯基表示，希望与乌各党派一道完成对乌内阁的重组。此外，乌执法机构的负责人也将进行调整。\n\n泽连斯基并没有明确斯维里坚科未来的职位以及她的继任人选，但乌克兰国际文传电讯社当天援引乌议员雅罗斯拉夫·热列兹尼亚克的话报道，斯维里坚科将离职并有可能出任乌驻美大使。热列兹尼亚克称，目前尚未确定新总理人选。\n\n乌克兰最高拉达（议会）去年7月17日投票批准原第一副总理兼经济部长斯维里坚科接替什梅加尔出任总理。",
+    "ai_summary": "乌克兰总统泽连斯基宣布将重组内阁，并已与总理斯维里坚科讨论调整细节。",
+    "original_url": "http://news.hndaily.cn/html/2026-07/13/content_58469_19697326.htm"
+  }
+}

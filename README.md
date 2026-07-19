@@ -2,92 +2,66 @@
 
 HNHOT 放大海南日报编辑已经做出的专业判断，并把每日报道加工为可检索、可关联、可长期积累的海南认知资料。它不是第二套新闻精选系统，也不依赖仓库外的抓取技能。
 
-## Self-contained daily workflow
+## Daily workflow
 
 抓取指定日期或最新一期：
 
 ```bash
-python3 scripts/crawler.py 2026-07-18
+python3 scripts/crawler.py 2026-07-12
 python3 scripts/crawler.py
 ```
 
-原始抓取写入 `data/json/raw/`。运行当前两阶段发布流水线：
+原始抓取写入 `data/json/raw/`。运行两阶段发布流水线：
 
 ```bash
 bash scripts/run_radar_pipeline.sh YYYY-MM-DD
 ```
 
 首次运行返回 `STATUS=MODEL_OUTPUT_REQUIRED`。按照命令打印的
-`MODEL_INPUT_JSON` 生成 `MODEL_OUTPUT_JSON` 后重跑；成功返回
-`STATUS=COMPLETE`。
+`MODEL_INPUT_JSON` 和 `prompts/article-enrichment/v1/` 生成
+`MODEL_OUTPUT_JSON` 后重跑；成功返回 `STATUS=COMPLETE`。
 
-项目内私有 JSON 分别位于：
+私有流水线 JSON 位于：
 
 - `data/json/raw/`
 - `data/json/model-input/`
 - `data/json/model-output/`
 - `data/json/audits/`
 
-HNHOT 当前结构化提示词和严格输出契约位于
-`prompts/article-enrichment/v1/`，运行时契约为 `schema_version: 7` /
-`prompt_version: hnhot-v1`。发布流程保留每一篇有效报道，不再评分、推荐或二次精选。
+运行时契约为 `schema_version: 7` / `prompt_version: hnhot-v1`。发布流程保留每一篇通过确定性过滤的有效报道，不评分、不推荐、不二次精选。
 
-仓库内附带的 schema-v5 演示数据可就地迁移：
+## Public data
+
+通过契约验证的数据写入：
+
+- `content/issues/YYYY-MM-DD.json`：整期版面、逻辑栏目与文章顺序。
+- `content/issue-items/YYYY-MM-DD/ITEM_ID.json`：文章原文与结构化加工结果。
+- `content/indexes/`：头版、全报和搜索所需的精简索引。
+
+私有 JSON 被 Git 忽略；`content/` 只保存通过 `hnhot-v1` 验证的公开数据。当前仓库内已验证的数据集为 2026-07-12 至 2026-07-14：共 35 版、123 篇有效报道，其中头版 21 篇。头版首页按日期倒序连续展示，可向下回看往期头版。
+
+文章身份采用可重放的来源键：常规海南日报链接生成
+`hndaily-{YYYYMMDD}-{URL第一段编号}-{URL第二段编号}`，例如
+`hndaily-20260712-58464-19696008`。无法解析编号时使用规范化原文链接的
+SHA-256 前 16 位作为回退。发布前会在完整历史数据中同时检查 `item_id`
+和规范化原文链接，冲突时停止发布，不以抓取时间戳生成身份。
+
+## Build and preview
 
 ```bash
-python3 scripts/migrate_hnhot_content.py content
 python3 scripts/radar_render.py content site
-```
-
-迁移内容标记为 `enrichment_status: legacy-derived`，不会冒充模型输出；之后正常运行流水线时，会按日期替换为有原文证据的 `complete` 结构化结果。
-
-## Verified datasets
-
-- 2026-07-08：8 版、35 篇原始文章、20 篇入选。
-- 2026-07-09：7 版、28 篇原始文章、17 篇入选；由 2026-07-10 的真实抓取独立生成，未复用 7 月 8 日模型输出。
-- 验证命令：`RADAR_REAL_DATA_REQUIRED=1 python3 -m unittest discover -s tests -v`。
-- 验证日期：2026-07-10。
-
-## Local Workflow
-
-Validate a digest:
-
-```bash
-python3 scripts/validate_digest.py content/daily/YYYY-MM-DD.json
-```
-
-Render the static site:
-
-```bash
-python3 scripts/render_site.py
-```
-
-Preview locally:
-
-```bash
 python3 -m scripts.preview
 ```
 
-Open `http://127.0.0.1:8765`.
+本地访问 `http://127.0.0.1:8765`。主要路由：
 
-## Public Routes
+- `/`：海南日报当日头版与世界新闻信息池，提供 N/H/D/M/F 范围分类和国内、全球排行榜。
+- `/all/`、`/all/YYYY-MM-DD/`：按逻辑版面阅读整期报纸。
+- `/items/YYYY-MM-DD/ITEM_ID/`：文章详情与结构化摘要。
+- `/daily/`、`/more/`：当前产品导航中的后续能力入口。
 
-- `/`：精选、分类、搜索、当下重点和按日期排列的精选标题。
-- `/all/`：最新一期完整读报。
-- `/all/YYYY-MM-DD/`：按原报版面浏览所有参与 AI 评分的文章，并访问原版 HTML 与 PDF。
-- `/daily/`：AI 日报。
-- `/about/`、`/changelog/`：关于与更新日志。
-
-生成的私有 JSON 位于本仓库目录内且被 Git 忽略；公开数据仍位于 `content/`。公开站点只发布精选内容与精简后的完整读报数据。
-
-## Codex Digest Pipeline
-
-Prepare every article for deterministic filtering and the full set of eligible candidates for Codex:
+## Verify
 
 ```bash
-bash scripts/run_daily_pipeline.sh
+python3 -m unittest discover -s tests -v
 ```
-
-The command prints `RAW_JSON`, `MODEL_INPUT_JSON`, `MODEL_OUTPUT_JSON`, `PREFILTER_JSON`, and `EDITORIAL_AUDIT_JSON`. Every raw article appears in the prefilter audit. The model input contains no URL or source object and includes every candidate that passes the high-confidence filters. Codex writes semantic fields and five 0–10 integer scores to the reported model-output path; code then computes final scores, deduplicates events, applies `hainan_relevance >= 6` and `final_score >= 65`, and publishes at most eight items without padding.
-
-See [docs/codex-digest-generation.md](docs/codex-digest-generation.md) for the exact automation steps and output contract.

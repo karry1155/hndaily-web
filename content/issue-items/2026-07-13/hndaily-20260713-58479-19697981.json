@@ -1,0 +1,44 @@
+{
+  "schema_version": 7,
+  "item_id": "hndaily-20260713-58479-19697981",
+  "published_date": "2026-07-13",
+  "collected_date": "2026-07-19",
+  "page_number": "016",
+  "page_name": "故事",
+  "page_sequence": 1,
+  "author": "",
+  "enrichment_status": "complete",
+  "scope": "hainan",
+  "scope_evidence": "万宁日月湾",
+  "subjects": [],
+  "locations": [
+    {
+      "location_id": "hainan-wanning",
+      "name": "万宁市",
+      "code": "469006",
+      "level": "county",
+      "evidence": "万宁"
+    }
+  ],
+  "topics": [
+    {
+      "topic_id": "culture-tourism-sports",
+      "name": "文旅体育",
+      "evidence": "编者按"
+    }
+  ],
+  "event_relation": {
+    "relation": "none",
+    "event_id": null,
+    "event_name": null,
+    "evidence": null,
+    "update_summary": null
+  },
+  "block": {
+    "source": "海南日报",
+    "title": "编者按",
+    "content": "浪潮奔涌的万宁日月湾，乘着滨海文体旅融合的东风，催生了两类极具海岛气质的职业。飒爽的桨板教练凌波而行，凭借专业功底陪伴游客漫游河海，是活力与力量的鲜活代表；沙滩编发师巧手梳辫，把海岛风情编进发丝，装点游客的滨海出行时光。越来越多年轻人扎根这片海湾，在新潮职业里拥抱山海日常，找到属于自己的人生价值与身份归属感。",
+    "ai_summary": "万宁日月湾的桨板教练和沙滩编发师，把滨海旅游需求发展成适合年轻人扎根的新职业。",
+    "original_url": "http://news.hndaily.cn/html/2026-07/13/content_58479_19697981.htm"
+  }
+}

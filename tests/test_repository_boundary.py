@@ -23,6 +23,8 @@ class RepositoryBoundaryTests(unittest.TestCase):
         self.assertIn("scripts/run_radar_pipeline.sh", tracked_runtime_paths)
         for relative_path in tracked_runtime_paths:
             path = ROOT / relative_path
+            if not path.exists():
+                continue
             text = path.read_text(encoding="utf-8")
             for value in forbidden:
                 self.assertNotIn(value, text, f"{path}: {value}")
@@ -34,6 +36,8 @@ class RepositoryBoundaryTests(unittest.TestCase):
         parent_markers = ("ROOT" + ".parent /", "parents[" + "2] /")
         for relative_path in tracked_paths:
             path = ROOT / relative_path
+            if not path.exists():
+                continue
             if path.suffix != ".py":
                 continue
             text = path.read_text(encoding="utf-8")
@@ -54,17 +58,34 @@ class RepositoryBoundaryTests(unittest.TestCase):
         ):
             self.assertIn(value, readme)
 
-    def test_json_readme_documents_isolated_editorial_v1_artifacts(self):
+    def test_json_readme_documents_only_hnhot_v1_artifacts(self):
         readme = (ROOT / "data/json/README.md").read_text(encoding="utf-8")
         for value in (
-            "model-input/editorial-v1/YYYY-MM-DD.json",
-            "model-output/editorial-v1/YYYY-MM-DD.json",
-            "audits/editorial-v1/YYYY-MM-DD.prefilter.json",
-            "audits/editorial-v1/YYYY-MM-DD.editorial-audit.json",
-            "incompatible",
-            "isolated",
+            "model-input/YYYY-MM-DD.json",
+            "model-output/YYYY-MM-DD.json",
+            "audits/YYYY-MM-DD.prefilter.json",
+            "audits/YYYY-MM-DD.publication.json",
+            "hnhot-v1",
         ):
             self.assertIn(value, readme)
+        self.assertNotIn("editorial-v1", readme)
+
+    def test_runtime_has_no_retired_selection_or_digest_modules(self):
+        retired = (
+            "run_daily_pipeline.sh",
+            "finalize_digest.py",
+            "radar_scoring.py",
+            "radar_select.py",
+            "content/items",
+            "editorial-v1",
+        )
+        runtime = "\n".join(
+            path.read_text(encoding="utf-8")
+            for path in (ROOT / "scripts").glob("*")
+            if path.is_file() and path.suffix in {".py", ".sh"}
+        )
+        for value in retired:
+            self.assertNotIn(value, runtime)
 
 
 if __name__ == "__main__":

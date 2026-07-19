@@ -1,0 +1,36 @@
+{
+  "schema_version": 7,
+  "item_id": "hndaily-20260714-58467-19700665",
+  "published_date": "2026-07-14",
+  "collected_date": "2026-07-19",
+  "page_number": "004",
+  "page_name": "本省新闻",
+  "page_sequence": 13,
+  "author": "",
+  "enrichment_status": "complete",
+  "scope": "hainan",
+  "scope_evidence": "学音乐学书法 主题研学乐趣多",
+  "subjects": [],
+  "locations": [],
+  "topics": [
+    {
+      "topic_id": "education-talent",
+      "name": "教育人才",
+      "evidence": "学音乐学书法 主题研学乐趣多"
+    }
+  ],
+  "event_relation": {
+    "relation": "none",
+    "event_id": null,
+    "event_name": null,
+    "evidence": null,
+    "update_summary": null
+  },
+  "block": {
+    "source": "海南日报",
+    "title": "学音乐学书法 主题研学乐趣多",
+    "content": "本报三亚7月13日电（海南日报全媒体记者刘杰）7月13日，作为三亚市本年度十大民生实事项目之一，由三亚市教育局、共青团三亚市委员会联合主办的三亚市2026年暑期托管服务正式开课，以多元化的公益课程缓解学生暑期“看护难”问题，陪伴孩子们度过一个丰富多彩的假期。\n\n安全教育课外，各校区还迎来了绘画、羽毛球等文体课程，颇受孩子们喜爱。在三亚市吉阳区临春小学校区，三亚市吉阳区河东小学学生吴清泽正手握蜡笔，在画纸上尽情发挥想象力。“暑假能和同学们一起画画，还能学做手工，太有意思了！”吴清泽高兴地说道。\n\n据介绍，2026年三亚市暑期托管服务有序开放教室、运动场馆等各类资源设施，精心策划航模、音乐、舞蹈、手工、硬笔书法、作业答疑、绘画及球类等多元兴趣课程，满足学生个性化发展需求。此外，还计划开展一系列心理健康教育等主题讲座，并筹划多种主题研学活动，拓宽孩子们的视野，提升他们的综合素养，让孩子们在“玩中学、学中悟”。",
+    "ai_summary": "三亚暑期托管服务提供音乐、书法、航模和研学等公益课程，缓解学生假期看护难题。",
+    "original_url": "http://news.hndaily.cn/html/2026-07/14/content_58467_19700665.htm"
+  }
+}

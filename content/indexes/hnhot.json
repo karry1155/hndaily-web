@@ -1,18 +1,18 @@
 {
-  "latest_date": "2026-07-10",
+  "latest_date": "2026-07-14",
   "dates": [
-    "2026-07-10",
-    "2026-07-09",
-    "2026-07-08"
+    "2026-07-14",
+    "2026-07-13",
+    "2026-07-12"
   ],
   "front_page_feeds": [
-    "/static/front-page/2026-07-10.json",
-    "/static/front-page/2026-07-09.json",
-    "/static/front-page/2026-07-08.json"
+    "/static/front-page/2026-07-14.json",
+    "/static/front-page/2026-07-13.json",
+    "/static/front-page/2026-07-12.json"
   ],
   "issue_feeds": [
-    "/static/issue-feed/2026-07-10.json",
-    "/static/issue-feed/2026-07-09.json",
-    "/static/issue-feed/2026-07-08.json"
+    "/static/issue-feed/2026-07-14.json",
+    "/static/issue-feed/2026-07-13.json",
+    "/static/issue-feed/2026-07-12.json"
   ]
 }

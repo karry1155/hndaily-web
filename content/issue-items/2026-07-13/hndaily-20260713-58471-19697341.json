@@ -1,0 +1,44 @@
+{
+  "schema_version": 7,
+  "item_id": "hndaily-20260713-58471-19697341",
+  "published_date": "2026-07-13",
+  "collected_date": "2026-07-19",
+  "page_number": "008",
+  "page_name": "文化周刊",
+  "page_sequence": 3,
+  "author": "",
+  "enrichment_status": "complete",
+  "scope": "hainan",
+  "scope_evidence": "老爸茶",
+  "subjects": [],
+  "locations": [
+    {
+      "location_id": "hainan",
+      "name": "海南省",
+      "code": "460000",
+      "level": "province",
+      "evidence": "海南"
+    }
+  ],
+  "topics": [
+    {
+      "topic_id": "culture-tourism-sports",
+      "name": "文旅体育",
+      "evidence": "老爸茶"
+    }
+  ],
+  "event_relation": {
+    "relation": "none",
+    "event_id": null,
+    "event_name": null,
+    "evidence": null,
+    "update_summary": null
+  },
+  "block": {
+    "source": "海南日报",
+    "title": "老爸茶",
+    "content": "■ 黄辛力\n\n它不只是一种称谓\n\n也不是某些人的专属\n\n它的产权属于整个岛屿\n\n它是氤氲街头巷尾的芬芳\n\n它是一种传承\n\n一幅岛民的独特生活图景\n\n啜一口黑咖啡\n\n心中泛起别样的涟漪\n\n杯底沉淀的是浓厚的乡愁\n\n不灭的记忆\n\n嚼一口“煎堆”\n\n清瘦如我依稀看到\n\n乡亲父老的圆满\n\n糯糯的萝卜糕\n\n是沙土地深情的回赠\n\n在逼仄的空间\n\n在喧哗的人海里\n\n我依旧找到宁静的存在\n\n依旧习惯于倾听与消解\n\n我听到了东家盖了两层楼房\n\n我听到了西家的儿子准备办婚宴\n\n当然我也听到我的茶友\n\n用颇有特色的海南普通话\n\n亲切地喊着我的大名\n\n我的乳名已经隐藏在\n\n老爸茶店无法清洗干净的某个茶具\n\n当然，我与老爸茶的关系\n\n不清不楚\n\n忽远忽近",
+    "ai_summary": "诗歌借海南老爸茶的市井气息，描写茶客日常和海岛生活的人情味。",
+    "original_url": "http://news.hndaily.cn/html/2026-07/13/content_58471_19697341.htm"
+  }
+}

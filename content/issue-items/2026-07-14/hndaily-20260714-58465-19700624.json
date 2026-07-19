@@ -1,0 +1,36 @@
+{
+  "schema_version": 7,
+  "item_id": "hndaily-20260714-58465-19700624",
+  "published_date": "2026-07-14",
+  "collected_date": "2026-07-19",
+  "page_number": "002",
+  "page_name": "本省新闻",
+  "page_sequence": 5,
+  "author": "",
+  "enrichment_status": "complete",
+  "scope": "mixed",
+  "scope_evidence": "海南果蔬汁走俏海外",
+  "subjects": [],
+  "locations": [],
+  "topics": [
+    {
+      "topic_id": "external-relations",
+      "name": "对外交流",
+      "evidence": "海南果蔬汁走俏海外"
+    }
+  ],
+  "event_relation": {
+    "relation": "none",
+    "event_id": null,
+    "event_name": null,
+    "evidence": null,
+    "update_summary": null
+  },
+  "block": {
+    "source": "海南日报",
+    "title": "海南果蔬汁走俏海外",
+    "content": "近日，位于海口的海南南派实业有限公司生产车间内，一派繁忙景象。工人们有序作业，将柠檬等果蔬送上自动化生产线，进行分拣、榨汁、包装等工序。一批批热带果蔬汁整装待发，即将经海口海关监管出口至日本、韩国、泰国、马来西亚等国家。\n\n“公司热带果蔬原粉、浓缩果蔬汁出口量连年稳步增长，在深耕东南亚传统市场基础上，正积极布局欧美、中东高端市场，海外渠道持续拓宽。”海南南派实业负责人表示，2026年上半年公司产量同比增长125%，出口欧洲、亚洲、非洲、美洲等几十个国家。\n\n依托自贸港封关运作政策红利与海关高效监管服务，海南热带果蔬汁产业持续拓宽国际“朋友圈”，成为海南热带特色高效农业的亮眼名片。\n\n海南日报全媒体记者 袁琛 摄",
+    "ai_summary": "海南热带果蔬汁出口日本、韩国及东南亚等市场，相关企业上半年产量同比增长125%，并继续拓展欧美和中东。",
+    "original_url": "http://news.hndaily.cn/html/2026-07/14/content_58465_19700624.htm"
+  }
+}

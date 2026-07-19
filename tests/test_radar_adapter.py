@@ -18,20 +18,49 @@ class RadarAdapterTests(unittest.TestCase):
         self.assertEqual(candidates[0]["page_url"], "http://example.test/2026-07-08/page-1")
         self.assertEqual(candidates[0]["pdf_url"], "http://example.test/2026-07-08/page-1.pdf")
 
-    def test_stable_id_uses_canonical_url_content_id(self):
+    def test_stable_id_uses_date_and_both_canonical_url_content_ids(self):
         raw = raw_issue()
         raw["pages"][0]["articles"][0]["url"] = (
             "http://news.hndaily.cn/html/2026-07/08/content_58466_19684674.htm"
         )
         first, _ = adapt_hndaily(raw)
         second, _ = adapt_hndaily(raw)
-        self.assertEqual(first[0]["item_id"], "hndaily-19684674")
+        self.assertEqual(
+            first[0]["item_id"],
+            "hndaily-20260708-58466-19684674",
+        )
         self.assertEqual(first[0]["item_id"], second[0]["item_id"])
+
+    def test_stable_id_fallback_uses_canonical_url_not_fetch_time(self):
+        raw = raw_issue()
+        raw["pages"][0]["articles"][0]["url"] = (
+            "http://news.hndaily.cn/story/example?utm_source=test"
+        )
+        first, _ = adapt_hndaily(raw)
+        raw["fetched_at"] = "2026-07-09T23:59:59+08:00"
+        raw["pages"][0]["articles"][0]["url"] = (
+            "https://news.hndaily.cn/story/example"
+        )
+        second, _ = adapt_hndaily(raw)
+        self.assertRegex(
+            first[0]["item_id"],
+            r"^hndaily-20260708-url-[0-9a-f]{16}$",
+        )
+        self.assertEqual(first[0]["item_id"], second[0]["item_id"])
+
+    def test_rejects_same_item_id_for_different_canonical_urls(self):
+        raw = raw_issue(article_count=2)
+        raw["pages"][0]["articles"][1]["url"] = (
+            "https://mirror.example.test/html/2026-07/08/"
+            "content_58466_19684001.htm"
+        )
+        with self.assertRaisesRegex(ContractError, "item_id collision"):
+            adapt_hndaily(raw)
 
     def test_rejects_non_http_source_url(self):
         candidate = {
             "candidate_id": "A001",
-            "item_id": "hndaily-1",
+            "item_id": "hndaily-20260708-58466-1",
             "source": "海南日报",
             "title": "标题",
             "content": "正文",

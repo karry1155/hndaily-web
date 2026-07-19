@@ -22,7 +22,7 @@ MODEL_ITEM_FIELDS = {
     "location_mentions", "topic_mentions", "event_relation",
 }
 SUBJECT_TYPES = {"person", "government", "organization", "company", "project"}
-SCOPES = {"national", "hainan", "mixed"}
+SCOPES = {"national", "hainan", "domestic", "mixed", "foreign"}
 
 
 class ModelOutputError(ContractError):

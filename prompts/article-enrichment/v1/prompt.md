@@ -1,54 +1,71 @@
-# HNHOT article enrichment prompt v1
+# HNHOT 文章语义增强提示词 v1
 
-## Role
+## 任务
 
-You enrich every valid Hainan Daily article for long-term retrieval. The
-newspaper editor has already decided what to publish. Do not score, select,
-recommend, rank, discard or rewrite the source as commentary.
+为每篇有效的《海南日报》文章生成便于长期检索的结构化信息。文章已经由编辑确定发布；不要评分、筛选、推荐、排序、丢弃文章，也不要发表评论。
 
-## Input boundary
+## 输入
 
-Use only each item's title, full article content, `location_candidates`,
-`topic_candidates` and `event_candidates`. Never use outside knowledge to
-complete a missing fact. Every semantic decision must be grounded in 原文证据.
+仅使用每条输入中的标题、正文、`location_candidates`、`topic_candidates` 和 `event_candidates`。不得使用外部知识补全缺失事实；所有语义判断都必须有原文证据。
 
-## Output boundary
+## 输出
 
-Return one JSON object that conforms exactly to `schema.json`. Preserve the
-input item order and candidate IDs. Do not add URLs, source metadata, scores,
-recommendation reasons, final IDs or extra keys. 不得猜测; when an event cannot
-be linked safely, return relation `none`.
+返回一个严格符合 `schema.json` 的 JSON 对象，并遵守以下要求：
 
-## Summary
+- 保持输入条目的顺序和 `candidate_id` 不变。
+- 将输入中的 `schema_version`、`prompt_version` 和 `input_fingerprint` 原样返回，不要自行计算或改写。
+- 不要添加网址、来源元数据、评分、推荐理由、最终文章 ID 或其他字段。
+- 不得猜测。事件无法可靠关联时，将 `relation` 设为 `none`。
 
-Write one factual `ai_summary`, normally 1–3 Chinese sentences. Remove meeting
-ritual, slogans, empty praise and repeated background. Preserve concrete
-actions, places, dates, numbers, policy changes, project progress and next
-steps. If the body is missing, return `null`; never infer a summary from the
-headline alone.
+## 摘要
 
-## N/H/M scope
+`ai_summary` 面向普通读者，原则上只写一句简洁、客观的中文：
 
-- `national` (N): nationwide actor/action with no direct Hainan action or effect.
-- `hainan` (H): the main event, action or governance object occurs in Hainan.
-- `mixed` (M): a national/international context has a directly citable Hainan
-  person, institution, company, project, competition or activity connection.
+- 直接写最值得知道的事实，例如具体问题、变化、行动或结果，以及它对普通人的意义。
+- 只保留最有信息量的细节；地点、日期、数字、政策影响、项目进展或下一步计划并非都要写。
+- 删除会议流程、口号、空泛评价、重复背景、论证过程，以及不影响实际结果的调研、协调和机制建设。
+- 评论文章应概括具体问题及已提到的实际应对，不要复述作者如何展开论证。
+- 不要以“文章指出”“文章主张”等表述开头。
+- 正文缺失时返回 `null`，绝不能只根据标题推测摘要。
 
-Apply precedence: mixed first, then hainan, then national. Copy a short
-`scope_evidence` excerpt from the title or body.
+## 范围
 
-## Subjects, locations and topics
+范围分类回答的是“这条信息主要提供哪一种观察视角”，不要只看事件发生地，也不要只因出现“海南”“国际”或外省地名就决定分类。
 
-Extract stable subjects only: person, government, organization, company or
-project. Preserve the source name and evidence; use `role: null` when absent.
-Choose locations only from `location_candidates` and topics only from
-`topic_candidates`. Return empty arrays when the source does not support a
-choice.
+- `mixed`：海南与境外直接发生联系，或报道的核心价值明确面向开放和国际交流。包括进出口、跨境贸易与投资、境外市场、外国人在琼服务、外国机构来琼、国际赛事与会展、国际旅游、国际传播，以及海南主体走向境外等。即使行动发生在海南，只要主要服务对象、参与者或发展目标明确面向境外，也归为 `mixed`。
+- `domestic`：海南与中国其他省区市发生直接联系，且跨省联系本身是报道的核心。包括海南主体赴省外行动、海南与内地之间的新航线或通道、明确的跨省协作和人员、货物流动。
+- `hainan`：主要关乎海南内部的本地生活、民生治理、本地产业、科技创新、规划建设、基础设施、生态文化和公共服务。
+- `foreign`：主要事件和行动主体在中国以外，且没有海南人物、机构、企业、项目或活动直接参与。
+- `national`：全国性或中国其他地区的人物、行动和政策，且没有海南主体参与，也不以海南本地生活或产业为主要内容。
 
-## Event relation
+按以下顺序判断：
 
-Choose `existing` only when one supplied event candidate is clearly the same
-continuing matter. Choose `new` for a distinct event that can accumulate future
-coverage. Choose `none` for commentary, weak similarity or insufficient facts.
-For existing/new events, describe only the new development in `update_summary`
-and copy a supporting evidence excerpt.
+1. 海南是否与境外主体、跨境流动或国际开放场景发生直接联系，或明确面向境外服务与传播？是则为 `mixed`。
+2. 海南与中国其他省区市的直接联系是否构成核心信息？是则为 `domestic`。
+3. 是否主要关乎海南本地生活、产业、治理和建设？是则为 `hainan`。
+4. 是否主要发生在境外且没有海南直接参与？是则为 `foreign`。
+5. 其余全国性或中国其他地区信息归为 `national`。
+
+注意：
+
+- “海南与国内其他省份发生联系”不等于 `mixed`。例如，海南救援队赴广西救灾、海口至内地城市的新航线归为 `domestic`。
+- 全国性政策在海南落地、海南本地人物参加全国比赛等，如果跨省联系不是核心信息，仍归为 `hainan`。
+- “全球”“国际”等词本身不等于 `mixed`；正文必须表明具体的境外服务对象、国际参与者、跨境行动或开放目标。
+- 国际事件仅作为文章由头，而正文主体与海南及开放关系无关时，不归为 `mixed`。
+
+从标题或正文摘录简短的 `scope_evidence`。
+
+## 主体、地点和主题
+
+- `subjects` 只提取稳定主体：人物、政府、组织、企业或项目。名称和 `evidence` 必须来自原文；没有明确身份时将 `role` 设为 `null`。
+- `location_mentions` 只能从 `location_candidates` 中选择。
+- `topic_mentions` 只能从 `topic_candidates` 中选择。
+- 原文不足以支持选择时返回空数组。
+
+## 事件关系
+
+- `existing`：与某个 `event_candidates` 明确属于同一持续事件。
+- `new`：可在未来继续积累报道的独立事件。
+- `none`：评论文章、仅有弱相似性或事实不足。
+
+选择 `existing` 或 `new` 时，`update_summary` 只写本篇新增进展，并提供对应的原文证据。

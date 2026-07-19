@@ -3,7 +3,6 @@ from __future__ import annotations
 
 import json
 import sys
-from datetime import date
 from pathlib import Path
 
 if __package__ in (None, ""):
@@ -34,7 +33,7 @@ def build_generation(raw, model_input, model_output):
     issue, issue_items = build_public_issue(raw, candidates, semantic_items)
     scope_counts = {
         scope: sum(item["scope"] == scope for item in issue_items)
-        for scope in ("national", "hainan", "mixed")
+        for scope in ("national", "hainan", "domestic", "mixed", "foreign")
     }
     return issue_items, issue, {
         "schema_version": SCHEMA_VERSION,
@@ -48,11 +47,6 @@ def build_generation(raw, model_input, model_output):
     }
 
 
-def build_items(raw, model_input, model_output):
-    items, _issue, audit = build_generation(raw, model_input, model_output)
-    return items, audit
-
-
 def _write_json_atomic(path, value):
     path.parent.mkdir(parents=True, exist_ok=True)
     temporary = path.with_name(f".{path.name}.tmp")
@@ -62,9 +56,8 @@ def _write_json_atomic(path, value):
     temporary.replace(path)
 
 
-def finalize_to_store(raw, model_input, model_output, content_root, audit_path, as_of):
+def finalize_to_store(raw, model_input, model_output, content_root, audit_path):
     try:
-        date.fromisoformat(as_of)
         incoming, issue, audit = build_generation(raw, model_input, model_output)
         published_date = issue["date"]
         existing_issues = load_issues(content_root)
@@ -100,15 +93,15 @@ def finalize_to_store(raw, model_input, model_output, content_root, audit_path, 
 
 
 def main(argv):
-    if len(argv) != 7:
-        print("Usage: finalize_radar.py RAW INPUT OUTPUT CONTENT_ROOT AUDIT AS_OF", file=sys.stderr)
+    if len(argv) != 6:
+        print("Usage: finalize_radar.py RAW INPUT OUTPUT CONTENT_ROOT AUDIT", file=sys.stderr)
         return 1
     try:
         raw, model_input, model_output = [
             json.loads(Path(path).read_text(encoding="utf-8")) for path in argv[1:4]
         ]
         finalize_to_store(
-            raw, model_input, model_output, Path(argv[4]), Path(argv[5]), argv[6]
+            raw, model_input, model_output, Path(argv[4]), Path(argv[5])
         )
     except (FinalizeError, OSError, json.JSONDecodeError) as exc:
         print(f"ERROR: {exc}", file=sys.stderr)

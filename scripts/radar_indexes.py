@@ -1,11 +1,7 @@
 from __future__ import annotations
 
-from datetime import date
-from typing import Any
-
-from scripts.radar_contract import CATEGORIES, validate_stored_item
+from scripts.radar_contract import ContractError, canonicalize_source_url
 from scripts.radar_issue import validate_public_issue, validate_public_issue_item
-from scripts.radar_select import select_focus
 
 
 def _article_summary(article):
@@ -22,7 +18,9 @@ def _article_summary(article):
         "subjects": article["subjects"],
         "locations": article["locations"],
         "topics": article["topics"],
-        "detail_path": f'/items/{article["published_date"]}/{article["item_id"]}/',
+        "detail_path": (
+            f'/items/{article["published_date"]}/{article["item_id"]}/'
+        ),
     }
 
 
@@ -32,13 +30,28 @@ def build_hnhot_indexes(issues, articles):
         validate_public_issue(issue)
     for article in articles:
         validate_public_issue_item(article)
+    ids = [article["item_id"] for article in articles]
+    if len(set(ids)) != len(ids):
+        raise ContractError("duplicate item_id in historical publication")
+    ids_by_url: dict[str, str] = {}
+    for article in articles:
+        canonical_url = canonicalize_source_url(article["block"]["original_url"])
+        previous_id = ids_by_url.get(canonical_url)
+        if previous_id is not None and previous_id != article["item_id"]:
+            raise ContractError(
+                f"canonical URL collision: {canonical_url} maps to both "
+                f"{previous_id} and {article['item_id']}"
+            )
+        ids_by_url[canonical_url] = article["item_id"]
     dates = sorted({issue["date"] for issue in issues}, reverse=True)
     by_id = {article["item_id"]: article for article in articles}
     payloads = {
         "hnhot.json": {
             "latest_date": dates[0] if dates else None,
             "dates": dates,
-            "front_page_feeds": [f"/static/front-page/{value}.json" for value in dates],
+            "front_page_feeds": [
+                f"/static/front-page/{value}.json" for value in dates
+            ],
             "issue_feeds": [f"/static/issue-feed/{value}.json" for value in dates],
         },
         "issues.json": {"latest_date": dates[0] if dates else None, "dates": dates},
@@ -46,8 +59,10 @@ def build_hnhot_indexes(issues, articles):
     ordered = sorted(
         articles,
         key=lambda article: (
-            article["published_date"], article["page_number"],
-            article["page_sequence"], article["item_id"],
+            article["published_date"],
+            article["page_number"],
+            article["page_sequence"],
+            article["item_id"],
         ),
     )
     payloads["search-articles.json"] = {
@@ -61,14 +76,34 @@ def build_hnhot_indexes(issues, articles):
             for item_id in issue["front_page_item_ids"]
             if item_id in by_id
         ]
+        world_item_ids = [
+            row["item_id"]
+            for page in issue["pages"]
+            if page["page_name"] == "世界新闻"
+            for row in page["articles"]
+        ]
+        world_news = [
+            _article_summary(by_id[item_id])
+            for item_id in world_item_ids
+            if item_id in by_id
+        ]
+        front_page_ids = {row["item_id"] for row in front_page}
+        home_items = front_page + [
+            row for row in world_news if row["item_id"] not in front_page_ids
+        ]
         national = [row for row in front_page if row["scope"] == "national"]
         payloads[f"front-page/{published_date}.json"] = {
             "date": published_date,
-            "count": len(front_page),
+            "count": len(home_items),
+            "front_page_count": len(front_page),
+            "world_count": len(world_news),
             "national_ranking": [
                 {**row, "rank": rank} for rank, row in enumerate(national, 1)
             ],
-            "items": front_page,
+            "world_ranking": [
+                {**row, "rank": rank} for rank, row in enumerate(world_news, 1)
+            ],
+            "items": home_items,
         }
         date_articles = [
             _article_summary(article)
@@ -82,186 +117,3 @@ def build_hnhot_indexes(issues, articles):
             "items": date_articles,
         }
     return payloads
-
-CATEGORY_SLUGS = {
-    "机会": "opportunity",
-    "民生": "livelihood",
-    "产业": "industry",
-    "政策": "policy",
-    "城市": "city",
-    "观察": "observation",
-}
-
-
-def _summary(item: dict[str, Any]) -> dict[str, Any]:
-    return {
-        "item_id": item["item_id"],
-        "published_date": item["published_date"],
-        "daily_rank": item["daily_rank"],
-        "category": item["category"],
-        "title": item["block"]["title"],
-        "ai_summary": item["block"]["ai_summary"],
-        "recommendation_reason": item["block"]["recommendation_reason"],
-        "final_score": item["final_score"],
-        "entities": item["entities"],
-        "detail_path": (
-            f"/items/{item['published_date']}/{item['item_id']}/"
-        ),
-    }
-
-
-def build_search_indexes(selected_items, issue_items):
-    def rows(values, include_reason=False):
-        return [
-            {
-                "item_id": item["item_id"],
-                "published_date": item["published_date"],
-                "title": item["block"]["title"],
-                "ai_summary": item["block"]["ai_summary"],
-                **(
-                    {
-                        "recommendation_reason": item["block"]["recommendation_reason"],
-                        "final_score": item["final_score"],
-                        "entities": item["entities"],
-                    }
-                    if include_reason else {}
-                ),
-                "detail_path": f'/items/{item["published_date"]}/{item["item_id"]}/',
-            }
-            for item in values
-        ]
-    return {
-        "search-selected.json": {"items": rows(selected_items, True)},
-        "search-issues.json": {"items": rows(issue_items)},
-    }
-
-
-def build_selected_feeds(items):
-    dates = sorted({item["published_date"] for item in items}, reverse=True)
-    ordered = sorted(
-        items, key=lambda item: (item["daily_rank"], item["item_id"])
-    )
-    payloads = {
-        f"selected-feed/{published_date}.json": {
-            "date": published_date,
-            "count": sum(
-                item["published_date"] == published_date for item in items
-            ),
-            "items": [
-                _summary(item)
-                for item in ordered
-                if item["published_date"] == published_date
-            ],
-        }
-        for published_date in dates
-    }
-    return {
-        "recent-selected.json": {
-            "dates": dates,
-            "feeds": [
-                f"/static/selected-feed/{published_date}.json"
-                for published_date in dates
-            ],
-        },
-        **payloads,
-    }
-
-
-def build_issue_date_index(issues):
-    dates = sorted((issue["date"] for issue in issues), reverse=True)
-    return {"latest_date": dates[0] if dates else None, "dates": dates}
-
-
-def _pages(prefix, values, page_size, stem="page"):
-    chunks = [
-        values[index : index + page_size]
-        for index in range(0, len(values), page_size)
-    ] or [[]]
-    return {
-        f"{prefix}/{stem}-{number:03d}.json": {
-            "page": number,
-            "page_count": len(chunks),
-            "items": [_summary(item) for item in chunk],
-        }
-        for number, chunk in enumerate(chunks, 1)
-    }
-
-
-def build_indexes(items, as_of, page_size=20):
-    date.fromisoformat(as_of)
-    if type(page_size) is not int or page_size < 1:
-        raise ValueError("page_size must be positive")
-    for item in items:
-        validate_stored_item(item)
-    ordered = sorted(
-        items,
-        key=lambda item: (
-            -int(item["published_date"].replace("-", "")),
-            item["daily_rank"],
-            item["item_id"],
-        ),
-    )
-    indexes = _pages("all", ordered, page_size)
-    indexes["focus.json"] = {
-        "updated_through": max(
-            (item["published_date"] for item in items), default=as_of
-        ),
-        "items": [
-            {**_summary(item), "focus_rank": item["focus_rank"]}
-            for item in select_focus(items)
-        ],
-    }
-    for published_date in sorted({item["published_date"] for item in items}):
-        same_date = [
-            item for item in ordered if item["published_date"] == published_date
-        ]
-        indexes[f"dates/{published_date}.json"] = {
-            "date": published_date,
-            "items": [_summary(item) for item in same_date],
-        }
-    indexes.update(build_selected_feeds(items))
-    for category in CATEGORIES:
-        category_items = [
-            item for item in ordered if item["category"] == category
-        ]
-        slug = CATEGORY_SLUGS[category]
-        if category != "机会":
-            indexes.update(_pages(f"categories/{slug}", category_items, page_size))
-            continue
-        expired = []
-        active = []
-        for item in category_items:
-            opportunity = item["opportunity"]
-            if (
-                opportunity["lifecycle"] == "dated"
-                and opportunity["deadline_date"] < as_of
-            ):
-                expired.append(item)
-            else:
-                active.append(item)
-        lifecycle_order = {"dated": 0, "ongoing": 1, "unspecified": 2}
-        active.sort(
-            key=lambda item: (
-                lifecycle_order[item["opportunity"]["lifecycle"]],
-                item["opportunity"].get("deadline_date") or "9999-12-31",
-                -int(item["published_date"].replace("-", "")),
-                item["item_id"],
-            )
-        )
-        indexes.update(
-            _pages(
-                "categories/opportunity",
-                active,
-                page_size,
-                stem="active-page",
-            )
-        )
-        indexes.update(
-            _pages(
-                "categories/opportunity",
-                expired,
-                page_size,
-                stem="expired-page",
-            )
-        )
-    return indexes
