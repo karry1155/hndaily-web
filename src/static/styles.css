@@ -188,6 +188,7 @@ button, input { font: inherit; }
 .archive-preview .story-copy h3 { font-size: 14px; }
 .archive-preview .story-copy p { -webkit-line-clamp: 2; }
 .archive-issue-link { display: block; margin-top: 7px; padding: 8px 2px; color: var(--accent); font-size: 12px; font-weight: 650; }
+.archive-search-note { margin: 18px 0 0; color: var(--muted); font-size: 12px; }
 .archive-page > .archive-results-heading { padding: 25px 2px 11px; }
 .archive-page [data-archive-search-results] { padding-top: 23px; }
 

@@ -1,0 +1,359 @@
+{
+  "date": "2026-07-19",
+  "count": 7,
+  "front_page_count": 7,
+  "world_count": 0,
+  "national_ranking": [
+    {
+      "item_id": "hndaily-20260719-58464-19716147",
+      "published_date": "2026-07-19",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 1,
+      "title": "坚持开放共赢 驱动创新发展",
+      "ai_summary": "习近平在2026世界人工智能大会上提出开放共赢、成果共享等全球人工智能治理主张。",
+      "scope": "national",
+      "enrichment_status": "complete",
+      "subjects": [
+        {
+          "subject_id": "subject-e646b1e6febe4e",
+          "name": "习近平",
+          "type": "person",
+          "role": null,
+          "evidence": "习近平"
+        }
+      ],
+      "locations": [],
+      "topics": [
+        {
+          "topic_id": "policy-governance",
+          "name": "政策治理",
+          "evidence": "会议"
+        },
+        {
+          "topic_id": "external-relations",
+          "name": "对外交流",
+          "evidence": "国际"
+        }
+      ],
+      "detail_path": "/items/2026-07-19/hndaily-20260719-58464-19716147/",
+      "rank": 1
+    }
+  ],
+  "world_ranking": [],
+  "items": [
+    {
+      "item_id": "hndaily-20260719-58464-19716147",
+      "published_date": "2026-07-19",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 1,
+      "title": "坚持开放共赢 驱动创新发展",
+      "ai_summary": "习近平在2026世界人工智能大会上提出开放共赢、成果共享等全球人工智能治理主张。",
+      "scope": "national",
+      "enrichment_status": "complete",
+      "subjects": [
+        {
+          "subject_id": "subject-e646b1e6febe4e",
+          "name": "习近平",
+          "type": "person",
+          "role": null,
+          "evidence": "习近平"
+        }
+      ],
+      "locations": [],
+      "topics": [
+        {
+          "topic_id": "policy-governance",
+          "name": "政策治理",
+          "evidence": "会议"
+        },
+        {
+          "topic_id": "external-relations",
+          "name": "对外交流",
+          "evidence": "国际"
+        }
+      ],
+      "detail_path": "/items/2026-07-19/hndaily-20260719-58464-19716147/"
+    },
+    {
+      "item_id": "hndaily-20260719-58464-19716150",
+      "published_date": "2026-07-19",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 2,
+      "title": "2026年海南国际旅游岛欢乐节开幕",
+      "ai_summary": "2026海南国际旅游岛欢乐节7月18日开幕，将持续至8月18日，全省安排50余项活动。",
+      "scope": "mixed",
+      "enrichment_status": "complete",
+      "subjects": [
+        {
+          "subject_id": "subject-e646b1e6febe4e",
+          "name": "习近平",
+          "type": "person",
+          "role": null,
+          "evidence": "习近平"
+        },
+        {
+          "subject_id": "subject-947077d4770c96",
+          "name": "冯飞",
+          "type": "person",
+          "role": null,
+          "evidence": "冯飞"
+        },
+        {
+          "subject_id": "subject-6a6500510b9352",
+          "name": "刘小明",
+          "type": "person",
+          "role": null,
+          "evidence": "刘小明"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "海南"
+        },
+        {
+          "location_id": "hainan-haikou",
+          "name": "海口市",
+          "code": "460100",
+          "level": "prefecture",
+          "evidence": "海口"
+        }
+      ],
+      "topics": [
+        {
+          "topic_id": "culture-tourism-sports",
+          "name": "文旅体育",
+          "evidence": "旅游"
+        },
+        {
+          "topic_id": "external-relations",
+          "name": "对外交流",
+          "evidence": "国际"
+        }
+      ],
+      "detail_path": "/items/2026-07-19/hndaily-20260719-58464-19716150/"
+    },
+    {
+      "item_id": "hndaily-20260719-58464-19716151",
+      "published_date": "2026-07-19",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 3,
+      "title": "坚持系统化布局、精细化治理、多元化融合\n一体推进环岛旅游公路提质升级",
+      "ai_summary": "海南将完善环岛旅游公路支线、沿线服务和安全设施，推动旅游项目与本地产业联动。",
+      "scope": "hainan",
+      "enrichment_status": "complete",
+      "subjects": [
+        {
+          "subject_id": "subject-6a6500510b9352",
+          "name": "刘小明",
+          "type": "person",
+          "role": null,
+          "evidence": "刘小明"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan-changjiang",
+          "name": "昌江黎族自治县",
+          "code": "469026",
+          "level": "county",
+          "evidence": "昌江黎族自治县"
+        },
+        {
+          "location_id": "hainan-ledong",
+          "name": "乐东黎族自治县",
+          "code": "469027",
+          "level": "county",
+          "evidence": "乐东黎族自治县"
+        },
+        {
+          "location_id": "hainan-danzhou",
+          "name": "儋州市",
+          "code": "460400",
+          "level": "prefecture",
+          "evidence": "儋州市"
+        },
+        {
+          "location_id": "hainan-sanya",
+          "name": "三亚市",
+          "code": "460200",
+          "level": "prefecture",
+          "evidence": "三亚市"
+        }
+      ],
+      "topics": [
+        {
+          "topic_id": "urban-rural",
+          "name": "城乡建设",
+          "evidence": "公路"
+        }
+      ],
+      "detail_path": "/items/2026-07-19/hndaily-20260719-58464-19716151/"
+    },
+    {
+      "item_id": "hndaily-20260719-58464-19716152",
+      "published_date": "2026-07-19",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 4,
+      "title": "省钱省心！欢乐节派送惠民礼包",
+      "ai_summary": "欢乐节期间，海南推出交通、景区和消费优惠，包括打车补贴、零售消费券和免费巴士。",
+      "scope": "mixed",
+      "enrichment_status": "complete",
+      "subjects": [],
+      "locations": [
+        {
+          "location_id": "hainan-haikou",
+          "name": "海口市",
+          "code": "460100",
+          "level": "prefecture",
+          "evidence": "海口市"
+        },
+        {
+          "location_id": "hainan-qionghai",
+          "name": "琼海市",
+          "code": "469002",
+          "level": "county",
+          "evidence": "琼海"
+        },
+        {
+          "location_id": "hainan-wanning",
+          "name": "万宁市",
+          "code": "469006",
+          "level": "county",
+          "evidence": "万宁"
+        }
+      ],
+      "topics": [
+        {
+          "topic_id": "culture-tourism-sports",
+          "name": "文旅体育",
+          "evidence": "欢乐节"
+        }
+      ],
+      "detail_path": "/items/2026-07-19/hndaily-20260719-58464-19716152/"
+    },
+    {
+      "item_id": "hndaily-20260719-58464-19716154",
+      "published_date": "2026-07-19",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 5,
+      "title": "算好三本账，“小票据”激活“大市场”",
+      "ai_summary": "海口有奖发票活动截至6月底审核503.83万张，发放红包超1.2亿元，带动消费41.6亿元。",
+      "scope": "hainan",
+      "enrichment_status": "complete",
+      "subjects": [],
+      "locations": [
+        {
+          "location_id": "hainan-haikou",
+          "name": "海口市",
+          "code": "460100",
+          "level": "prefecture",
+          "evidence": "海口市"
+        },
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "海南省"
+        },
+        {
+          "location_id": "hainan-wenchang",
+          "name": "文昌市",
+          "code": "469005",
+          "level": "county",
+          "evidence": "文昌"
+        },
+        {
+          "location_id": "hainan-chengmai",
+          "name": "澄迈县",
+          "code": "469023",
+          "level": "county",
+          "evidence": "澄迈县"
+        }
+      ],
+      "topics": [
+        {
+          "topic_id": "economy-data",
+          "name": "经济数据",
+          "evidence": "增长"
+        }
+      ],
+      "detail_path": "/items/2026-07-19/hndaily-20260719-58464-19716154/"
+    },
+    {
+      "item_id": "hndaily-20260719-58464-19716155",
+      "published_date": "2026-07-19",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 6,
+      "title": "畅玩全岛 欢乐启程",
+      "ai_summary": "2026年（第二十七届）海南国际旅游岛欢乐节7月18日拉开帷幕，将持续至8月18日，各市县将推出50余项特色主题活动。",
+      "scope": "mixed",
+      "enrichment_status": "complete",
+      "subjects": [],
+      "locations": [
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "海南"
+        }
+      ],
+      "topics": [
+        {
+          "topic_id": "culture-tourism-sports",
+          "name": "文旅体育",
+          "evidence": "旅游"
+        }
+      ],
+      "detail_path": "/items/2026-07-19/hndaily-20260719-58464-19716155/"
+    },
+    {
+      "item_id": "hndaily-20260719-58464-19716156",
+      "published_date": "2026-07-19",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 7,
+      "title": "琼中林下套种沉香，真香！",
+      "ai_summary": "琼中以免费技术服务和保底收购支持农户在槟榔园套种沉香，响土村已种15万株。",
+      "scope": "hainan",
+      "enrichment_status": "complete",
+      "subjects": [],
+      "locations": [
+        {
+          "location_id": "hainan-qiongzhong",
+          "name": "琼中黎族苗族自治县",
+          "code": "469030",
+          "level": "county",
+          "evidence": "琼中"
+        },
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "海南"
+        }
+      ],
+      "topics": [
+        {
+          "topic_id": "industry-projects",
+          "name": "产业项目",
+          "evidence": "产业"
+        }
+      ],
+      "detail_path": "/items/2026-07-19/hndaily-20260719-58464-19716156/"
+    }
+  ]
+}

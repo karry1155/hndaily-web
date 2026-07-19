@@ -1,0 +1,58 @@
+{
+  "schema_version": 7,
+  "item_id": "hndaily-20260716-58468-19708002",
+  "published_date": "2026-07-16",
+  "collected_date": "2026-07-19",
+  "page_number": "005",
+  "page_name": "本省新闻",
+  "page_sequence": 7,
+  "author": "",
+  "enrichment_status": "complete",
+  "scope": "hainan",
+  "scope_evidence": "白沙黎族自治县城乡建设投资有限公司原董事长\n周怀胜严重违纪违法被开除党籍和公职",
+  "subjects": [],
+  "locations": [
+    {
+      "location_id": "hainan-baisha",
+      "name": "白沙黎族自治县",
+      "code": "469025",
+      "level": "county",
+      "evidence": "白沙黎族自治县"
+    },
+    {
+      "location_id": "hainan-haikou",
+      "name": "海口市",
+      "code": "460100",
+      "level": "prefecture",
+      "evidence": "海口"
+    },
+    {
+      "location_id": "hainan",
+      "name": "海南省",
+      "code": "460000",
+      "level": "province",
+      "evidence": "海南"
+    }
+  ],
+  "topics": [
+    {
+      "topic_id": "economy-data",
+      "name": "经济数据",
+      "evidence": "投资"
+    }
+  ],
+  "event_relation": {
+    "relation": "none",
+    "event_id": null,
+    "event_name": null,
+    "evidence": null,
+    "update_summary": null
+  },
+  "block": {
+    "source": "海南日报",
+    "title": "白沙黎族自治县城乡建设投资有限公司原董事长\n周怀胜严重违纪违法被开除党籍和公职",
+    "content": "本报海口7月15日讯 （海南日报全媒体记者袁宇）7月15日，海南日报全媒体记者从省纪委监委获悉，经白沙黎族自治县委批准，白沙黎族自治县纪委监委对白沙黎族自治县城乡建设投资有限公司原董事长周怀胜严重违纪违法问题进行了立案审查调查。\n\n经查，周怀胜无视中央八项规定精神，违规收受礼品礼金，接受可能影响公正执行公务的宴请；违反组织纪律，个人决定重大事项；违反廉洁纪律，利用职务便利为他人谋取利益并收受财物；利用职务便利为他人在工程项目承揽、款项拨付等方面谋利，并非法收受他人财物。\n\n周怀胜严重违反党的组织纪律和廉洁纪律，构成严重职务违法并涉嫌受贿犯罪，且在党的十八大后不收敛、不收手，性质严重，影响恶劣，应予严肃处理。依据《中国共产党纪律处分条例》《中华人民共和国监察法》《中华人民共和国公职人员政务处分法》等有关规定，经白沙黎族自治县纪委常委会会议研究并报白沙黎族自治县委批准，决定给予周怀胜开除党籍处分，由白沙黎族自治县监委给予其开除公职处分；收缴其违纪违法所得；将其涉嫌犯罪问题移送检察机关依法审查起诉，所涉财物一并移送。",
+    "ai_summary": "7月15日，海南日报全媒体记者从省纪委监委获悉，经白沙黎族自治县委批准，白沙黎族自治县纪委监委对白沙黎族自治县城乡建设投资有限公司原董事长周怀胜严重违纪违法问题进行了立案审查调查。",
+    "original_url": "http://news.hndaily.cn/html/2026-07/16/content_58468_19708002.htm"
+  }
+}

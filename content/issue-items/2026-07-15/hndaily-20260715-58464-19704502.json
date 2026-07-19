@@ -1,0 +1,44 @@
+{
+  "schema_version": 7,
+  "item_id": "hndaily-20260715-58464-19704502",
+  "published_date": "2026-07-15",
+  "collected_date": "2026-07-19",
+  "page_number": "001",
+  "page_name": "头版",
+  "page_sequence": 1,
+  "author": "",
+  "enrichment_status": "complete",
+  "scope": "national",
+  "scope_evidence": "习近平《在国家科学技术奖励大会、两院院士大会、中国科协第十一次全国代表大会上的讲话》单行本出版",
+  "subjects": [
+    {
+      "subject_id": "subject-e646b1e6febe4e",
+      "name": "习近平",
+      "type": "person",
+      "role": null,
+      "evidence": "习近平"
+    }
+  ],
+  "locations": [],
+  "topics": [
+    {
+      "topic_id": "policy-governance",
+      "name": "政策治理",
+      "evidence": "习近平《在国家科学技术奖励大会、两院院士大会、中国科协第十一次全国代表大会上的讲话》单行本出版"
+    }
+  ],
+  "event_relation": {
+    "relation": "none",
+    "event_id": null,
+    "event_name": null,
+    "evidence": null,
+    "update_summary": null
+  },
+  "block": {
+    "source": "海南日报",
+    "title": "习近平《在国家科学技术奖励大会、两院院士大会、中国科协第十一次全国代表大会上的讲话》单行本出版",
+    "content": "新华社北京7月14日电 中共中央总书记、国家主席、中央军委主席习近平《在国家科学技术奖励大会、两院院士大会、中国科协第十一次全国代表大会上的讲话》单行本，已由人民出版社出版，即日起在全国新华书店发行。",
+    "ai_summary": "中共中央总书记、国家主席、中央军委主席习近平《在国家科学技术奖励大会、两院院士大会、中国科协第十一次全国代表大会上的讲话》单行本，已由人民出版社出版，即日起在全国新华书店发行。",
+    "original_url": "http://news.hndaily.cn/html/2026-07/15/content_58464_19704502.htm"
+  }
+}

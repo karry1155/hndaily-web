@@ -11,7 +11,15 @@
   "scope": "hainan",
   "scope_evidence": "万宁市农业农村局原党组书记、局长唐敏智接受纪律审查和监察调查",
   "subjects": [],
-  "locations": [],
+  "locations": [
+    {
+      "location_id": "hainan-wanning",
+      "name": "万宁市",
+      "code": "469006",
+      "level": "county",
+      "evidence": "万宁市"
+    }
+  ],
   "topics": [
     {
       "topic_id": "policy-governance",

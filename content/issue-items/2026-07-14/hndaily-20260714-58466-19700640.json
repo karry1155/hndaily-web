@@ -11,7 +11,22 @@
   "scope": "hainan",
   "scope_evidence": "18支队伍赛村歌",
   "subjects": [],
-  "locations": [],
+  "locations": [
+    {
+      "location_id": "hainan-changjiang",
+      "name": "昌江黎族自治县",
+      "code": "469026",
+      "level": "county",
+      "evidence": "昌江黎族自治县"
+    },
+    {
+      "location_id": "hainan",
+      "name": "海南省",
+      "code": "460000",
+      "level": "province",
+      "evidence": "海南省"
+    }
+  ],
   "topics": [
     {
       "topic_id": "culture-tourism-sports",

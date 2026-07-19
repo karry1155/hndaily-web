@@ -3,7 +3,7 @@
   "date": "2026-07-13",
   "source": "海南日报",
   "page_count": 23,
-  "article_count": 55,
+  "article_count": 53,
   "pages": [
     {
       "page_number": "001",
@@ -74,12 +74,6 @@
           "detail_path": "/items/2026-07-13/hndaily-20260713-58465-19697267/"
         },
         {
-          "item_id": "hndaily-20260713-58465-19697268",
-          "title": "一枚“海南芯”，让“意念控制”照进现实",
-          "page_sequence": 3,
-          "detail_path": "/items/2026-07-13/hndaily-20260713-58465-19697268/"
-        },
-        {
           "item_id": "hndaily-20260713-58465-19697269",
           "title": "高标准查摆问题 严举措推进整治",
           "page_sequence": 4,
@@ -90,12 +84,6 @@
           "title": "昌江一批住宅小区电梯告别“带病运行”",
           "page_sequence": 5,
           "detail_path": "/items/2026-07-13/hndaily-20260713-58465-19697271/"
-        },
-        {
-          "item_id": "hndaily-20260713-58465-19697273",
-          "title": "海南重卡“驶向”环岛换电自由",
-          "page_sequence": 6,
-          "detail_path": "/items/2026-07-13/hndaily-20260713-58465-19697273/"
         }
       ]
     },
@@ -601,13 +589,6 @@
           "detail_path": "/items/2026-07-13/hndaily-20260713-58465-19697267/"
         },
         {
-          "item_id": "hndaily-20260713-58465-19697268",
-          "title": "一枚“海南芯”，让“意念控制”照进现实",
-          "source_page_number": "002",
-          "page_sequence": 3,
-          "detail_path": "/items/2026-07-13/hndaily-20260713-58465-19697268/"
-        },
-        {
           "item_id": "hndaily-20260713-58465-19697269",
           "title": "高标准查摆问题 严举措推进整治",
           "source_page_number": "002",
@@ -620,13 +601,6 @@
           "source_page_number": "002",
           "page_sequence": 5,
           "detail_path": "/items/2026-07-13/hndaily-20260713-58465-19697271/"
-        },
-        {
-          "item_id": "hndaily-20260713-58465-19697273",
-          "title": "海南重卡“驶向”环岛换电自由",
-          "source_page_number": "002",
-          "page_sequence": 6,
-          "detail_path": "/items/2026-07-13/hndaily-20260713-58465-19697273/"
         },
         {
           "item_id": "hndaily-20260713-58466-19697279",

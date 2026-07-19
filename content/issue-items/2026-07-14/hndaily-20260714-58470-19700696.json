@@ -11,7 +11,15 @@
   "scope": "hainan",
   "scope_evidence": "当心这种极易漏诊的罕见病",
   "subjects": [],
-  "locations": [],
+  "locations": [
+    {
+      "location_id": "hainan",
+      "name": "海南省",
+      "code": "460000",
+      "level": "province",
+      "evidence": "海南省"
+    }
+  ],
   "topics": [
     {
       "topic_id": "health",

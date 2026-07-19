@@ -1,0 +1,94 @@
+{
+  "schema_version": 7,
+  "item_id": "hndaily-20260716-58464-19707942",
+  "published_date": "2026-07-16",
+  "collected_date": "2026-07-19",
+  "page_number": "001",
+  "page_name": "头版",
+  "page_sequence": 4,
+  "author": "",
+  "enrichment_status": "complete",
+  "scope": "hainan",
+  "scope_evidence": "以“不见成效决不收兵”的恒心和韧劲\n确保学习教育善作善成善始善终",
+  "subjects": [
+    {
+      "subject_id": "subject-e646b1e6febe4e",
+      "name": "习近平",
+      "type": "person",
+      "role": null,
+      "evidence": "习近平"
+    },
+    {
+      "subject_id": "subject-947077d4770c96",
+      "name": "冯飞",
+      "type": "person",
+      "role": null,
+      "evidence": "冯飞"
+    },
+    {
+      "subject_id": "subject-6a6500510b9352",
+      "name": "刘小明",
+      "type": "person",
+      "role": null,
+      "evidence": "刘小明"
+    },
+    {
+      "subject_id": "subject-1ffa420523dcfa",
+      "name": "李荣灿",
+      "type": "person",
+      "role": null,
+      "evidence": "李荣灿"
+    },
+    {
+      "subject_id": "subject-e561267c49093e",
+      "name": "杨晋柏",
+      "type": "person",
+      "role": null,
+      "evidence": "杨晋柏"
+    }
+  ],
+  "locations": [
+    {
+      "location_id": "hainan-haikou",
+      "name": "海口市",
+      "code": "460100",
+      "level": "prefecture",
+      "evidence": "海口"
+    },
+    {
+      "location_id": "hainan-sanya",
+      "name": "三亚市",
+      "code": "460200",
+      "level": "prefecture",
+      "evidence": "三亚"
+    },
+    {
+      "location_id": "hainan",
+      "name": "海南省",
+      "code": "460000",
+      "level": "province",
+      "evidence": "海南"
+    }
+  ],
+  "topics": [
+    {
+      "topic_id": "policy-governance",
+      "name": "政策治理",
+      "evidence": "会议"
+    }
+  ],
+  "event_relation": {
+    "relation": "none",
+    "event_id": null,
+    "event_name": null,
+    "evidence": null,
+    "update_summary": null
+  },
+  "block": {
+    "source": "海南日报",
+    "title": "以“不见成效决不收兵”的恒心和韧劲\n确保学习教育善作善成善始善终",
+    "content": "本报海口7月15日讯（海南日报全媒体记者李磊）7月15日，省委树立和践行正确政绩观学习教育整改整治成效通报会在海口举行。省委书记冯飞讲话，省委副书记、省长刘小明主持，省政协主席李荣灿，省委副书记、政法委书记杨晋柏等省领导出席。中央第三指导组有关同志到会指导。\n\n会上，省委学习教育工作专班通报了整改整治、“新官不理旧账”集中整治、省级5项“我为群众办实事”等情况，海口、三亚、东方、省营商环境建设厅、省住房城乡建设厅作交流发言。\n\n会议指出，整改整治实效是检验学习教育成效的试金石。全省各级党组织和党员、干部要认真学习贯彻习近平党建思想，坚持目标导向和问题导向相结合，认认真真、扎扎实实推进整改整治，以“不见成效决不收兵”的恒心和韧劲，拧紧发条、保持力度，确保学习教育善作善成、善始善终。\n\n会议强调，要在提高整改整治质量上持续用力，科学统筹、实事求是抓好问题整改整治，严格销号管理，杜绝纸面整改、虚假整改；对已销号问题，抓好巩固提高，防止反弹回潮；对未销号、需要持续整改的问题，扭住不放、一抓到底，做到改彻底、改到位、见实效。要在突出重点抓整改整治上持续用力，集中整治“新官不理旧账”突出问题，防止击鼓传花、一拖了之，防止旧账未清、又添新账；抓好生态领域突出问题整改，扎实开展全省固废整治专项行动，抓好海水养殖污染环境等突出问题整改，旗帜鲜明走生态环境友好型自由贸易港建设之路；紧盯耕地“非粮化”、饮水安全保障等重点工作，打通梗阻断点、推动源头治理。要在系统推进建章立制上持续用力，坚持边整改、边总结、边提升，从“当下改”中思考“长久立”，把整改整治中的好经验好做法以制度形式固化下来，举一反三推动长治长效。要在坚持开门搞整改整治上持续用力，着力解决群众急难愁盼问题，深化整治群众身边不正之风和腐败问题，接受群众监督评判，选树培育先进典型，营造良好舆论氛围。要在压实整改整治责任上持续用力，强化严督实导，细化落实举措，加强跟踪问效，确保责任不衰减、整改不打折。\n\n会议部署防汛防风防旱、安全生产等工作。",
+    "ai_summary": "海南将继续整治“新官不理旧账”、生态污染和饮水安全等问题，并防止已整改问题反弹。",
+    "original_url": "http://news.hndaily.cn/html/2026-07/16/content_58464_19707942.htm"
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "schema_version": 7,
+  "item_id": "hndaily-20260715-58465-19704532",
+  "published_date": "2026-07-15",
+  "collected_date": "2026-07-19",
+  "page_number": "002",
+  "page_name": "本省新闻",
+  "page_sequence": 6,
+  "author": "",
+  "enrichment_status": "complete",
+  "scope": "hainan",
+  "scope_evidence": "“创在自贸港”系列活动（第四场）在儋州开展",
+  "subjects": [],
+  "locations": [
+    {
+      "location_id": "hainan-danzhou",
+      "name": "儋州市",
+      "code": "460400",
+      "level": "prefecture",
+      "evidence": "儋州"
+    },
+    {
+      "location_id": "hainan-baisha",
+      "name": "白沙黎族自治县",
+      "code": "469025",
+      "level": "county",
+      "evidence": "白沙"
+    },
+    {
+      "location_id": "hainan-changjiang",
+      "name": "昌江黎族自治县",
+      "code": "469026",
+      "level": "county",
+      "evidence": "昌江"
+    }
+  ],
+  "topics": [
+    {
+      "topic_id": "industry-projects",
+      "name": "产业项目",
+      "evidence": "项目"
+    }
+  ],
+  "event_relation": {
+    "relation": "none",
+    "event_id": null,
+    "event_name": null,
+    "evidence": null,
+    "update_summary": null
+  },
+  "block": {
+    "source": "海南日报",
+    "title": "“创在自贸港”系列活动（第四场）在儋州开展",
+    "content": "本报讯 （海南日报全媒体记者易宗平）2026年“创服自贸·引领未来”海南创业服务活动暨“创在自贸港”系列活动（第四场）近日在儋州开展。作为“东西南北中”5场创业咨询会的西部专场，活动吸引了儋州、东方、昌江、临高、白沙等市县的创业者、园区代表及高校毕业生参与。\n\n本次活动重点聚焦AI智能体的实际操作。创业导师段瑞以“WorkBuddy”办公智能体为例，讲解如何通过“背景+指令+要求”的结构化方式让AI准确理解需求，并演示公文处理、Excel数据分析、PPT制作等场景下的应用。\n\n活动中，2名创业导师带队走访海南五只羊酒店管理有限公司和梦核科技（海南洋浦）有限责任公司，与创业负责人座谈交流，从财务规划、运营思路等方面，对创业项目提出个性化建议。\n\n从琼中到三亚，从琼海到儋州，“创在自贸港”系列活动已走过四个区域，服务形式各有侧重，不断贴近创业者的真实需求。系列活动的最后一站设在海口，将实现对全省创业服务的全覆盖。",
+    "ai_summary": "2026年“创服自贸·引领未来”海南创业服务活动暨“创在自贸港”系列活动（第四场）近日在儋州开展。作为“东西南北中”5场创业咨询会的西部专场，活动吸引了儋州、东方、昌江、临高、白沙等市县的创业者、园区代表及高校毕业生参与。",
+    "original_url": "http://news.hndaily.cn/html/2026-07/15/content_58465_19704532.htm"
+  }
+}

@@ -18,6 +18,20 @@
       "code": "469023",
       "level": "county",
       "evidence": "澄迈"
+    },
+    {
+      "location_id": "hainan-dingan",
+      "name": "定安县",
+      "code": "469021",
+      "level": "county",
+      "evidence": "定安县"
+    },
+    {
+      "location_id": "hainan",
+      "name": "海南省",
+      "code": "460000",
+      "level": "province",
+      "evidence": "海南省"
     }
   ],
   "topics": [

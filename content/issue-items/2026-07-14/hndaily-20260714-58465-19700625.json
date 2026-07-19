@@ -11,7 +11,43 @@
   "scope": "hainan",
   "scope_evidence": "海南省幼儿园“一对一”精准帮扶\n民族地区培训项目开班",
   "subjects": [],
-  "locations": [],
+  "locations": [
+    {
+      "location_id": "hainan-changjiang",
+      "name": "昌江黎族自治县",
+      "code": "469026",
+      "level": "county",
+      "evidence": "昌江黎族自治县"
+    },
+    {
+      "location_id": "hainan-ledong",
+      "name": "乐东黎族自治县",
+      "code": "469027",
+      "level": "county",
+      "evidence": "乐东黎族自治县"
+    },
+    {
+      "location_id": "hainan-qiongzhong",
+      "name": "琼中黎族苗族自治县",
+      "code": "469030",
+      "level": "county",
+      "evidence": "琼中黎族苗族自治县"
+    },
+    {
+      "location_id": "hainan-tunchang",
+      "name": "屯昌县",
+      "code": "469022",
+      "level": "county",
+      "evidence": "屯昌县"
+    },
+    {
+      "location_id": "hainan-danzhou",
+      "name": "儋州市",
+      "code": "460400",
+      "level": "prefecture",
+      "evidence": "儋州市"
+    }
+  ],
   "topics": [
     {
       "topic_id": "education-talent",

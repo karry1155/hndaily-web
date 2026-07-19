@@ -18,6 +18,20 @@
       "code": "469021",
       "level": "county",
       "evidence": "定安"
+    },
+    {
+      "location_id": "hainan-lingao",
+      "name": "临高县",
+      "code": "469024",
+      "level": "county",
+      "evidence": "临高县"
+    },
+    {
+      "location_id": "hainan",
+      "name": "海南省",
+      "code": "460000",
+      "level": "province",
+      "evidence": "海南省"
     }
   ],
   "topics": [

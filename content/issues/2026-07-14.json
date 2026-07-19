@@ -3,7 +3,7 @@
   "date": "2026-07-14",
   "source": "海南日报",
   "page_count": 8,
-  "article_count": 52,
+  "article_count": 47,
   "pages": [
     {
       "page_number": "001",
@@ -102,30 +102,6 @@
           "title": "海南省幼儿园“一对一”精准帮扶\n民族地区培训项目开班",
           "page_sequence": 6,
           "detail_path": "/items/2026-07-14/hndaily-20260714-58465-19700625/"
-        },
-        {
-          "item_id": "hndaily-20260714-58465-19700626",
-          "title": "守护三十载，她把“隔离区”变成“家”",
-          "page_sequence": 7,
-          "detail_path": "/items/2026-07-14/hndaily-20260714-58465-19700626/"
-        },
-        {
-          "item_id": "hndaily-20260714-58465-19700627",
-          "title": "部署防汛救灾、安全生产等工作",
-          "page_sequence": 8,
-          "detail_path": "/items/2026-07-14/hndaily-20260714-58465-19700627/"
-        },
-        {
-          "item_id": "hndaily-20260714-58465-19700628",
-          "title": "以初心为“药”，治愈偏见与孤独",
-          "page_sequence": 9,
-          "detail_path": "/items/2026-07-14/hndaily-20260714-58465-19700628/"
-        },
-        {
-          "item_id": "hndaily-20260714-58465-19700629",
-          "title": "研究加快构建和完善海南民宿产业与制度双体系工作",
-          "page_sequence": 10,
-          "detail_path": "/items/2026-07-14/hndaily-20260714-58465-19700629/"
         }
       ]
     },
@@ -140,12 +116,6 @@
           "title": "从“追着政策跑”到“围着人才转”",
           "page_sequence": 1,
           "detail_path": "/items/2026-07-14/hndaily-20260714-58466-19700635/"
-        },
-        {
-          "item_id": "hndaily-20260714-58466-19700636",
-          "title": "从首个旅游强国规划看海南的“位”与“为”",
-          "page_sequence": 2,
-          "detail_path": "/items/2026-07-14/hndaily-20260714-58466-19700636/"
         },
         {
           "item_id": "hndaily-20260714-58466-19700637",
@@ -500,46 +470,11 @@
           "detail_path": "/items/2026-07-14/hndaily-20260714-58465-19700625/"
         },
         {
-          "item_id": "hndaily-20260714-58465-19700626",
-          "title": "守护三十载，她把“隔离区”变成“家”",
-          "source_page_number": "002",
-          "page_sequence": 7,
-          "detail_path": "/items/2026-07-14/hndaily-20260714-58465-19700626/"
-        },
-        {
-          "item_id": "hndaily-20260714-58465-19700627",
-          "title": "部署防汛救灾、安全生产等工作",
-          "source_page_number": "002",
-          "page_sequence": 8,
-          "detail_path": "/items/2026-07-14/hndaily-20260714-58465-19700627/"
-        },
-        {
-          "item_id": "hndaily-20260714-58465-19700628",
-          "title": "以初心为“药”，治愈偏见与孤独",
-          "source_page_number": "002",
-          "page_sequence": 9,
-          "detail_path": "/items/2026-07-14/hndaily-20260714-58465-19700628/"
-        },
-        {
-          "item_id": "hndaily-20260714-58465-19700629",
-          "title": "研究加快构建和完善海南民宿产业与制度双体系工作",
-          "source_page_number": "002",
-          "page_sequence": 10,
-          "detail_path": "/items/2026-07-14/hndaily-20260714-58465-19700629/"
-        },
-        {
           "item_id": "hndaily-20260714-58466-19700635",
           "title": "从“追着政策跑”到“围着人才转”",
           "source_page_number": "003",
           "page_sequence": 1,
           "detail_path": "/items/2026-07-14/hndaily-20260714-58466-19700635/"
-        },
-        {
-          "item_id": "hndaily-20260714-58466-19700636",
-          "title": "从首个旅游强国规划看海南的“位”与“为”",
-          "source_page_number": "003",
-          "page_sequence": 2,
-          "detail_path": "/items/2026-07-14/hndaily-20260714-58466-19700636/"
         },
         {
           "item_id": "hndaily-20260714-58466-19700637",

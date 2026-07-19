@@ -18,6 +18,13 @@
       "code": "469027",
       "level": "county",
       "evidence": "乐东"
+    },
+    {
+      "location_id": "hainan",
+      "name": "海南省",
+      "code": "460000",
+      "level": "province",
+      "evidence": "海南省"
     }
   ],
   "topics": [

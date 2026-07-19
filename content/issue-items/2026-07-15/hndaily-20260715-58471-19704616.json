@@ -1,0 +1,36 @@
+{
+  "schema_version": 7,
+  "item_id": "hndaily-20260715-58471-19704616",
+  "published_date": "2026-07-15",
+  "collected_date": "2026-07-19",
+  "page_number": "008",
+  "page_name": "中国/世界新闻",
+  "page_sequence": 2,
+  "author": "",
+  "enrichment_status": "complete",
+  "scope": "foreign",
+  "scope_evidence": "欧盟国家在禁令生效前\n大量进口俄液化天然气",
+  "subjects": [],
+  "locations": [],
+  "topics": [
+    {
+      "topic_id": "external-relations",
+      "name": "对外交流",
+      "evidence": "进口"
+    }
+  ],
+  "event_relation": {
+    "relation": "none",
+    "event_id": null,
+    "event_name": null,
+    "evidence": null,
+    "update_summary": null
+  },
+  "block": {
+    "source": "海南日报",
+    "title": "欧盟国家在禁令生效前\n大量进口俄液化天然气",
+    "content": "新华社伦敦7月14日电（记者赵阳 张亚东）英国《金融时报》13日报道，由于赶在欧盟禁令生效前提前囤货，欧盟国家今年上半年从俄罗斯亚马尔项目进口的液化天然气数量创历史新高。\n\n国际市场服务机构克普勒公司统计数据显示，今年1月至6月，欧盟自俄罗斯亚马尔项目的天然气进口量达到创纪录的989万吨，同比增长18%。\n\n欧盟为这批液化天然气支付的总金额高达60亿欧元左右。其中，法国、比利时和西班牙为主要进口国，2026年上半年进口量分别为360万吨、290万吨及270万吨。\n\n欧盟已从4月起禁止在短期合同下进口俄罗斯液化天然气，但根据长期合同的进口可继续进行，直至2027年1月1日。",
+    "ai_summary": "国际市场服务机构克普勒公司统计数据显示，今年1月至6月，欧盟自俄罗斯亚马尔项目的天然气进口量达到创纪录的989万吨，同比增长18%。",
+    "original_url": "http://news.hndaily.cn/html/2026-07/15/content_58471_19704616.htm"
+  }
+}

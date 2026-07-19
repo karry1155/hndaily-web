@@ -11,7 +11,15 @@
   "scope": "hainan",
   "scope_evidence": "守护三十载，她把“隔离区”变成“家”",
   "subjects": [],
-  "locations": [],
+  "locations": [
+    {
+      "location_id": "hainan",
+      "name": "海南省",
+      "code": "460000",
+      "level": "province",
+      "evidence": "海南省"
+    }
+  ],
   "topics": [
     {
       "topic_id": "health",

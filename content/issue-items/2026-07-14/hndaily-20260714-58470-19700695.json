@@ -11,7 +11,29 @@
   "scope": "hainan",
   "scope_evidence": "新“九包” 包精准康养！",
   "subjects": [],
-  "locations": [],
+  "locations": [
+    {
+      "location_id": "hainan-baoting",
+      "name": "保亭黎族苗族自治县",
+      "code": "469029",
+      "level": "county",
+      "evidence": "保亭黎族苗族自治县"
+    },
+    {
+      "location_id": "hainan-wanning",
+      "name": "万宁市",
+      "code": "469006",
+      "level": "county",
+      "evidence": "万宁市"
+    },
+    {
+      "location_id": "hainan",
+      "name": "海南省",
+      "code": "460000",
+      "level": "province",
+      "evidence": "海南省"
+    }
+  ],
   "topics": [
     {
       "topic_id": "health",

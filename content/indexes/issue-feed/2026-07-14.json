@@ -1,6 +1,6 @@
 {
   "date": "2026-07-14",
-  "count": 52,
+  "count": 47,
   "sections": [
     {
       "section_id": "front-page",
@@ -119,46 +119,11 @@
           "detail_path": "/items/2026-07-14/hndaily-20260714-58465-19700625/"
         },
         {
-          "item_id": "hndaily-20260714-58465-19700626",
-          "title": "守护三十载，她把“隔离区”变成“家”",
-          "source_page_number": "002",
-          "page_sequence": 7,
-          "detail_path": "/items/2026-07-14/hndaily-20260714-58465-19700626/"
-        },
-        {
-          "item_id": "hndaily-20260714-58465-19700627",
-          "title": "部署防汛救灾、安全生产等工作",
-          "source_page_number": "002",
-          "page_sequence": 8,
-          "detail_path": "/items/2026-07-14/hndaily-20260714-58465-19700627/"
-        },
-        {
-          "item_id": "hndaily-20260714-58465-19700628",
-          "title": "以初心为“药”，治愈偏见与孤独",
-          "source_page_number": "002",
-          "page_sequence": 9,
-          "detail_path": "/items/2026-07-14/hndaily-20260714-58465-19700628/"
-        },
-        {
-          "item_id": "hndaily-20260714-58465-19700629",
-          "title": "研究加快构建和完善海南民宿产业与制度双体系工作",
-          "source_page_number": "002",
-          "page_sequence": 10,
-          "detail_path": "/items/2026-07-14/hndaily-20260714-58465-19700629/"
-        },
-        {
           "item_id": "hndaily-20260714-58466-19700635",
           "title": "从“追着政策跑”到“围着人才转”",
           "source_page_number": "003",
           "page_sequence": 1,
           "detail_path": "/items/2026-07-14/hndaily-20260714-58466-19700635/"
-        },
-        {
-          "item_id": "hndaily-20260714-58466-19700636",
-          "title": "从首个旅游强国规划看海南的“位”与“为”",
-          "source_page_number": "003",
-          "page_sequence": 2,
-          "detail_path": "/items/2026-07-14/hndaily-20260714-58466-19700636/"
         },
         {
           "item_id": "hndaily-20260714-58466-19700637",
@@ -456,7 +421,15 @@
       "scope": "hainan",
       "enrichment_status": "complete",
       "subjects": [],
-      "locations": [],
+      "locations": [
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "海南省"
+        }
+      ],
       "topics": [
         {
           "topic_id": "health",
@@ -477,7 +450,15 @@
       "scope": "hainan",
       "enrichment_status": "complete",
       "subjects": [],
-      "locations": [],
+      "locations": [
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "海南省"
+        }
+      ],
       "topics": [
         {
           "topic_id": "policy-governance",
@@ -498,7 +479,15 @@
       "scope": "hainan",
       "enrichment_status": "complete",
       "subjects": [],
-      "locations": [],
+      "locations": [
+        {
+          "location_id": "hainan-haikou",
+          "name": "海口市",
+          "code": "460100",
+          "level": "prefecture",
+          "evidence": "海口市"
+        }
+      ],
       "topics": [
         {
           "topic_id": "ecology",
@@ -519,7 +508,15 @@
       "scope": "hainan",
       "enrichment_status": "complete",
       "subjects": [],
-      "locations": [],
+      "locations": [
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "海南省"
+        }
+      ],
       "topics": [
         {
           "topic_id": "health",
@@ -540,7 +537,15 @@
       "scope": "hainan",
       "enrichment_status": "complete",
       "subjects": [],
-      "locations": [],
+      "locations": [
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "海南省"
+        }
+      ],
       "topics": [
         {
           "topic_id": "policy-governance",
@@ -603,7 +608,15 @@
       "scope": "hainan",
       "enrichment_status": "complete",
       "subjects": [],
-      "locations": [],
+      "locations": [
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "海南省"
+        }
+      ],
       "topics": [
         {
           "topic_id": "urban-rural",
@@ -645,7 +658,15 @@
       "scope": "hainan",
       "enrichment_status": "complete",
       "subjects": [],
-      "locations": [],
+      "locations": [
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "海南省"
+        }
+      ],
       "topics": [
         {
           "topic_id": "education-talent",
@@ -708,7 +729,43 @@
       "scope": "hainan",
       "enrichment_status": "complete",
       "subjects": [],
-      "locations": [],
+      "locations": [
+        {
+          "location_id": "hainan-changjiang",
+          "name": "昌江黎族自治县",
+          "code": "469026",
+          "level": "county",
+          "evidence": "昌江黎族自治县"
+        },
+        {
+          "location_id": "hainan-ledong",
+          "name": "乐东黎族自治县",
+          "code": "469027",
+          "level": "county",
+          "evidence": "乐东黎族自治县"
+        },
+        {
+          "location_id": "hainan-qiongzhong",
+          "name": "琼中黎族苗族自治县",
+          "code": "469030",
+          "level": "county",
+          "evidence": "琼中黎族苗族自治县"
+        },
+        {
+          "location_id": "hainan-tunchang",
+          "name": "屯昌县",
+          "code": "469022",
+          "level": "county",
+          "evidence": "屯昌县"
+        },
+        {
+          "location_id": "hainan-danzhou",
+          "name": "儋州市",
+          "code": "460400",
+          "level": "prefecture",
+          "evidence": "儋州市"
+        }
+      ],
       "topics": [
         {
           "topic_id": "education-talent",
@@ -717,90 +774,6 @@
         }
       ],
       "detail_path": "/items/2026-07-14/hndaily-20260714-58465-19700625/"
-    },
-    {
-      "item_id": "hndaily-20260714-58465-19700626",
-      "published_date": "2026-07-14",
-      "page_number": "002",
-      "page_name": "本省新闻",
-      "page_sequence": 7,
-      "title": "守护三十载，她把“隔离区”变成“家”",
-      "ai_summary": "邢少云在海南麻风病院区工作30多年，从临床护理到技术培训持续改善患者治疗与生活。",
-      "scope": "hainan",
-      "enrichment_status": "complete",
-      "subjects": [],
-      "locations": [],
-      "topics": [
-        {
-          "topic_id": "health",
-          "name": "医疗健康",
-          "evidence": "守护三十载，她把“隔离区”变成“家”"
-        }
-      ],
-      "detail_path": "/items/2026-07-14/hndaily-20260714-58465-19700626/"
-    },
-    {
-      "item_id": "hndaily-20260714-58465-19700627",
-      "published_date": "2026-07-14",
-      "page_number": "002",
-      "page_name": "本省新闻",
-      "page_sequence": 8,
-      "title": "部署防汛救灾、安全生产等工作",
-      "ai_summary": "海南将以项目建设推动服务业扩能提质，促进生产性服务业专业化和生活性服务业便利化。",
-      "scope": "hainan",
-      "enrichment_status": "complete",
-      "subjects": [],
-      "locations": [],
-      "topics": [
-        {
-          "topic_id": "industry-projects",
-          "name": "产业项目",
-          "evidence": "部署防汛救灾、安全生产等工作"
-        }
-      ],
-      "detail_path": "/items/2026-07-14/hndaily-20260714-58465-19700627/"
-    },
-    {
-      "item_id": "hndaily-20260714-58465-19700628",
-      "published_date": "2026-07-14",
-      "page_number": "002",
-      "page_name": "本省新闻",
-      "page_sequence": 9,
-      "title": "以初心为“药”，治愈偏见与孤独",
-      "ai_summary": "长期接触麻风病患者的护理经历表明，专业治疗之外，消除恐惧和偏见同样关系患者生活质量。",
-      "scope": "hainan",
-      "enrichment_status": "complete",
-      "subjects": [],
-      "locations": [],
-      "topics": [
-        {
-          "topic_id": "health",
-          "name": "医疗健康",
-          "evidence": "以初心为“药”，治愈偏见与孤独"
-        }
-      ],
-      "detail_path": "/items/2026-07-14/hndaily-20260714-58465-19700628/"
-    },
-    {
-      "item_id": "hndaily-20260714-58465-19700629",
-      "published_date": "2026-07-14",
-      "page_number": "002",
-      "page_name": "本省新闻",
-      "page_sequence": 10,
-      "title": "研究加快构建和完善海南民宿产业与制度双体系工作",
-      "ai_summary": "海南将落实民宿属地和经营主体责任，完善行业规则、信用监管及纠纷化解机制。",
-      "scope": "hainan",
-      "enrichment_status": "complete",
-      "subjects": [],
-      "locations": [],
-      "topics": [
-        {
-          "topic_id": "industry-projects",
-          "name": "产业项目",
-          "evidence": "研究加快构建和完善海南民宿产业与制度双体系工作"
-        }
-      ],
-      "detail_path": "/items/2026-07-14/hndaily-20260714-58465-19700629/"
     },
     {
       "item_id": "hndaily-20260714-58466-19700635",
@@ -813,7 +786,15 @@
       "scope": "mixed",
       "enrichment_status": "complete",
       "subjects": [],
-      "locations": [],
+      "locations": [
+        {
+          "location_id": "hainan-qionghai",
+          "name": "琼海市",
+          "code": "469002",
+          "level": "county",
+          "evidence": "琼海市"
+        }
+      ],
       "topics": [
         {
           "topic_id": "education-talent",
@@ -822,27 +803,6 @@
         }
       ],
       "detail_path": "/items/2026-07-14/hndaily-20260714-58466-19700635/"
-    },
-    {
-      "item_id": "hndaily-20260714-58466-19700636",
-      "published_date": "2026-07-14",
-      "page_number": "003",
-      "page_name": "本省新闻",
-      "page_sequence": 2,
-      "title": "从首个旅游强国规划看海南的“位”与“为”",
-      "ai_summary": "海南封关以来入境游客达134.4万人次、同比增长93.9%，已开通78条境外客运航线，正承接国家入境旅游布局。",
-      "scope": "mixed",
-      "enrichment_status": "complete",
-      "subjects": [],
-      "locations": [],
-      "topics": [
-        {
-          "topic_id": "culture-tourism-sports",
-          "name": "文旅体育",
-          "evidence": "从首个旅游强国规划看海南的“位”与“为”"
-        }
-      ],
-      "detail_path": "/items/2026-07-14/hndaily-20260714-58466-19700636/"
     },
     {
       "item_id": "hndaily-20260714-58466-19700637",
@@ -855,7 +815,15 @@
       "scope": "hainan",
       "enrichment_status": "complete",
       "subjects": [],
-      "locations": [],
+      "locations": [
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "海南省"
+        }
+      ],
       "topics": [
         {
           "topic_id": "livelihood-services",
@@ -876,7 +844,22 @@
       "scope": "hainan",
       "enrichment_status": "complete",
       "subjects": [],
-      "locations": [],
+      "locations": [
+        {
+          "location_id": "hainan-changjiang",
+          "name": "昌江黎族自治县",
+          "code": "469026",
+          "level": "county",
+          "evidence": "昌江黎族自治县"
+        },
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "海南省"
+        }
+      ],
       "topics": [
         {
           "topic_id": "culture-tourism-sports",
@@ -897,7 +880,15 @@
       "scope": "hainan",
       "enrichment_status": "complete",
       "subjects": [],
-      "locations": [],
+      "locations": [
+        {
+          "location_id": "hainan-wenchang",
+          "name": "文昌市",
+          "code": "469005",
+          "level": "county",
+          "evidence": "文昌市"
+        }
+      ],
       "topics": [
         {
           "topic_id": "industry-projects",
@@ -918,7 +909,15 @@
       "scope": "hainan",
       "enrichment_status": "complete",
       "subjects": [],
-      "locations": [],
+      "locations": [
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "海南省"
+        }
+      ],
       "topics": [
         {
           "topic_id": "culture-tourism-sports",
@@ -981,7 +980,22 @@
       "scope": "hainan",
       "enrichment_status": "complete",
       "subjects": [],
-      "locations": [],
+      "locations": [
+        {
+          "location_id": "hainan-dingan",
+          "name": "定安县",
+          "code": "469021",
+          "level": "county",
+          "evidence": "定安县"
+        },
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "海南省"
+        }
+      ],
       "topics": [
         {
           "topic_id": "policy-governance",
@@ -1023,7 +1037,15 @@
       "scope": "hainan",
       "enrichment_status": "complete",
       "subjects": [],
-      "locations": [],
+      "locations": [
+        {
+          "location_id": "hainan-wanning",
+          "name": "万宁市",
+          "code": "469006",
+          "level": "county",
+          "evidence": "万宁市"
+        }
+      ],
       "topics": [
         {
           "topic_id": "policy-governance",
@@ -1044,7 +1066,15 @@
       "scope": "hainan",
       "enrichment_status": "complete",
       "subjects": [],
-      "locations": [],
+      "locations": [
+        {
+          "location_id": "hainan-lingshui",
+          "name": "陵水黎族自治县",
+          "code": "469028",
+          "level": "county",
+          "evidence": "陵水黎族自治县"
+        }
+      ],
       "topics": [
         {
           "topic_id": "policy-governance",
@@ -1065,7 +1095,15 @@
       "scope": "hainan",
       "enrichment_status": "complete",
       "subjects": [],
-      "locations": [],
+      "locations": [
+        {
+          "location_id": "hainan-ledong",
+          "name": "乐东黎族自治县",
+          "code": "469027",
+          "level": "county",
+          "evidence": "乐东黎族自治县"
+        }
+      ],
       "topics": [
         {
           "topic_id": "policy-governance",
@@ -1086,7 +1124,15 @@
       "scope": "hainan",
       "enrichment_status": "complete",
       "subjects": [],
-      "locations": [],
+      "locations": [
+        {
+          "location_id": "hainan-haikou",
+          "name": "海口市",
+          "code": "460100",
+          "level": "prefecture",
+          "evidence": "海口市"
+        }
+      ],
       "topics": [
         {
           "topic_id": "education-talent",
@@ -1107,7 +1153,15 @@
       "scope": "hainan",
       "enrichment_status": "complete",
       "subjects": [],
-      "locations": [],
+      "locations": [
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "海南省"
+        }
+      ],
       "topics": [
         {
           "topic_id": "culture-tourism-sports",
@@ -1128,7 +1182,22 @@
       "scope": "hainan",
       "enrichment_status": "complete",
       "subjects": [],
-      "locations": [],
+      "locations": [
+        {
+          "location_id": "hainan-wanning",
+          "name": "万宁市",
+          "code": "469006",
+          "level": "county",
+          "evidence": "万宁市"
+        },
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "海南省"
+        }
+      ],
       "topics": [
         {
           "topic_id": "policy-governance",
@@ -1149,7 +1218,15 @@
       "scope": "hainan",
       "enrichment_status": "complete",
       "subjects": [],
-      "locations": [],
+      "locations": [
+        {
+          "location_id": "hainan-changjiang",
+          "name": "昌江黎族自治县",
+          "code": "469026",
+          "level": "county",
+          "evidence": "昌江黎族自治县"
+        }
+      ],
       "topics": [
         {
           "topic_id": "education-talent",
@@ -1170,7 +1247,15 @@
       "scope": "hainan",
       "enrichment_status": "complete",
       "subjects": [],
-      "locations": [],
+      "locations": [
+        {
+          "location_id": "hainan-sanya",
+          "name": "三亚市",
+          "code": "460200",
+          "level": "prefecture",
+          "evidence": "三亚市"
+        }
+      ],
       "topics": [
         {
           "topic_id": "education-talent",
@@ -1401,7 +1486,29 @@
       "scope": "hainan",
       "enrichment_status": "complete",
       "subjects": [],
-      "locations": [],
+      "locations": [
+        {
+          "location_id": "hainan-baoting",
+          "name": "保亭黎族苗族自治县",
+          "code": "469029",
+          "level": "county",
+          "evidence": "保亭黎族苗族自治县"
+        },
+        {
+          "location_id": "hainan-wanning",
+          "name": "万宁市",
+          "code": "469006",
+          "level": "county",
+          "evidence": "万宁市"
+        },
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "海南省"
+        }
+      ],
       "topics": [
         {
           "topic_id": "health",
@@ -1422,7 +1529,15 @@
       "scope": "hainan",
       "enrichment_status": "complete",
       "subjects": [],
-      "locations": [],
+      "locations": [
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "海南省"
+        }
+      ],
       "topics": [
         {
           "topic_id": "health",
@@ -1443,7 +1558,15 @@
       "scope": "hainan",
       "enrichment_status": "complete",
       "subjects": [],
-      "locations": [],
+      "locations": [
+        {
+          "location_id": "hainan-haikou",
+          "name": "海口市",
+          "code": "460100",
+          "level": "prefecture",
+          "evidence": "海口市"
+        }
+      ],
       "topics": [
         {
           "topic_id": "health",
@@ -1464,7 +1587,22 @@
       "scope": "mixed",
       "enrichment_status": "complete",
       "subjects": [],
-      "locations": [],
+      "locations": [
+        {
+          "location_id": "hainan-haikou",
+          "name": "海口市",
+          "code": "460100",
+          "level": "prefecture",
+          "evidence": "海口市"
+        },
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "海南省"
+        }
+      ],
       "topics": [
         {
           "topic_id": "education-talent",

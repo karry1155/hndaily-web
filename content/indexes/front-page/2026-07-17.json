@@ -1,0 +1,517 @@
+{
+  "date": "2026-07-17",
+  "count": 9,
+  "front_page_count": 9,
+  "world_count": 0,
+  "national_ranking": [
+    {
+      "item_id": "hndaily-20260717-58464-19712003",
+      "published_date": "2026-07-17",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 1,
+      "title": "“老百姓的生活是家事，更是国事”",
+      "ai_summary": "上海历经数十年改造，已解决上百万居民长期使用马桶、缺少独立卫生设施的问题。",
+      "scope": "national",
+      "enrichment_status": "complete",
+      "subjects": [
+        {
+          "subject_id": "subject-e646b1e6febe4e",
+          "name": "习近平",
+          "type": "person",
+          "role": null,
+          "evidence": "习近平"
+        }
+      ],
+      "locations": [],
+      "topics": [
+        {
+          "topic_id": "livelihood-services",
+          "name": "民生服务",
+          "evidence": "民生"
+        }
+      ],
+      "detail_path": "/items/2026-07-17/hndaily-20260717-58464-19712003/",
+      "rank": 1
+    },
+    {
+      "item_id": "hndaily-20260717-58464-19712006",
+      "published_date": "2026-07-17",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 2,
+      "title": "习近平会见哈萨克斯坦总统托卡耶夫",
+      "ai_summary": "习近平与哈萨克斯坦总统托卡耶夫会谈，双方表示将深化战略协作和多领域合作。",
+      "scope": "national",
+      "enrichment_status": "complete",
+      "subjects": [
+        {
+          "subject_id": "subject-e646b1e6febe4e",
+          "name": "习近平",
+          "type": "person",
+          "role": null,
+          "evidence": "习近平"
+        },
+        {
+          "subject_id": "subject-44ebb10ceb1ebf",
+          "name": "托卡耶夫",
+          "type": "person",
+          "role": null,
+          "evidence": "托卡耶夫"
+        }
+      ],
+      "locations": [],
+      "topics": [
+        {
+          "topic_id": "policy-governance",
+          "name": "政策治理",
+          "evidence": "会议"
+        },
+        {
+          "topic_id": "external-relations",
+          "name": "对外交流",
+          "evidence": "国际"
+        }
+      ],
+      "detail_path": "/items/2026-07-17/hndaily-20260717-58464-19712006/",
+      "rank": 2
+    },
+    {
+      "item_id": "hndaily-20260717-58464-19712007",
+      "published_date": "2026-07-17",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 3,
+      "title": "寻常巷陌见初心，人民城市为人民",
+      "ai_summary": "上海通过旧区改造解决居民缺少卫生设施等住房问题。",
+      "scope": "national",
+      "enrichment_status": "complete",
+      "subjects": [
+        {
+          "subject_id": "subject-e646b1e6febe4e",
+          "name": "习近平",
+          "type": "person",
+          "role": null,
+          "evidence": "习近平"
+        }
+      ],
+      "locations": [],
+      "topics": [
+        {
+          "topic_id": "urban-rural",
+          "name": "城乡建设",
+          "evidence": "城市"
+        }
+      ],
+      "detail_path": "/items/2026-07-17/hndaily-20260717-58464-19712007/",
+      "rank": 3
+    }
+  ],
+  "world_ranking": [],
+  "items": [
+    {
+      "item_id": "hndaily-20260717-58464-19712003",
+      "published_date": "2026-07-17",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 1,
+      "title": "“老百姓的生活是家事，更是国事”",
+      "ai_summary": "上海历经数十年改造，已解决上百万居民长期使用马桶、缺少独立卫生设施的问题。",
+      "scope": "national",
+      "enrichment_status": "complete",
+      "subjects": [
+        {
+          "subject_id": "subject-e646b1e6febe4e",
+          "name": "习近平",
+          "type": "person",
+          "role": null,
+          "evidence": "习近平"
+        }
+      ],
+      "locations": [],
+      "topics": [
+        {
+          "topic_id": "livelihood-services",
+          "name": "民生服务",
+          "evidence": "民生"
+        }
+      ],
+      "detail_path": "/items/2026-07-17/hndaily-20260717-58464-19712003/"
+    },
+    {
+      "item_id": "hndaily-20260717-58464-19712006",
+      "published_date": "2026-07-17",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 2,
+      "title": "习近平会见哈萨克斯坦总统托卡耶夫",
+      "ai_summary": "习近平与哈萨克斯坦总统托卡耶夫会谈，双方表示将深化战略协作和多领域合作。",
+      "scope": "national",
+      "enrichment_status": "complete",
+      "subjects": [
+        {
+          "subject_id": "subject-e646b1e6febe4e",
+          "name": "习近平",
+          "type": "person",
+          "role": null,
+          "evidence": "习近平"
+        },
+        {
+          "subject_id": "subject-44ebb10ceb1ebf",
+          "name": "托卡耶夫",
+          "type": "person",
+          "role": null,
+          "evidence": "托卡耶夫"
+        }
+      ],
+      "locations": [],
+      "topics": [
+        {
+          "topic_id": "policy-governance",
+          "name": "政策治理",
+          "evidence": "会议"
+        },
+        {
+          "topic_id": "external-relations",
+          "name": "对外交流",
+          "evidence": "国际"
+        }
+      ],
+      "detail_path": "/items/2026-07-17/hndaily-20260717-58464-19712006/"
+    },
+    {
+      "item_id": "hndaily-20260717-58464-19712007",
+      "published_date": "2026-07-17",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 3,
+      "title": "寻常巷陌见初心，人民城市为人民",
+      "ai_summary": "上海通过旧区改造解决居民缺少卫生设施等住房问题。",
+      "scope": "national",
+      "enrichment_status": "complete",
+      "subjects": [
+        {
+          "subject_id": "subject-e646b1e6febe4e",
+          "name": "习近平",
+          "type": "person",
+          "role": null,
+          "evidence": "习近平"
+        }
+      ],
+      "locations": [],
+      "topics": [
+        {
+          "topic_id": "urban-rural",
+          "name": "城乡建设",
+          "evidence": "城市"
+        }
+      ],
+      "detail_path": "/items/2026-07-17/hndaily-20260717-58464-19712007/"
+    },
+    {
+      "item_id": "hndaily-20260717-58464-19712009",
+      "published_date": "2026-07-17",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 4,
+      "title": "2026两岸海洋文化交流平台海南省活动开幕",
+      "ai_summary": "2026两岸海洋文化交流平台海南省活动在海口开幕，推动琼台文化和产业交流。",
+      "scope": "domestic",
+      "enrichment_status": "complete",
+      "subjects": [
+        {
+          "subject_id": "subject-947077d4770c96",
+          "name": "冯飞",
+          "type": "person",
+          "role": null,
+          "evidence": "冯飞"
+        },
+        {
+          "subject_id": "subject-6a6500510b9352",
+          "name": "刘小明",
+          "type": "person",
+          "role": null,
+          "evidence": "刘小明"
+        },
+        {
+          "subject_id": "subject-1ffa420523dcfa",
+          "name": "李荣灿",
+          "type": "person",
+          "role": null,
+          "evidence": "李荣灿"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "海南省"
+        },
+        {
+          "location_id": "hainan-haikou",
+          "name": "海口市",
+          "code": "460100",
+          "level": "prefecture",
+          "evidence": "海口"
+        }
+      ],
+      "topics": [
+        {
+          "topic_id": "external-relations",
+          "name": "对外交流",
+          "evidence": "两岸"
+        }
+      ],
+      "detail_path": "/items/2026-07-17/hndaily-20260717-58464-19712009/"
+    },
+    {
+      "item_id": "hndaily-20260717-58464-19712010",
+      "published_date": "2026-07-17",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 5,
+      "title": "传达学习习近平总书记重要论述和重要讲话精神\n研究部署城市现代化建设、整治群众身边不正之风和腐败问题等工作",
+      "ai_summary": "海南研究城市更新和群众身边腐败问题整治，要求把相关工作与解决民生诉求结合。",
+      "scope": "hainan",
+      "enrichment_status": "complete",
+      "subjects": [
+        {
+          "subject_id": "subject-e646b1e6febe4e",
+          "name": "习近平",
+          "type": "person",
+          "role": null,
+          "evidence": "习近平"
+        },
+        {
+          "subject_id": "subject-947077d4770c96",
+          "name": "冯飞",
+          "type": "person",
+          "role": null,
+          "evidence": "冯飞"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan-haikou",
+          "name": "海口市",
+          "code": "460100",
+          "level": "prefecture",
+          "evidence": "海口"
+        },
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "海南"
+        }
+      ],
+      "topics": [
+        {
+          "topic_id": "policy-governance",
+          "name": "政策治理",
+          "evidence": "部署"
+        }
+      ],
+      "detail_path": "/items/2026-07-17/hndaily-20260717-58464-19712010/"
+    },
+    {
+      "item_id": "hndaily-20260717-58464-19712011",
+      "published_date": "2026-07-17",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 6,
+      "title": "双岛同心同行 琼台共融共赢",
+      "ai_summary": "2026琼台合作周在海口开幕，聚焦产业、青年和文化交流。",
+      "scope": "domestic",
+      "enrichment_status": "complete",
+      "subjects": [
+        {
+          "subject_id": "subject-e646b1e6febe4e",
+          "name": "习近平",
+          "type": "person",
+          "role": null,
+          "evidence": "习近平"
+        },
+        {
+          "subject_id": "subject-947077d4770c96",
+          "name": "冯飞",
+          "type": "person",
+          "role": null,
+          "evidence": "冯飞"
+        },
+        {
+          "subject_id": "subject-6a6500510b9352",
+          "name": "刘小明",
+          "type": "person",
+          "role": null,
+          "evidence": "刘小明"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "海南省"
+        },
+        {
+          "location_id": "hainan-haikou",
+          "name": "海口市",
+          "code": "460100",
+          "level": "prefecture",
+          "evidence": "海口"
+        }
+      ],
+      "topics": [
+        {
+          "topic_id": "external-relations",
+          "name": "对外交流",
+          "evidence": "琼台"
+        }
+      ],
+      "detail_path": "/items/2026-07-17/hndaily-20260717-58464-19712011/"
+    },
+    {
+      "item_id": "hndaily-20260717-58464-19712012",
+      "published_date": "2026-07-17",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 7,
+      "title": "刘小明会见新西兰前总理约翰·基",
+      "ai_summary": "海南省长刘小明在海口会见新西兰前总理约翰·基。",
+      "scope": "mixed",
+      "enrichment_status": "complete",
+      "subjects": [
+        {
+          "subject_id": "subject-6a6500510b9352",
+          "name": "刘小明",
+          "type": "person",
+          "role": null,
+          "evidence": "刘小明"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan-haikou",
+          "name": "海口市",
+          "code": "460100",
+          "level": "prefecture",
+          "evidence": "海口"
+        },
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "海南"
+        }
+      ],
+      "topics": [
+        {
+          "topic_id": "external-relations",
+          "name": "对外交流",
+          "evidence": "境外"
+        }
+      ],
+      "detail_path": "/items/2026-07-17/hndaily-20260717-58464-19712012/"
+    },
+    {
+      "item_id": "hndaily-20260717-58464-19712013",
+      "published_date": "2026-07-17",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 8,
+      "title": "“以前种多少看感觉，现在怎么种有‘链’接”",
+      "ai_summary": "7月12日晚上，海口市海南农垦三江种植基地，近2万斤芋头装车。货车裹挟着夜色与泥土气息，驶向湖南衡阳农产品批发市场。15日，这批海南芋头出现在湖南市民的餐桌上。",
+      "scope": "domestic",
+      "enrichment_status": "complete",
+      "subjects": [],
+      "locations": [
+        {
+          "location_id": "hainan-lingao",
+          "name": "临高县",
+          "code": "469024",
+          "level": "county",
+          "evidence": "临高县"
+        },
+        {
+          "location_id": "hainan-haikou",
+          "name": "海口市",
+          "code": "460100",
+          "level": "prefecture",
+          "evidence": "海口市"
+        },
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "海南"
+        }
+      ],
+      "topics": [
+        {
+          "topic_id": "industry-projects",
+          "name": "产业项目",
+          "evidence": "产业"
+        }
+      ],
+      "detail_path": "/items/2026-07-17/hndaily-20260717-58464-19712013/"
+    },
+    {
+      "item_id": "hndaily-20260717-58464-19712016",
+      "published_date": "2026-07-17",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 10,
+      "title": "省信访工作联席会议2026年第二次全体会议召开",
+      "ai_summary": "海南研究下一阶段信访工作。",
+      "scope": "hainan",
+      "enrichment_status": "complete",
+      "subjects": [
+        {
+          "subject_id": "subject-e646b1e6febe4e",
+          "name": "习近平",
+          "type": "person",
+          "role": null,
+          "evidence": "习近平"
+        },
+        {
+          "subject_id": "subject-e561267c49093e",
+          "name": "杨晋柏",
+          "type": "person",
+          "role": null,
+          "evidence": "杨晋柏"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan-haikou",
+          "name": "海口市",
+          "code": "460100",
+          "level": "prefecture",
+          "evidence": "海口"
+        },
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "海南"
+        }
+      ],
+      "topics": [
+        {
+          "topic_id": "policy-governance",
+          "name": "政策治理",
+          "evidence": "会议"
+        }
+      ],
+      "detail_path": "/items/2026-07-17/hndaily-20260717-58464-19712016/"
+    }
+  ]
+}

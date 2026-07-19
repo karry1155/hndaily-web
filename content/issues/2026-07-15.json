@@ -1,0 +1,723 @@
+{
+  "schema_version": 7,
+  "date": "2026-07-15",
+  "source": "海南日报",
+  "page_count": 8,
+  "article_count": 45,
+  "pages": [
+    {
+      "page_number": "001",
+      "page_name": "头版",
+      "page_url": "http://news.hndaily.cn/html/2026-07/15/node_58464.htm",
+      "pdf_url": "http://news.hndaily.cn/resfile/2026-07-15/001/hnrb20260715001.pdf",
+      "articles": [
+        {
+          "item_id": "hndaily-20260715-58464-19704502",
+          "title": "习近平《在国家科学技术奖励大会、两院院士大会、中国科协第十一次全国代表大会上的讲话》单行本出版",
+          "page_sequence": 1,
+          "detail_path": "/items/2026-07-15/hndaily-20260715-58464-19704502/"
+        },
+        {
+          "item_id": "hndaily-20260715-58464-19704505",
+          "title": "解开“千千结” 蹚出“路路通”",
+          "page_sequence": 2,
+          "detail_path": "/items/2026-07-15/hndaily-20260715-58464-19704505/"
+        },
+        {
+          "item_id": "hndaily-20260715-58464-19704506",
+          "title": "以改革激活力 以开放增动力\n加快推动标志性改革从破题走向成势",
+          "page_sequence": 3,
+          "detail_path": "/items/2026-07-15/hndaily-20260715-58464-19704506/"
+        },
+        {
+          "item_id": "hndaily-20260715-58464-19704507",
+          "title": "保持一抓到底的韧劲",
+          "page_sequence": 4,
+          "detail_path": "/items/2026-07-15/hndaily-20260715-58464-19704507/"
+        },
+        {
+          "item_id": "hndaily-20260715-58464-19704509",
+          "title": "脚下沾泥土 初心贴民心",
+          "page_sequence": 5,
+          "detail_path": "/items/2026-07-15/hndaily-20260715-58464-19704509/"
+        },
+        {
+          "item_id": "hndaily-20260715-58464-19704510",
+          "title": "增长近五成，洋浦港“胃口大开”",
+          "page_sequence": 6,
+          "detail_path": "/items/2026-07-15/hndaily-20260715-58464-19704510/"
+        },
+        {
+          "item_id": "hndaily-20260715-58464-19704513",
+          "title": "物业费“包干”还是“酬金”，业主说了算",
+          "page_sequence": 7,
+          "detail_path": "/items/2026-07-15/hndaily-20260715-58464-19704513/"
+        },
+        {
+          "item_id": "hndaily-20260715-58464-19704515",
+          "title": "省委政法委第四十次全体会议暨\n省扫黑除恶斗争领导小组会议召开",
+          "page_sequence": 9,
+          "detail_path": "/items/2026-07-15/hndaily-20260715-58464-19704515/"
+        }
+      ]
+    },
+    {
+      "page_number": "002",
+      "page_name": "本省新闻",
+      "page_url": "http://news.hndaily.cn/html/2026-07/15/node_58465.htm",
+      "pdf_url": "http://news.hndaily.cn/resfile/2026-07-15/002/hnrb20260715002.pdf",
+      "articles": [
+        {
+          "item_id": "hndaily-20260715-58465-19704518",
+          "title": "海南矿业上半年盈利超去年全年",
+          "page_sequence": 1,
+          "detail_path": "/items/2026-07-15/hndaily-20260715-58465-19704518/"
+        },
+        {
+          "item_id": "hndaily-20260715-58465-19704522",
+          "title": "发展所需+群众所需=实效所须",
+          "page_sequence": 2,
+          "detail_path": "/items/2026-07-15/hndaily-20260715-58465-19704522/"
+        },
+        {
+          "item_id": "hndaily-20260715-58465-19704523",
+          "title": "海南首家技术经理人事务所成立",
+          "page_sequence": 3,
+          "detail_path": "/items/2026-07-15/hndaily-20260715-58465-19704523/"
+        },
+        {
+          "item_id": "hndaily-20260715-58465-19704525",
+          "title": "定安上线“塔岭企服通”小程序",
+          "page_sequence": 4,
+          "detail_path": "/items/2026-07-15/hndaily-20260715-58465-19704525/"
+        },
+        {
+          "item_id": "hndaily-20260715-58465-19704531",
+          "title": "南方油田建成中国石油首个碳中和油田",
+          "page_sequence": 5,
+          "detail_path": "/items/2026-07-15/hndaily-20260715-58465-19704531/"
+        },
+        {
+          "item_id": "hndaily-20260715-58465-19704532",
+          "title": "“创在自贸港”系列活动（第四场）在儋州开展",
+          "page_sequence": 6,
+          "detail_path": "/items/2026-07-15/hndaily-20260715-58465-19704532/"
+        },
+        {
+          "item_id": "hndaily-20260715-58465-19704533",
+          "title": "邀您共赴水陆空全景狂欢",
+          "page_sequence": 7,
+          "detail_path": "/items/2026-07-15/hndaily-20260715-58465-19704533/"
+        }
+      ]
+    },
+    {
+      "page_number": "003",
+      "page_name": "本省新闻",
+      "page_url": "http://news.hndaily.cn/html/2026-07/15/node_58466.htm",
+      "pdf_url": "http://news.hndaily.cn/resfile/2026-07-15/003/hnrb20260715003.pdf",
+      "articles": [
+        {
+          "item_id": "hndaily-20260715-58466-19704541",
+          "title": "乐东布局10个海水养殖集中取排水项目",
+          "page_sequence": 1,
+          "detail_path": "/items/2026-07-15/hndaily-20260715-58466-19704541/"
+        },
+        {
+          "item_id": "hndaily-20260715-58466-19704542",
+          "title": "东方市感城镇感恩夜市开市",
+          "page_sequence": 2,
+          "detail_path": "/items/2026-07-15/hndaily-20260715-58466-19704542/"
+        },
+        {
+          "item_id": "hndaily-20260715-58466-19704543",
+          "title": "白沙荣邦乡助农售苗4万余株",
+          "page_sequence": 3,
+          "detail_path": "/items/2026-07-15/hndaily-20260715-58466-19704543/"
+        },
+        {
+          "item_id": "hndaily-20260715-58466-19704544",
+          "title": "从黄浦江到南渡江，沪琼科创千里“牵手”",
+          "page_sequence": 4,
+          "detail_path": "/items/2026-07-15/hndaily-20260715-58466-19704544/"
+        },
+        {
+          "item_id": "hndaily-20260715-58466-19704545",
+          "title": "海南青年作曲家智文禹交响新作《拉达帕》亮相希腊",
+          "page_sequence": 5,
+          "detail_path": "/items/2026-07-15/hndaily-20260715-58466-19704545/"
+        },
+        {
+          "item_id": "hndaily-20260715-58466-19704546",
+          "title": "我省面向社会招聘7名\n事业编大学生乡村医生",
+          "page_sequence": 6,
+          "detail_path": "/items/2026-07-15/hndaily-20260715-58466-19704546/"
+        },
+        {
+          "item_id": "hndaily-20260715-58466-19704547",
+          "title": "​把根扎进泥土里，把香送到百姓家",
+          "page_sequence": 7,
+          "detail_path": "/items/2026-07-15/hndaily-20260715-58466-19704547/"
+        },
+        {
+          "item_id": "hndaily-20260715-58466-19704552",
+          "title": "儋州：深耕养老领域监督 筑牢银发幸福安全防线",
+          "page_sequence": 8,
+          "detail_path": "/items/2026-07-15/hndaily-20260715-58466-19704552/"
+        }
+      ]
+    },
+    {
+      "page_number": "004",
+      "page_name": "民生新闻",
+      "page_url": "http://news.hndaily.cn/html/2026-07/15/node_58467.htm",
+      "pdf_url": "http://news.hndaily.cn/resfile/2026-07-15/004/hnrb20260715004.pdf",
+      "articles": [
+        {
+          "item_id": "hndaily-20260715-58467-19704558",
+          "title": "揪出“幽灵外卖” 严惩消费欺诈",
+          "page_sequence": 1,
+          "detail_path": "/items/2026-07-15/hndaily-20260715-58467-19704558/"
+        },
+        {
+          "item_id": "hndaily-20260715-58467-19704559",
+          "title": "海南国家级紧急医学救援基地建成",
+          "page_sequence": 2,
+          "detail_path": "/items/2026-07-15/hndaily-20260715-58467-19704559/"
+        },
+        {
+          "item_id": "hndaily-20260715-58467-19704560",
+          "title": "我省连续两年实现电动自行车火灾“零伤亡”",
+          "page_sequence": 3,
+          "detail_path": "/items/2026-07-15/hndaily-20260715-58467-19704560/"
+        },
+        {
+          "item_id": "hndaily-20260715-58467-19704561",
+          "title": "三亚机场暑运“加码”重点航线",
+          "page_sequence": 4,
+          "detail_path": "/items/2026-07-15/hndaily-20260715-58467-19704561/"
+        },
+        {
+          "item_id": "hndaily-20260715-58467-19704563",
+          "title": "假期“不脱管” 生活有滋味",
+          "page_sequence": 5,
+          "detail_path": "/items/2026-07-15/hndaily-20260715-58467-19704563/"
+        },
+        {
+          "item_id": "hndaily-20260715-58467-19704564",
+          "title": "午餐午休有保障\n多彩假期伴成长",
+          "page_sequence": 6,
+          "detail_path": "/items/2026-07-15/hndaily-20260715-58467-19704564/"
+        },
+        {
+          "item_id": "hndaily-20260715-58467-19704565",
+          "title": "运动场地“敞开门” 非遗课堂趣味多",
+          "page_sequence": 7,
+          "detail_path": "/items/2026-07-15/hndaily-20260715-58467-19704565/"
+        },
+        {
+          "item_id": "hndaily-20260715-58467-19704566",
+          "title": "博鳌乐城“BNCT肿瘤患者新生帮扶计划”启动",
+          "page_sequence": 8,
+          "detail_path": "/items/2026-07-15/hndaily-20260715-58467-19704566/"
+        },
+        {
+          "item_id": "hndaily-20260715-58467-19704567",
+          "title": "北大口腔三亚医院开展\n小学生免费窝沟封闭项目",
+          "page_sequence": 9,
+          "detail_path": "/items/2026-07-15/hndaily-20260715-58467-19704567/"
+        },
+        {
+          "item_id": "hndaily-20260715-58467-19704568",
+          "title": "跨越千里的“开学礼”",
+          "page_sequence": 10,
+          "detail_path": "/items/2026-07-15/hndaily-20260715-58467-19704568/"
+        }
+      ]
+    },
+    {
+      "page_number": "005",
+      "page_name": "理论周刊",
+      "page_url": "http://news.hndaily.cn/html/2026-07/15/node_58468.htm",
+      "pdf_url": "http://news.hndaily.cn/resfile/2026-07-15/005/hnrb20260715005.pdf",
+      "articles": []
+    },
+    {
+      "page_number": "006",
+      "page_name": "理论周刊",
+      "page_url": "http://news.hndaily.cn/html/2026-07/15/node_58469.htm",
+      "pdf_url": "http://news.hndaily.cn/resfile/2026-07-15/006/hnrb20260715006.pdf",
+      "articles": []
+    },
+    {
+      "page_number": "007",
+      "page_name": "中国新闻",
+      "page_url": "http://news.hndaily.cn/html/2026-07/15/node_58470.htm",
+      "pdf_url": "http://news.hndaily.cn/resfile/2026-07-15/007/hnrb20260715007.pdf",
+      "articles": [
+        {
+          "item_id": "hndaily-20260715-58470-19704600",
+          "title": "6部门印发《固体废物污染防治“十五五”规划》",
+          "page_sequence": 1,
+          "detail_path": "/items/2026-07-15/hndaily-20260715-58470-19704600/"
+        },
+        {
+          "item_id": "hndaily-20260715-58470-19704601",
+          "title": "习近平总书记指引人工智能发展与治理",
+          "page_sequence": 2,
+          "detail_path": "/items/2026-07-15/hndaily-20260715-58470-19704601/"
+        },
+        {
+          "item_id": "hndaily-20260715-58470-19704603",
+          "title": "共同推动人工智能发展迈上更高水平",
+          "page_sequence": 3,
+          "detail_path": "/items/2026-07-15/hndaily-20260715-58470-19704603/"
+        },
+        {
+          "item_id": "hndaily-20260715-58470-19704604",
+          "title": "四大行提示“存100万元\n解锁5.25%利息”不实",
+          "page_sequence": 4,
+          "detail_path": "/items/2026-07-15/hndaily-20260715-58470-19704604/"
+        },
+        {
+          "item_id": "hndaily-20260715-58470-19704605",
+          "title": "“敢于善于斗争，始终保持必胜信心”",
+          "page_sequence": 5,
+          "detail_path": "/items/2026-07-15/hndaily-20260715-58470-19704605/"
+        },
+        {
+          "item_id": "hndaily-20260715-58470-19704607",
+          "title": "水利部安排部署西北地区\n暴雨洪水防御工作",
+          "page_sequence": 6,
+          "detail_path": "/items/2026-07-15/hndaily-20260715-58470-19704607/"
+        },
+        {
+          "item_id": "hndaily-20260715-58470-19704608",
+          "title": "2026年上半年我国外贸增势强劲、走势稳健",
+          "page_sequence": 7,
+          "detail_path": "/items/2026-07-15/hndaily-20260715-58470-19704608/"
+        }
+      ]
+    },
+    {
+      "page_number": "008",
+      "page_name": "中国/世界新闻",
+      "page_url": "http://news.hndaily.cn/html/2026-07/15/node_58471.htm",
+      "pdf_url": "http://news.hndaily.cn/resfile/2026-07-15/008/hnrb20260715008.pdf",
+      "articles": [
+        {
+          "item_id": "hndaily-20260715-58471-19704615",
+          "title": "“让读者感知当代中国的思想内核”",
+          "page_sequence": 1,
+          "detail_path": "/items/2026-07-15/hndaily-20260715-58471-19704615/"
+        },
+        {
+          "item_id": "hndaily-20260715-58471-19704616",
+          "title": "欧盟国家在禁令生效前\n大量进口俄液化天然气",
+          "page_sequence": 2,
+          "detail_path": "/items/2026-07-15/hndaily-20260715-58471-19704616/"
+        },
+        {
+          "item_id": "hndaily-20260715-58471-19704617",
+          "title": "委内瑞拉地震\n死亡人数升至4561人",
+          "page_sequence": 3,
+          "detail_path": "/items/2026-07-15/hndaily-20260715-58471-19704617/"
+        },
+        {
+          "item_id": "hndaily-20260715-58471-19704618",
+          "title": "互袭加封锁，美伊退回“谅解”前？",
+          "page_sequence": 4,
+          "detail_path": "/items/2026-07-15/hndaily-20260715-58471-19704618/"
+        },
+        {
+          "item_id": "hndaily-20260715-58471-19704620",
+          "title": "志愿者招募平台开启",
+          "page_sequence": 5,
+          "detail_path": "/items/2026-07-15/hndaily-20260715-58471-19704620/"
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "section_id": "front-page",
+      "name": "头版",
+      "source_pages": [
+        "001"
+      ],
+      "articles": [
+        {
+          "item_id": "hndaily-20260715-58464-19704502",
+          "title": "习近平《在国家科学技术奖励大会、两院院士大会、中国科协第十一次全国代表大会上的讲话》单行本出版",
+          "source_page_number": "001",
+          "page_sequence": 1,
+          "detail_path": "/items/2026-07-15/hndaily-20260715-58464-19704502/"
+        },
+        {
+          "item_id": "hndaily-20260715-58464-19704505",
+          "title": "解开“千千结” 蹚出“路路通”",
+          "source_page_number": "001",
+          "page_sequence": 2,
+          "detail_path": "/items/2026-07-15/hndaily-20260715-58464-19704505/"
+        },
+        {
+          "item_id": "hndaily-20260715-58464-19704506",
+          "title": "以改革激活力 以开放增动力\n加快推动标志性改革从破题走向成势",
+          "source_page_number": "001",
+          "page_sequence": 3,
+          "detail_path": "/items/2026-07-15/hndaily-20260715-58464-19704506/"
+        },
+        {
+          "item_id": "hndaily-20260715-58464-19704507",
+          "title": "保持一抓到底的韧劲",
+          "source_page_number": "001",
+          "page_sequence": 4,
+          "detail_path": "/items/2026-07-15/hndaily-20260715-58464-19704507/"
+        },
+        {
+          "item_id": "hndaily-20260715-58464-19704509",
+          "title": "脚下沾泥土 初心贴民心",
+          "source_page_number": "001",
+          "page_sequence": 5,
+          "detail_path": "/items/2026-07-15/hndaily-20260715-58464-19704509/"
+        },
+        {
+          "item_id": "hndaily-20260715-58464-19704510",
+          "title": "增长近五成，洋浦港“胃口大开”",
+          "source_page_number": "001",
+          "page_sequence": 6,
+          "detail_path": "/items/2026-07-15/hndaily-20260715-58464-19704510/"
+        },
+        {
+          "item_id": "hndaily-20260715-58464-19704513",
+          "title": "物业费“包干”还是“酬金”，业主说了算",
+          "source_page_number": "001",
+          "page_sequence": 7,
+          "detail_path": "/items/2026-07-15/hndaily-20260715-58464-19704513/"
+        },
+        {
+          "item_id": "hndaily-20260715-58464-19704515",
+          "title": "省委政法委第四十次全体会议暨\n省扫黑除恶斗争领导小组会议召开",
+          "source_page_number": "001",
+          "page_sequence": 9,
+          "detail_path": "/items/2026-07-15/hndaily-20260715-58464-19704515/"
+        }
+      ]
+    },
+    {
+      "section_id": "hainan-news",
+      "name": "本省新闻",
+      "source_pages": [
+        "002",
+        "003"
+      ],
+      "articles": [
+        {
+          "item_id": "hndaily-20260715-58465-19704518",
+          "title": "海南矿业上半年盈利超去年全年",
+          "source_page_number": "002",
+          "page_sequence": 1,
+          "detail_path": "/items/2026-07-15/hndaily-20260715-58465-19704518/"
+        },
+        {
+          "item_id": "hndaily-20260715-58465-19704522",
+          "title": "发展所需+群众所需=实效所须",
+          "source_page_number": "002",
+          "page_sequence": 2,
+          "detail_path": "/items/2026-07-15/hndaily-20260715-58465-19704522/"
+        },
+        {
+          "item_id": "hndaily-20260715-58465-19704523",
+          "title": "海南首家技术经理人事务所成立",
+          "source_page_number": "002",
+          "page_sequence": 3,
+          "detail_path": "/items/2026-07-15/hndaily-20260715-58465-19704523/"
+        },
+        {
+          "item_id": "hndaily-20260715-58465-19704525",
+          "title": "定安上线“塔岭企服通”小程序",
+          "source_page_number": "002",
+          "page_sequence": 4,
+          "detail_path": "/items/2026-07-15/hndaily-20260715-58465-19704525/"
+        },
+        {
+          "item_id": "hndaily-20260715-58465-19704531",
+          "title": "南方油田建成中国石油首个碳中和油田",
+          "source_page_number": "002",
+          "page_sequence": 5,
+          "detail_path": "/items/2026-07-15/hndaily-20260715-58465-19704531/"
+        },
+        {
+          "item_id": "hndaily-20260715-58465-19704532",
+          "title": "“创在自贸港”系列活动（第四场）在儋州开展",
+          "source_page_number": "002",
+          "page_sequence": 6,
+          "detail_path": "/items/2026-07-15/hndaily-20260715-58465-19704532/"
+        },
+        {
+          "item_id": "hndaily-20260715-58465-19704533",
+          "title": "邀您共赴水陆空全景狂欢",
+          "source_page_number": "002",
+          "page_sequence": 7,
+          "detail_path": "/items/2026-07-15/hndaily-20260715-58465-19704533/"
+        },
+        {
+          "item_id": "hndaily-20260715-58466-19704541",
+          "title": "乐东布局10个海水养殖集中取排水项目",
+          "source_page_number": "003",
+          "page_sequence": 1,
+          "detail_path": "/items/2026-07-15/hndaily-20260715-58466-19704541/"
+        },
+        {
+          "item_id": "hndaily-20260715-58466-19704542",
+          "title": "东方市感城镇感恩夜市开市",
+          "source_page_number": "003",
+          "page_sequence": 2,
+          "detail_path": "/items/2026-07-15/hndaily-20260715-58466-19704542/"
+        },
+        {
+          "item_id": "hndaily-20260715-58466-19704543",
+          "title": "白沙荣邦乡助农售苗4万余株",
+          "source_page_number": "003",
+          "page_sequence": 3,
+          "detail_path": "/items/2026-07-15/hndaily-20260715-58466-19704543/"
+        },
+        {
+          "item_id": "hndaily-20260715-58466-19704544",
+          "title": "从黄浦江到南渡江，沪琼科创千里“牵手”",
+          "source_page_number": "003",
+          "page_sequence": 4,
+          "detail_path": "/items/2026-07-15/hndaily-20260715-58466-19704544/"
+        },
+        {
+          "item_id": "hndaily-20260715-58466-19704545",
+          "title": "海南青年作曲家智文禹交响新作《拉达帕》亮相希腊",
+          "source_page_number": "003",
+          "page_sequence": 5,
+          "detail_path": "/items/2026-07-15/hndaily-20260715-58466-19704545/"
+        },
+        {
+          "item_id": "hndaily-20260715-58466-19704546",
+          "title": "我省面向社会招聘7名\n事业编大学生乡村医生",
+          "source_page_number": "003",
+          "page_sequence": 6,
+          "detail_path": "/items/2026-07-15/hndaily-20260715-58466-19704546/"
+        },
+        {
+          "item_id": "hndaily-20260715-58466-19704547",
+          "title": "​把根扎进泥土里，把香送到百姓家",
+          "source_page_number": "003",
+          "page_sequence": 7,
+          "detail_path": "/items/2026-07-15/hndaily-20260715-58466-19704547/"
+        },
+        {
+          "item_id": "hndaily-20260715-58466-19704552",
+          "title": "儋州：深耕养老领域监督 筑牢银发幸福安全防线",
+          "source_page_number": "003",
+          "page_sequence": 8,
+          "detail_path": "/items/2026-07-15/hndaily-20260715-58466-19704552/"
+        }
+      ]
+    },
+    {
+      "section_id": "source-af6ba5dba9",
+      "name": "民生新闻",
+      "source_pages": [
+        "004"
+      ],
+      "articles": [
+        {
+          "item_id": "hndaily-20260715-58467-19704558",
+          "title": "揪出“幽灵外卖” 严惩消费欺诈",
+          "source_page_number": "004",
+          "page_sequence": 1,
+          "detail_path": "/items/2026-07-15/hndaily-20260715-58467-19704558/"
+        },
+        {
+          "item_id": "hndaily-20260715-58467-19704559",
+          "title": "海南国家级紧急医学救援基地建成",
+          "source_page_number": "004",
+          "page_sequence": 2,
+          "detail_path": "/items/2026-07-15/hndaily-20260715-58467-19704559/"
+        },
+        {
+          "item_id": "hndaily-20260715-58467-19704560",
+          "title": "我省连续两年实现电动自行车火灾“零伤亡”",
+          "source_page_number": "004",
+          "page_sequence": 3,
+          "detail_path": "/items/2026-07-15/hndaily-20260715-58467-19704560/"
+        },
+        {
+          "item_id": "hndaily-20260715-58467-19704561",
+          "title": "三亚机场暑运“加码”重点航线",
+          "source_page_number": "004",
+          "page_sequence": 4,
+          "detail_path": "/items/2026-07-15/hndaily-20260715-58467-19704561/"
+        },
+        {
+          "item_id": "hndaily-20260715-58467-19704563",
+          "title": "假期“不脱管” 生活有滋味",
+          "source_page_number": "004",
+          "page_sequence": 5,
+          "detail_path": "/items/2026-07-15/hndaily-20260715-58467-19704563/"
+        },
+        {
+          "item_id": "hndaily-20260715-58467-19704564",
+          "title": "午餐午休有保障\n多彩假期伴成长",
+          "source_page_number": "004",
+          "page_sequence": 6,
+          "detail_path": "/items/2026-07-15/hndaily-20260715-58467-19704564/"
+        },
+        {
+          "item_id": "hndaily-20260715-58467-19704565",
+          "title": "运动场地“敞开门” 非遗课堂趣味多",
+          "source_page_number": "004",
+          "page_sequence": 7,
+          "detail_path": "/items/2026-07-15/hndaily-20260715-58467-19704565/"
+        },
+        {
+          "item_id": "hndaily-20260715-58467-19704566",
+          "title": "博鳌乐城“BNCT肿瘤患者新生帮扶计划”启动",
+          "source_page_number": "004",
+          "page_sequence": 8,
+          "detail_path": "/items/2026-07-15/hndaily-20260715-58467-19704566/"
+        },
+        {
+          "item_id": "hndaily-20260715-58467-19704567",
+          "title": "北大口腔三亚医院开展\n小学生免费窝沟封闭项目",
+          "source_page_number": "004",
+          "page_sequence": 9,
+          "detail_path": "/items/2026-07-15/hndaily-20260715-58467-19704567/"
+        },
+        {
+          "item_id": "hndaily-20260715-58467-19704568",
+          "title": "跨越千里的“开学礼”",
+          "source_page_number": "004",
+          "page_sequence": 10,
+          "detail_path": "/items/2026-07-15/hndaily-20260715-58467-19704568/"
+        }
+      ]
+    },
+    {
+      "section_id": "theory",
+      "name": "理论周刊",
+      "source_pages": [
+        "005",
+        "006"
+      ],
+      "articles": []
+    },
+    {
+      "section_id": "source-b1a9e65cda",
+      "name": "中国新闻",
+      "source_pages": [
+        "007"
+      ],
+      "articles": [
+        {
+          "item_id": "hndaily-20260715-58470-19704600",
+          "title": "6部门印发《固体废物污染防治“十五五”规划》",
+          "source_page_number": "007",
+          "page_sequence": 1,
+          "detail_path": "/items/2026-07-15/hndaily-20260715-58470-19704600/"
+        },
+        {
+          "item_id": "hndaily-20260715-58470-19704601",
+          "title": "习近平总书记指引人工智能发展与治理",
+          "source_page_number": "007",
+          "page_sequence": 2,
+          "detail_path": "/items/2026-07-15/hndaily-20260715-58470-19704601/"
+        },
+        {
+          "item_id": "hndaily-20260715-58470-19704603",
+          "title": "共同推动人工智能发展迈上更高水平",
+          "source_page_number": "007",
+          "page_sequence": 3,
+          "detail_path": "/items/2026-07-15/hndaily-20260715-58470-19704603/"
+        },
+        {
+          "item_id": "hndaily-20260715-58470-19704604",
+          "title": "四大行提示“存100万元\n解锁5.25%利息”不实",
+          "source_page_number": "007",
+          "page_sequence": 4,
+          "detail_path": "/items/2026-07-15/hndaily-20260715-58470-19704604/"
+        },
+        {
+          "item_id": "hndaily-20260715-58470-19704605",
+          "title": "“敢于善于斗争，始终保持必胜信心”",
+          "source_page_number": "007",
+          "page_sequence": 5,
+          "detail_path": "/items/2026-07-15/hndaily-20260715-58470-19704605/"
+        },
+        {
+          "item_id": "hndaily-20260715-58470-19704607",
+          "title": "水利部安排部署西北地区\n暴雨洪水防御工作",
+          "source_page_number": "007",
+          "page_sequence": 6,
+          "detail_path": "/items/2026-07-15/hndaily-20260715-58470-19704607/"
+        },
+        {
+          "item_id": "hndaily-20260715-58470-19704608",
+          "title": "2026年上半年我国外贸增势强劲、走势稳健",
+          "source_page_number": "007",
+          "page_sequence": 7,
+          "detail_path": "/items/2026-07-15/hndaily-20260715-58470-19704608/"
+        }
+      ]
+    },
+    {
+      "section_id": "source-de455894df",
+      "name": "中国/世界新闻",
+      "source_pages": [
+        "008"
+      ],
+      "articles": [
+        {
+          "item_id": "hndaily-20260715-58471-19704615",
+          "title": "“让读者感知当代中国的思想内核”",
+          "source_page_number": "008",
+          "page_sequence": 1,
+          "detail_path": "/items/2026-07-15/hndaily-20260715-58471-19704615/"
+        },
+        {
+          "item_id": "hndaily-20260715-58471-19704616",
+          "title": "欧盟国家在禁令生效前\n大量进口俄液化天然气",
+          "source_page_number": "008",
+          "page_sequence": 2,
+          "detail_path": "/items/2026-07-15/hndaily-20260715-58471-19704616/"
+        },
+        {
+          "item_id": "hndaily-20260715-58471-19704617",
+          "title": "委内瑞拉地震\n死亡人数升至4561人",
+          "source_page_number": "008",
+          "page_sequence": 3,
+          "detail_path": "/items/2026-07-15/hndaily-20260715-58471-19704617/"
+        },
+        {
+          "item_id": "hndaily-20260715-58471-19704618",
+          "title": "互袭加封锁，美伊退回“谅解”前？",
+          "source_page_number": "008",
+          "page_sequence": 4,
+          "detail_path": "/items/2026-07-15/hndaily-20260715-58471-19704618/"
+        },
+        {
+          "item_id": "hndaily-20260715-58471-19704620",
+          "title": "志愿者招募平台开启",
+          "source_page_number": "008",
+          "page_sequence": 5,
+          "detail_path": "/items/2026-07-15/hndaily-20260715-58471-19704620/"
+        }
+      ]
+    }
+  ],
+  "front_page_item_ids": [
+    "hndaily-20260715-58464-19704502",
+    "hndaily-20260715-58464-19704505",
+    "hndaily-20260715-58464-19704506",
+    "hndaily-20260715-58464-19704507",
+    "hndaily-20260715-58464-19704509",
+    "hndaily-20260715-58464-19704510",
+    "hndaily-20260715-58464-19704513",
+    "hndaily-20260715-58464-19704515"
+  ]
+}

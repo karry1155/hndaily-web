@@ -6,7 +6,9 @@ from pathlib import Path
 from scripts.radar_locations import (
     LocationCatalogError,
     find_location_candidates,
+    infer_exact_location_mentions,
     load_location_catalog,
+    merge_location_mentions,
     resolve_location_mentions,
 )
 
@@ -33,6 +35,26 @@ class RadarLocationTests(unittest.TestCase):
                 candidates,
                 catalog,
             )
+
+    def test_official_full_name_is_inferred_but_alias_is_not(self):
+        catalog = load_location_catalog()
+        candidates = find_location_candidates("文昌胡椒产业", "文昌市蓬莱镇发展胡椒", catalog)
+        self.assertEqual(
+            infer_exact_location_mentions("文昌胡椒产业", "文昌市蓬莱镇发展胡椒", candidates, catalog),
+            [{"location_id": "hainan-wenchang", "evidence": "文昌市"}],
+        )
+        alias_candidates = find_location_candidates("文昌胡椒产业", "蓬莱镇发展胡椒", catalog)
+        self.assertEqual(
+            infer_exact_location_mentions("文昌胡椒产业", "蓬莱镇发展胡椒", alias_candidates, catalog),
+            [],
+        )
+
+    def test_model_location_wins_when_exact_pass_finds_same_id(self):
+        merged = merge_location_mentions(
+            [{"location_id": "hainan-wenchang", "evidence": "文昌市蓬莱镇"}],
+            [{"location_id": "hainan-wenchang", "evidence": "文昌市"}],
+        )
+        self.assertEqual(merged, [{"location_id": "hainan-wenchang", "evidence": "文昌市蓬莱镇"}])
 
     def test_duplicate_codes_fail_catalog_validation(self):
         payload = {

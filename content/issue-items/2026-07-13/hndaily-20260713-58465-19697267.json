@@ -18,6 +18,13 @@
       "code": "460100",
       "level": "prefecture",
       "evidence": "海口"
+    },
+    {
+      "location_id": "hainan",
+      "name": "海南省",
+      "code": "460000",
+      "level": "province",
+      "evidence": "海南省"
     }
   ],
   "topics": [

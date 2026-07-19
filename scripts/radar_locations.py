@@ -55,6 +55,45 @@ def find_location_candidates(title: str, content: str, catalog: LocationCatalog)
     return sorted(matched, key=lambda row: (level_order[row["level"]], row["location_id"]))
 
 
+def infer_exact_location_mentions(
+    title: str,
+    content: str,
+    candidates: list[dict],
+    catalog: LocationCatalog,
+    limit: int = 5,
+) -> list[dict]:
+    """Return only unambiguous mentions of catalogued official full names.
+
+    Aliases continue to be model decisions. This deterministic pass prevents an
+    explicit name such as ``文昌市`` from disappearing when the model omits it.
+    """
+    source = f"{title}\n{content}"
+    mentions = []
+    for candidate in candidates:
+        row = catalog.by_id[candidate["location_id"]]
+        if row["name"] in source:
+            mentions.append({
+                "location_id": row["location_id"],
+                "evidence": row["name"],
+            })
+        if len(mentions) >= limit:
+            break
+    return mentions
+
+
+def merge_location_mentions(model_mentions, exact_mentions, limit: int = 5) -> list[dict]:
+    merged, seen = [], set()
+    for mention in [*model_mentions, *exact_mentions]:
+        location_id = mention.get("location_id")
+        if location_id in seen:
+            continue
+        seen.add(location_id)
+        merged.append(mention)
+        if len(merged) >= limit:
+            break
+    return merged
+
+
 def resolve_location_mentions(mentions, candidates, catalog: LocationCatalog) -> list[dict]:
     allowed = {row["location_id"] for row in candidates}
     resolved = []

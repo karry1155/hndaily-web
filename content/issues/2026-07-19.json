@@ -1,0 +1,361 @@
+{
+  "schema_version": 7,
+  "date": "2026-07-19",
+  "source": "海南日报",
+  "page_count": 4,
+  "article_count": 21,
+  "pages": [
+    {
+      "page_number": "001",
+      "page_name": "头版",
+      "page_url": "http://news.hndaily.cn/html/2026-07/19/node_58464.htm",
+      "pdf_url": "http://news.hndaily.cn/resfile/2026-07-19/001/hnrb20260719001.pdf",
+      "articles": [
+        {
+          "item_id": "hndaily-20260719-58464-19716147",
+          "title": "坚持开放共赢 驱动创新发展",
+          "page_sequence": 1,
+          "detail_path": "/items/2026-07-19/hndaily-20260719-58464-19716147/"
+        },
+        {
+          "item_id": "hndaily-20260719-58464-19716150",
+          "title": "2026年海南国际旅游岛欢乐节开幕",
+          "page_sequence": 2,
+          "detail_path": "/items/2026-07-19/hndaily-20260719-58464-19716150/"
+        },
+        {
+          "item_id": "hndaily-20260719-58464-19716151",
+          "title": "坚持系统化布局、精细化治理、多元化融合\n一体推进环岛旅游公路提质升级",
+          "page_sequence": 3,
+          "detail_path": "/items/2026-07-19/hndaily-20260719-58464-19716151/"
+        },
+        {
+          "item_id": "hndaily-20260719-58464-19716152",
+          "title": "省钱省心！欢乐节派送惠民礼包",
+          "page_sequence": 4,
+          "detail_path": "/items/2026-07-19/hndaily-20260719-58464-19716152/"
+        },
+        {
+          "item_id": "hndaily-20260719-58464-19716154",
+          "title": "算好三本账，“小票据”激活“大市场”",
+          "page_sequence": 5,
+          "detail_path": "/items/2026-07-19/hndaily-20260719-58464-19716154/"
+        },
+        {
+          "item_id": "hndaily-20260719-58464-19716155",
+          "title": "畅玩全岛 欢乐启程",
+          "page_sequence": 6,
+          "detail_path": "/items/2026-07-19/hndaily-20260719-58464-19716155/"
+        },
+        {
+          "item_id": "hndaily-20260719-58464-19716156",
+          "title": "琼中林下套种沉香，真香！",
+          "page_sequence": 7,
+          "detail_path": "/items/2026-07-19/hndaily-20260719-58464-19716156/"
+        }
+      ]
+    },
+    {
+      "page_number": "002",
+      "page_name": "本省新闻",
+      "page_url": "http://news.hndaily.cn/html/2026-07/19/node_58465.htm",
+      "pdf_url": "http://news.hndaily.cn/resfile/2026-07-19/002/hnrb20260719002.pdf",
+      "articles": [
+        {
+          "item_id": "hndaily-20260719-58465-19716163",
+          "title": "第十一届全国大学生生物医学\n工程创新设计竞赛三亚开幕",
+          "page_sequence": 1,
+          "detail_path": "/items/2026-07-19/hndaily-20260719-58465-19716163/"
+        },
+        {
+          "item_id": "hndaily-20260719-58465-19716164",
+          "title": "琼台青年企业家椰城共探优质合作新赛道",
+          "page_sequence": 2,
+          "detail_path": "/items/2026-07-19/hndaily-20260719-58465-19716164/"
+        },
+        {
+          "item_id": "hndaily-20260719-58465-19716165",
+          "title": "第三届琼台“宝岛杯”两岸青少年\n文体交流活动在海口启幕",
+          "page_sequence": 3,
+          "detail_path": "/items/2026-07-19/hndaily-20260719-58465-19716165/"
+        },
+        {
+          "item_id": "hndaily-20260719-58465-19716166",
+          "title": "“海南的开放包容为两岸交流注入活力”",
+          "page_sequence": 4,
+          "detail_path": "/items/2026-07-19/hndaily-20260719-58465-19716166/"
+        },
+        {
+          "item_id": "hndaily-20260719-58465-19716167",
+          "title": "《博鳌评价：城乡建设零碳评价指南（试行）》发布",
+          "page_sequence": 5,
+          "detail_path": "/items/2026-07-19/hndaily-20260719-58465-19716167/"
+        },
+        {
+          "item_id": "hndaily-20260719-58465-19716168",
+          "title": "携手护碧海 聚力守蔚蓝",
+          "page_sequence": 6,
+          "detail_path": "/items/2026-07-19/hndaily-20260719-58465-19716168/"
+        },
+        {
+          "item_id": "hndaily-20260719-58465-19716170",
+          "title": "2026年海南省万名大学生\n基层科普行活动在陵水启动",
+          "page_sequence": 8,
+          "detail_path": "/items/2026-07-19/hndaily-20260719-58465-19716170/"
+        },
+        {
+          "item_id": "hndaily-20260719-58465-19716171",
+          "title": "“为乡亲解决病痛，是我最开心的事”",
+          "page_sequence": 9,
+          "detail_path": "/items/2026-07-19/hndaily-20260719-58465-19716171/"
+        }
+      ]
+    },
+    {
+      "page_number": "003",
+      "page_name": "中国新闻",
+      "page_url": "http://news.hndaily.cn/html/2026-07/19/node_58466.htm",
+      "pdf_url": "http://news.hndaily.cn/resfile/2026-07-19/003/hnrb20260719003.pdf",
+      "articles": [
+        {
+          "item_id": "hndaily-20260719-58466-19716178",
+          "title": "全力投入抢险救援 压实责任排查隐患",
+          "page_sequence": 1,
+          "detail_path": "/items/2026-07-19/hndaily-20260719-58466-19716178/"
+        },
+        {
+          "item_id": "hndaily-20260719-58466-19716181",
+          "title": "促进共同繁荣 维护共同安全",
+          "page_sequence": 4,
+          "detail_path": "/items/2026-07-19/hndaily-20260719-58466-19716181/"
+        }
+      ]
+    },
+    {
+      "page_number": "004",
+      "page_name": "文化周刊",
+      "page_url": "http://news.hndaily.cn/html/2026-07/19/node_58467.htm",
+      "pdf_url": "http://news.hndaily.cn/resfile/2026-07-19/004/hnrb20260719004.pdf",
+      "articles": [
+        {
+          "item_id": "hndaily-20260719-58467-19716188",
+          "title": "一座小城",
+          "page_sequence": 1,
+          "detail_path": "/items/2026-07-19/hndaily-20260719-58467-19716188/"
+        },
+        {
+          "item_id": "hndaily-20260719-58467-19716191",
+          "title": "远去的巴斯特",
+          "page_sequence": 2,
+          "detail_path": "/items/2026-07-19/hndaily-20260719-58467-19716191/"
+        },
+        {
+          "item_id": "hndaily-20260719-58467-19716192",
+          "title": "西部古歌",
+          "page_sequence": 3,
+          "detail_path": "/items/2026-07-19/hndaily-20260719-58467-19716192/"
+        },
+        {
+          "item_id": "hndaily-20260719-58467-19716194",
+          "title": "钱学森做剪报",
+          "page_sequence": 4,
+          "detail_path": "/items/2026-07-19/hndaily-20260719-58467-19716194/"
+        }
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "section_id": "front-page",
+      "name": "头版",
+      "source_pages": [
+        "001"
+      ],
+      "articles": [
+        {
+          "item_id": "hndaily-20260719-58464-19716147",
+          "title": "坚持开放共赢 驱动创新发展",
+          "source_page_number": "001",
+          "page_sequence": 1,
+          "detail_path": "/items/2026-07-19/hndaily-20260719-58464-19716147/"
+        },
+        {
+          "item_id": "hndaily-20260719-58464-19716150",
+          "title": "2026年海南国际旅游岛欢乐节开幕",
+          "source_page_number": "001",
+          "page_sequence": 2,
+          "detail_path": "/items/2026-07-19/hndaily-20260719-58464-19716150/"
+        },
+        {
+          "item_id": "hndaily-20260719-58464-19716151",
+          "title": "坚持系统化布局、精细化治理、多元化融合\n一体推进环岛旅游公路提质升级",
+          "source_page_number": "001",
+          "page_sequence": 3,
+          "detail_path": "/items/2026-07-19/hndaily-20260719-58464-19716151/"
+        },
+        {
+          "item_id": "hndaily-20260719-58464-19716152",
+          "title": "省钱省心！欢乐节派送惠民礼包",
+          "source_page_number": "001",
+          "page_sequence": 4,
+          "detail_path": "/items/2026-07-19/hndaily-20260719-58464-19716152/"
+        },
+        {
+          "item_id": "hndaily-20260719-58464-19716154",
+          "title": "算好三本账，“小票据”激活“大市场”",
+          "source_page_number": "001",
+          "page_sequence": 5,
+          "detail_path": "/items/2026-07-19/hndaily-20260719-58464-19716154/"
+        },
+        {
+          "item_id": "hndaily-20260719-58464-19716155",
+          "title": "畅玩全岛 欢乐启程",
+          "source_page_number": "001",
+          "page_sequence": 6,
+          "detail_path": "/items/2026-07-19/hndaily-20260719-58464-19716155/"
+        },
+        {
+          "item_id": "hndaily-20260719-58464-19716156",
+          "title": "琼中林下套种沉香，真香！",
+          "source_page_number": "001",
+          "page_sequence": 7,
+          "detail_path": "/items/2026-07-19/hndaily-20260719-58464-19716156/"
+        }
+      ]
+    },
+    {
+      "section_id": "hainan-news",
+      "name": "本省新闻",
+      "source_pages": [
+        "002"
+      ],
+      "articles": [
+        {
+          "item_id": "hndaily-20260719-58465-19716163",
+          "title": "第十一届全国大学生生物医学\n工程创新设计竞赛三亚开幕",
+          "source_page_number": "002",
+          "page_sequence": 1,
+          "detail_path": "/items/2026-07-19/hndaily-20260719-58465-19716163/"
+        },
+        {
+          "item_id": "hndaily-20260719-58465-19716164",
+          "title": "琼台青年企业家椰城共探优质合作新赛道",
+          "source_page_number": "002",
+          "page_sequence": 2,
+          "detail_path": "/items/2026-07-19/hndaily-20260719-58465-19716164/"
+        },
+        {
+          "item_id": "hndaily-20260719-58465-19716165",
+          "title": "第三届琼台“宝岛杯”两岸青少年\n文体交流活动在海口启幕",
+          "source_page_number": "002",
+          "page_sequence": 3,
+          "detail_path": "/items/2026-07-19/hndaily-20260719-58465-19716165/"
+        },
+        {
+          "item_id": "hndaily-20260719-58465-19716166",
+          "title": "“海南的开放包容为两岸交流注入活力”",
+          "source_page_number": "002",
+          "page_sequence": 4,
+          "detail_path": "/items/2026-07-19/hndaily-20260719-58465-19716166/"
+        },
+        {
+          "item_id": "hndaily-20260719-58465-19716167",
+          "title": "《博鳌评价：城乡建设零碳评价指南（试行）》发布",
+          "source_page_number": "002",
+          "page_sequence": 5,
+          "detail_path": "/items/2026-07-19/hndaily-20260719-58465-19716167/"
+        },
+        {
+          "item_id": "hndaily-20260719-58465-19716168",
+          "title": "携手护碧海 聚力守蔚蓝",
+          "source_page_number": "002",
+          "page_sequence": 6,
+          "detail_path": "/items/2026-07-19/hndaily-20260719-58465-19716168/"
+        },
+        {
+          "item_id": "hndaily-20260719-58465-19716170",
+          "title": "2026年海南省万名大学生\n基层科普行活动在陵水启动",
+          "source_page_number": "002",
+          "page_sequence": 8,
+          "detail_path": "/items/2026-07-19/hndaily-20260719-58465-19716170/"
+        },
+        {
+          "item_id": "hndaily-20260719-58465-19716171",
+          "title": "“为乡亲解决病痛，是我最开心的事”",
+          "source_page_number": "002",
+          "page_sequence": 9,
+          "detail_path": "/items/2026-07-19/hndaily-20260719-58465-19716171/"
+        }
+      ]
+    },
+    {
+      "section_id": "source-b1a9e65cda",
+      "name": "中国新闻",
+      "source_pages": [
+        "003"
+      ],
+      "articles": [
+        {
+          "item_id": "hndaily-20260719-58466-19716178",
+          "title": "全力投入抢险救援 压实责任排查隐患",
+          "source_page_number": "003",
+          "page_sequence": 1,
+          "detail_path": "/items/2026-07-19/hndaily-20260719-58466-19716178/"
+        },
+        {
+          "item_id": "hndaily-20260719-58466-19716181",
+          "title": "促进共同繁荣 维护共同安全",
+          "source_page_number": "003",
+          "page_sequence": 4,
+          "detail_path": "/items/2026-07-19/hndaily-20260719-58466-19716181/"
+        }
+      ]
+    },
+    {
+      "section_id": "source-a9325ef51a",
+      "name": "文化周刊",
+      "source_pages": [
+        "004"
+      ],
+      "articles": [
+        {
+          "item_id": "hndaily-20260719-58467-19716188",
+          "title": "一座小城",
+          "source_page_number": "004",
+          "page_sequence": 1,
+          "detail_path": "/items/2026-07-19/hndaily-20260719-58467-19716188/"
+        },
+        {
+          "item_id": "hndaily-20260719-58467-19716191",
+          "title": "远去的巴斯特",
+          "source_page_number": "004",
+          "page_sequence": 2,
+          "detail_path": "/items/2026-07-19/hndaily-20260719-58467-19716191/"
+        },
+        {
+          "item_id": "hndaily-20260719-58467-19716192",
+          "title": "西部古歌",
+          "source_page_number": "004",
+          "page_sequence": 3,
+          "detail_path": "/items/2026-07-19/hndaily-20260719-58467-19716192/"
+        },
+        {
+          "item_id": "hndaily-20260719-58467-19716194",
+          "title": "钱学森做剪报",
+          "source_page_number": "004",
+          "page_sequence": 4,
+          "detail_path": "/items/2026-07-19/hndaily-20260719-58467-19716194/"
+        }
+      ]
+    }
+  ],
+  "front_page_item_ids": [
+    "hndaily-20260719-58464-19716147",
+    "hndaily-20260719-58464-19716150",
+    "hndaily-20260719-58464-19716151",
+    "hndaily-20260719-58464-19716152",
+    "hndaily-20260719-58464-19716154",
+    "hndaily-20260719-58464-19716155",
+    "hndaily-20260719-58464-19716156"
+  ]
+}

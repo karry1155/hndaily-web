@@ -18,6 +18,13 @@
       "code": "469026",
       "level": "county",
       "evidence": "昌江"
+    },
+    {
+      "location_id": "hainan-ledong",
+      "name": "乐东黎族自治县",
+      "code": "469027",
+      "level": "county",
+      "evidence": "乐东黎族自治县"
     }
   ],
   "topics": [

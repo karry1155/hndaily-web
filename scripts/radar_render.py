@@ -397,7 +397,9 @@ def render_archive(issues, articles, active_section_id=None):
             '<section class="archive-overview"><header class="archive-results-heading">'
             '<h2>最近入库</h2><span>按日期查看整期</span></header>'
             f'<div class="archive-issues">{"".join(issue_cards)}</div></section></div>'
-            f'<div data-archive-search-results data-search-scope hidden>{_archive_date_groups(stories)}</div>'
+            '<div data-archive-search-results data-search-scope '
+            'data-search-source="/static/data/search-articles.json" hidden></div>'
+            '<p class="archive-search-note" data-archive-search-note hidden></p>'
         )
         header_meta = f'{len(issue_rows)} 期 · {len(stories)} 条已入库'
 
@@ -408,7 +410,8 @@ def render_archive(issues, articles, active_section_id=None):
         '<header class="page-header"><div><span class="eyebrow">海南日报</span>'
         f'<h1>报库</h1><p>{_esc(header_meta)}</p></div>'
         '<label class="site-search"><span class="sr-only">搜索历史报道</span>'
-        '<input type="search" data-search-input placeholder="搜索标题、摘要、人物、地点或主题"></label></header>'
+        '<input type="search" data-search-input '
+        'placeholder="搜索标题、摘要或已提取的人物、地点、主题"></label></header>'
         '<section class="archive-section-picker"><header class="archive-results-heading">'
         '<h2>按版面查看</h2><span>由报纸编辑维护</span></header>'
         f'<nav class="scope-tabs archive-tabs" aria-label="按版面筛选">{tabs}</nav></section>'

@@ -38,12 +38,13 @@ class RadarFilterTests(unittest.TestCase):
                     article(4, "工作会议召开", "会议听取了工作汇报。"),
                     article(5, "空正文", ""),
                     article(6, "抓取失败", "残缺", error="fetch failed: timeout"),
+                    article(7, "正常报道", "◀上接A01版\n\n这是前文的续接内容。"),
                 ],
             ),
             page("004", "理论周刊 新论", [article(1, "理论文章", "乙" * 500)]),
             page("008", "公益广告", [article(1, "公益广告内容", "丙" * 500)]),
         ]
-        raw = {"page_count": len(pages), "article_count": 8, "pages": pages}
+        raw = {"page_count": len(pages), "article_count": 9, "pages": pages}
 
         records = evaluate_issue(raw)
         by_title = {item["original_title"]: item for item in records}
@@ -56,12 +57,34 @@ class RadarFilterTests(unittest.TestCase):
         )
         self.assertEqual(by_title["空正文"]["skip_reason"], "empty_content")
         self.assertEqual(by_title["抓取失败"]["skip_reason"], "fetch_error")
+        continuation = next(
+            item for item in records if item["content"].startswith("◀上接A01版")
+        )
+        self.assertEqual(
+            continuation["skip_reason"], "continued_from_previous_page"
+        )
+        self.assertEqual(continuation["matched_rules"], ["content_prefix:上接版"])
         self.assertEqual(by_title["短讯"]["length_band"], "under_200")
         self.assertTrue(by_title["短讯"]["passed"])
         self.assertTrue(by_title["工作会议召开"]["passed"])
         self.assertEqual(
             [item["candidate_id"] for item in records],
-            [f"A{i:03d}" for i in range(1, 9)],
+            [f"A{i:03d}" for i in range(1, 10)],
+        )
+
+    def test_continuation_prefix_accepts_common_punctuation_and_spacing(self):
+        variants = [
+            "上接A01版\n正文",
+            "◀ 上接 A01 版\n正文",
+            "（上接A1版）\n正文",
+        ]
+        pages = [page("002", "本省新闻", [article(i + 1, f"续篇{i}", text) for i, text in enumerate(variants)])]
+        raw = {"page_count": 1, "article_count": len(variants), "pages": pages}
+        self.assertTrue(
+            all(
+                record["skip_reason"] == "continued_from_previous_page"
+                for record in evaluate_issue(raw)
+            )
         )
 
 

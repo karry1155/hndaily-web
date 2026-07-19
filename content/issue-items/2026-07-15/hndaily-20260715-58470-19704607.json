@@ -1,0 +1,36 @@
+{
+  "schema_version": 7,
+  "item_id": "hndaily-20260715-58470-19704607",
+  "published_date": "2026-07-15",
+  "collected_date": "2026-07-19",
+  "page_number": "007",
+  "page_name": "中国新闻",
+  "page_sequence": 6,
+  "author": "",
+  "enrichment_status": "complete",
+  "scope": "national",
+  "scope_evidence": "水利部安排部署西北地区\n暴雨洪水防御工作",
+  "subjects": [],
+  "locations": [],
+  "topics": [
+    {
+      "topic_id": "policy-governance",
+      "name": "政策治理",
+      "evidence": "部署"
+    }
+  ],
+  "event_relation": {
+    "relation": "none",
+    "event_id": null,
+    "event_name": null,
+    "evidence": null,
+    "update_summary": null
+  },
+  "block": {
+    "source": "海南日报",
+    "title": "水利部安排部署西北地区\n暴雨洪水防御工作",
+    "content": "新华社北京7月14日电（记者魏弘毅）记者从水利部了解到，水利部14日对新一轮西北地区暴雨洪水防御工作作出针对性安排部署。\n\n据预报，14日至17日，受冷暖空气共同影响，西北东部将有一次较强降雨过程，以中到大雨为主，其中陕西中部、山西中部南部等地部分地区将有暴雨、局部大暴雨，并伴有短时强降雨；黄河中游小北干流及支流渭河、汾河、沁河等河流将出现涨水过程，暴雨区内部分中小河流可能发生超警洪水。本轮降雨强度较大，降雨落区内水库和淤地坝安全度汛、中小河流洪水和山洪灾害风险较高。\n\n为应对可能发生的汛情，水利部指导督促山西、陕西省水利部门和相关流域管理机构强化落实各项防御措施。一是强化监测预报预警，二是确保水库安全度汛，三是强化淤地坝安全度汛，四是做好中小河流洪水防御，五是突出抓好山洪灾害防御。",
+    "ai_summary": "记者从水利部了解到，水利部14日对新一轮西北地区暴雨洪水防御工作作出针对性安排部署。",
+    "original_url": "http://news.hndaily.cn/html/2026-07/15/content_58470_19704607.htm"
+  }
+}

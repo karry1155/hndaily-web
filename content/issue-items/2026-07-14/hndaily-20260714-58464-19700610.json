@@ -11,7 +11,15 @@
   "scope": "hainan",
   "scope_evidence": "部署防汛救灾、安全生产等工作",
   "subjects": [],
-  "locations": [],
+  "locations": [
+    {
+      "location_id": "hainan",
+      "name": "海南省",
+      "code": "460000",
+      "level": "province",
+      "evidence": "海南省"
+    }
+  ],
   "topics": [
     {
       "topic_id": "policy-governance",

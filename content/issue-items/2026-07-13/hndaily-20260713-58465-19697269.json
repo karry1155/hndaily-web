@@ -18,6 +18,34 @@
       "code": "469029",
       "level": "county",
       "evidence": "保亭"
+    },
+    {
+      "location_id": "hainan-dingan",
+      "name": "定安县",
+      "code": "469021",
+      "level": "county",
+      "evidence": "定安县"
+    },
+    {
+      "location_id": "hainan-qionghai",
+      "name": "琼海市",
+      "code": "469002",
+      "level": "county",
+      "evidence": "琼海市"
+    },
+    {
+      "location_id": "hainan-wanning",
+      "name": "万宁市",
+      "code": "469006",
+      "level": "county",
+      "evidence": "万宁市"
+    },
+    {
+      "location_id": "hainan-wuzhishan",
+      "name": "五指山市",
+      "code": "469001",
+      "level": "county",
+      "evidence": "五指山市"
     }
   ],
   "topics": [

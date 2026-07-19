@@ -11,7 +11,15 @@
   "scope": "hainan",
   "scope_evidence": "放假不放养 陪伴不断档",
   "subjects": [],
-  "locations": [],
+  "locations": [
+    {
+      "location_id": "hainan-changjiang",
+      "name": "昌江黎族自治县",
+      "code": "469026",
+      "level": "county",
+      "evidence": "昌江黎族自治县"
+    }
+  ],
   "topics": [
     {
       "topic_id": "education-talent",

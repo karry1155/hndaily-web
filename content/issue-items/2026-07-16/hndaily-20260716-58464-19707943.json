@@ -1,0 +1,66 @@
+{
+  "schema_version": 7,
+  "item_id": "hndaily-20260716-58464-19707943",
+  "published_date": "2026-07-16",
+  "collected_date": "2026-07-19",
+  "page_number": "001",
+  "page_name": "头版",
+  "page_sequence": 5,
+  "author": "",
+  "enrichment_status": "complete",
+  "scope": "domestic",
+  "scope_evidence": "冯飞会见出席2026琼台合作周活动的台湾嘉宾",
+  "subjects": [
+    {
+      "subject_id": "subject-e646b1e6febe4e",
+      "name": "习近平",
+      "type": "person",
+      "role": null,
+      "evidence": "习近平"
+    },
+    {
+      "subject_id": "subject-947077d4770c96",
+      "name": "冯飞",
+      "type": "person",
+      "role": null,
+      "evidence": "冯飞"
+    }
+  ],
+  "locations": [
+    {
+      "location_id": "hainan-haikou",
+      "name": "海口市",
+      "code": "460100",
+      "level": "prefecture",
+      "evidence": "海口"
+    },
+    {
+      "location_id": "hainan",
+      "name": "海南省",
+      "code": "460000",
+      "level": "province",
+      "evidence": "海南"
+    }
+  ],
+  "topics": [
+    {
+      "topic_id": "external-relations",
+      "name": "对外交流",
+      "evidence": "琼台"
+    }
+  ],
+  "event_relation": {
+    "relation": "none",
+    "event_id": null,
+    "event_name": null,
+    "evidence": null,
+    "update_summary": null
+  },
+  "block": {
+    "source": "海南日报",
+    "title": "冯飞会见出席2026琼台合作周活动的台湾嘉宾",
+    "content": "本报海口7月15日讯（海南日报全媒体记者李磊）7月15日，省委书记冯飞在海口会见前来出席2026琼台合作周活动的中国国民党前副主席、海峡两岸经贸文化交流协会会长夏立言等20余名台湾企业和机构代表。\n\n冯飞代表省委、省政府欢迎各位嘉宾。他表示，建设海南自由贸易港，是习近平总书记亲自谋划、亲自部署、亲自推动的重大国家战略。去年12月18日，海南自由贸易港正式启动全岛封关运作，实施以“零关税、低税率”“贸易、投资、跨境资金流动、人员进出、运输来往自由便利和数据安全有序流动”为主要特征的政策制度体系，着力构建具有海南特色和优势的现代化产业体系，为琼台合作提供了更多交汇点。愿以此次琼台合作周活动为契机，同台湾工商界深化了解、增进互信，深化双方在经贸往来、产业对接、人文交流等领域合作，推动台湾青年来琼创新创业就业，形成更多务实合作成果。\n\n夏立言等嘉宾表示，海南自由贸易港封关运作以来，政策红利持续释放，贸易和投资自由化便利化水平持续提升，发展潜力巨大。台胞台企高度关注海南未来发展，将依托企业自身技术优势和海南开放政策优势，持续推进琼台产业对接、青年交流与文化互动，推动各领域合作走深走实，实现互利共赢、共同发展。\n\n国务院台办副主任彭庆恩，省领导尹丽波参加会见。",
+    "ai_summary": "海南与台湾企业和机构代表就经贸、产业、青年创业和文化交流深化合作。",
+    "original_url": "http://news.hndaily.cn/html/2026-07/16/content_58464_19707943.htm"
+  }
+}

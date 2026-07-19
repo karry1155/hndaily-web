@@ -11,7 +11,15 @@
   "scope": "hainan",
   "scope_evidence": "乐东黎族自治县水务局党组成员、县移民安置\n办公室主任陈永孝接受纪律审查和监察调查",
   "subjects": [],
-  "locations": [],
+  "locations": [
+    {
+      "location_id": "hainan-ledong",
+      "name": "乐东黎族自治县",
+      "code": "469027",
+      "level": "county",
+      "evidence": "乐东黎族自治县"
+    }
+  ],
   "topics": [
     {
       "topic_id": "policy-governance",

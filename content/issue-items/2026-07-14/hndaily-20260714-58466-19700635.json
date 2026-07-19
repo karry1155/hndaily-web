@@ -11,7 +11,15 @@
   "scope": "mixed",
   "scope_evidence": "从“追着政策跑”到“围着人才转”",
   "subjects": [],
-  "locations": [],
+  "locations": [
+    {
+      "location_id": "hainan-qionghai",
+      "name": "琼海市",
+      "code": "469002",
+      "level": "county",
+      "evidence": "琼海市"
+    }
+  ],
   "topics": [
     {
       "topic_id": "education-talent",

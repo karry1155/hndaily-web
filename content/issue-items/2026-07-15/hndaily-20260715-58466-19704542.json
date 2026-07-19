@@ -1,0 +1,51 @@
+{
+  "schema_version": 7,
+  "item_id": "hndaily-20260715-58466-19704542",
+  "published_date": "2026-07-15",
+  "collected_date": "2026-07-19",
+  "page_number": "003",
+  "page_name": "本省新闻",
+  "page_sequence": 2,
+  "author": "",
+  "enrichment_status": "complete",
+  "scope": "hainan",
+  "scope_evidence": "东方市感城镇感恩夜市开市",
+  "subjects": [],
+  "locations": [
+    {
+      "location_id": "hainan-dongfang",
+      "name": "东方市",
+      "code": "469007",
+      "level": "county",
+      "evidence": "东方市"
+    },
+    {
+      "location_id": "hainan",
+      "name": "海南省",
+      "code": "460000",
+      "level": "province",
+      "evidence": "海南"
+    }
+  ],
+  "topics": [
+    {
+      "topic_id": "livelihood-services",
+      "name": "民生服务",
+      "evidence": "消费"
+    }
+  ],
+  "event_relation": {
+    "relation": "none",
+    "event_id": null,
+    "event_name": null,
+    "evidence": null,
+    "update_summary": null
+  },
+  "block": {
+    "source": "海南日报",
+    "title": "东方市感城镇感恩夜市开市",
+    "content": "本报讯（海南日报全媒体记者王泽宇 通讯员高洁冰 唐望红）华灯初上，烟火升腾。近日，东方市感城镇感恩夜市开市，同步启动美食文化旅游节，依托“公园+夜市”一体化打造模式，为当地群众打造全新夜间休闲消费空间，乡镇夜间经济焕发蓬勃生机。\n\n夜幕降临，感恩夜市小广场人声鼎沸，精彩文艺表演轮番登台，吸引大批市民游客驻足观看。夜市步道两侧整齐排布70余个经营摊位，统一制式的特色餐车有序铺开，各类特色美食香气萦绕街巷。附近不少居民趁着晚风结伴闲逛，围坐餐桌品尝风味小吃，谈笑间尽享乡镇休闲时光。“新开的夜市热闹又好玩，我和家人一起来逛逛，很舒心。”当地居民陈善喆道出不少群众的心声。\n\n红火的人气让商户经营信心十足。不少摊主介绍，政府推出开市首月免收摊位租金的扶持政策，大大减轻经营压力。\n\n据悉，感恩夜市地处感城镇镇区核心地带，临近G225国道，毗邻感恩河，与东方市水系连通及景观公园同步施工一体化建设。项目统筹休闲景观与夜间业态，打造“景市相融”特色场景，白天是群众休闲游园，夜间变身特色消费集市。",
+    "ai_summary": "华灯初上，烟火升腾。近日，东方市感城镇感恩夜市开市，同步启动美食文化旅游节，依托“公园+夜市”一体化打造模式，为当地群众打造全新夜间休闲消费空间，乡镇夜间经济焕发蓬勃生机。",
+    "original_url": "http://news.hndaily.cn/html/2026-07/15/content_58466_19704542.htm"
+  }
+}

@@ -1,0 +1,335 @@
+{
+  "date": "2026-07-15",
+  "count": 8,
+  "front_page_count": 8,
+  "world_count": 0,
+  "national_ranking": [
+    {
+      "item_id": "hndaily-20260715-58464-19704502",
+      "published_date": "2026-07-15",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 1,
+      "title": "习近平《在国家科学技术奖励大会、两院院士大会、中国科协第十一次全国代表大会上的讲话》单行本出版",
+      "ai_summary": "中共中央总书记、国家主席、中央军委主席习近平《在国家科学技术奖励大会、两院院士大会、中国科协第十一次全国代表大会上的讲话》单行本，已由人民出版社出版，即日起在全国新华书店发行。",
+      "scope": "national",
+      "enrichment_status": "complete",
+      "subjects": [
+        {
+          "subject_id": "subject-e646b1e6febe4e",
+          "name": "习近平",
+          "type": "person",
+          "role": null,
+          "evidence": "习近平"
+        }
+      ],
+      "locations": [],
+      "topics": [
+        {
+          "topic_id": "policy-governance",
+          "name": "政策治理",
+          "evidence": "习近平《在国家科学技术奖励大会、两院院士大会、中国科协第十一次全国代表大会上的讲话》单行本出版"
+        }
+      ],
+      "detail_path": "/items/2026-07-15/hndaily-20260715-58464-19704502/",
+      "rank": 1
+    }
+  ],
+  "world_ranking": [],
+  "items": [
+    {
+      "item_id": "hndaily-20260715-58464-19704502",
+      "published_date": "2026-07-15",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 1,
+      "title": "习近平《在国家科学技术奖励大会、两院院士大会、中国科协第十一次全国代表大会上的讲话》单行本出版",
+      "ai_summary": "中共中央总书记、国家主席、中央军委主席习近平《在国家科学技术奖励大会、两院院士大会、中国科协第十一次全国代表大会上的讲话》单行本，已由人民出版社出版，即日起在全国新华书店发行。",
+      "scope": "national",
+      "enrichment_status": "complete",
+      "subjects": [
+        {
+          "subject_id": "subject-e646b1e6febe4e",
+          "name": "习近平",
+          "type": "person",
+          "role": null,
+          "evidence": "习近平"
+        }
+      ],
+      "locations": [],
+      "topics": [
+        {
+          "topic_id": "policy-governance",
+          "name": "政策治理",
+          "evidence": "习近平《在国家科学技术奖励大会、两院院士大会、中国科协第十一次全国代表大会上的讲话》单行本出版"
+        }
+      ],
+      "detail_path": "/items/2026-07-15/hndaily-20260715-58464-19704502/"
+    },
+    {
+      "item_id": "hndaily-20260715-58464-19704505",
+      "published_date": "2026-07-15",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 2,
+      "title": "解开“千千结” 蹚出“路路通”",
+      "ai_summary": "澄迈县桥头镇干部王姑通过解决群众实际困难、发展地瓜产业，带动当地从脱贫攻坚走向乡村振兴。",
+      "scope": "hainan",
+      "enrichment_status": "complete",
+      "subjects": [],
+      "locations": [
+        {
+          "location_id": "hainan-chengmai",
+          "name": "澄迈县",
+          "code": "469023",
+          "level": "county",
+          "evidence": "澄迈县"
+        },
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "海南"
+        }
+      ],
+      "topics": [
+        {
+          "topic_id": "urban-rural",
+          "name": "城乡建设",
+          "evidence": "乡村"
+        }
+      ],
+      "detail_path": "/items/2026-07-15/hndaily-20260715-58464-19704505/"
+    },
+    {
+      "item_id": "hndaily-20260715-58464-19704506",
+      "published_date": "2026-07-15",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 3,
+      "title": "以改革激活力 以开放增动力\n加快推动标志性改革从破题走向成势",
+      "ai_summary": "7月14日，省委深改委暨自贸港工委会议召开，研究部署推进标志性改革重点任务、风险防控、制度集成创新等工作。",
+      "scope": "hainan",
+      "enrichment_status": "complete",
+      "subjects": [
+        {
+          "subject_id": "subject-947077d4770c96",
+          "name": "冯飞",
+          "type": "person",
+          "role": null,
+          "evidence": "冯飞"
+        },
+        {
+          "subject_id": "subject-6a6500510b9352",
+          "name": "刘小明",
+          "type": "person",
+          "role": null,
+          "evidence": "刘小明"
+        },
+        {
+          "subject_id": "subject-1ffa420523dcfa",
+          "name": "李荣灿",
+          "type": "person",
+          "role": null,
+          "evidence": "李荣灿"
+        },
+        {
+          "subject_id": "subject-e561267c49093e",
+          "name": "杨晋柏",
+          "type": "person",
+          "role": null,
+          "evidence": "杨晋柏"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan-haikou",
+          "name": "海口市",
+          "code": "460100",
+          "level": "prefecture",
+          "evidence": "海口"
+        },
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "海南"
+        }
+      ],
+      "topics": [
+        {
+          "topic_id": "policy-governance",
+          "name": "政策治理",
+          "evidence": "改革"
+        }
+      ],
+      "detail_path": "/items/2026-07-15/hndaily-20260715-58464-19704506/"
+    },
+    {
+      "item_id": "hndaily-20260715-58464-19704507",
+      "published_date": "2026-07-15",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 4,
+      "title": "保持一抓到底的韧劲",
+      "ai_summary": "海南正在持续整改发展堵点和群众身边问题，已销号事项要防止反弹，未完成事项继续推进。",
+      "scope": "hainan",
+      "enrichment_status": "complete",
+      "subjects": [
+        {
+          "subject_id": "subject-e646b1e6febe4e",
+          "name": "习近平",
+          "type": "person",
+          "role": null,
+          "evidence": "习近平"
+        }
+      ],
+      "locations": [],
+      "topics": [
+        {
+          "topic_id": "policy-governance",
+          "name": "政策治理",
+          "evidence": "部署"
+        }
+      ],
+      "detail_path": "/items/2026-07-15/hndaily-20260715-58464-19704507/"
+    },
+    {
+      "item_id": "hndaily-20260715-58464-19704509",
+      "published_date": "2026-07-15",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 5,
+      "title": "脚下沾泥土 初心贴民心",
+      "ai_summary": "澄迈县桥头镇干部王姑长期走村入户，帮助解决产业发展和群众生活难题。",
+      "scope": "hainan",
+      "enrichment_status": "complete",
+      "subjects": [],
+      "locations": [],
+      "topics": [
+        {
+          "topic_id": "policy-governance",
+          "name": "政策治理",
+          "evidence": "治理"
+        }
+      ],
+      "detail_path": "/items/2026-07-15/hndaily-20260715-58464-19704509/"
+    },
+    {
+      "item_id": "hndaily-20260715-58464-19704510",
+      "published_date": "2026-07-15",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 6,
+      "title": "增长近五成，洋浦港“胃口大开”",
+      "ai_summary": "洋浦国际集装箱码头已投用1188米新增岸线，全部完工后年吞吐能力将达500万标箱。",
+      "scope": "mixed",
+      "enrichment_status": "complete",
+      "subjects": [],
+      "locations": [
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "海南"
+        }
+      ],
+      "topics": [
+        {
+          "topic_id": "economy-data",
+          "name": "经济数据",
+          "evidence": "增长"
+        },
+        {
+          "topic_id": "external-relations",
+          "name": "对外交流",
+          "evidence": "国际"
+        }
+      ],
+      "detail_path": "/items/2026-07-15/hndaily-20260715-58464-19704510/"
+    },
+    {
+      "item_id": "hndaily-20260715-58464-19704513",
+      "published_date": "2026-07-15",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 7,
+      "title": "物业费“包干”还是“酬金”，业主说了算",
+      "ai_summary": "海南发布前期物业服务合同示范文本，明确物业费可选包干制或酬金制，前期合同最长不超过3年。",
+      "scope": "hainan",
+      "enrichment_status": "complete",
+      "subjects": [],
+      "locations": [
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "海南省"
+        }
+      ],
+      "topics": [
+        {
+          "topic_id": "urban-rural",
+          "name": "城乡建设",
+          "evidence": "物业"
+        }
+      ],
+      "detail_path": "/items/2026-07-15/hndaily-20260715-58464-19704513/"
+    },
+    {
+      "item_id": "hndaily-20260715-58464-19704515",
+      "published_date": "2026-07-15",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 9,
+      "title": "省委政法委第四十次全体会议暨\n省扫黑除恶斗争领导小组会议召开",
+      "ai_summary": "海南部署未成年人犯罪防治、扫黑除恶和社会安全稳定等工作。",
+      "scope": "hainan",
+      "enrichment_status": "complete",
+      "subjects": [
+        {
+          "subject_id": "subject-e646b1e6febe4e",
+          "name": "习近平",
+          "type": "person",
+          "role": null,
+          "evidence": "习近平"
+        },
+        {
+          "subject_id": "subject-e561267c49093e",
+          "name": "杨晋柏",
+          "type": "person",
+          "role": null,
+          "evidence": "杨晋柏"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan-haikou",
+          "name": "海口市",
+          "code": "460100",
+          "level": "prefecture",
+          "evidence": "海口"
+        },
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "海南"
+        }
+      ],
+      "topics": [
+        {
+          "topic_id": "policy-governance",
+          "name": "政策治理",
+          "evidence": "会议"
+        }
+      ],
+      "detail_path": "/items/2026-07-15/hndaily-20260715-58464-19704515/"
+    }
+  ]
+}

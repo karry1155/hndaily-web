@@ -1,6 +1,6 @@
 {
   "date": "2026-07-13",
-  "count": 55,
+  "count": 53,
   "sections": [
     {
       "section_id": "front-page",
@@ -83,13 +83,6 @@
           "detail_path": "/items/2026-07-13/hndaily-20260713-58465-19697267/"
         },
         {
-          "item_id": "hndaily-20260713-58465-19697268",
-          "title": "一枚“海南芯”，让“意念控制”照进现实",
-          "source_page_number": "002",
-          "page_sequence": 3,
-          "detail_path": "/items/2026-07-13/hndaily-20260713-58465-19697268/"
-        },
-        {
           "item_id": "hndaily-20260713-58465-19697269",
           "title": "高标准查摆问题 严举措推进整治",
           "source_page_number": "002",
@@ -102,13 +95,6 @@
           "source_page_number": "002",
           "page_sequence": 5,
           "detail_path": "/items/2026-07-13/hndaily-20260713-58465-19697271/"
-        },
-        {
-          "item_id": "hndaily-20260713-58465-19697273",
-          "title": "海南重卡“驶向”环岛换电自由",
-          "source_page_number": "002",
-          "page_sequence": 6,
-          "detail_path": "/items/2026-07-13/hndaily-20260713-58465-19697273/"
         },
         {
           "item_id": "hndaily-20260713-58466-19697279",
@@ -705,6 +691,13 @@
           "code": "460100",
           "level": "prefecture",
           "evidence": "海口"
+        },
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "海南省"
         }
       ],
       "topics": [
@@ -792,6 +785,20 @@
           "code": "469021",
           "level": "county",
           "evidence": "定安"
+        },
+        {
+          "location_id": "hainan-lingao",
+          "name": "临高县",
+          "code": "469024",
+          "level": "county",
+          "evidence": "临高县"
+        },
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "海南省"
         }
       ],
       "topics": [
@@ -821,6 +828,13 @@
           "code": "460100",
           "level": "prefecture",
           "evidence": "海口"
+        },
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "海南省"
         }
       ],
       "topics": [
@@ -831,35 +845,6 @@
         }
       ],
       "detail_path": "/items/2026-07-13/hndaily-20260713-58465-19697267/"
-    },
-    {
-      "item_id": "hndaily-20260713-58465-19697268",
-      "published_date": "2026-07-13",
-      "page_number": "002",
-      "page_name": "本省新闻",
-      "page_sequence": 3,
-      "title": "一枚“海南芯”，让“意念控制”照进现实",
-      "ai_summary": "海南企业研发的128通道脑机接口芯片功耗较国际同类主流产品降低80%以上，并已实现量产。",
-      "scope": "hainan",
-      "enrichment_status": "complete",
-      "subjects": [],
-      "locations": [
-        {
-          "location_id": "hainan-haikou",
-          "name": "海口市",
-          "code": "460100",
-          "level": "prefecture",
-          "evidence": "海口"
-        }
-      ],
-      "topics": [
-        {
-          "topic_id": "industry-projects",
-          "name": "产业项目",
-          "evidence": "一枚“海南芯”，让“意念控制”照进现实"
-        }
-      ],
-      "detail_path": "/items/2026-07-13/hndaily-20260713-58465-19697268/"
     },
     {
       "item_id": "hndaily-20260713-58465-19697269",
@@ -879,6 +864,34 @@
           "code": "469029",
           "level": "county",
           "evidence": "保亭"
+        },
+        {
+          "location_id": "hainan-dingan",
+          "name": "定安县",
+          "code": "469021",
+          "level": "county",
+          "evidence": "定安县"
+        },
+        {
+          "location_id": "hainan-qionghai",
+          "name": "琼海市",
+          "code": "469002",
+          "level": "county",
+          "evidence": "琼海市"
+        },
+        {
+          "location_id": "hainan-wanning",
+          "name": "万宁市",
+          "code": "469006",
+          "level": "county",
+          "evidence": "万宁市"
+        },
+        {
+          "location_id": "hainan-wuzhishan",
+          "name": "五指山市",
+          "code": "469001",
+          "level": "county",
+          "evidence": "五指山市"
         }
       ],
       "topics": [
@@ -918,35 +931,6 @@
         }
       ],
       "detail_path": "/items/2026-07-13/hndaily-20260713-58465-19697271/"
-    },
-    {
-      "item_id": "hndaily-20260713-58465-19697273",
-      "published_date": "2026-07-13",
-      "page_number": "002",
-      "page_name": "本省新闻",
-      "page_sequence": 6,
-      "title": "海南重卡“驶向”环岛换电自由",
-      "ai_summary": "海南环岛重卡换电网络采用约5分钟自动换电，并利用风光绿电降低物流企业补能时间、运营成本和排放。",
-      "scope": "hainan",
-      "enrichment_status": "complete",
-      "subjects": [],
-      "locations": [
-        {
-          "location_id": "hainan",
-          "name": "海南省",
-          "code": "460000",
-          "level": "province",
-          "evidence": "海南"
-        }
-      ],
-      "topics": [
-        {
-          "topic_id": "ecology",
-          "name": "生态环境",
-          "evidence": "海南重卡“驶向”环岛换电自由"
-        }
-      ],
-      "detail_path": "/items/2026-07-13/hndaily-20260713-58465-19697273/"
     },
     {
       "item_id": "hndaily-20260713-58466-19697279",
@@ -995,6 +979,13 @@
           "code": "469027",
           "level": "county",
           "evidence": "乐东"
+        },
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "海南省"
         }
       ],
       "topics": [
@@ -1024,6 +1015,13 @@
           "code": "460100",
           "level": "prefecture",
           "evidence": "海口"
+        },
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "海南省"
         }
       ],
       "topics": [
@@ -1111,6 +1109,13 @@
           "code": "460100",
           "level": "prefecture",
           "evidence": "海口"
+        },
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "海南省"
         }
       ],
       "topics": [
@@ -1140,6 +1145,13 @@
           "code": "469022",
           "level": "county",
           "evidence": "屯昌"
+        },
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "海南省"
         }
       ],
       "topics": [
@@ -1574,6 +1586,13 @@
           "code": "469026",
           "level": "county",
           "evidence": "昌江"
+        },
+        {
+          "location_id": "hainan-ledong",
+          "name": "乐东黎族自治县",
+          "code": "469027",
+          "level": "county",
+          "evidence": "乐东黎族自治县"
         }
       ],
       "topics": [
@@ -1603,6 +1622,20 @@
           "code": "469026",
           "level": "county",
           "evidence": "昌江县"
+        },
+        {
+          "location_id": "hainan-haikou",
+          "name": "海口市",
+          "code": "460100",
+          "level": "prefecture",
+          "evidence": "海口市"
+        },
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "海南省"
         }
       ],
       "topics": [
@@ -1653,6 +1686,20 @@
           "code": "469023",
           "level": "county",
           "evidence": "澄迈"
+        },
+        {
+          "location_id": "hainan-dingan",
+          "name": "定安县",
+          "code": "469021",
+          "level": "county",
+          "evidence": "定安县"
+        },
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "海南省"
         }
       ],
       "topics": [
@@ -1682,6 +1729,20 @@
           "code": "469021",
           "level": "county",
           "evidence": "定安"
+        },
+        {
+          "location_id": "hainan-qionghai",
+          "name": "琼海市",
+          "code": "469002",
+          "level": "county",
+          "evidence": "琼海市"
+        },
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "海南省"
         }
       ],
       "topics": [
@@ -1711,6 +1772,13 @@
           "code": "460100",
           "level": "prefecture",
           "evidence": "海口"
+        },
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "海南省"
         }
       ],
       "topics": [
@@ -1827,6 +1895,13 @@
           "code": "469027",
           "level": "county",
           "evidence": "乐东"
+        },
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "海南省"
         }
       ],
       "topics": [
@@ -1856,6 +1931,13 @@
           "code": "460100",
           "level": "prefecture",
           "evidence": "海口"
+        },
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "海南省"
         }
       ],
       "topics": [

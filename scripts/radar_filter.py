@@ -1,11 +1,16 @@
 from __future__ import annotations
 
+import re
 from typing import Any
 
 
 EXCLUDED_EXACT_TITLES = {"导读"}
 PUBLIC_SERVICE_AD_MARKER = "公益广告"
 THEORY_WEEKLY_PREFIX = "理论周刊"
+CONTINUATION_PREFIX_RE = re.compile(
+    r"^\s*(?:[◀▶]|[（(])?\s*上接\s*[A-Z]?\s*\d+\s*版\s*[）)]?",
+    re.IGNORECASE,
+)
 
 
 class InputError(ValueError):
@@ -86,6 +91,9 @@ def evaluate_issue(raw: dict[str, Any]) -> list[dict[str, Any]]:
         elif title.strip() in EXCLUDED_EXACT_TITLES:
             skip_reason = "guide"
             matched_rules.append("exact_title:导读")
+        elif CONTINUATION_PREFIX_RE.match(content):
+            skip_reason = "continued_from_previous_page"
+            matched_rules.append("content_prefix:上接版")
         elif PUBLIC_SERVICE_AD_MARKER in page_name:
             skip_reason = "public_service_ad_page"
             matched_rules.append("page_name:公益广告")

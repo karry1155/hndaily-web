@@ -11,7 +11,15 @@
   "scope": "hainan",
   "scope_evidence": "首批“海南工匠”培育启动",
   "subjects": [],
-  "locations": [],
+  "locations": [
+    {
+      "location_id": "hainan",
+      "name": "海南省",
+      "code": "460000",
+      "level": "province",
+      "evidence": "海南省"
+    }
+  ],
   "topics": [
     {
       "topic_id": "education-talent",

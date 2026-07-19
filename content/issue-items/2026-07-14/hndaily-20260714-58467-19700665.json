@@ -11,7 +11,15 @@
   "scope": "hainan",
   "scope_evidence": "学音乐学书法 主题研学乐趣多",
   "subjects": [],
-  "locations": [],
+  "locations": [
+    {
+      "location_id": "hainan-sanya",
+      "name": "三亚市",
+      "code": "460200",
+      "level": "prefecture",
+      "evidence": "三亚市"
+    }
+  ],
   "topics": [
     {
       "topic_id": "education-talent",

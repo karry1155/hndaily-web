@@ -11,7 +11,22 @@
   "scope": "hainan",
   "scope_evidence": "海南省社会保险服务中心原党组成员、副主任王三防严重违纪违法被开除党籍和公职",
   "subjects": [],
-  "locations": [],
+  "locations": [
+    {
+      "location_id": "hainan-wanning",
+      "name": "万宁市",
+      "code": "469006",
+      "level": "county",
+      "evidence": "万宁市"
+    },
+    {
+      "location_id": "hainan",
+      "name": "海南省",
+      "code": "460000",
+      "level": "province",
+      "evidence": "海南省"
+    }
+  ],
   "topics": [
     {
       "topic_id": "policy-governance",

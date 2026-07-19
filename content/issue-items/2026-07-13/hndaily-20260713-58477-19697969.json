@@ -18,6 +18,20 @@
       "code": "469021",
       "level": "county",
       "evidence": "定安"
+    },
+    {
+      "location_id": "hainan-qionghai",
+      "name": "琼海市",
+      "code": "469002",
+      "level": "county",
+      "evidence": "琼海市"
+    },
+    {
+      "location_id": "hainan",
+      "name": "海南省",
+      "code": "460000",
+      "level": "province",
+      "evidence": "海南省"
     }
   ],
   "topics": [

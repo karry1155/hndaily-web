@@ -1,0 +1,63 @@
+{
+  "schema_version": 7,
+  "item_id": "hndaily-20260718-58467-19714982",
+  "published_date": "2026-07-18",
+  "collected_date": "2026-07-19",
+  "page_number": "004",
+  "page_name": "本省新闻",
+  "page_sequence": 2,
+  "author": "",
+  "enrichment_status": "complete",
+  "scope": "mixed",
+  "scope_evidence": "2026年海南国际旅游岛欢乐节今日启幕",
+  "subjects": [],
+  "locations": [
+    {
+      "location_id": "hainan",
+      "name": "海南省",
+      "code": "460000",
+      "level": "province",
+      "evidence": "海南"
+    },
+    {
+      "location_id": "hainan-lingao",
+      "name": "临高县",
+      "code": "469024",
+      "level": "county",
+      "evidence": "临高"
+    },
+    {
+      "location_id": "hainan-lingshui",
+      "name": "陵水黎族自治县",
+      "code": "469028",
+      "level": "county",
+      "evidence": "陵水"
+    }
+  ],
+  "topics": [
+    {
+      "topic_id": "culture-tourism-sports",
+      "name": "文旅体育",
+      "evidence": "旅游"
+    },
+    {
+      "topic_id": "external-relations",
+      "name": "对外交流",
+      "evidence": "国际"
+    }
+  ],
+  "event_relation": {
+    "relation": "none",
+    "event_id": null,
+    "event_name": null,
+    "evidence": null,
+    "update_summary": null
+  },
+  "block": {
+    "source": "海南日报",
+    "title": "2026年海南国际旅游岛欢乐节今日启幕",
+    "content": "本报讯（海南日报全媒体记者刘晓惠）7月18日，2026年（第二十七届）海南国际旅游岛欢乐节在海口长影奇幻乐园拉开帷幕。本届欢乐节以“活力自贸港、魅力海南岛”为主题，将持续至8月18日，横跨整个暑期旅游黄金期。\n\n全岛18个市县联动推出50余项特色主题活动，以文旅活动聚人气、休闲运动引客源、美食购物促消费。\n\n欢乐节期间，全岛18个市县以“一县一品”差异化布局，推出多项花样欢乐活动。滨海亲水片区主打玩海体验——琼海推出潭门赶海季；临高打造“不赶时间赶海”主题寻宝派对；陵水海洋欢乐世界举办海洋万物声音乐季。中部雨林片区主打避暑休闲——五指山推出“海南之心，雨林归处”主题活动和红峡谷漂流嘉年华；琼中推出环热带雨林国家公园旅游公路骑行之旅、百花岭雨林露营音乐会等活动。儋州作为本届欢乐节收官主场，将于8月11日至18日在海花岛举办“欢乐再继续”暨调声狂欢嘉年华。\n\n此外，全岛同步铺开欢乐演艺季、亲水运动季、欢乐美食季、欢乐购物季四大系列主题活动。\n\n欢乐节期间恰逢海南发放“机票+”文旅消费券，全国游客可通过云闪付APP或“酷游海南”小程序领取机票立减券。全岛各景区、酒店、免税店推出专属优惠，涵盖游艇出海、酒店住宿、景区门票、非遗体验等多元业态。",
+    "ai_summary": "欢乐节期间，全岛18个市县以“一县一品”差异化布局，推出多项花样欢乐活动。滨海亲水片区主打玩海体验——琼海推出潭门赶海季；临高打造“不赶时间赶海”主题寻宝派对；陵水海洋欢乐世界举办海洋万物声音乐季。中部雨林片区主打避暑休闲——五指山推出“海南之心，雨林归处”主题活动和红峡谷漂流嘉年华。",
+    "original_url": "http://news.hndaily.cn/html/2026-07/18/content_58467_19714982.htm"
+  }
+}

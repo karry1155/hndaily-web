@@ -11,7 +11,15 @@
   "scope": "hainan",
   "scope_evidence": "学急救学手工 特色课程“玩中学”",
   "subjects": [],
-  "locations": [],
+  "locations": [
+    {
+      "location_id": "hainan-haikou",
+      "name": "海口市",
+      "code": "460100",
+      "level": "prefecture",
+      "evidence": "海口市"
+    }
+  ],
   "topics": [
     {
       "topic_id": "education-talent",

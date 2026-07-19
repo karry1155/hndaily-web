@@ -18,7 +18,9 @@ from scripts.radar_contract import (
 )
 from scripts.radar_locations import (
     find_location_candidates,
+    infer_exact_location_mentions,
     load_location_catalog,
+    merge_location_mentions,
     resolve_location_mentions,
 )
 
@@ -224,6 +226,12 @@ def build_public_issue(raw, candidates, semantic_items, _legacy_scored=None):
             "page_sequence": candidate["page_sequence"], "detail_path": detail_path,
         })
         location_candidates = find_location_candidates(candidate["title"], candidate["content"], locations)
+        location_mentions = merge_location_mentions(
+            semantic["location_mentions"],
+            infer_exact_location_mentions(
+                candidate["title"], candidate["content"], location_candidates, locations
+            ),
+        )
         issue_items.append({
             "schema_version": SCHEMA_VERSION,
             "item_id": candidate["item_id"],
@@ -239,7 +247,7 @@ def build_public_issue(raw, candidates, semantic_items, _legacy_scored=None):
             "subjects": [
                 {"subject_id": _subject_id(row), **row} for row in semantic["subjects"]
             ],
-            "locations": resolve_location_mentions(semantic["location_mentions"], location_candidates, locations),
+            "locations": resolve_location_mentions(location_mentions, location_candidates, locations),
             "topics": [
                 {
                     "topic_id": row["topic_id"],

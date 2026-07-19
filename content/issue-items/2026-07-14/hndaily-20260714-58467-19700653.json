@@ -11,7 +11,22 @@
   "scope": "hainan",
   "scope_evidence": "定安县退役军人事务局党组成员、副局长\n（正科级）符中华接受纪律审查和监察调查",
   "subjects": [],
-  "locations": [],
+  "locations": [
+    {
+      "location_id": "hainan-dingan",
+      "name": "定安县",
+      "code": "469021",
+      "level": "county",
+      "evidence": "定安县"
+    },
+    {
+      "location_id": "hainan",
+      "name": "海南省",
+      "code": "460000",
+      "level": "province",
+      "evidence": "海南省"
+    }
+  ],
   "topics": [
     {
       "topic_id": "policy-governance",

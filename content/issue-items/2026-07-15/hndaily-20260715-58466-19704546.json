@@ -1,0 +1,44 @@
+{
+  "schema_version": 7,
+  "item_id": "hndaily-20260715-58466-19704546",
+  "published_date": "2026-07-15",
+  "collected_date": "2026-07-19",
+  "page_number": "003",
+  "page_name": "本省新闻",
+  "page_sequence": 6,
+  "author": "",
+  "enrichment_status": "complete",
+  "scope": "hainan",
+  "scope_evidence": "我省面向社会招聘7名\n事业编大学生乡村医生",
+  "subjects": [],
+  "locations": [
+    {
+      "location_id": "hainan",
+      "name": "海南省",
+      "code": "460000",
+      "level": "province",
+      "evidence": "海南"
+    }
+  ],
+  "topics": [
+    {
+      "topic_id": "education-talent",
+      "name": "教育人才",
+      "evidence": "学生"
+    }
+  ],
+  "event_relation": {
+    "relation": "none",
+    "event_id": null,
+    "event_name": null,
+    "evidence": null,
+    "update_summary": null
+  },
+  "block": {
+    "source": "海南日报",
+    "title": "我省面向社会招聘7名\n事业编大学生乡村医生",
+    "content": "本报讯（海南日报全媒体记者张琬茜 通讯员金浩田）海南日报全媒体记者从省教育厅获悉，近日我省计划面向社会公开招聘7名事业编制大学生乡村医生，进一步提升乡村医生队伍质量，促进医学专业高校毕业生就业。报名时间截至7月27日17时30分。\n\n本次招聘对象及范围为2026届医学专业高校毕业生（含尚在择业期2年内，2024年6月以后离校未落实工作单位的毕业生）。符合其他有关政策规定，按2026年应届毕业生同等对待人员，包括：以普通高校应届毕业生应征入伍服义务兵役，退役后1年内的人员；参加“三支一扶”等基层服务项目且参加前无工作经历，服务期满且考核合格后2年内的人员；大学毕业后未参加工作直接接受住院医师规范化培训，于2026年培训合格的人员。其他有关政策规定按2026年应届毕业生同等对待的人员。",
+    "ai_summary": "海南日报全媒体记者从省教育厅获悉，近日我省计划面向社会公开招聘7名事业编制大学生乡村医生，进一步提升乡村医生队伍质量，促进医学专业高校毕业生就业。报名时间截至7月27日17时30分。",
+    "original_url": "http://news.hndaily.cn/html/2026-07/15/content_58466_19704546.htm"
+  }
+}

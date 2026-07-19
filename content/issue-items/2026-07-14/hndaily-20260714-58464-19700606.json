@@ -11,7 +11,15 @@
   "scope": "hainan",
   "scope_evidence": "全面贯彻习近平强军思想\n共同巩固军政军民团结良好态势",
   "subjects": [],
-  "locations": [],
+  "locations": [
+    {
+      "location_id": "hainan",
+      "name": "海南省",
+      "code": "460000",
+      "level": "province",
+      "evidence": "海南省"
+    }
+  ],
   "topics": [
     {
       "topic_id": "policy-governance",
