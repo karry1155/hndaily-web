@@ -20,6 +20,12 @@ class RadarLocationTests(unittest.TestCase):
         self.assertEqual(catalog.by_id["hainan-sansha"]["code"], "460300")
         self.assertEqual(catalog.by_id["hainan-baisha"]["name"], "白沙黎族自治县")
 
+    def test_default_catalog_lives_with_other_controlled_configuration(self):
+        self.assertEqual(
+            load_location_catalog().metadata["verified_on"],
+            "2026-07-12",
+        )
+
     def test_candidates_use_aliases_but_return_canonical_records(self):
         result = find_location_candidates(
             "在白沙调研", "刘小明来到白沙黎族自治县", load_location_catalog()
@@ -35,6 +41,23 @@ class RadarLocationTests(unittest.TestCase):
                 candidates,
                 catalog,
             )
+
+    def test_resolver_orders_province_before_city_or_county(self):
+        catalog = load_location_catalog()
+        candidates = find_location_candidates(
+            "海南省海口市",
+            "海南省海口市举行活动",
+            catalog,
+        )
+        resolved = resolve_location_mentions(
+            [
+                {"location_id": "hainan-haikou", "evidence": "海口市"},
+                {"location_id": "hainan", "evidence": "海南省"},
+            ],
+            candidates,
+            catalog,
+        )
+        self.assertEqual([row["name"] for row in resolved], ["海南省", "海口市"])
 
     def test_official_full_name_is_inferred_but_alias_is_not(self):
         catalog = load_location_catalog()

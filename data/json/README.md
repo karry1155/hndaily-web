@@ -1,13 +1,17 @@
-# Local JSON workspace
+# Historical JSON archive
 
-HNHOT keeps every private pipeline artifact inside this directory:
+This directory preserves private artifacts produced by the earlier pipeline,
+including v1 results and the files that were already present before the active
+workspace moved. Existing dated files are retained as-is and must not be
+overwritten by the daily workflow.
 
-- `raw/YYYY-MM-DD.json`: crawler output.
-- `model-input/YYYY-MM-DD.json`: exact `hnhot-v1` model input and fingerprint.
-- `model-output/YYYY-MM-DD.json`: exact model response.
-- `audits/YYYY-MM-DD.prefilter.json`: deterministic filter audit.
-- `audits/YYYY-MM-DD.publication.json`: validated publication audit.
+The active reviewable JSON is now under `data/production-json/`:
 
-The generated subdirectories are intentionally ignored by Git. Public,
-validated schema-v7 content belongs under `content/`; prompts, schemas and
-controlled catalogs belong under `prompts/` and `config/`.
+- `source/YYYY-MM-DD.json`
+- `input/YYYY-MM-DD.json`
+- `enrichment/YYYY-MM-DD.json`
+- `audit/YYYY-MM-DD.prefilter.json`
+- `audit/YYYY-MM-DD.publication.json`
+
+Public validated content remains under `content/`; prompts, schemas and
+controlled catalogs remain under `prompts/` and `config/`.

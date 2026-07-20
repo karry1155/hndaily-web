@@ -1,0 +1,71 @@
+{
+  "schema_version": 8,
+  "item_id": "hndaily-20260720-58465-19717508",
+  "published_date": "2026-07-20",
+  "collected_date": "2026-07-20",
+  "page_number": "002",
+  "page_name": "本省新闻",
+  "page_sequence": 2,
+  "author": "",
+  "enrichment_status": "complete",
+  "scope": "hainan",
+  "scope_evidence": "为琼南热带农业搭建起人才集聚、成果转化新平台",
+  "subjects": [
+    {
+      "subject_id": "subject-ce6bbc54a6d7e0",
+      "name": "三亚市热带农业科学研究院科协",
+      "type": "organization",
+      "role": "新成立的科研院所科协",
+      "evidence": "三亚市热带农业科学研究院科协揭牌成立"
+    },
+    {
+      "subject_id": "subject-a5d774dcb75627",
+      "name": "三亚市热带农业科学研究院",
+      "type": "organization",
+      "role": "科协依托科研院所",
+      "evidence": "三亚市热带农业科学研究院于2012年组建"
+    }
+  ],
+  "locations": [
+    {
+      "location_id": "hainan",
+      "name": "海南省",
+      "code": "460000",
+      "level": "province",
+      "evidence": "海南省首家科研院所科学技术协会"
+    },
+    {
+      "location_id": "hainan-sanya",
+      "name": "三亚市",
+      "code": "460200",
+      "level": "prefecture",
+      "evidence": "三亚市热带农业科学研究院"
+    }
+  ],
+  "topics": [
+    {
+      "topic_id": "education-talent",
+      "name": "教育人才",
+      "evidence": "人才集聚、成果转化新平台"
+    },
+    {
+      "topic_id": "industry-projects",
+      "name": "产业项目",
+      "evidence": "深耕南繁与热带农业科研"
+    }
+  ],
+  "events": [
+    {
+      "name": "三亚市热带农业科学研究院科协揭牌成立",
+      "evidence": "三亚市热带农业科学研究院科协揭牌成立"
+    }
+  ],
+  "plans": [],
+  "block": {
+    "source": "海南日报",
+    "title": "海南首家科研院所科协成立",
+    "content": "本报讯（海南日报全媒体记者邱江华）近日，海南省首家科研院所科学技术协会——三亚市热带农业科学研究院科协揭牌成立，为琼南热带农业搭建起人才集聚、成果转化新平台，推动海南基层科技群团建设迈上新台阶。\n\n据了解，三亚市热带农业科学研究院于2012年组建，隶属三亚市农业农村局，现有2000余亩科研试验基地，配套标准化实验室、育苗车间、智能大棚及33亩热带果树种质资源圃，保存260种热带植物资源。\n\n多年来三亚市热带农业科学研究院深耕南繁与热带农业科研，粮食攻关成果突出：水稻周年示范亩产突破4000斤，累计示范推广水稻超10万亩；联合钱前院士团队试种矮秆水稻“小薇”，实现亩产410公斤，开辟立体化栽培新路径。同时持续推进“南苗北种”，2025年培育各类蔬菜嫁接苗超300万株，数十万株优质种苗远销湖南等地。",
+    "ai_summary": "三亚市热带农业科学研究院科协揭牌成立，将为琼南热带农业科研人才和成果转化提供平台。",
+    "original_url": "http://news.hndaily.cn/html/2026-07/20/content_58465_19717508.htm"
+  }
+}

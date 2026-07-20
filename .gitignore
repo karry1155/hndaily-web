@@ -22,6 +22,10 @@ data/json/raw/
 data/json/model-input/
 data/json/model-output/
 data/json/audits/
+data/production-json/source/
+data/production-json/input/
+data/production-json/enrichment/
+data/production-json/audit/
 data/cache/
 data/tmp/
 data/tmp/radar-*/

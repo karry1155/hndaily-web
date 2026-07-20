@@ -1,0 +1,1155 @@
+{
+  "date": "2026-07-20",
+  "count": 12,
+  "front_page_count": 7,
+  "world_count": 5,
+  "national_ranking": [
+    {
+      "item_id": "hndaily-20260720-58464-19717493",
+      "published_date": "2026-07-20",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 3,
+      "title": "强化风险意识 确保安全可控",
+      "ai_summary": "习近平在2026世界人工智能大会上提出加强人工智能风险预警、伦理规范和安全治理，并推动形成全球治理共识。",
+      "scope": "national",
+      "enrichment_status": "complete",
+      "subjects": [
+        {
+          "subject_id": "subject-e646b1e6febe4e",
+          "name": "习近平",
+          "type": "person",
+          "role": "主席",
+          "evidence": "习近平主席发表主旨讲话"
+        }
+      ],
+      "locations": [],
+      "topics": [
+        {
+          "topic_id": "policy-governance",
+          "name": "政策治理",
+          "evidence": "强化风险意识，确保安全可控"
+        },
+        {
+          "topic_id": "external-relations",
+          "name": "对外交流",
+          "evidence": "全球人工智能治理体系"
+        },
+        {
+          "topic_id": "industry-projects",
+          "name": "产业项目",
+          "evidence": "深度融入生产生活各领域"
+        }
+      ],
+      "events": [
+        {
+          "name": "2026世界人工智能大会暨人工智能全球治理高级别会议",
+          "evidence": "在2026世界人工智能大会暨人工智能全球治理高级别会议开幕式上"
+        }
+      ],
+      "plans": [
+        {
+          "name": "《人工智能合作发展行动计划》",
+          "evidence": "《人工智能合作发展行动计划》《国际人工智能伦理治理行动计划》"
+        },
+        {
+          "name": "《国际人工智能伦理治理行动计划》",
+          "evidence": "《人工智能合作发展行动计划》《国际人工智能伦理治理行动计划》"
+        }
+      ],
+      "detail_path": "/items/2026-07-20/hndaily-20260720-58464-19717493/",
+      "rank": 1
+    }
+  ],
+  "world_ranking": [
+    {
+      "item_id": "hndaily-20260720-58469-19717554",
+      "published_date": "2026-07-20",
+      "page_number": "006",
+      "page_name": "世界新闻",
+      "page_sequence": 1,
+      "title": "美沙核协议草案浮出水面 搞“双标”遭质疑",
+      "ai_summary": "美媒披露的美沙核协议草案拟允许美国向沙特民用核项目转移材料和技术，引发核不扩散“双重标准”质疑。",
+      "scope": "foreign",
+      "enrichment_status": "complete",
+      "subjects": [
+        {
+          "subject_id": "subject-c11e2086db170a",
+          "name": "美国政府",
+          "type": "government",
+          "role": "核协议谈判方",
+          "evidence": "特朗普政府向国会提供的相关文件"
+        },
+        {
+          "subject_id": "subject-3c15d5e1f3ee85",
+          "name": "沙特政府",
+          "type": "government",
+          "role": "核协议谈判方",
+          "evidence": "沙特政府"
+        }
+      ],
+      "locations": [],
+      "topics": [
+        {
+          "topic_id": "external-relations",
+          "name": "对外交流",
+          "evidence": "美国与沙特阿拉伯的核协议草案"
+        },
+        {
+          "topic_id": "policy-governance",
+          "name": "政策治理",
+          "evidence": "未切实落实核不扩散制度"
+        }
+      ],
+      "events": [
+        {
+          "name": "美国与沙特阿拉伯核协议草案曝光",
+          "evidence": "美媒18日披露的一份美国与沙特阿拉伯的核协议草案"
+        }
+      ],
+      "plans": [],
+      "detail_path": "/items/2026-07-20/hndaily-20260720-58469-19717554/",
+      "rank": 1
+    },
+    {
+      "item_id": "hndaily-20260720-58469-19717555",
+      "published_date": "2026-07-20",
+      "page_number": "006",
+      "page_name": "世界新闻",
+      "page_sequence": 2,
+      "title": "高市内阁不支持率超过支持率",
+      "ai_summary": "日本最新民调显示，高市内阁支持率降至41%，不支持率升至44%，首次出现不支持率超过支持率。",
+      "scope": "foreign",
+      "enrichment_status": "complete",
+      "subjects": [
+        {
+          "subject_id": "subject-97f404329c7b5f",
+          "name": "高市早苗",
+          "type": "person",
+          "role": "日本首相",
+          "evidence": "高市早苗内阁的支持率"
+        }
+      ],
+      "locations": [],
+      "topics": [
+        {
+          "topic_id": "policy-governance",
+          "name": "政策治理",
+          "evidence": "内阁支持率从6月的51%跌至41%"
+        },
+        {
+          "topic_id": "economy-data",
+          "name": "经济数据",
+          "evidence": "不支持率则升至44%"
+        }
+      ],
+      "events": [
+        {
+          "name": "日本高市内阁不支持率超过支持率",
+          "evidence": "不支持率则升至44%，已超过支持率"
+        }
+      ],
+      "plans": [],
+      "detail_path": "/items/2026-07-20/hndaily-20260720-58469-19717555/",
+      "rank": 2
+    },
+    {
+      "item_id": "hndaily-20260720-58469-19717556",
+      "published_date": "2026-07-20",
+      "page_number": "006",
+      "page_name": "世界新闻",
+      "page_sequence": 3,
+      "title": "印度计划试点发行小面额塑料钞票",
+      "ai_summary": "印度储备银行计划2027年试点发行10卢比和20卢比塑料钞票，以测试耐用性、防伪性和替代纸币的可行性。",
+      "scope": "foreign",
+      "enrichment_status": "complete",
+      "subjects": [
+        {
+          "subject_id": "subject-b759b4e64e465b",
+          "name": "印度储备银行",
+          "type": "government",
+          "role": "塑料钞票试点机构",
+          "evidence": "印度储备银行计划"
+        }
+      ],
+      "locations": [],
+      "topics": [
+        {
+          "topic_id": "economy-data",
+          "name": "经济数据",
+          "evidence": "发行面额10卢比和20卢比的塑料钞票"
+        },
+        {
+          "topic_id": "policy-governance",
+          "name": "政策治理",
+          "evidence": "评估用其替代纸币的可行性"
+        }
+      ],
+      "events": [
+        {
+          "name": "印度计划试点发行小面额塑料钞票",
+          "evidence": "计划于2027年试点发行小面额的塑料材质钞票"
+        }
+      ],
+      "plans": [],
+      "detail_path": "/items/2026-07-20/hndaily-20260720-58469-19717556/",
+      "rank": 3
+    },
+    {
+      "item_id": "hndaily-20260720-58469-19717557",
+      "published_date": "2026-07-20",
+      "page_number": "006",
+      "page_name": "世界新闻",
+      "page_sequence": 4,
+      "title": "全球粮食安全面临三大“灰犀牛”",
+      "ai_summary": "化肥运输受阻、极端天气增多和农产品出口限制正同时冲击全球粮食的生产、运输与贸易。",
+      "scope": "foreign",
+      "enrichment_status": "complete",
+      "subjects": [],
+      "locations": [],
+      "topics": [
+        {
+          "topic_id": "economy-data",
+          "name": "经济数据",
+          "evidence": "全球粮价较2022年高点明显回落"
+        },
+        {
+          "topic_id": "ecology",
+          "name": "生态环境",
+          "evidence": "新一轮厄尔尼诺现象导致极端天气频发"
+        },
+        {
+          "topic_id": "external-relations",
+          "name": "对外交流",
+          "evidence": "部分国家收紧农产品出口"
+        }
+      ],
+      "events": [],
+      "plans": [],
+      "detail_path": "/items/2026-07-20/hndaily-20260720-58469-19717557/",
+      "rank": 4
+    },
+    {
+      "item_id": "hndaily-20260720-58469-19717558",
+      "published_date": "2026-07-20",
+      "page_number": "006",
+      "page_name": "世界新闻",
+      "page_sequence": 5,
+      "title": "加拿大多地野火持续蔓延",
+      "ai_summary": "加拿大7月18日有959起在燃野火，今年累计过火面积已超过290万公顷。",
+      "scope": "foreign",
+      "enrichment_status": "complete",
+      "subjects": [
+        {
+          "subject_id": "subject-140953a8818085",
+          "name": "加拿大跨部门森林消防中心",
+          "type": "organization",
+          "role": "野火数据发布机构",
+          "evidence": "加拿大跨部门森林消防中心7月18日发布的最新数据显示"
+        }
+      ],
+      "locations": [],
+      "topics": [
+        {
+          "topic_id": "ecology",
+          "name": "生态环境",
+          "evidence": "过火面积超过290万公顷"
+        },
+        {
+          "topic_id": "economy-data",
+          "name": "经济数据",
+          "evidence": "在燃野火数量达到959起"
+        }
+      ],
+      "events": [
+        {
+          "name": "加拿大多地野火持续蔓延",
+          "evidence": "加拿大多地出现野火"
+        }
+      ],
+      "plans": [],
+      "detail_path": "/items/2026-07-20/hndaily-20260720-58469-19717558/",
+      "rank": 5
+    }
+  ],
+  "items": [
+    {
+      "item_id": "hndaily-20260720-58464-19717491",
+      "published_date": "2026-07-20",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 1,
+      "title": "千亿投资推进“人享其行、物畅其流”",
+      "ai_summary": "海南“十五五”期间计划推进223个公路、水路和数字化交通项目，总投资1363亿元。",
+      "scope": "hainan",
+      "enrichment_status": "complete",
+      "subjects": [
+        {
+          "subject_id": "subject-7e953f2f7ea072",
+          "name": "省交通运输厅",
+          "type": "government",
+          "role": "规划信息发布部门",
+          "evidence": "海南日报全媒体记者从省交通运输厅获悉"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "海南省“十五五”综合交通运输（公路水路）发展规划"
+        }
+      ],
+      "topics": [
+        {
+          "topic_id": "urban-rural",
+          "name": "城乡建设",
+          "evidence": "全省共谋划公路水路项目223个"
+        },
+        {
+          "topic_id": "industry-projects",
+          "name": "产业项目",
+          "evidence": "总投资1363亿元"
+        },
+        {
+          "topic_id": "policy-governance",
+          "name": "政策治理",
+          "evidence": "日前已正式印发实施"
+        }
+      ],
+      "events": [
+        {
+          "name": "海南印发实施“十五五”综合交通运输规划",
+          "evidence": "日前已正式印发实施"
+        }
+      ],
+      "plans": [
+        {
+          "name": "《海南省“十五五”综合交通运输（公路水路）发展规划》",
+          "evidence": "《海南省“十五五”综合交通运输（公路水路）发展规划》（以下简称规划）日前已正式印发实施"
+        }
+      ],
+      "detail_path": "/items/2026-07-20/hndaily-20260720-58464-19717491/"
+    },
+    {
+      "item_id": "hndaily-20260720-58464-19717492",
+      "published_date": "2026-07-20",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 2,
+      "title": "旅游“一程多站”有了山海“联名款”",
+      "ai_summary": "海南首次在欢乐节期间联动国内重点客源地推介跨省旅游线路，并邀请多国旅行商参与合作。",
+      "scope": "mixed",
+      "enrichment_status": "complete",
+      "subjects": [
+        {
+          "subject_id": "subject-b25ea0459ec073",
+          "name": "海南省旅游和文化广电体育厅",
+          "type": "government",
+          "role": "联合推介方",
+          "evidence": "海南省旅游和文化广电体育厅与河南省文化和旅游厅签署文旅战略合作框架协议"
+        },
+        {
+          "subject_id": "subject-0fa6614ef4617b",
+          "name": "河南省文化和旅游厅",
+          "type": "government",
+          "role": "联合推介方",
+          "evidence": "海南省旅游和文化广电体育厅与河南省文化和旅游厅签署文旅战略合作框架协议"
+        },
+        {
+          "subject_id": "subject-943b5a05a48740",
+          "name": "福建省邵武市人民政府",
+          "type": "government",
+          "role": "文旅共建合作方",
+          "evidence": "海南省旅游和文化广电体育厅与福建省邵武市人民政府签署文旅共建合作备忘录"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "2026年海南国际旅游岛欢乐节"
+        },
+        {
+          "location_id": "hainan-haikou",
+          "name": "海口市",
+          "code": "460100",
+          "level": "prefecture",
+          "evidence": "联合推介会在海口举办"
+        }
+      ],
+      "topics": [
+        {
+          "topic_id": "culture-tourism-sports",
+          "name": "文旅体育",
+          "evidence": "跨省文旅联合推介活动"
+        },
+        {
+          "topic_id": "external-relations",
+          "name": "对外交流",
+          "evidence": "来自泰国、澳大利亚、希腊、菲律宾、巴基斯坦、埃塞俄比亚等国的旅行商代表"
+        }
+      ],
+      "events": [
+        {
+          "name": "2026年海南国际旅游岛欢乐节“海誓山盟”联合推介会",
+          "evidence": "7月19日，2026年海南国际旅游岛欢乐节“海誓山盟”联合推介会在海口举办"
+        }
+      ],
+      "plans": [],
+      "detail_path": "/items/2026-07-20/hndaily-20260720-58464-19717492/"
+    },
+    {
+      "item_id": "hndaily-20260720-58464-19717493",
+      "published_date": "2026-07-20",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 3,
+      "title": "强化风险意识 确保安全可控",
+      "ai_summary": "习近平在2026世界人工智能大会上提出加强人工智能风险预警、伦理规范和安全治理，并推动形成全球治理共识。",
+      "scope": "national",
+      "enrichment_status": "complete",
+      "subjects": [
+        {
+          "subject_id": "subject-e646b1e6febe4e",
+          "name": "习近平",
+          "type": "person",
+          "role": "主席",
+          "evidence": "习近平主席发表主旨讲话"
+        }
+      ],
+      "locations": [],
+      "topics": [
+        {
+          "topic_id": "policy-governance",
+          "name": "政策治理",
+          "evidence": "强化风险意识，确保安全可控"
+        },
+        {
+          "topic_id": "external-relations",
+          "name": "对外交流",
+          "evidence": "全球人工智能治理体系"
+        },
+        {
+          "topic_id": "industry-projects",
+          "name": "产业项目",
+          "evidence": "深度融入生产生活各领域"
+        }
+      ],
+      "events": [
+        {
+          "name": "2026世界人工智能大会暨人工智能全球治理高级别会议",
+          "evidence": "在2026世界人工智能大会暨人工智能全球治理高级别会议开幕式上"
+        }
+      ],
+      "plans": [
+        {
+          "name": "《人工智能合作发展行动计划》",
+          "evidence": "《人工智能合作发展行动计划》《国际人工智能伦理治理行动计划》"
+        },
+        {
+          "name": "《国际人工智能伦理治理行动计划》",
+          "evidence": "《人工智能合作发展行动计划》《国际人工智能伦理治理行动计划》"
+        }
+      ],
+      "detail_path": "/items/2026-07-20/hndaily-20260720-58464-19717493/"
+    },
+    {
+      "item_id": "hndaily-20260720-58464-19717494",
+      "published_date": "2026-07-20",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 4,
+      "title": "海南竞技体育再“加速”",
+      "ai_summary": "海南竞技体育近年在全运会实现多项目奖牌突破，并通过青训、训练基地和赛事体系继续培养本土运动员。",
+      "scope": "hainan",
+      "enrichment_status": "complete",
+      "subjects": [
+        {
+          "subject_id": "subject-b822aedcbe6aee",
+          "name": "海南代表团",
+          "type": "organization",
+          "role": "第十五届全运会参赛代表团",
+          "evidence": "海南代表团交出了2金2银1铜的成绩单"
+        },
+        {
+          "subject_id": "subject-83364e832de33a",
+          "name": "林诗栋",
+          "type": "person",
+          "role": "海南乒乓球运动员",
+          "evidence": "海南选手林诗栋和搭档蒯曼夺得冠军"
+        },
+        {
+          "subject_id": "subject-b9a5f89ced34a9",
+          "name": "张好",
+          "type": "person",
+          "role": "海南公路自行车运动员",
+          "evidence": "张好在第十五届全运会公路自行车女子个人计时赛中冲线夺冠"
+        },
+        {
+          "subject_id": "subject-f61f89f1041d77",
+          "name": "吴世栋",
+          "type": "person",
+          "role": "海南冲浪运动员",
+          "evidence": "吴世栋以压倒性优势夺得第十五届全运会男子短板金牌"
+        },
+        {
+          "subject_id": "subject-9b1627b8c1462e",
+          "name": "邓雪莹",
+          "type": "person",
+          "role": "海南冲浪运动员",
+          "evidence": "邓雪莹逆转对手拼下女子短板铜牌"
+        },
+        {
+          "subject_id": "subject-ce20d27acd76fe",
+          "name": "邓小芳",
+          "type": "person",
+          "role": "海南举重运动员",
+          "evidence": "邓小芳勇夺女子举重49公斤级银牌，创下海南举重全运历史最佳"
+        },
+        {
+          "subject_id": "subject-916e3fc29c1592",
+          "name": "林雨",
+          "type": "person",
+          "role": "海南攀岩运动员",
+          "evidence": "海南选手林雨闯入全运会决赛阶段"
+        },
+        {
+          "subject_id": "subject-8711f9ee88329a",
+          "name": "符梦谣",
+          "type": "person",
+          "role": "海南田径运动员",
+          "evidence": "符梦谣在女子400米栏跑出赛季最佳"
+        },
+        {
+          "subject_id": "subject-eedb680278dfa0",
+          "name": "何岳基",
+          "type": "person",
+          "role": "海南举重运动员",
+          "evidence": "举重选手何岳基在2026年亚洲举重锦标赛男子65公斤级比赛中，以抓举146公斤、挺举183公斤、总成绩329公斤包揽三枚金牌"
+        },
+        {
+          "subject_id": "subject-72d99d160a7643",
+          "name": "董俊南",
+          "type": "person",
+          "role": "海南沙滩排球运动员",
+          "evidence": "沙排男队组合董俊南/常俊凯在2026年全国沙滩排球巡回赛云南盈江站夺冠"
+        },
+        {
+          "subject_id": "subject-a06e7ba1d29e92",
+          "name": "常俊凯",
+          "type": "person",
+          "role": "海南沙滩排球运动员",
+          "evidence": "沙排男队组合董俊南/常俊凯在2026年全国沙滩排球巡回赛云南盈江站夺冠"
+        },
+        {
+          "subject_id": "subject-3e39ee4ccb4d44",
+          "name": "王佳慧",
+          "type": "person",
+          "role": "海南拳击运动员",
+          "evidence": "女子拳击手王佳慧在2026年全国女子拳击锦标赛80公斤级决赛中力克劲敌摘金"
+        },
+        {
+          "subject_id": "subject-2897760691eb06",
+          "name": "吴志堂",
+          "type": "person",
+          "role": "海南青年拳击运动员",
+          "evidence": "儋州小将吴志堂在全国青年男子拳击锦标赛48公斤级中夺冠"
+        },
+        {
+          "subject_id": "subject-7fc86f1753957a",
+          "name": "吴学杰",
+          "type": "person",
+          "role": "海南田径运动员",
+          "evidence": "“海南飞人”吴学杰摘得2026年全国室内田径锦标赛60米冠军"
+        },
+        {
+          "subject_id": "subject-b6ff491bde964b",
+          "name": "林翔",
+          "type": "person",
+          "role": "海南蹼泳运动员",
+          "evidence": "蹼泳选手林翔成为首位入选国家队的海南蹼泳运动员"
+        },
+        {
+          "subject_id": "subject-af4baa437f5925",
+          "name": "海南省冰壶女队",
+          "type": "organization",
+          "role": "海南冰壶参赛队",
+          "evidence": "在2025—2026赛季全国冰壶锦标赛中，海南省冰壶女队夺得女子团体冠军"
+        },
+        {
+          "subject_id": "subject-37aa57de9dc081",
+          "name": "海南射箭队",
+          "type": "organization",
+          "role": "海南射箭参赛队",
+          "evidence": "在2026年全国射箭锦标赛中，海南射箭队夺得男子反曲弓团体冠军"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "海南竞技体育加速奔跑"
+        },
+        {
+          "location_id": "hainan-qionghai",
+          "name": "琼海市",
+          "code": "469002",
+          "level": "county",
+          "evidence": "琼海，万泉河畔"
+        }
+      ],
+      "topics": [
+        {
+          "topic_id": "culture-tourism-sports",
+          "name": "文旅体育",
+          "evidence": "海南竞技体育加速奔跑"
+        },
+        {
+          "topic_id": "education-talent",
+          "name": "教育人才",
+          "evidence": "选拔新苗、完善青训的新起点"
+        }
+      ],
+      "events": [
+        {
+          "name": "海南省第七届运动会",
+          "evidence": "8月16日至26日，海南省第七届运动会将在此举行"
+        },
+        {
+          "name": "2026年全国乒乓球锦标赛",
+          "evidence": "在2026年全国乒乓球锦标赛混双决赛中"
+        }
+      ],
+      "plans": [],
+      "detail_path": "/items/2026-07-20/hndaily-20260720-58464-19717494/"
+    },
+    {
+      "item_id": "hndaily-20260720-58464-19717496",
+      "published_date": "2026-07-20",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 5,
+      "title": "从陵水黎安起步，登上世界级AI舞台",
+      "ai_summary": "陵水黎安试验区学生创办的德工智能成立不足一年，已带着产业AI产品亮相2026世界人工智能大会。",
+      "scope": "domestic",
+      "enrichment_status": "complete",
+      "subjects": [
+        {
+          "subject_id": "subject-1906f91986d50d",
+          "name": "黄贤德",
+          "type": "person",
+          "role": "海南德工智能科技有限公司创始人",
+          "evidence": "创始人黄贤德"
+        },
+        {
+          "subject_id": "subject-cc0de029993dfa",
+          "name": "海南德工智能科技有限公司",
+          "type": "company",
+          "role": "产业AI产品参展企业",
+          "evidence": "带着他的年轻团队和产业AI产品体系，亮相2026世界人工智能大会"
+        },
+        {
+          "subject_id": "subject-c4559b8249a01d",
+          "name": "陵水黎安国际教育创新试验区",
+          "type": "project",
+          "role": "创业孵化起点",
+          "evidence": "陵水黎安国际教育创新试验区的首批学生"
+        },
+        {
+          "subject_id": "subject-a246d8dfed77a1",
+          "name": "陵水黎族自治县数字投资有限公司",
+          "type": "company",
+          "role": "城市治理数字化合作方",
+          "evidence": "陵水黎族自治县数字投资有限公司与德工智能签订战略合作协议"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "海南德工智能科技有限公司"
+        },
+        {
+          "location_id": "hainan-lingshui",
+          "name": "陵水黎族自治县",
+          "code": "469028",
+          "level": "county",
+          "evidence": "陵水黎安国际教育创新试验区"
+        }
+      ],
+      "topics": [
+        {
+          "topic_id": "industry-projects",
+          "name": "产业项目",
+          "evidence": "产业AI产品体系"
+        },
+        {
+          "topic_id": "education-talent",
+          "name": "教育人才",
+          "evidence": "试验区的首批学生"
+        }
+      ],
+      "events": [
+        {
+          "name": "海南德工智能亮相2026世界人工智能大会",
+          "evidence": "亮相2026世界人工智能大会"
+        }
+      ],
+      "plans": [],
+      "detail_path": "/items/2026-07-20/hndaily-20260720-58464-19717496/"
+    },
+    {
+      "item_id": "hndaily-20260720-58464-19717497",
+      "published_date": "2026-07-20",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 6,
+      "title": "糟粕醋的“城市PK赛”你更看好谁？",
+      "ai_summary": "海南多市县围绕糟粕醋形成餐饮、速食和调味品产业链，相关产品已由本地风味走向全国和海外市场。",
+      "scope": "mixed",
+      "enrichment_status": "complete",
+      "subjects": [
+        {
+          "subject_id": "subject-696f0ce15a067a",
+          "name": "林雪霞",
+          "type": "person",
+          "role": "文昌燕嫂糟粕醋负责人",
+          "evidence": "文昌燕嫂糟粕醋负责人林雪霞说，该品牌糟粕醋用本地大米、地瓜配祖传酒曲发酵"
+        },
+        {
+          "subject_id": "subject-e60283b4d2781b",
+          "name": "何金岳",
+          "type": "person",
+          "role": "林花糟粕醋门店负责人",
+          "evidence": "林花糟粕醋门店负责人何金岳对糟粕醋的品质深有感触"
+        },
+        {
+          "subject_id": "subject-8941abc44ca094",
+          "name": "文昌市糟粕醋协会",
+          "type": "organization",
+          "role": "糟粕醋行业组织",
+          "evidence": "2025年10月，文昌市糟粕醋协会成立"
+        },
+        {
+          "subject_id": "subject-dbcfd4ca86a558",
+          "name": "铺前三婆糟粕醋文化馆",
+          "type": "project",
+          "role": "糟粕醋文化体验项目",
+          "evidence": "铺前三婆糟粕醋文化馆在木兰湾片区开启试营业"
+        },
+        {
+          "subject_id": "subject-5dec94f5cff39e",
+          "name": "贵州玉梦集团",
+          "type": "company",
+          "role": "糟粕醋生产企业",
+          "evidence": "贵州玉梦集团董事长田其明说，新投产的工厂年产糟粕醋产品5000吨"
+        },
+        {
+          "subject_id": "subject-83c2da07eaf892",
+          "name": "田其明",
+          "type": "person",
+          "role": "贵州玉梦集团董事长",
+          "evidence": "贵州玉梦集团董事长田其明说，新投产的工厂年产糟粕醋产品5000吨"
+        },
+        {
+          "subject_id": "subject-291ed97a82982a",
+          "name": "定安啊喔哦食品公司",
+          "type": "company",
+          "role": "糟粕醋休闲食品开发企业",
+          "evidence": "定安啊喔哦食品公司董事长林冠说，更大的空间在休闲食品"
+        },
+        {
+          "subject_id": "subject-34a51ed7a684c0",
+          "name": "林冠",
+          "type": "person",
+          "role": "定安啊喔哦食品公司董事长",
+          "evidence": "定安啊喔哦食品公司董事长林冠说，更大的空间在休闲食品"
+        },
+        {
+          "subject_id": "subject-1699bc0ee23ed2",
+          "name": "海南年百顺国际贸易有限公司",
+          "type": "company",
+          "role": "糟粕醋产品生产企业",
+          "evidence": "海南年百顺国际贸易有限公司"
+        },
+        {
+          "subject_id": "subject-8879978f52f69d",
+          "name": "海南一小仙科技",
+          "type": "company",
+          "role": "糟粕醋产业企业",
+          "evidence": "海南一小仙科技"
+        },
+        {
+          "subject_id": "subject-3434a355df4d2a",
+          "name": "陈昌胜",
+          "type": "person",
+          "role": "海南年百顺国际贸易有限公司总经理",
+          "evidence": "年百顺总经理陈昌胜说，公司正加大投入推动糟粕醋从作坊迈向现代化"
+        },
+        {
+          "subject_id": "subject-cc3291f3b62149",
+          "name": "海南金鹿集团",
+          "type": "company",
+          "role": "糟粕醋标准化生产企业",
+          "evidence": "海南金鹿集团旗下本土品牌海岛永芳，在万宁金鹿工业园建设标准化工厂"
+        },
+        {
+          "subject_id": "subject-288a56a15b2229",
+          "name": "海南省粮油科学研究所",
+          "type": "organization",
+          "role": "发酵菌种科研合作方",
+          "evidence": "联合海南省粮油科学研究所驯化专用发酵菌种"
+        },
+        {
+          "subject_id": "subject-92fafac6f302f6",
+          "name": "张寒冰",
+          "type": "person",
+          "role": "海岛永芳负责人",
+          "evidence": "海岛永芳负责人张寒冰表示，企业已通过HACCP和ISO22000等国际认证"
+        },
+        {
+          "subject_id": "subject-caf3e4f81c221b",
+          "name": "海南惠施食品",
+          "type": "company",
+          "role": "糟粕醋加工企业",
+          "evidence": "海口头部加工企业海南惠施食品旗下品牌“醋理大师”，连续多年在消博会上亮相"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "海南多市县差异化发展"
+        },
+        {
+          "location_id": "hainan-sanya",
+          "name": "三亚市",
+          "code": "460200",
+          "level": "prefecture",
+          "evidence": "在三亚的琼州糟粕醋店内"
+        },
+        {
+          "location_id": "hainan-wenchang",
+          "name": "文昌市",
+          "code": "469005",
+          "level": "county",
+          "evidence": "源自文昌铺前的“海南酸汤”"
+        },
+        {
+          "location_id": "hainan-dingan",
+          "name": "定安县",
+          "code": "469021",
+          "level": "county",
+          "evidence": "定安县"
+        }
+      ],
+      "topics": [
+        {
+          "topic_id": "industry-projects",
+          "name": "产业项目",
+          "evidence": "覆盖火锅、速食、休闲零食、饮品等全品类赛道"
+        },
+        {
+          "topic_id": "external-relations",
+          "name": "对外交流",
+          "evidence": "产品远销美国、加拿大、澳大利亚、新加坡等十余国"
+        },
+        {
+          "topic_id": "culture-tourism-sports",
+          "name": "文旅体育",
+          "evidence": "一碗糟粕醋，成了这趟旅途浓墨重彩的一笔"
+        }
+      ],
+      "events": [
+        {
+          "name": "“酷游海南，文昌无醋不精彩”体验季",
+          "evidence": "“酷游海南，文昌无醋不精彩”体验季"
+        }
+      ],
+      "plans": [],
+      "detail_path": "/items/2026-07-20/hndaily-20260720-58464-19717497/"
+    },
+    {
+      "item_id": "hndaily-20260720-58464-19717498",
+      "published_date": "2026-07-20",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 7,
+      "title": "暑期托管学舞龙",
+      "ai_summary": "海南师范大学师生在定安暑期托管站开设舞龙舞狮、传统武术和健康筛查等课程。",
+      "scope": "hainan",
+      "enrichment_status": "complete",
+      "subjects": [
+        {
+          "subject_id": "subject-1ebd1a33e000f6",
+          "name": "海南师范大学体育学院",
+          "type": "organization",
+          "role": "暑期托管课程提供方",
+          "evidence": "海南师范大学体育学院师生走进定安县龙门镇爱心托管站"
+        },
+        {
+          "subject_id": "subject-3ba72a4b76998b",
+          "name": "定安县龙门镇爱心托管站",
+          "type": "organization",
+          "role": "课程开展场所",
+          "evidence": "定安县龙门镇爱心托管站"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "海南师范大学"
+        },
+        {
+          "location_id": "hainan-dingan",
+          "name": "定安县",
+          "code": "469021",
+          "level": "county",
+          "evidence": "定安县龙门镇"
+        }
+      ],
+      "topics": [
+        {
+          "topic_id": "education-talent",
+          "name": "教育人才",
+          "evidence": "多元化课程丰富孩子们的暑期生活"
+        },
+        {
+          "topic_id": "culture-tourism-sports",
+          "name": "文旅体育",
+          "evidence": "舞龙舞狮体验课"
+        },
+        {
+          "topic_id": "health",
+          "name": "医疗健康",
+          "evidence": "融入脊柱侧弯筛查"
+        }
+      ],
+      "events": [
+        {
+          "name": "定安龙门镇暑期托管舞龙舞狮体验课",
+          "evidence": "为孩子们带来舞龙舞狮体验课"
+        }
+      ],
+      "plans": [],
+      "detail_path": "/items/2026-07-20/hndaily-20260720-58464-19717498/"
+    },
+    {
+      "item_id": "hndaily-20260720-58469-19717554",
+      "published_date": "2026-07-20",
+      "page_number": "006",
+      "page_name": "世界新闻",
+      "page_sequence": 1,
+      "title": "美沙核协议草案浮出水面 搞“双标”遭质疑",
+      "ai_summary": "美媒披露的美沙核协议草案拟允许美国向沙特民用核项目转移材料和技术，引发核不扩散“双重标准”质疑。",
+      "scope": "foreign",
+      "enrichment_status": "complete",
+      "subjects": [
+        {
+          "subject_id": "subject-c11e2086db170a",
+          "name": "美国政府",
+          "type": "government",
+          "role": "核协议谈判方",
+          "evidence": "特朗普政府向国会提供的相关文件"
+        },
+        {
+          "subject_id": "subject-3c15d5e1f3ee85",
+          "name": "沙特政府",
+          "type": "government",
+          "role": "核协议谈判方",
+          "evidence": "沙特政府"
+        }
+      ],
+      "locations": [],
+      "topics": [
+        {
+          "topic_id": "external-relations",
+          "name": "对外交流",
+          "evidence": "美国与沙特阿拉伯的核协议草案"
+        },
+        {
+          "topic_id": "policy-governance",
+          "name": "政策治理",
+          "evidence": "未切实落实核不扩散制度"
+        }
+      ],
+      "events": [
+        {
+          "name": "美国与沙特阿拉伯核协议草案曝光",
+          "evidence": "美媒18日披露的一份美国与沙特阿拉伯的核协议草案"
+        }
+      ],
+      "plans": [],
+      "detail_path": "/items/2026-07-20/hndaily-20260720-58469-19717554/"
+    },
+    {
+      "item_id": "hndaily-20260720-58469-19717555",
+      "published_date": "2026-07-20",
+      "page_number": "006",
+      "page_name": "世界新闻",
+      "page_sequence": 2,
+      "title": "高市内阁不支持率超过支持率",
+      "ai_summary": "日本最新民调显示，高市内阁支持率降至41%，不支持率升至44%，首次出现不支持率超过支持率。",
+      "scope": "foreign",
+      "enrichment_status": "complete",
+      "subjects": [
+        {
+          "subject_id": "subject-97f404329c7b5f",
+          "name": "高市早苗",
+          "type": "person",
+          "role": "日本首相",
+          "evidence": "高市早苗内阁的支持率"
+        }
+      ],
+      "locations": [],
+      "topics": [
+        {
+          "topic_id": "policy-governance",
+          "name": "政策治理",
+          "evidence": "内阁支持率从6月的51%跌至41%"
+        },
+        {
+          "topic_id": "economy-data",
+          "name": "经济数据",
+          "evidence": "不支持率则升至44%"
+        }
+      ],
+      "events": [
+        {
+          "name": "日本高市内阁不支持率超过支持率",
+          "evidence": "不支持率则升至44%，已超过支持率"
+        }
+      ],
+      "plans": [],
+      "detail_path": "/items/2026-07-20/hndaily-20260720-58469-19717555/"
+    },
+    {
+      "item_id": "hndaily-20260720-58469-19717556",
+      "published_date": "2026-07-20",
+      "page_number": "006",
+      "page_name": "世界新闻",
+      "page_sequence": 3,
+      "title": "印度计划试点发行小面额塑料钞票",
+      "ai_summary": "印度储备银行计划2027年试点发行10卢比和20卢比塑料钞票，以测试耐用性、防伪性和替代纸币的可行性。",
+      "scope": "foreign",
+      "enrichment_status": "complete",
+      "subjects": [
+        {
+          "subject_id": "subject-b759b4e64e465b",
+          "name": "印度储备银行",
+          "type": "government",
+          "role": "塑料钞票试点机构",
+          "evidence": "印度储备银行计划"
+        }
+      ],
+      "locations": [],
+      "topics": [
+        {
+          "topic_id": "economy-data",
+          "name": "经济数据",
+          "evidence": "发行面额10卢比和20卢比的塑料钞票"
+        },
+        {
+          "topic_id": "policy-governance",
+          "name": "政策治理",
+          "evidence": "评估用其替代纸币的可行性"
+        }
+      ],
+      "events": [
+        {
+          "name": "印度计划试点发行小面额塑料钞票",
+          "evidence": "计划于2027年试点发行小面额的塑料材质钞票"
+        }
+      ],
+      "plans": [],
+      "detail_path": "/items/2026-07-20/hndaily-20260720-58469-19717556/"
+    },
+    {
+      "item_id": "hndaily-20260720-58469-19717557",
+      "published_date": "2026-07-20",
+      "page_number": "006",
+      "page_name": "世界新闻",
+      "page_sequence": 4,
+      "title": "全球粮食安全面临三大“灰犀牛”",
+      "ai_summary": "化肥运输受阻、极端天气增多和农产品出口限制正同时冲击全球粮食的生产、运输与贸易。",
+      "scope": "foreign",
+      "enrichment_status": "complete",
+      "subjects": [],
+      "locations": [],
+      "topics": [
+        {
+          "topic_id": "economy-data",
+          "name": "经济数据",
+          "evidence": "全球粮价较2022年高点明显回落"
+        },
+        {
+          "topic_id": "ecology",
+          "name": "生态环境",
+          "evidence": "新一轮厄尔尼诺现象导致极端天气频发"
+        },
+        {
+          "topic_id": "external-relations",
+          "name": "对外交流",
+          "evidence": "部分国家收紧农产品出口"
+        }
+      ],
+      "events": [],
+      "plans": [],
+      "detail_path": "/items/2026-07-20/hndaily-20260720-58469-19717557/"
+    },
+    {
+      "item_id": "hndaily-20260720-58469-19717558",
+      "published_date": "2026-07-20",
+      "page_number": "006",
+      "page_name": "世界新闻",
+      "page_sequence": 5,
+      "title": "加拿大多地野火持续蔓延",
+      "ai_summary": "加拿大7月18日有959起在燃野火，今年累计过火面积已超过290万公顷。",
+      "scope": "foreign",
+      "enrichment_status": "complete",
+      "subjects": [
+        {
+          "subject_id": "subject-140953a8818085",
+          "name": "加拿大跨部门森林消防中心",
+          "type": "organization",
+          "role": "野火数据发布机构",
+          "evidence": "加拿大跨部门森林消防中心7月18日发布的最新数据显示"
+        }
+      ],
+      "locations": [],
+      "topics": [
+        {
+          "topic_id": "ecology",
+          "name": "生态环境",
+          "evidence": "过火面积超过290万公顷"
+        },
+        {
+          "topic_id": "economy-data",
+          "name": "经济数据",
+          "evidence": "在燃野火数量达到959起"
+        }
+      ],
+      "events": [
+        {
+          "name": "加拿大多地野火持续蔓延",
+          "evidence": "加拿大多地出现野火"
+        }
+      ],
+      "plans": [],
+      "detail_path": "/items/2026-07-20/hndaily-20260720-58469-19717558/"
+    }
+  ]
+}

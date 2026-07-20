@@ -1,0 +1,49 @@
+{
+  "schema_version": 8,
+  "item_id": "hndaily-20260720-58469-19717555",
+  "published_date": "2026-07-20",
+  "collected_date": "2026-07-20",
+  "page_number": "006",
+  "page_name": "世界新闻",
+  "page_sequence": 2,
+  "author": "",
+  "enrichment_status": "complete",
+  "scope": "foreign",
+  "scope_evidence": "据日本《每日新闻》19日发布的民意调查结果",
+  "subjects": [
+    {
+      "subject_id": "subject-97f404329c7b5f",
+      "name": "高市早苗",
+      "type": "person",
+      "role": "日本首相",
+      "evidence": "高市早苗内阁的支持率"
+    }
+  ],
+  "locations": [],
+  "topics": [
+    {
+      "topic_id": "policy-governance",
+      "name": "政策治理",
+      "evidence": "内阁支持率从6月的51%跌至41%"
+    },
+    {
+      "topic_id": "economy-data",
+      "name": "经济数据",
+      "evidence": "不支持率则升至44%"
+    }
+  ],
+  "events": [
+    {
+      "name": "日本高市内阁不支持率超过支持率",
+      "evidence": "不支持率则升至44%，已超过支持率"
+    }
+  ],
+  "plans": [],
+  "block": {
+    "source": "海南日报",
+    "title": "高市内阁不支持率超过支持率",
+    "content": "新华社北京7月19日电 据日本《每日新闻》19日发布的民意调查结果，日本首相高市早苗内阁的支持率大跌10个百分点至41%，不支持率则升至44%，已超过支持率。\n\n民调结果显示，高市内阁支持率从6月的51%跌至41%，这是她就任以来，内阁支持率在该报民调中首次跌破50%；不支持率上升9个百分点，从35%升至44%。这是高市内阁支持率本周在第二家日本主要媒体的民调结果中跌破50%。（惠晓霜）",
+    "ai_summary": "日本最新民调显示，高市内阁支持率降至41%，不支持率升至44%，首次出现不支持率超过支持率。",
+    "original_url": "http://news.hndaily.cn/html/2026-07/20/content_58469_19717555.htm"
+  }
+}

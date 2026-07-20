@@ -1,0 +1,134 @@
+{
+  "schema_version": 8,
+  "item_id": "hndaily-20260720-58466-19717523",
+  "published_date": "2026-07-20",
+  "collected_date": "2026-07-20",
+  "page_number": "003",
+  "page_name": "民生新闻",
+  "page_sequence": 2,
+  "author": "",
+  "enrichment_status": "complete",
+  "scope": "hainan",
+  "scope_evidence": "划定2026年海南省普通高中学校录取最低控制分数线",
+  "subjects": [
+    {
+      "subject_id": "subject-2d9e4efeb3ad46",
+      "name": "省考试局",
+      "type": "government",
+      "role": "分数线划定和发布部门",
+      "evidence": "海南日报全媒体记者从省考试局获悉"
+    }
+  ],
+  "locations": [
+    {
+      "location_id": "hainan-danzhou",
+      "name": "儋州市",
+      "code": "460400",
+      "level": "prefecture",
+      "evidence": "在儋州、五指山、昌江、陵水、白沙、保亭、琼中等市县"
+    },
+    {
+      "location_id": "hainan-wuzhishan",
+      "name": "五指山市",
+      "code": "469001",
+      "level": "county",
+      "evidence": "在儋州、五指山、昌江、陵水、白沙、保亭、琼中等市县"
+    },
+    {
+      "location_id": "hainan-dongfang",
+      "name": "东方市",
+      "code": "469007",
+      "level": "county",
+      "evidence": "在东方、定安、屯昌、临高、乐东等市县"
+    },
+    {
+      "location_id": "hainan-dingan",
+      "name": "定安县",
+      "code": "469021",
+      "level": "county",
+      "evidence": "在东方、定安、屯昌、临高、乐东等市县"
+    },
+    {
+      "location_id": "hainan-tunchang",
+      "name": "屯昌县",
+      "code": "469022",
+      "level": "county",
+      "evidence": "在东方、定安、屯昌、临高、乐东等市县"
+    },
+    {
+      "location_id": "hainan-lingao",
+      "name": "临高县",
+      "code": "469024",
+      "level": "county",
+      "evidence": "在东方、定安、屯昌、临高、乐东等市县"
+    },
+    {
+      "location_id": "hainan-baisha",
+      "name": "白沙黎族自治县",
+      "code": "469025",
+      "level": "county",
+      "evidence": "在儋州、五指山、昌江、陵水、白沙、保亭、琼中等市县"
+    },
+    {
+      "location_id": "hainan-changjiang",
+      "name": "昌江黎族自治县",
+      "code": "469026",
+      "level": "county",
+      "evidence": "在儋州、五指山、昌江、陵水、白沙、保亭、琼中等市县"
+    },
+    {
+      "location_id": "hainan-ledong",
+      "name": "乐东黎族自治县",
+      "code": "469027",
+      "level": "county",
+      "evidence": "在东方、定安、屯昌、临高、乐东等市县"
+    },
+    {
+      "location_id": "hainan-lingshui",
+      "name": "陵水黎族自治县",
+      "code": "469028",
+      "level": "county",
+      "evidence": "在儋州、五指山、昌江、陵水、白沙、保亭、琼中等市县"
+    },
+    {
+      "location_id": "hainan-baoting",
+      "name": "保亭黎族苗族自治县",
+      "code": "469029",
+      "level": "county",
+      "evidence": "在儋州、五指山、昌江、陵水、白沙、保亭、琼中等市县"
+    },
+    {
+      "location_id": "hainan-qiongzhong",
+      "name": "琼中黎族苗族自治县",
+      "code": "469030",
+      "level": "county",
+      "evidence": "在儋州、五指山、昌江、陵水、白沙、保亭、琼中等市县"
+    }
+  ],
+  "topics": [
+    {
+      "topic_id": "education-talent",
+      "name": "教育人才",
+      "evidence": "普通高中学校录取最低控制分数线"
+    },
+    {
+      "topic_id": "policy-governance",
+      "name": "政策治理",
+      "evidence": "严格执行以上最低控制分数线限制"
+    }
+  ],
+  "events": [
+    {
+      "name": "海南划定2026年普通高中录取最低控制分数线",
+      "evidence": "划定2026年海南省普通高中学校录取最低控制分数线"
+    }
+  ],
+  "plans": [],
+  "block": {
+    "source": "海南日报",
+    "title": "海南划定普通高中学校录取最低控制分数线",
+    "content": "本报海口7月19日讯（海南日报全媒体记者张琬茜 实习生郭玉瑛）7月19日，海南日报全媒体记者从省考试局获悉，我省综合考虑本年度各市县普通高中计划制定和初中生源情况，划定2026年海南省普通高中学校录取最低控制分数线。\n\n具体来看，在东方、定安、屯昌、临高、乐东等市县初中学校毕业的考生为350分；在儋州、五指山、昌江、陵水、白沙、保亭、琼中等市县初中学校毕业的考生为380分；在其他市县初中学校毕业的考生为430分。\n\n省考试局明确，各普通高中学校录取考生时应严格执行以上最低控制分数线限制，省中招办也将通过技术手段限制低于最低控制分数线的考生在中招管理系统上进行录取，违规入读的不予办理学籍。",
+    "ai_summary": "海南公布2026年普通高中录取最低控制分数线，不同市县考生的最低线分别为350分、380分和430分。",
+    "original_url": "http://news.hndaily.cn/html/2026-07/20/content_58466_19717523.htm"
+  }
+}

@@ -50,25 +50,30 @@ class RepositoryBoundaryTests(unittest.TestCase):
         for value in (
             "HNHOT",
             "scripts/crawler.py",
-            "data/json/raw/",
-            "data/json/model-input/",
-            "data/json/model-output/",
-            "data/json/audits/",
-            "prompts/article-enrichment/v1/",
+            "data/production-json/source/",
+            "data/production-json/input/",
+            "data/production-json/enrichment/",
+            "data/production-json/audit/",
+            "prompts/article-enrichment/v2/",
         ):
             self.assertIn(value, readme)
 
-    def test_json_readme_documents_only_hnhot_v1_artifacts(self):
-        readme = (ROOT / "data/json/README.md").read_text(encoding="utf-8")
+    def test_production_readme_documents_current_hnhot_v2_artifacts(self):
+        readme = (ROOT / "data/production-json/README.md").read_text(encoding="utf-8")
         for value in (
-            "model-input/YYYY-MM-DD.json",
-            "model-output/YYYY-MM-DD.json",
-            "audits/YYYY-MM-DD.prefilter.json",
-            "audits/YYYY-MM-DD.publication.json",
-            "hnhot-v1",
+            "source/YYYY-MM-DD.json",
+            "input/YYYY-MM-DD.json",
+            "enrichment/YYYY-MM-DD.json",
+            "audit/YYYY-MM-DD.prefilter.json",
+            "audit/YYYY-MM-DD.publication.json",
         ):
             self.assertIn(value, readme)
-        self.assertNotIn("editorial-v1", readme)
+
+    def test_legacy_json_workspace_is_documented_as_read_only(self):
+        readme = (ROOT / "data/json/README.md").read_text(encoding="utf-8")
+        self.assertIn("Historical JSON archive", readme)
+        self.assertIn("must not be", readme)
+        self.assertIn("overwritten", readme)
 
     def test_runtime_has_no_retired_selection_or_digest_modules(self):
         retired = (

@@ -1,15 +1,15 @@
 {
-  "schema_version": 7,
+  "schema_version": 8,
   "item_id": "hndaily-20260719-58464-19716155",
   "published_date": "2026-07-19",
-  "collected_date": "2026-07-19",
+  "collected_date": "2026-07-20",
   "page_number": "001",
   "page_name": "头版",
   "page_sequence": 6,
   "author": "",
   "enrichment_status": "complete",
-  "scope": "mixed",
-  "scope_evidence": "畅玩全岛 欢乐启程",
+  "scope": "hainan",
+  "scope_evidence": "各市县将推出50余项特色主题活动",
   "subjects": [],
   "locations": [
     {
@@ -17,28 +17,28 @@
       "name": "海南省",
       "code": "460000",
       "level": "province",
-      "evidence": "海南"
+      "evidence": "海南国际旅游岛欢乐节"
     }
   ],
   "topics": [
     {
       "topic_id": "culture-tourism-sports",
       "name": "文旅体育",
-      "evidence": "旅游"
+      "evidence": "欢乐节"
     }
   ],
-  "event_relation": {
-    "relation": "none",
-    "event_id": null,
-    "event_name": null,
-    "evidence": null,
-    "update_summary": null
-  },
+  "events": [
+    {
+      "name": "2026年（第二十七届）海南国际旅游岛欢乐节",
+      "evidence": "2026年（第二十七届）海南国际旅游岛欢乐节7月18日拉开帷幕"
+    }
+  ],
+  "plans": [],
   "block": {
     "source": "海南日报",
     "title": "畅玩全岛 欢乐启程",
     "content": "2026年（第二十七届）海南国际旅游岛欢乐节7月18日拉开帷幕，将持续至8月18日，各市县将推出50余项特色主题活动。",
-    "ai_summary": "2026年（第二十七届）海南国际旅游岛欢乐节7月18日拉开帷幕，将持续至8月18日，各市县将推出50余项特色主题活动。",
+    "ai_summary": "海南国际旅游岛欢乐节7月18日启幕，将持续至8月18日，各市县安排50余项主题活动。",
     "original_url": "http://news.hndaily.cn/html/2026-07/19/content_58464_19716155.htm"
   }
 }

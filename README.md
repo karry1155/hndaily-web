@@ -11,24 +11,26 @@ python3 scripts/crawler.py 2026-07-12
 python3 scripts/crawler.py
 ```
 
-原始抓取写入 `data/json/raw/`。运行两阶段发布流水线：
+原始抓取写入 `data/production-json/source/`。运行两阶段发布流水线：
 
 ```bash
 bash scripts/run_radar_pipeline.sh YYYY-MM-DD
 ```
 
 首次运行返回 `STATUS=MODEL_OUTPUT_REQUIRED`。按照命令打印的
-`MODEL_INPUT_JSON` 和 `prompts/article-enrichment/v1/` 生成
+`MODEL_INPUT_JSON` 和 `prompts/article-enrichment/v2/` 生成
 `MODEL_OUTPUT_JSON` 后重跑；成功返回 `STATUS=COMPLETE`。
 
-私有流水线 JSON 位于：
+当前生产 JSON 位于独立审查目录：
 
-- `data/json/raw/`
-- `data/json/model-input/`
-- `data/json/model-output/`
-- `data/json/audits/`
+- `data/production-json/source/`：海南日报原始抓取。
+- `data/production-json/input/`：逐篇语义处理输入。
+- `data/production-json/enrichment/`：智能体生成并待审查的 v2 结果。
+- `data/production-json/audit/`：预过滤与发布审计。
 
-运行时契约为 `schema_version: 7` / `prompt_version: hnhot-v1`。发布流程保留每一篇通过确定性过滤的有效报道，不评分、不推荐、不二次精选。
+`data/json/` 保留此前各版本生成的私有数据，只读留档；当前流水线不会再向其中写入或覆盖文件。
+
+当前运行时契约为 `schema_version: 8` / `prompt_version: hnhot-v2.1`。v2.1 自由提取本篇与具体行动或结果直接相关的主体与事件，不以第一次入库结果决定人物页准入，并支持书名号规划文件 `plans`；地点和主题仍只从受控候选中选择。发布流程保留每一篇通过确定性过滤的有效报道，不评分、不推荐、不二次精选。
 
 ## Public data
 
@@ -38,7 +40,7 @@ bash scripts/run_radar_pipeline.sh YYYY-MM-DD
 - `content/issue-items/YYYY-MM-DD/ITEM_ID.json`：文章原文与结构化加工结果。
 - `content/indexes/`：头版、全报和搜索所需的精简索引。
 
-私有 JSON 被 Git 忽略；`content/` 只保存通过 `hnhot-v1` 验证的公开数据。当前仓库内已验证的数据集为 2026-07-12 至 2026-07-19：共 71 版、307 篇有效报道，其中头版 59 篇。正文以“上接A0X版”开头的跨版续接块会在预过滤阶段排除，不会作为独立报道重复入库。头版首页按日期倒序连续展示，可向下回看往期头版。
+生产与历史私有 JSON 均被 Git 忽略；`content/` 保存通过版本化契约验证的公开数据。当前仓库内已验证的数据集为 2026-07-12 至 2026-07-19：共 71 版、307 篇有效报道，其中头版 59 篇。正文以“上接A0X版”开头的跨版续接块会在预过滤阶段排除，不会作为独立报道重复入库。头版首页按日期倒序连续展示，可向下回看往期头版。
 
 文章身份采用可重放的来源键：常规海南日报链接生成
 `hndaily-{YYYYMMDD}-{URL第一段编号}-{URL第二段编号}`，例如
@@ -59,6 +61,7 @@ python3 -m scripts.preview
 - `/all/`、`/all/YYYY-MM-DD/`：按逻辑版面阅读整期报纸。
 - `/items/YYYY-MM-DD/ITEM_ID/`：文章详情与结构化摘要。
 - `/daily/`、`/more/`：当前产品导航中的后续能力入口。
+- `/review/gold/`：仅本地开放的文章语义人工基准工作台；可把审核结果直接保存到 `evaluation/gold/`。
 
 ## Verify
 

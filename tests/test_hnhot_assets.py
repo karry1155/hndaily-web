@@ -4,6 +4,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 PROMPT_DIR = ROOT / "prompts/article-enrichment/v1"
+V2_PROMPT_DIR = ROOT / "prompts/article-enrichment/v2"
 
 
 class HnhotAssetTests(unittest.TestCase):
@@ -86,34 +87,51 @@ class HnhotAssetTests(unittest.TestCase):
         ):
             self.assertIn(token, prompt)
 
+    def test_v2_manifest_and_first_pass_fields_are_lean(self):
+        manifest = json.loads((V2_PROMPT_DIR / "manifest.json").read_text(encoding="utf-8"))
+        schema = json.loads((V2_PROMPT_DIR / "schema.json").read_text(encoding="utf-8"))
+        prompt = (V2_PROMPT_DIR / "prompt.md").read_text(encoding="utf-8")
+        self.assertEqual(
+            manifest,
+            {
+                "schema_version": 1,
+                "prompt_version": "hnhot-v2.1",
+                "article_schema_version": 8,
+                "prompt": "prompt.md",
+                "output_schema": "schema.json",
+            },
+        )
+        self.assertEqual(schema["properties"]["schema_version"], {"const": 8})
+        self.assertEqual(schema["properties"]["prompt_version"], {"const": "hnhot-v2.1"})
+        item = schema["$defs"]["item"]
+        self.assertEqual(
+            set(item["required"]),
+            {
+                "candidate_id", "ai_summary", "scope", "scope_evidence",
+                "subjects", "location_mentions", "topic_mentions", "events", "plans",
+            },
+        )
+        self.assertNotIn("event_relation", item["properties"])
+        self.assertEqual(item["properties"]["subjects"]["maxItems"], 24)
+        for definition in ("event", "plan"):
+            self.assertEqual(
+                set(schema["$defs"][definition]["required"]), {"name", "evidence"}
+            )
+        for token in (
+            "主体和事件没有候选词表", "不判断 `existing` 或 `new`",
+            "书名号", "不生成规划 ID", "2026世界人工智能大会",
+            "不得只挑一个代表人物", "不是人物页、机构页或项目页的准入名单",
+        ):
+            self.assertIn(token, prompt)
+
     def test_seed_data_uses_local_and_open_scope_boundary(self):
         expected = {
-            "2026-07-12": {
-                "hndaily-20260712-58464-19696009": "hainan",
-                "hndaily-20260712-58464-19696011": "mixed",
-                "hndaily-20260712-58464-19696012": "hainan",
-                "hndaily-20260712-58464-19696013": "domestic",
-                "hndaily-20260712-58464-19696014": "mixed",
-            },
-            "2026-07-13": {
-                "hndaily-20260713-58464-19697250": "hainan",
-                "hndaily-20260713-58464-19697253": "hainan",
-                "hndaily-20260713-58464-19697254": "mixed",
-                "hndaily-20260713-58464-19697255": "mixed",
-                "hndaily-20260713-58464-19697256": "hainan",
-                "hndaily-20260713-58464-19697257": "hainan",
-                "hndaily-20260713-58464-19697258": "mixed",
-                "hndaily-20260713-58466-19697282": "domestic",
-                "hndaily-20260713-58483-19698010": "national",
-                "hndaily-20260713-58484-19698015": "national",
-            },
-            "2026-07-14": {
-                "hndaily-20260714-58464-19700602": "national",
-                "hndaily-20260714-58464-19700611": "mixed",
-                "hndaily-20260714-58465-19700623": "domestic",
-                "hndaily-20260714-58465-19700624": "mixed",
-                "hndaily-20260714-58469-19700684": "foreign",
-                "hndaily-20260714-58471-19700718": "mixed",
+            "2026-07-20": {
+                "hndaily-20260720-58464-19717491": "hainan",
+                "hndaily-20260720-58464-19717492": "mixed",
+                "hndaily-20260720-58464-19717493": "national",
+                "hndaily-20260720-58464-19717496": "domestic",
+                "hndaily-20260720-58469-19717554": "foreign",
             },
         }
         for published_date, items in expected.items():
@@ -156,8 +174,9 @@ class HnhotAssetTests(unittest.TestCase):
                 {"source_page_name": "理论周刊", "section_id": "theory"},
             ],
         )
-        subjects = json.loads((ROOT / "config/subjects.json").read_text(encoding="utf-8"))
-        self.assertEqual(subjects, {"schema_version": 1, "subjects": []})
+        self.assertTrue((ROOT / "config/hainan-administrative-divisions.json").is_file())
+        self.assertFalse((ROOT / "data/hainan-administrative-divisions.json").exists())
+        self.assertFalse((ROOT / "config/subjects.json").exists())
 
 
 if __name__ == "__main__":

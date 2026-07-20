@@ -87,6 +87,28 @@ class RadarFilterTests(unittest.TestCase):
             )
         )
 
+    def test_page_pointer_without_article_content_is_excluded(self):
+        pages = [page("001", "头版", [article(1, "专题导读", "B02-B04，B15")])]
+        raw = {"page_count": 1, "article_count": 1, "pages": pages}
+
+        record = evaluate_issue(raw)[0]
+        self.assertEqual(record["skip_reason"], "page_pointer")
+        self.assertEqual(record["matched_rules"], ["content_only:版面指引"])
+
+    def test_page_guide_with_section_titles_is_excluded(self):
+        content = (
+            "B02-B04，B15\n"
+            "B05 周士第：从农家子弟到开国上将\n"
+            "B06 新晋鲁迅文学奖得主、海南诗人江非：贴着大地写作的人\n"
+            "B10 岛服‘破圈’记"
+        )
+        pages = [page("001", "头版", [article(1, "天涯蚕路", content)])]
+        raw = {"page_count": 1, "article_count": 1, "pages": pages}
+
+        record = evaluate_issue(raw)[0]
+        self.assertEqual(record["skip_reason"], "page_guide")
+        self.assertEqual(record["matched_rules"], ["content_lines:版面导读"])
+
 
 if __name__ == "__main__":
     unittest.main()

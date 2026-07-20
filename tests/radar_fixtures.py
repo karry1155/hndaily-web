@@ -48,13 +48,8 @@ def model_output_for(model_input):
                 "subjects": [],
                 "location_mentions": [],
                 "topic_mentions": [],
-                "event_relation": {
-                    "relation": "none",
-                    "event_id": None,
-                    "event_name": None,
-                    "evidence": None,
-                    "update_summary": None,
-                },
+                "events": [],
+                "plans": [],
             }
             for item in model_input["items"]
         ],

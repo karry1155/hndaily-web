@@ -1,0 +1,49 @@
+{
+  "schema_version": 8,
+  "item_id": "hndaily-20260720-58469-19717558",
+  "published_date": "2026-07-20",
+  "collected_date": "2026-07-20",
+  "page_number": "006",
+  "page_name": "世界新闻",
+  "page_sequence": 5,
+  "author": "",
+  "enrichment_status": "complete",
+  "scope": "foreign",
+  "scope_evidence": "加拿大多地出现野火",
+  "subjects": [
+    {
+      "subject_id": "subject-140953a8818085",
+      "name": "加拿大跨部门森林消防中心",
+      "type": "organization",
+      "role": "野火数据发布机构",
+      "evidence": "加拿大跨部门森林消防中心7月18日发布的最新数据显示"
+    }
+  ],
+  "locations": [],
+  "topics": [
+    {
+      "topic_id": "ecology",
+      "name": "生态环境",
+      "evidence": "过火面积超过290万公顷"
+    },
+    {
+      "topic_id": "economy-data",
+      "name": "经济数据",
+      "evidence": "在燃野火数量达到959起"
+    }
+  ],
+  "events": [
+    {
+      "name": "加拿大多地野火持续蔓延",
+      "evidence": "加拿大多地出现野火"
+    }
+  ],
+  "plans": [],
+  "block": {
+    "source": "海南日报",
+    "title": "加拿大多地野火持续蔓延",
+    "content": "近期，加拿大多地出现野火。加拿大跨部门森林消防中心7月18日发布的最新数据显示，该国当天新发野火102起，在燃野火数量达到959起；今年以来加拿大全境已记录3815起野火，过火面积超过290万公顷。\n\n图为17日在加拿大不列颠哥伦比亚省卡什克里克附近，野火燃烧冒出浓烟。新华社/路透",
+    "ai_summary": "加拿大7月18日有959起在燃野火，今年累计过火面积已超过290万公顷。",
+    "original_url": "http://news.hndaily.cn/html/2026-07/20/content_58469_19717558.htm"
+  }
+}

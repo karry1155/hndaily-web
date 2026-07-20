@@ -5,7 +5,7 @@ from dataclasses import dataclass
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_CATALOG = ROOT / "data/hainan-administrative-divisions.json"
+DEFAULT_CATALOG = ROOT / "config/hainan-administrative-divisions.json"
 LEVELS = {"province", "prefecture", "county"}
 
 
@@ -81,7 +81,7 @@ def infer_exact_location_mentions(
     return mentions
 
 
-def merge_location_mentions(model_mentions, exact_mentions, limit: int = 5) -> list[dict]:
+def merge_location_mentions(model_mentions, exact_mentions, limit: int = 12) -> list[dict]:
     merged, seen = [], set()
     for mention in [*model_mentions, *exact_mentions]:
         location_id = mention.get("location_id")
@@ -109,4 +109,8 @@ def resolve_location_mentions(mentions, candidates, catalog: LocationCatalog) ->
             "level": row["level"],
             "evidence": mention["evidence"].strip(),
         })
-    return resolved
+    level_order = {"province": 0, "prefecture": 1, "county": 2}
+    return sorted(
+        resolved,
+        key=lambda row: (level_order.get(row["level"], 9), row["code"]),
+    )

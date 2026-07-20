@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 from __future__ import annotations
 
+import hashlib
 import json
 import sys
 from pathlib import Path
@@ -35,11 +36,17 @@ def build_generation(raw, model_input, model_output):
         scope: sum(item["scope"] == scope for item in issue_items)
         for scope in ("national", "hainan", "domestic", "mixed", "foreign")
     }
+    canonical_output = json.dumps(
+        model_output, ensure_ascii=False, sort_keys=True, separators=(",", ":")
+    )
     return issue_items, issue, {
         "schema_version": SCHEMA_VERSION,
         "prompt_version": PROMPT_VERSION,
         "published_date": raw["date"],
         "input_fingerprint": model_input["input_fingerprint"],
+        "model_output_sha256": hashlib.sha256(
+            canonical_output.encode("utf-8")
+        ).hexdigest(),
         "candidate_count": len(candidates),
         "published_count": len(issue_items),
         "scope_counts": scope_counts,

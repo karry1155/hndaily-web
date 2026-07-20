@@ -41,7 +41,7 @@ const archiveSearchCatalogs = new Map();
 const ARCHIVE_SEARCH_LIMIT = 80;
 
 function archiveSearchText(item) {
-  const entityNames = [item.subjects, item.locations, item.topics]
+  const entityNames = [item.subjects, item.locations, item.topics, item.events, item.plans]
     .flatMap((rows) => (Array.isArray(rows) ? rows : []))
     .map((row) => row.name || "");
   return [

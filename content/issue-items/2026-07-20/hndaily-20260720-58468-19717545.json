@@ -1,0 +1,49 @@
+{
+  "schema_version": 8,
+  "item_id": "hndaily-20260720-58468-19717545",
+  "published_date": "2026-07-20",
+  "collected_date": "2026-07-20",
+  "page_number": "005",
+  "page_name": "中国新闻",
+  "page_sequence": 3,
+  "author": "",
+  "enrichment_status": "complete",
+  "scope": "national",
+  "scope_evidence": "重庆彭水县汉葭街道发生一起山体崩塌",
+  "subjects": [
+    {
+      "subject_id": "subject-1b2aca856e7697",
+      "name": "现场救援指挥部",
+      "type": "organization",
+      "role": "搜救组织方",
+      "evidence": "现场救援指挥部按照“救人为先”的原则"
+    }
+  ],
+  "locations": [],
+  "topics": [
+    {
+      "topic_id": "livelihood-services",
+      "name": "民生服务",
+      "evidence": "已安全转移周边群众1100余名"
+    },
+    {
+      "topic_id": "policy-governance",
+      "name": "政策治理",
+      "evidence": "细化救援方案"
+    }
+  ],
+  "events": [
+    {
+      "name": "重庆彭水县汉葭街道山体崩塌",
+      "evidence": "7月17日9时10分许，重庆彭水县汉葭街道发生一起山体崩塌"
+    }
+  ],
+  "plans": [],
+  "block": {
+    "source": "海南日报",
+    "title": "各方力量全力搜救",
+    "content": "7月17日9时10分许，重庆彭水县汉葭街道发生一起山体崩塌，造成多人被埋失联。救援进入第三天，各方力量在现场全力加紧救援。\n\n现场救援指挥部按照“救人为先”的原则，细化救援方案，采取“机械掘进+人工排查”相结合的方式，抢抓黄金救援期实施救援。下一步，现场指挥部将研究制定巨石移除方案，进一步进行深层搜救。\n\n灾害发生后，当地对受灾点位周边群众采取分散安置、酒店集中安置等方式转移风险区人员，目前已安全转移周边群众1100余名。\n\n图为19日救援人员在现场进行搜救。\n\n新华社发",
+    "ai_summary": "重庆彭水山体崩塌救援进入第三天，现场继续深层搜救，周边已有1100余名群众安全转移。",
+    "original_url": "http://news.hndaily.cn/html/2026-07/20/content_58468_19717545.htm"
+  }
+}

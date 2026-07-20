@@ -18,6 +18,7 @@ if __package__ in (None, ""):
 from scripts.radar_indexes import build_hnhot_indexes
 from scripts.radar_issue import validate_public_issue, validate_public_issue_item
 from scripts.radar_store import load_issue_items, load_issues
+from scripts.radar_gold_review import review_inputs_available, write_review_site
 
 ROOT = Path(__file__).resolve().parents[1]
 PRODUCT_NAME = "HNHOT"
@@ -277,6 +278,8 @@ def _archive_story(article):
         *[row["name"] for row in article["subjects"]],
         *[row["name"] for row in article["locations"]],
         *[row["name"] for row in article["topics"]],
+        *[row["name"] for row in article.get("events", [])],
+        *[row["name"] for row in article.get("plans", [])],
     ]
     return {
         "item_id": article["item_id"],
@@ -411,7 +414,7 @@ def render_archive(issues, articles, active_section_id=None):
         f'<h1>报库</h1><p>{_esc(header_meta)}</p></div>'
         '<label class="site-search"><span class="sr-only">搜索历史报道</span>'
         '<input type="search" data-search-input '
-        'placeholder="搜索标题、摘要或已提取的人物、地点、主题"></label></header>'
+        'placeholder="搜索标题、摘要或已提取的人物、地点、主题、事件、规划"></label></header>'
         '<section class="archive-section-picker"><header class="archive-results-heading">'
         '<h2>按版面查看</h2><span>由报纸编辑维护</span></header>'
         f'<nav class="scope-tabs archive-tabs" aria-label="按版面筛选">{tabs}</nav></section>'
@@ -427,12 +430,57 @@ def render_item(item):
     paragraphs = [
         part.strip() for part in re.split(r"\n\s*\n", block["content"].replace("\r\n", "\n")) if part.strip()
     ]
-    tags = [
-        *[row["name"] for row in item["subjects"]],
-        *[row["name"] for row in item["locations"]],
-        *[row["name"] for row in item["topics"]],
-    ]
-    tag_markup = "".join(f'<span>{_esc(value)}</span>' for value in tags)
+    type_labels = {
+        "person": "人物",
+        "government": "政府机构",
+        "organization": "组织机构",
+        "company": "企业",
+        "project": "项目",
+    }
+    context_groups = []
+    if item["subjects"]:
+        subject_rows = "".join(
+            '<li><strong>' + _esc(row["name"]) + '</strong><span>'
+            + _esc(type_labels.get(row["type"], row["type"]))
+            + (f' · {_esc(row["role"])}' if row.get("role") else "")
+            + '</span></li>'
+            for row in item["subjects"]
+        )
+        context_groups.append(
+            '<section class="context-group context-subjects">'
+            f'<h3>主体 <span>{len(item["subjects"])}</span></h3>'
+            f'<ul class="context-subject-list">{subject_rows}</ul></section>'
+        )
+    location_level_order = {"province": 0, "prefecture": 1, "county": 2}
+    for key, label, class_name in (
+        ("events", "事件", "context-name-list"),
+        ("plans", "规划文件", "context-name-list context-plans"),
+        ("locations", "地点", "context-token-list"),
+        ("topics", "主题", "context-token-list"),
+    ):
+        rows = item.get(key, [])
+        if key == "locations":
+            rows = sorted(
+                rows,
+                key=lambda row: (location_level_order.get(row.get("level"), 9), row.get("code", "")),
+            )
+        if not rows:
+            continue
+        values = "".join(f'<li>{_esc(row["name"])}</li>' for row in rows)
+        context_groups.append(
+            f'<section class="context-group context-{key}"><h3>{label} '
+            f'<span>{len(rows)}</span></h3><ul class="{class_name}">{values}</ul></section>'
+        )
+    context_markup = (
+        '<details class="article-context">'
+        '<summary class="article-context-summary"><span>'
+        '<span class="eyebrow">原文结构化提取</span>'
+        '<span class="article-context-title">报道标记</span></span>'
+        '<span class="context-toggle"><span class="when-closed">展开</span>'
+        '<span class="when-open">收起</span></span></summary>'
+        f'<div class="context-groups">{"".join(context_groups)}</div></details>'
+        if context_groups else ""
+    )
     return (
         '<div class="app-shell radar-shell item-shell">'
         f'{render_primary_nav("全部", _date_label(item["published_date"]))}'
@@ -441,7 +489,7 @@ def render_item(item):
         f'<span>{_esc(item["page_name"])} · {_date_label(item["published_date"])}</span></div>'
         f'<h1>{_esc(block["title"])}</h1>'
         f'<section class="ai-summary"><span class="eyebrow">AI 摘要</span><p>{_esc(summary)}</p></section>'
-        f'<div class="entity-tags">{tag_markup}</div>'
+        f'{context_markup}'
         f'<article class="source-body">{"".join(f"<p>{_esc(part)}</p>" for part in paragraphs)}</article>'
         f'<a class="source-button" href="{_esc(block["original_url"], True)}" target="_blank" rel="noopener noreferrer">在海南日报查看原文</a>'
         '</main></div>'
@@ -627,6 +675,8 @@ def build_site(content_root, site_root):
             "更多", "产品说明", "关于 HNHOT",
             '<div class="prose-block"><p>HNHOT 放大海南日报编辑已经做出的版面判断，并把每天的报道连接成对海南的长期理解。</p><p>产品不对新闻重新打分精选；头版来自报纸头版，全部保留每篇有效报道。</p></div>',
         ))
+        if review_inputs_available(ROOT):
+            write_review_site(ROOT, staging)
         errors = validate_internal_links(staging)
         if errors:
             raise ValueError("broken internal links: " + "; ".join(errors))

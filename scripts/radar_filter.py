@@ -11,6 +11,17 @@ CONTINUATION_PREFIX_RE = re.compile(
     r"^\s*(?:[◀▶]|[（(])?\s*上接\s*[A-Z]?\s*\d+\s*版\s*[）)]?",
     re.IGNORECASE,
 )
+PAGE_POINTER_RE = re.compile(
+    r"^\s*[A-Z]\d{2}(?:[-—–][A-Z]?\d{2})?"
+    r"(?:\s*[，、,]\s*[A-Z]\d{2}(?:[-—–][A-Z]?\d{2})?)*\s*$",
+    re.IGNORECASE,
+)
+PAGE_GUIDE_LINE_RE = re.compile(
+    r"^\s*[A-Z]\d{2}(?:[-—–][A-Z]?\d{2})?"
+    r"(?:\s*[，、,]\s*[A-Z]\d{2}(?:[-—–][A-Z]?\d{2})?)*"
+    r"(?:\s+.+)?\s*$",
+    re.IGNORECASE,
+)
 
 
 class InputError(ValueError):
@@ -27,6 +38,13 @@ def _length_band(length: int) -> str:
     if length < 400:
         return "200_to_399"
     return "400_plus"
+
+
+def _is_page_guide(content: str) -> bool:
+    lines = [line.strip() for line in content.splitlines() if line.strip()]
+    if len(lines) < 2:
+        return False
+    return all(PAGE_GUIDE_LINE_RE.fullmatch(line) for line in lines)
 
 
 def flatten_articles(
@@ -94,6 +112,12 @@ def evaluate_issue(raw: dict[str, Any]) -> list[dict[str, Any]]:
         elif CONTINUATION_PREFIX_RE.match(content):
             skip_reason = "continued_from_previous_page"
             matched_rules.append("content_prefix:上接版")
+        elif PAGE_POINTER_RE.fullmatch(content):
+            skip_reason = "page_pointer"
+            matched_rules.append("content_only:版面指引")
+        elif _is_page_guide(content):
+            skip_reason = "page_guide"
+            matched_rules.append("content_lines:版面导读")
         elif PUBLIC_SERVICE_AD_MARKER in page_name:
             skip_reason = "public_service_ad_page"
             matched_rules.append("page_name:公益广告")

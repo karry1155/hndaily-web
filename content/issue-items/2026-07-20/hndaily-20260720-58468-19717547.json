@@ -1,0 +1,77 @@
+{
+  "schema_version": 8,
+  "item_id": "hndaily-20260720-58468-19717547",
+  "published_date": "2026-07-20",
+  "collected_date": "2026-07-20",
+  "page_number": "005",
+  "page_name": "中国新闻",
+  "page_sequence": 5,
+  "author": "",
+  "enrichment_status": "complete",
+  "scope": "national",
+  "scope_evidence": "中国代表队4名参赛高中生选手全部获得金牌",
+  "subjects": [
+    {
+      "subject_id": "subject-560aafda793bb0",
+      "name": "中国代表队",
+      "type": "organization",
+      "role": "国际化学奥赛参赛队",
+      "evidence": "中国代表队4名参赛高中生选手全部获得金牌"
+    },
+    {
+      "subject_id": "subject-c505b7891710ee",
+      "name": "吴泊成",
+      "type": "person",
+      "role": "中国队参赛选手",
+      "evidence": "中国队4名选手分别是湖南省长沙市长郡中学的吴泊成"
+    },
+    {
+      "subject_id": "subject-2bf2df1992cc4b",
+      "name": "王罗峥皓",
+      "type": "person",
+      "role": "中国队参赛选手",
+      "evidence": "重庆市南开中学校的王罗峥皓"
+    },
+    {
+      "subject_id": "subject-818b144ebe9b0e",
+      "name": "陈郑睿哲",
+      "type": "person",
+      "role": "中国队参赛选手",
+      "evidence": "浙江省杭州第二中学的陈郑睿哲"
+    },
+    {
+      "subject_id": "subject-3613cb45a0b34a",
+      "name": "韩钦润",
+      "type": "person",
+      "role": "中国队参赛选手、理论单项第一",
+      "evidence": "韩钦润获得理论单项第一"
+    }
+  ],
+  "locations": [],
+  "topics": [
+    {
+      "topic_id": "education-talent",
+      "name": "教育人才",
+      "evidence": "4名参赛高中生选手全部获得金牌"
+    },
+    {
+      "topic_id": "external-relations",
+      "name": "对外交流",
+      "evidence": "来自全球92个国家和地区的363名选手参赛"
+    }
+  ],
+  "events": [
+    {
+      "name": "第58届国际化学奥林匹克竞赛",
+      "evidence": "第58届国际化学奥林匹克竞赛19日在乌兹别克斯坦首都塔什干闭幕"
+    }
+  ],
+  "plans": [],
+  "block": {
+    "source": "海南日报",
+    "title": "中国代表队4名选手获第58届国际化学奥赛金牌",
+    "content": "新华社塔什干7月19日电 （记者包诺敏）第58届国际化学奥林匹克竞赛19日在乌兹别克斯坦首都塔什干闭幕，中国代表队4名参赛高中生选手全部获得金牌。\n\n本届竞赛10日开幕，共有来自全球92个国家和地区的363名选手参赛。经过理论考试和实验考试，竞赛共产生41枚金牌、74枚银牌和112枚铜牌。中国队4名选手分别是湖南省长沙市长郡中学的吴泊成、重庆市南开中学校的王罗峥皓、浙江省杭州第二中学的陈郑睿哲、山东省广饶县第一中学的韩钦润，总分依次排名第二、第三、第四、第五，全部获得金牌。其中，韩钦润获得理论单项第一。\n\n国际化学奥林匹克竞赛通常每年7月举行，为期10天左右。",
+    "ai_summary": "中国代表队4名高中生在第58届国际化学奥赛全部获得金牌，总分分列第二至第五名。",
+    "original_url": "http://news.hndaily.cn/html/2026-07/20/content_58468_19717547.htm"
+  }
+}

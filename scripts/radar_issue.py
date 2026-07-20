@@ -9,6 +9,7 @@ from typing import Any
 from scripts.radar_contract import (
     BLOCK_FIELDS,
     SCHEMA_VERSION,
+    SUPPORTED_PUBLIC_SCHEMA_VERSIONS,
     ContractError,
     non_empty,
     require_exact_fields,
@@ -37,16 +38,24 @@ SECTION_FIELDS = {"section_id", "name", "source_pages", "articles"}
 SECTION_ARTICLE_FIELDS = {
     "item_id", "title", "source_page_number", "page_sequence", "detail_path",
 }
-ISSUE_ITEM_FIELDS = {
+LEGACY_ISSUE_ITEM_FIELDS = {
     "schema_version", "item_id", "published_date", "collected_date",
     "page_number", "page_name", "page_sequence", "author",
     "enrichment_status", "scope", "scope_evidence", "subjects", "locations",
     "topics", "event_relation", "block",
 }
+ISSUE_ITEM_FIELDS = {
+    "schema_version", "item_id", "published_date", "collected_date",
+    "page_number", "page_name", "page_sequence", "author",
+    "enrichment_status", "scope", "scope_evidence", "subjects", "locations",
+    "topics", "events", "plans", "block",
+}
 SUBJECT_FIELDS = {"subject_id", "name", "type", "role", "evidence"}
 LOCATION_FIELDS = {"location_id", "name", "code", "level", "evidence"}
 TOPIC_FIELDS = {"topic_id", "name", "evidence"}
 EVENT_FIELDS = {"relation", "event_id", "event_name", "evidence", "update_summary"}
+EVENT_MENTION_FIELDS = {"name", "evidence"}
+PLAN_FIELDS = {"name", "evidence"}
 
 
 def _catalog(path: str) -> dict[str, Any]:
@@ -55,22 +64,8 @@ def _catalog(path: str) -> dict[str, Any]:
 
 def _subject_id(subject: dict[str, Any]) -> str:
     name = re.sub(r"\s+", "", subject["name"]).casefold()
-    aliases = _catalog("config/subjects.json").get("subjects", [])
-    for row in aliases:
-        terms = [row.get("name", ""), *row.get("aliases", [])]
-        if name in {re.sub(r"\s+", "", value).casefold() for value in terms}:
-            return row["subject_id"]
     digest = hashlib.sha256(f'{subject["type"]}:{name}'.encode("utf-8")).hexdigest()[:14]
     return f"subject-{digest}"
-
-
-def _event_relation(value: dict[str, Any]) -> dict[str, Any]:
-    result = dict(value)
-    if result["relation"] == "new":
-        normalized = re.sub(r"\s+", "", result["event_name"]).casefold()
-        digest = hashlib.sha256(normalized.encode("utf-8")).hexdigest()[:14]
-        result["event_id"] = f"event-{digest}"
-    return result
 
 
 def _section_mapping() -> tuple[dict[str, tuple[str, str]], dict[str, str]]:
@@ -116,9 +111,14 @@ def build_sections(pages: list[dict[str, Any]]) -> list[dict[str, Any]]:
 
 
 def validate_public_issue_item(item: dict[str, Any]) -> None:
-    require_exact_fields(item, ISSUE_ITEM_FIELDS, "public issue item")
-    if item.get("schema_version") != SCHEMA_VERSION:
+    schema_version = item.get("schema_version")
+    if schema_version not in SUPPORTED_PUBLIC_SCHEMA_VERSIONS:
         raise ContractError("public issue item schema_version is invalid")
+    require_exact_fields(
+        item,
+        LEGACY_ISSUE_ITEM_FIELDS if schema_version == 7 else ISSUE_ITEM_FIELDS,
+        "public issue item",
+    )
     for field in ("item_id", "page_number", "page_name"):
         if not non_empty(item.get(field)):
             raise ContractError(f"public issue item.{field} is required")
@@ -141,12 +141,29 @@ def validate_public_issue_item(item: dict[str, Any]) -> None:
         require_exact_fields(location, LOCATION_FIELDS, "public issue item location")
     for topic in item.get("topics", []):
         require_exact_fields(topic, TOPIC_FIELDS, "public issue item topic")
-    if not all(isinstance(item.get(field), list) for field in ("subjects", "locations", "topics")):
+    list_fields = ["subjects", "locations", "topics"]
+    if schema_version == SCHEMA_VERSION:
+        list_fields.extend(["events", "plans"])
+        for event in item.get("events", []):
+            require_exact_fields(event, EVENT_MENTION_FIELDS, "public issue item event")
+            if not non_empty(event.get("name")) or not non_empty(event.get("evidence")):
+                raise ContractError("public issue item event is invalid")
+        for plan in item.get("plans", []):
+            require_exact_fields(plan, PLAN_FIELDS, "public issue item plan")
+            if (
+                not non_empty(plan.get("name"))
+                or not non_empty(plan.get("evidence"))
+                or not plan["name"].startswith("《")
+                or not plan["name"].endswith("》")
+            ):
+                raise ContractError("public issue item plan.name is invalid")
+    if not all(isinstance(item.get(field), list) for field in list_fields):
         raise ContractError("public issue item semantic lists are invalid")
-    relation = item.get("event_relation")
-    if not isinstance(relation, dict):
-        raise ContractError("public issue item.event_relation is invalid")
-    require_exact_fields(relation, EVENT_FIELDS, "public issue item event_relation")
+    if schema_version == 7:
+        relation = item.get("event_relation")
+        if not isinstance(relation, dict):
+            raise ContractError("public issue item.event_relation is invalid")
+        require_exact_fields(relation, EVENT_FIELDS, "public issue item event_relation")
     block = item.get("block")
     if not isinstance(block, dict):
         raise ContractError("public issue item.block must be an object")
@@ -161,7 +178,7 @@ def validate_public_issue_item(item: dict[str, Any]) -> None:
 
 def validate_public_issue(issue: dict[str, Any]) -> None:
     require_exact_fields(issue, ISSUE_FIELDS, "public issue")
-    if issue.get("schema_version") != SCHEMA_VERSION:
+    if issue.get("schema_version") not in SUPPORTED_PUBLIC_SCHEMA_VERSIONS:
         raise ContractError("public issue schema_version is invalid")
     validate_iso_date(issue.get("date"), "public issue.date")
     if not non_empty(issue.get("source")):
@@ -256,7 +273,14 @@ def build_public_issue(raw, candidates, semantic_items, _legacy_scored=None):
                 }
                 for row in semantic["topic_mentions"]
             ],
-            "event_relation": _event_relation(semantic["event_relation"]),
+            "events": [
+                {"name": row["name"].strip(), "evidence": row["evidence"].strip()}
+                for row in semantic["events"]
+            ],
+            "plans": [
+                {"name": row["name"].strip(), "evidence": row["evidence"].strip()}
+                for row in semantic["plans"]
+            ],
             "block": {
                 "source": candidate["source"], "title": candidate["title"],
                 "content": candidate["content"],

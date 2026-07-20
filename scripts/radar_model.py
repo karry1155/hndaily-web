@@ -19,7 +19,7 @@ ROOT = Path(__file__).resolve().parents[1]
 ENVELOPE_FIELDS = {"schema_version", "prompt_version", "input_fingerprint", "items"}
 MODEL_ITEM_FIELDS = {
     "candidate_id", "ai_summary", "scope", "scope_evidence", "subjects",
-    "location_mentions", "topic_mentions", "event_relation",
+    "location_mentions", "topic_mentions", "events", "plans",
 }
 SUBJECT_TYPES = {"person", "government", "organization", "company", "project"}
 SCOPES = {"national", "hainan", "domestic", "mixed", "foreign"}
@@ -34,15 +34,12 @@ def _topic_catalog() -> list[dict[str, Any]]:
     return payload["topics"]
 
 
-def build_model_input(
-    candidates: list[dict[str, Any]], event_candidates: list[dict[str, Any]] | None = None
-) -> dict[str, Any]:
+def build_model_input(candidates: list[dict[str, Any]]) -> dict[str, Any]:
     locations = load_location_catalog()
     topics = [
         {"topic_id": row["topic_id"], "name": row["name"], "aliases": row["aliases"]}
         for row in _topic_catalog()
     ]
-    events = list(event_candidates or [])
     items = [
         {
             "candidate_id": item["candidate_id"],
@@ -50,7 +47,6 @@ def build_model_input(
             "content": item["content"],
             "location_candidates": find_location_candidates(item["title"], item["content"], locations),
             "topic_candidates": topics,
-            "event_candidates": events,
         }
         for item in candidates
     ]
@@ -100,12 +96,14 @@ def validate_model_output(
             _evidence(item.get("scope_evidence"), source_text, f"{location}.scope_evidence")
 
             subjects = item.get("subjects")
-            if not isinstance(subjects, list) or len(subjects) > 8:
+            if not isinstance(subjects, list) or len(subjects) > 24:
                 raise ModelOutputError(f"{location}.subjects is invalid")
             for subject in subjects:
                 require_exact_fields(subject, {"name", "type", "role", "evidence"}, f"{location}.subject")
                 if not non_empty(subject.get("name")) or len(subject["name"]) > 80:
                     raise ModelOutputError(f"{location}.subject.name is invalid")
+                if normalized_text(subject["name"]) not in source_text:
+                    raise ModelOutputError(f"{location}.subject.name is not in source")
                 if subject.get("type") not in SUBJECT_TYPES:
                     raise ModelOutputError(f"{location}.subject.type is invalid")
                 if subject.get("role") is not None and (
@@ -116,7 +114,7 @@ def validate_model_output(
 
             allowed_locations = {row["location_id"] for row in input_item["location_candidates"]}
             mentions = item.get("location_mentions")
-            if not isinstance(mentions, list) or len(mentions) > 5:
+            if not isinstance(mentions, list) or len(mentions) > 12:
                 raise ModelOutputError(f"{location}.location_mentions is invalid")
             for mention in mentions:
                 require_exact_fields(mention, {"location_id", "evidence"}, f"{location}.location")
@@ -134,34 +132,30 @@ def validate_model_output(
                     raise ModelOutputError(f"{location}.topic_id is outside candidates")
                 _evidence(topic.get("evidence"), source_text, f"{location}.topic.evidence")
 
-            relation = item.get("event_relation")
-            if not isinstance(relation, dict):
-                raise ModelOutputError(f"{location}.event_relation is invalid")
-            require_exact_fields(
-                relation, {"relation", "event_id", "event_name", "evidence", "update_summary"},
-                f"{location}.event_relation",
-            )
-            kind = relation.get("relation")
-            if kind == "none":
-                if any(relation.get(key) is not None for key in ("event_id", "event_name", "evidence", "update_summary")):
-                    raise ModelOutputError(f"{location}.event_relation none values are invalid")
-            elif kind == "existing":
-                allowed_events = {row["event_id"] for row in input_item["event_candidates"]}
-                if relation.get("event_id") not in allowed_events or relation.get("event_name") is not None:
-                    raise ModelOutputError(f"{location}.event_relation existing target is invalid")
-                _evidence(relation.get("evidence"), source_text, f"{location}.event_relation.evidence")
-                if not non_empty(relation.get("update_summary")) or len(relation["update_summary"]) > 180:
-                    raise ModelOutputError(f"{location}.event_relation.update_summary is invalid")
-            elif kind == "new":
-                if relation.get("event_id") is not None or not non_empty(relation.get("event_name")):
-                    raise ModelOutputError(f"{location}.event_relation new target is invalid")
-                if len(relation["event_name"]) > 120:
-                    raise ModelOutputError(f"{location}.event_relation.event_name is invalid")
-                _evidence(relation.get("evidence"), source_text, f"{location}.event_relation.evidence")
-                if not non_empty(relation.get("update_summary")) or len(relation["update_summary"]) > 180:
-                    raise ModelOutputError(f"{location}.event_relation.update_summary is invalid")
-            else:
-                raise ModelOutputError(f"{location}.event_relation.relation is invalid")
+            events = item.get("events")
+            if not isinstance(events, list) or len(events) > 8:
+                raise ModelOutputError(f"{location}.events is invalid")
+            for event in events:
+                require_exact_fields(event, {"name", "evidence"}, f"{location}.event")
+                if not non_empty(event.get("name")) or len(event["name"]) > 140:
+                    raise ModelOutputError(f"{location}.event.name is invalid")
+                _evidence(event.get("evidence"), source_text, f"{location}.event.evidence")
+
+            plans = item.get("plans")
+            if not isinstance(plans, list) or len(plans) > 8:
+                raise ModelOutputError(f"{location}.plans is invalid")
+            for plan in plans:
+                require_exact_fields(plan, {"name", "evidence"}, f"{location}.plan")
+                name = plan.get("name")
+                if (
+                    not non_empty(name)
+                    or len(name) > 180
+                    or not name.startswith("《")
+                    or not name.endswith("》")
+                    or normalized_text(name) not in source_text
+                ):
+                    raise ModelOutputError(f"{location}.plan.name is invalid")
+                _evidence(plan.get("evidence"), source_text, f"{location}.plan.evidence")
         return items
     except ContractError as exc:
         if isinstance(exc, ModelOutputError):

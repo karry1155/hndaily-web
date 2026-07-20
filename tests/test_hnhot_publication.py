@@ -18,8 +18,8 @@ from tests.radar_fixtures import raw_issue
 
 def hnhot_output(model_input, candidates):
     return {
-        "schema_version": 7,
-        "prompt_version": "hnhot-v1",
+        "schema_version": model_input["schema_version"],
+        "prompt_version": model_input["prompt_version"],
         "input_fingerprint": model_input["input_fingerprint"],
         "items": [
             {
@@ -30,10 +30,8 @@ def hnhot_output(model_input, candidates):
                 "subjects": [],
                 "location_mentions": [],
                 "topic_mentions": [],
-                "event_relation": {
-                    "relation": "none", "event_id": None, "event_name": None,
-                    "evidence": None, "update_summary": None,
-                },
+                "events": [],
+                "plans": [],
             }
             for candidate in candidates
         ],
@@ -41,21 +39,47 @@ def hnhot_output(model_input, candidates):
 
 
 class HnhotPublicationTests(unittest.TestCase):
-    def test_schema_v7_input_and_output_are_exact_and_grounded(self):
+    def test_schema_v8_input_and_output_are_exact_and_grounded(self):
         raw = raw_issue(article_count=2)
         candidates = adapt_hndaily(raw)[0]
         model_input = build_model_input(candidates)
-        self.assertEqual(model_input["schema_version"], 7)
-        self.assertEqual(model_input["prompt_version"], "hnhot-v1")
+        self.assertEqual(model_input["schema_version"], 8)
+        self.assertEqual(model_input["prompt_version"], "hnhot-v2.1")
         self.assertEqual(
             set(model_input["items"][0]),
-            {"candidate_id", "title", "content", "location_candidates", "topic_candidates", "event_candidates"},
+            {"candidate_id", "title", "content", "location_candidates", "topic_candidates"},
         )
         output = hnhot_output(model_input, candidates)
         self.assertEqual(validate_model_output(model_input, output, candidates), output["items"])
         output["items"][0]["scope"] = "foreign"
         self.assertEqual(validate_model_output(model_input, output, candidates), output["items"])
         output["items"][0]["score"] = 10
+        with self.assertRaises(ModelOutputError):
+            validate_model_output(model_input, output, candidates)
+
+    def test_v2_events_and_plans_are_grounded_and_published(self):
+        raw = raw_issue(article_count=1)
+        raw["pages"][0]["articles"][0]["title"] = "海南部署旅游公路建设"
+        raw["pages"][0]["articles"][0]["content"] = (
+            "海南印发《海南省旅游公路发展规划》，并召开旅游公路建设推进会。"
+        )
+        candidates = adapt_hndaily(raw)[0]
+        model_input = build_model_input(candidates)
+        output = hnhot_output(model_input, candidates)
+        output["items"][0]["events"] = [{
+            "name": "海南旅游公路建设推进会",
+            "evidence": "召开旅游公路建设推进会",
+        }]
+        output["items"][0]["plans"] = [{
+            "name": "《海南省旅游公路发展规划》",
+            "evidence": "海南印发《海南省旅游公路发展规划》",
+        }]
+        articles, _, _ = build_generation(raw, model_input, output)
+        self.assertEqual(articles[0]["events"], output["items"][0]["events"])
+        self.assertEqual(articles[0]["plans"], output["items"][0]["plans"])
+        self.assertNotIn("event_relation", articles[0])
+
+        output["items"][0]["plans"][0]["name"] = "海南省旅游公路发展规划"
         with self.assertRaises(ModelOutputError):
             validate_model_output(model_input, output, candidates)
 
@@ -82,7 +106,7 @@ class HnhotPublicationTests(unittest.TestCase):
                 root, root / "audit.json",
             )
             issue = json.loads((root / "issues" / f'{raw["date"]}.json').read_text(encoding="utf-8"))
-            self.assertEqual(issue["schema_version"], 7)
+            self.assertEqual(issue["schema_version"], 8)
             self.assertEqual(issue["sections"][0]["name"], "头版")
             self.assertTrue((root / "indexes/hnhot.json").is_file())
             self.assertTrue((root / f'indexes/front-page/{raw["date"]}.json').is_file())
@@ -130,18 +154,16 @@ class HnhotPublicationTests(unittest.TestCase):
             mixed_page = (site / "front-page/mixed/index.html").read_text(encoding="utf-8")
             global_page = (site / "front-page/global/index.html").read_text(encoding="utf-8")
             foreign_detail = (
-                site / "items/2026-07-13/hndaily-20260713-58469-19697325/index.html"
+                site / "items/2026-07-20/hndaily-20260720-58469-19717554/index.html"
             ).read_text(encoding="utf-8")
             domestic_detail = (
-                site / "items/2026-07-12/hndaily-20260712-58464-19696013/index.html"
+                site / "items/2026-07-20/hndaily-20260720-58464-19717496/index.html"
             ).read_text(encoding="utf-8")
             all_page = (site / "all/index.html").read_text(encoding="utf-8")
             more_page = (site / "more/index.html").read_text(encoding="utf-8")
             about_page = (site / "about/index.html").read_text(encoding="utf-8")
             daily_page = (site / "daily/index.html").read_text(encoding="utf-8")
-            dated_page = (site / "all/2026-07-13/index.html").read_text(encoding="utf-8")
-            continuation_page = (site / "all/2026-07-14/index.html").read_text(encoding="utf-8")
-            latest_dated_page = (site / "all/2026-07-19/index.html").read_text(encoding="utf-8")
+            dated_page = (site / "all/2026-07-20/index.html").read_text(encoding="utf-8")
             front_page_archive = (
                 site / "all/sections/front-page/index.html"
             ).read_text(encoding="utf-8")
@@ -160,13 +182,12 @@ class HnhotPublicationTests(unittest.TestCase):
             self.assertLess(home.index(">M · 海南开放</a>"), home.index(">N · 全国</a>"))
             self.assertLess(home.index(">N · 全国</a>"), home.index(">F · 全球</a>"))
             self.assertIn("<h2>全国要闻</h2>", home)
-            self.assertIn("习近平将出席2026世界人工智能大会", home)
+            self.assertIn("强化风险意识 确保安全可控", home)
             self.assertIn("<h2>全球要闻</h2>", home)
-            self.assertIn("今日暂无世界新闻", home)
-            self.assertIn("美伊“灰色对抗”暗藏风险", global_page)
-            self.assertNotIn("享惠货值超121亿元", global_page)
-            self.assertIn("广西老乡一句话", domestic_page)
-            self.assertNotIn("在理旧账中出新绩", domestic_page)
+            self.assertIn("美沙核协议草案浮出水面", global_page)
+            self.assertNotIn("千亿投资推进", global_page)
+            self.assertIn("从陵水黎安起步", domestic_page)
+            self.assertNotIn("海南竞技体育再", domestic_page)
             for filtered_page in (national_page, hainan_page, domestic_page, mixed_page, global_page):
                 self.assertNotIn('class="ranking-dashboard"', filtered_page)
             self.assertIn('scope-domestic" title="D · 国内关联" aria-label="D · 国内关联">D</span>', domestic_detail)
@@ -179,15 +200,14 @@ class HnhotPublicationTests(unittest.TestCase):
             self.assertIn("海南涉外、跨境与开放信息", more_page)
             self.assertIn("海南日报 · 沉淀", daily_page)
             self.assertNotIn("每日沉淀", daily_page)
-            for label in ("日报", "周报", "月报", "今天", "7月18日", "7月17日", "更多"):
+            for label in ("日报", "周报", "月报", "今天", "7月19日", "更多"):
                 self.assertIn(label, daily_page)
-            self.assertNotIn("7月16日", daily_page)
-            self.assertIn('data-report-value="7月19日">今天</button>', daily_page)
-            self.assertIn('data-report-value="7月18日">7月18日</button>', daily_page)
+            self.assertIn('data-report-value="7月20日">今天</button>', daily_page)
+            self.assertIn('data-report-value="7月19日">7月19日</button>', daily_page)
             self.assertIn("data-report-date-tabs", daily_page)
             self.assertIn("当前先开放周期与日期浏览结构", daily_page)
             self.assertIn('<span class="eyebrow">海南日报</span><h1>报库</h1>', all_page)
-            self.assertIn("8 期 · 307 条已入库", all_page)
+            self.assertIn("2 期 · 70 条已入库", all_page)
             self.assertIn("搜索标题、摘要或已提取的人物、地点、主题", all_page)
             self.assertIn('data-search-source="/static/data/search-articles.json"', all_page)
             self.assertNotIn("当心这种极易漏诊的罕见病", all_page)
@@ -198,36 +218,25 @@ class HnhotPublicationTests(unittest.TestCase):
             self.assertNotIn("<h1>全部</h1><p>2026", all_page)
             self.assertNotIn("完整报纸 · 逻辑版面", dated_page)
             self.assertIn("海南日报 · 本期内容", dated_page)
-            self.assertIn("<h1>2026年7月13日</h1>", dated_page)
-            self.assertIn("<p>星期一 · 53 篇</p>", dated_page)
-            self.assertIn("<p>星期日 · 21 篇</p>", latest_dated_page)
-            self.assertEqual(continuation_page.count("<h3>部署防汛救灾、安全生产等工作</h3>"), 1)
-            self.assertEqual(continuation_page.count("<h3>从首个旅游强国规划看海南的“位”与“为”</h3>"), 1)
+            self.assertIn("<h1>2026年7月20日</h1>", dated_page)
+            self.assertIn("<p>星期一 · 49 篇</p>", dated_page)
             self.assertNotIn("<h1>全部</h1>", dated_page)
             self.assertNotIn("搜索全部报道", dated_page)
             self.assertNotIn("搜索本期标题", dated_page)
             self.assertIn('aria-label="本期版面"', dated_page)
             self.assertIn('href="#section-front-page">头版<span>7</span></a>', dated_page)
-            self.assertIn('href="#section-hainan-news">本省新闻<span>12</span></a>', dated_page)
             self.assertNotIn("合并 1 个原版面", dated_page)
             self.assertNotIn("合并 2 个原版面", dated_page)
             self.assertNotIn("查看原版", dated_page)
             self.assertNotIn("第001版 PDF", dated_page)
             self.assertNotIn("第002版 PDF", dated_page)
             self.assertNotIn("第003版 PDF", dated_page)
-            self.assertIn("<summary>PDF · 2</summary>", dated_page)
-            self.assertIn(">第1份</a>", dated_page)
-            self.assertIn(">第2份</a>", dated_page)
             self.assertIn('data-back-to-top href="#issue-start"', dated_page)
-            self.assertIn("http://news.hndaily.cn/resfile/2026-07-13/001/hnrb20260713001.pdf", dated_page)
-            self.assertIn("海南自贸港加工增值免关税政策实施5年", dated_page)
-            self.assertIn("头版 · 59 条", front_page_archive)
+            self.assertIn("千亿投资推进“人享其行、物畅其流”", dated_page)
+            self.assertIn("头版 · 14 条", front_page_archive)
+            self.assertIn("2026年7月20日", front_page_archive)
             self.assertIn("2026年7月19日", front_page_archive)
-            self.assertIn("2026年7月14日", front_page_archive)
-            self.assertIn("2026年7月13日", front_page_archive)
-            self.assertIn("2026年7月12日", front_page_archive)
-            self.assertIn("享惠货值超121亿元", front_page_archive)
-            self.assertIn("在理旧账中出新绩", front_page_archive)
+            self.assertNotIn("2026年7月18日", front_page_archive)
             self.assertIn("本省新闻", all_page)
             self.assertNotIn("第002版", all_page)
             self.assertEqual(validate_internal_links(site), [])
@@ -309,8 +318,37 @@ class HnhotPublicationTests(unittest.TestCase):
             ".radar-shell:not(.item-shell) { padding-bottom: calc(68px + env(safe-area-inset-bottom)); }",
             mobile,
         )
-        self.assertIn("styles.css?v=20260719-global-2", base)
+        self.assertIn("styles.css?v=20260720-context-2", base)
         self.assertIn("app.js?v=20260719-global-1", base)
+
+    def test_item_page_groups_structured_extraction_instead_of_flat_tags(self):
+        project = Path(__file__).resolve().parents[1]
+        item = json.loads((
+            project
+            / "content/issue-items/2026-07-19/hndaily-20260719-58464-19716156.json"
+        ).read_text(encoding="utf-8"))
+        rendered = render_item(item)
+
+        self.assertIn("报道标记", rendered)
+        self.assertIn("原文结构化提取", rendered)
+        self.assertIn('<details class="article-context">', rendered)
+        self.assertIn('<summary class="article-context-summary">', rendered)
+        self.assertNotIn('<details class="article-context" open>', rendered)
+        for label in ("主体", "事件", "规划文件", "地点", "主题"):
+            self.assertIn(f">{label} <span>", rendered)
+        self.assertIn("政府机构 · 沉香产业“两免两保”政策推出方", rendered)
+        self.assertIn("《海南省沉香全产业链创新发展规划（2023—2030年）》", rendered)
+        self.assertNotIn("entity-tags", rendered)
+
+    def test_item_page_orders_province_before_city_or_county(self):
+        project = Path(__file__).resolve().parents[1]
+        item = json.loads((
+            project
+            / "content/issue-items/2026-07-20/hndaily-20260720-58464-19717494.json"
+        ).read_text(encoding="utf-8"))
+        rendered = render_item(item)
+
+        self.assertLess(rendered.index("<li>海南省</li>"), rendered.index("<li>琼海市</li>"))
 
 
 if __name__ == "__main__":

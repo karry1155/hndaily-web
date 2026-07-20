@@ -19,11 +19,11 @@ class RadarPipelineCliTests(unittest.TestCase):
                 json.dumps(raw_issue(date="2026-07-09"), ensure_ascii=False),
                 encoding="utf-8",
             )
-            json_root = work / "data/json"
+            production_root = work / "data/production-json"
             env = os.environ | {
                 "HNDAILY_WEB_DIR": str(ROOT),
                 "HNDAILY_RAW_JSON": str(raw),
-                "HNDAILY_JSON_ROOT": str(json_root),
+                "HNDAILY_PRODUCTION_ROOT": str(production_root),
                 "RADAR_CONTENT_ROOT": str(work / "content"),
                 "RADAR_SITE_ROOT": str(work / "site"),
                 "RADAR_RUN_ROOT": str(work / "run"),
@@ -43,15 +43,30 @@ class RadarPipelineCliTests(unittest.TestCase):
             )
             self.assertEqual(
                 Path(paths["MODEL_INPUT_JSON"]),
-                json_root / "model-input/2026-07-09.json",
+                production_root / "input/2026-07-09.json",
             )
             self.assertEqual(
                 Path(paths["MODEL_OUTPUT_JSON"]),
-                json_root / "model-output/2026-07-09.json",
+                production_root / "enrichment/2026-07-09.json",
             )
             model_input = json.loads(
                 Path(paths["MODEL_INPUT_JSON"]).read_text(encoding="utf-8")
             )
+            Path(paths["MODEL_OUTPUT_JSON"]).write_text(
+                json.dumps(
+                    {
+                        "schema_version": 7,
+                        "prompt_version": "hnhot-v1",
+                        "input_fingerprint": model_input["input_fingerprint"],
+                        "items": [],
+                    }
+                ),
+                encoding="utf-8",
+            )
+            stale = subprocess.run(command, env=env, text=True, capture_output=True)
+            self.assertEqual(stale.returncode, 2, stale.stderr)
+            self.assertIn("STATUS=MODEL_OUTPUT_REQUIRED", stale.stdout)
+
             Path(paths["MODEL_OUTPUT_JSON"]).write_text(
                 json.dumps(model_output_for(model_input), ensure_ascii=False),
                 encoding="utf-8",

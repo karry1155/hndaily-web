@@ -24,10 +24,10 @@ def load_crawler():
 
 
 class CrawlerTests(unittest.TestCase):
-    def test_default_output_is_project_local_json_raw(self):
+    def test_default_output_is_project_local_production_source(self):
         with mock.patch.dict(os.environ, {}, clear=True):
             crawler = load_crawler()
-        self.assertEqual(crawler.OUTPUT_DIR, ROOT / "data/json/raw")
+        self.assertEqual(crawler.OUTPUT_DIR, ROOT / "data/production-json/source")
 
     def test_parses_pages_links_and_article_body(self):
         crawler = load_crawler()

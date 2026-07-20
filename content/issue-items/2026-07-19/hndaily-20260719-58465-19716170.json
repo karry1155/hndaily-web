@@ -1,51 +1,106 @@
 {
-  "schema_version": 7,
+  "schema_version": 8,
   "item_id": "hndaily-20260719-58465-19716170",
   "published_date": "2026-07-19",
-  "collected_date": "2026-07-19",
+  "collected_date": "2026-07-20",
   "page_number": "002",
   "page_name": "本省新闻",
   "page_sequence": 8,
   "author": "",
   "enrichment_status": "complete",
   "scope": "hainan",
-  "scope_evidence": "2026年海南省万名大学生\n基层科普行活动在陵水启动",
-  "subjects": [],
-  "locations": [
+  "scope_evidence": "大学生志愿者将分赴全省各地开展科普服务",
+  "subjects": [
     {
-      "location_id": "hainan",
-      "name": "海南省",
-      "code": "460000",
-      "level": "province",
-      "evidence": "海南省"
+      "subject_id": "subject-fd4bc2d13c8278",
+      "name": "海南大学",
+      "type": "organization",
+      "role": "基层科普服务参与高校",
+      "evidence": "来自海南大学、海南师范大学、海南医科大学"
     },
+    {
+      "subject_id": "subject-e4bea390a345a3",
+      "name": "海南师范大学",
+      "type": "organization",
+      "role": "基层科普服务参与高校",
+      "evidence": "海南大学、海南师范大学、海南医科大学"
+    },
+    {
+      "subject_id": "subject-56ee24bdb0a47b",
+      "name": "海南医科大学",
+      "type": "organization",
+      "role": "基层科普服务参与高校",
+      "evidence": "海南师范大学、海南医科大学、琼台师范学院"
+    },
+    {
+      "subject_id": "subject-44b90612502254",
+      "name": "琼台师范学院",
+      "type": "organization",
+      "role": "基层科普服务参与高校",
+      "evidence": "海南医科大学、琼台师范学院、海南软件职业技术学院"
+    },
+    {
+      "subject_id": "subject-a718040fcf7ba3",
+      "name": "海南软件职业技术学院",
+      "type": "organization",
+      "role": "基层科普服务参与高校",
+      "evidence": "琼台师范学院、海南软件职业技术学院、海南政法职业学院"
+    },
+    {
+      "subject_id": "subject-15cda89d33b24d",
+      "name": "海南政法职业学院",
+      "type": "organization",
+      "role": "基层科普服务参与高校",
+      "evidence": "海南软件职业技术学院、海南政法职业学院、海南卫生健康职业学院"
+    },
+    {
+      "subject_id": "subject-7e8e7be49d0031",
+      "name": "海南卫生健康职业学院",
+      "type": "organization",
+      "role": "基层科普服务参与高校",
+      "evidence": "海南政法职业学院、海南卫生健康职业学院等7所高校"
+    }
+  ],
+  "locations": [
     {
       "location_id": "hainan-lingshui",
       "name": "陵水黎族自治县",
       "code": "469028",
       "level": "county",
-      "evidence": "陵水"
+      "evidence": "陵水黎族自治县民族团结广场"
+    },
+    {
+      "location_id": "hainan",
+      "name": "海南省",
+      "code": "460000",
+      "level": "province",
+      "evidence": "2026年海南省万名大学生基层科普行"
     }
   ],
   "topics": [
     {
       "topic_id": "education-talent",
       "name": "教育人才",
-      "evidence": "学生"
+      "evidence": "大学生志愿者将分赴全省各地开展科普服务"
+    },
+    {
+      "topic_id": "livelihood-services",
+      "name": "民生服务",
+      "evidence": "将科普知识送入千家万户"
     }
   ],
-  "event_relation": {
-    "relation": "none",
-    "event_id": null,
-    "event_name": null,
-    "evidence": null,
-    "update_summary": null
-  },
+  "events": [
+    {
+      "name": "2026年海南省万名大学生基层科普行暨民族地区科普欢乐市集系列活动",
+      "evidence": "2026年海南省万名大学生基层科普行暨民族地区科普欢乐市集系列活动启动仪式"
+    }
+  ],
+  "plans": [],
   "block": {
     "source": "海南日报",
     "title": "2026年海南省万名大学生\n基层科普行活动在陵水启动",
     "content": "本报椰林7月18日电（海南日报全媒体记者陈苡琪 王迎春）“这是海南大学科技小院的一项科技成果，能实现农业废弃物的循环利用。”7月17日晚，陵水黎族自治县民族团结广场灯火璀璨、人声鼎沸。海南大学学生林海立正站在学校“智汇兴农”展位前，热情地为驻足群众讲解。\n\n当晚，2026年海南省万名大学生基层科普行暨民族地区科普欢乐市集系列活动启动仪式在此举办。来自海南大学、海南师范大学、海南医科大学、琼台师范学院、海南软件职业技术学院、海南政法职业学院、海南卫生健康职业学院等7所高校的师生志愿者在广场上支起摊位，用群众喜闻乐见的方式，将科普知识送入千家万户。本次科普行将持续至9月，大学生志愿者将分赴全省各地开展科普服务。\n\n自海南省万名大学生基层科普行活动开展以来，青年志愿者的足迹已遍布18个市县、5000余个场所。",
-    "ai_summary": "当晚，2026年海南省万名大学生基层科普行暨民族地区科普欢乐市集系列活动启动仪式在此举办。来自海南大学、海南师范大学、海南医科大学、琼台师范学院、海南软件职业技术学院、海南政法职业学院、海南卫生健康职业学院等7所高校的师生志愿者在广场上支起摊位，用群众喜闻乐见的方式，将科普知识送入千家万户。",
+    "ai_summary": "海南7所高校组织大学生志愿者赴全省开展基层科普服务，活动持续至9月，既有足迹已覆盖18个市县、5000余个场所。",
     "original_url": "http://news.hndaily.cn/html/2026-07/19/content_58465_19716170.htm"
   }
 }

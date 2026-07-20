@@ -1,0 +1,2656 @@
+{
+  "schema_version": 1,
+  "benchmark_id": "article-enrichment-v2-2026-07-17_2026-07-19",
+  "status": "draft",
+  "source_dates": [
+    "2026-07-17",
+    "2026-07-18",
+    "2026-07-19"
+  ],
+  "target_count": 42,
+  "reviewed_count": 3,
+  "items": [
+    {
+      "item_id": "hndaily-20260717-58464-19712003",
+      "candidate_id": "A001",
+      "published_date": "2026-07-17",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 1,
+      "title": "“老百姓的生活是家事，更是国事”",
+      "source_fingerprint": "b35f2169853a4ef7d526bc61508b4d9c50654719753155e0d8a48bcdd5d55038",
+      "required": false,
+      "review_status": "draft",
+      "expected": {
+        "primary_subjects": [
+          {
+            "name": "习近平",
+            "type": "person",
+            "role": "国家主席"
+          }
+        ],
+        "background_mentions": [
+          "朱国利"
+        ],
+        "locations": [],
+        "named_events": [],
+        "projects": [
+          {
+            "name": "上海老旧小区改造和城市更新"
+          }
+        ],
+        "facts": [
+          {
+            "occurred_on": "2026-07-15",
+            "actors": [
+              "习近平"
+            ],
+            "action": "调研",
+            "object": "老旧小区改造、社区便民服务和居民生活情况",
+            "locations": [
+              "上海市黄浦区"
+            ],
+            "summary": "习近平在上海黄浦区调研老旧小区改造，察看社区服务并走访居民家庭。"
+          }
+        ],
+        "notes": "朱国利是受访居民，不作为长期人物轨迹主体；上海不进入海南行政区地点词表。"
+      }
+    },
+    {
+      "item_id": "hndaily-20260717-58464-19712006",
+      "candidate_id": "A002",
+      "published_date": "2026-07-17",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 2,
+      "title": "习近平会见哈萨克斯坦总统托卡耶夫",
+      "source_fingerprint": "917605b2bfd90617855a694bbcb56401df7cfc1b18aef0816e56e02bc3a96530",
+      "required": false,
+      "review_status": "draft",
+      "expected": {
+        "primary_subjects": [
+          {
+            "name": "习近平",
+            "type": "person",
+            "role": "国家主席"
+          },
+          {
+            "name": "托卡耶夫",
+            "type": "person",
+            "role": "哈萨克斯坦总统"
+          }
+        ],
+        "background_mentions": [
+          "蔡奇",
+          "丁薛祥",
+          "王毅",
+          "陈吉宁"
+        ],
+        "locations": [],
+        "named_events": [
+          {
+            "name": "2026世界人工智能大会暨人工智能全球治理高级别会议",
+            "kind": "event_occurrence",
+            "series_name": "世界人工智能大会"
+          }
+        ],
+        "projects": [],
+        "facts": [
+          {
+            "occurred_on": "2026-07-16",
+            "actors": [
+              "习近平",
+              "托卡耶夫"
+            ],
+            "action": "会见并见证合作文件签署",
+            "object": "中哈双边关系及经贸、能源、交通、人工智能等合作",
+            "locations": [
+              "上海市"
+            ],
+            "summary": "习近平在上海会见托卡耶夫，双方就中哈合作交换意见并见证多项合作文件签署。"
+          }
+        ],
+        "notes": "世界人工智能大会是托卡耶夫来华背景；会见本身是本篇主要行动。"
+      }
+    },
+    {
+      "item_id": "hndaily-20260717-58464-19712007",
+      "candidate_id": "A003",
+      "published_date": "2026-07-17",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 3,
+      "title": "寻常巷陌见初心，人民城市为人民",
+      "source_fingerprint": "00370e749a2d8de4e39091f0437a11fee14dbe0df211908ad033157590577c66",
+      "required": false,
+      "review_status": "draft",
+      "expected": {
+        "primary_subjects": [
+          {
+            "name": "习近平",
+            "type": "person",
+            "role": "国家主席"
+          }
+        ],
+        "background_mentions": [
+          "朱国利"
+        ],
+        "locations": [],
+        "named_events": [],
+        "projects": [
+          {
+            "name": "上海老旧小区改造和城市更新"
+          }
+        ],
+        "facts": [
+          {
+            "occurred_on": "2026-07-15",
+            "actors": [
+              "习近平"
+            ],
+            "action": "调研",
+            "object": "老旧小区改造、社区治理和居民生活",
+            "locations": [
+              "上海市黄浦区"
+            ],
+            "summary": "习近平在上海黄浦区察看老旧小区改造和社区治理情况并走访居民。"
+          }
+        ],
+        "notes": "与同日A001报道同一调研行动，后续人物轨迹应按事实指纹去重。"
+      }
+    },
+    {
+      "item_id": "hndaily-20260717-58464-19712009",
+      "candidate_id": "A004",
+      "published_date": "2026-07-17",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 4,
+      "title": "2026两岸海洋文化交流平台海南省活动开幕",
+      "source_fingerprint": "197b8cd040215d5fc1626e5965a09d04c48940ee070f297744587c1a3c16475f",
+      "required": false,
+      "review_status": "draft",
+      "expected": {
+        "primary_subjects": [
+          {
+            "name": "苏辉",
+            "type": "person",
+            "role": "全国政协副主席、台盟中央主席"
+          },
+          {
+            "name": "冯飞",
+            "type": "person",
+            "role": "海南省委书记"
+          },
+          {
+            "name": "刘小明",
+            "type": "person",
+            "role": "海南省省长"
+          },
+          {
+            "name": "夏立言",
+            "type": "person",
+            "role": "中国国民党副主席"
+          }
+        ],
+        "background_mentions": [
+          "李荣灿",
+          "彭庆恩",
+          "郑建闽",
+          "孔令智",
+          "符之冠",
+          "尹丽波"
+        ],
+        "locations": [
+          {
+            "location_id": "hainan",
+            "name": "海南省"
+          },
+          {
+            "location_id": "hainan-haikou",
+            "name": "海口市"
+          }
+        ],
+        "named_events": [
+          {
+            "name": "2026两岸海洋文化交流平台海南省活动",
+            "kind": "event_occurrence",
+            "series_name": "两岸海洋文化交流平台"
+          }
+        ],
+        "projects": [],
+        "facts": [
+          {
+            "occurred_on": "2026-07-15",
+            "actors": [
+              "冯飞"
+            ],
+            "action": "会见",
+            "object": "苏辉一行",
+            "locations": [
+              "海口市"
+            ],
+            "summary": "冯飞在海口会见来琼出席活动的苏辉一行。"
+          },
+          {
+            "occurred_on": "2026-07-16",
+            "actors": [
+              "苏辉",
+              "刘小明",
+              "夏立言"
+            ],
+            "action": "出席并致辞",
+            "object": "2026两岸海洋文化交流平台海南省活动开幕式",
+            "locations": [
+              "海口市"
+            ],
+            "summary": "苏辉、刘小明和夏立言在活动开幕式上致辞。"
+          }
+        ],
+        "notes": "李荣灿等仅出席或陪同，保留为背景提及，不生成主要人物行动节点。"
+      }
+    },
+    {
+      "item_id": "hndaily-20260717-58464-19712010",
+      "candidate_id": "A005",
+      "published_date": "2026-07-17",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 5,
+      "title": "传达学习习近平总书记重要论述和重要讲话精神\n研究部署城市现代化建设、整治群众身边不正之风和腐败问题等工作",
+      "source_fingerprint": "8bb5d73aaef98696ab854153c2616224bd21be991bff743cc4212775c2143699",
+      "required": false,
+      "review_status": "draft",
+      "expected": {
+        "primary_subjects": [
+          {
+            "name": "冯飞",
+            "type": "person",
+            "role": "海南省委书记"
+          },
+          {
+            "name": "中共海南省委常委会",
+            "type": "government",
+            "role": "会议主体"
+          }
+        ],
+        "background_mentions": [
+          "习近平"
+        ],
+        "locations": [
+          {
+            "location_id": "hainan",
+            "name": "海南省"
+          },
+          {
+            "location_id": "hainan-haikou",
+            "name": "海口市"
+          }
+        ],
+        "named_events": [
+          {
+            "name": "海南省委常委会会议（2026年7月16日）",
+            "kind": "event_occurrence",
+            "series_name": "海南省委常委会会议"
+          }
+        ],
+        "projects": [],
+        "facts": [
+          {
+            "occurred_on": "2026-07-16",
+            "actors": [
+              "冯飞",
+              "中共海南省委常委会"
+            ],
+            "action": "主持会议并研究部署",
+            "object": "城市现代化建设、群众身边不正之风和腐败问题整治、防汛救灾等工作",
+            "locations": [
+              "海口市"
+            ],
+            "summary": "冯飞主持省委常委会会议，研究部署城市建设、专项整治和防汛救灾等工作。"
+          }
+        ],
+        "notes": "习近平讲话是会议学习依据，不是这次海南会议的直接行动主体。"
+      }
+    },
+    {
+      "item_id": "hndaily-20260717-58464-19712011",
+      "candidate_id": "A006",
+      "published_date": "2026-07-17",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 6,
+      "title": "双岛同心同行 琼台共融共赢",
+      "source_fingerprint": "df0b8fc5be41e4d2f2d1fc11fe6ab4d222f2113e20869d0d8dd1439f3d12bb06",
+      "required": false,
+      "review_status": "draft",
+      "expected": {
+        "primary_subjects": [
+          {
+            "name": "冯飞",
+            "type": "person",
+            "role": "海南省委书记"
+          },
+          {
+            "name": "刘小明",
+            "type": "person",
+            "role": "海南省省长"
+          },
+          {
+            "name": "彭庆恩",
+            "type": "person",
+            "role": "全国台企联会长"
+          },
+          {
+            "name": "夏立言",
+            "type": "person",
+            "role": "中国国民党副主席"
+          }
+        ],
+        "background_mentions": [
+          "习近平",
+          "郑建闽",
+          "李政宏",
+          "雷宏毅",
+          "尹丽波",
+          "李锋"
+        ],
+        "locations": [
+          {
+            "location_id": "hainan",
+            "name": "海南省"
+          },
+          {
+            "location_id": "hainan-haikou",
+            "name": "海口市"
+          }
+        ],
+        "named_events": [
+          {
+            "name": "2026琼台合作周",
+            "kind": "event_occurrence",
+            "series_name": "琼台合作周"
+          }
+        ],
+        "projects": [],
+        "facts": [
+          {
+            "occurred_on": "2026-07-16",
+            "actors": [
+              "冯飞",
+              "刘小明",
+              "彭庆恩",
+              "夏立言"
+            ],
+            "action": "出席启动仪式并致辞",
+            "object": "2026琼台合作周",
+            "locations": [
+              "海口市"
+            ],
+            "summary": "2026琼台合作周在海口启动，冯飞、彭庆恩、夏立言致辞，刘小明出席。"
+          }
+        ],
+        "notes": "习近平仅作为对台工作论述背景；活动将延续至8月，但不把未来安排写成已发生事实。"
+      }
+    },
+    {
+      "item_id": "hndaily-20260717-58464-19712012",
+      "candidate_id": "A007",
+      "published_date": "2026-07-17",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 7,
+      "title": "刘小明会见新西兰前总理约翰·基",
+      "source_fingerprint": "00ef79a646ef0f9655ff558d414d83990e401c9d191b47ecb0c4bf67f9e0a26a",
+      "required": false,
+      "review_status": "draft",
+      "expected": {
+        "primary_subjects": [
+          {
+            "name": "刘小明",
+            "type": "person",
+            "role": "海南省省长"
+          },
+          {
+            "name": "约翰·基",
+            "type": "person",
+            "role": "新西兰前总理"
+          }
+        ],
+        "background_mentions": [
+          "蔡强"
+        ],
+        "locations": [
+          {
+            "location_id": "hainan",
+            "name": "海南省"
+          },
+          {
+            "location_id": "hainan-haikou",
+            "name": "海口市"
+          }
+        ],
+        "named_events": [],
+        "projects": [],
+        "facts": [
+          {
+            "occurred_on": "2026-07-16",
+            "actors": [
+              "刘小明",
+              "约翰·基"
+            ],
+            "action": "会见并交流",
+            "object": "海南与新西兰在经贸、农业、金融、医疗健康和绿色发展等领域合作",
+            "locations": [
+              "海口市"
+            ],
+            "summary": "刘小明在海口会见约翰·基，双方就深化海南与新西兰合作交换意见。"
+          }
+        ],
+        "notes": ""
+      }
+    },
+    {
+      "item_id": "hndaily-20260717-58464-19712013",
+      "candidate_id": "A008",
+      "published_date": "2026-07-17",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 8,
+      "title": "“以前种多少看感觉，现在怎么种有‘链’接”",
+      "source_fingerprint": "344f91c754b9cfba76de5c56fe1cb1ca0a324d5c6504c235cf0bd1779685a67f",
+      "required": false,
+      "review_status": "draft",
+      "expected": {
+        "primary_subjects": [
+          {
+            "name": "海南农垦热带农业产业集团有限公司",
+            "type": "company",
+            "role": "供货方"
+          },
+          {
+            "name": "湖南衡数联胜供应链管理有限公司",
+            "type": "company",
+            "role": "采购方"
+          }
+        ],
+        "background_mentions": [
+          "钟天平",
+          "周欣",
+          "周培根",
+          "文武斌"
+        ],
+        "locations": [
+          {
+            "location_id": "hainan",
+            "name": "海南省"
+          },
+          {
+            "location_id": "hainan-haikou",
+            "name": "海口市"
+          },
+          {
+            "location_id": "hainan-lingao",
+            "name": "临高县"
+          }
+        ],
+        "named_events": [
+          {
+            "name": "第四届中国国际供应链促进博览会",
+            "kind": "event_occurrence",
+            "series_name": "中国国际供应链促进博览会"
+          }
+        ],
+        "projects": [
+          {
+            "name": "海南农产品购销体系建设"
+          }
+        ],
+        "facts": [
+          {
+            "occurred_on": "2026-07-02",
+            "actors": [
+              "湖南衡数联胜供应链管理有限公司"
+            ],
+            "action": "考察并对接",
+            "object": "海南农产品基地和十五亿元订单落地",
+            "locations": [
+              "海口市",
+              "临高县"
+            ],
+            "summary": "衡数联胜团队赴海口、临高考察农产品基地，推进十五亿元采购订单落地。"
+          },
+          {
+            "occurred_on": "2026-07-12",
+            "actors": [
+              "海南农垦热带农业产业集团有限公司",
+              "湖南衡数联胜供应链管理有限公司"
+            ],
+            "action": "完成首批订单发运",
+            "object": "近两万斤海南农垦芋头",
+            "locations": [
+              "海口市",
+              "湖南省衡阳市"
+            ],
+            "summary": "双方完成链博会十五亿元购销协议的首批芋头订单发运。"
+          }
+        ],
+        "notes": ""
+      }
+    },
+    {
+      "item_id": "hndaily-20260717-58464-19712016",
+      "candidate_id": "A010",
+      "published_date": "2026-07-17",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 10,
+      "title": "省信访工作联席会议2026年第二次全体会议召开",
+      "source_fingerprint": "836bc7cd5ef56d4c73e89b75dd5a2d79cc7590db85001187bf63a10cbe16e6a1",
+      "required": false,
+      "review_status": "draft",
+      "expected": {
+        "primary_subjects": [
+          {
+            "name": "杨晋柏",
+            "type": "person",
+            "role": "海南省委副书记、政法委书记"
+          },
+          {
+            "name": "海南省信访工作联席会议",
+            "type": "government",
+            "role": "会议主体"
+          }
+        ],
+        "background_mentions": [
+          "习近平"
+        ],
+        "locations": [
+          {
+            "location_id": "hainan",
+            "name": "海南省"
+          },
+          {
+            "location_id": "hainan-haikou",
+            "name": "海口市"
+          }
+        ],
+        "named_events": [
+          {
+            "name": "海南省信访工作联席会议2026年第二次全体会议",
+            "kind": "event_occurrence",
+            "series_name": "海南省信访工作联席会议"
+          }
+        ],
+        "projects": [],
+        "facts": [
+          {
+            "occurred_on": "2026-07-16",
+            "actors": [
+              "杨晋柏",
+              "海南省信访工作联席会议"
+            ],
+            "action": "主持会议并部署",
+            "object": "信访问题化解和信访工作智能化建设",
+            "locations": [
+              "海口市"
+            ],
+            "summary": "杨晋柏主持省信访工作联席会议全体会议，部署信访问题化解和平台建设。"
+          }
+        ],
+        "notes": "习近平有关论述属于会议学习背景。"
+      }
+    },
+    {
+      "item_id": "hndaily-20260717-58465-19712025",
+      "candidate_id": "A012",
+      "published_date": "2026-07-17",
+      "page_number": "002",
+      "page_name": "本省新闻",
+      "page_sequence": 2,
+      "title": "上半年海南出入境人员超160万人次",
+      "source_fingerprint": "0e4f475bc24b3ccd5904460371d047c69a1da33c2b165b0317fda91e86636ff1",
+      "required": false,
+      "review_status": "draft",
+      "expected": {
+        "primary_subjects": [
+          {
+            "name": "海口出入境边防检查总站",
+            "type": "government",
+            "role": "数据发布机构"
+          }
+        ],
+        "background_mentions": [],
+        "locations": [
+          {
+            "location_id": "hainan",
+            "name": "海南省"
+          },
+          {
+            "location_id": "hainan-haikou",
+            "name": "海口市"
+          }
+        ],
+        "named_events": [
+          {
+            "name": "高标准建设海南自由贸易港系列主题新闻发布会（第二十二场）",
+            "kind": "event_occurrence",
+            "series_name": "高标准建设海南自由贸易港系列主题新闻发布会"
+          }
+        ],
+        "projects": [],
+        "facts": [
+          {
+            "occurred_on": "2026-07-16",
+            "actors": [
+              "海口出入境边防检查总站"
+            ],
+            "action": "发布",
+            "object": "2026年上半年海南出入境边防检查主要数据及成效",
+            "locations": [
+              "海口市"
+            ],
+            "summary": "海口边检总站发布上半年海南出入境人员、外国人入境和口岸保障数据。"
+          }
+        ],
+        "notes": ""
+      }
+    },
+    {
+      "item_id": "hndaily-20260717-58465-19712027",
+      "candidate_id": "A014",
+      "published_date": "2026-07-17",
+      "page_number": "002",
+      "page_name": "本省新闻",
+      "page_sequence": 4,
+      "title": "部署14个领域64个重点技术攻关方向",
+      "source_fingerprint": "b082469d8e7d07766a8bbdde7253e502a9822c13b3df278f2ffc34cb4f31a0e9",
+      "required": false,
+      "review_status": "draft",
+      "expected": {
+        "primary_subjects": [
+          {
+            "name": "海南省科学技术厅",
+            "type": "government",
+            "role": "规划编制和发布部门"
+          }
+        ],
+        "background_mentions": [],
+        "locations": [
+          {
+            "location_id": "hainan",
+            "name": "海南省"
+          }
+        ],
+        "named_events": [
+          {
+            "name": "《海南省“十五五”科技创新规划》专场新闻发布会",
+            "kind": "event_occurrence",
+            "series_name": ""
+          }
+        ],
+        "projects": [
+          {
+            "name": "《海南省“十五五”科技创新规划》"
+          }
+        ],
+        "facts": [
+          {
+            "occurred_on": "2026-07-16",
+            "actors": [
+              "海南省科学技术厅"
+            ],
+            "action": "发布并解读",
+            "object": "海南省“十五五”科技创新规划",
+            "locations": [
+              "海南省"
+            ],
+            "summary": "海南省科技厅发布并解读科技创新规划，部署14个重点领域和64个攻关方向。"
+          }
+        ],
+        "notes": ""
+      }
+    },
+    {
+      "item_id": "hndaily-20260717-58468-19712073",
+      "candidate_id": "A038",
+      "published_date": "2026-07-17",
+      "page_number": "005",
+      "page_name": "深读·海南",
+      "page_sequence": 1,
+      "title": "兴隆温泉能否趁势再“兴”？",
+      "source_fingerprint": "2cb2e2868fd927dfe4e421634efd7f9024152a4ad142e228211d6f7f701ef024",
+      "required": false,
+      "review_status": "draft",
+      "expected": {
+        "primary_subjects": [
+          {
+            "name": "万宁市水业投资有限公司",
+            "type": "company",
+            "role": "温泉资源开发主体"
+          },
+          {
+            "name": "兴隆华侨旅游经济区管理委员会",
+            "type": "government",
+            "role": "属地管理机构"
+          }
+        ],
+        "background_mentions": [],
+        "locations": [
+          {
+            "location_id": "hainan",
+            "name": "海南省"
+          },
+          {
+            "location_id": "hainan-wanning",
+            "name": "万宁市"
+          }
+        ],
+        "named_events": [],
+        "projects": [
+          {
+            "name": "兴隆温泉恢复开发"
+          }
+        ],
+        "facts": [
+          {
+            "occurred_on": "2026-05-15",
+            "actors": [
+              "万宁市水业投资有限公司"
+            ],
+            "action": "取得",
+            "object": "兴隆温泉采矿权证",
+            "locations": [
+              "万宁市"
+            ],
+            "summary": "万宁市水业投资有限公司取得兴隆温泉采矿权证，为温泉恢复开发提供合规基础。"
+          }
+        ],
+        "notes": "温泉重新接通和8个项目签约原文只写“近日/同日”，不得用刊发日伪造精确发生日期；待事实结构支持日期精度后补录。"
+      }
+    },
+    {
+      "item_id": "hndaily-20260717-58469-19712088",
+      "candidate_id": "A039",
+      "published_date": "2026-07-17",
+      "page_number": "006",
+      "page_name": "专题",
+      "page_sequence": 1,
+      "title": "三亚崖州区探索擘画新型工业热带蓝图",
+      "source_fingerprint": "81816c1467c8bf970be05e8910d2444f241fcb7ba506d09d86e592081688268f",
+      "required": false,
+      "review_status": "draft",
+      "expected": {
+        "primary_subjects": [
+          {
+            "name": "三亚市崖州区人民政府",
+            "type": "government",
+            "role": "产业规划和招商主体"
+          },
+          {
+            "name": "北京国网电力技术股份有限公司",
+            "type": "company",
+            "role": "项目建设方"
+          }
+        ],
+        "background_mentions": [
+          "郭玄伟",
+          "季端荣",
+          "童立艳"
+        ],
+        "locations": [
+          {
+            "location_id": "hainan",
+            "name": "海南省"
+          },
+          {
+            "location_id": "hainan-sanya",
+            "name": "三亚市"
+          }
+        ],
+        "named_events": [],
+        "projects": [
+          {
+            "name": "新型电力系统关键装备研发生产及成果展示基地"
+          },
+          {
+            "name": "三亚崖州湾科技城北拓展区"
+          }
+        ],
+        "facts": [
+          {
+            "occurred_on": "2026-07-15",
+            "actors": [
+              "三亚市崖州区人民政府",
+              "北京国网电力技术股份有限公司"
+            ],
+            "action": "推动项目落地",
+            "object": "新型电力系统关键装备研发生产及成果展示基地",
+            "locations": [
+              "三亚市崖州区"
+            ],
+            "summary": "新型电力系统关键装备研发生产及成果展示基地落地崖州。"
+          }
+        ],
+        "notes": "文中受访干部主要用于说明产业思路，暂列背景提及；长期页面应以崖州区产业项目为主线。"
+      }
+    },
+    {
+      "item_id": "hndaily-20260717-58471-19712106",
+      "candidate_id": "A042",
+      "published_date": "2026-07-17",
+      "page_number": "008",
+      "page_name": "新海垦",
+      "page_sequence": 1,
+      "title": "海垦集团与白沙\n深化垦地产业合作",
+      "source_fingerprint": "b46d982429d53108b281e289bcaa40bb65d7e96f9b2047bafc77cad64f73de00",
+      "required": false,
+      "review_status": "draft",
+      "expected": {
+        "primary_subjects": [
+          {
+            "name": "海南省农垦投资控股集团有限公司",
+            "type": "company",
+            "role": "合作方"
+          },
+          {
+            "name": "白沙黎族自治县人民政府",
+            "type": "government",
+            "role": "合作方"
+          }
+        ],
+        "background_mentions": [],
+        "locations": [
+          {
+            "location_id": "hainan",
+            "name": "海南省"
+          },
+          {
+            "location_id": "hainan-haikou",
+            "name": "海口市"
+          },
+          {
+            "location_id": "hainan-baisha",
+            "name": "白沙黎族自治县"
+          }
+        ],
+        "named_events": [],
+        "projects": [
+          {
+            "name": "海垦集团与白沙垦地融合发展"
+          }
+        ],
+        "facts": [],
+        "notes": "座谈会原文仅写“日前”，当前facts要求精确日期，因此不以刊发日代填；应在下一版事实结构加入date_precision。"
+      }
+    },
+    {
+      "item_id": "hndaily-20260718-58464-19714939",
+      "candidate_id": "A001",
+      "published_date": "2026-07-18",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 1,
+      "title": "科学组织搜救 加强监测预警和巡查排险\n切实保障人民群众生命财产安全",
+      "source_fingerprint": "a3600957c6588cedafa3071b61186cd3f7b6f82f328c2d8188239ef9fa83bba1",
+      "required": false,
+      "review_status": "draft",
+      "expected": {
+        "primary_subjects": [
+          {
+            "name": "习近平",
+            "type": "person",
+            "role": "国家主席"
+          },
+          {
+            "name": "李强",
+            "type": "person",
+            "role": "国务院总理"
+          },
+          {
+            "name": "张国清",
+            "type": "person",
+            "role": "国务院副总理"
+          }
+        ],
+        "background_mentions": [],
+        "locations": [],
+        "named_events": [
+          {
+            "name": "重庆彭水山体崩塌",
+            "kind": "incident",
+            "series_name": ""
+          }
+        ],
+        "projects": [],
+        "facts": [
+          {
+            "occurred_on": "2026-07-17",
+            "actors": [
+              "习近平",
+              "李强"
+            ],
+            "action": "作出指示和批示",
+            "object": "重庆彭水山体崩塌搜救、救治、善后和隐患排查",
+            "locations": [
+              "重庆市彭水苗族土家族自治县"
+            ],
+            "summary": "习近平、李强就重庆彭水山体崩塌的搜救、救治和隐患排查作出部署。"
+          },
+          {
+            "occurred_on": "2026-07-17",
+            "actors": [
+              "张国清"
+            ],
+            "action": "赶赴现场指导",
+            "object": "山体崩塌救援处置",
+            "locations": [
+              "重庆市彭水苗族土家族自治县"
+            ],
+            "summary": "张国清率有关部门负责同志赶赴现场指导救援处置。"
+          }
+        ],
+        "notes": ""
+      }
+    },
+    {
+      "item_id": "hndaily-20260718-58464-19714942",
+      "candidate_id": "A002",
+      "published_date": "2026-07-18",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 2,
+      "title": "习近平出席2026世界人工智能大会\n暨人工智能全球治理高级别会议开幕式并发表主旨讲话",
+      "source_fingerprint": "cf10fafc53cfb25b47d85a835ab401e5220cd8ef755b7fc336ffb6f1dbf431af",
+      "required": false,
+      "review_status": "draft",
+      "expected": {
+        "primary_subjects": [
+          {
+            "name": "习近平",
+            "type": "person",
+            "role": "国家主席"
+          }
+        ],
+        "background_mentions": [
+          "托卡耶夫",
+          "洪玛奈",
+          "阿努廷",
+          "古特雷斯",
+          "彭丽媛",
+          "蔡奇",
+          "丁薛祥",
+          "王毅",
+          "陈吉宁"
+        ],
+        "locations": [],
+        "named_events": [
+          {
+            "name": "2026世界人工智能大会暨人工智能全球治理高级别会议",
+            "kind": "event_occurrence",
+            "series_name": "世界人工智能大会"
+          }
+        ],
+        "projects": [],
+        "facts": [
+          {
+            "occurred_on": "2026-07-17",
+            "actors": [
+              "习近平"
+            ],
+            "action": "出席开幕式并发表主旨讲话",
+            "object": "全球人工智能发展与治理",
+            "locations": [
+              "上海市"
+            ],
+            "summary": "习近平在大会开幕式发表主旨讲话，提出开放共赢、安全可控、文明互鉴和全球治理四点意见。"
+          }
+        ],
+        "notes": ""
+      }
+    },
+    {
+      "item_id": "hndaily-20260718-58464-19714943",
+      "candidate_id": "A003",
+      "published_date": "2026-07-18",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 3,
+      "title": "以最坚决态度最高标准最严要求推进问题整改\n坚定不移走生态环境友好型自由贸易港建设之路",
+      "source_fingerprint": "cfb33d26f0d7fd33e17851fdde2b34ebf804bc19ec93052b925fd60dee500388",
+      "required": false,
+      "review_status": "draft",
+      "expected": {
+        "primary_subjects": [
+          {
+            "name": "冯飞",
+            "type": "person",
+            "role": "海南省委书记"
+          },
+          {
+            "name": "刘小明",
+            "type": "person",
+            "role": "海南省省长"
+          }
+        ],
+        "background_mentions": [
+          "习近平",
+          "杨晋柏",
+          "陈国猛",
+          "王斌",
+          "王祺扬",
+          "范少军",
+          "邹广",
+          "李锋",
+          "杨国强"
+        ],
+        "locations": [
+          {
+            "location_id": "hainan",
+            "name": "海南省"
+          },
+          {
+            "location_id": "hainan-ledong",
+            "name": "乐东黎族自治县"
+          }
+        ],
+        "named_events": [
+          {
+            "name": "海南省海水养殖突出生态环境问题整改和产业绿色转型示范推进现场会",
+            "kind": "event_occurrence",
+            "series_name": ""
+          }
+        ],
+        "projects": [
+          {
+            "name": "中灶湾生态修复和海坡村陆基海水养殖治理试点项目"
+          },
+          {
+            "name": "利国镇南繁水产产业园项目"
+          },
+          {
+            "name": "黄流镇尖界海水养殖取排水项目"
+          }
+        ],
+        "facts": [
+          {
+            "occurred_on": "2026-07-17",
+            "actors": [
+              "冯飞",
+              "刘小明"
+            ],
+            "action": "召开现场会并部署",
+            "object": "海水养殖生态环境问题整改和产业绿色转型",
+            "locations": [
+              "乐东黎族自治县"
+            ],
+            "summary": "冯飞讲话、刘小明主持现场会，部署海水养殖整改、集中取排水和产业绿色转型。"
+          }
+        ],
+        "notes": "习近平生态文明思想是政策背景，不形成本次海南现场会的人物行动节点。"
+      }
+    },
+    {
+      "item_id": "hndaily-20260718-58464-19714945",
+      "candidate_id": "A004",
+      "published_date": "2026-07-18",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 4,
+      "title": "用电结构优化 产业发展释放“大能量”",
+      "source_fingerprint": "94217a1dab3ce5955cb02a235ef9ea503f8c28581f0fa10d36efcc42594a1aab",
+      "required": false,
+      "review_status": "draft",
+      "expected": {
+        "primary_subjects": [
+          {
+            "name": "南方电网海南电网公司",
+            "type": "company",
+            "role": "电力数据发布机构"
+          }
+        ],
+        "background_mentions": [],
+        "locations": [
+          {
+            "location_id": "hainan",
+            "name": "海南省"
+          },
+          {
+            "location_id": "hainan-haikou",
+            "name": "海口市"
+          },
+          {
+            "location_id": "hainan-danzhou",
+            "name": "儋州市"
+          },
+          {
+            "location_id": "hainan-wenchang",
+            "name": "文昌市"
+          },
+          {
+            "location_id": "hainan-lingshui",
+            "name": "陵水黎族自治县"
+          }
+        ],
+        "named_events": [],
+        "projects": [],
+        "facts": [
+          {
+            "occurred_on": "2026-06-30",
+            "actors": [
+              "南方电网海南电网公司"
+            ],
+            "action": "统计并发布",
+            "object": "2026年上半年海南全社会用电及产业用电结构",
+            "locations": [
+              "海南省"
+            ],
+            "summary": "上半年海南全社会用电量293.54亿千瓦时，同比增长12.5%，第三产业和居民用电是主要增量。"
+          }
+        ],
+        "notes": "occurred_on取统计期末日，不代表数据发布日；原文数据来源时间仅称“近日”。"
+      }
+    },
+    {
+      "item_id": "hndaily-20260718-58464-19714946",
+      "candidate_id": "A005",
+      "published_date": "2026-07-18",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 5,
+      "title": "乐东：“养”回岸线元气 “吃”海更有滋味",
+      "source_fingerprint": "33cb9fed86dfab99bc54c92bede24864e0576aec03c6eda0e7bdec4455d13bd6",
+      "required": false,
+      "review_status": "draft",
+      "expected": {
+        "primary_subjects": [
+          {
+            "name": "中共乐东县委",
+            "type": "government",
+            "role": "整改统筹主体"
+          },
+          {
+            "name": "乐东黎族自治县人民政府",
+            "type": "government",
+            "role": "整改实施主体"
+          },
+          {
+            "name": "马育红",
+            "type": "person",
+            "role": "乐东县委书记"
+          }
+        ],
+        "background_mentions": [
+          "曾其优",
+          "谢远",
+          "苏文师",
+          "蔡运敏",
+          "何龙"
+        ],
+        "locations": [
+          {
+            "location_id": "hainan",
+            "name": "海南省"
+          },
+          {
+            "location_id": "hainan-ledong",
+            "name": "乐东黎族自治县"
+          }
+        ],
+        "named_events": [],
+        "projects": [
+          {
+            "name": "乐东海岸带生态突出问题整改"
+          },
+          {
+            "name": "南繁水产产业园"
+          },
+          {
+            "name": "乐东海水养殖集中取排水项目"
+          },
+          {
+            "name": "大角湾和中灶湾生态修复工程"
+          }
+        ],
+        "facts": [
+          {
+            "occurred_on": "2026-07-13",
+            "actors": [
+              "乐东黎族自治县人民政府"
+            ],
+            "action": "推进竣工投用",
+            "object": "九所镇海水养殖集中取排水项目",
+            "locations": [
+              "乐东黎族自治县九所镇"
+            ],
+            "summary": "九所镇集中取排水项目接近竣工，原有非法养殖管线已拆除。"
+          },
+          {
+            "occurred_on": "2026-07-17",
+            "actors": [
+              "中共乐东县委",
+              "乐东黎族自治县人民政府",
+              "马育红"
+            ],
+            "action": "持续实施",
+            "object": "海岸带生态整改和渔业绿色转型",
+            "locations": [
+              "乐东黎族自治县"
+            ],
+            "summary": "乐东清退禁养区养殖、修复岸线并以产业园和集中取排水项目承接养殖业绿色转型。"
+          }
+        ],
+        "notes": ""
+      }
+    },
+    {
+      "item_id": "hndaily-20260718-58464-19714948",
+      "candidate_id": "A007",
+      "published_date": "2026-07-18",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 7,
+      "title": "省政协召开主席会议",
+      "source_fingerprint": "b17bfb48cf6a0875aa1a88610a6797a8c86c155aba073d2e075cd0b0bdfda32d",
+      "required": false,
+      "review_status": "draft",
+      "expected": {
+        "primary_subjects": [
+          {
+            "name": "李荣灿",
+            "type": "person",
+            "role": "海南省政协主席"
+          },
+          {
+            "name": "海南省政协",
+            "type": "government",
+            "role": "会议主体"
+          }
+        ],
+        "background_mentions": [
+          "习近平",
+          "肖莺子",
+          "李国梁",
+          "蒙晓灵",
+          "侯茂丰",
+          "刘艳玲",
+          "陈际阳"
+        ],
+        "locations": [
+          {
+            "location_id": "hainan",
+            "name": "海南省"
+          },
+          {
+            "location_id": "hainan-haikou",
+            "name": "海口市"
+          }
+        ],
+        "named_events": [
+          {
+            "name": "八届海南省政协第六十七次主席会议",
+            "kind": "event_occurrence",
+            "series_name": "海南省政协主席会议"
+          }
+        ],
+        "projects": [],
+        "facts": [
+          {
+            "occurred_on": "2026-07-17",
+            "actors": [
+              "李荣灿",
+              "海南省政协"
+            ],
+            "action": "主持会议并审议通过",
+            "object": "海南省农村生活污水处理设施运营情况专项民主监督报告",
+            "locations": [
+              "海口市"
+            ],
+            "summary": "李荣灿主持省政协主席会议，会议审议通过农村生活污水处理设施运营专项民主监督报告。"
+          }
+        ],
+        "notes": "习近平讲话是会议学习材料，不是海南省政协本次行动的直接主体。"
+      }
+    },
+    {
+      "item_id": "hndaily-20260718-58465-19714958",
+      "candidate_id": "A009",
+      "published_date": "2026-07-18",
+      "page_number": "002",
+      "page_name": "要闻",
+      "page_sequence": 1,
+      "title": "携手构建公正合理的全球人工智能治理体系",
+      "source_fingerprint": "16ad790bb30d2e8e200b4c36b174452bf0489de5a9385e8779b2299f7f49c31f",
+      "required": false,
+      "review_status": "draft",
+      "expected": {
+        "primary_subjects": [
+          {
+            "name": "习近平",
+            "type": "person",
+            "role": "国家主席"
+          }
+        ],
+        "background_mentions": [],
+        "locations": [],
+        "named_events": [
+          {
+            "name": "2026世界人工智能大会暨人工智能全球治理高级别会议",
+            "kind": "event_occurrence",
+            "series_name": "世界人工智能大会"
+          }
+        ],
+        "projects": [],
+        "facts": [
+          {
+            "occurred_on": "2026-07-17",
+            "actors": [
+              "习近平"
+            ],
+            "action": "发表主旨讲话",
+            "object": "全球人工智能治理",
+            "locations": [
+              "上海市"
+            ],
+            "summary": "习近平提出以开放共赢、安全可控、文明互鉴和多边治理推动人工智能造福人类。"
+          }
+        ],
+        "notes": "讲话全文，与7月18日A002报道同一行动；后续事实层应去重而不是生成两个轨迹节点。"
+      }
+    },
+    {
+      "item_id": "hndaily-20260718-58465-19714959",
+      "candidate_id": "A010",
+      "published_date": "2026-07-18",
+      "page_number": "002",
+      "page_name": "要闻",
+      "page_sequence": 2,
+      "title": "习近平会见泰国总理阿努廷",
+      "source_fingerprint": "30c45c030a1e1e038a2ddeb7cc9ddb61b1c3dcfb67f99cd102adf63f53fb3936",
+      "required": false,
+      "review_status": "draft",
+      "expected": {
+        "primary_subjects": [
+          {
+            "name": "习近平",
+            "type": "person",
+            "role": "国家主席"
+          },
+          {
+            "name": "阿努廷",
+            "type": "person",
+            "role": "泰国总理"
+          }
+        ],
+        "background_mentions": [
+          "蔡奇",
+          "丁薛祥",
+          "王毅",
+          "陈吉宁"
+        ],
+        "locations": [],
+        "named_events": [
+          {
+            "name": "2026世界人工智能大会暨人工智能全球治理高级别会议",
+            "kind": "event_occurrence",
+            "series_name": "世界人工智能大会"
+          }
+        ],
+        "projects": [
+          {
+            "name": "中泰铁路"
+          },
+          {
+            "name": "中老泰铁路互联互通"
+          }
+        ],
+        "facts": [
+          {
+            "occurred_on": "2026-07-17",
+            "actors": [
+              "习近平",
+              "阿努廷"
+            ],
+            "action": "会见并交流",
+            "object": "中泰战略协作、铁路互联互通、新兴产业合作和跨境犯罪治理",
+            "locations": [
+              "上海市"
+            ],
+            "summary": "习近平在上海会见阿努廷，双方就中泰合作和地区事务交换意见。"
+          }
+        ],
+        "notes": ""
+      }
+    },
+    {
+      "item_id": "hndaily-20260718-58465-19714960",
+      "candidate_id": "A011",
+      "published_date": "2026-07-18",
+      "page_number": "002",
+      "page_name": "要闻",
+      "page_sequence": 3,
+      "title": "“用人类智慧和国际共识引领人工智能发展”",
+      "source_fingerprint": "e128fe40e9d551e162fa4afd9f1d5174d3155fd663b8dc6869e0eb6848b1b247",
+      "required": false,
+      "review_status": "draft",
+      "expected": {
+        "primary_subjects": [
+          {
+            "name": "习近平",
+            "type": "person",
+            "role": "国家主席"
+          }
+        ],
+        "background_mentions": [
+          "托卡耶夫",
+          "洪玛奈",
+          "阿努廷",
+          "古特雷斯",
+          "薛澜",
+          "王兴兴"
+        ],
+        "locations": [],
+        "named_events": [
+          {
+            "name": "2026世界人工智能大会暨人工智能全球治理高级别会议",
+            "kind": "event_occurrence",
+            "series_name": "世界人工智能大会"
+          }
+        ],
+        "projects": [],
+        "facts": [
+          {
+            "occurred_on": "2026-07-17",
+            "actors": [
+              "习近平"
+            ],
+            "action": "出席开幕式并发表主旨讲话",
+            "object": "全球人工智能发展与治理",
+            "locations": [
+              "上海市"
+            ],
+            "summary": "习近平在大会提出全球人工智能治理主张，并宣布面向发展中国家的能力建设举措。"
+          }
+        ],
+        "notes": "现场侧记，与A002、A009描述同一讲话行动；嘉宾评价属于背景提及。"
+      }
+    },
+    {
+      "item_id": "hndaily-20260718-58465-19714961",
+      "candidate_id": "A012",
+      "published_date": "2026-07-18",
+      "page_number": "002",
+      "page_name": "要闻",
+      "page_sequence": 4,
+      "title": "习近平会见柬埔寨首相洪玛奈",
+      "source_fingerprint": "c32103968225fc84b42c1021d07218464eec2160ca96178a5292f7464b8d0711",
+      "required": false,
+      "review_status": "draft",
+      "expected": {
+        "primary_subjects": [
+          {
+            "name": "习近平",
+            "type": "person",
+            "role": "国家主席"
+          },
+          {
+            "name": "洪玛奈",
+            "type": "person",
+            "role": "柬埔寨首相"
+          }
+        ],
+        "background_mentions": [
+          "蔡奇",
+          "丁薛祥",
+          "王毅",
+          "陈吉宁"
+        ],
+        "locations": [],
+        "named_events": [
+          {
+            "name": "2026世界人工智能大会暨人工智能全球治理高级别会议",
+            "kind": "event_occurrence",
+            "series_name": "世界人工智能大会"
+          }
+        ],
+        "projects": [
+          {
+            "name": "中柬工业发展走廊"
+          },
+          {
+            "name": "中柬鱼米走廊"
+          }
+        ],
+        "facts": [
+          {
+            "occurred_on": "2026-07-17",
+            "actors": [
+              "习近平",
+              "洪玛奈"
+            ],
+            "action": "会见并交流",
+            "object": "中柬政治互信、产业和基础设施合作及跨境犯罪治理",
+            "locations": [
+              "上海市"
+            ],
+            "summary": "习近平在上海会见洪玛奈，双方就深化中柬合作和地区事务交换意见。"
+          }
+        ],
+        "notes": ""
+      }
+    },
+    {
+      "item_id": "hndaily-20260718-58467-19714981",
+      "candidate_id": "A021",
+      "published_date": "2026-07-18",
+      "page_number": "004",
+      "page_name": "本省新闻",
+      "page_sequence": 1,
+      "title": "宣讲在一线 解题在基层",
+      "source_fingerprint": "d7690a90186f438c228c123e58d8a1d162560b635d58dbd782cd93629f6f3912",
+      "required": false,
+      "review_status": "draft",
+      "expected": {
+        "primary_subjects": [
+          {
+            "name": "海南省人民代表大会常务委员会",
+            "type": "government",
+            "role": "活动组织主体"
+          }
+        ],
+        "background_mentions": [
+          "韦诗韵",
+          "陈林雄",
+          "孙琼玲",
+          "陈仕楫",
+          "莫积仁"
+        ],
+        "locations": [
+          {
+            "location_id": "hainan",
+            "name": "海南省"
+          },
+          {
+            "location_id": "hainan-ledong",
+            "name": "乐东黎族自治县"
+          },
+          {
+            "location_id": "hainan-lingshui",
+            "name": "陵水黎族自治县"
+          },
+          {
+            "location_id": "hainan-haikou",
+            "name": "海口市"
+          },
+          {
+            "location_id": "hainan-wenchang",
+            "name": "文昌市"
+          },
+          {
+            "location_id": "hainan-sanya",
+            "name": "三亚市"
+          },
+          {
+            "location_id": "hainan-wanning",
+            "name": "万宁市"
+          }
+        ],
+        "named_events": [
+          {
+            "name": "“人大代表大宣传紧联系为自贸港封关聚民意汇民力”活动第一期",
+            "kind": "event_occurrence",
+            "series_name": "人大代表大宣传紧联系为自贸港封关聚民意汇民力活动"
+          }
+        ],
+        "projects": [],
+        "facts": [],
+        "notes": "原文仅称“近日”取得阶段性成果，没有精确完成日期；不以刊发日代填facts。第二期为未来安排，也不写成已发生事实。"
+      }
+    },
+    {
+      "item_id": "hndaily-20260718-58467-19714982",
+      "candidate_id": "A022",
+      "published_date": "2026-07-18",
+      "page_number": "004",
+      "page_name": "本省新闻",
+      "page_sequence": 2,
+      "title": "2026年海南国际旅游岛欢乐节今日启幕",
+      "source_fingerprint": "954502e7ac1b165eb3954ba7ac3fb96032c365849fb2881a6e9b8ae6b1a73e3d",
+      "required": false,
+      "review_status": "draft",
+      "expected": {
+        "primary_subjects": [],
+        "background_mentions": [],
+        "locations": [
+          {
+            "location_id": "hainan",
+            "name": "海南省"
+          },
+          {
+            "location_id": "hainan-haikou",
+            "name": "海口市"
+          },
+          {
+            "location_id": "hainan-qionghai",
+            "name": "琼海市"
+          },
+          {
+            "location_id": "hainan-lingao",
+            "name": "临高县"
+          },
+          {
+            "location_id": "hainan-lingshui",
+            "name": "陵水黎族自治县"
+          },
+          {
+            "location_id": "hainan-wuzhishan",
+            "name": "五指山市"
+          },
+          {
+            "location_id": "hainan-qiongzhong",
+            "name": "琼中黎族苗族自治县"
+          },
+          {
+            "location_id": "hainan-danzhou",
+            "name": "儋州市"
+          }
+        ],
+        "named_events": [
+          {
+            "name": "2026年（第二十七届）海南国际旅游岛欢乐节",
+            "kind": "event_occurrence",
+            "series_name": "海南国际旅游岛欢乐节"
+          }
+        ],
+        "projects": [],
+        "facts": [
+          {
+            "occurred_on": "2026-07-18",
+            "actors": [
+              "海南省18个市县"
+            ],
+            "action": "联动启幕并推出活动",
+            "object": "2026年海南国际旅游岛欢乐节",
+            "locations": [
+              "海南省",
+              "海口市"
+            ],
+            "summary": "欢乐节在海口启幕，全省18个市县将联动推出50余项主题活动。"
+          }
+        ],
+        "notes": "正文未明确主办机构，不凭常识补出组织者；未来活动安排保留在事件说明而非已发生事实。"
+      }
+    },
+    {
+      "item_id": "hndaily-20260718-58467-19714983",
+      "candidate_id": "A023",
+      "published_date": "2026-07-18",
+      "page_number": "004",
+      "page_name": "本省新闻",
+      "page_sequence": 3,
+      "title": "“自贸港金融先锋”\n党建工作成果交流活动举办",
+      "source_fingerprint": "8565e5d7fbc5159fb9d61da167f69ca794ecb6e0406041e501788a5bb07a8a71",
+      "required": false,
+      "review_status": "draft",
+      "expected": {
+        "primary_subjects": [
+          {
+            "name": "中共海南省委金融工作委员会",
+            "type": "government",
+            "role": "活动组织主体"
+          }
+        ],
+        "background_mentions": [],
+        "locations": [
+          {
+            "location_id": "hainan",
+            "name": "海南省"
+          },
+          {
+            "location_id": "hainan-haikou",
+            "name": "海口市"
+          }
+        ],
+        "named_events": [
+          {
+            "name": "“自贸港金融先锋”党建工作成果交流活动",
+            "kind": "event_occurrence",
+            "series_name": ""
+          }
+        ],
+        "projects": [
+          {
+            "name": "金融领域“自贸港先锋行动”"
+          }
+        ],
+        "facts": [
+          {
+            "occurred_on": "2026-07-17",
+            "actors": [
+              "中共海南省委金融工作委员会"
+            ],
+            "action": "举办成果交流并发布案例",
+            "object": "金融领域党建创新成果",
+            "locations": [
+              "海口市"
+            ],
+            "summary": "省委金融工委举办成果交流活动，展示首批21个金融党建优秀典型案例。"
+          }
+        ],
+        "notes": ""
+      }
+    },
+    {
+      "item_id": "hndaily-20260718-58467-19714984",
+      "candidate_id": "A024",
+      "published_date": "2026-07-18",
+      "page_number": "004",
+      "page_name": "本省新闻",
+      "page_sequence": 4,
+      "title": "两岸媒体人在自贸港感受蓬勃活力",
+      "source_fingerprint": "465539523e544e65b265231118a96750eaf924129e42e9ba2258f2b7ac39a8d9",
+      "required": false,
+      "review_status": "draft",
+      "expected": {
+        "primary_subjects": [
+          {
+            "name": "“两岸媒体人海南行”采访团",
+            "type": "organization",
+            "role": "采访团"
+          }
+        ],
+        "background_mentions": [
+          "张逸杰"
+        ],
+        "locations": [
+          {
+            "location_id": "hainan",
+            "name": "海南省"
+          },
+          {
+            "location_id": "hainan-haikou",
+            "name": "海口市"
+          },
+          {
+            "location_id": "hainan-qionghai",
+            "name": "琼海市"
+          },
+          {
+            "location_id": "hainan-sanya",
+            "name": "三亚市"
+          }
+        ],
+        "named_events": [
+          {
+            "name": "两岸媒体人海南行",
+            "kind": "event_occurrence",
+            "series_name": "两岸媒体人海南行"
+          }
+        ],
+        "projects": [],
+        "facts": [
+          {
+            "occurred_on": "2026-07-17",
+            "actors": [
+              "“两岸媒体人海南行”采访团"
+            ],
+            "action": "走访采访",
+            "object": "海南自贸港产业、科技、免税和乡村振兴发展",
+            "locations": [
+              "海口市",
+              "琼海市"
+            ],
+            "summary": "两岸媒体人采访团走访海口江东新区、海南科技馆、免税城和热带水果项目。"
+          }
+        ],
+        "notes": "博鳌乐城和崖州湾科技城为后续计划，不写成7月17日已完成走访。"
+      }
+    },
+    {
+      "item_id": "hndaily-20260719-58464-19716147",
+      "candidate_id": "A001",
+      "published_date": "2026-07-19",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 1,
+      "title": "坚持开放共赢 驱动创新发展",
+      "source_fingerprint": "4980b26bfad08ed4111c22730612031aec02af36c805256b34007e6160493a8c",
+      "required": true,
+      "review_status": "reviewed",
+      "expected": {
+        "primary_subjects": [
+          {
+            "name": "习近平",
+            "type": "person",
+            "role": "国家主席"
+          }
+        ],
+        "background_mentions": [],
+        "locations": [],
+        "named_events": [
+          {
+            "name": "2026世界人工智能大会暨人工智能全球治理高级别会议",
+            "kind": "event_occurrence",
+            "series_name": "世界人工智能大会"
+          }
+        ],
+        "projects": [],
+        "facts": [
+          {
+            "occurred_on": "2026-07-17",
+            "actors": [
+              "习近平"
+            ],
+            "action": "在开幕式发表主旨讲话并提出四点意见",
+            "object": "全球人工智能治理",
+            "locations": [
+              "上海"
+            ],
+            "summary": "习近平在2026世界人工智能大会开幕式上就全球人工智能治理提出四点意见。"
+          }
+        ],
+        "notes": "强制回归：即使 event_candidates 为空，也必须发现原文明示的命名活动。"
+      }
+    },
+    {
+      "item_id": "hndaily-20260719-58464-19716150",
+      "candidate_id": "A002",
+      "published_date": "2026-07-19",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 2,
+      "title": "2026年海南国际旅游岛欢乐节开幕",
+      "source_fingerprint": "c384cee58f79d02f8867aa1041a93c2c95a9dd52b74859985bb62d49990ce735",
+      "required": true,
+      "review_status": "reviewed",
+      "expected": {
+        "primary_subjects": [
+          {
+            "name": "冯飞",
+            "type": "person",
+            "role": "海南省委书记"
+          },
+          {
+            "name": "刘小明",
+            "type": "person",
+            "role": "海南省省长"
+          }
+        ],
+        "background_mentions": [
+          "习近平"
+        ],
+        "locations": [
+          {
+            "location_id": "hainan-haikou",
+            "name": "海口市"
+          },
+          {
+            "location_id": "hainan",
+            "name": "海南省"
+          }
+        ],
+        "named_events": [
+          {
+            "name": "2026年（第二十七届）海南国际旅游岛欢乐节",
+            "kind": "event_occurrence",
+            "series_name": "海南国际旅游岛欢乐节"
+          }
+        ],
+        "projects": [],
+        "facts": [
+          {
+            "occurred_on": "2026-07-18",
+            "actors": [
+              "冯飞"
+            ],
+            "action": "宣布开幕",
+            "object": "2026年海南国际旅游岛欢乐节",
+            "locations": [
+              "海口市"
+            ],
+            "summary": "冯飞宣布2026年海南国际旅游岛欢乐节开幕。"
+          },
+          {
+            "occurred_on": "2026-07-18",
+            "actors": [
+              "刘小明"
+            ],
+            "action": "致辞",
+            "object": "2026年海南国际旅游岛欢乐节开幕式",
+            "locations": [
+              "海口市"
+            ],
+            "summary": "刘小明在2026年海南国际旅游岛欢乐节开幕式上致辞。"
+          }
+        ],
+        "notes": "强制回归：习近平只是背景提及，不能形成这次活动的人物行动节点。"
+      }
+    },
+    {
+      "item_id": "hndaily-20260719-58464-19716151",
+      "candidate_id": "A003",
+      "published_date": "2026-07-19",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 3,
+      "title": "坚持系统化布局、精细化治理、多元化融合\n一体推进环岛旅游公路提质升级",
+      "source_fingerprint": "7fe2d0db5b903e838568693367751901bee872c3a72373c2e8b1c88b785d705d",
+      "required": true,
+      "review_status": "reviewed",
+      "expected": {
+        "primary_subjects": [
+          {
+            "name": "刘小明",
+            "type": "person",
+            "role": "海南省省长"
+          }
+        ],
+        "background_mentions": [],
+        "locations": [
+          {
+            "location_id": "hainan-sanya",
+            "name": "三亚市"
+          },
+          {
+            "location_id": "hainan-ledong",
+            "name": "乐东黎族自治县"
+          },
+          {
+            "location_id": "hainan-dongfang",
+            "name": "东方市"
+          },
+          {
+            "location_id": "hainan-changjiang",
+            "name": "昌江黎族自治县"
+          },
+          {
+            "location_id": "hainan-danzhou",
+            "name": "儋州市"
+          }
+        ],
+        "named_events": [],
+        "projects": [
+          {
+            "name": "海南环岛旅游公路"
+          }
+        ],
+        "facts": [
+          {
+            "occurred_on": "2026-07-18",
+            "actors": [
+              "刘小明"
+            ],
+            "action": "调研建管运情况",
+            "object": "海南环岛旅游公路",
+            "locations": [
+              "三亚市",
+              "乐东黎族自治县",
+              "东方市",
+              "昌江黎族自治县",
+              "儋州市"
+            ],
+            "summary": "刘小明沿海南环岛旅游公路调研建设、管理和运营情况。"
+          }
+        ],
+        "notes": "强制回归：环岛旅游公路是长期项目；本篇形成一次人物调研事实。"
+      }
+    },
+    {
+      "item_id": "hndaily-20260719-58464-19716152",
+      "candidate_id": "A004",
+      "published_date": "2026-07-19",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 4,
+      "title": "省钱省心！欢乐节派送惠民礼包",
+      "source_fingerprint": "8b64c1e99bf55258856694136c02ad6f6a0ec0f948fcf1ade3c96caa1bd0b74c",
+      "required": false,
+      "review_status": "draft",
+      "expected": {
+        "primary_subjects": [
+          {
+            "name": "海南省旅游和文化广电体育厅",
+            "type": "government",
+            "role": "旅游活动统筹部门"
+          },
+          {
+            "name": "海南长影奇幻乐园",
+            "type": "company",
+            "role": "欢乐节主会场运营方"
+          }
+        ],
+        "background_mentions": [],
+        "locations": [
+          {
+            "location_id": "hainan",
+            "name": "海南省"
+          },
+          {
+            "location_id": "hainan-haikou",
+            "name": "海口市"
+          },
+          {
+            "location_id": "hainan-wanning",
+            "name": "万宁市"
+          },
+          {
+            "location_id": "hainan-qionghai",
+            "name": "琼海市"
+          }
+        ],
+        "named_events": [
+          {
+            "name": "2026年（第二十七届）海南国际旅游岛欢乐节",
+            "kind": "event_occurrence",
+            "series_name": "海南国际旅游岛欢乐节"
+          }
+        ],
+        "projects": [],
+        "facts": [
+          {
+            "occurred_on": "2026-07-18",
+            "actors": [
+              "海南省旅游和文化广电体育厅",
+              "海南长影奇幻乐园"
+            ],
+            "action": "推出惠民活动",
+            "object": "欢乐节期间门票、机票酒店、免税购物、餐饮和交通优惠",
+            "locations": [
+              "海南省",
+              "海口市"
+            ],
+            "summary": "欢乐节启幕后，海南推出门票减免、消费券和交通补贴等惠民措施。"
+          }
+        ],
+        "notes": ""
+      }
+    },
+    {
+      "item_id": "hndaily-20260719-58464-19716154",
+      "candidate_id": "A005",
+      "published_date": "2026-07-19",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 5,
+      "title": "算好三本账，“小票据”激活“大市场”",
+      "source_fingerprint": "d05e72e012531ed354d60e7799eed2c89b5d144a7f05cd8ccf385e9da7c86edc",
+      "required": false,
+      "review_status": "draft",
+      "expected": {
+        "primary_subjects": [
+          {
+            "name": "国家税务总局海南省税务局",
+            "type": "government",
+            "role": "税费政策和智慧税务实施部门"
+          }
+        ],
+        "background_mentions": [],
+        "locations": [
+          {
+            "location_id": "hainan",
+            "name": "海南省"
+          },
+          {
+            "location_id": "hainan-haikou",
+            "name": "海口市"
+          },
+          {
+            "location_id": "hainan-wenchang",
+            "name": "文昌市"
+          },
+          {
+            "location_id": "hainan-chengmai",
+            "name": "澄迈县"
+          }
+        ],
+        "named_events": [],
+        "projects": [
+          {
+            "name": "海口有奖发票试点活动"
+          },
+          {
+            "name": "海南智慧税务建设"
+          }
+        ],
+        "facts": [
+          {
+            "occurred_on": "2026-06-30",
+            "actors": [
+              "国家税务总局海南省税务局"
+            ],
+            "action": "实施并统计",
+            "object": "有奖发票、税费优惠和数电发票服务",
+            "locations": [
+              "海南省",
+              "海口市"
+            ],
+            "summary": "截至6月底，海口有奖发票试点审核503.83万张发票、发放红包超1.2亿元并带动消费41.6亿元。"
+          }
+        ],
+        "notes": "occurred_on取统计期末日；海口试点2月启动但原文没有具体日，不补造日期。"
+      }
+    },
+    {
+      "item_id": "hndaily-20260719-58464-19716155",
+      "candidate_id": "A006",
+      "published_date": "2026-07-19",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 6,
+      "title": "畅玩全岛 欢乐启程",
+      "source_fingerprint": "149d5ee56b83e170507cb0849bc5490956f0692cee6d0dff1e1f539af046d021",
+      "required": false,
+      "review_status": "draft",
+      "expected": {
+        "primary_subjects": [],
+        "background_mentions": [],
+        "locations": [
+          {
+            "location_id": "hainan",
+            "name": "海南省"
+          },
+          {
+            "location_id": "hainan-haikou",
+            "name": "海口市"
+          }
+        ],
+        "named_events": [
+          {
+            "name": "2026年（第二十七届）海南国际旅游岛欢乐节",
+            "kind": "event_occurrence",
+            "series_name": "海南国际旅游岛欢乐节"
+          }
+        ],
+        "projects": [],
+        "facts": [
+          {
+            "occurred_on": "2026-07-18",
+            "actors": [
+              "海南省18个市县"
+            ],
+            "action": "启动并推出活动",
+            "object": "2026年海南国际旅游岛欢乐节",
+            "locations": [
+              "海南省",
+              "海口市"
+            ],
+            "summary": "欢乐节于7月18日启幕并将由各市县推出50余项特色主题活动。"
+          }
+        ],
+        "notes": "短讯未写明主办机构，不凭外部知识补齐主体。"
+      }
+    },
+    {
+      "item_id": "hndaily-20260719-58464-19716156",
+      "candidate_id": "A007",
+      "published_date": "2026-07-19",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 7,
+      "title": "琼中林下套种沉香，真香！",
+      "source_fingerprint": "6377d35aaf13e8f772b90ecf581f86223cafdc7d07d39a43a8fab05180360a2f",
+      "required": false,
+      "review_status": "draft",
+      "expected": {
+        "primary_subjects": [
+          {
+            "name": "琼中黎族苗族自治县人民政府",
+            "type": "government",
+            "role": "产业政策实施主体"
+          },
+          {
+            "name": "海南大观沉香产业发展股份有限公司",
+            "type": "company",
+            "role": "产业合作和保底收购方"
+          },
+          {
+            "name": "海南农村商业银行琼中支行",
+            "type": "company",
+            "role": "金融支持方"
+          }
+        ],
+        "background_mentions": [
+          "李世运",
+          "邓明跃",
+          "赵建光",
+          "徐建新",
+          "朱泉凯",
+          "邱波"
+        ],
+        "locations": [
+          {
+            "location_id": "hainan",
+            "name": "海南省"
+          },
+          {
+            "location_id": "hainan-qiongzhong",
+            "name": "琼中黎族苗族自治县"
+          }
+        ],
+        "named_events": [],
+        "projects": [
+          {
+            "name": "琼中沉香产业“两免两保”惠民政策"
+          },
+          {
+            "name": "《海南省沉香全产业链创新发展规划（2023—2030年）》"
+          },
+          {
+            "name": "国家级沉香科技小院"
+          }
+        ],
+        "facts": [
+          {
+            "occurred_on": "2026-06-30",
+            "actors": [
+              "琼中黎族苗族自治县人民政府",
+              "海南大观沉香产业发展股份有限公司",
+              "海南农村商业银行琼中支行"
+            ],
+            "action": "联合推出",
+            "object": "沉香产业“两免两保”惠民政策",
+            "locations": [
+              "琼中黎族苗族自治县"
+            ],
+            "summary": "琼中县政府联合企业和银行推出沉香技术、溯源、产量和收购价保障政策。"
+          },
+          {
+            "occurred_on": "2026-07-18",
+            "actors": [
+              "海南农村商业银行琼中支行"
+            ],
+            "action": "提供授信",
+            "object": "沉香种植户产业贷款",
+            "locations": [
+              "琼中黎族苗族自治县"
+            ],
+            "summary": "截至报道时，琼中174户沉香种植户获得超过3000万元授信。"
+          }
+        ],
+        "notes": "首条occurred_on以“6月底”的期间末日表达，日期精度应在下一版结构中显式记录为month_end。"
+      }
+    },
+    {
+      "item_id": "hndaily-20260719-58465-19716163",
+      "candidate_id": "A008",
+      "published_date": "2026-07-19",
+      "page_number": "002",
+      "page_name": "本省新闻",
+      "page_sequence": 1,
+      "title": "第十一届全国大学生生物医学\n工程创新设计竞赛三亚开幕",
+      "source_fingerprint": "3d375f24852f0223b697de9a6fa164a2a877bff733bf9ef86127eed3234022ac",
+      "required": false,
+      "review_status": "draft",
+      "expected": {
+        "primary_subjects": [
+          {
+            "name": "中国生物医学工程学会",
+            "type": "organization",
+            "role": "主办单位"
+          },
+          {
+            "name": "胡盛寿",
+            "type": "person",
+            "role": "中国生物医学工程学会理事长"
+          }
+        ],
+        "background_mentions": [
+          "谢京",
+          "骆清铭"
+        ],
+        "locations": [
+          {
+            "location_id": "hainan",
+            "name": "海南省"
+          },
+          {
+            "location_id": "hainan-sanya",
+            "name": "三亚市"
+          }
+        ],
+        "named_events": [
+          {
+            "name": "第十一届全国大学生生物医学工程创新设计竞赛",
+            "kind": "event_occurrence",
+            "series_name": "全国大学生生物医学工程创新设计竞赛"
+          }
+        ],
+        "projects": [],
+        "facts": [
+          {
+            "occurred_on": "2026-07-18",
+            "actors": [
+              "中国生物医学工程学会",
+              "胡盛寿"
+            ],
+            "action": "举办竞赛开幕式并致辞",
+            "object": "第十一届全国大学生生物医学工程创新设计竞赛",
+            "locations": [
+              "三亚市"
+            ],
+            "summary": "全国大学生生物医学工程创新设计竞赛在三亚开幕，胡盛寿视频致辞。"
+          }
+        ],
+        "notes": "谢京、骆清铭仅明确出席，列为背景提及；不为单纯出席生成长期人物轨迹。"
+      }
+    },
+    {
+      "item_id": "hndaily-20260719-58465-19716164",
+      "candidate_id": "A009",
+      "published_date": "2026-07-19",
+      "page_number": "002",
+      "page_name": "本省新闻",
+      "page_sequence": 2,
+      "title": "琼台青年企业家椰城共探优质合作新赛道",
+      "source_fingerprint": "b8c3f521b663e7fa5fef4559b03b97786a0420c1eb53a1e3e9ba5936211b5a8d",
+      "required": false,
+      "review_status": "draft",
+      "expected": {
+        "primary_subjects": [],
+        "background_mentions": [
+          "曹景雯",
+          "刘采宁",
+          "江政",
+          "王晴"
+        ],
+        "locations": [
+          {
+            "location_id": "hainan",
+            "name": "海南省"
+          },
+          {
+            "location_id": "hainan-haikou",
+            "name": "海口市"
+          },
+          {
+            "location_id": "hainan-qionghai",
+            "name": "琼海市"
+          },
+          {
+            "location_id": "hainan-wanning",
+            "name": "万宁市"
+          }
+        ],
+        "named_events": [
+          {
+            "name": "2026琼台合作周琼台青年创享交流活动",
+            "kind": "event_occurrence",
+            "series_name": "琼台合作周"
+          }
+        ],
+        "projects": [],
+        "facts": [
+          {
+            "occurred_on": "2026-07-17",
+            "actors": [
+              "琼台青年企业家"
+            ],
+            "action": "参加交流并对接",
+            "object": "文创文旅、外贸、康养和人工智能等产业合作",
+            "locations": [
+              "海口市"
+            ],
+            "summary": "琼台青年企业家在海口交流自贸港创业实践并对接产业合作。"
+          }
+        ],
+        "notes": "正文未明确主办机构；发言企业和个人为案例受访者，不强行设为整篇主要主体。琼海、万宁是后续考察计划。"
+      }
+    },
+    {
+      "item_id": "hndaily-20260719-58465-19716165",
+      "candidate_id": "A010",
+      "published_date": "2026-07-19",
+      "page_number": "002",
+      "page_name": "本省新闻",
+      "page_sequence": 3,
+      "title": "第三届琼台“宝岛杯”两岸青少年\n文体交流活动在海口启幕",
+      "source_fingerprint": "c52a8fb1361c5d1b29cdad346345a181672f78d4a595f91e9736ca85c163ac6f",
+      "required": false,
+      "review_status": "draft",
+      "expected": {
+        "primary_subjects": [],
+        "background_mentions": [],
+        "locations": [
+          {
+            "location_id": "hainan",
+            "name": "海南省"
+          },
+          {
+            "location_id": "hainan-haikou",
+            "name": "海口市"
+          },
+          {
+            "location_id": "hainan-sanya",
+            "name": "三亚市"
+          },
+          {
+            "location_id": "hainan-qionghai",
+            "name": "琼海市"
+          },
+          {
+            "location_id": "hainan-wanning",
+            "name": "万宁市"
+          },
+          {
+            "location_id": "hainan-chengmai",
+            "name": "澄迈县"
+          },
+          {
+            "location_id": "hainan-baoting",
+            "name": "保亭黎族苗族自治县"
+          }
+        ],
+        "named_events": [
+          {
+            "name": "2026年第三届琼台“宝岛杯”两岸青少年文体交流活动",
+            "kind": "event_occurrence",
+            "series_name": "琼台“宝岛杯”两岸青少年文体交流活动"
+          },
+          {
+            "name": "2026琼台合作周",
+            "kind": "event_occurrence",
+            "series_name": "琼台合作周"
+          }
+        ],
+        "projects": [],
+        "facts": [
+          {
+            "occurred_on": "2026-07-18",
+            "actors": [
+              "琼台两地青少年"
+            ],
+            "action": "参加开幕式并开展交流",
+            "object": "第三届琼台“宝岛杯”两岸青少年文体交流活动",
+            "locations": [
+              "海口市"
+            ],
+            "summary": "近200名琼台青少年在海口参加宝岛杯文体交流活动开幕式。"
+          }
+        ],
+        "notes": "三亚、琼海、万宁、澄迈、保亭是后续研学路线，不应写成7月18日已经到访。"
+      }
+    },
+    {
+      "item_id": "hndaily-20260719-58466-19716178",
+      "candidate_id": "A017",
+      "published_date": "2026-07-19",
+      "page_number": "003",
+      "page_name": "中国新闻",
+      "page_sequence": 1,
+      "title": "全力投入抢险救援 压实责任排查隐患",
+      "source_fingerprint": "0d143cddb0bbf7420b3a03e44a97f86b3b01db8fa26e91ba79a56373b909a8d5",
+      "required": false,
+      "review_status": "draft",
+      "expected": {
+        "primary_subjects": [
+          {
+            "name": "国家防灾减灾救灾委员会",
+            "type": "government",
+            "role": "应急响应和救助协调主体"
+          },
+          {
+            "name": "重庆市人民政府",
+            "type": "government",
+            "role": "属地抢险救援主体"
+          }
+        ],
+        "background_mentions": [
+          "习近平",
+          "万平",
+          "曾宪军",
+          "王传军",
+          "王丽",
+          "张晓军",
+          "熊自力",
+          "赵明"
+        ],
+        "locations": [],
+        "named_events": [
+          {
+            "name": "重庆彭水山体崩塌",
+            "kind": "incident",
+            "series_name": ""
+          }
+        ],
+        "projects": [],
+        "facts": [
+          {
+            "occurred_on": "2026-07-17",
+            "actors": [
+              "重庆市人民政府",
+              "国家防灾减灾救灾委员会"
+            ],
+            "action": "开展抢险搜救并启动应急响应",
+            "object": "重庆彭水山体崩塌",
+            "locations": [
+              "重庆市彭水苗族土家族自治县"
+            ],
+            "summary": "重庆组织搜救和伤员救治，国家防灾减灾救灾委员会启动国家四级救灾应急响应。"
+          },
+          {
+            "occurred_on": "2026-07-18",
+            "actors": [
+              "财政部",
+              "应急管理部",
+              "国家发展和改革委员会"
+            ],
+            "action": "下达救灾资金",
+            "object": "抢险救援、群众救助和灾后恢复",
+            "locations": [
+              "重庆市彭水苗族土家族自治县"
+            ],
+            "summary": "中央部门预拨5000万元救灾资金并安排3000万元中央预算内投资支持救援和恢复。"
+          }
+        ],
+        "notes": "习近平指示是前一日背景；本篇新增价值是各部门和重庆的落实行动，人物轨迹应避免重复生成习近平节点。"
+      }
+    },
+    {
+      "item_id": "hndaily-20260719-58466-19716181",
+      "candidate_id": "A020",
+      "published_date": "2026-07-19",
+      "page_number": "003",
+      "page_name": "中国新闻",
+      "page_sequence": 4,
+      "title": "促进共同繁荣 维护共同安全",
+      "source_fingerprint": "465bff1e29eab74f120d969ce3d977aa7e80009a88a2cb7f953ace2d5fda83db",
+      "required": false,
+      "review_status": "draft",
+      "expected": {
+        "primary_subjects": [
+          {
+            "name": "习近平",
+            "type": "person",
+            "role": "国家主席"
+          }
+        ],
+        "background_mentions": [
+          "托卡耶夫",
+          "洪玛奈",
+          "阿努廷",
+          "古特雷斯",
+          "薛澜",
+          "王兴兴",
+          "霍福鹏",
+          "周伯文",
+          "曾毅",
+          "韦拉拉特纳",
+          "杨植麟",
+          "阿曼迪普·辛格·吉尔",
+          "多马茨"
+        ],
+        "locations": [],
+        "named_events": [
+          {
+            "name": "2026世界人工智能大会暨人工智能全球治理高级别会议",
+            "kind": "event_occurrence",
+            "series_name": "世界人工智能大会"
+          }
+        ],
+        "projects": [],
+        "facts": [
+          {
+            "occurred_on": "2026-07-17",
+            "actors": [
+              "习近平"
+            ],
+            "action": "发表主旨讲话",
+            "object": "全球人工智能发展与治理",
+            "locations": [
+              "上海市"
+            ],
+            "summary": "习近平在大会提出全球人工智能治理主张和面向发展中国家的能力建设举措。"
+          }
+        ],
+        "notes": "反响综述，与7月18日多篇报道对应同一讲话行动；受访评价者属于背景提及，后续事实层需跨篇去重。"
+      }
+    },
+    {
+      "item_id": "hndaily-20260719-58467-19716188",
+      "candidate_id": "A022",
+      "published_date": "2026-07-19",
+      "page_number": "004",
+      "page_name": "文化周刊",
+      "page_sequence": 1,
+      "title": "一座小城",
+      "source_fingerprint": "0c2577f1b5557168acd4bd2388e236cc9c6f306b7366be312ea5520c338250ab",
+      "required": false,
+      "review_status": "draft",
+      "expected": {
+        "primary_subjects": [],
+        "background_mentions": [],
+        "locations": [
+          {
+            "location_id": "hainan-lingao",
+            "name": "临高县"
+          }
+        ],
+        "named_events": [],
+        "projects": [],
+        "facts": [],
+        "notes": "文化随笔，核心是临高县城、文澜河与地方记忆；没有可验证的当日新闻行动，事实和主体留空是明确的负样本答案。"
+      }
+    },
+    {
+      "item_id": "hndaily-20260719-58467-19716191",
+      "candidate_id": "A023",
+      "published_date": "2026-07-19",
+      "page_number": "004",
+      "page_name": "文化周刊",
+      "page_sequence": 2,
+      "title": "远去的巴斯特",
+      "source_fingerprint": "7d127fcdfdf10892f519262aebae1da2337b86ebb0072098156caba48c785baa",
+      "required": false,
+      "review_status": "draft",
+      "expected": {
+        "primary_subjects": [],
+        "background_mentions": [],
+        "locations": [],
+        "named_events": [],
+        "projects": [],
+        "facts": [],
+        "notes": "个人叙事随笔，讲述作者与宠物犬巴斯特的往事；不属于海南新闻事实，也不应把作者、宠物或北京强行生成为站内长期主体、事件或地点。"
+      }
+    }
+  ]
+}

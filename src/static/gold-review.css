@@ -1,0 +1,135 @@
+:root {
+  color-scheme: light;
+  --bg: #f2f0ea;
+  --paper: #fffef9;
+  --ink: #17201d;
+  --muted: #707974;
+  --line: #d9d8d0;
+  --soft-line: #ebe9e1;
+  --accent: #b73431;
+  --accent-soft: #f7e7e2;
+  --green: #2f7653;
+  --blue: #426786;
+  --shadow: 0 12px 30px rgba(29, 40, 35, .08);
+}
+
+* { box-sizing: border-box; }
+html { background: var(--bg); color: var(--ink); font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", sans-serif; }
+body { margin: 0; min-width: 1180px; overflow-x: hidden; }
+button, input, textarea, select { font: inherit; }
+button { cursor: pointer; }
+[hidden] { display: none !important; }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+.gold-app { min-height: 100vh; }
+.gold-topbar { position: sticky; top: 0; z-index: 30; display: flex; min-height: 86px; padding: 16px 22px; align-items: center; justify-content: space-between; gap: 24px; border-bottom: 1px solid var(--line); background: color-mix(in srgb, var(--paper) 96%, transparent); backdrop-filter: blur(14px); }
+.gold-eyebrow { color: var(--accent); font-size: 10px; font-weight: 800; letter-spacing: .16em; }
+.gold-topbar h1 { margin: 1px 0 0; font: 800 24px Georgia, "Noto Serif CJK SC", serif; }
+.gold-topbar p { margin: 2px 0 0; color: var(--muted); font-size: 12px; }
+.gold-actions { display: flex; align-items: center; gap: 8px; }
+.save-state { margin-right: 5px; color: var(--muted); font-size: 11px; }
+.button { min-height: 36px; padding: 7px 12px; border: 1px solid var(--line); border-radius: 7px; background: var(--paper); color: var(--ink); font-weight: 700; font-size: 12px; }
+.button.primary { border-color: var(--accent); color: #fff; background: var(--accent); }
+.button.secondary:hover { border-color: var(--ink); }
+
+.gold-progress { display: grid; min-height: 58px; padding: 9px 22px; grid-template-columns: 110px 110px 130px minmax(240px, 1fr); align-items: center; gap: 16px; border-bottom: 1px solid var(--line); background: var(--paper); }
+.gold-progress > div:not(.progress-track) { display: flex; align-items: baseline; gap: 6px; }
+.gold-progress strong { font: 800 19px Georgia, serif; }
+.gold-progress span { color: var(--muted); font-size: 11px; }
+.progress-track { overflow: hidden; height: 7px; border-radius: 999px; background: var(--soft-line); }
+.progress-track span { display: block; width: 0; height: 100%; border-radius: inherit; background: var(--green); transition: width .2s ease; }
+
+.gold-workspace { display: grid; min-height: calc(100vh - 145px); grid-template-columns: 292px minmax(470px, 1fr) 438px; }
+.gold-queue, .gold-editor { height: calc(100vh - 145px); overflow-y: auto; background: var(--paper); }
+.gold-queue { border-right: 1px solid var(--line); }
+.gold-editor { padding: 18px; border-left: 1px solid var(--line); }
+.gold-source { height: calc(100vh - 145px); padding: 24px 32px 70px; overflow-y: auto; }
+
+.queue-tools { position: sticky; top: 0; z-index: 5; padding: 12px; border-bottom: 1px solid var(--line); background: var(--paper); }
+.queue-tools input { width: 100%; height: 36px; padding: 0 10px; border: 1px solid var(--line); border-radius: 7px; background: var(--bg); color: var(--ink); }
+.segmented { display: grid; margin-top: 8px; grid-template-columns: repeat(3, 1fr); gap: 3px; padding: 3px; border-radius: 7px; background: var(--bg); }
+.segmented button { min-height: 29px; border: 0; border-radius: 5px; color: var(--muted); background: transparent; font-size: 11px; }
+.segmented button.active { color: var(--ink); background: var(--paper); box-shadow: 0 1px 4px rgba(0,0,0,.08); }
+.queue-date { padding: 11px 13px 5px; color: var(--muted); font-size: 10px; font-weight: 800; letter-spacing: .08em; }
+.queue-item { display: grid; width: 100%; padding: 10px 12px; grid-template-columns: 31px minmax(0, 1fr) 18px; gap: 8px; border: 0; border-left: 3px solid transparent; border-bottom: 1px solid var(--soft-line); color: var(--ink); background: transparent; text-align: left; }
+.queue-item:hover { background: var(--bg); }
+.queue-item.active { border-left-color: var(--accent); background: var(--accent-soft); }
+.queue-id { color: var(--blue); font: 800 10px Georgia, serif; }
+.queue-copy strong { display: -webkit-box; overflow: hidden; font: 700 12px/1.45 Georgia, "Noto Serif CJK SC", serif; -webkit-box-orient: vertical; -webkit-line-clamp: 2; }
+.queue-copy span { display: block; margin-top: 3px; color: var(--muted); font-size: 10px; }
+.status-dot { width: 8px; height: 8px; margin-top: 4px; border-radius: 50%; background: var(--line); }
+.queue-item.reviewed .status-dot { background: var(--green); }
+.queue-item.required .queue-id::after { content: " · 必测"; color: var(--accent); }
+
+.source-header { padding-bottom: 18px; border-bottom: 1px solid var(--line); }
+.source-meta { display: flex; align-items: center; gap: 8px; color: var(--muted); font-size: 11px; }
+.source-header h2 { margin: 8px 0 0; font: 800 30px/1.35 Georgia, "Noto Serif CJK SC", serif; }
+.source-header a { color: var(--accent); }
+.source-block { margin-top: 22px; }
+.source-block > header { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
+.source-block h3 { margin: 0; font-size: 12px; letter-spacing: .08em; }
+.source-block header span { color: var(--muted); font-size: 10px; }
+.current-card { margin-top: 9px; padding: 15px; border: 1px solid var(--line); border-radius: 9px; background: var(--paper); box-shadow: var(--shadow); }
+.current-card p { margin: 0; line-height: 1.75; }
+.tag-row { display: flex; margin-top: 10px; flex-wrap: wrap; gap: 5px; }
+.tag { padding: 3px 7px; border: 1px solid var(--line); border-radius: 999px; color: var(--muted); font-size: 10px; }
+.source-content { margin-top: 9px; white-space: pre-wrap; font: 15px/1.9 Georgia, "Noto Serif CJK SC", serif; }
+.candidate-warning { margin-top: 10px; padding: 10px 12px; border-left: 3px solid var(--accent); color: var(--muted); background: var(--accent-soft); font-size: 11px; }
+.empty-panel { padding: 30px; color: var(--muted); }
+
+.editor-top { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.editor-top h2 { margin: 0; font: 800 18px Georgia, serif; }
+.sample-toggle { display: flex; align-items: center; gap: 6px; font-size: 11px; }
+.sample-toggle input { accent-color: var(--accent); }
+.review-state { display: grid; margin-top: 13px; grid-template-columns: 1fr 1fr; gap: 8px; }
+.review-state button { min-height: 34px; border: 1px solid var(--line); border-radius: 7px; color: var(--muted); background: var(--paper); font-size: 11px; font-weight: 700; }
+.review-state button.active { border-color: var(--green); color: #fff; background: var(--green); }
+.field-section { margin-top: 20px; padding-top: 17px; border-top: 1px solid var(--line); }
+.field-section > header { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
+.field-section h3 { margin: 0; font-size: 12px; }
+.field-section header span { color: var(--muted); font-size: 10px; }
+.field-help { margin: 5px 0 10px; color: var(--muted); font-size: 10px; line-height: 1.55; }
+.row-list { display: grid; gap: 7px; }
+.edit-row { display: grid; gap: 6px; }
+.subject-row { grid-template-columns: minmax(90px, 1.1fr) 92px minmax(100px, 1fr) 28px; }
+.event-row { grid-template-columns: minmax(120px, 1.5fr) 126px minmax(110px, 1fr) 28px; }
+.project-row { grid-template-columns: minmax(0, 1fr) 28px; }
+.fact-row { padding: 10px; grid-template-columns: 110px minmax(100px, 1fr) minmax(100px, 1fr) 28px; border: 1px solid var(--line); border-radius: 8px; background: var(--bg); }
+.fact-row .wide { grid-column: 1 / -1; }
+.edit-row input, .edit-row select, .field-section textarea { min-width: 0; width: 100%; min-height: 34px; padding: 6px 8px; border: 1px solid var(--line); border-radius: 6px; color: var(--ink); background: var(--paper); font-size: 11px; }
+.field-section textarea { min-height: 72px; resize: vertical; }
+.remove-row { width: 28px; height: 34px; padding: 0; border: 1px solid var(--line); border-radius: 6px; color: var(--muted); background: var(--paper); }
+.add-row { margin-top: 7px; padding: 5px 0; border: 0; color: var(--accent); background: transparent; font-size: 11px; font-weight: 750; }
+.check-grid { display: flex; flex-wrap: wrap; gap: 6px; }
+.check-chip input { position: absolute; opacity: 0; pointer-events: none; }
+.check-chip span { display: inline-flex; min-height: 30px; padding: 5px 9px; align-items: center; border: 1px solid var(--line); border-radius: 999px; color: var(--muted); background: var(--paper); font-size: 10px; }
+.check-chip input:checked + span { border-color: var(--green); color: #fff; background: var(--green); }
+.nav-buttons { position: sticky; bottom: -18px; display: grid; margin: 22px -18px -18px; padding: 12px 18px; grid-template-columns: 1fr 1fr; gap: 8px; border-top: 1px solid var(--line); background: var(--paper); }
+.nav-buttons button { min-height: 36px; border: 1px solid var(--line); border-radius: 7px; background: var(--paper); font-size: 11px; font-weight: 700; }
+
+@media (max-width: 1320px) {
+  body { min-width: 1040px; }
+  .gold-workspace { grid-template-columns: 260px minmax(420px, 1fr) 390px; }
+}
+
+@media (max-width: 900px) {
+  body { min-width: 320px; }
+  .gold-topbar { position: static; padding: 15px 16px; align-items: flex-start; flex-direction: column; }
+  .gold-actions { width: 100%; flex-wrap: wrap; }
+  .save-state { width: 100%; }
+  .gold-progress { padding: 10px 16px; grid-template-columns: repeat(3, 1fr); }
+  .gold-progress > div:not(.progress-track) { display: grid; gap: 0; }
+  .progress-track { grid-column: 1 / -1; }
+  .gold-workspace { display: block; }
+  .gold-queue, .gold-source, .gold-editor { width: 100%; height: auto; overflow: visible; border: 0; }
+  .gold-queue { max-height: 360px; overflow-y: auto; border-bottom: 1px solid var(--line); }
+  .queue-tools { top: 0; }
+  .gold-source { padding: 24px 17px 50px; }
+  .source-header h2 { font-size: 26px; }
+  .gold-editor { padding: 20px 16px 70px; border-top: 5px solid var(--line); }
+  .subject-row, .event-row { grid-template-columns: minmax(0, 1fr) 105px 28px; }
+  .subject-row [data-subject-field="role"], .event-row [data-event-field="series_name"] { grid-column: 1 / 3; }
+  .fact-row { grid-template-columns: 105px minmax(0, 1fr) 28px; }
+  .fact-row [data-fact-field="action"] { grid-column: 1 / 3; }
+  .nav-buttons { bottom: 0; }
+}

@@ -18,6 +18,8 @@ def _article_summary(article):
         "subjects": article["subjects"],
         "locations": article["locations"],
         "topics": article["topics"],
+        "events": article.get("events", []),
+        "plans": article.get("plans", []),
         "detail_path": (
             f'/items/{article["published_date"]}/{article["item_id"]}/'
         ),
