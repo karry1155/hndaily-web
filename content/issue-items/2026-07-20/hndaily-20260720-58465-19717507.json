@@ -16,7 +16,13 @@
       "name": "博鳌乐城国际医疗旅游先行区",
       "type": "project",
       "role": "医疗服务改善实施区域",
-      "evidence": "博鳌乐城国际医疗旅游先行区"
+      "evidence": "博鳌乐城国际医疗旅游先行区",
+      "aliases": [
+        {
+          "name": "乐城",
+          "evidence": "博鳌乐城国际医疗旅游先行区（以下简称乐城）"
+        }
+      ]
     },
     {
       "subject_id": "subject-669d102b807294",

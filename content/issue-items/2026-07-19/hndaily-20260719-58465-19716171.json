@@ -35,18 +35,18 @@
   ],
   "locations": [
     {
-      "location_id": "hainan-baisha",
-      "name": "白沙黎族自治县",
-      "code": "469025",
-      "level": "county",
-      "evidence": "白沙黎族自治县人民医院"
-    },
-    {
       "location_id": "hainan",
       "name": "海南省",
       "code": "460000",
       "level": "province",
       "evidence": "海南省第一批、第二批“名老中医药专家下基层”项目骨干"
+    },
+    {
+      "location_id": "hainan-baisha",
+      "name": "白沙黎族自治县",
+      "code": "469025",
+      "level": "county",
+      "evidence": "白沙黎族自治县人民医院"
     }
   ],
   "topics": [

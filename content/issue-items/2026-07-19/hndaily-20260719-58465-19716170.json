@@ -63,18 +63,18 @@
   ],
   "locations": [
     {
-      "location_id": "hainan-lingshui",
-      "name": "陵水黎族自治县",
-      "code": "469028",
-      "level": "county",
-      "evidence": "陵水黎族自治县民族团结广场"
-    },
-    {
       "location_id": "hainan",
       "name": "海南省",
       "code": "460000",
       "level": "province",
       "evidence": "2026年海南省万名大学生基层科普行"
+    },
+    {
+      "location_id": "hainan-lingshui",
+      "name": "陵水黎族自治县",
+      "code": "469028",
+      "level": "county",
+      "evidence": "陵水黎族自治县民族团结广场"
     }
   ],
   "topics": [

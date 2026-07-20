@@ -35,11 +35,11 @@
   ],
   "locations": [
     {
-      "location_id": "hainan-qionghai",
-      "name": "琼海市",
-      "code": "469002",
-      "level": "county",
-      "evidence": "在琼海留客村"
+      "location_id": "hainan",
+      "name": "海南省",
+      "code": "460000",
+      "level": "province",
+      "evidence": "两岸媒体人海南行"
     },
     {
       "location_id": "hainan-sanya",
@@ -49,11 +49,11 @@
       "evidence": "还将走进三亚"
     },
     {
-      "location_id": "hainan",
-      "name": "海南省",
-      "code": "460000",
-      "level": "province",
-      "evidence": "两岸媒体人海南行"
+      "location_id": "hainan-qionghai",
+      "name": "琼海市",
+      "code": "469002",
+      "level": "county",
+      "evidence": "在琼海留客村"
     }
   ],
   "topics": [

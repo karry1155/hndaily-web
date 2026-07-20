@@ -95,14 +95,14 @@ class HnhotAssetTests(unittest.TestCase):
             manifest,
             {
                 "schema_version": 1,
-                "prompt_version": "hnhot-v2.1",
+                "prompt_version": "hnhot-v2.2",
                 "article_schema_version": 8,
                 "prompt": "prompt.md",
                 "output_schema": "schema.json",
             },
         )
         self.assertEqual(schema["properties"]["schema_version"], {"const": 8})
-        self.assertEqual(schema["properties"]["prompt_version"], {"const": "hnhot-v2.1"})
+        self.assertEqual(schema["properties"]["prompt_version"], {"const": "hnhot-v2.2"})
         item = schema["$defs"]["item"]
         self.assertEqual(
             set(item["required"]),
@@ -113,6 +113,10 @@ class HnhotAssetTests(unittest.TestCase):
         )
         self.assertNotIn("event_relation", item["properties"])
         self.assertEqual(item["properties"]["subjects"]["maxItems"], 24)
+        self.assertNotIn("aliases", schema["$defs"]["subject"]["required"])
+        self.assertEqual(
+            set(schema["$defs"]["subjectAlias"]["required"]), {"name", "evidence"}
+        )
         for definition in ("event", "plan"):
             self.assertEqual(
                 set(schema["$defs"][definition]["required"]), {"name", "evidence"}
@@ -121,6 +125,7 @@ class HnhotAssetTests(unittest.TestCase):
             "主体和事件没有候选词表", "不判断 `existing` 或 `new`",
             "书名号", "不生成规划 ID", "2026世界人工智能大会",
             "不得只挑一个代表人物", "不是人物页、机构页或项目页的准入名单",
+            "以下简称", "不得根据名称长度",
         ):
             self.assertIn(token, prompt)
 

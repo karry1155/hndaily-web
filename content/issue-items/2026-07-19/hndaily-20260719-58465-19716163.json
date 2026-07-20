@@ -21,18 +21,18 @@
   ],
   "locations": [
     {
-      "location_id": "hainan-sanya",
-      "name": "三亚市",
-      "code": "460200",
-      "level": "prefecture",
-      "evidence": "开幕式在三亚举行"
-    },
-    {
       "location_id": "hainan",
       "name": "海南省",
       "code": "460000",
       "level": "province",
       "evidence": "海南自贸港生物医药产业发展"
+    },
+    {
+      "location_id": "hainan-sanya",
+      "name": "三亚市",
+      "code": "460200",
+      "level": "prefecture",
+      "evidence": "开幕式在三亚举行"
     }
   ],
   "topics": [

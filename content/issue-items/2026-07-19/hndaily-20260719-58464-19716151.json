@@ -35,11 +35,11 @@
       "evidence": "三亚市崖州区镇海村"
     },
     {
-      "location_id": "hainan-ledong",
-      "name": "乐东黎族自治县",
-      "code": "469027",
-      "level": "county",
-      "evidence": "乐东黎族自治县莺歌踏浪驿站"
+      "location_id": "hainan-danzhou",
+      "name": "儋州市",
+      "code": "460400",
+      "level": "prefecture",
+      "evidence": "儋州市排浦飞鹭停车区"
     },
     {
       "location_id": "hainan-dongfang",
@@ -56,11 +56,11 @@
       "evidence": "昌江黎族自治县棋子湾大角公园"
     },
     {
-      "location_id": "hainan-danzhou",
-      "name": "儋州市",
-      "code": "460400",
-      "level": "prefecture",
-      "evidence": "儋州市排浦飞鹭停车区"
+      "location_id": "hainan-ledong",
+      "name": "乐东黎族自治县",
+      "code": "469027",
+      "level": "county",
+      "evidence": "乐东黎族自治县莺歌踏浪驿站"
     }
   ],
   "topics": [

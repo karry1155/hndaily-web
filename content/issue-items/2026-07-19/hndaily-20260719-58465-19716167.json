@@ -23,7 +23,13 @@
       "name": "海南省绿色低碳发展研究院",
       "type": "organization",
       "role": "发布会主办方",
-      "evidence": "海南省绿色低碳发展研究院（以下简称绿研院）主办"
+      "evidence": "海南省绿色低碳发展研究院（以下简称绿研院）主办",
+      "aliases": [
+        {
+          "name": "绿研院",
+          "evidence": "海南省绿色低碳发展研究院（以下简称绿研院）"
+        }
+      ]
     },
     {
       "subject_id": "subject-dbc79461ce2977",
@@ -35,18 +41,18 @@
   ],
   "locations": [
     {
-      "location_id": "hainan-haikou",
-      "name": "海口市",
-      "code": "460100",
-      "level": "prefecture",
-      "evidence": "在海口举行"
-    },
-    {
       "location_id": "hainan",
       "name": "海南省",
       "code": "460000",
       "level": "province",
       "evidence": "推动海南城乡建设绿色低碳转型"
+    },
+    {
+      "location_id": "hainan-haikou",
+      "name": "海口市",
+      "code": "460100",
+      "level": "prefecture",
+      "evidence": "在海口举行"
     }
   ],
   "topics": [

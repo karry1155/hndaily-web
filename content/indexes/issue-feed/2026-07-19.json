@@ -270,18 +270,18 @@
       ],
       "locations": [
         {
-          "location_id": "hainan-haikou",
-          "name": "海口市",
-          "code": "460100",
-          "level": "prefecture",
-          "evidence": "本报海口7月18日讯"
-        },
-        {
           "location_id": "hainan",
           "name": "海南省",
           "code": "460000",
           "level": "province",
           "evidence": "海南国际旅游岛欢乐节"
+        },
+        {
+          "location_id": "hainan-haikou",
+          "name": "海口市",
+          "code": "460100",
+          "level": "prefecture",
+          "evidence": "本报海口7月18日讯"
         }
       ],
       "topics": [
@@ -340,11 +340,11 @@
           "evidence": "三亚市崖州区镇海村"
         },
         {
-          "location_id": "hainan-ledong",
-          "name": "乐东黎族自治县",
-          "code": "469027",
-          "level": "county",
-          "evidence": "乐东黎族自治县莺歌踏浪驿站"
+          "location_id": "hainan-danzhou",
+          "name": "儋州市",
+          "code": "460400",
+          "level": "prefecture",
+          "evidence": "儋州市排浦飞鹭停车区"
         },
         {
           "location_id": "hainan-dongfang",
@@ -361,11 +361,11 @@
           "evidence": "昌江黎族自治县棋子湾大角公园"
         },
         {
-          "location_id": "hainan-danzhou",
-          "name": "儋州市",
-          "code": "460400",
-          "level": "prefecture",
-          "evidence": "儋州市排浦飞鹭停车区"
+          "location_id": "hainan-ledong",
+          "name": "乐东黎族自治县",
+          "code": "469027",
+          "level": "county",
+          "evidence": "乐东黎族自治县莺歌踏浪驿站"
         }
       ],
       "topics": [
@@ -422,18 +422,18 @@
       ],
       "locations": [
         {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "海南国际旅游岛欢乐节"
+        },
+        {
           "location_id": "hainan-haikou",
           "name": "海口市",
           "code": "460100",
           "level": "prefecture",
           "evidence": "海口市精准投放500万元餐饮消费券"
-        },
-        {
-          "location_id": "hainan-wanning",
-          "name": "万宁市",
-          "code": "469006",
-          "level": "county",
-          "evidence": "万宁王府井国际免税港"
         },
         {
           "location_id": "hainan-qionghai",
@@ -443,11 +443,11 @@
           "evidence": "琼海博鳌中免"
         },
         {
-          "location_id": "hainan",
-          "name": "海南省",
-          "code": "460000",
-          "level": "province",
-          "evidence": "海南国际旅游岛欢乐节"
+          "location_id": "hainan-wanning",
+          "name": "万宁市",
+          "code": "469006",
+          "level": "county",
+          "evidence": "万宁王府井国际免税港"
         }
       ],
       "topics": [
@@ -497,6 +497,13 @@
       ],
       "locations": [
         {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "海南省税务部门紧扣终端消费环节"
+        },
+        {
           "location_id": "hainan-haikou",
           "name": "海口市",
           "code": "460100",
@@ -516,13 +523,6 @@
           "code": "469023",
           "level": "county",
           "evidence": "在澄迈县，税务部门依托征纳互动平台"
-        },
-        {
-          "location_id": "hainan",
-          "name": "海南省",
-          "code": "460000",
-          "level": "province",
-          "evidence": "海南省税务部门紧扣终端消费环节"
         }
       ],
       "topics": [
@@ -622,18 +622,18 @@
       ],
       "locations": [
         {
-          "location_id": "hainan-qiongzhong",
-          "name": "琼中黎族苗族自治县",
-          "code": "469030",
-          "level": "county",
-          "evidence": "琼中黎族苗族自治县"
-        },
-        {
           "location_id": "hainan",
           "name": "海南省",
           "code": "460000",
           "level": "province",
           "evidence": "海南是国内公认的顶级沉香核心产区"
+        },
+        {
+          "location_id": "hainan-qiongzhong",
+          "name": "琼中黎族苗族自治县",
+          "code": "469030",
+          "level": "county",
+          "evidence": "琼中黎族苗族自治县"
         }
       ],
       "topics": [
@@ -688,18 +688,18 @@
       ],
       "locations": [
         {
-          "location_id": "hainan-sanya",
-          "name": "三亚市",
-          "code": "460200",
-          "level": "prefecture",
-          "evidence": "开幕式在三亚举行"
-        },
-        {
           "location_id": "hainan",
           "name": "海南省",
           "code": "460000",
           "level": "province",
           "evidence": "海南自贸港生物医药产业发展"
+        },
+        {
+          "location_id": "hainan-sanya",
+          "name": "三亚市",
+          "code": "460200",
+          "level": "prefecture",
+          "evidence": "开幕式在三亚举行"
         }
       ],
       "topics": [
@@ -770,6 +770,13 @@
       ],
       "locations": [
         {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "海南自贸港全岛封关运作全新发展机遇"
+        },
+        {
           "location_id": "hainan-haikou",
           "name": "海口市",
           "code": "460100",
@@ -789,13 +796,6 @@
           "code": "469006",
           "level": "county",
           "evidence": "深入琼海、万宁等重点市县实地调研"
-        },
-        {
-          "location_id": "hainan",
-          "name": "海南省",
-          "code": "460000",
-          "level": "province",
-          "evidence": "海南自贸港全岛封关运作全新发展机遇"
         }
       ],
       "topics": [
@@ -846,6 +846,13 @@
       "subjects": [],
       "locations": [
         {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "认识海南自贸港发展风貌"
+        },
+        {
           "location_id": "hainan-haikou",
           "name": "海口市",
           "code": "460100",
@@ -886,13 +893,6 @@
           "code": "469029",
           "level": "county",
           "evidence": "研学路线覆盖海口、三亚、琼海、万宁、澄迈、保亭多地"
-        },
-        {
-          "location_id": "hainan",
-          "name": "海南省",
-          "code": "460000",
-          "level": "province",
-          "evidence": "认识海南自贸港发展风貌"
         }
       ],
       "topics": [
@@ -960,11 +960,11 @@
       ],
       "locations": [
         {
-          "location_id": "hainan-qionghai",
-          "name": "琼海市",
-          "code": "469002",
-          "level": "county",
-          "evidence": "在琼海留客村"
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "两岸媒体人海南行"
         },
         {
           "location_id": "hainan-sanya",
@@ -974,11 +974,11 @@
           "evidence": "还将走进三亚"
         },
         {
-          "location_id": "hainan",
-          "name": "海南省",
-          "code": "460000",
-          "level": "province",
-          "evidence": "两岸媒体人海南行"
+          "location_id": "hainan-qionghai",
+          "name": "琼海市",
+          "code": "469002",
+          "level": "county",
+          "evidence": "在琼海留客村"
         }
       ],
       "topics": [
@@ -1035,7 +1035,13 @@
           "name": "海南省绿色低碳发展研究院",
           "type": "organization",
           "role": "发布会主办方",
-          "evidence": "海南省绿色低碳发展研究院（以下简称绿研院）主办"
+          "evidence": "海南省绿色低碳发展研究院（以下简称绿研院）主办",
+          "aliases": [
+            {
+              "name": "绿研院",
+              "evidence": "海南省绿色低碳发展研究院（以下简称绿研院）"
+            }
+          ]
         },
         {
           "subject_id": "subject-dbc79461ce2977",
@@ -1047,18 +1053,18 @@
       ],
       "locations": [
         {
-          "location_id": "hainan-haikou",
-          "name": "海口市",
-          "code": "460100",
-          "level": "prefecture",
-          "evidence": "在海口举行"
-        },
-        {
           "location_id": "hainan",
           "name": "海南省",
           "code": "460000",
           "level": "province",
           "evidence": "推动海南城乡建设绿色低碳转型"
+        },
+        {
+          "location_id": "hainan-haikou",
+          "name": "海口市",
+          "code": "460100",
+          "level": "prefecture",
+          "evidence": "在海口举行"
         }
       ],
       "topics": [
@@ -1113,18 +1119,18 @@
       ],
       "locations": [
         {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "海南以“美滩行动”为抓手"
+        },
+        {
           "location_id": "hainan-haikou",
           "name": "海口市",
           "code": "460100",
           "level": "prefecture",
           "evidence": "主题活动在海口举行"
-        },
-        {
-          "location_id": "hainan-chengmai",
-          "name": "澄迈县",
-          "code": "469023",
-          "level": "county",
-          "evidence": "澄迈县桥头镇玉包村"
         },
         {
           "location_id": "hainan-wenchang",
@@ -1134,13 +1140,6 @@
           "evidence": "文昌推出净滩公益健步走活动"
         },
         {
-          "location_id": "hainan-changjiang",
-          "name": "昌江黎族自治县",
-          "code": "469026",
-          "level": "county",
-          "evidence": "昌江深耕“新时代‘渔夫与海’”志愿服务品牌"
-        },
-        {
           "location_id": "hainan-wanning",
           "name": "万宁市",
           "code": "469006",
@@ -1148,11 +1147,18 @@
           "evidence": "万宁以政企社协同模式常态化开展“美滩行动”"
         },
         {
-          "location_id": "hainan",
-          "name": "海南省",
-          "code": "460000",
-          "level": "province",
-          "evidence": "海南以“美滩行动”为抓手"
+          "location_id": "hainan-chengmai",
+          "name": "澄迈县",
+          "code": "469023",
+          "level": "county",
+          "evidence": "澄迈县桥头镇玉包村"
+        },
+        {
+          "location_id": "hainan-changjiang",
+          "name": "昌江黎族自治县",
+          "code": "469026",
+          "level": "county",
+          "evidence": "昌江深耕“新时代‘渔夫与海’”志愿服务品牌"
         }
       ],
       "topics": [
@@ -1248,18 +1254,18 @@
       ],
       "locations": [
         {
-          "location_id": "hainan-lingshui",
-          "name": "陵水黎族自治县",
-          "code": "469028",
-          "level": "county",
-          "evidence": "陵水黎族自治县民族团结广场"
-        },
-        {
           "location_id": "hainan",
           "name": "海南省",
           "code": "460000",
           "level": "province",
           "evidence": "2026年海南省万名大学生基层科普行"
+        },
+        {
+          "location_id": "hainan-lingshui",
+          "name": "陵水黎族自治县",
+          "code": "469028",
+          "level": "county",
+          "evidence": "陵水黎族自治县民族团结广场"
         }
       ],
       "topics": [
@@ -1318,18 +1324,18 @@
       ],
       "locations": [
         {
-          "location_id": "hainan-baisha",
-          "name": "白沙黎族自治县",
-          "code": "469025",
-          "level": "county",
-          "evidence": "白沙黎族自治县人民医院"
-        },
-        {
           "location_id": "hainan",
           "name": "海南省",
           "code": "460000",
           "level": "province",
           "evidence": "海南省第一批、第二批“名老中医药专家下基层”项目骨干"
+        },
+        {
+          "location_id": "hainan-baisha",
+          "name": "白沙黎族自治县",
+          "code": "469025",
+          "level": "county",
+          "evidence": "白沙黎族自治县人民医院"
         }
       ],
       "topics": [

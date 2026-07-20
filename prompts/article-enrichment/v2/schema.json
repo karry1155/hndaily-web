@@ -6,7 +6,7 @@
   "required": ["schema_version", "prompt_version", "input_fingerprint", "items"],
   "properties": {
     "schema_version": {"const": 8},
-    "prompt_version": {"const": "hnhot-v2.1"},
+    "prompt_version": {"const": "hnhot-v2.2"},
     "input_fingerprint": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
     "items": {"type": "array", "items": {"$ref": "#/$defs/item"}}
   },
@@ -17,6 +17,15 @@
       "maxLength": 240,
       "description": "必须从本条标题或正文连续逐字复制，不得改写、拼接或替换标点。"
     },
+    "subjectAlias": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "evidence"],
+      "properties": {
+        "name": {"type": "string", "minLength": 1, "maxLength": 40},
+        "evidence": {"$ref": "#/$defs/evidence"}
+      }
+    },
     "subject": {
       "type": "object",
       "additionalProperties": false,
@@ -25,7 +34,13 @@
         "name": {"type": "string", "minLength": 1, "maxLength": 80},
         "type": {"enum": ["person", "government", "organization", "company", "project"]},
         "role": {"type": ["string", "null"], "maxLength": 100},
-        "evidence": {"$ref": "#/$defs/evidence"}
+        "evidence": {"$ref": "#/$defs/evidence"},
+        "aliases": {
+          "type": "array",
+          "maxItems": 6,
+          "items": {"$ref": "#/$defs/subjectAlias"},
+          "description": "仅记录原文明确声明的该主体简称或别称；没有时省略本字段。"
+        }
       }
     },
     "location": {

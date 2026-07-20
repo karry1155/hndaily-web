@@ -146,18 +146,18 @@
       ],
       "locations": [
         {
-          "location_id": "hainan-haikou",
-          "name": "海口市",
-          "code": "460100",
-          "level": "prefecture",
-          "evidence": "本报海口7月18日讯"
-        },
-        {
           "location_id": "hainan",
           "name": "海南省",
           "code": "460000",
           "level": "province",
           "evidence": "海南国际旅游岛欢乐节"
+        },
+        {
+          "location_id": "hainan-haikou",
+          "name": "海口市",
+          "code": "460100",
+          "level": "prefecture",
+          "evidence": "本报海口7月18日讯"
         }
       ],
       "topics": [
@@ -216,11 +216,11 @@
           "evidence": "三亚市崖州区镇海村"
         },
         {
-          "location_id": "hainan-ledong",
-          "name": "乐东黎族自治县",
-          "code": "469027",
-          "level": "county",
-          "evidence": "乐东黎族自治县莺歌踏浪驿站"
+          "location_id": "hainan-danzhou",
+          "name": "儋州市",
+          "code": "460400",
+          "level": "prefecture",
+          "evidence": "儋州市排浦飞鹭停车区"
         },
         {
           "location_id": "hainan-dongfang",
@@ -237,11 +237,11 @@
           "evidence": "昌江黎族自治县棋子湾大角公园"
         },
         {
-          "location_id": "hainan-danzhou",
-          "name": "儋州市",
-          "code": "460400",
-          "level": "prefecture",
-          "evidence": "儋州市排浦飞鹭停车区"
+          "location_id": "hainan-ledong",
+          "name": "乐东黎族自治县",
+          "code": "469027",
+          "level": "county",
+          "evidence": "乐东黎族自治县莺歌踏浪驿站"
         }
       ],
       "topics": [
@@ -298,18 +298,18 @@
       ],
       "locations": [
         {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "海南国际旅游岛欢乐节"
+        },
+        {
           "location_id": "hainan-haikou",
           "name": "海口市",
           "code": "460100",
           "level": "prefecture",
           "evidence": "海口市精准投放500万元餐饮消费券"
-        },
-        {
-          "location_id": "hainan-wanning",
-          "name": "万宁市",
-          "code": "469006",
-          "level": "county",
-          "evidence": "万宁王府井国际免税港"
         },
         {
           "location_id": "hainan-qionghai",
@@ -319,11 +319,11 @@
           "evidence": "琼海博鳌中免"
         },
         {
-          "location_id": "hainan",
-          "name": "海南省",
-          "code": "460000",
-          "level": "province",
-          "evidence": "海南国际旅游岛欢乐节"
+          "location_id": "hainan-wanning",
+          "name": "万宁市",
+          "code": "469006",
+          "level": "county",
+          "evidence": "万宁王府井国际免税港"
         }
       ],
       "topics": [
@@ -373,6 +373,13 @@
       ],
       "locations": [
         {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "海南省税务部门紧扣终端消费环节"
+        },
+        {
           "location_id": "hainan-haikou",
           "name": "海口市",
           "code": "460100",
@@ -392,13 +399,6 @@
           "code": "469023",
           "level": "county",
           "evidence": "在澄迈县，税务部门依托征纳互动平台"
-        },
-        {
-          "location_id": "hainan",
-          "name": "海南省",
-          "code": "460000",
-          "level": "province",
-          "evidence": "海南省税务部门紧扣终端消费环节"
         }
       ],
       "topics": [
@@ -498,18 +498,18 @@
       ],
       "locations": [
         {
-          "location_id": "hainan-qiongzhong",
-          "name": "琼中黎族苗族自治县",
-          "code": "469030",
-          "level": "county",
-          "evidence": "琼中黎族苗族自治县"
-        },
-        {
           "location_id": "hainan",
           "name": "海南省",
           "code": "460000",
           "level": "province",
           "evidence": "海南是国内公认的顶级沉香核心产区"
+        },
+        {
+          "location_id": "hainan-qiongzhong",
+          "name": "琼中黎族苗族自治县",
+          "code": "469030",
+          "level": "county",
+          "evidence": "琼中黎族苗族自治县"
         }
       ],
       "topics": [

@@ -55,43 +55,46 @@ def _esc(value, quote=False):
     return html.escape(str(value), quote=quote)
 
 
-def _subject_occurrence_counts(paragraphs, subject_names):
-    names = sorted(set(subject_names), key=lambda name: (-len(name), name))
-    counts = {name: 0 for name in names}
-    if not names:
+def _subject_occurrence_counts(paragraphs, variant_to_subject):
+    variants = sorted(variant_to_subject, key=lambda name: (-len(name), name))
+    counts = {name: 0 for name in set(variant_to_subject.values())}
+    if not variants:
         return counts
-    pattern = re.compile("|".join(re.escape(name) for name in names))
+    pattern = re.compile("|".join(re.escape(name) for name in variants))
     for paragraph in paragraphs:
         for match in pattern.finditer(paragraph):
-            counts[match.group(0)] += 1
+            counts[variant_to_subject[match.group(0)]] += 1
     return counts
 
 
-def _highlight_subjects(value, subject_anchors, subject_types, anchored_subjects):
-    names = sorted(subject_anchors, key=lambda name: (-len(name), name))
-    if not names:
+def _highlight_subjects(
+    value, variant_to_subject, subject_anchors, subject_types, anchored_subjects
+):
+    variants = sorted(variant_to_subject, key=lambda name: (-len(name), name))
+    if not variants:
         return _esc(value)
-    pattern = re.compile("|".join(re.escape(name) for name in names))
+    pattern = re.compile("|".join(re.escape(name) for name in variants))
     fragments = []
     cursor = 0
     for match in pattern.finditer(value):
         fragments.append(_esc(value[cursor:match.start()]))
-        name = match.group(0)
+        matched_text = match.group(0)
+        subject_name = variant_to_subject[matched_text]
         anchor_markup = ""
-        if name not in anchored_subjects:
-            anchor_markup = f' id="{_esc(subject_anchors[name], True)}"'
-            anchored_subjects.add(name)
-        if subject_types.get(name) == "person":
+        if subject_name not in anchored_subjects:
+            anchor_markup = f' id="{_esc(subject_anchors[subject_name], True)}"'
+            anchored_subjects.add(subject_name)
+        if subject_types.get(subject_name) == "person":
             fragments.append(
                 f'<strong class="subject-mention subject-person" '
-                f'data-subject-id="{_esc(subject_anchors[name], True)}"{anchor_markup}>'
-                f'{_esc(name)}</strong>'
+                f'data-subject-id="{_esc(subject_anchors[subject_name], True)}"{anchor_markup}>'
+                f'{_esc(matched_text)}</strong>'
             )
         else:
             fragments.append(
                 f'<span class="subject-mention subject-entity" '
-                f'data-subject-id="{_esc(subject_anchors[name], True)}"{anchor_markup}>'
-                f'{_esc(name)}</span>'
+                f'data-subject-id="{_esc(subject_anchors[subject_name], True)}"{anchor_markup}>'
+                f'{_esc(matched_text)}</span>'
             )
         cursor = match.end()
     fragments.append(_esc(value[cursor:]))
@@ -324,6 +327,11 @@ def _archive_story(article):
         block["title"], block.get("ai_summary") or "", article["published_date"],
         article["page_name"],
         *[row["name"] for row in article["subjects"]],
+        *[
+            alias["name"]
+            for row in article["subjects"]
+            for alias in row.get("aliases", [])
+        ],
         *[row["name"] for row in article["locations"]],
         *[row["name"] for row in article["topics"]],
         *[row["name"] for row in article.get("events", [])],
@@ -492,9 +500,12 @@ def render_item(item):
         "project": 3,
         "person": 4,
     }
-    subject_counts = _subject_occurrence_counts(
-        paragraphs, (row["name"] for row in item["subjects"])
-    )
+    variant_to_subject = {}
+    for row in item["subjects"]:
+        variant_to_subject[row["name"]] = row["name"]
+        for alias in row.get("aliases", []):
+            variant_to_subject[alias["name"]] = row["name"]
+    subject_counts = _subject_occurrence_counts(paragraphs, variant_to_subject)
     subject_anchors = {
         row["name"]: f"subject-{index}"
         for index, row in enumerate(item["subjects"], start=1)
@@ -565,7 +576,7 @@ def render_item(item):
     )
     anchored_subjects = set()
     source_body = "".join(
-        f'<p>{_highlight_subjects(part, subject_anchors, subject_types, anchored_subjects)}</p>'
+        f'<p>{_highlight_subjects(part, variant_to_subject, subject_anchors, subject_types, anchored_subjects)}</p>'
         for part in paragraphs
     )
     return (

@@ -23,6 +23,9 @@ MODEL_ITEM_FIELDS = {
 }
 SUBJECT_TYPES = {"person", "government", "organization", "company", "project"}
 SCOPES = {"national", "hainan", "domestic", "mixed", "foreign"}
+SUBJECT_BASE_FIELDS = {"name", "type", "role", "evidence"}
+SUBJECT_ALIAS_FIELDS = {"name", "evidence"}
+SUBJECT_ALIAS_CUES = ("以下简称", "简称", "下称", "又称", "俗称")
 
 
 class ModelOutputError(ContractError):
@@ -98,12 +101,19 @@ def validate_model_output(
             subjects = item.get("subjects")
             if not isinstance(subjects, list) or len(subjects) > 24:
                 raise ModelOutputError(f"{location}.subjects is invalid")
+            seen_subject_surfaces: set[str] = set()
             for subject in subjects:
-                require_exact_fields(subject, {"name", "type", "role", "evidence"}, f"{location}.subject")
+                subject_fields = set(subject) if isinstance(subject, dict) else set()
+                if subject_fields not in (SUBJECT_BASE_FIELDS, SUBJECT_BASE_FIELDS | {"aliases"}):
+                    raise ModelOutputError(f"{location}.subject fields are invalid")
                 if not non_empty(subject.get("name")) or len(subject["name"]) > 80:
                     raise ModelOutputError(f"{location}.subject.name is invalid")
                 if normalized_text(subject["name"]) not in source_text:
                     raise ModelOutputError(f"{location}.subject.name is not in source")
+                canonical_key = normalized_text(subject["name"]).casefold()
+                if canonical_key in seen_subject_surfaces:
+                    raise ModelOutputError(f"{location}.subject.name is duplicated")
+                seen_subject_surfaces.add(canonical_key)
                 if subject.get("type") not in SUBJECT_TYPES:
                     raise ModelOutputError(f"{location}.subject.type is invalid")
                 if subject.get("role") is not None and (
@@ -111,6 +121,33 @@ def validate_model_output(
                 ):
                     raise ModelOutputError(f"{location}.subject.role is invalid")
                 _evidence(subject.get("evidence"), source_text, f"{location}.subject.evidence")
+                aliases = subject.get("aliases", [])
+                if not isinstance(aliases, list) or not aliases or len(aliases) > 6:
+                    if "aliases" in subject:
+                        raise ModelOutputError(f"{location}.subject.aliases is invalid")
+                for alias in aliases:
+                    require_exact_fields(alias, SUBJECT_ALIAS_FIELDS, f"{location}.subject.alias")
+                    alias_name = alias.get("name")
+                    if not non_empty(alias_name) or len(alias_name) > 40:
+                        raise ModelOutputError(f"{location}.subject.alias.name is invalid")
+                    alias_key = normalized_text(alias_name).casefold()
+                    if alias_key in seen_subject_surfaces:
+                        raise ModelOutputError(f"{location}.subject.alias.name is duplicated")
+                    if normalized_text(alias_name) not in source_text:
+                        raise ModelOutputError(f"{location}.subject.alias.name is not in source")
+                    alias_evidence = _evidence(
+                        alias.get("evidence"), source_text, f"{location}.subject.alias.evidence"
+                    )
+                    normalized_evidence = normalized_text(alias_evidence)
+                    if (
+                        normalized_text(subject["name"]) not in normalized_evidence
+                        or normalized_text(alias_name) not in normalized_evidence
+                        or not any(cue in normalized_evidence for cue in SUBJECT_ALIAS_CUES)
+                    ):
+                        raise ModelOutputError(
+                            f"{location}.subject.alias.evidence is not an explicit declaration"
+                        )
+                    seen_subject_surfaces.add(alias_key)
 
             allowed_locations = {row["location_id"] for row in input_item["location_candidates"]}
             mentions = item.get("location_mentions")

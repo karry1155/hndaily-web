@@ -21,18 +21,18 @@
   ],
   "locations": [
     {
+      "location_id": "hainan",
+      "name": "海南省",
+      "code": "460000",
+      "level": "province",
+      "evidence": "海南以“美滩行动”为抓手"
+    },
+    {
       "location_id": "hainan-haikou",
       "name": "海口市",
       "code": "460100",
       "level": "prefecture",
       "evidence": "主题活动在海口举行"
-    },
-    {
-      "location_id": "hainan-chengmai",
-      "name": "澄迈县",
-      "code": "469023",
-      "level": "county",
-      "evidence": "澄迈县桥头镇玉包村"
     },
     {
       "location_id": "hainan-wenchang",
@@ -42,13 +42,6 @@
       "evidence": "文昌推出净滩公益健步走活动"
     },
     {
-      "location_id": "hainan-changjiang",
-      "name": "昌江黎族自治县",
-      "code": "469026",
-      "level": "county",
-      "evidence": "昌江深耕“新时代‘渔夫与海’”志愿服务品牌"
-    },
-    {
       "location_id": "hainan-wanning",
       "name": "万宁市",
       "code": "469006",
@@ -56,11 +49,18 @@
       "evidence": "万宁以政企社协同模式常态化开展“美滩行动”"
     },
     {
-      "location_id": "hainan",
-      "name": "海南省",
-      "code": "460000",
-      "level": "province",
-      "evidence": "海南以“美滩行动”为抓手"
+      "location_id": "hainan-chengmai",
+      "name": "澄迈县",
+      "code": "469023",
+      "level": "county",
+      "evidence": "澄迈县桥头镇玉包村"
+    },
+    {
+      "location_id": "hainan-changjiang",
+      "name": "昌江黎族自治县",
+      "code": "469026",
+      "level": "county",
+      "evidence": "昌江深耕“新时代‘渔夫与海’”志愿服务品牌"
     }
   ],
   "topics": [

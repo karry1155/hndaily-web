@@ -50,7 +50,8 @@ ISSUE_ITEM_FIELDS = {
     "enrichment_status", "scope", "scope_evidence", "subjects", "locations",
     "topics", "events", "plans", "block",
 }
-SUBJECT_FIELDS = {"subject_id", "name", "type", "role", "evidence"}
+SUBJECT_BASE_FIELDS = {"subject_id", "name", "type", "role", "evidence"}
+SUBJECT_ALIAS_FIELDS = {"name", "evidence"}
 LOCATION_FIELDS = {"location_id", "name", "code", "level", "evidence"}
 TOPIC_FIELDS = {"topic_id", "name", "evidence"}
 EVENT_FIELDS = {"relation", "event_id", "event_name", "evidence", "update_summary"}
@@ -136,7 +137,17 @@ def validate_public_issue_item(item: dict[str, Any]) -> None:
     if not non_empty(item.get("scope_evidence")):
         raise ContractError("public issue item.scope_evidence is invalid")
     for subject in item.get("subjects", []):
-        require_exact_fields(subject, SUBJECT_FIELDS, "public issue item subject")
+        subject_fields = set(subject) if isinstance(subject, dict) else set()
+        if subject_fields not in (SUBJECT_BASE_FIELDS, SUBJECT_BASE_FIELDS | {"aliases"}):
+            raise ContractError("public issue item subject fields are invalid")
+        if "aliases" in subject:
+            aliases = subject["aliases"]
+            if not isinstance(aliases, list) or not aliases or len(aliases) > 6:
+                raise ContractError("public issue item subject aliases are invalid")
+            for alias in aliases:
+                require_exact_fields(alias, SUBJECT_ALIAS_FIELDS, "public issue item subject alias")
+                if not non_empty(alias.get("name")) or not non_empty(alias.get("evidence")):
+                    raise ContractError("public issue item subject alias is invalid")
     for location in item.get("locations", []):
         require_exact_fields(location, LOCATION_FIELDS, "public issue item location")
     for topic in item.get("topics", []):

@@ -45,7 +45,7 @@ class HnhotPublicationTests(unittest.TestCase):
         candidates = adapt_hndaily(raw)[0]
         model_input = build_model_input(candidates)
         self.assertEqual(model_input["schema_version"], 8)
-        self.assertEqual(model_input["prompt_version"], "hnhot-v2.1")
+        self.assertEqual(model_input["prompt_version"], "hnhot-v2.2")
         self.assertEqual(
             set(model_input["items"][0]),
             {"candidate_id", "title", "content", "location_candidates", "topic_candidates"},
@@ -81,6 +81,42 @@ class HnhotPublicationTests(unittest.TestCase):
         self.assertNotIn("event_relation", articles[0])
 
         output["items"][0]["plans"][0]["name"] = "海南省旅游公路发展规划"
+        with self.assertRaises(ModelOutputError):
+            validate_model_output(model_input, output, candidates)
+
+    def test_subject_alias_is_grounded_and_maps_to_one_frontend_subject(self):
+        raw = raw_issue(article_count=1)
+        article = raw["pages"][0]["articles"][0]
+        article["title"] = "德工智能发布产业AI产品"
+        article["content"] = (
+            "海南德工智能科技有限公司（以下简称德工智能）携产品参展。"
+            "德工智能发布新品。"
+        )
+        candidates = adapt_hndaily(raw)[0]
+        model_input = build_model_input(candidates)
+        output = hnhot_output(model_input, candidates)
+        output["items"][0]["subjects"] = [{
+            "name": "海南德工智能科技有限公司",
+            "type": "company",
+            "role": "产业AI产品参展企业",
+            "evidence": "海南德工智能科技有限公司（以下简称德工智能）携产品参展",
+            "aliases": [{
+                "name": "德工智能",
+                "evidence": "海南德工智能科技有限公司（以下简称德工智能）",
+            }],
+        }]
+
+        articles, _, _ = build_generation(raw, model_input, output)
+        rendered = render_item(articles[0])
+
+        self.assertIn("正文 3 处 ↓", rendered)
+        self.assertEqual(rendered.count('data-subject-id="subject-1"'), 4)
+        self.assertIn('id="subject-1">海南德工智能科技有限公司</span>', rendered)
+        self.assertEqual(rendered.count(">德工智能</span>"), 2)
+        context = rendered.split('<article class="source-body">', 1)[0]
+        self.assertNotIn("以下简称", context)
+
+        output["items"][0]["subjects"][0]["aliases"][0]["evidence"] = "德工智能发布新品"
         with self.assertRaises(ModelOutputError):
             validate_model_output(model_input, output, candidates)
 

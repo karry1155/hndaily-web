@@ -35,18 +35,18 @@
   ],
   "locations": [
     {
-      "location_id": "hainan-qiongzhong",
-      "name": "琼中黎族苗族自治县",
-      "code": "469030",
-      "level": "county",
-      "evidence": "琼中黎族苗族自治县"
-    },
-    {
       "location_id": "hainan",
       "name": "海南省",
       "code": "460000",
       "level": "province",
       "evidence": "海南是国内公认的顶级沉香核心产区"
+    },
+    {
+      "location_id": "hainan-qiongzhong",
+      "name": "琼中黎族苗族自治县",
+      "code": "469030",
+      "level": "county",
+      "evidence": "琼中黎族苗族自治县"
     }
   ],
   "topics": [
