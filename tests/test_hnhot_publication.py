@@ -1,4 +1,5 @@
 import json
+import re
 import tempfile
 import unittest
 from pathlib import Path
@@ -318,8 +319,8 @@ class HnhotPublicationTests(unittest.TestCase):
             ".radar-shell:not(.item-shell) { padding-bottom: calc(68px + env(safe-area-inset-bottom)); }",
             mobile,
         )
-        self.assertIn("styles.css?v=20260720-context-2", base)
-        self.assertIn("app.js?v=20260719-global-1", base)
+        self.assertIn("styles.css?v=20260720-subject-focus-1", base)
+        self.assertIn("app.js?v=20260720-subject-focus-1", base)
 
     def test_item_page_groups_structured_extraction_instead_of_flat_tags(self):
         project = Path(__file__).resolve().parents[1]
@@ -349,6 +350,30 @@ class HnhotPublicationTests(unittest.TestCase):
         rendered = render_item(item)
 
         self.assertLess(rendered.index("<li>海南省</li>"), rendered.index("<li>琼海市</li>"))
+        self.assertIn('<h3>地点 <span>1</span></h3>', rendered)
+        self.assertIn('class="subject-mention subject-person" data-subject-id="subject-2" id="subject-2">林诗栋</strong>', rendered)
+        self.assertIn('class="subject-mention subject-entity" data-subject-id="subject-1" id="subject-1">海南代表团</span>', rendered)
+        self.assertIn('class="context-subject-link" href="#subject-2" data-subject-link', rendered)
+        self.assertIn('正文 2 处 ↓', rendered)
+        self.assertLess(rendered.index("海南射箭队"), rendered.index("林诗栋"))
+
+    def test_all_published_subject_links_target_one_body_highlight(self):
+        project = Path(__file__).resolve().parents[1]
+        checked_links = 0
+        for path in sorted((project / "content/issue-items").glob("*/*.json")):
+            rendered = render_item(json.loads(path.read_text(encoding="utf-8")))
+            links = re.findall(
+                r'class="context-subject-link" href="#([^"]+)"', rendered
+            )
+            targets = re.findall(
+                r'<(?:span|strong) class="subject-mention subject-(?:entity|person)" '
+                r'data-subject-id="[^"]+" id="([^"]+)">',
+                rendered,
+            )
+            self.assertEqual(sorted(links), sorted(targets), path.name)
+            self.assertEqual(len(targets), len(set(targets)), path.name)
+            checked_links += len(links)
+        self.assertGreater(checked_links, 0)
 
 
 if __name__ == "__main__":

@@ -19,7 +19,52 @@ function syncStarButtons() {
   });
 }
 
+function clearSubjectFocus() {
+  document.querySelectorAll(".subject-mention.is-subject-active").forEach((mention) => {
+    mention.classList.remove("is-subject-active");
+  });
+  document.querySelectorAll("[data-subject-link].is-active").forEach((link) => {
+    link.classList.remove("is-active");
+    link.removeAttribute("aria-current");
+  });
+}
+
+function activateSubject(subjectId, {scroll = false} = {}) {
+  clearSubjectFocus();
+  if (!/^subject-\d+$/.test(subjectId)) return false;
+  const mentions = [...document.querySelectorAll(`[data-subject-id="${subjectId}"]`)]
+    .filter((element) => element.classList.contains("subject-mention"));
+  const link = document.querySelector(`[data-subject-link][data-subject-id="${subjectId}"]`);
+  if (!mentions.length || !link) return false;
+  mentions.forEach((mention) => mention.classList.add("is-subject-active"));
+  link.classList.add("is-active");
+  link.setAttribute("aria-current", "location");
+  if (scroll) {
+    mentions[0].scrollIntoView({
+      behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth",
+      block: "center",
+    });
+  }
+  return true;
+}
+
+function subjectIdFromHash() {
+  return decodeURIComponent(window.location.hash.slice(1));
+}
+
 document.addEventListener("click", (event) => {
+  const subjectLink = event.target.closest("[data-subject-link]");
+  if (subjectLink) {
+    event.preventDefault();
+    const subjectId = subjectLink.dataset.subjectId;
+    if (subjectLink.classList.contains("is-active")) {
+      clearSubjectFocus();
+      history.pushState(null, "", `${location.pathname}${location.search}`);
+    } else {
+      history.pushState(null, "", `#${subjectId}`);
+      activateSubject(subjectId, {scroll: true});
+    }
+  }
   const star = event.target.closest("[data-star-id]");
   if (star) {
     const stars = new Set(readStars());
@@ -267,6 +312,9 @@ document.querySelectorAll("[data-report-browser]").forEach((browser) => {
 
 syncStarButtons();
 renderStarred();
+
+window.addEventListener("hashchange", () => activateSubject(subjectIdFromHash()));
+activateSubject(subjectIdFromHash());
 
 const backToTop = document.querySelector("[data-back-to-top]");
 if (backToTop) {

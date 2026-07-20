@@ -8,6 +8,7 @@
   --line-soft: #eceae2;
   --accent: #ba2d2d;
   --accent-soft: #f5e5e1;
+  --subject-focus: #efe2a7;
   --nav: #1b2421;
   --nav-text: #dce3de;
   --shadow: 0 14px 34px rgba(37, 46, 42, .08);
@@ -24,6 +25,7 @@ html[data-theme="dark"] {
   --line-soft: #28302c;
   --accent: #e6675e;
   --accent-soft: #3e2724;
+  --subject-focus: #5a4b25;
   --nav: #0a0e0c;
   --nav-text: #dfe7e1;
   --shadow: 0 14px 34px rgba(0, 0, 0, .22);
@@ -218,9 +220,15 @@ button, input { font: inherit; }
 .context-group h3 span { display: grid; min-width: 17px; height: 17px; padding: 0 4px; border-radius: 999px; color: var(--muted); background: var(--line-soft); place-items: center; font-size: 9px; letter-spacing: 0; }
 .context-group ul { margin: 0; padding: 0; list-style: none; }
 .context-subject-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
-.context-subject-list li { display: grid; min-width: 0; padding: 9px 11px; gap: 2px; border-left: 2px solid var(--accent); background: color-mix(in srgb, var(--bg) 58%, transparent); }
+.context-subject-list li { min-width: 0; }
+.context-subject-link, .context-subject-static { position: relative; display: grid; min-height: 100%; padding: 9px 11px; grid-template-columns: minmax(0, 1fr) auto; gap: 2px 10px; border-left: 2px solid var(--accent); background: color-mix(in srgb, var(--bg) 58%, transparent); }
+.context-subject-link { transition: background-color .18s ease, box-shadow .18s ease; }
+.context-subject-link:hover { color: var(--accent); background: var(--accent-soft); }
+.context-subject-link:focus-visible { outline-offset: -2px; }
+.context-subject-link.is-active { color: var(--ink); background: var(--paper); box-shadow: inset 0 0 0 2px var(--accent); }
 .context-subject-list strong { overflow-wrap: anywhere; font-family: Georgia, "Noto Serif CJK SC", serif; font-size: 13px; line-height: 1.45; }
-.context-subject-list li > span { color: var(--muted); font-size: 10px; line-height: 1.5; }
+.context-subject-list li span { grid-column: 1; color: var(--muted); font-size: 10px; line-height: 1.5; }
+.context-subject-count { grid-column: 2; grid-row: 1 / 3; align-self: center; color: var(--muted); font-size: 9px; font-weight: 700; white-space: nowrap; }
 .context-name-list { display: grid; gap: 6px; }
 .context-name-list li { position: relative; padding-left: 12px; font-family: Georgia, "Noto Serif CJK SC", serif; font-size: 12px; line-height: 1.55; }
 .context-name-list li::before { content: ""; position: absolute; top: .68em; left: 0; width: 4px; height: 4px; border-radius: 50%; background: var(--accent); }
@@ -229,6 +237,10 @@ button, input { font: inherit; }
 .context-token-list li { position: relative; color: var(--ink); font-size: 11px; }
 .context-token-list li:not(:last-child)::after { content: "·"; position: absolute; right: -8px; color: var(--muted); }
 .source-body p { margin: 1.25em 0; font-family: Georgia, "Noto Serif CJK SC", serif; font-size: 16px; line-height: 1.95; }
+.source-body .subject-mention { scroll-margin-top: 90px; }
+.source-body .subject-person { color: var(--ink); font-weight: 800; }
+.source-body .subject-entity { color: var(--ink); font-weight: 650; text-decoration: underline dotted color-mix(in srgb, var(--muted) 72%, transparent); text-underline-offset: .16em; }
+.source-body .subject-mention.is-subject-active { padding: 0 .12em; color: var(--ink); background: var(--subject-focus); border-radius: 2px; box-decoration-break: clone; -webkit-box-decoration-break: clone; text-decoration: none; }
 .source-button { display: inline-block; margin-top: 30px; padding: 10px 15px; border: 1px solid var(--ink); border-radius: 7px; }
 
 .simple-page { max-width: 900px; }

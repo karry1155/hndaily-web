@@ -55,6 +55,54 @@ def _esc(value, quote=False):
     return html.escape(str(value), quote=quote)
 
 
+def _subject_occurrence_counts(paragraphs, subject_names):
+    names = sorted(set(subject_names), key=lambda name: (-len(name), name))
+    counts = {name: 0 for name in names}
+    if not names:
+        return counts
+    pattern = re.compile("|".join(re.escape(name) for name in names))
+    for paragraph in paragraphs:
+        for match in pattern.finditer(paragraph):
+            counts[match.group(0)] += 1
+    return counts
+
+
+def _highlight_subjects(value, subject_anchors, subject_types, anchored_subjects):
+    names = sorted(subject_anchors, key=lambda name: (-len(name), name))
+    if not names:
+        return _esc(value)
+    pattern = re.compile("|".join(re.escape(name) for name in names))
+    fragments = []
+    cursor = 0
+    for match in pattern.finditer(value):
+        fragments.append(_esc(value[cursor:match.start()]))
+        name = match.group(0)
+        anchor_markup = ""
+        if name not in anchored_subjects:
+            anchor_markup = f' id="{_esc(subject_anchors[name], True)}"'
+            anchored_subjects.add(name)
+        if subject_types.get(name) == "person":
+            fragments.append(
+                f'<strong class="subject-mention subject-person" '
+                f'data-subject-id="{_esc(subject_anchors[name], True)}"{anchor_markup}>'
+                f'{_esc(name)}</strong>'
+            )
+        else:
+            fragments.append(
+                f'<span class="subject-mention subject-entity" '
+                f'data-subject-id="{_esc(subject_anchors[name], True)}"{anchor_markup}>'
+                f'{_esc(name)}</span>'
+            )
+        cursor = match.end()
+    fragments.append(_esc(value[cursor:]))
+    return "".join(fragments)
+
+
+def _location_group_count(rows):
+    specific_rows = [row for row in rows if row.get("level") != "province"]
+    return len(specific_rows) if specific_rows else len(rows)
+
+
 def render_base(title, body):
     template = Template(
         (ROOT / "src/templates/base.html").read_text(encoding="utf-8")
@@ -437,19 +485,52 @@ def render_item(item):
         "company": "企业",
         "project": "项目",
     }
+    subject_type_order = {
+        "government": 0,
+        "organization": 1,
+        "company": 2,
+        "project": 3,
+        "person": 4,
+    }
+    subject_counts = _subject_occurrence_counts(
+        paragraphs, (row["name"] for row in item["subjects"])
+    )
+    subject_anchors = {
+        row["name"]: f"subject-{index}"
+        for index, row in enumerate(item["subjects"], start=1)
+        if subject_counts.get(row["name"], 0) > 0
+    }
+    subject_types = {row["name"]: row["type"] for row in item["subjects"]}
     context_groups = []
     if item["subjects"]:
-        subject_rows = "".join(
-            '<li><strong>' + _esc(row["name"]) + '</strong><span>'
-            + _esc(type_labels.get(row["type"], row["type"]))
-            + (f' · {_esc(row["role"])}' if row.get("role") else "")
-            + '</span></li>'
-            for row in item["subjects"]
+        ordered_subjects = sorted(
+            item["subjects"], key=lambda row: subject_type_order.get(row["type"], 9)
         )
+        subject_rows = []
+        for row in ordered_subjects:
+            label = (
+                '<strong>' + _esc(row["name"]) + '</strong><span>'
+                + _esc(type_labels.get(row["type"], row["type"]))
+                + (f' · {_esc(row["role"])}' if row.get("role") else "")
+                + '</span>'
+            )
+            if row["name"] in subject_anchors:
+                anchor = _esc(subject_anchors[row["name"]], True)
+                subject_rows.append(
+                    '<li><a class="context-subject-link" '
+                    f'href="#{anchor}" data-subject-link data-subject-id="{anchor}" '
+                    f'aria-label="{_esc(row["name"], True)}：高亮正文中的全部出现位置">'
+                    f'{label}<small class="context-subject-count">正文 '
+                    f'{subject_counts[row["name"]]} 处 ↓</small></a></li>'
+                )
+            else:
+                subject_rows.append(
+                    f'<li><div class="context-subject-static">{label}</div></li>'
+                )
         context_groups.append(
             '<section class="context-group context-subjects">'
             f'<h3>主体 <span>{len(item["subjects"])}</span></h3>'
-            f'<ul class="context-subject-list">{subject_rows}</ul></section>'
+            f'<ul class="context-subject-list">{"".join(subject_rows)}</ul></section>'
         )
     location_level_order = {"province": 0, "prefecture": 1, "county": 2}
     for key, label, class_name in (
@@ -469,7 +550,8 @@ def render_item(item):
         values = "".join(f'<li>{_esc(row["name"])}</li>' for row in rows)
         context_groups.append(
             f'<section class="context-group context-{key}"><h3>{label} '
-            f'<span>{len(rows)}</span></h3><ul class="{class_name}">{values}</ul></section>'
+            f'<span>{_location_group_count(rows) if key == "locations" else len(rows)}</span>'
+            f'</h3><ul class="{class_name}">{values}</ul></section>'
         )
     context_markup = (
         '<details class="article-context">'
@@ -481,6 +563,11 @@ def render_item(item):
         f'<div class="context-groups">{"".join(context_groups)}</div></details>'
         if context_groups else ""
     )
+    anchored_subjects = set()
+    source_body = "".join(
+        f'<p>{_highlight_subjects(part, subject_anchors, subject_types, anchored_subjects)}</p>'
+        for part in paragraphs
+    )
     return (
         '<div class="app-shell radar-shell item-shell">'
         f'{render_primary_nav("全部", _date_label(item["published_date"]))}'
@@ -490,7 +577,7 @@ def render_item(item):
         f'<h1>{_esc(block["title"])}</h1>'
         f'<section class="ai-summary"><span class="eyebrow">AI 摘要</span><p>{_esc(summary)}</p></section>'
         f'{context_markup}'
-        f'<article class="source-body">{"".join(f"<p>{_esc(part)}</p>" for part in paragraphs)}</article>'
+        f'<article class="source-body">{source_body}</article>'
         f'<a class="source-button" href="{_esc(block["original_url"], True)}" target="_blank" rel="noopener noreferrer">在海南日报查看原文</a>'
         '</main></div>'
     )
