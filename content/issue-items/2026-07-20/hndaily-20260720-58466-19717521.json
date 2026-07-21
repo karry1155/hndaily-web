@@ -1,8 +1,8 @@
 {
-  "schema_version": 8,
+  "schema_version": 9,
   "item_id": "hndaily-20260720-58466-19717521",
   "published_date": "2026-07-20",
-  "collected_date": "2026-07-20",
+  "collected_date": "2026-07-21",
   "page_number": "003",
   "page_name": "民生新闻",
   "page_sequence": 1,
@@ -35,7 +35,27 @@
       "evidence": "三亚已实现154所公办、民办中小学校"
     }
   ],
-  "topics": [
+  "topic_profile": {
+    "primary": {
+      "name": "校园设施改善",
+      "evidence": "三亚154所中小学校教室、宿舍空调全覆盖"
+    },
+    "secondary": []
+  },
+  "resolved_topics": [
+    {
+      "topic_id": "school-facility-improvement",
+      "name": "校园设施改善",
+      "relation": "primary",
+      "path": [
+        "教育与青年",
+        "校园设施改善"
+      ],
+      "evidence": "三亚154所中小学校教室、宿舍空调全覆盖"
+    }
+  ],
+  "content_form": "news",
+  "legacy_topics": [
     {
       "topic_id": "education-talent",
       "name": "教育人才",

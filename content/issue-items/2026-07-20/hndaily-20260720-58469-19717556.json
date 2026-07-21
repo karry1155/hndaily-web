@@ -1,8 +1,8 @@
 {
-  "schema_version": 8,
+  "schema_version": 9,
   "item_id": "hndaily-20260720-58469-19717556",
   "published_date": "2026-07-20",
-  "collected_date": "2026-07-20",
+  "collected_date": "2026-07-21",
   "page_number": "006",
   "page_name": "世界新闻",
   "page_sequence": 3,
@@ -20,7 +20,27 @@
     }
   ],
   "locations": [],
-  "topics": [
+  "topic_profile": {
+    "primary": {
+      "name": "塑料钞票发行",
+      "evidence": "印度计划试点发行小面额塑料钞票"
+    },
+    "secondary": []
+  },
+  "resolved_topics": [
+    {
+      "topic_id": "polymer-banknote-issuance",
+      "name": "塑料钞票发行",
+      "relation": "primary",
+      "path": [
+        "经济与市场",
+        "塑料钞票发行"
+      ],
+      "evidence": "印度计划试点发行小面额塑料钞票"
+    }
+  ],
+  "content_form": "news",
+  "legacy_topics": [
     {
       "topic_id": "economy-data",
       "name": "经济数据",

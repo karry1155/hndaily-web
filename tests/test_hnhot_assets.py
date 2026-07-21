@@ -5,6 +5,8 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 PROMPT_DIR = ROOT / "prompts/article-enrichment/v1"
 V2_PROMPT_DIR = ROOT / "prompts/article-enrichment/v2"
+V3_PROMPT_DIR = ROOT / "prompts/article-enrichment/v3"
+TOPIC_PROMPT_DIR = ROOT / "prompts/topic-resolution/v1"
 
 
 class HnhotAssetTests(unittest.TestCase):
@@ -129,6 +131,32 @@ class HnhotAssetTests(unittest.TestCase):
         ):
             self.assertIn(token, prompt)
 
+    def test_v3_uses_open_topics_and_separate_content_form(self):
+        manifest = json.loads((V3_PROMPT_DIR / "manifest.json").read_text(encoding="utf-8"))
+        schema = json.loads((V3_PROMPT_DIR / "schema.json").read_text(encoding="utf-8"))
+        prompt = (V3_PROMPT_DIR / "prompt.md").read_text(encoding="utf-8")
+        self.assertEqual(manifest["prompt_version"], "hnhot-v3.0")
+        self.assertEqual(manifest["article_schema_version"], 9)
+        item = schema["$defs"]["item"]
+        self.assertIn("topic_profile", item["required"])
+        self.assertIn("content_form", item["required"])
+        self.assertNotIn("topic_mentions", item["properties"])
+        self.assertEqual(schema["$defs"]["topicProfile"]["properties"]["secondary"]["maxItems"], 3)
+        self.assertIn("主体、主题和事件没有候选词表", prompt)
+        self.assertIn("`primary` 必须且只能有一个", prompt)
+
+    def test_topic_resolution_prompt_has_exact_existing_and_new_shapes(self):
+        manifest = json.loads((TOPIC_PROMPT_DIR / "manifest.json").read_text(encoding="utf-8"))
+        schema = json.loads((TOPIC_PROMPT_DIR / "schema.json").read_text(encoding="utf-8"))
+        prompt = (TOPIC_PROMPT_DIR / "prompt.md").read_text(encoding="utf-8")
+        self.assertEqual(manifest["prompt_version"], "topic-resolution-v1")
+        variants = schema["properties"]["items"]["items"]["oneOf"]
+        self.assertEqual(
+            {variant["properties"]["decision"]["const"] for variant in variants},
+            {"existing", "new"},
+        )
+        self.assertIn("不得为了减少新节点而硬塞到相近大类", prompt)
+
     def test_seed_data_uses_local_and_open_scope_boundary(self):
         expected = {
             "2026-07-20": {
@@ -144,6 +172,25 @@ class HnhotAssetTests(unittest.TestCase):
                 path = ROOT / "content" / "issue-items" / published_date / f"{item_id}.json"
                 payload = json.loads(path.read_text(encoding="utf-8"))
                 self.assertEqual(payload["scope"], scope, item_id)
+
+    def test_two_day_open_topic_backfill_is_complete_and_auditable(self):
+        path = ROOT / "evaluation/topic-backfill/2026-07-19_2026-07-20.json"
+        payload = json.loads(path.read_text(encoding="utf-8"))
+        self.assertEqual(len(payload["items"]), 70)
+        keys = {(row["date"], row["candidate_id"]) for row in payload["items"]}
+        self.assertEqual(len(keys), 70)
+        self.assertEqual(
+            sum(row["date"] == "2026-07-19" for row in payload["items"]), 21
+        )
+        salt = next(
+            row for row in payload["items"]
+            if row["date"] == "2026-07-20" and row["candidate_id"] == "A023"
+        )
+        self.assertEqual(salt["primary"], "古法制盐")
+        self.assertEqual(
+            [row["name"] for row in salt["secondary"]],
+            ["非物质文化遗产", "海盐文化"],
+        )
 
     def test_controlled_catalogs_have_unique_ids_and_exact_fields(self):
         topics = json.loads((ROOT / "config/topics.json").read_text(encoding="utf-8"))

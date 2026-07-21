@@ -26,19 +26,14 @@
       "locations": [],
       "topics": [
         {
-          "topic_id": "external-relations",
-          "name": "对外交流",
-          "evidence": "人工智能正跨越山海、渗透千行百业，成为驱动全球发展的新引擎"
-        },
-        {
-          "topic_id": "industry-projects",
-          "name": "产业项目",
-          "evidence": "人工智能已走出实验室、扎根产业一线"
-        },
-        {
-          "topic_id": "policy-governance",
-          "name": "政策治理",
-          "evidence": "携手构建公正合理的全球人工智能治理体系"
+          "topic_id": "global-ai-governance",
+          "name": "人工智能全球治理",
+          "relation": "primary",
+          "path": [
+            "科技与创新",
+            "人工智能全球治理"
+          ],
+          "evidence": "坚持开放共赢 驱动创新发展"
         }
       ],
       "events": [
@@ -85,19 +80,14 @@
       "locations": [],
       "topics": [
         {
-          "topic_id": "external-relations",
-          "name": "对外交流",
-          "evidence": "人工智能正跨越山海、渗透千行百业，成为驱动全球发展的新引擎"
-        },
-        {
-          "topic_id": "industry-projects",
-          "name": "产业项目",
-          "evidence": "人工智能已走出实验室、扎根产业一线"
-        },
-        {
-          "topic_id": "policy-governance",
-          "name": "政策治理",
-          "evidence": "携手构建公正合理的全球人工智能治理体系"
+          "topic_id": "global-ai-governance",
+          "name": "人工智能全球治理",
+          "relation": "primary",
+          "path": [
+            "科技与创新",
+            "人工智能全球治理"
+          ],
+          "evidence": "坚持开放共赢 驱动创新发展"
         }
       ],
       "events": [
@@ -162,14 +152,14 @@
       ],
       "topics": [
         {
-          "topic_id": "culture-tourism-sports",
-          "name": "文旅体育",
-          "evidence": "海南国际旅游岛欢乐节"
-        },
-        {
-          "topic_id": "external-relations",
-          "name": "对外交流",
-          "evidence": "汇聚全球客商的国际化平台"
+          "topic_id": "hainan-tourism-festivals",
+          "name": "海南旅游节庆",
+          "relation": "primary",
+          "path": [
+            "旅游与消费",
+            "海南旅游节庆"
+          ],
+          "evidence": "2026年海南国际旅游岛欢乐节开幕"
         }
       ],
       "events": [
@@ -246,19 +236,14 @@
       ],
       "topics": [
         {
-          "topic_id": "culture-tourism-sports",
-          "name": "文旅体育",
-          "evidence": "共同构建山海联动、全域旅游路网格局"
-        },
-        {
-          "topic_id": "urban-rural",
-          "name": "城乡建设",
-          "evidence": "科学织密旅游公路“一张网”"
-        },
-        {
-          "topic_id": "industry-projects",
-          "name": "产业项目",
-          "evidence": "环岛旅游公路与特色产业双向赋能"
+          "topic_id": "transport-tourism-integration",
+          "name": "交通旅游融合",
+          "relation": "primary",
+          "path": [
+            "交通与城市",
+            "交通旅游融合"
+          ],
+          "evidence": "坚持系统化布局、精细化治理、多元化融合\n一体推进环岛旅游公路提质升级"
         }
       ],
       "events": [
@@ -328,19 +313,14 @@
       ],
       "topics": [
         {
-          "topic_id": "culture-tourism-sports",
-          "name": "文旅体育",
-          "evidence": "文旅消费补贴"
-        },
-        {
-          "topic_id": "livelihood-services",
-          "name": "民生服务",
-          "evidence": "通过门票减免、消费补贴、交通优惠等组合拳，切实降低游客出行成本"
-        },
-        {
-          "topic_id": "economy-data",
-          "name": "经济数据",
-          "evidence": "激发文旅消费活力"
+          "topic_id": "tourism-consumption-incentives",
+          "name": "文旅消费优惠",
+          "relation": "primary",
+          "path": [
+            "旅游与消费",
+            "文旅消费优惠"
+          ],
+          "evidence": "省钱省心！欢乐节派送惠民礼包"
         }
       ],
       "events": [
@@ -403,19 +383,14 @@
       ],
       "topics": [
         {
-          "topic_id": "economy-data",
-          "name": "经济数据",
-          "evidence": "带动消费总金额41.6亿元"
-        },
-        {
-          "topic_id": "livelihood-services",
-          "name": "民生服务",
-          "evidence": "提升智慧办税服务体验"
-        },
-        {
-          "topic_id": "policy-governance",
-          "name": "政策治理",
-          "evidence": "深化有奖发票试点工作"
+          "topic_id": "tax-supported-consumption",
+          "name": "税收促消费",
+          "relation": "primary",
+          "path": [
+            "经济与市场",
+            "税收促消费"
+          ],
+          "evidence": "算好三本账，“小票据”激活“大市场”"
         }
       ],
       "events": [
@@ -449,9 +424,14 @@
       ],
       "topics": [
         {
-          "topic_id": "culture-tourism-sports",
-          "name": "文旅体育",
-          "evidence": "欢乐节"
+          "topic_id": "hainan-tourism-festivals",
+          "name": "海南旅游节庆",
+          "relation": "primary",
+          "path": [
+            "旅游与消费",
+            "海南旅游节庆"
+          ],
+          "evidence": "畅玩全岛 欢乐启程"
         }
       ],
       "events": [
@@ -514,19 +494,14 @@
       ],
       "topics": [
         {
-          "topic_id": "industry-projects",
-          "name": "产业项目",
-          "evidence": "打造沉香全产业链条"
-        },
-        {
-          "topic_id": "urban-rural",
-          "name": "城乡建设",
-          "evidence": "解决农户前期资金投入不足难题"
-        },
-        {
-          "topic_id": "economy-data",
-          "name": "经济数据",
-          "evidence": "获得授信超3000万元"
+          "topic_id": "agarwood-understory-economy",
+          "name": "沉香林下经济",
+          "relation": "primary",
+          "path": [
+            "农业与乡村",
+            "沉香林下经济"
+          ],
+          "evidence": "琼中林下套种沉香，真香！"
         }
       ],
       "events": [

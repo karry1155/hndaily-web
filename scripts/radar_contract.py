@@ -5,9 +5,9 @@ from datetime import date
 from typing import Any
 from urllib.parse import parse_qsl, urlencode, urlparse, urlsplit, urlunsplit
 
-SCHEMA_VERSION = 8
-PROMPT_VERSION = "hnhot-v2.2"
-SUPPORTED_PUBLIC_SCHEMA_VERSIONS = {7, SCHEMA_VERSION}
+SCHEMA_VERSION = 9
+PROMPT_VERSION = "hnhot-v3.0"
+SUPPORTED_PUBLIC_SCHEMA_VERSIONS = {7, 8, SCHEMA_VERSION}
 SOURCE_CANDIDATE_FIELDS = {
     "candidate_id",
     "item_id",

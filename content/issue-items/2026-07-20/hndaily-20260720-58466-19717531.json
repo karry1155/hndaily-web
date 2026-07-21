@@ -1,8 +1,8 @@
 {
-  "schema_version": 8,
+  "schema_version": 9,
   "item_id": "hndaily-20260720-58466-19717531",
   "published_date": "2026-07-20",
-  "collected_date": "2026-07-20",
+  "collected_date": "2026-07-21",
   "page_number": "003",
   "page_name": "民生新闻",
   "page_sequence": 9,
@@ -63,7 +63,27 @@
       "evidence": "白沙黎族自治县"
     }
   ],
-  "topics": [
+  "topic_profile": {
+    "primary": {
+      "name": "茶业质量基础设施",
+      "evidence": "白沙一站式服务站里的“十八般武艺”"
+    },
+    "secondary": []
+  },
+  "resolved_topics": [
+    {
+      "topic_id": "tea-quality-infrastructure",
+      "name": "茶业质量基础设施",
+      "relation": "primary",
+      "path": [
+        "产业与项目",
+        "茶业质量基础设施"
+      ],
+      "evidence": "白沙一站式服务站里的“十八般武艺”"
+    }
+  ],
+  "content_form": "feature",
+  "legacy_topics": [
     {
       "topic_id": "industry-projects",
       "name": "产业项目",

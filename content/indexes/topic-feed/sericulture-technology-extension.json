@@ -1,0 +1,75 @@
+{
+  "topic_id": "sericulture-technology-extension",
+  "name": "桑蚕科技推广",
+  "parent_id": "agriculture-rural",
+  "article_count": 1,
+  "primary_count": 1,
+  "detail_path": "/topics/sericulture-technology-extension/",
+  "definition": "聚合以“桑蚕科技推广”为主要议题的报道、进展与解释。",
+  "primary_items": [
+    {
+      "item_id": "hndaily-20260720-58474-19718050",
+      "published_date": "2026-07-20",
+      "page_number": "011",
+      "page_name": "封面",
+      "page_sequence": 1,
+      "title": "“蚕博士”织就桑蚕新赛道",
+      "ai_summary": "耿涛十年走遍海南多地推广养蚕技术，并推动桑叶、桑枝、蚕蛹等产品开发，拓宽农户收益来源。",
+      "scope": "hainan",
+      "enrichment_status": "complete",
+      "subjects": [
+        {
+          "subject_id": "subject-20ff7a3c7fe138",
+          "name": "耿涛",
+          "type": "person",
+          "role": "中国热带农业科学院桑蚕研究中心副主任",
+          "evidence": "中国热带农业科学院桑蚕研究中心副主任耿涛"
+        },
+        {
+          "subject_id": "subject-0e88690e1a29cf",
+          "name": "中国热带农业科学院桑蚕研究中心",
+          "type": "organization",
+          "role": "桑蚕研究机构",
+          "evidence": "中国热带农业科学院桑蚕研究中心"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "14个市县、42个镇、74个村"
+        },
+        {
+          "location_id": "hainan-qiongzhong",
+          "name": "琼中黎族苗族自治县",
+          "code": "469030",
+          "level": "county",
+          "evidence": "从琼中开始"
+        }
+      ],
+      "topics": [
+        {
+          "topic_id": "sericulture-technology-extension",
+          "name": "桑蚕科技推广",
+          "relation": "primary",
+          "path": [
+            "农业与乡村",
+            "桑蚕科技推广"
+          ],
+          "evidence": "“蚕博士”织就桑蚕新赛道"
+        }
+      ],
+      "events": [
+        {
+          "name": "耿涛推动海南桑蚕产业多元利用",
+          "evidence": "从只卖蚕茧到桑叶、桑枝、蚕蛹都能换成钱"
+        }
+      ],
+      "plans": [],
+      "detail_path": "/items/2026-07-20/hndaily-20260720-58474-19718050/"
+    }
+  ],
+  "secondary_items": []
+}

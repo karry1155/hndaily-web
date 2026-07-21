@@ -1,0 +1,84 @@
+{
+  "topic_id": "hainan-literary-writing",
+  "name": "海南文学书写",
+  "parent_id": "culture-history",
+  "article_count": 1,
+  "primary_count": 1,
+  "detail_path": "/topics/hainan-literary-writing/",
+  "definition": "聚合以“海南文学书写”为主要议题的报道、进展与解释。",
+  "primary_items": [
+    {
+      "item_id": "hndaily-20260720-58485-19718122",
+      "published_date": "2026-07-20",
+      "page_number": "022",
+      "page_name": "悦读",
+      "page_sequence": 2,
+      "title": "流动的海南时间简史",
+      "ai_summary": "黄亚洲的诗集《海南放歌》以行走海南各市县和西沙的经历，串联岛屿历史、地理、文化与当代发展。",
+      "scope": "hainan",
+      "enrichment_status": "complete",
+      "subjects": [
+        {
+          "subject_id": "subject-c2ffe58284145c",
+          "name": "黄亚洲",
+          "type": "person",
+          "role": "《海南放歌》作者",
+          "evidence": "黄亚洲先生将他的这部诗集《海南放歌》发到我微信里"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "足迹遍布海南的19个市县"
+        },
+        {
+          "location_id": "hainan-haikou",
+          "name": "海口市",
+          "code": "460100",
+          "level": "prefecture",
+          "evidence": "多聚焦于海口和三亚"
+        },
+        {
+          "location_id": "hainan-sanya",
+          "name": "三亚市",
+          "code": "460200",
+          "level": "prefecture",
+          "evidence": "多聚焦于海口和三亚"
+        },
+        {
+          "location_id": "hainan-chengmai",
+          "name": "澄迈县",
+          "code": "469023",
+          "level": "county",
+          "evidence": "《澄迈——苏东坡登陆海南岛》"
+        },
+        {
+          "location_id": "hainan-lingao",
+          "name": "临高县",
+          "code": "469024",
+          "level": "county",
+          "evidence": "临高角的登陆豪情"
+        }
+      ],
+      "topics": [
+        {
+          "topic_id": "hainan-literary-writing",
+          "name": "海南文学书写",
+          "relation": "primary",
+          "path": [
+            "文化与历史",
+            "海南文学书写"
+          ],
+          "evidence": "流动的海南时间简史"
+        }
+      ],
+      "events": [],
+      "plans": [],
+      "detail_path": "/items/2026-07-20/hndaily-20260720-58485-19718122/"
+    }
+  ],
+  "secondary_items": []
+}

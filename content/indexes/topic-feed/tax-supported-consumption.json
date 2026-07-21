@@ -1,0 +1,82 @@
+{
+  "topic_id": "tax-supported-consumption",
+  "name": "税收促消费",
+  "parent_id": "economy-market",
+  "article_count": 1,
+  "primary_count": 1,
+  "detail_path": "/topics/tax-supported-consumption/",
+  "definition": "聚合以“税收促消费”为主要议题的报道、进展与解释。",
+  "primary_items": [
+    {
+      "item_id": "hndaily-20260719-58464-19716154",
+      "published_date": "2026-07-19",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 5,
+      "title": "算好三本账，“小票据”激活“大市场”",
+      "ai_summary": "海口有奖发票截至6月底发放红包超1.2亿元、带动消费41.6亿元，海南还通过税费减免和数字开票降低小店经营与办税成本。",
+      "scope": "hainan",
+      "enrichment_status": "complete",
+      "subjects": [
+        {
+          "subject_id": "subject-6def687ae9ccd6",
+          "name": "国家税务总局海南省税务局",
+          "type": "government",
+          "role": "有奖发票、税费支持和智慧办税主管部门",
+          "evidence": "国家税务总局海南省税务局有关负责人表示"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "海南省税务部门紧扣终端消费环节"
+        },
+        {
+          "location_id": "hainan-haikou",
+          "name": "海口市",
+          "code": "460100",
+          "level": "prefecture",
+          "evidence": "今年2月，海口启动有奖发票试点活动"
+        },
+        {
+          "location_id": "hainan-wenchang",
+          "name": "文昌市",
+          "code": "469005",
+          "level": "county",
+          "evidence": "海南文昌溪北邦兴食品科技有限公司"
+        },
+        {
+          "location_id": "hainan-chengmai",
+          "name": "澄迈县",
+          "code": "469023",
+          "level": "county",
+          "evidence": "在澄迈县，税务部门依托征纳互动平台"
+        }
+      ],
+      "topics": [
+        {
+          "topic_id": "tax-supported-consumption",
+          "name": "税收促消费",
+          "relation": "primary",
+          "path": [
+            "经济与市场",
+            "税收促消费"
+          ],
+          "evidence": "算好三本账，“小票据”激活“大市场”"
+        }
+      ],
+      "events": [
+        {
+          "name": "海口有奖发票试点活动",
+          "evidence": "今年2月，海口启动有奖发票试点活动"
+        }
+      ],
+      "plans": [],
+      "detail_path": "/items/2026-07-19/hndaily-20260719-58464-19716154/"
+    }
+  ],
+  "secondary_items": []
+}

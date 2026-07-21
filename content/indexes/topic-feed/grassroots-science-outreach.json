@@ -1,0 +1,110 @@
+{
+  "topic_id": "grassroots-science-outreach",
+  "name": "基层科普",
+  "parent_id": "education-youth",
+  "article_count": 1,
+  "primary_count": 1,
+  "detail_path": "/topics/grassroots-science-outreach/",
+  "definition": "聚合以“基层科普”为主要议题的报道、进展与解释。",
+  "primary_items": [
+    {
+      "item_id": "hndaily-20260719-58465-19716170",
+      "published_date": "2026-07-19",
+      "page_number": "002",
+      "page_name": "本省新闻",
+      "page_sequence": 8,
+      "title": "2026年海南省万名大学生\n基层科普行活动在陵水启动",
+      "ai_summary": "海南7所高校组织大学生志愿者赴全省开展基层科普服务，活动持续至9月，既有足迹已覆盖18个市县、5000余个场所。",
+      "scope": "hainan",
+      "enrichment_status": "complete",
+      "subjects": [
+        {
+          "subject_id": "subject-fd4bc2d13c8278",
+          "name": "海南大学",
+          "type": "organization",
+          "role": "基层科普服务参与高校",
+          "evidence": "来自海南大学、海南师范大学、海南医科大学"
+        },
+        {
+          "subject_id": "subject-e4bea390a345a3",
+          "name": "海南师范大学",
+          "type": "organization",
+          "role": "基层科普服务参与高校",
+          "evidence": "海南大学、海南师范大学、海南医科大学"
+        },
+        {
+          "subject_id": "subject-56ee24bdb0a47b",
+          "name": "海南医科大学",
+          "type": "organization",
+          "role": "基层科普服务参与高校",
+          "evidence": "海南师范大学、海南医科大学、琼台师范学院"
+        },
+        {
+          "subject_id": "subject-44b90612502254",
+          "name": "琼台师范学院",
+          "type": "organization",
+          "role": "基层科普服务参与高校",
+          "evidence": "海南医科大学、琼台师范学院、海南软件职业技术学院"
+        },
+        {
+          "subject_id": "subject-a718040fcf7ba3",
+          "name": "海南软件职业技术学院",
+          "type": "organization",
+          "role": "基层科普服务参与高校",
+          "evidence": "琼台师范学院、海南软件职业技术学院、海南政法职业学院"
+        },
+        {
+          "subject_id": "subject-15cda89d33b24d",
+          "name": "海南政法职业学院",
+          "type": "organization",
+          "role": "基层科普服务参与高校",
+          "evidence": "海南软件职业技术学院、海南政法职业学院、海南卫生健康职业学院"
+        },
+        {
+          "subject_id": "subject-7e8e7be49d0031",
+          "name": "海南卫生健康职业学院",
+          "type": "organization",
+          "role": "基层科普服务参与高校",
+          "evidence": "海南政法职业学院、海南卫生健康职业学院等7所高校"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "2026年海南省万名大学生基层科普行"
+        },
+        {
+          "location_id": "hainan-lingshui",
+          "name": "陵水黎族自治县",
+          "code": "469028",
+          "level": "county",
+          "evidence": "陵水黎族自治县民族团结广场"
+        }
+      ],
+      "topics": [
+        {
+          "topic_id": "grassroots-science-outreach",
+          "name": "基层科普",
+          "relation": "primary",
+          "path": [
+            "教育与青年",
+            "基层科普"
+          ],
+          "evidence": "2026年海南省万名大学生\n基层科普行活动在陵水启动"
+        }
+      ],
+      "events": [
+        {
+          "name": "2026年海南省万名大学生基层科普行暨民族地区科普欢乐市集系列活动",
+          "evidence": "2026年海南省万名大学生基层科普行暨民族地区科普欢乐市集系列活动启动仪式"
+        }
+      ],
+      "plans": [],
+      "detail_path": "/items/2026-07-19/hndaily-20260719-58465-19716170/"
+    }
+  ],
+  "secondary_items": []
+}

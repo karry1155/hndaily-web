@@ -1,8 +1,8 @@
 {
-  "schema_version": 8,
+  "schema_version": 9,
   "item_id": "hndaily-20260720-58465-19717507",
   "published_date": "2026-07-20",
-  "collected_date": "2026-07-20",
+  "collected_date": "2026-07-21",
   "page_number": "002",
   "page_name": "本省新闻",
   "page_sequence": 1,
@@ -41,7 +41,27 @@
       "evidence": "博鳌乐城国际医疗旅游先行区"
     }
   ],
-  "topics": [
+  "topic_profile": {
+    "primary": {
+      "name": "乐城就医服务",
+      "evidence": "以“微实事”托起群众“大健康”"
+    },
+    "secondary": []
+  },
+  "resolved_topics": [
+    {
+      "topic_id": "lecheng-medical-services",
+      "name": "乐城就医服务",
+      "relation": "primary",
+      "path": [
+        "医疗与健康",
+        "乐城就医服务"
+      ],
+      "evidence": "以“微实事”托起群众“大健康”"
+    }
+  ],
+  "content_form": "feature",
+  "legacy_topics": [
     {
       "topic_id": "health",
       "name": "医疗健康",

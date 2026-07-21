@@ -1,0 +1,11 @@
+{
+  "topic_id": "reading-list",
+  "name": "阅读书单",
+  "parent_id": "culture-history",
+  "article_count": 0,
+  "primary_count": 0,
+  "detail_path": "/topics/reading-list/",
+  "definition": "聚合以“阅读书单”为主要议题的报道、进展与解释。",
+  "primary_items": [],
+  "secondary_items": []
+}

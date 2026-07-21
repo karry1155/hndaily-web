@@ -1,0 +1,75 @@
+{
+  "topic_id": "tropical-agricultural-research",
+  "name": "热带农业科研",
+  "parent_id": "agriculture-rural",
+  "article_count": 1,
+  "primary_count": 1,
+  "detail_path": "/topics/tropical-agricultural-research/",
+  "definition": "聚合以“热带农业科研”为主要议题的报道、进展与解释。",
+  "primary_items": [
+    {
+      "item_id": "hndaily-20260720-58465-19717508",
+      "published_date": "2026-07-20",
+      "page_number": "002",
+      "page_name": "本省新闻",
+      "page_sequence": 2,
+      "title": "海南首家科研院所科协成立",
+      "ai_summary": "三亚市热带农业科学研究院科协揭牌成立，将为琼南热带农业科研人才和成果转化提供平台。",
+      "scope": "hainan",
+      "enrichment_status": "complete",
+      "subjects": [
+        {
+          "subject_id": "subject-ce6bbc54a6d7e0",
+          "name": "三亚市热带农业科学研究院科协",
+          "type": "organization",
+          "role": "新成立的科研院所科协",
+          "evidence": "三亚市热带农业科学研究院科协揭牌成立"
+        },
+        {
+          "subject_id": "subject-a5d774dcb75627",
+          "name": "三亚市热带农业科学研究院",
+          "type": "organization",
+          "role": "科协依托科研院所",
+          "evidence": "三亚市热带农业科学研究院于2012年组建"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "海南省首家科研院所科学技术协会"
+        },
+        {
+          "location_id": "hainan-sanya",
+          "name": "三亚市",
+          "code": "460200",
+          "level": "prefecture",
+          "evidence": "三亚市热带农业科学研究院"
+        }
+      ],
+      "topics": [
+        {
+          "topic_id": "tropical-agricultural-research",
+          "name": "热带农业科研",
+          "relation": "primary",
+          "path": [
+            "农业与乡村",
+            "热带农业科研"
+          ],
+          "evidence": "海南首家科研院所科协成立"
+        }
+      ],
+      "events": [
+        {
+          "name": "三亚市热带农业科学研究院科协揭牌成立",
+          "evidence": "三亚市热带农业科学研究院科协揭牌成立"
+        }
+      ],
+      "plans": [],
+      "detail_path": "/items/2026-07-20/hndaily-20260720-58465-19717508/"
+    }
+  ],
+  "secondary_items": []
+}

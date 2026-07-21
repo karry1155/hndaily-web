@@ -1,0 +1,184 @@
+{
+  "topic_id": "sports-events",
+  "name": "体育与赛事",
+  "parent_id": null,
+  "article_count": 1,
+  "primary_count": 1,
+  "detail_path": "/topics/sports-events/",
+  "definition": "竞技体育、群众体育、训练体系与体育赛事。",
+  "primary_items": [
+    {
+      "item_id": "hndaily-20260720-58464-19717494",
+      "published_date": "2026-07-20",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 4,
+      "title": "海南竞技体育再“加速”",
+      "ai_summary": "海南竞技体育近年在全运会实现多项目奖牌突破，并通过青训、训练基地和赛事体系继续培养本土运动员。",
+      "scope": "hainan",
+      "enrichment_status": "complete",
+      "subjects": [
+        {
+          "subject_id": "subject-b822aedcbe6aee",
+          "name": "海南代表团",
+          "type": "organization",
+          "role": "第十五届全运会参赛代表团",
+          "evidence": "海南代表团交出了2金2银1铜的成绩单"
+        },
+        {
+          "subject_id": "subject-83364e832de33a",
+          "name": "林诗栋",
+          "type": "person",
+          "role": "海南乒乓球运动员",
+          "evidence": "海南选手林诗栋和搭档蒯曼夺得冠军"
+        },
+        {
+          "subject_id": "subject-b9a5f89ced34a9",
+          "name": "张好",
+          "type": "person",
+          "role": "海南公路自行车运动员",
+          "evidence": "张好在第十五届全运会公路自行车女子个人计时赛中冲线夺冠"
+        },
+        {
+          "subject_id": "subject-f61f89f1041d77",
+          "name": "吴世栋",
+          "type": "person",
+          "role": "海南冲浪运动员",
+          "evidence": "吴世栋以压倒性优势夺得第十五届全运会男子短板金牌"
+        },
+        {
+          "subject_id": "subject-9b1627b8c1462e",
+          "name": "邓雪莹",
+          "type": "person",
+          "role": "海南冲浪运动员",
+          "evidence": "邓雪莹逆转对手拼下女子短板铜牌"
+        },
+        {
+          "subject_id": "subject-ce20d27acd76fe",
+          "name": "邓小芳",
+          "type": "person",
+          "role": "海南举重运动员",
+          "evidence": "邓小芳勇夺女子举重49公斤级银牌，创下海南举重全运历史最佳"
+        },
+        {
+          "subject_id": "subject-916e3fc29c1592",
+          "name": "林雨",
+          "type": "person",
+          "role": "海南攀岩运动员",
+          "evidence": "海南选手林雨闯入全运会决赛阶段"
+        },
+        {
+          "subject_id": "subject-8711f9ee88329a",
+          "name": "符梦谣",
+          "type": "person",
+          "role": "海南田径运动员",
+          "evidence": "符梦谣在女子400米栏跑出赛季最佳"
+        },
+        {
+          "subject_id": "subject-eedb680278dfa0",
+          "name": "何岳基",
+          "type": "person",
+          "role": "海南举重运动员",
+          "evidence": "举重选手何岳基在2026年亚洲举重锦标赛男子65公斤级比赛中，以抓举146公斤、挺举183公斤、总成绩329公斤包揽三枚金牌"
+        },
+        {
+          "subject_id": "subject-72d99d160a7643",
+          "name": "董俊南",
+          "type": "person",
+          "role": "海南沙滩排球运动员",
+          "evidence": "沙排男队组合董俊南/常俊凯在2026年全国沙滩排球巡回赛云南盈江站夺冠"
+        },
+        {
+          "subject_id": "subject-a06e7ba1d29e92",
+          "name": "常俊凯",
+          "type": "person",
+          "role": "海南沙滩排球运动员",
+          "evidence": "沙排男队组合董俊南/常俊凯在2026年全国沙滩排球巡回赛云南盈江站夺冠"
+        },
+        {
+          "subject_id": "subject-3e39ee4ccb4d44",
+          "name": "王佳慧",
+          "type": "person",
+          "role": "海南拳击运动员",
+          "evidence": "女子拳击手王佳慧在2026年全国女子拳击锦标赛80公斤级决赛中力克劲敌摘金"
+        },
+        {
+          "subject_id": "subject-2897760691eb06",
+          "name": "吴志堂",
+          "type": "person",
+          "role": "海南青年拳击运动员",
+          "evidence": "儋州小将吴志堂在全国青年男子拳击锦标赛48公斤级中夺冠"
+        },
+        {
+          "subject_id": "subject-7fc86f1753957a",
+          "name": "吴学杰",
+          "type": "person",
+          "role": "海南田径运动员",
+          "evidence": "“海南飞人”吴学杰摘得2026年全国室内田径锦标赛60米冠军"
+        },
+        {
+          "subject_id": "subject-b6ff491bde964b",
+          "name": "林翔",
+          "type": "person",
+          "role": "海南蹼泳运动员",
+          "evidence": "蹼泳选手林翔成为首位入选国家队的海南蹼泳运动员"
+        },
+        {
+          "subject_id": "subject-af4baa437f5925",
+          "name": "海南省冰壶女队",
+          "type": "organization",
+          "role": "海南冰壶参赛队",
+          "evidence": "在2025—2026赛季全国冰壶锦标赛中，海南省冰壶女队夺得女子团体冠军"
+        },
+        {
+          "subject_id": "subject-37aa57de9dc081",
+          "name": "海南射箭队",
+          "type": "organization",
+          "role": "海南射箭参赛队",
+          "evidence": "在2026年全国射箭锦标赛中，海南射箭队夺得男子反曲弓团体冠军"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "海南竞技体育加速奔跑"
+        },
+        {
+          "location_id": "hainan-qionghai",
+          "name": "琼海市",
+          "code": "469002",
+          "level": "county",
+          "evidence": "琼海，万泉河畔"
+        }
+      ],
+      "topics": [
+        {
+          "topic_id": "hainan-competitive-sports",
+          "name": "海南竞技体育",
+          "relation": "primary",
+          "path": [
+            "体育与赛事",
+            "海南竞技体育"
+          ],
+          "evidence": "海南竞技体育再“加速”"
+        }
+      ],
+      "events": [
+        {
+          "name": "海南省第七届运动会",
+          "evidence": "8月16日至26日，海南省第七届运动会将在此举行"
+        },
+        {
+          "name": "2026年全国乒乓球锦标赛",
+          "evidence": "在2026年全国乒乓球锦标赛混双决赛中"
+        }
+      ],
+      "plans": [],
+      "detail_path": "/items/2026-07-20/hndaily-20260720-58464-19717494/"
+    }
+  ],
+  "secondary_items": []
+}

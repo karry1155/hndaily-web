@@ -1,8 +1,8 @@
 {
-  "schema_version": 8,
+  "schema_version": 9,
   "item_id": "hndaily-20260720-58466-19717523",
   "published_date": "2026-07-20",
-  "collected_date": "2026-07-20",
+  "collected_date": "2026-07-21",
   "page_number": "003",
   "page_name": "民生新闻",
   "page_sequence": 2,
@@ -105,7 +105,27 @@
       "evidence": "在儋州、五指山、昌江、陵水、白沙、保亭、琼中等市县"
     }
   ],
-  "topics": [
+  "topic_profile": {
+    "primary": {
+      "name": "普通高中招生",
+      "evidence": "海南划定普通高中学校录取最低控制分数线"
+    },
+    "secondary": []
+  },
+  "resolved_topics": [
+    {
+      "topic_id": "high-school-admissions",
+      "name": "普通高中招生",
+      "relation": "primary",
+      "path": [
+        "教育与青年",
+        "普通高中招生"
+      ],
+      "evidence": "海南划定普通高中学校录取最低控制分数线"
+    }
+  ],
+  "content_form": "news",
+  "legacy_topics": [
     {
       "topic_id": "education-talent",
       "name": "教育人才",

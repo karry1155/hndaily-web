@@ -5,8 +5,10 @@ grouped by processing stage so a dated issue can be reviewed from source to
 publication without mixing it with historical v1 artifacts.
 
 - `source/YYYY-MM-DD.json`: full crawler result and article text.
-- `input/YYYY-MM-DD.json`: exact v2 semantic input, candidates and fingerprint.
+- `input/YYYY-MM-DD.json`: exact v3 semantic input, candidates and fingerprint.
 - `enrichment/YYYY-MM-DD.json`: complete agent-produced semantic result to review.
+- `topic-resolution-input/YYYY-MM-DD.json`: open topics awaiting catalog resolution.
+- `topic-resolution/YYYY-MM-DD.json`: reviewed mappings and new leaf decisions.
 - `audit/YYYY-MM-DD.prefilter.json`: deterministic inclusion and exclusion record.
 - `audit/YYYY-MM-DD.publication.json`: validated publication counts, hashes and replacements.
 

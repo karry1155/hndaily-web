@@ -557,19 +557,14 @@
       ],
       "topics": [
         {
-          "topic_id": "urban-rural",
-          "name": "城乡建设",
-          "evidence": "全省共谋划公路水路项目223个"
-        },
-        {
-          "topic_id": "industry-projects",
-          "name": "产业项目",
-          "evidence": "总投资1363亿元"
-        },
-        {
-          "topic_id": "policy-governance",
-          "name": "政策治理",
-          "evidence": "日前已正式印发实施"
+          "topic_id": "hainan-integrated-transport-planning",
+          "name": "海南综合交通规划",
+          "relation": "primary",
+          "path": [
+            "交通与城市",
+            "海南综合交通规划"
+          ],
+          "evidence": "千亿投资推进“人享其行、物畅其流”"
         }
       ],
       "events": [
@@ -637,14 +632,14 @@
       ],
       "topics": [
         {
-          "topic_id": "culture-tourism-sports",
-          "name": "文旅体育",
-          "evidence": "跨省文旅联合推介活动"
-        },
-        {
-          "topic_id": "external-relations",
-          "name": "对外交流",
-          "evidence": "来自泰国、澳大利亚、希腊、菲律宾、巴基斯坦、埃塞俄比亚等国的旅行商代表"
+          "topic_id": "cross-regional-tourism-cooperation",
+          "name": "跨区域旅游合作",
+          "relation": "primary",
+          "path": [
+            "旅游与消费",
+            "跨区域旅游合作"
+          ],
+          "evidence": "旅游“一程多站”有了山海“联名款”"
         }
       ],
       "events": [
@@ -678,19 +673,14 @@
       "locations": [],
       "topics": [
         {
-          "topic_id": "policy-governance",
-          "name": "政策治理",
-          "evidence": "强化风险意识，确保安全可控"
-        },
-        {
-          "topic_id": "external-relations",
-          "name": "对外交流",
-          "evidence": "全球人工智能治理体系"
-        },
-        {
-          "topic_id": "industry-projects",
-          "name": "产业项目",
-          "evidence": "深度融入生产生活各领域"
+          "topic_id": "ai-safety-governance",
+          "name": "人工智能安全治理",
+          "relation": "primary",
+          "path": [
+            "科技与创新",
+            "人工智能安全治理"
+          ],
+          "evidence": "强化风险意识 确保安全可控"
         }
       ],
       "events": [
@@ -860,14 +850,14 @@
       ],
       "topics": [
         {
-          "topic_id": "culture-tourism-sports",
-          "name": "文旅体育",
-          "evidence": "海南竞技体育加速奔跑"
-        },
-        {
-          "topic_id": "education-talent",
-          "name": "教育人才",
-          "evidence": "选拔新苗、完善青训的新起点"
+          "topic_id": "hainan-competitive-sports",
+          "name": "海南竞技体育",
+          "relation": "primary",
+          "path": [
+            "体育与赛事",
+            "海南竞技体育"
+          ],
+          "evidence": "海南竞技体育再“加速”"
         }
       ],
       "events": [
@@ -947,14 +937,14 @@
       ],
       "topics": [
         {
-          "topic_id": "industry-projects",
-          "name": "产业项目",
-          "evidence": "产业AI产品体系"
-        },
-        {
-          "topic_id": "education-talent",
-          "name": "教育人才",
-          "evidence": "试验区的首批学生"
+          "topic_id": "industrial-ai-entrepreneurship",
+          "name": "产业人工智能创业",
+          "relation": "primary",
+          "path": [
+            "科技与创新",
+            "产业人工智能创业"
+          ],
+          "evidence": "从陵水黎安起步，登上世界级AI舞台"
         }
       ],
       "events": [
@@ -1115,19 +1105,14 @@
       ],
       "topics": [
         {
-          "topic_id": "industry-projects",
-          "name": "产业项目",
-          "evidence": "覆盖火锅、速食、休闲零食、饮品等全品类赛道"
-        },
-        {
-          "topic_id": "external-relations",
-          "name": "对外交流",
-          "evidence": "产品远销美国、加拿大、澳大利亚、新加坡等十余国"
-        },
-        {
-          "topic_id": "culture-tourism-sports",
-          "name": "文旅体育",
-          "evidence": "一碗糟粕醋，成了这趟旅途浓墨重彩的一笔"
+          "topic_id": "zaopocu-industry",
+          "name": "糟粕醋产业",
+          "relation": "primary",
+          "path": [
+            "产业与项目",
+            "糟粕醋产业"
+          ],
+          "evidence": "糟粕醋的“城市PK赛”你更看好谁？"
         }
       ],
       "events": [
@@ -1183,19 +1168,14 @@
       ],
       "topics": [
         {
-          "topic_id": "education-talent",
-          "name": "教育人才",
-          "evidence": "多元化课程丰富孩子们的暑期生活"
-        },
-        {
-          "topic_id": "culture-tourism-sports",
-          "name": "文旅体育",
-          "evidence": "舞龙舞狮体验课"
-        },
-        {
-          "topic_id": "health",
-          "name": "医疗健康",
-          "evidence": "融入脊柱侧弯筛查"
+          "topic_id": "summer-childcare-services",
+          "name": "暑期托管服务",
+          "relation": "primary",
+          "path": [
+            "社会与公共服务",
+            "暑期托管服务"
+          ],
+          "evidence": "暑期托管学舞龙"
         }
       ],
       "events": [
@@ -1250,19 +1230,14 @@
       ],
       "topics": [
         {
-          "topic_id": "health",
-          "name": "医疗健康",
-          "evidence": "破解就医堵点"
-        },
-        {
-          "topic_id": "livelihood-services",
-          "name": "民生服务",
-          "evidence": "轮椅、自助便民设备也全面投用"
-        },
-        {
-          "topic_id": "external-relations",
-          "name": "对外交流",
-          "evidence": "客源覆盖全球20个国家和地区"
+          "topic_id": "lecheng-medical-services",
+          "name": "乐城就医服务",
+          "relation": "primary",
+          "path": [
+            "医疗与健康",
+            "乐城就医服务"
+          ],
+          "evidence": "以“微实事”托起群众“大健康”"
         }
       ],
       "events": [
@@ -1318,14 +1293,14 @@
       ],
       "topics": [
         {
-          "topic_id": "education-talent",
-          "name": "教育人才",
-          "evidence": "人才集聚、成果转化新平台"
-        },
-        {
-          "topic_id": "industry-projects",
-          "name": "产业项目",
-          "evidence": "深耕南繁与热带农业科研"
+          "topic_id": "tropical-agricultural-research",
+          "name": "热带农业科研",
+          "relation": "primary",
+          "path": [
+            "农业与乡村",
+            "热带农业科研"
+          ],
+          "evidence": "海南首家科研院所科协成立"
         }
       ],
       "events": [
@@ -1374,14 +1349,14 @@
       ],
       "topics": [
         {
-          "topic_id": "culture-tourism-sports",
-          "name": "文旅体育",
-          "evidence": "黎族原始制陶技艺"
-        },
-        {
-          "topic_id": "external-relations",
-          "name": "对外交流",
-          "evidence": "两岸匠人围绕文化传承、体验设计及休闲农业创新发展进行深入交流"
+          "topic_id": "li-pottery-heritage",
+          "name": "黎陶非遗传承",
+          "relation": "primary",
+          "path": [
+            "文化与历史",
+            "黎陶非遗传承"
+          ],
+          "evidence": "两岸匠人共探黎陶魅力"
         }
       ],
       "events": [
@@ -1448,14 +1423,14 @@
       ],
       "topics": [
         {
-          "topic_id": "external-relations",
-          "name": "对外交流",
-          "evidence": "两岸媒体人海南行"
-        },
-        {
-          "topic_id": "culture-tourism-sports",
-          "name": "文旅体育",
-          "evidence": "用镜头和笔触记录下一个个鲜活瞬间"
+          "topic_id": "cross-strait-media-cooperation",
+          "name": "两岸媒体合作",
+          "relation": "primary",
+          "path": [
+            "自贸港与开放",
+            "两岸媒体合作"
+          ],
+          "evidence": "“既看见同源温情，也看见无限机遇”"
         }
       ],
       "events": [
@@ -1504,14 +1479,14 @@
       ],
       "topics": [
         {
-          "topic_id": "education-talent",
-          "name": "教育人才",
-          "evidence": "中小学校教室、宿舍空调全覆盖"
-        },
-        {
-          "topic_id": "livelihood-services",
-          "name": "民生服务",
-          "evidence": "将公办中小学空调配置列为为民办实事事项"
+          "topic_id": "school-facility-improvement",
+          "name": "校园设施改善",
+          "relation": "primary",
+          "path": [
+            "教育与青年",
+            "校园设施改善"
+          ],
+          "evidence": "三亚154所中小学校教室、宿舍空调全覆盖"
         }
       ],
       "events": [
@@ -1630,14 +1605,14 @@
       ],
       "topics": [
         {
-          "topic_id": "education-talent",
-          "name": "教育人才",
-          "evidence": "普通高中学校录取最低控制分数线"
-        },
-        {
-          "topic_id": "policy-governance",
-          "name": "政策治理",
-          "evidence": "严格执行以上最低控制分数线限制"
+          "topic_id": "high-school-admissions",
+          "name": "普通高中招生",
+          "relation": "primary",
+          "path": [
+            "教育与青年",
+            "普通高中招生"
+          ],
+          "evidence": "海南划定普通高中学校录取最低控制分数线"
         }
       ],
       "events": [
@@ -1693,14 +1668,14 @@
       ],
       "topics": [
         {
-          "topic_id": "policy-governance",
-          "name": "政策治理",
-          "evidence": "队员们在会上建言献策"
-        },
-        {
-          "topic_id": "livelihood-services",
-          "name": "民生服务",
-          "evidence": "消防救援站"
+          "topic_id": "grassroots-fire-rescue-teams",
+          "name": "基层消防队伍建设",
+          "relation": "primary",
+          "path": [
+            "应急与安全",
+            "基层消防队伍建设"
+          ],
+          "evidence": "一场场“诸葛亮会”，带出了队伍的精气神"
         }
       ],
       "events": [
@@ -1783,14 +1758,14 @@
       ],
       "topics": [
         {
-          "topic_id": "livelihood-services",
-          "name": "民生服务",
-          "evidence": "困难群众救助等领域精准发力"
-        },
-        {
-          "topic_id": "economy-data",
-          "name": "经济数据",
-          "evidence": "累计筹款突破1500万元"
+          "topic_id": "community-charity",
+          "name": "社区慈善",
+          "relation": "primary",
+          "path": [
+            "社会与公共服务",
+            "社区慈善"
+          ],
+          "evidence": "我省已设立社区慈善基金229支"
         }
       ],
       "events": [
@@ -1831,9 +1806,34 @@
       ],
       "topics": [
         {
-          "topic_id": "culture-tourism-sports",
-          "name": "文旅体育",
-          "evidence": "千年古法技艺晒制海盐"
+          "topic_id": "traditional-saltmaking",
+          "name": "古法制盐",
+          "relation": "primary",
+          "path": [
+            "文化与历史",
+            "古法制盐"
+          ],
+          "evidence": "古法晒盐忙"
+        },
+        {
+          "topic_id": "intangible-cultural-heritage",
+          "name": "非物质文化遗产",
+          "relation": "secondary",
+          "path": [
+            "文化与历史",
+            "非物质文化遗产"
+          ],
+          "evidence": "原汁原味的非遗制盐场景"
+        },
+        {
+          "topic_id": "sea-salt-culture",
+          "name": "海盐文化",
+          "relation": "secondary",
+          "path": [
+            "文化与历史",
+            "海盐文化"
+          ],
+          "evidence": "海盐文化魅力"
         }
       ],
       "events": [
@@ -1875,19 +1875,14 @@
       ],
       "topics": [
         {
-          "topic_id": "urban-rural",
-          "name": "城乡建设",
+          "topic_id": "urban-wastewater-treatment",
+          "name": "城市污水处理",
+          "relation": "primary",
+          "path": [
+            "交通与城市",
+            "城市污水处理"
+          ],
           "evidence": "新增日污水处理能力8万立方米"
-        },
-        {
-          "topic_id": "ecology",
-          "name": "生态环境",
-          "evidence": "化解污水溢流隐患"
-        },
-        {
-          "topic_id": "industry-projects",
-          "name": "产业项目",
-          "evidence": "扩容工程顺利通过竣工验收"
         }
       ],
       "events": [
@@ -1929,9 +1924,14 @@
       ],
       "topics": [
         {
-          "topic_id": "policy-governance",
-          "name": "政策治理",
-          "evidence": "深化以案促改促治"
+          "topic_id": "integrity-warning-education",
+          "name": "廉政警示教育",
+          "relation": "primary",
+          "path": [
+            "治理与法治",
+            "廉政警示教育"
+          ],
+          "evidence": "强化警示教育 筑牢廉洁防线"
         }
       ],
       "events": [
@@ -2008,14 +2008,14 @@
       ],
       "topics": [
         {
-          "topic_id": "industry-projects",
-          "name": "产业项目",
-          "evidence": "搭建白沙茶产业质量服务平台"
-        },
-        {
-          "topic_id": "livelihood-services",
-          "name": "民生服务",
-          "evidence": "实现质量咨询、技术指导、业务办理等就近可办、一站办结"
+          "topic_id": "tea-quality-infrastructure",
+          "name": "茶业质量基础设施",
+          "relation": "primary",
+          "path": [
+            "产业与项目",
+            "茶业质量基础设施"
+          ],
+          "evidence": "白沙一站式服务站里的“十八般武艺”"
         }
       ],
       "events": [
@@ -2134,14 +2134,14 @@
       ],
       "topics": [
         {
-          "topic_id": "culture-tourism-sports",
-          "name": "文旅体育",
-          "evidence": "50余项特色主题活动"
-        },
-        {
-          "topic_id": "external-relations",
-          "name": "对外交流",
-          "evidence": "汇聚全球客商的国际化平台"
+          "topic_id": "hainan-tourism-festivals",
+          "name": "海南旅游节庆",
+          "relation": "primary",
+          "path": [
+            "旅游与消费",
+            "海南旅游节庆"
+          ],
+          "evidence": "欢乐海南岛 开放向世界"
         }
       ],
       "events": [
@@ -2182,14 +2182,14 @@
       "locations": [],
       "topics": [
         {
-          "topic_id": "external-relations",
-          "name": "对外交流",
-          "evidence": "推动构建人类命运共同体"
-        },
-        {
-          "topic_id": "policy-governance",
-          "name": "政策治理",
-          "evidence": "为应对全球性挑战贡献中国方案"
+          "topic_id": "community-shared-future",
+          "name": "人类命运共同体",
+          "relation": "primary",
+          "path": [
+            "自贸港与开放",
+            "人类命运共同体"
+          ],
+          "evidence": "“必须持续推动构建人类命运共同体”"
         }
       ],
       "events": [
@@ -2230,14 +2230,14 @@
       "locations": [],
       "topics": [
         {
-          "topic_id": "economy-data",
-          "name": "经济数据",
-          "evidence": "使用股票回购增持专项再贷款及配套资金超500亿元"
-        },
-        {
-          "topic_id": "industry-projects",
-          "name": "产业项目",
-          "evidence": "支持央企科技创新和高质量发展"
+          "topic_id": "capital-market-stabilization",
+          "name": "资本市场稳市",
+          "relation": "primary",
+          "path": [
+            "经济与市场",
+            "资本市场稳市"
+          ],
+          "evidence": "中国国新和中国诚通宣布继续增持"
         }
       ],
       "events": [
@@ -2271,14 +2271,14 @@
       "locations": [],
       "topics": [
         {
-          "topic_id": "livelihood-services",
-          "name": "民生服务",
-          "evidence": "已安全转移周边群众1100余名"
-        },
-        {
-          "topic_id": "policy-governance",
-          "name": "政策治理",
-          "evidence": "细化救援方案"
+          "topic_id": "geological-disaster-rescue",
+          "name": "地质灾害救援",
+          "relation": "primary",
+          "path": [
+            "应急与安全",
+            "地质灾害救援"
+          ],
+          "evidence": "各方力量全力搜救"
         }
       ],
       "events": [
@@ -2312,19 +2312,14 @@
       "locations": [],
       "topics": [
         {
-          "topic_id": "economy-data",
-          "name": "经济数据",
-          "evidence": "全国固定资产投资规模达22.6万亿元"
-        },
-        {
-          "topic_id": "industry-projects",
-          "name": "产业项目",
-          "evidence": "新基建、重大工程项目等“物”的投资加快落地"
-        },
-        {
-          "topic_id": "livelihood-services",
-          "name": "民生服务",
-          "evidence": "教育、医疗、养老等“人”的投入持续升温"
+          "topic_id": "effective-investment-policy",
+          "name": "有效投资政策",
+          "relation": "primary",
+          "path": [
+            "经济与市场",
+            "有效投资政策"
+          ],
+          "evidence": "持续扩大有效投资见“物”更见“人”"
         }
       ],
       "events": [
@@ -2391,14 +2386,14 @@
       "locations": [],
       "topics": [
         {
-          "topic_id": "education-talent",
-          "name": "教育人才",
-          "evidence": "4名参赛高中生选手全部获得金牌"
-        },
-        {
-          "topic_id": "external-relations",
-          "name": "对外交流",
-          "evidence": "来自全球92个国家和地区的363名选手参赛"
+          "topic_id": "international-chemistry-olympiad",
+          "name": "国际化学奥林匹克竞赛",
+          "relation": "primary",
+          "path": [
+            "教育与青年",
+            "国际化学奥林匹克竞赛"
+          ],
+          "evidence": "中国代表队4名选手获第58届国际化学奥赛金牌"
         }
       ],
       "events": [
@@ -2439,14 +2434,14 @@
       "locations": [],
       "topics": [
         {
-          "topic_id": "external-relations",
-          "name": "对外交流",
-          "evidence": "美国与沙特阿拉伯的核协议草案"
-        },
-        {
-          "topic_id": "policy-governance",
-          "name": "政策治理",
-          "evidence": "未切实落实核不扩散制度"
+          "topic_id": "nuclear-nonproliferation",
+          "name": "核不扩散",
+          "relation": "primary",
+          "path": [
+            "治理与法治",
+            "核不扩散"
+          ],
+          "evidence": "美沙核协议草案浮出水面 搞“双标”遭质疑"
         }
       ],
       "events": [
@@ -2480,14 +2475,14 @@
       "locations": [],
       "topics": [
         {
-          "topic_id": "policy-governance",
-          "name": "政策治理",
-          "evidence": "内阁支持率从6月的51%跌至41%"
-        },
-        {
-          "topic_id": "economy-data",
-          "name": "经济数据",
-          "evidence": "不支持率则升至44%"
+          "topic_id": "japan-cabinet-public-opinion",
+          "name": "日本内阁民意",
+          "relation": "primary",
+          "path": [
+            "治理与法治",
+            "日本内阁民意"
+          ],
+          "evidence": "高市内阁不支持率超过支持率"
         }
       ],
       "events": [
@@ -2521,14 +2516,14 @@
       "locations": [],
       "topics": [
         {
-          "topic_id": "economy-data",
-          "name": "经济数据",
-          "evidence": "发行面额10卢比和20卢比的塑料钞票"
-        },
-        {
-          "topic_id": "policy-governance",
-          "name": "政策治理",
-          "evidence": "评估用其替代纸币的可行性"
+          "topic_id": "polymer-banknote-issuance",
+          "name": "塑料钞票发行",
+          "relation": "primary",
+          "path": [
+            "经济与市场",
+            "塑料钞票发行"
+          ],
+          "evidence": "印度计划试点发行小面额塑料钞票"
         }
       ],
       "events": [
@@ -2554,19 +2549,14 @@
       "locations": [],
       "topics": [
         {
-          "topic_id": "economy-data",
-          "name": "经济数据",
-          "evidence": "全球粮价较2022年高点明显回落"
-        },
-        {
-          "topic_id": "ecology",
-          "name": "生态环境",
-          "evidence": "新一轮厄尔尼诺现象导致极端天气频发"
-        },
-        {
-          "topic_id": "external-relations",
-          "name": "对外交流",
-          "evidence": "部分国家收紧农产品出口"
+          "topic_id": "global-food-security",
+          "name": "全球粮食安全",
+          "relation": "primary",
+          "path": [
+            "农业与乡村",
+            "全球粮食安全"
+          ],
+          "evidence": "全球粮食安全面临三大“灰犀牛”"
         }
       ],
       "events": [],
@@ -2595,14 +2585,14 @@
       "locations": [],
       "topics": [
         {
-          "topic_id": "ecology",
-          "name": "生态环境",
-          "evidence": "过火面积超过290万公顷"
-        },
-        {
-          "topic_id": "economy-data",
-          "name": "经济数据",
-          "evidence": "在燃野火数量达到959起"
+          "topic_id": "canada-wildfires",
+          "name": "加拿大森林火灾",
+          "relation": "primary",
+          "path": [
+            "应急与安全",
+            "加拿大森林火灾"
+          ],
+          "evidence": "加拿大多地野火持续蔓延"
         }
       ],
       "events": [
@@ -2658,9 +2648,14 @@
       ],
       "topics": [
         {
-          "topic_id": "culture-tourism-sports",
-          "name": "文旅体育",
-          "evidence": "对其情感表达、写作风格，都产生了不可忽视的影响"
+          "topic_id": "su-shi-family-literature",
+          "name": "苏轼家庭与文学",
+          "relation": "primary",
+          "path": [
+            "文化与历史",
+            "苏轼家庭与文学"
+          ],
+          "evidence": "姊妹情牵苏子笔"
         }
       ],
       "events": [],
@@ -2681,14 +2676,14 @@
       "locations": [],
       "topics": [
         {
-          "topic_id": "culture-tourism-sports",
-          "name": "文旅体育",
-          "evidence": "民间认为，伏是隐伏、避暑"
-        },
-        {
-          "topic_id": "health",
-          "name": "医疗健康",
-          "evidence": "人们历来重视三伏天养生"
+          "topic_id": "sanfu-folk-proverbs",
+          "name": "三伏民间谚语",
+          "relation": "primary",
+          "path": [
+            "文化与历史",
+            "三伏民间谚语"
+          ],
+          "evidence": "谚语之中迎三伏"
         }
       ],
       "events": [],
@@ -2746,9 +2741,14 @@
       ],
       "topics": [
         {
-          "topic_id": "culture-tourism-sports",
-          "name": "文旅体育",
-          "evidence": "这里文脉悠长"
+          "topic_id": "yazhou-local-history",
+          "name": "崖州地方史",
+          "relation": "primary",
+          "path": [
+            "文化与历史",
+            "崖州地方史"
+          ],
+          "evidence": "崖州西关塔轶事"
         }
       ],
       "events": [
@@ -2832,19 +2832,14 @@
       ],
       "topics": [
         {
-          "topic_id": "industry-projects",
-          "name": "产业项目",
-          "evidence": "桑蚕产业再度走入大众视野"
-        },
-        {
-          "topic_id": "culture-tourism-sports",
-          "name": "文旅体育",
-          "evidence": "依托海南本土千年养蚕传统"
-        },
-        {
-          "topic_id": "urban-rural",
-          "name": "城乡建设",
-          "evidence": "转型升级期"
+          "topic_id": "hainan-sericulture-history",
+          "name": "海南桑蚕史",
+          "relation": "primary",
+          "path": [
+            "文化与历史",
+            "海南桑蚕史"
+          ],
+          "evidence": "琼岛千年蚕事"
         }
       ],
       "events": [],
@@ -2895,19 +2890,14 @@
       ],
       "topics": [
         {
-          "topic_id": "industry-projects",
-          "name": "产业项目",
-          "evidence": "从只卖蚕茧到桑叶、桑枝、蚕蛹都能换成钱"
-        },
-        {
-          "topic_id": "education-talent",
-          "name": "教育人才",
-          "evidence": "下乡，讲课，传授技术"
-        },
-        {
-          "topic_id": "urban-rural",
-          "name": "城乡建设",
-          "evidence": "让农户将蚕从“养不活”到“养得好”"
+          "topic_id": "sericulture-technology-extension",
+          "name": "桑蚕科技推广",
+          "relation": "primary",
+          "path": [
+            "农业与乡村",
+            "桑蚕科技推广"
+          ],
+          "evidence": "“蚕博士”织就桑蚕新赛道"
         }
       ],
       "events": [
@@ -2977,19 +2967,14 @@
       ],
       "topics": [
         {
-          "topic_id": "education-talent",
-          "name": "教育人才",
-          "evidence": "打造成为专业化、特色化的桑蚕主题研学基地"
-        },
-        {
-          "topic_id": "urban-rural",
-          "name": "城乡建设",
-          "evidence": "培育乡村人才、激活乡土产业活力"
-        },
-        {
-          "topic_id": "industry-projects",
-          "name": "产业项目",
-          "evidence": "桑蚕主题研学基地"
+          "topic_id": "sericulture-study-tours",
+          "name": "桑蚕研学",
+          "relation": "primary",
+          "path": [
+            "教育与青年",
+            "桑蚕研学"
+          ],
+          "evidence": "崖州凤岭有了“蚕课堂”！"
         }
       ],
       "events": [
@@ -3052,9 +3037,14 @@
       ],
       "topics": [
         {
-          "topic_id": "culture-tourism-sports",
-          "name": "文旅体育",
-          "evidence": "周士第将军档案资料共200余件"
+          "topic_id": "zhou-shidi-biography",
+          "name": "周士第生平",
+          "relation": "primary",
+          "path": [
+            "文化与历史",
+            "周士第生平"
+          ],
+          "evidence": "从农家子弟到开国上将"
         }
       ],
       "events": [],
@@ -3098,14 +3088,14 @@
       ],
       "topics": [
         {
-          "topic_id": "culture-tourism-sports",
-          "name": "文旅体育",
-          "evidence": "获得了诗歌奖"
-        },
-        {
-          "topic_id": "education-talent",
-          "name": "教育人才",
-          "evidence": "海南作家第二次获得鲁迅文学奖"
+          "topic_id": "hainan-poetry-writing",
+          "name": "海南诗歌创作",
+          "relation": "primary",
+          "path": [
+            "文化与历史",
+            "海南诗歌创作"
+          ],
+          "evidence": "贴着大地写作的人"
         }
       ],
       "events": [
@@ -3168,14 +3158,14 @@
       ],
       "topics": [
         {
-          "topic_id": "industry-projects",
-          "name": "产业项目",
-          "evidence": "根据园林绿化、盆花、切花等不同用途"
-        },
-        {
-          "topic_id": "ecology",
-          "name": "生态环境",
-          "evidence": "海南产姜科植物44种"
+          "topic_id": "ginger-lily-horticulture",
+          "name": "姜荷花园艺",
+          "relation": "primary",
+          "path": [
+            "农业与乡村",
+            "姜荷花园艺"
+          ],
+          "evidence": "陆上生莲亦娉婷"
         }
       ],
       "events": [
@@ -3258,14 +3248,14 @@
       ],
       "topics": [
         {
-          "topic_id": "culture-tourism-sports",
-          "name": "文旅体育",
-          "evidence": "拍摄日出风光"
-        },
-        {
-          "topic_id": "ecology",
-          "name": "生态环境",
-          "evidence": "与光、岛礁、雨林的对话"
+          "topic_id": "hainan-sunrise-photography",
+          "name": "海南日出摄影",
+          "relation": "primary",
+          "path": [
+            "文化与历史",
+            "海南日出摄影"
+          ],
+          "evidence": "逐光山海间"
         }
       ],
       "events": [],
@@ -3294,14 +3284,14 @@
       ],
       "topics": [
         {
-          "topic_id": "culture-tourism-sports",
-          "name": "文旅体育",
-          "evidence": "观赏和拍摄尖峰岭日出"
-        },
-        {
-          "topic_id": "ecology",
-          "name": "生态环境",
-          "evidence": "云海被照亮的细腻纹理"
+          "topic_id": "jianfengling-nature-travelogue",
+          "name": "尖峰岭自然游记",
+          "relation": "primary",
+          "path": [
+            "文化与历史",
+            "尖峰岭自然游记"
+          ],
+          "evidence": "云海日出尖峰岭"
         }
       ],
       "events": [],
@@ -3373,19 +3363,14 @@
       ],
       "topics": [
         {
-          "topic_id": "culture-tourism-sports",
-          "name": "文旅体育",
-          "evidence": "从“旅游符号”到“文化IP”"
-        },
-        {
-          "topic_id": "industry-projects",
-          "name": "产业项目",
-          "evidence": "面料端同步发力"
-        },
-        {
-          "topic_id": "external-relations",
-          "name": "对外交流",
-          "evidence": "国际设计视野的加入"
+          "topic_id": "hainan-island-fashion-design",
+          "name": "海南岛服设计",
+          "relation": "primary",
+          "path": [
+            "文化与历史",
+            "海南岛服设计"
+          ],
+          "evidence": "岛服破圈记"
         }
       ],
       "events": [
@@ -3434,9 +3419,14 @@
       ],
       "topics": [
         {
-          "topic_id": "culture-tourism-sports",
-          "name": "文旅体育",
-          "evidence": "海南民间信仰、神话传说、民歌和民间故事"
+          "topic_id": "hainan-folklore-research",
+          "name": "海南民俗研究",
+          "relation": "primary",
+          "path": [
+            "文化与历史",
+            "海南民俗研究"
+          ],
+          "evidence": "打捞乡土遗落的记忆"
         }
       ],
       "events": [],
@@ -3487,14 +3477,14 @@
       ],
       "topics": [
         {
-          "topic_id": "culture-tourism-sports",
-          "name": "文旅体育",
-          "evidence": "记录了岭南的物产、风土与民俗情况"
-        },
-        {
-          "topic_id": "ecology",
-          "name": "生态环境",
-          "evidence": "内容涵盖物产资源、地理环境"
+          "topic_id": "tang-hainan-local-history",
+          "name": "唐代海南地方史",
+          "relation": "primary",
+          "path": [
+            "文化与历史",
+            "唐代海南地方史"
+          ],
+          "evidence": "《岭表录异》中的海南"
         }
       ],
       "events": [],
@@ -3530,19 +3520,14 @@
       ],
       "topics": [
         {
-          "topic_id": "culture-tourism-sports",
-          "name": "文旅体育",
-          "evidence": "古代朴素而浪漫的授时方式"
-        },
-        {
-          "topic_id": "ecology",
-          "name": "生态环境",
-          "evidence": "地处南海之滨，是热带季风性气候"
-        },
-        {
-          "topic_id": "industry-projects",
-          "name": "产业项目",
-          "evidence": "夏收、夏种、夏管"
+          "topic_id": "hainan-farming-seasons",
+          "name": "海南农时",
+          "relation": "primary",
+          "path": [
+            "农业与乡村",
+            "海南农时"
+          ],
+          "evidence": "山海万物知农时"
         }
       ],
       "events": [],
@@ -3585,9 +3570,14 @@
       "locations": [],
       "topics": [
         {
-          "topic_id": "culture-tourism-sports",
-          "name": "文旅体育",
-          "evidence": "本书是以糖为媒介的文化交流史"
+          "topic_id": "reading-list",
+          "name": "阅读书单",
+          "relation": "primary",
+          "path": [
+            "文化与历史",
+            "阅读书单"
+          ],
+          "evidence": "荐阅书单"
         }
       ],
       "events": [],
@@ -3652,9 +3642,14 @@
       ],
       "topics": [
         {
-          "topic_id": "culture-tourism-sports",
-          "name": "文旅体育",
-          "evidence": "对海南风貌的全景式扫描"
+          "topic_id": "hainan-literary-writing",
+          "name": "海南文学书写",
+          "relation": "primary",
+          "path": [
+            "文化与历史",
+            "海南文学书写"
+          ],
+          "evidence": "流动的海南时间简史"
         }
       ],
       "events": [],
@@ -3683,19 +3678,14 @@
       "locations": [],
       "topics": [
         {
-          "topic_id": "culture-tourism-sports",
-          "name": "文旅体育",
-          "evidence": "河流与城市交织的记忆"
-        },
-        {
-          "topic_id": "external-relations",
-          "name": "对外交流",
-          "evidence": "延展至伦敦、纽约、汉堡、东京、阿姆斯特丹等世界港口城市"
-        },
-        {
-          "topic_id": "urban-rural",
-          "name": "城乡建设",
-          "evidence": "河流与城市伦理、公共空间、人文保护之间的关系"
+          "topic_id": "rivers-urban-civilization",
+          "name": "河流与城市文明",
+          "relation": "primary",
+          "path": [
+            "文化与历史",
+            "河流与城市文明"
+          ],
+          "evidence": "渗透文明的历史容器"
         }
       ],
       "events": [],
@@ -3724,9 +3714,14 @@
       "locations": [],
       "topics": [
         {
-          "topic_id": "culture-tourism-sports",
-          "name": "文旅体育",
-          "evidence": "今年的暑期档，动画电影几乎占据了半壁江山"
+          "topic_id": "animated-film-criticism",
+          "name": "动画电影评论",
+          "relation": "primary",
+          "path": [
+            "文化与历史",
+            "动画电影评论"
+          ],
+          "evidence": "走进“三国”更深处"
         }
       ],
       "events": [],

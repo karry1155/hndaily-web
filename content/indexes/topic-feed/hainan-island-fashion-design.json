@@ -1,0 +1,96 @@
+{
+  "topic_id": "hainan-island-fashion-design",
+  "name": "海南岛服设计",
+  "parent_id": "culture-history",
+  "article_count": 1,
+  "primary_count": 1,
+  "detail_path": "/topics/hainan-island-fashion-design/",
+  "definition": "聚合以“海南岛服设计”为主要议题的报道、进展与解释。",
+  "primary_items": [
+    {
+      "item_id": "hndaily-20260720-58481-19718099",
+      "published_date": "2026-07-20",
+      "page_number": "018",
+      "page_name": "文化",
+      "page_sequence": 1,
+      "title": "岛服破圈记",
+      "ai_summary": "周仰杰设计的三亚联名岛服引入国际设计视野，推动岛服从旅游服饰向适合日常穿着的本土文化产品转型。",
+      "scope": "mixed",
+      "enrichment_status": "complete",
+      "subjects": [
+        {
+          "subject_id": "subject-a5c8d22374226d",
+          "name": "周仰杰",
+          "type": "person",
+          "role": "三亚岛服设计大师",
+          "evidence": "三亚市旅文局正式聘请周仰杰为“三亚岛服设计大师”"
+        },
+        {
+          "subject_id": "subject-be2c683a83f55e",
+          "name": "三亚市旅文局",
+          "type": "government",
+          "role": "岛服设计合作推动方",
+          "evidence": "三亚市旅文局正式聘请周仰杰"
+        },
+        {
+          "subject_id": "subject-e39c50fb6e5ff8",
+          "name": "三亚学院艺术创意与数字设计学院",
+          "type": "organization",
+          "role": "岛服设计教学研究方",
+          "evidence": "三亚学院艺术创意与数字设计学院"
+        },
+        {
+          "subject_id": "subject-342b36aff47ada",
+          "name": "杨洋",
+          "type": "person",
+          "role": "岛服产业研究者",
+          "evidence": "三亚学院艺术创意与数字设计学院时尚系主任杨洋"
+        },
+        {
+          "subject_id": "subject-f9cfa476bd349a",
+          "name": "“海南岛服”设计研究课题组",
+          "type": "project",
+          "role": "岛服设计研究项目",
+          "evidence": "“海南岛服”设计研究课题组启动运作"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "海南自贸港建设的进程中"
+        },
+        {
+          "location_id": "hainan-sanya",
+          "name": "三亚市",
+          "code": "460200",
+          "level": "prefecture",
+          "evidence": "三亚联名岛服系列正式亮相"
+        }
+      ],
+      "topics": [
+        {
+          "topic_id": "hainan-island-fashion-design",
+          "name": "海南岛服设计",
+          "relation": "primary",
+          "path": [
+            "文化与历史",
+            "海南岛服设计"
+          ],
+          "evidence": "岛服破圈记"
+        }
+      ],
+      "events": [
+        {
+          "name": "周仰杰设计的三亚联名岛服系列亮相",
+          "evidence": "三亚联名岛服系列正式亮相"
+        }
+      ],
+      "plans": [],
+      "detail_path": "/items/2026-07-20/hndaily-20260720-58481-19718099/"
+    }
+  ],
+  "secondary_items": []
+}

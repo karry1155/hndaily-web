@@ -1,0 +1,48 @@
+{
+  "topic_id": "lingao-local-memory",
+  "name": "临高地方记忆",
+  "parent_id": "culture-history",
+  "article_count": 1,
+  "primary_count": 1,
+  "detail_path": "/topics/lingao-local-memory/",
+  "definition": "聚合以“临高地方记忆”为主要议题的报道、进展与解释。",
+  "primary_items": [
+    {
+      "item_id": "hndaily-20260719-58467-19716188",
+      "published_date": "2026-07-19",
+      "page_number": "004",
+      "page_name": "文化周刊",
+      "page_sequence": 1,
+      "title": "一座小城",
+      "ai_summary": "文澜河、老桥、石板街和木偶戏串联起临高小城的生活变迁与乡土记忆。",
+      "scope": "hainan",
+      "enrichment_status": "complete",
+      "subjects": [],
+      "locations": [
+        {
+          "location_id": "hainan-lingao",
+          "name": "临高县",
+          "code": "469024",
+          "level": "county",
+          "evidence": "临高大桥"
+        }
+      ],
+      "topics": [
+        {
+          "topic_id": "lingao-local-memory",
+          "name": "临高地方记忆",
+          "relation": "primary",
+          "path": [
+            "文化与历史",
+            "临高地方记忆"
+          ],
+          "evidence": "一座小城"
+        }
+      ],
+      "events": [],
+      "plans": [],
+      "detail_path": "/items/2026-07-19/hndaily-20260719-58467-19716188/"
+    }
+  ],
+  "secondary_items": []
+}

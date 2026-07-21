@@ -1,8 +1,8 @@
 {
-  "schema_version": 8,
+  "schema_version": 9,
   "item_id": "hndaily-20260720-58466-19717530",
   "published_date": "2026-07-20",
-  "collected_date": "2026-07-20",
+  "collected_date": "2026-07-21",
   "page_number": "003",
   "page_name": "民生新闻",
   "page_sequence": 8,
@@ -28,7 +28,27 @@
       "evidence": "文昌市纪委监委"
     }
   ],
-  "topics": [
+  "topic_profile": {
+    "primary": {
+      "name": "廉政警示教育",
+      "evidence": "强化警示教育 筑牢廉洁防线"
+    },
+    "secondary": []
+  },
+  "resolved_topics": [
+    {
+      "topic_id": "integrity-warning-education",
+      "name": "廉政警示教育",
+      "relation": "primary",
+      "path": [
+        "治理与法治",
+        "廉政警示教育"
+      ],
+      "evidence": "强化警示教育 筑牢廉洁防线"
+    }
+  ],
+  "content_form": "news",
+  "legacy_topics": [
     {
       "topic_id": "policy-governance",
       "name": "政策治理",

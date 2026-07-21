@@ -54,16 +54,18 @@ class RepositoryBoundaryTests(unittest.TestCase):
             "data/production-json/input/",
             "data/production-json/enrichment/",
             "data/production-json/audit/",
-            "prompts/article-enrichment/v2/",
+            "prompts/article-enrichment/v3/",
         ):
             self.assertIn(value, readme)
 
-    def test_production_readme_documents_current_hnhot_v2_artifacts(self):
+    def test_production_readme_documents_current_hnhot_v3_artifacts(self):
         readme = (ROOT / "data/production-json/README.md").read_text(encoding="utf-8")
         for value in (
             "source/YYYY-MM-DD.json",
             "input/YYYY-MM-DD.json",
             "enrichment/YYYY-MM-DD.json",
+            "topic-resolution-input/YYYY-MM-DD.json",
+            "topic-resolution/YYYY-MM-DD.json",
             "audit/YYYY-MM-DD.prefilter.json",
             "audit/YYYY-MM-DD.publication.json",
         ):

@@ -1,0 +1,77 @@
+{
+  "topic_id": "zhou-shidi-biography",
+  "name": "周士第生平",
+  "parent_id": "culture-history",
+  "article_count": 1,
+  "primary_count": 1,
+  "detail_path": "/topics/zhou-shidi-biography/",
+  "definition": "聚合以“周士第生平”为主要议题的报道、进展与解释。",
+  "primary_items": [
+    {
+      "item_id": "hndaily-20260720-58476-19718064",
+      "published_date": "2026-07-20",
+      "page_number": "013",
+      "page_name": "档案",
+      "page_sequence": 1,
+      "title": "从农家子弟到开国上将",
+      "ai_summary": "海南省档案馆收藏周士第将军档案200余件，记录其从黄埔军校学习、指挥太原战役到晚年写作的经历。",
+      "scope": "hainan",
+      "enrichment_status": "complete",
+      "subjects": [
+        {
+          "subject_id": "subject-5f38030e82d2c7",
+          "name": "周士第",
+          "type": "person",
+          "role": "中国人民解放军开国上将",
+          "evidence": "周士第将军档案资料共200余件"
+        },
+        {
+          "subject_id": "subject-818ce92463c2e2",
+          "name": "海南省档案馆",
+          "type": "organization",
+          "role": "周士第档案收藏机构",
+          "evidence": "收藏于海南省档案馆"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "邀请他回家乡海南岛走一走"
+        },
+        {
+          "location_id": "hainan-wuzhishan",
+          "name": "五指山市",
+          "code": "469001",
+          "level": "county",
+          "evidence": "五指山上放光芒"
+        },
+        {
+          "location_id": "hainan-qionghai",
+          "name": "琼海市",
+          "code": "469002",
+          "level": "county",
+          "evidence": "琼海县委领导曾特地登门拜访他"
+        }
+      ],
+      "topics": [
+        {
+          "topic_id": "zhou-shidi-biography",
+          "name": "周士第生平",
+          "relation": "primary",
+          "path": [
+            "文化与历史",
+            "周士第生平"
+          ],
+          "evidence": "从农家子弟到开国上将"
+        }
+      ],
+      "events": [],
+      "plans": [],
+      "detail_path": "/items/2026-07-20/hndaily-20260720-58476-19718064/"
+    }
+  ],
+  "secondary_items": []
+}

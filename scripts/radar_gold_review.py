@@ -10,6 +10,7 @@ from typing import Any
 
 from scripts.radar_adapter import adapt_hndaily
 from scripts.radar_contract import non_empty, validate_iso_date, validate_item_id
+from scripts.radar_indexes import public_topics
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -282,7 +283,7 @@ def build_review_dataset(project_root: Path = ROOT) -> dict[str, Any]:
                         "scope": public_item.get("scope"),
                         "subjects": public_item.get("subjects", []),
                         "locations": public_item.get("locations", []),
-                        "topics": public_item.get("topics", []),
+                        "topics": public_topics(public_item),
                         "event_relation": public_item.get("event_relation"),
                     },
                     "candidates": {

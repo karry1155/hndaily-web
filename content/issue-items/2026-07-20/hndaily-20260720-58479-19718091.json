@@ -1,8 +1,8 @@
 {
-  "schema_version": 8,
+  "schema_version": 9,
   "item_id": "hndaily-20260720-58479-19718091",
   "published_date": "2026-07-20",
-  "collected_date": "2026-07-20",
+  "collected_date": "2026-07-21",
   "page_number": "016",
   "page_name": "读图",
   "page_sequence": 2,
@@ -20,7 +20,27 @@
       "evidence": "尖峰岭日出"
     }
   ],
-  "topics": [
+  "topic_profile": {
+    "primary": {
+      "name": "尖峰岭自然游记",
+      "evidence": "云海日出尖峰岭"
+    },
+    "secondary": []
+  },
+  "resolved_topics": [
+    {
+      "topic_id": "jianfengling-nature-travelogue",
+      "name": "尖峰岭自然游记",
+      "relation": "primary",
+      "path": [
+        "文化与历史",
+        "尖峰岭自然游记"
+      ],
+      "evidence": "云海日出尖峰岭"
+    }
+  ],
+  "content_form": "essay",
+  "legacy_topics": [
     {
       "topic_id": "culture-tourism-sports",
       "name": "文旅体育",

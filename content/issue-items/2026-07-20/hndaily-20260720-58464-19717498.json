@@ -1,8 +1,8 @@
 {
-  "schema_version": 8,
+  "schema_version": 9,
   "item_id": "hndaily-20260720-58464-19717498",
   "published_date": "2026-07-20",
-  "collected_date": "2026-07-20",
+  "collected_date": "2026-07-21",
   "page_number": "001",
   "page_name": "头版",
   "page_sequence": 7,
@@ -42,7 +42,27 @@
       "evidence": "定安县龙门镇"
     }
   ],
-  "topics": [
+  "topic_profile": {
+    "primary": {
+      "name": "暑期托管服务",
+      "evidence": "暑期托管学舞龙"
+    },
+    "secondary": []
+  },
+  "resolved_topics": [
+    {
+      "topic_id": "summer-childcare-services",
+      "name": "暑期托管服务",
+      "relation": "primary",
+      "path": [
+        "社会与公共服务",
+        "暑期托管服务"
+      ],
+      "evidence": "暑期托管学舞龙"
+    }
+  ],
+  "content_form": "photo-news",
+  "legacy_topics": [
     {
       "topic_id": "education-talent",
       "name": "教育人才",

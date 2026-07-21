@@ -15,9 +15,10 @@ from urllib.parse import urlparse
 if __package__ in (None, ""):
     sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-from scripts.radar_indexes import build_hnhot_indexes
+from scripts.radar_indexes import build_hnhot_indexes, public_topics
 from scripts.radar_issue import validate_public_issue, validate_public_issue_item
 from scripts.radar_store import load_issue_items, load_issues
+from scripts.radar_topics import load_topic_catalog
 from scripts.radar_gold_review import review_inputs_available, write_review_site
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -333,7 +334,7 @@ def _archive_story(article):
             for alias in row.get("aliases", [])
         ],
         *[row["name"] for row in article["locations"]],
-        *[row["name"] for row in article["topics"]],
+        *[row["name"] for row in public_topics(article)],
         *[row["name"] for row in article.get("events", [])],
         *[row["name"] for row in article.get("plans", [])],
     ]
@@ -550,7 +551,7 @@ def render_item(item):
         ("locations", "地点", "context-token-list"),
         ("topics", "主题", "context-token-list"),
     ):
-        rows = item.get(key, [])
+        rows = public_topics(item) if key == "topics" else item.get(key, [])
         if key == "locations":
             rows = sorted(
                 rows,
@@ -623,11 +624,67 @@ def _more_page():
         '<a class="more-card" href="/starred/"><strong>收藏</strong><span>留住值得反复阅读的报道</span></a>'
         '<a class="more-card" href="/subjects/"><strong>按主体看海南</strong><span>人物、机构、企业与项目的连续报道</span></a>'
         '<a class="more-card" href="/regions/"><strong>按地区看海南</strong><span>沿行政区积累地区记忆</span></a>'
+        '<a class="more-card" href="/topics/"><strong>按主题看海南</strong><span>从准确议题进入海南的长期脉络</span></a>'
         '<a class="more-card" href="/about/"><strong>关于 HNHOT</strong><span>产品方法与数据边界</span></a>'
     )
     return _simple_page(
         "更多", "沉淀海南记忆", "更多",
         f'<div class="more-grid">{cards}</div>{_scope_guide()}',
+    )
+
+
+def render_topics_index(topic_index):
+    cards = []
+    for root in topic_index.get("roots", []):
+        children = [row for row in root.get("children", []) if row["article_count"]]
+        child_links = "".join(
+            f'<a href="{_esc(row["detail_path"], True)}">{_esc(row["name"])}'
+            f'<span>{row["article_count"]}</span></a>'
+            for row in children
+        )
+        cards.append(
+            '<section class="archive-issue topic-root-card"><header><div>'
+            f'<h2><a href="{_esc(root["detail_path"], True)}">{_esc(root["name"])}</a></h2>'
+            f'</div><span>{root["article_count"]} 篇</span></header>'
+            f'<div class="topic-child-links">{child_links}</div></section>'
+        )
+    body = (
+        '<div class="app-shell radar-shell">'
+        f'{render_primary_nav("更多")}<main class="content-shell all-page archive-page">'
+        '<header class="page-header"><div><span class="eyebrow">长期主题目录</span>'
+        '<h1>按主题看海南</h1><p>只收录海南本地及有海南主体直接参与的报道</p></div></header>'
+        f'<div class="archive-issues">{"".join(cards)}</div></main></div>'
+    )
+    return body
+
+
+def render_topic_page(feed):
+    primary = feed.get("primary_items", [])
+    secondary = feed.get("secondary_items", [])
+    sections = []
+    if primary:
+        sections.append(
+            '<section class="date-group"><header><h2>核心相关</h2>'
+            f'<span>{len(primary)} 篇</span></header><div class="story-list">'
+            f'{"".join(_story_card(row) for row in primary)}</div></section>'
+        )
+    if secondary:
+        sections.append(
+            '<section class="date-group"><header><h2>延伸相关</h2>'
+            f'<span>{len(secondary)} 篇</span></header><div class="story-list">'
+            f'{"".join(_story_card(row) for row in secondary)}</div></section>'
+        )
+    if not sections:
+        sections.append(
+            '<p class="empty-state topic-empty">这个主题目前还没有海南相关报道。</p>'
+        )
+    return (
+        '<div class="app-shell radar-shell">'
+        f'{render_primary_nav("更多")}<main class="content-shell all-page">'
+        '<a class="back-link" href="/topics/">← 全部主题</a>'
+        '<header class="page-header"><div><span class="eyebrow">按主题看海南</span>'
+        f'<h1>{_esc(feed["name"])}</h1><p>{_esc(feed["definition"])}</p></div></header>'
+        f'{"".join(sections)}</main></div>'
     )
 
 
@@ -720,7 +777,7 @@ def build_site(content_root, site_root):
     articles = load_issue_items(content_root)
     if not issues:
         raise ValueError("HNHOT requires at least one newspaper issue")
-    indexes = build_hnhot_indexes(issues, articles)
+    indexes = build_hnhot_indexes(issues, articles, load_topic_catalog(content_root))
     staging = site_root.with_name(f".{site_root.name}.hnhot-staging")
     backup = site_root.with_name(f".{site_root.name}.hnhot-backup")
     if staging.exists():
@@ -760,6 +817,15 @@ def build_site(content_root, site_root):
             })
         _write(staging / "daily/index.html", _daily_page(issues))
         _write(staging / "more/index.html", _more_page())
+        topic_index = indexes["topics.json"]
+        _write(staging / "topics/index.html", render_topics_index(topic_index))
+        for node in topic_index["nodes"]:
+            feed = indexes.get(f'topic-feed/{node["topic_id"]}.json')
+            if feed is not None:
+                _write(
+                    staging / f'topics/{node["topic_id"]}/index.html',
+                    render_topic_page(feed),
+                )
         _write(staging / "starred/index.html", _starred_page(catalog))
         _write(staging / "subjects/index.html", _simple_page(
             "更多", "连续报道", "按主体看海南",

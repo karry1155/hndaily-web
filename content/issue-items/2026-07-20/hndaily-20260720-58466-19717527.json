@@ -1,8 +1,8 @@
 {
-  "schema_version": 8,
+  "schema_version": 9,
   "item_id": "hndaily-20260720-58466-19717527",
   "published_date": "2026-07-20",
-  "collected_date": "2026-07-20",
+  "collected_date": "2026-07-21",
   "page_number": "003",
   "page_name": "民生新闻",
   "page_sequence": 5,
@@ -69,7 +69,27 @@
       "evidence": "乐东黎族自治县举行公开募捐活动"
     }
   ],
-  "topics": [
+  "topic_profile": {
+    "primary": {
+      "name": "社区慈善",
+      "evidence": "我省已设立社区慈善基金229支"
+    },
+    "secondary": []
+  },
+  "resolved_topics": [
+    {
+      "topic_id": "community-charity",
+      "name": "社区慈善",
+      "relation": "primary",
+      "path": [
+        "社会与公共服务",
+        "社区慈善"
+      ],
+      "evidence": "我省已设立社区慈善基金229支"
+    }
+  ],
+  "content_form": "news",
+  "legacy_topics": [
     {
       "topic_id": "livelihood-services",
       "name": "民生服务",

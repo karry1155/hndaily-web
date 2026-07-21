@@ -1,8 +1,8 @@
 {
-  "schema_version": 8,
+  "schema_version": 9,
   "item_id": "hndaily-20260720-58478-19718085",
   "published_date": "2026-07-20",
-  "collected_date": "2026-07-20",
+  "collected_date": "2026-07-21",
   "page_number": "015",
   "page_name": "风物",
   "page_sequence": 1,
@@ -49,7 +49,27 @@
       "evidence": "往五指山、吊罗山密林深处走"
     }
   ],
-  "topics": [
+  "topic_profile": {
+    "primary": {
+      "name": "姜荷花园艺",
+      "evidence": "陆上生莲亦娉婷"
+    },
+    "secondary": []
+  },
+  "resolved_topics": [
+    {
+      "topic_id": "ginger-lily-horticulture",
+      "name": "姜荷花园艺",
+      "relation": "primary",
+      "path": [
+        "农业与乡村",
+        "姜荷花园艺"
+      ],
+      "evidence": "陆上生莲亦娉婷"
+    }
+  ],
+  "content_form": "explainer",
+  "legacy_topics": [
     {
       "topic_id": "industry-projects",
       "name": "产业项目",

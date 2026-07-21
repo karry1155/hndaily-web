@@ -1,8 +1,8 @@
 {
-  "schema_version": 8,
+  "schema_version": 9,
   "item_id": "hndaily-20260720-58474-19718050",
   "published_date": "2026-07-20",
-  "collected_date": "2026-07-20",
+  "collected_date": "2026-07-21",
   "page_number": "011",
   "page_name": "封面",
   "page_sequence": 1,
@@ -42,7 +42,27 @@
       "evidence": "从琼中开始"
     }
   ],
-  "topics": [
+  "topic_profile": {
+    "primary": {
+      "name": "桑蚕科技推广",
+      "evidence": "“蚕博士”织就桑蚕新赛道"
+    },
+    "secondary": []
+  },
+  "resolved_topics": [
+    {
+      "topic_id": "sericulture-technology-extension",
+      "name": "桑蚕科技推广",
+      "relation": "primary",
+      "path": [
+        "农业与乡村",
+        "桑蚕科技推广"
+      ],
+      "evidence": "“蚕博士”织就桑蚕新赛道"
+    }
+  ],
+  "content_form": "profile",
+  "legacy_topics": [
     {
       "topic_id": "industry-projects",
       "name": "产业项目",

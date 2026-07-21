@@ -1,0 +1,6 @@
+{
+  "schema_version": 1,
+  "prompt_version": "topic-resolution-v1",
+  "prompt": "prompt.md",
+  "output_schema": "schema.json"
+}

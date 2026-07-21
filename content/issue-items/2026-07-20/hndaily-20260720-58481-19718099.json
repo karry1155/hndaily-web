@@ -1,8 +1,8 @@
 {
-  "schema_version": 8,
+  "schema_version": 9,
   "item_id": "hndaily-20260720-58481-19718099",
   "published_date": "2026-07-20",
-  "collected_date": "2026-07-20",
+  "collected_date": "2026-07-21",
   "page_number": "018",
   "page_name": "文化",
   "page_sequence": 1,
@@ -63,7 +63,27 @@
       "evidence": "三亚联名岛服系列正式亮相"
     }
   ],
-  "topics": [
+  "topic_profile": {
+    "primary": {
+      "name": "海南岛服设计",
+      "evidence": "岛服破圈记"
+    },
+    "secondary": []
+  },
+  "resolved_topics": [
+    {
+      "topic_id": "hainan-island-fashion-design",
+      "name": "海南岛服设计",
+      "relation": "primary",
+      "path": [
+        "文化与历史",
+        "海南岛服设计"
+      ],
+      "evidence": "岛服破圈记"
+    }
+  ],
+  "content_form": "feature",
+  "legacy_topics": [
     {
       "topic_id": "culture-tourism-sports",
       "name": "文旅体育",

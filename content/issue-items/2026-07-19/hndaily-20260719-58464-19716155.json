@@ -1,8 +1,8 @@
 {
-  "schema_version": 8,
+  "schema_version": 9,
   "item_id": "hndaily-20260719-58464-19716155",
   "published_date": "2026-07-19",
-  "collected_date": "2026-07-20",
+  "collected_date": "2026-07-21",
   "page_number": "001",
   "page_name": "头版",
   "page_sequence": 6,
@@ -20,7 +20,27 @@
       "evidence": "海南国际旅游岛欢乐节"
     }
   ],
-  "topics": [
+  "topic_profile": {
+    "primary": {
+      "name": "海南旅游节庆",
+      "evidence": "畅玩全岛 欢乐启程"
+    },
+    "secondary": []
+  },
+  "resolved_topics": [
+    {
+      "topic_id": "hainan-tourism-festivals",
+      "name": "海南旅游节庆",
+      "relation": "primary",
+      "path": [
+        "旅游与消费",
+        "海南旅游节庆"
+      ],
+      "evidence": "畅玩全岛 欢乐启程"
+    }
+  ],
+  "content_form": "news",
+  "legacy_topics": [
     {
       "topic_id": "culture-tourism-sports",
       "name": "文旅体育",

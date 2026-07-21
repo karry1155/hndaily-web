@@ -209,19 +209,14 @@
       "locations": [],
       "topics": [
         {
-          "topic_id": "external-relations",
-          "name": "对外交流",
-          "evidence": "人工智能正跨越山海、渗透千行百业，成为驱动全球发展的新引擎"
-        },
-        {
-          "topic_id": "industry-projects",
-          "name": "产业项目",
-          "evidence": "人工智能已走出实验室、扎根产业一线"
-        },
-        {
-          "topic_id": "policy-governance",
-          "name": "政策治理",
-          "evidence": "携手构建公正合理的全球人工智能治理体系"
+          "topic_id": "global-ai-governance",
+          "name": "人工智能全球治理",
+          "relation": "primary",
+          "path": [
+            "科技与创新",
+            "人工智能全球治理"
+          ],
+          "evidence": "坚持开放共赢 驱动创新发展"
         }
       ],
       "events": [
@@ -286,14 +281,14 @@
       ],
       "topics": [
         {
-          "topic_id": "culture-tourism-sports",
-          "name": "文旅体育",
-          "evidence": "海南国际旅游岛欢乐节"
-        },
-        {
-          "topic_id": "external-relations",
-          "name": "对外交流",
-          "evidence": "汇聚全球客商的国际化平台"
+          "topic_id": "hainan-tourism-festivals",
+          "name": "海南旅游节庆",
+          "relation": "primary",
+          "path": [
+            "旅游与消费",
+            "海南旅游节庆"
+          ],
+          "evidence": "2026年海南国际旅游岛欢乐节开幕"
         }
       ],
       "events": [
@@ -370,19 +365,14 @@
       ],
       "topics": [
         {
-          "topic_id": "culture-tourism-sports",
-          "name": "文旅体育",
-          "evidence": "共同构建山海联动、全域旅游路网格局"
-        },
-        {
-          "topic_id": "urban-rural",
-          "name": "城乡建设",
-          "evidence": "科学织密旅游公路“一张网”"
-        },
-        {
-          "topic_id": "industry-projects",
-          "name": "产业项目",
-          "evidence": "环岛旅游公路与特色产业双向赋能"
+          "topic_id": "transport-tourism-integration",
+          "name": "交通旅游融合",
+          "relation": "primary",
+          "path": [
+            "交通与城市",
+            "交通旅游融合"
+          ],
+          "evidence": "坚持系统化布局、精细化治理、多元化融合\n一体推进环岛旅游公路提质升级"
         }
       ],
       "events": [
@@ -452,19 +442,14 @@
       ],
       "topics": [
         {
-          "topic_id": "culture-tourism-sports",
-          "name": "文旅体育",
-          "evidence": "文旅消费补贴"
-        },
-        {
-          "topic_id": "livelihood-services",
-          "name": "民生服务",
-          "evidence": "通过门票减免、消费补贴、交通优惠等组合拳，切实降低游客出行成本"
-        },
-        {
-          "topic_id": "economy-data",
-          "name": "经济数据",
-          "evidence": "激发文旅消费活力"
+          "topic_id": "tourism-consumption-incentives",
+          "name": "文旅消费优惠",
+          "relation": "primary",
+          "path": [
+            "旅游与消费",
+            "文旅消费优惠"
+          ],
+          "evidence": "省钱省心！欢乐节派送惠民礼包"
         }
       ],
       "events": [
@@ -527,19 +512,14 @@
       ],
       "topics": [
         {
-          "topic_id": "economy-data",
-          "name": "经济数据",
-          "evidence": "带动消费总金额41.6亿元"
-        },
-        {
-          "topic_id": "livelihood-services",
-          "name": "民生服务",
-          "evidence": "提升智慧办税服务体验"
-        },
-        {
-          "topic_id": "policy-governance",
-          "name": "政策治理",
-          "evidence": "深化有奖发票试点工作"
+          "topic_id": "tax-supported-consumption",
+          "name": "税收促消费",
+          "relation": "primary",
+          "path": [
+            "经济与市场",
+            "税收促消费"
+          ],
+          "evidence": "算好三本账，“小票据”激活“大市场”"
         }
       ],
       "events": [
@@ -573,9 +553,14 @@
       ],
       "topics": [
         {
-          "topic_id": "culture-tourism-sports",
-          "name": "文旅体育",
-          "evidence": "欢乐节"
+          "topic_id": "hainan-tourism-festivals",
+          "name": "海南旅游节庆",
+          "relation": "primary",
+          "path": [
+            "旅游与消费",
+            "海南旅游节庆"
+          ],
+          "evidence": "畅玩全岛 欢乐启程"
         }
       ],
       "events": [
@@ -638,19 +623,14 @@
       ],
       "topics": [
         {
-          "topic_id": "industry-projects",
-          "name": "产业项目",
-          "evidence": "打造沉香全产业链条"
-        },
-        {
-          "topic_id": "urban-rural",
-          "name": "城乡建设",
-          "evidence": "解决农户前期资金投入不足难题"
-        },
-        {
-          "topic_id": "economy-data",
-          "name": "经济数据",
-          "evidence": "获得授信超3000万元"
+          "topic_id": "agarwood-understory-economy",
+          "name": "沉香林下经济",
+          "relation": "primary",
+          "path": [
+            "农业与乡村",
+            "沉香林下经济"
+          ],
+          "evidence": "琼中林下套种沉香，真香！"
         }
       ],
       "events": [
@@ -704,19 +684,14 @@
       ],
       "topics": [
         {
-          "topic_id": "education-talent",
-          "name": "教育人才",
-          "evidence": "为青年学子搭建学术交流、实习就业、深造发展一体化多元平台"
-        },
-        {
-          "topic_id": "health",
-          "name": "医疗健康",
-          "evidence": "围绕疾病预防、临床诊断、疾病治疗、康复养护等民生健康议题"
-        },
-        {
-          "topic_id": "industry-projects",
-          "name": "产业项目",
-          "evidence": "海南自贸港生物医药产业发展"
+          "topic_id": "biomedical-engineering-innovation",
+          "name": "生物医学工程创新",
+          "relation": "primary",
+          "path": [
+            "科技与创新",
+            "生物医学工程创新"
+          ],
+          "evidence": "第十一届全国大学生生物医学\n工程创新设计竞赛三亚开幕"
         }
       ],
       "events": [
@@ -800,24 +775,14 @@
       ],
       "topics": [
         {
-          "topic_id": "external-relations",
-          "name": "对外交流",
-          "evidence": "围绕产业对接、创业创新、协同发展深入交流研讨"
-        },
-        {
-          "topic_id": "industry-projects",
-          "name": "产业项目",
-          "evidence": "期待在海南落地康养文旅新项目"
-        },
-        {
-          "topic_id": "economy-data",
-          "name": "经济数据",
-          "evidence": "2025年，海南新增台资企业234家"
-        },
-        {
-          "topic_id": "education-talent",
-          "name": "教育人才",
-          "evidence": "琼台青年创新创业交流合作渠道"
+          "topic_id": "hainan-taiwan-youth-entrepreneurship",
+          "name": "琼台青年创业合作",
+          "relation": "primary",
+          "path": [
+            "自贸港与开放",
+            "琼台青年创业合作"
+          ],
+          "evidence": "琼台青年企业家椰城共探优质合作新赛道"
         }
       ],
       "events": [
@@ -897,19 +862,14 @@
       ],
       "topics": [
         {
-          "topic_id": "culture-tourism-sports",
-          "name": "文旅体育",
-          "evidence": "文体竞赛设置拉丁舞、羽毛球两大项目"
-        },
-        {
-          "topic_id": "external-relations",
-          "name": "对外交流",
-          "evidence": "两岸青春交流盛会"
-        },
-        {
-          "topic_id": "education-talent",
-          "name": "教育人才",
-          "evidence": "沉浸式研学路线"
+          "topic_id": "cross-strait-youth-exchange",
+          "name": "两岸青少年交流",
+          "relation": "primary",
+          "path": [
+            "教育与青年",
+            "两岸青少年交流"
+          ],
+          "evidence": "第三届琼台“宝岛杯”两岸青少年\n文体交流活动在海口启幕"
         }
       ],
       "events": [
@@ -983,24 +943,14 @@
       ],
       "topics": [
         {
-          "topic_id": "external-relations",
-          "name": "对外交流",
-          "evidence": "琼台两地的交流持续书写着新的注脚"
-        },
-        {
-          "topic_id": "culture-tourism-sports",
-          "name": "文旅体育",
-          "evidence": "蔡家宅的文化精神"
-        },
-        {
-          "topic_id": "health",
-          "name": "医疗健康",
-          "evidence": "海南博鳌乐城国际医疗旅游先行区"
-        },
-        {
-          "topic_id": "economy-data",
-          "name": "经济数据",
-          "evidence": "中心客流量增长120%，门诊量增长40%以上"
+          "topic_id": "cross-strait-media-exchange",
+          "name": "两岸媒体交流",
+          "relation": "primary",
+          "path": [
+            "自贸港与开放",
+            "两岸媒体交流"
+          ],
+          "evidence": "“海南的开放包容为两岸交流注入活力”"
         }
       ],
       "events": [
@@ -1069,19 +1019,14 @@
       ],
       "topics": [
         {
-          "topic_id": "ecology",
-          "name": "生态环境",
-          "evidence": "绿色低碳转型"
-        },
-        {
-          "topic_id": "urban-rural",
-          "name": "城乡建设",
-          "evidence": "城乡建设零碳评价指南"
-        },
-        {
-          "topic_id": "policy-governance",
-          "name": "政策治理",
-          "evidence": "为不同发展基础、不同减排阶段的项目提供阶梯式的技术路径"
+          "topic_id": "zero-carbon-urban-rural-assessment",
+          "name": "城乡建设零碳评价",
+          "relation": "primary",
+          "path": [
+            "生态与气候",
+            "城乡建设零碳评价"
+          ],
+          "evidence": "《博鳌评价：城乡建设零碳评价指南（试行）》发布"
         }
       ],
       "events": [
@@ -1163,19 +1108,14 @@
       ],
       "topics": [
         {
-          "topic_id": "ecology",
-          "name": "生态环境",
-          "evidence": "海洋生态环境综合治理"
-        },
-        {
-          "topic_id": "livelihood-services",
-          "name": "民生服务",
-          "evidence": "志愿服务体系"
-        },
-        {
-          "topic_id": "urban-rural",
-          "name": "城乡建设",
-          "evidence": "滨海岸线文明提升"
+          "topic_id": "coastal-waste-governance",
+          "name": "海岸垃圾治理",
+          "relation": "primary",
+          "path": [
+            "生态与气候",
+            "海岸垃圾治理"
+          ],
+          "evidence": "携手护碧海 聚力守蔚蓝"
         }
       ],
       "events": [
@@ -1270,14 +1210,14 @@
       ],
       "topics": [
         {
-          "topic_id": "education-talent",
-          "name": "教育人才",
-          "evidence": "大学生志愿者将分赴全省各地开展科普服务"
-        },
-        {
-          "topic_id": "livelihood-services",
-          "name": "民生服务",
-          "evidence": "将科普知识送入千家万户"
+          "topic_id": "grassroots-science-outreach",
+          "name": "基层科普",
+          "relation": "primary",
+          "path": [
+            "教育与青年",
+            "基层科普"
+          ],
+          "evidence": "2026年海南省万名大学生\n基层科普行活动在陵水启动"
         }
       ],
       "events": [
@@ -1340,19 +1280,14 @@
       ],
       "topics": [
         {
-          "topic_id": "health",
-          "name": "医疗健康",
-          "evidence": "让群众在“家门口”就能享受到优质中医诊疗服务"
-        },
-        {
-          "topic_id": "livelihood-services",
-          "name": "民生服务",
-          "evidence": "将更多医疗技术和服务下沉偏远山区"
-        },
-        {
-          "topic_id": "education-talent",
-          "name": "教育人才",
-          "evidence": "培育数名青年中医骨干"
+          "topic_id": "grassroots-chinese-medicine",
+          "name": "基层中医",
+          "relation": "primary",
+          "path": [
+            "医疗与健康",
+            "基层中医"
+          ],
+          "evidence": "“为乡亲解决病痛，是我最开心的事”"
         }
       ],
       "events": [
@@ -1414,19 +1349,14 @@
       "locations": [],
       "topics": [
         {
-          "topic_id": "ecology",
-          "name": "生态环境",
-          "evidence": "地质灾害等隐患"
-        },
-        {
-          "topic_id": "livelihood-services",
-          "name": "民生服务",
-          "evidence": "受灾群众基本生活保障"
-        },
-        {
-          "topic_id": "policy-governance",
-          "name": "政策治理",
-          "evidence": "国家四级救灾应急响应"
+          "topic_id": "geological-disaster-rescue",
+          "name": "地质灾害救援",
+          "relation": "primary",
+          "path": [
+            "应急与安全",
+            "地质灾害救援"
+          ],
+          "evidence": "全力投入抢险救援 压实责任排查隐患"
         }
       ],
       "events": [
@@ -1460,19 +1390,14 @@
       "locations": [],
       "topics": [
         {
-          "topic_id": "external-relations",
-          "name": "对外交流",
-          "evidence": "携手构建公正合理的全球人工智能治理体系"
-        },
-        {
-          "topic_id": "policy-governance",
-          "name": "政策治理",
-          "evidence": "人工智能全球治理"
-        },
-        {
-          "topic_id": "industry-projects",
-          "name": "产业项目",
-          "evidence": "全球人工智能技术创新进入前所未有的活跃期"
+          "topic_id": "global-ai-governance",
+          "name": "人工智能全球治理",
+          "relation": "primary",
+          "path": [
+            "科技与创新",
+            "人工智能全球治理"
+          ],
+          "evidence": "促进共同繁荣 维护共同安全"
         }
       ],
       "events": [
@@ -1515,14 +1440,14 @@
       ],
       "topics": [
         {
-          "topic_id": "culture-tourism-sports",
-          "name": "文旅体育",
-          "evidence": "古邑千年唱临高，木偶戏是临高人心中萦绕的乡音"
-        },
-        {
-          "topic_id": "urban-rural",
-          "name": "城乡建设",
-          "evidence": "旧城每天都在变样，昔日郊野起新城"
+          "topic_id": "lingao-local-memory",
+          "name": "临高地方记忆",
+          "relation": "primary",
+          "path": [
+            "文化与历史",
+            "临高地方记忆"
+          ],
+          "evidence": "一座小城"
         }
       ],
       "events": [],
@@ -1541,7 +1466,18 @@
       "enrichment_status": "complete",
       "subjects": [],
       "locations": [],
-      "topics": [],
+      "topics": [
+        {
+          "topic_id": "companion-animal-responsibility",
+          "name": "伴侣动物与饲养责任",
+          "relation": "primary",
+          "path": [
+            "社会与公共服务",
+            "伴侣动物与饲养责任"
+          ],
+          "evidence": "远去的巴斯特"
+        }
+      ],
       "events": [],
       "plans": [],
       "detail_path": "/items/2026-07-19/hndaily-20260719-58467-19716191/"
@@ -1568,9 +1504,14 @@
       ],
       "topics": [
         {
-          "topic_id": "culture-tourism-sports",
-          "name": "文旅体育",
-          "evidence": "古老的语言、独特的服饰以及原始的舞蹈和极具风味的饮食"
+          "topic_id": "western-hainan-rural-writing",
+          "name": "海南西部乡土书写",
+          "relation": "primary",
+          "path": [
+            "文化与历史",
+            "海南西部乡土书写"
+          ],
+          "evidence": "西部古歌"
         }
       ],
       "events": [],
@@ -1599,9 +1540,14 @@
       "locations": [],
       "topics": [
         {
-          "topic_id": "education-talent",
-          "name": "教育人才",
-          "evidence": "终身学习精神"
+          "topic_id": "scientist-information-management",
+          "name": "科学家的信息管理",
+          "relation": "primary",
+          "path": [
+            "教育与青年",
+            "科学家的信息管理"
+          ],
+          "evidence": "钱学森做剪报"
         }
       ],
       "events": [],

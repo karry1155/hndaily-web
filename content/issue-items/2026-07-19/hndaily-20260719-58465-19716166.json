@@ -1,8 +1,8 @@
 {
-  "schema_version": 8,
+  "schema_version": 9,
   "item_id": "hndaily-20260719-58465-19716166",
   "published_date": "2026-07-19",
-  "collected_date": "2026-07-20",
+  "collected_date": "2026-07-21",
   "page_number": "002",
   "page_name": "本省新闻",
   "page_sequence": 4,
@@ -56,7 +56,27 @@
       "evidence": "在琼海留客村"
     }
   ],
-  "topics": [
+  "topic_profile": {
+    "primary": {
+      "name": "两岸媒体交流",
+      "evidence": "“海南的开放包容为两岸交流注入活力”"
+    },
+    "secondary": []
+  },
+  "resolved_topics": [
+    {
+      "topic_id": "cross-strait-media-exchange",
+      "name": "两岸媒体交流",
+      "relation": "primary",
+      "path": [
+        "自贸港与开放",
+        "两岸媒体交流"
+      ],
+      "evidence": "“海南的开放包容为两岸交流注入活力”"
+    }
+  ],
+  "content_form": "news",
+  "legacy_topics": [
     {
       "topic_id": "external-relations",
       "name": "对外交流",

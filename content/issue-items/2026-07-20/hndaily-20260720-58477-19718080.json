@@ -1,8 +1,8 @@
 {
-  "schema_version": 8,
+  "schema_version": 9,
   "item_id": "hndaily-20260720-58477-19718080",
   "published_date": "2026-07-20",
-  "collected_date": "2026-07-20",
+  "collected_date": "2026-07-21",
   "page_number": "014",
   "page_name": "访谈",
   "page_sequence": 1,
@@ -35,7 +35,27 @@
       "evidence": "为澄迈编撰《金江文艺》杂志"
     }
   ],
-  "topics": [
+  "topic_profile": {
+    "primary": {
+      "name": "海南诗歌创作",
+      "evidence": "贴着大地写作的人"
+    },
+    "secondary": []
+  },
+  "resolved_topics": [
+    {
+      "topic_id": "hainan-poetry-writing",
+      "name": "海南诗歌创作",
+      "relation": "primary",
+      "path": [
+        "文化与历史",
+        "海南诗歌创作"
+      ],
+      "evidence": "贴着大地写作的人"
+    }
+  ],
+  "content_form": "interview",
+  "legacy_topics": [
     {
       "topic_id": "culture-tourism-sports",
       "name": "文旅体育",

@@ -26,6 +26,8 @@ data/production-json/source/
 data/production-json/input/
 data/production-json/enrichment/
 data/production-json/audit/
+data/production-json/topic-resolution-input/
+data/production-json/topic-resolution/
 data/cache/
 data/tmp/
 data/tmp/radar-*/

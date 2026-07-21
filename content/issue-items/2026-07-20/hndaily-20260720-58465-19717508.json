@@ -1,8 +1,8 @@
 {
-  "schema_version": 8,
+  "schema_version": 9,
   "item_id": "hndaily-20260720-58465-19717508",
   "published_date": "2026-07-20",
-  "collected_date": "2026-07-20",
+  "collected_date": "2026-07-21",
   "page_number": "002",
   "page_name": "本省新闻",
   "page_sequence": 2,
@@ -42,7 +42,27 @@
       "evidence": "三亚市热带农业科学研究院"
     }
   ],
-  "topics": [
+  "topic_profile": {
+    "primary": {
+      "name": "热带农业科研",
+      "evidence": "海南首家科研院所科协成立"
+    },
+    "secondary": []
+  },
+  "resolved_topics": [
+    {
+      "topic_id": "tropical-agricultural-research",
+      "name": "热带农业科研",
+      "relation": "primary",
+      "path": [
+        "农业与乡村",
+        "热带农业科研"
+      ],
+      "evidence": "海南首家科研院所科协成立"
+    }
+  ],
+  "content_form": "news",
+  "legacy_topics": [
     {
       "topic_id": "education-talent",
       "name": "教育人才",

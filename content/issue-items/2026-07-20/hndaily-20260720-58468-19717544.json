@@ -1,8 +1,8 @@
 {
-  "schema_version": 8,
+  "schema_version": 9,
   "item_id": "hndaily-20260720-58468-19717544",
   "published_date": "2026-07-20",
-  "collected_date": "2026-07-20",
+  "collected_date": "2026-07-21",
   "page_number": "005",
   "page_name": "中国新闻",
   "page_sequence": 2,
@@ -27,7 +27,27 @@
     }
   ],
   "locations": [],
-  "topics": [
+  "topic_profile": {
+    "primary": {
+      "name": "资本市场稳市",
+      "evidence": "中国国新和中国诚通宣布继续增持"
+    },
+    "secondary": []
+  },
+  "resolved_topics": [
+    {
+      "topic_id": "capital-market-stabilization",
+      "name": "资本市场稳市",
+      "relation": "primary",
+      "path": [
+        "经济与市场",
+        "资本市场稳市"
+      ],
+      "evidence": "中国国新和中国诚通宣布继续增持"
+    }
+  ],
+  "content_form": "news",
+  "legacy_topics": [
     {
       "topic_id": "economy-data",
       "name": "经济数据",

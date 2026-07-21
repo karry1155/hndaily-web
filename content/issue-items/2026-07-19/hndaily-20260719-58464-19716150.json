@@ -1,8 +1,8 @@
 {
-  "schema_version": 8,
+  "schema_version": 9,
   "item_id": "hndaily-20260719-58464-19716150",
   "published_date": "2026-07-19",
-  "collected_date": "2026-07-20",
+  "collected_date": "2026-07-21",
   "page_number": "001",
   "page_name": "头版",
   "page_sequence": 2,
@@ -42,7 +42,27 @@
       "evidence": "本报海口7月18日讯"
     }
   ],
-  "topics": [
+  "topic_profile": {
+    "primary": {
+      "name": "海南旅游节庆",
+      "evidence": "2026年海南国际旅游岛欢乐节开幕"
+    },
+    "secondary": []
+  },
+  "resolved_topics": [
+    {
+      "topic_id": "hainan-tourism-festivals",
+      "name": "海南旅游节庆",
+      "relation": "primary",
+      "path": [
+        "旅游与消费",
+        "海南旅游节庆"
+      ],
+      "evidence": "2026年海南国际旅游岛欢乐节开幕"
+    }
+  ],
+  "content_form": "news",
+  "legacy_topics": [
     {
       "topic_id": "culture-tourism-sports",
       "name": "文旅体育",

@@ -1,0 +1,199 @@
+{
+  "topic_id": "transport-cities",
+  "name": "交通与城市",
+  "parent_id": null,
+  "article_count": 3,
+  "primary_count": 3,
+  "detail_path": "/topics/transport-cities/",
+  "definition": "交通运输、城市更新、市政设施与城乡空间建设。",
+  "primary_items": [
+    {
+      "item_id": "hndaily-20260720-58466-19717529",
+      "published_date": "2026-07-20",
+      "page_number": "003",
+      "page_name": "民生新闻",
+      "page_sequence": 7,
+      "title": "新增日污水处理能力8万立方米",
+      "ai_summary": "海口白沙门一期污水处理厂扩容工程通过验收，日处理能力新增8万立方米、总规模提升至38万立方米。",
+      "scope": "hainan",
+      "enrichment_status": "complete",
+      "subjects": [
+        {
+          "subject_id": "subject-3eb180be6ba1a0",
+          "name": "海口白沙门一期污水处理厂扩容工程",
+          "type": "project",
+          "role": "新增污水处理能力项目",
+          "evidence": "海口白沙门一期污水处理厂扩容工程顺利通过竣工验收"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan-haikou",
+          "name": "海口市",
+          "code": "460100",
+          "level": "prefecture",
+          "evidence": "海口白沙门一期污水处理厂"
+        }
+      ],
+      "topics": [
+        {
+          "topic_id": "urban-wastewater-treatment",
+          "name": "城市污水处理",
+          "relation": "primary",
+          "path": [
+            "交通与城市",
+            "城市污水处理"
+          ],
+          "evidence": "新增日污水处理能力8万立方米"
+        }
+      ],
+      "events": [
+        {
+          "name": "海口白沙门一期污水处理厂扩容工程竣工验收",
+          "evidence": "7月17日，海口白沙门一期污水处理厂扩容工程顺利通过竣工验收"
+        }
+      ],
+      "plans": [],
+      "detail_path": "/items/2026-07-20/hndaily-20260720-58466-19717529/"
+    },
+    {
+      "item_id": "hndaily-20260720-58464-19717491",
+      "published_date": "2026-07-20",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 1,
+      "title": "千亿投资推进“人享其行、物畅其流”",
+      "ai_summary": "海南“十五五”期间计划推进223个公路、水路和数字化交通项目，总投资1363亿元。",
+      "scope": "hainan",
+      "enrichment_status": "complete",
+      "subjects": [
+        {
+          "subject_id": "subject-7e953f2f7ea072",
+          "name": "省交通运输厅",
+          "type": "government",
+          "role": "规划信息发布部门",
+          "evidence": "海南日报全媒体记者从省交通运输厅获悉"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "海南省“十五五”综合交通运输（公路水路）发展规划"
+        }
+      ],
+      "topics": [
+        {
+          "topic_id": "hainan-integrated-transport-planning",
+          "name": "海南综合交通规划",
+          "relation": "primary",
+          "path": [
+            "交通与城市",
+            "海南综合交通规划"
+          ],
+          "evidence": "千亿投资推进“人享其行、物畅其流”"
+        }
+      ],
+      "events": [
+        {
+          "name": "海南印发实施“十五五”综合交通运输规划",
+          "evidence": "日前已正式印发实施"
+        }
+      ],
+      "plans": [
+        {
+          "name": "《海南省“十五五”综合交通运输（公路水路）发展规划》",
+          "evidence": "《海南省“十五五”综合交通运输（公路水路）发展规划》（以下简称规划）日前已正式印发实施"
+        }
+      ],
+      "detail_path": "/items/2026-07-20/hndaily-20260720-58464-19717491/"
+    },
+    {
+      "item_id": "hndaily-20260719-58464-19716151",
+      "published_date": "2026-07-19",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 3,
+      "title": "坚持系统化布局、精细化治理、多元化融合\n一体推进环岛旅游公路提质升级",
+      "ai_summary": "刘小明调研环岛旅游公路，要求完善支线路网、沿线服务和安全设施，推动旅游项目与本地产业联动。",
+      "scope": "hainan",
+      "enrichment_status": "complete",
+      "subjects": [
+        {
+          "subject_id": "subject-6a6500510b9352",
+          "name": "刘小明",
+          "type": "person",
+          "role": "省长",
+          "evidence": "省长刘小明调研环岛旅游公路“建管运”情况"
+        },
+        {
+          "subject_id": "subject-2cc0460be9ca34",
+          "name": "环岛旅游公路",
+          "type": "project",
+          "role": "调研对象",
+          "evidence": "调研环岛旅游公路“建管运”情况"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan-sanya",
+          "name": "三亚市",
+          "code": "460200",
+          "level": "prefecture",
+          "evidence": "三亚市崖州区镇海村"
+        },
+        {
+          "location_id": "hainan-danzhou",
+          "name": "儋州市",
+          "code": "460400",
+          "level": "prefecture",
+          "evidence": "儋州市排浦飞鹭停车区"
+        },
+        {
+          "location_id": "hainan-dongfang",
+          "name": "东方市",
+          "code": "469007",
+          "level": "county",
+          "evidence": "东方经济开发区封闭路段"
+        },
+        {
+          "location_id": "hainan-changjiang",
+          "name": "昌江黎族自治县",
+          "code": "469026",
+          "level": "county",
+          "evidence": "昌江黎族自治县棋子湾大角公园"
+        },
+        {
+          "location_id": "hainan-ledong",
+          "name": "乐东黎族自治县",
+          "code": "469027",
+          "level": "county",
+          "evidence": "乐东黎族自治县莺歌踏浪驿站"
+        }
+      ],
+      "topics": [
+        {
+          "topic_id": "transport-tourism-integration",
+          "name": "交通旅游融合",
+          "relation": "primary",
+          "path": [
+            "交通与城市",
+            "交通旅游融合"
+          ],
+          "evidence": "坚持系统化布局、精细化治理、多元化融合\n一体推进环岛旅游公路提质升级"
+        }
+      ],
+      "events": [
+        {
+          "name": "刘小明调研环岛旅游公路",
+          "evidence": "7月18日，省长刘小明调研环岛旅游公路“建管运”情况"
+        }
+      ],
+      "plans": [],
+      "detail_path": "/items/2026-07-19/hndaily-20260719-58464-19716151/"
+    }
+  ],
+  "secondary_items": []
+}

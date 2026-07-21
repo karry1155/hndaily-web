@@ -30,7 +30,14 @@ def hnhot_output(model_input, candidates):
                 "scope_evidence": candidate["title"],
                 "subjects": [],
                 "location_mentions": [],
-                "topic_mentions": [],
+                "topic_profile": {
+                    "primary": {
+                        "name": "社区慈善",
+                        "evidence": candidate["title"],
+                    },
+                    "secondary": [],
+                },
+                "content_form": "news",
                 "events": [],
                 "plans": [],
             }
@@ -40,15 +47,15 @@ def hnhot_output(model_input, candidates):
 
 
 class HnhotPublicationTests(unittest.TestCase):
-    def test_schema_v8_input_and_output_are_exact_and_grounded(self):
+    def test_schema_v9_input_and_output_are_exact_and_grounded(self):
         raw = raw_issue(article_count=2)
         candidates = adapt_hndaily(raw)[0]
         model_input = build_model_input(candidates)
-        self.assertEqual(model_input["schema_version"], 8)
-        self.assertEqual(model_input["prompt_version"], "hnhot-v2.2")
+        self.assertEqual(model_input["schema_version"], 9)
+        self.assertEqual(model_input["prompt_version"], "hnhot-v3.0")
         self.assertEqual(
             set(model_input["items"][0]),
-            {"candidate_id", "title", "content", "location_candidates", "topic_candidates"},
+            {"candidate_id", "title", "content", "location_candidates"},
         )
         output = hnhot_output(model_input, candidates)
         self.assertEqual(validate_model_output(model_input, output, candidates), output["items"])
@@ -75,7 +82,7 @@ class HnhotPublicationTests(unittest.TestCase):
             "name": "《海南省旅游公路发展规划》",
             "evidence": "海南印发《海南省旅游公路发展规划》",
         }]
-        articles, _, _ = build_generation(raw, model_input, output)
+        articles, _, _, _ = build_generation(raw, model_input, output)
         self.assertEqual(articles[0]["events"], output["items"][0]["events"])
         self.assertEqual(articles[0]["plans"], output["items"][0]["plans"])
         self.assertNotIn("event_relation", articles[0])
@@ -106,7 +113,7 @@ class HnhotPublicationTests(unittest.TestCase):
             }],
         }]
 
-        articles, _, _ = build_generation(raw, model_input, output)
+        articles, _, _, _ = build_generation(raw, model_input, output)
         rendered = render_item(articles[0])
 
         self.assertIn("正文 3 处 ↓", rendered)
@@ -124,7 +131,7 @@ class HnhotPublicationTests(unittest.TestCase):
         raw = raw_issue(article_count=11)
         candidates = adapt_hndaily(raw)[0]
         model_input = build_model_input(candidates)
-        articles, issue, audit = build_generation(raw, model_input, hnhot_output(model_input, candidates))
+        articles, issue, audit, _ = build_generation(raw, model_input, hnhot_output(model_input, candidates))
         self.assertEqual(len(articles), 11)
         self.assertEqual(issue["article_count"], 11)
         self.assertEqual(audit["published_count"], 11)
@@ -143,10 +150,31 @@ class HnhotPublicationTests(unittest.TestCase):
                 root, root / "audit.json",
             )
             issue = json.loads((root / "issues" / f'{raw["date"]}.json').read_text(encoding="utf-8"))
-            self.assertEqual(issue["schema_version"], 8)
+            self.assertEqual(issue["schema_version"], 9)
             self.assertEqual(issue["sections"][0]["name"], "头版")
             self.assertTrue((root / "indexes/hnhot.json").is_file())
             self.assertTrue((root / f'indexes/front-page/{raw["date"]}.json').is_file())
+
+    def test_bundled_two_day_content_uses_v9_and_hainan_topic_boundary(self):
+        project = Path(__file__).resolve().parents[1]
+        paths = sorted((project / "content/issue-items").glob("*/*.json"))
+        self.assertEqual(len(paths), 70)
+        items = [json.loads(path.read_text(encoding="utf-8")) for path in paths]
+        self.assertTrue(all(row["schema_version"] == 9 for row in items))
+        self.assertTrue(all(len(row["resolved_topics"]) >= 1 for row in items))
+        self.assertTrue(all("topics" not in row for row in items))
+        global_ai = json.loads(
+            (project / "content/indexes/topic-feed/global-ai-governance.json").read_text(
+                encoding="utf-8"
+            )
+        )
+        self.assertEqual(global_ai["article_count"], 0)
+        salt = json.loads(
+            (project / "content/indexes/topic-feed/traditional-saltmaking.json").read_text(
+                encoding="utf-8"
+            )
+        )
+        self.assertEqual([row["title"] for row in salt["primary_items"]], ["古法晒盐忙"])
 
     def test_finalize_rejects_same_canonical_url_under_different_ids(self):
         first_raw = raw_issue(article_count=1, date="2026-07-11")
@@ -177,12 +205,15 @@ class HnhotPublicationTests(unittest.TestCase):
                     root / "audit.json",
                 )
 
-    def test_bundled_content_builds_four_route_site_without_broken_links(self):
+    def test_bundled_content_builds_site_and_topic_routes_without_broken_links(self):
         project = Path(__file__).resolve().parents[1]
         with tempfile.TemporaryDirectory() as tmp:
             site = Path(tmp) / "site"
             build_site(project / "content", site)
-            for route in ("index.html", "all/index.html", "daily/index.html", "more/index.html"):
+            for route in (
+                "index.html", "all/index.html", "daily/index.html", "more/index.html",
+                "topics/index.html", "topics/traditional-saltmaking/index.html",
+            ):
                 self.assertTrue((site / route).is_file(), route)
             home = (site / "index.html").read_text(encoding="utf-8")
             national_page = (site / "front-page/national/index.html").read_text(encoding="utf-8")
@@ -198,6 +229,10 @@ class HnhotPublicationTests(unittest.TestCase):
             ).read_text(encoding="utf-8")
             all_page = (site / "all/index.html").read_text(encoding="utf-8")
             more_page = (site / "more/index.html").read_text(encoding="utf-8")
+            topics_page = (site / "topics/index.html").read_text(encoding="utf-8")
+            salt_topic_page = (
+                site / "topics/traditional-saltmaking/index.html"
+            ).read_text(encoding="utf-8")
             about_page = (site / "about/index.html").read_text(encoding="utf-8")
             daily_page = (site / "daily/index.html").read_text(encoding="utf-8")
             dated_page = (site / "all/2026-07-20/index.html").read_text(encoding="utf-8")
@@ -231,6 +266,10 @@ class HnhotPublicationTests(unittest.TestCase):
             self.assertIn('scope-foreign" title="F · 全球" aria-label="F · 全球">F</span>', foreign_detail)
             self.assertIn('id="scope-guide-title"', more_page)
             self.assertIn("产品方法与数据边界", more_page)
+            self.assertIn("按主题看海南", more_page)
+            self.assertIn("文化与历史", topics_page)
+            self.assertIn("古法制盐", topics_page)
+            self.assertIn("古法晒盐忙", salt_topic_page)
             self.assertNotIn('id="scope-guide-title"', about_page)
             for label in ("海南本地", "国内关联", "海南开放", "全国", "全球"):
                 self.assertIn(label, more_page)

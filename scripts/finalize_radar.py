@@ -19,19 +19,48 @@ from scripts.radar_store import (
     load_issue_items,
     load_issues,
 )
+from scripts.radar_topics import (
+    automatic_topic_resolution,
+    build_topic_resolution_input,
+    load_topic_catalog,
+    merge_topic_catalog,
+    validate_topic_resolution_output,
+)
 
 
 class FinalizeError(ValueError):
     pass
 
 
-def build_generation(raw, model_input, model_output):
+def build_generation(
+    raw,
+    model_input,
+    model_output,
+    topic_resolution_input=None,
+    topic_resolution_output=None,
+    topic_catalog=None,
+):
     candidates, prefilter = adapt_hndaily(raw)
     expected_input = build_model_input(candidates)
     if model_input != expected_input:
         raise FinalizeError("model input does not match adapted raw candidates")
     semantic_items = validate_model_output(model_input, model_output, candidates)
-    issue, issue_items = build_public_issue(raw, candidates, semantic_items)
+    topic_catalog = topic_catalog or load_topic_catalog()
+    expected_resolution_input = build_topic_resolution_input(model_output, topic_catalog)
+    if topic_resolution_input is not None and topic_resolution_input != expected_resolution_input:
+        raise FinalizeError("topic resolution input does not match model output and catalog")
+    topic_resolution_input = expected_resolution_input
+    if topic_resolution_output is None:
+        topic_resolution_output = automatic_topic_resolution(topic_resolution_input)
+    if topic_resolution_output is None:
+        raise FinalizeError("topic resolution output is required for new open topics")
+    resolution_items = validate_topic_resolution_output(
+        topic_resolution_input, topic_resolution_output, topic_catalog
+    )
+    merged_topic_catalog = merge_topic_catalog(topic_catalog, resolution_items)
+    issue, issue_items = build_public_issue(
+        raw, candidates, semantic_items, resolution_items, merged_topic_catalog
+    )
     scope_counts = {
         scope: sum(item["scope"] == scope for item in issue_items)
         for scope in ("national", "hainan", "domestic", "mixed", "foreign")
@@ -51,7 +80,7 @@ def build_generation(raw, model_input, model_output):
         "published_count": len(issue_items),
         "scope_counts": scope_counts,
         "prefilter": prefilter,
-    }
+    }, merged_topic_catalog
 
 
 def _write_json_atomic(path, value):
@@ -63,9 +92,25 @@ def _write_json_atomic(path, value):
     temporary.replace(path)
 
 
-def finalize_to_store(raw, model_input, model_output, content_root, audit_path):
+def finalize_to_store(
+    raw,
+    model_input,
+    model_output,
+    content_root,
+    audit_path,
+    topic_resolution_input=None,
+    topic_resolution_output=None,
+):
     try:
-        incoming, issue, audit = build_generation(raw, model_input, model_output)
+        topic_catalog = load_topic_catalog(Path(content_root))
+        incoming, issue, audit, topic_catalog = build_generation(
+            raw,
+            model_input,
+            model_output,
+            topic_resolution_input,
+            topic_resolution_output,
+            topic_catalog,
+        )
         published_date = issue["date"]
         existing_issues = load_issues(content_root)
         merged_issues = [row for row in existing_issues if row["date"] != published_date] + [issue]
@@ -75,6 +120,14 @@ def finalize_to_store(raw, model_input, model_output, content_root, audit_path):
             for row in existing_articles
             if row["published_date"] == published_date
         }
+        for row in incoming:
+            previous = previous_by_id.get(row["item_id"])
+            if previous is None:
+                continue
+            if previous.get("schema_version") in {7, 8}:
+                row["legacy_topics"] = previous.get("topics", [])
+            elif previous.get("schema_version") == 9:
+                row["legacy_topics"] = previous.get("legacy_topics", [])
         merged_articles = [
             row for row in existing_articles if row["published_date"] != published_date
         ] + incoming
@@ -89,8 +142,8 @@ def finalize_to_store(raw, model_input, model_output, content_root, audit_path):
             for row in incoming
             if row["item_id"] in previous_by_id and previous_by_id[row["item_id"]] != row
         ]
-        indexes = build_hnhot_indexes(merged_issues, merged_articles)
-        commit_publication(Path(content_root), issue, incoming, indexes)
+        indexes = build_hnhot_indexes(merged_issues, merged_articles, topic_catalog)
+        commit_publication(Path(content_root), issue, incoming, indexes, topic_catalog)
         _write_json_atomic(Path(audit_path), audit)
         return audit
     except FinalizeError:
@@ -100,15 +153,24 @@ def finalize_to_store(raw, model_input, model_output, content_root, audit_path):
 
 
 def main(argv):
-    if len(argv) != 6:
-        print("Usage: finalize_radar.py RAW INPUT OUTPUT CONTENT_ROOT AUDIT", file=sys.stderr)
+    if len(argv) != 8:
+        print(
+            "Usage: finalize_radar.py RAW INPUT OUTPUT TOPIC_INPUT TOPIC_OUTPUT CONTENT_ROOT AUDIT",
+            file=sys.stderr,
+        )
         return 1
     try:
-        raw, model_input, model_output = [
-            json.loads(Path(path).read_text(encoding="utf-8")) for path in argv[1:4]
+        raw, model_input, model_output, topic_input, topic_output = [
+            json.loads(Path(path).read_text(encoding="utf-8")) for path in argv[1:6]
         ]
         finalize_to_store(
-            raw, model_input, model_output, Path(argv[4]), Path(argv[5])
+            raw,
+            model_input,
+            model_output,
+            Path(argv[6]),
+            Path(argv[7]),
+            topic_input,
+            topic_output,
         )
     except (FinalizeError, OSError, json.JSONDecodeError) as exc:
         print(f"ERROR: {exc}", file=sys.stderr)

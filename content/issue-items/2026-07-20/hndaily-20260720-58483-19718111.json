@@ -1,8 +1,8 @@
 {
-  "schema_version": 8,
+  "schema_version": 9,
   "item_id": "hndaily-20260720-58483-19718111",
   "published_date": "2026-07-20",
-  "collected_date": "2026-07-20",
+  "collected_date": "2026-07-21",
   "page_number": "020",
   "page_name": "海之南",
   "page_sequence": 1,
@@ -42,7 +42,27 @@
       "evidence": "“振”指振州，即今海南三亚一带"
     }
   ],
-  "topics": [
+  "topic_profile": {
+    "primary": {
+      "name": "唐代海南地方史",
+      "evidence": "《岭表录异》中的海南"
+    },
+    "secondary": []
+  },
+  "resolved_topics": [
+    {
+      "topic_id": "tang-hainan-local-history",
+      "name": "唐代海南地方史",
+      "relation": "primary",
+      "path": [
+        "文化与历史",
+        "唐代海南地方史"
+      ],
+      "evidence": "《岭表录异》中的海南"
+    }
+  ],
+  "content_form": "essay",
+  "legacy_topics": [
     {
       "topic_id": "culture-tourism-sports",
       "name": "文旅体育",

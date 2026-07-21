@@ -1,8 +1,8 @@
 {
-  "schema_version": 8,
+  "schema_version": 9,
   "item_id": "hndaily-20260719-58467-19716188",
   "published_date": "2026-07-19",
-  "collected_date": "2026-07-20",
+  "collected_date": "2026-07-21",
   "page_number": "004",
   "page_name": "文化周刊",
   "page_sequence": 1,
@@ -20,7 +20,27 @@
       "evidence": "临高大桥"
     }
   ],
-  "topics": [
+  "topic_profile": {
+    "primary": {
+      "name": "临高地方记忆",
+      "evidence": "一座小城"
+    },
+    "secondary": []
+  },
+  "resolved_topics": [
+    {
+      "topic_id": "lingao-local-memory",
+      "name": "临高地方记忆",
+      "relation": "primary",
+      "path": [
+        "文化与历史",
+        "临高地方记忆"
+      ],
+      "evidence": "一座小城"
+    }
+  ],
+  "content_form": "essay",
+  "legacy_topics": [
     {
       "topic_id": "culture-tourism-sports",
       "name": "文旅体育",

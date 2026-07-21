@@ -1,8 +1,8 @@
 {
-  "schema_version": 8,
+  "schema_version": 9,
   "item_id": "hndaily-20260719-58466-19716178",
   "published_date": "2026-07-19",
-  "collected_date": "2026-07-20",
+  "collected_date": "2026-07-21",
   "page_number": "003",
   "page_name": "中国新闻",
   "page_sequence": 1,
@@ -48,7 +48,27 @@
     }
   ],
   "locations": [],
-  "topics": [
+  "topic_profile": {
+    "primary": {
+      "name": "地质灾害救援",
+      "evidence": "全力投入抢险救援 压实责任排查隐患"
+    },
+    "secondary": []
+  },
+  "resolved_topics": [
+    {
+      "topic_id": "geological-disaster-rescue",
+      "name": "地质灾害救援",
+      "relation": "primary",
+      "path": [
+        "应急与安全",
+        "地质灾害救援"
+      ],
+      "evidence": "全力投入抢险救援 压实责任排查隐患"
+    }
+  ],
+  "content_form": "news",
+  "legacy_topics": [
     {
       "topic_id": "ecology",
       "name": "生态环境",

@@ -1,8 +1,8 @@
 {
-  "schema_version": 8,
+  "schema_version": 9,
   "item_id": "hndaily-20260720-58468-19717545",
   "published_date": "2026-07-20",
-  "collected_date": "2026-07-20",
+  "collected_date": "2026-07-21",
   "page_number": "005",
   "page_name": "中国新闻",
   "page_sequence": 3,
@@ -20,7 +20,27 @@
     }
   ],
   "locations": [],
-  "topics": [
+  "topic_profile": {
+    "primary": {
+      "name": "地质灾害救援",
+      "evidence": "各方力量全力搜救"
+    },
+    "secondary": []
+  },
+  "resolved_topics": [
+    {
+      "topic_id": "geological-disaster-rescue",
+      "name": "地质灾害救援",
+      "relation": "primary",
+      "path": [
+        "应急与安全",
+        "地质灾害救援"
+      ],
+      "evidence": "各方力量全力搜救"
+    }
+  ],
+  "content_form": "news",
+  "legacy_topics": [
     {
       "topic_id": "livelihood-services",
       "name": "民生服务",

@@ -1,8 +1,8 @@
 {
-  "schema_version": 8,
+  "schema_version": 9,
   "item_id": "hndaily-20260719-58465-19716171",
   "published_date": "2026-07-19",
-  "collected_date": "2026-07-20",
+  "collected_date": "2026-07-21",
   "page_number": "002",
   "page_name": "本省新闻",
   "page_sequence": 9,
@@ -49,7 +49,27 @@
       "evidence": "白沙黎族自治县人民医院"
     }
   ],
-  "topics": [
+  "topic_profile": {
+    "primary": {
+      "name": "基层中医",
+      "evidence": "“为乡亲解决病痛，是我最开心的事”"
+    },
+    "secondary": []
+  },
+  "resolved_topics": [
+    {
+      "topic_id": "grassroots-chinese-medicine",
+      "name": "基层中医",
+      "relation": "primary",
+      "path": [
+        "医疗与健康",
+        "基层中医"
+      ],
+      "evidence": "“为乡亲解决病痛，是我最开心的事”"
+    }
+  ],
+  "content_form": "profile",
+  "legacy_topics": [
     {
       "topic_id": "health",
       "name": "医疗健康",

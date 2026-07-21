@@ -1,8 +1,8 @@
 {
-  "schema_version": 8,
+  "schema_version": 9,
   "item_id": "hndaily-20260720-58485-19718122",
   "published_date": "2026-07-20",
-  "collected_date": "2026-07-20",
+  "collected_date": "2026-07-21",
   "page_number": "022",
   "page_name": "悦读",
   "page_sequence": 2,
@@ -56,7 +56,27 @@
       "evidence": "临高角的登陆豪情"
     }
   ],
-  "topics": [
+  "topic_profile": {
+    "primary": {
+      "name": "海南文学书写",
+      "evidence": "流动的海南时间简史"
+    },
+    "secondary": []
+  },
+  "resolved_topics": [
+    {
+      "topic_id": "hainan-literary-writing",
+      "name": "海南文学书写",
+      "relation": "primary",
+      "path": [
+        "文化与历史",
+        "海南文学书写"
+      ],
+      "evidence": "流动的海南时间简史"
+    }
+  ],
+  "content_form": "book-review",
+  "legacy_topics": [
     {
       "topic_id": "culture-tourism-sports",
       "name": "文旅体育",

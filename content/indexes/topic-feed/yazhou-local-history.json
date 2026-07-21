@@ -1,0 +1,82 @@
+{
+  "topic_id": "yazhou-local-history",
+  "name": "崖州地方史",
+  "parent_id": "culture-history",
+  "article_count": 1,
+  "primary_count": 1,
+  "detail_path": "/topics/yazhou-local-history/",
+  "definition": "聚合以“崖州地方史”为主要议题的报道、进展与解释。",
+  "primary_items": [
+    {
+      "item_id": "hndaily-20260720-58470-19717570",
+      "published_date": "2026-07-20",
+      "page_number": "007",
+      "page_name": "文化周刊",
+      "page_sequence": 3,
+      "title": "崖州西关塔轶事",
+      "ai_summary": "清代附贡生邢保申在今乐东黄流创建西关塔，希望振兴当地文风；塔虽已不存，仍留在地方记忆中。",
+      "scope": "hainan",
+      "enrichment_status": "complete",
+      "subjects": [
+        {
+          "subject_id": "subject-514809e0a43092",
+          "name": "邢保申",
+          "type": "person",
+          "role": "西关塔创建者",
+          "evidence": "附贡生邢保申创建"
+        },
+        {
+          "subject_id": "subject-229d0ee0dd6e4e",
+          "name": "西关塔",
+          "type": "project",
+          "role": "地方历史建筑",
+          "evidence": "西关塔，在州西一百二十五里黄流村西"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "海南岛南端的崖州"
+        },
+        {
+          "location_id": "hainan-sanya",
+          "name": "三亚市",
+          "code": "460200",
+          "level": "prefecture",
+          "evidence": "古崖州的西部地区"
+        },
+        {
+          "location_id": "hainan-ledong",
+          "name": "乐东黎族自治县",
+          "code": "469027",
+          "level": "county",
+          "evidence": "乐东黎族自治县黄流镇"
+        }
+      ],
+      "topics": [
+        {
+          "topic_id": "yazhou-local-history",
+          "name": "崖州地方史",
+          "relation": "primary",
+          "path": [
+            "文化与历史",
+            "崖州地方史"
+          ],
+          "evidence": "崖州西关塔轶事"
+        }
+      ],
+      "events": [
+        {
+          "name": "邢保申创建西关塔",
+          "evidence": "附贡生邢保申创建"
+        }
+      ],
+      "plans": [],
+      "detail_path": "/items/2026-07-20/hndaily-20260720-58470-19717570/"
+    }
+  ],
+  "secondary_items": []
+}

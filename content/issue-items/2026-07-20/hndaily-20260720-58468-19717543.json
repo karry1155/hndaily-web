@@ -1,8 +1,8 @@
 {
-  "schema_version": 8,
+  "schema_version": 9,
   "item_id": "hndaily-20260720-58468-19717543",
   "published_date": "2026-07-20",
-  "collected_date": "2026-07-20",
+  "collected_date": "2026-07-21",
   "page_number": "005",
   "page_name": "中国新闻",
   "page_sequence": 1,
@@ -27,7 +27,27 @@
     }
   ],
   "locations": [],
-  "topics": [
+  "topic_profile": {
+    "primary": {
+      "name": "人类命运共同体",
+      "evidence": "“必须持续推动构建人类命运共同体”"
+    },
+    "secondary": []
+  },
+  "resolved_topics": [
+    {
+      "topic_id": "community-shared-future",
+      "name": "人类命运共同体",
+      "relation": "primary",
+      "path": [
+        "自贸港与开放",
+        "人类命运共同体"
+      ],
+      "evidence": "“必须持续推动构建人类命运共同体”"
+    }
+  ],
+  "content_form": "commentary",
+  "legacy_topics": [
     {
       "topic_id": "external-relations",
       "name": "对外交流",

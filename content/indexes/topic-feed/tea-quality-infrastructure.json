@@ -1,0 +1,96 @@
+{
+  "topic_id": "tea-quality-infrastructure",
+  "name": "茶业质量基础设施",
+  "parent_id": "industry-projects",
+  "article_count": 1,
+  "primary_count": 1,
+  "detail_path": "/topics/tea-quality-infrastructure/",
+  "definition": "聚合以“茶业质量基础设施”为主要议题的报道、进展与解释。",
+  "primary_items": [
+    {
+      "item_id": "hndaily-20260720-58466-19717531",
+      "published_date": "2026-07-20",
+      "page_number": "003",
+      "page_name": "民生新闻",
+      "page_sequence": 9,
+      "title": "白沙一站式服务站里的“十八般武艺”",
+      "ai_summary": "白沙茶业质量基础设施一站式服务站挂牌，为茶企、合作社和茶农集中提供检测、认证、知识产权等服务。",
+      "scope": "hainan",
+      "enrichment_status": "complete",
+      "subjects": [
+        {
+          "subject_id": "subject-fd3c513e0cf195",
+          "name": "白沙黎族自治县茶业质量基础设施一站式服务站",
+          "type": "organization",
+          "role": "茶产业质量服务平台",
+          "evidence": "白沙黎族自治县茶业质量基础设施一站式服务站在该县茶业协会挂牌成立"
+        },
+        {
+          "subject_id": "subject-2119d3cdb59077",
+          "name": "白沙茶业协会",
+          "type": "organization",
+          "role": "服务站挂牌单位",
+          "evidence": "在该县茶业协会挂牌成立"
+        },
+        {
+          "subject_id": "subject-e71e85973873bf",
+          "name": "许亮",
+          "type": "person",
+          "role": "白沙茶业协会会长、海垦白沙茶业公司总经理",
+          "evidence": "白沙茶业协会会长、海垦白沙茶业公司总经理许亮介绍"
+        },
+        {
+          "subject_id": "subject-e1a2488abf8d00",
+          "name": "海南白沙农场集团有限公司",
+          "type": "company",
+          "role": "白沙茶产品企业",
+          "evidence": "海南白沙农场集团有限公司主营“薄沙牌”等茶产品"
+        },
+        {
+          "subject_id": "subject-8e71bddd9592f3",
+          "name": "闭举宁",
+          "type": "person",
+          "role": "海南白沙农场集团有限公司董事",
+          "evidence": "该公司董事闭举宁说"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "海南日报全媒体记者"
+        },
+        {
+          "location_id": "hainan-baisha",
+          "name": "白沙黎族自治县",
+          "code": "469025",
+          "level": "county",
+          "evidence": "白沙黎族自治县"
+        }
+      ],
+      "topics": [
+        {
+          "topic_id": "tea-quality-infrastructure",
+          "name": "茶业质量基础设施",
+          "relation": "primary",
+          "path": [
+            "产业与项目",
+            "茶业质量基础设施"
+          ],
+          "evidence": "白沙一站式服务站里的“十八般武艺”"
+        }
+      ],
+      "events": [
+        {
+          "name": "白沙茶业质量基础设施一站式服务站挂牌成立",
+          "evidence": "一站式服务站在该县茶业协会挂牌成立"
+        }
+      ],
+      "plans": [],
+      "detail_path": "/items/2026-07-20/hndaily-20260720-58466-19717531/"
+    }
+  ],
+  "secondary_items": []
+}

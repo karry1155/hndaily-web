@@ -1,8 +1,8 @@
 {
-  "schema_version": 8,
+  "schema_version": 9,
   "item_id": "hndaily-20260719-58465-19716165",
   "published_date": "2026-07-19",
-  "collected_date": "2026-07-20",
+  "collected_date": "2026-07-21",
   "page_number": "002",
   "page_name": "本省新闻",
   "page_sequence": 3,
@@ -62,7 +62,27 @@
       "evidence": "研学路线覆盖海口、三亚、琼海、万宁、澄迈、保亭多地"
     }
   ],
-  "topics": [
+  "topic_profile": {
+    "primary": {
+      "name": "两岸青少年交流",
+      "evidence": "第三届琼台“宝岛杯”两岸青少年\n文体交流活动在海口启幕"
+    },
+    "secondary": []
+  },
+  "resolved_topics": [
+    {
+      "topic_id": "cross-strait-youth-exchange",
+      "name": "两岸青少年交流",
+      "relation": "primary",
+      "path": [
+        "教育与青年",
+        "两岸青少年交流"
+      ],
+      "evidence": "第三届琼台“宝岛杯”两岸青少年\n文体交流活动在海口启幕"
+    }
+  ],
+  "content_form": "news",
+  "legacy_topics": [
     {
       "topic_id": "culture-tourism-sports",
       "name": "文旅体育",

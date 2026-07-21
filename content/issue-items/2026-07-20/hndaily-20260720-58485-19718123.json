@@ -1,8 +1,8 @@
 {
-  "schema_version": 8,
+  "schema_version": 9,
   "item_id": "hndaily-20260720-58485-19718123",
   "published_date": "2026-07-20",
-  "collected_date": "2026-07-20",
+  "collected_date": "2026-07-21",
   "page_number": "022",
   "page_name": "悦读",
   "page_sequence": 3,
@@ -20,7 +20,27 @@
     }
   ],
   "locations": [],
-  "topics": [
+  "topic_profile": {
+    "primary": {
+      "name": "河流与城市文明",
+      "evidence": "渗透文明的历史容器"
+    },
+    "secondary": []
+  },
+  "resolved_topics": [
+    {
+      "topic_id": "rivers-urban-civilization",
+      "name": "河流与城市文明",
+      "relation": "primary",
+      "path": [
+        "文化与历史",
+        "河流与城市文明"
+      ],
+      "evidence": "渗透文明的历史容器"
+    }
+  ],
+  "content_form": "book-review",
+  "legacy_topics": [
     {
       "topic_id": "culture-tourism-sports",
       "name": "文旅体育",

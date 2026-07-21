@@ -1,8 +1,8 @@
 {
-  "schema_version": 8,
+  "schema_version": 9,
   "item_id": "hndaily-20260719-58467-19716194",
   "published_date": "2026-07-19",
-  "collected_date": "2026-07-20",
+  "collected_date": "2026-07-21",
   "page_number": "004",
   "page_name": "文化周刊",
   "page_sequence": 4,
@@ -20,7 +20,27 @@
     }
   ],
   "locations": [],
-  "topics": [
+  "topic_profile": {
+    "primary": {
+      "name": "科学家的信息管理",
+      "evidence": "钱学森做剪报"
+    },
+    "secondary": []
+  },
+  "resolved_topics": [
+    {
+      "topic_id": "scientist-information-management",
+      "name": "科学家的信息管理",
+      "relation": "primary",
+      "path": [
+        "教育与青年",
+        "科学家的信息管理"
+      ],
+      "evidence": "钱学森做剪报"
+    }
+  ],
+  "content_form": "essay",
+  "legacy_topics": [
     {
       "topic_id": "education-talent",
       "name": "教育人才",

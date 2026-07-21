@@ -1,8 +1,8 @@
 {
-  "schema_version": 8,
+  "schema_version": 9,
   "item_id": "hndaily-20260720-58464-19717493",
   "published_date": "2026-07-20",
-  "collected_date": "2026-07-20",
+  "collected_date": "2026-07-21",
   "page_number": "001",
   "page_name": "头版",
   "page_sequence": 3,
@@ -20,7 +20,27 @@
     }
   ],
   "locations": [],
-  "topics": [
+  "topic_profile": {
+    "primary": {
+      "name": "人工智能安全治理",
+      "evidence": "强化风险意识 确保安全可控"
+    },
+    "secondary": []
+  },
+  "resolved_topics": [
+    {
+      "topic_id": "ai-safety-governance",
+      "name": "人工智能安全治理",
+      "relation": "primary",
+      "path": [
+        "科技与创新",
+        "人工智能安全治理"
+      ],
+      "evidence": "强化风险意识 确保安全可控"
+    }
+  ],
+  "content_form": "commentary",
+  "legacy_topics": [
     {
       "topic_id": "policy-governance",
       "name": "政策治理",

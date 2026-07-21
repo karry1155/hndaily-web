@@ -193,6 +193,14 @@ button, input { font: inherit; }
 .archive-search-note { margin: 18px 0 0; color: var(--muted); font-size: 12px; }
 .archive-page > .archive-results-heading { padding: 25px 2px 11px; }
 .archive-page [data-archive-search-results] { padding-top: 23px; }
+.topic-root-card { padding: 17px 18px; border: 1px solid var(--line); border-radius: 11px; background: var(--paper); }
+.topic-root-card h2 { margin: 0; font-family: Georgia, "Noto Serif CJK SC", serif; font-size: 19px; }
+.topic-root-card h2 a:hover { color: var(--accent); }
+.topic-child-links { display: flex; flex-wrap: wrap; gap: 7px; }
+.topic-child-links a { display: inline-flex; padding: 5px 9px; align-items: center; gap: 6px; border: 1px solid var(--line-soft); border-radius: 999px; color: var(--muted); font-size: 12px; }
+.topic-child-links a:hover { border-color: var(--accent); color: var(--accent); }
+.topic-child-links a span { font-size: 10px; }
+.topic-empty { margin-top: 24px; padding: 18px; border: 1px dashed var(--line); border-radius: 10px; background: var(--paper); }
 
 .item-page { width: min(790px, 100%); padding: 48px 48px 100px; }
 .back-link { display: inline-block; margin-bottom: 26px; color: var(--muted); }

@@ -11,7 +11,7 @@ This repository is designed for an interactive coding agent to perform the seman
 5. Run the same pipeline command again. Resolve validation failures against the source evidence; do not weaken the validator to accept incorrect output.
 6. Run `python3 -m unittest discover -s tests -v` and rebuild the preview before reporting completion.
 
-The active first-pass contract is `prompts/article-enrichment/v2/`. Version 1 remains read-only historical documentation. First-pass enrichment describes only the current article; it must not decide whether an entity deserves a future page or merge it into a long-term timeline.
+The active first-pass contract is `prompts/article-enrichment/v3/`. Versions 1 and 2 remain read-only historical documentation. First-pass enrichment describes only the current article with an open topic profile; it must not decide whether an entity deserves a future page, merge it into a long-term timeline, or force the topic into the long-term catalog. Topic normalization is a separate reviewed stage under `prompts/topic-resolution/v1/`.
 
 The active private workspace is `data/production-json/`: crawler source, semantic input, enrichment output and audits live in separate subdirectories there. `data/json/` is a read-only archive of the earlier pipeline; never overwrite or migrate its dated files in place. Public validated content is stored under `content/`. Never describe an ad-hoc or heuristic-filled output as a model result. If a temporary fallback is unavoidable, stop publication and report the limitation instead.
 

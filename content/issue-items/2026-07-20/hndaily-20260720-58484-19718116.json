@@ -1,8 +1,8 @@
 {
-  "schema_version": 8,
+  "schema_version": 9,
   "item_id": "hndaily-20260720-58484-19718116",
   "published_date": "2026-07-20",
-  "collected_date": "2026-07-20",
+  "collected_date": "2026-07-21",
   "page_number": "021",
   "page_name": "讲谭",
   "page_sequence": 1,
@@ -27,7 +27,27 @@
       "evidence": "儋州有句老话：“小满小满，江河水满。”"
     }
   ],
-  "topics": [
+  "topic_profile": {
+    "primary": {
+      "name": "海南农时",
+      "evidence": "山海万物知农时"
+    },
+    "secondary": []
+  },
+  "resolved_topics": [
+    {
+      "topic_id": "hainan-farming-seasons",
+      "name": "海南农时",
+      "relation": "primary",
+      "path": [
+        "农业与乡村",
+        "海南农时"
+      ],
+      "evidence": "山海万物知农时"
+    }
+  ],
+  "content_form": "essay",
+  "legacy_topics": [
     {
       "topic_id": "culture-tourism-sports",
       "name": "文旅体育",

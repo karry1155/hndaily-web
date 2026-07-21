@@ -1,8 +1,8 @@
 {
-  "schema_version": 8,
+  "schema_version": 9,
   "item_id": "hndaily-20260720-58485-19718121",
   "published_date": "2026-07-20",
-  "collected_date": "2026-07-20",
+  "collected_date": "2026-07-21",
   "page_number": "022",
   "page_name": "悦读",
   "page_sequence": 1,
@@ -34,7 +34,27 @@
     }
   ],
   "locations": [],
-  "topics": [
+  "topic_profile": {
+    "primary": {
+      "name": "阅读书单",
+      "evidence": "荐阅书单"
+    },
+    "secondary": []
+  },
+  "resolved_topics": [
+    {
+      "topic_id": "reading-list",
+      "name": "阅读书单",
+      "relation": "primary",
+      "path": [
+        "文化与历史",
+        "阅读书单"
+      ],
+      "evidence": "荐阅书单"
+    }
+  ],
+  "content_form": "book-list",
+  "legacy_topics": [
     {
       "topic_id": "culture-tourism-sports",
       "name": "文旅体育",

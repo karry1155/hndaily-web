@@ -1,8 +1,8 @@
 {
-  "schema_version": 8,
+  "schema_version": 9,
   "item_id": "hndaily-20260720-58464-19717497",
   "published_date": "2026-07-20",
-  "collected_date": "2026-07-20",
+  "collected_date": "2026-07-21",
   "page_number": "001",
   "page_name": "头版",
   "page_sequence": 6,
@@ -147,7 +147,27 @@
       "evidence": "定安县"
     }
   ],
-  "topics": [
+  "topic_profile": {
+    "primary": {
+      "name": "糟粕醋产业",
+      "evidence": "糟粕醋的“城市PK赛”你更看好谁？"
+    },
+    "secondary": []
+  },
+  "resolved_topics": [
+    {
+      "topic_id": "zaopocu-industry",
+      "name": "糟粕醋产业",
+      "relation": "primary",
+      "path": [
+        "产业与项目",
+        "糟粕醋产业"
+      ],
+      "evidence": "糟粕醋的“城市PK赛”你更看好谁？"
+    }
+  ],
+  "content_form": "analysis",
+  "legacy_topics": [
     {
       "topic_id": "industry-projects",
       "name": "产业项目",

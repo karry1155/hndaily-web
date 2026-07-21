@@ -2,6 +2,13 @@ from __future__ import annotations
 
 from scripts.radar_contract import ContractError, canonicalize_source_url
 from scripts.radar_issue import validate_public_issue, validate_public_issue_item
+from scripts.radar_topics import load_topic_catalog, topic_catalog_by_id
+
+
+def public_topics(article):
+    if article.get("schema_version") == 9:
+        return article.get("resolved_topics", [])
+    return article.get("topics", [])
 
 
 def _article_summary(article):
@@ -17,7 +24,7 @@ def _article_summary(article):
         "enrichment_status": article["enrichment_status"],
         "subjects": article["subjects"],
         "locations": article["locations"],
-        "topics": article["topics"],
+        "topics": public_topics(article),
         "events": article.get("events", []),
         "plans": article.get("plans", []),
         "detail_path": (
@@ -26,12 +33,80 @@ def _article_summary(article):
     }
 
 
-def build_hnhot_indexes(issues, articles):
+def _build_topic_indexes(articles, catalog):
+    by_id = topic_catalog_by_id(catalog)
+    active = [row for row in catalog["topics"] if row["status"] == "active"]
+    memberships = {row["topic_id"]: {"primary": [], "secondary": []} for row in active}
+    for article in articles:
+        if article.get("schema_version") != 9 or article.get("scope") not in {"hainan", "mixed"}:
+            continue
+        article_memberships: dict[str, str] = {}
+        for resolved in article.get("resolved_topics", []):
+            relation = resolved["relation"]
+            cursor = resolved["topic_id"]
+            while cursor is not None:
+                previous = article_memberships.get(cursor)
+                if previous != "primary":
+                    article_memberships[cursor] = relation
+                cursor = by_id[cursor]["parent_id"]
+        summary = _article_summary(article)
+        for topic_id, relation in article_memberships.items():
+            if topic_id in memberships:
+                memberships[topic_id][relation].append(summary)
+    payloads = {}
+    nodes = []
+    for topic in active:
+        groups = memberships[topic["topic_id"]]
+        primary = sorted(
+            groups["primary"],
+            key=lambda row: (row["published_date"], row["page_number"], row["page_sequence"]),
+            reverse=True,
+        )
+        secondary = sorted(
+            groups["secondary"],
+            key=lambda row: (row["published_date"], row["page_number"], row["page_sequence"]),
+            reverse=True,
+        )
+        count = len(primary) + len(secondary)
+        node = {
+            "topic_id": topic["topic_id"],
+            "name": topic["name"],
+            "parent_id": topic["parent_id"],
+            "article_count": count,
+            "primary_count": len(primary),
+            "detail_path": f'/topics/{topic["topic_id"]}/',
+        }
+        nodes.append(node)
+        payloads[f'topic-feed/{topic["topic_id"]}.json'] = {
+            **node,
+            "definition": topic["definition"],
+            "primary_items": primary,
+            "secondary_items": secondary,
+        }
+    roots = []
+    children_by_parent: dict[str, list[dict]] = {}
+    for node in nodes:
+        if node["parent_id"] is None:
+            roots.append(node)
+        else:
+            children_by_parent.setdefault(node["parent_id"], []).append(node)
+    payloads["topics.json"] = {
+        "roots": [
+            {**root, "children": children_by_parent.get(root["topic_id"], [])}
+            for root in roots
+        ],
+        "nodes": nodes,
+    }
+    return payloads
+
+
+def build_hnhot_indexes(issues, articles, topic_catalog=None):
     """Build full-publication indexes without a score or selection layer."""
     for issue in issues:
         validate_public_issue(issue)
     for article in articles:
         validate_public_issue_item(article)
+    topic_catalog = topic_catalog or load_topic_catalog()
     ids = [article["item_id"] for article in articles]
     if len(set(ids)) != len(ids):
         raise ContractError("duplicate item_id in historical publication")
@@ -118,4 +193,5 @@ def build_hnhot_indexes(issues, articles):
             "sections": issue["sections"],
             "items": date_articles,
         }
+    payloads.update(_build_topic_indexes(articles, topic_catalog))
     return payloads

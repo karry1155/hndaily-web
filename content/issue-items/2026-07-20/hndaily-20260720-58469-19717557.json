@@ -1,8 +1,8 @@
 {
-  "schema_version": 8,
+  "schema_version": 9,
   "item_id": "hndaily-20260720-58469-19717557",
   "published_date": "2026-07-20",
-  "collected_date": "2026-07-20",
+  "collected_date": "2026-07-21",
   "page_number": "006",
   "page_name": "世界新闻",
   "page_sequence": 4,
@@ -12,7 +12,27 @@
   "scope_evidence": "全球粮食体系的生产、运输、贸易三个环节同时受到冲击",
   "subjects": [],
   "locations": [],
-  "topics": [
+  "topic_profile": {
+    "primary": {
+      "name": "全球粮食安全",
+      "evidence": "全球粮食安全面临三大“灰犀牛”"
+    },
+    "secondary": []
+  },
+  "resolved_topics": [
+    {
+      "topic_id": "global-food-security",
+      "name": "全球粮食安全",
+      "relation": "primary",
+      "path": [
+        "农业与乡村",
+        "全球粮食安全"
+      ],
+      "evidence": "全球粮食安全面临三大“灰犀牛”"
+    }
+  ],
+  "content_form": "analysis",
+  "legacy_topics": [
     {
       "topic_id": "economy-data",
       "name": "经济数据",

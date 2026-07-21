@@ -1,8 +1,8 @@
 {
-  "schema_version": 8,
+  "schema_version": 9,
   "item_id": "hndaily-20260719-58464-19716151",
   "published_date": "2026-07-19",
-  "collected_date": "2026-07-20",
+  "collected_date": "2026-07-21",
   "page_number": "001",
   "page_name": "头版",
   "page_sequence": 3,
@@ -63,7 +63,27 @@
       "evidence": "乐东黎族自治县莺歌踏浪驿站"
     }
   ],
-  "topics": [
+  "topic_profile": {
+    "primary": {
+      "name": "交通旅游融合",
+      "evidence": "坚持系统化布局、精细化治理、多元化融合\n一体推进环岛旅游公路提质升级"
+    },
+    "secondary": []
+  },
+  "resolved_topics": [
+    {
+      "topic_id": "transport-tourism-integration",
+      "name": "交通旅游融合",
+      "relation": "primary",
+      "path": [
+        "交通与城市",
+        "交通旅游融合"
+      ],
+      "evidence": "坚持系统化布局、精细化治理、多元化融合\n一体推进环岛旅游公路提质升级"
+    }
+  ],
+  "content_form": "analysis",
+  "legacy_topics": [
     {
       "topic_id": "culture-tourism-sports",
       "name": "文旅体育",

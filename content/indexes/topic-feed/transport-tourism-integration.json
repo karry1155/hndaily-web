@@ -1,0 +1,96 @@
+{
+  "topic_id": "transport-tourism-integration",
+  "name": "交通旅游融合",
+  "parent_id": "transport-cities",
+  "article_count": 1,
+  "primary_count": 1,
+  "detail_path": "/topics/transport-tourism-integration/",
+  "definition": "聚合以“交通旅游融合”为主要议题的报道、进展与解释。",
+  "primary_items": [
+    {
+      "item_id": "hndaily-20260719-58464-19716151",
+      "published_date": "2026-07-19",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 3,
+      "title": "坚持系统化布局、精细化治理、多元化融合\n一体推进环岛旅游公路提质升级",
+      "ai_summary": "刘小明调研环岛旅游公路，要求完善支线路网、沿线服务和安全设施，推动旅游项目与本地产业联动。",
+      "scope": "hainan",
+      "enrichment_status": "complete",
+      "subjects": [
+        {
+          "subject_id": "subject-6a6500510b9352",
+          "name": "刘小明",
+          "type": "person",
+          "role": "省长",
+          "evidence": "省长刘小明调研环岛旅游公路“建管运”情况"
+        },
+        {
+          "subject_id": "subject-2cc0460be9ca34",
+          "name": "环岛旅游公路",
+          "type": "project",
+          "role": "调研对象",
+          "evidence": "调研环岛旅游公路“建管运”情况"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan-sanya",
+          "name": "三亚市",
+          "code": "460200",
+          "level": "prefecture",
+          "evidence": "三亚市崖州区镇海村"
+        },
+        {
+          "location_id": "hainan-danzhou",
+          "name": "儋州市",
+          "code": "460400",
+          "level": "prefecture",
+          "evidence": "儋州市排浦飞鹭停车区"
+        },
+        {
+          "location_id": "hainan-dongfang",
+          "name": "东方市",
+          "code": "469007",
+          "level": "county",
+          "evidence": "东方经济开发区封闭路段"
+        },
+        {
+          "location_id": "hainan-changjiang",
+          "name": "昌江黎族自治县",
+          "code": "469026",
+          "level": "county",
+          "evidence": "昌江黎族自治县棋子湾大角公园"
+        },
+        {
+          "location_id": "hainan-ledong",
+          "name": "乐东黎族自治县",
+          "code": "469027",
+          "level": "county",
+          "evidence": "乐东黎族自治县莺歌踏浪驿站"
+        }
+      ],
+      "topics": [
+        {
+          "topic_id": "transport-tourism-integration",
+          "name": "交通旅游融合",
+          "relation": "primary",
+          "path": [
+            "交通与城市",
+            "交通旅游融合"
+          ],
+          "evidence": "坚持系统化布局、精细化治理、多元化融合\n一体推进环岛旅游公路提质升级"
+        }
+      ],
+      "events": [
+        {
+          "name": "刘小明调研环岛旅游公路",
+          "evidence": "7月18日，省长刘小明调研环岛旅游公路“建管运”情况"
+        }
+      ],
+      "plans": [],
+      "detail_path": "/items/2026-07-19/hndaily-20260719-58464-19716151/"
+    }
+  ],
+  "secondary_items": []
+}

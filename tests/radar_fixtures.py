@@ -47,7 +47,14 @@ def model_output_for(model_input):
                 "scope_evidence": item["title"],
                 "subjects": [],
                 "location_mentions": [],
-                "topic_mentions": [],
+                "topic_profile": {
+                    "primary": {
+                        "name": "社区慈善",
+                        "evidence": item["title"],
+                    },
+                    "secondary": [],
+                },
+                "content_form": "news",
                 "events": [],
                 "plans": [],
             }

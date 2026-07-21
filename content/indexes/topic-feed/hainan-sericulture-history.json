@@ -1,0 +1,98 @@
+{
+  "topic_id": "hainan-sericulture-history",
+  "name": "海南桑蚕史",
+  "parent_id": "culture-history",
+  "article_count": 1,
+  "primary_count": 1,
+  "detail_path": "/topics/hainan-sericulture-history/",
+  "definition": "聚合以“海南桑蚕史”为主要议题的报道、进展与解释。",
+  "primary_items": [
+    {
+      "item_id": "hndaily-20260720-58473-19718046",
+      "published_date": "2026-07-20",
+      "page_number": "010",
+      "page_name": "封面",
+      "page_sequence": 1,
+      "title": "琼岛千年蚕事",
+      "ai_summary": "海南延续两千多年的桑蚕产业正在借助研学基地、产业园和多元产品开发重新拓展产业链。",
+      "scope": "hainan",
+      "enrichment_status": "complete",
+      "subjects": [
+        {
+          "subject_id": "subject-f5063c2061b25b",
+          "name": "三亚崖州区新丝路科创人才小院",
+          "type": "project",
+          "role": "桑蚕研学基地建设主体",
+          "evidence": "三亚崖州区新丝路科创人才小院正式揭牌"
+        },
+        {
+          "subject_id": "subject-caf85797f0393e",
+          "name": "文昌热带桑蚕产业园",
+          "type": "project",
+          "role": "桑蚕产业项目",
+          "evidence": "文昌热带桑蚕产业园加快落地"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "海南桑蚕产业"
+        },
+        {
+          "location_id": "hainan-sanya",
+          "name": "三亚市",
+          "code": "460200",
+          "level": "prefecture",
+          "evidence": "三亚崖州区新丝路科创人才小院"
+        },
+        {
+          "location_id": "hainan-wenchang",
+          "name": "文昌市",
+          "code": "469005",
+          "level": "county",
+          "evidence": "文昌热带桑蚕产业园"
+        },
+        {
+          "location_id": "hainan-dongfang",
+          "name": "东方市",
+          "code": "469007",
+          "level": "county",
+          "evidence": "东方市"
+        },
+        {
+          "location_id": "hainan-lingshui",
+          "name": "陵水黎族自治县",
+          "code": "469028",
+          "level": "county",
+          "evidence": "陵水黎族自治县"
+        },
+        {
+          "location_id": "hainan-qiongzhong",
+          "name": "琼中黎族苗族自治县",
+          "code": "469030",
+          "level": "county",
+          "evidence": "琼中红毛镇、长征镇的连片桑园"
+        }
+      ],
+      "topics": [
+        {
+          "topic_id": "hainan-sericulture-history",
+          "name": "海南桑蚕史",
+          "relation": "primary",
+          "path": [
+            "文化与历史",
+            "海南桑蚕史"
+          ],
+          "evidence": "琼岛千年蚕事"
+        }
+      ],
+      "events": [],
+      "plans": [],
+      "detail_path": "/items/2026-07-20/hndaily-20260720-58473-19718046/"
+    }
+  ],
+  "secondary_items": []
+}

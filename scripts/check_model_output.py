@@ -67,13 +67,22 @@ def source_anchor_errors(model_input: dict, model_output: dict) -> list[str]:
                     alias.get("evidence"), source_text,
                     f"{prefix}.subjects[{subject_index}].aliases[{alias_index}].evidence",
                 )
-        for field in ("location_mentions", "topic_mentions", "events", "plans"):
+        for field in ("location_mentions", "events", "plans"):
             for value_index, value in enumerate(item.get(field) or []):
                 if not isinstance(value, dict):
                     continue
                 check(value.get("evidence"), source_text, f"{prefix}.{field}[{value_index}].evidence")
                 if field == "plans":
                     check(value.get("name"), source_text, f"{prefix}.{field}[{value_index}].name")
+        topic_profile = item.get("topic_profile") or {}
+        primary = topic_profile.get("primary") or {}
+        check(primary.get("evidence"), source_text, f"{prefix}.topic_profile.primary.evidence")
+        for topic_index, topic in enumerate(topic_profile.get("secondary") or []):
+            if isinstance(topic, dict):
+                check(
+                    topic.get("evidence"), source_text,
+                    f"{prefix}.topic_profile.secondary[{topic_index}].evidence",
+                )
     return errors
 
 

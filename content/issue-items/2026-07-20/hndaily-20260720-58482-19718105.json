@@ -1,8 +1,8 @@
 {
-  "schema_version": 8,
+  "schema_version": 9,
   "item_id": "hndaily-20260720-58482-19718105",
   "published_date": "2026-07-20",
-  "collected_date": "2026-07-20",
+  "collected_date": "2026-07-21",
   "page_number": "019",
   "page_name": "人物",
   "page_sequence": 1,
@@ -35,7 +35,27 @@
       "evidence": "黄有琚，海南文昌人"
     }
   ],
-  "topics": [
+  "topic_profile": {
+    "primary": {
+      "name": "海南民俗研究",
+      "evidence": "打捞乡土遗落的记忆"
+    },
+    "secondary": []
+  },
+  "resolved_topics": [
+    {
+      "topic_id": "hainan-folklore-research",
+      "name": "海南民俗研究",
+      "relation": "primary",
+      "path": [
+        "文化与历史",
+        "海南民俗研究"
+      ],
+      "evidence": "打捞乡土遗落的记忆"
+    }
+  ],
+  "content_form": "profile",
+  "legacy_topics": [
     {
       "topic_id": "culture-tourism-sports",
       "name": "文旅体育",

@@ -2,7 +2,6 @@ from __future__ import annotations
 
 import hashlib
 import json
-from pathlib import Path
 from typing import Any
 
 from scripts.radar_contract import (
@@ -15,41 +14,37 @@ from scripts.radar_contract import (
 )
 from scripts.radar_locations import find_location_candidates, load_location_catalog
 
-ROOT = Path(__file__).resolve().parents[1]
 ENVELOPE_FIELDS = {"schema_version", "prompt_version", "input_fingerprint", "items"}
 MODEL_ITEM_FIELDS = {
     "candidate_id", "ai_summary", "scope", "scope_evidence", "subjects",
-    "location_mentions", "topic_mentions", "events", "plans",
+    "location_mentions", "topic_profile", "content_form", "events", "plans",
 }
 SUBJECT_TYPES = {"person", "government", "organization", "company", "project"}
 SCOPES = {"national", "hainan", "domestic", "mixed", "foreign"}
+CONTENT_FORMS = {
+    "news", "photo-news", "feature", "profile", "analysis", "commentary",
+    "essay", "explainer", "interview", "book-review", "book-list",
+    "film-review",
+}
 SUBJECT_BASE_FIELDS = {"name", "type", "role", "evidence"}
 SUBJECT_ALIAS_FIELDS = {"name", "evidence"}
 SUBJECT_ALIAS_CUES = ("以下简称", "简称", "下称", "又称", "俗称")
+TOPIC_PROFILE_FIELDS = {"primary", "secondary"}
+OPEN_TOPIC_FIELDS = {"name", "evidence"}
 
 
 class ModelOutputError(ContractError):
     pass
 
 
-def _topic_catalog() -> list[dict[str, Any]]:
-    payload = json.loads((ROOT / "config/topics.json").read_text(encoding="utf-8"))
-    return payload["topics"]
-
-
 def build_model_input(candidates: list[dict[str, Any]]) -> dict[str, Any]:
     locations = load_location_catalog()
-    topics = [
-        {"topic_id": row["topic_id"], "name": row["name"], "aliases": row["aliases"]}
-        for row in _topic_catalog()
-    ]
     items = [
         {
             "candidate_id": item["candidate_id"],
             "title": item["title"],
             "content": item["content"],
             "location_candidates": find_location_candidates(item["title"], item["content"], locations),
-            "topic_candidates": topics,
         }
         for item in candidates
     ]
@@ -159,15 +154,36 @@ def validate_model_output(
                     raise ModelOutputError(f"{location}.location_id is outside candidates")
                 _evidence(mention.get("evidence"), source_text, f"{location}.location.evidence")
 
-            allowed_topics = {row["topic_id"] for row in input_item["topic_candidates"]}
-            topics = item.get("topic_mentions")
-            if not isinstance(topics, list) or len(topics) > 5:
-                raise ModelOutputError(f"{location}.topic_mentions is invalid")
-            for topic in topics:
-                require_exact_fields(topic, {"topic_id", "evidence"}, f"{location}.topic")
-                if topic.get("topic_id") not in allowed_topics:
-                    raise ModelOutputError(f"{location}.topic_id is outside candidates")
-                _evidence(topic.get("evidence"), source_text, f"{location}.topic.evidence")
+            topic_profile = item.get("topic_profile")
+            if not isinstance(topic_profile, dict):
+                raise ModelOutputError(f"{location}.topic_profile is invalid")
+            require_exact_fields(topic_profile, TOPIC_PROFILE_FIELDS, f"{location}.topic_profile")
+            primary = topic_profile.get("primary")
+            if not isinstance(primary, dict):
+                raise ModelOutputError(f"{location}.topic_profile.primary is invalid")
+            require_exact_fields(primary, OPEN_TOPIC_FIELDS, f"{location}.topic_profile.primary")
+            if not non_empty(primary.get("name")) or len(primary["name"]) > 40:
+                raise ModelOutputError(f"{location}.topic_profile.primary.name is invalid")
+            _evidence(
+                primary.get("evidence"), source_text,
+                f"{location}.topic_profile.primary.evidence",
+            )
+            secondary = topic_profile.get("secondary")
+            if not isinstance(secondary, list) or len(secondary) > 3:
+                raise ModelOutputError(f"{location}.topic_profile.secondary is invalid")
+            seen_topics = {normalized_text(primary["name"]).casefold()}
+            for topic_index, topic in enumerate(secondary):
+                topic_location = f"{location}.topic_profile.secondary[{topic_index}]"
+                require_exact_fields(topic, OPEN_TOPIC_FIELDS, topic_location)
+                if not non_empty(topic.get("name")) or len(topic["name"]) > 40:
+                    raise ModelOutputError(f"{topic_location}.name is invalid")
+                topic_key = normalized_text(topic["name"]).casefold()
+                if topic_key in seen_topics:
+                    raise ModelOutputError(f"{topic_location}.name is duplicated")
+                seen_topics.add(topic_key)
+                _evidence(topic.get("evidence"), source_text, f"{topic_location}.evidence")
+            if item.get("content_form") not in CONTENT_FORMS:
+                raise ModelOutputError(f"{location}.content_form is invalid")
 
             events = item.get("events")
             if not isinstance(events, list) or len(events) > 8:

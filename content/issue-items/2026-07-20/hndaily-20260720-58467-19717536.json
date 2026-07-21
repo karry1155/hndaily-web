@@ -1,8 +1,8 @@
 {
-  "schema_version": 8,
+  "schema_version": 9,
   "item_id": "hndaily-20260720-58467-19717536",
   "published_date": "2026-07-20",
-  "collected_date": "2026-07-20",
+  "collected_date": "2026-07-21",
   "page_number": "004",
   "page_name": "专题",
   "page_sequence": 1,
@@ -105,7 +105,27 @@
       "evidence": "琼中黎族苗族自治县推出环热带雨林国家公园旅游公路骑行之旅"
     }
   ],
-  "topics": [
+  "topic_profile": {
+    "primary": {
+      "name": "海南旅游节庆",
+      "evidence": "欢乐海南岛 开放向世界"
+    },
+    "secondary": []
+  },
+  "resolved_topics": [
+    {
+      "topic_id": "hainan-tourism-festivals",
+      "name": "海南旅游节庆",
+      "relation": "primary",
+      "path": [
+        "旅游与消费",
+        "海南旅游节庆"
+      ],
+      "evidence": "欢乐海南岛 开放向世界"
+    }
+  ],
+  "content_form": "feature",
+  "legacy_topics": [
     {
       "topic_id": "culture-tourism-sports",
       "name": "文旅体育",

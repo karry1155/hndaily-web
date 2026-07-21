@@ -1,8 +1,8 @@
 {
-  "schema_version": 8,
+  "schema_version": 9,
   "item_id": "hndaily-20260720-58469-19717555",
   "published_date": "2026-07-20",
-  "collected_date": "2026-07-20",
+  "collected_date": "2026-07-21",
   "page_number": "006",
   "page_name": "世界新闻",
   "page_sequence": 2,
@@ -20,7 +20,27 @@
     }
   ],
   "locations": [],
-  "topics": [
+  "topic_profile": {
+    "primary": {
+      "name": "日本内阁民意",
+      "evidence": "高市内阁不支持率超过支持率"
+    },
+    "secondary": []
+  },
+  "resolved_topics": [
+    {
+      "topic_id": "japan-cabinet-public-opinion",
+      "name": "日本内阁民意",
+      "relation": "primary",
+      "path": [
+        "治理与法治",
+        "日本内阁民意"
+      ],
+      "evidence": "高市内阁不支持率超过支持率"
+    }
+  ],
+  "content_form": "news",
+  "legacy_topics": [
     {
       "topic_id": "policy-governance",
       "name": "政策治理",

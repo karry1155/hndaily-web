@@ -1,0 +1,80 @@
+{
+  "topic_id": "intangible-cultural-heritage",
+  "name": "非物质文化遗产",
+  "parent_id": "culture-history",
+  "article_count": 1,
+  "primary_count": 0,
+  "detail_path": "/topics/intangible-cultural-heritage/",
+  "definition": "聚合以“非物质文化遗产”为主要议题的报道、进展与解释。",
+  "primary_items": [],
+  "secondary_items": [
+    {
+      "item_id": "hndaily-20260720-58466-19717528",
+      "published_date": "2026-07-20",
+      "page_number": "003",
+      "page_name": "民生新闻",
+      "page_sequence": 6,
+      "title": "古法晒盐忙",
+      "ai_summary": "儋州盐丁村老盐工利用晴好天气，以千年古法技艺晒制海盐。",
+      "scope": "hainan",
+      "enrichment_status": "complete",
+      "subjects": [],
+      "locations": [
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "海南日报全媒体记者"
+        },
+        {
+          "location_id": "hainan-danzhou",
+          "name": "儋州市",
+          "code": "460400",
+          "level": "prefecture",
+          "evidence": "儋州市峨蔓镇盐丁村古盐田"
+        }
+      ],
+      "topics": [
+        {
+          "topic_id": "traditional-saltmaking",
+          "name": "古法制盐",
+          "relation": "primary",
+          "path": [
+            "文化与历史",
+            "古法制盐"
+          ],
+          "evidence": "古法晒盐忙"
+        },
+        {
+          "topic_id": "intangible-cultural-heritage",
+          "name": "非物质文化遗产",
+          "relation": "secondary",
+          "path": [
+            "文化与历史",
+            "非物质文化遗产"
+          ],
+          "evidence": "原汁原味的非遗制盐场景"
+        },
+        {
+          "topic_id": "sea-salt-culture",
+          "name": "海盐文化",
+          "relation": "secondary",
+          "path": [
+            "文化与历史",
+            "海盐文化"
+          ],
+          "evidence": "海盐文化魅力"
+        }
+      ],
+      "events": [
+        {
+          "name": "儋州盐丁村古法晒盐",
+          "evidence": "当地老盐工抢抓晴好天气，熟练运用千年古法技艺晒制海盐"
+        }
+      ],
+      "plans": [],
+      "detail_path": "/items/2026-07-20/hndaily-20260720-58466-19717528/"
+    }
+  ]
+}

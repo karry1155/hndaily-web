@@ -1,8 +1,8 @@
 {
-  "schema_version": 8,
+  "schema_version": 9,
   "item_id": "hndaily-20260720-58468-19717546",
   "published_date": "2026-07-20",
-  "collected_date": "2026-07-20",
+  "collected_date": "2026-07-21",
   "page_number": "005",
   "page_name": "中国新闻",
   "page_sequence": 4,
@@ -20,7 +20,27 @@
     }
   ],
   "locations": [],
-  "topics": [
+  "topic_profile": {
+    "primary": {
+      "name": "有效投资政策",
+      "evidence": "持续扩大有效投资见“物”更见“人”"
+    },
+    "secondary": []
+  },
+  "resolved_topics": [
+    {
+      "topic_id": "effective-investment-policy",
+      "name": "有效投资政策",
+      "relation": "primary",
+      "path": [
+        "经济与市场",
+        "有效投资政策"
+      ],
+      "evidence": "持续扩大有效投资见“物”更见“人”"
+    }
+  ],
+  "content_form": "commentary",
+  "legacy_topics": [
     {
       "topic_id": "economy-data",
       "name": "经济数据",

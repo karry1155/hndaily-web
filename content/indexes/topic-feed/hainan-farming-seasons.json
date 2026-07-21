@@ -1,0 +1,55 @@
+{
+  "topic_id": "hainan-farming-seasons",
+  "name": "海南农时",
+  "parent_id": "agriculture-rural",
+  "article_count": 1,
+  "primary_count": 1,
+  "detail_path": "/topics/hainan-farming-seasons/",
+  "definition": "聚合以“海南农时”为主要议题的报道、进展与解释。",
+  "primary_items": [
+    {
+      "item_id": "hndaily-20260720-58484-19718116",
+      "published_date": "2026-07-20",
+      "page_number": "021",
+      "page_name": "讲谭",
+      "page_sequence": 1,
+      "title": "山海万物知农时",
+      "ai_summary": "海南农人根据热带地区的雨季、台风和作物物候安排夏收、夏种、夏管，形成区别于内地的农时经验。",
+      "scope": "hainan",
+      "enrichment_status": "complete",
+      "subjects": [],
+      "locations": [
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "海南独特的“时间表”"
+        },
+        {
+          "location_id": "hainan-danzhou",
+          "name": "儋州市",
+          "code": "460400",
+          "level": "prefecture",
+          "evidence": "儋州有句老话：“小满小满，江河水满。”"
+        }
+      ],
+      "topics": [
+        {
+          "topic_id": "hainan-farming-seasons",
+          "name": "海南农时",
+          "relation": "primary",
+          "path": [
+            "农业与乡村",
+            "海南农时"
+          ],
+          "evidence": "山海万物知农时"
+        }
+      ],
+      "events": [],
+      "plans": [],
+      "detail_path": "/items/2026-07-20/hndaily-20260720-58484-19718116/"
+    }
+  ],
+  "secondary_items": []
+}

@@ -1,0 +1,7 @@
+{
+  "schema_version": 1,
+  "prompt_version": "hnhot-v3.0",
+  "article_schema_version": 9,
+  "prompt": "prompt.md",
+  "output_schema": "schema.json"
+}

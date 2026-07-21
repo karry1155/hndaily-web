@@ -1,8 +1,8 @@
 {
-  "schema_version": 8,
+  "schema_version": 9,
   "item_id": "hndaily-20260719-58466-19716181",
   "published_date": "2026-07-19",
-  "collected_date": "2026-07-20",
+  "collected_date": "2026-07-21",
   "page_number": "003",
   "page_name": "中国新闻",
   "page_sequence": 4,
@@ -20,7 +20,27 @@
     }
   ],
   "locations": [],
-  "topics": [
+  "topic_profile": {
+    "primary": {
+      "name": "人工智能全球治理",
+      "evidence": "促进共同繁荣 维护共同安全"
+    },
+    "secondary": []
+  },
+  "resolved_topics": [
+    {
+      "topic_id": "global-ai-governance",
+      "name": "人工智能全球治理",
+      "relation": "primary",
+      "path": [
+        "科技与创新",
+        "人工智能全球治理"
+      ],
+      "evidence": "促进共同繁荣 维护共同安全"
+    }
+  ],
+  "content_form": "commentary",
+  "legacy_topics": [
     {
       "topic_id": "external-relations",
       "name": "对外交流",

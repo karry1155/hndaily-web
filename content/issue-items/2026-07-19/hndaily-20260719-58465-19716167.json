@@ -1,8 +1,8 @@
 {
-  "schema_version": 8,
+  "schema_version": 9,
   "item_id": "hndaily-20260719-58465-19716167",
   "published_date": "2026-07-19",
-  "collected_date": "2026-07-20",
+  "collected_date": "2026-07-21",
   "page_number": "002",
   "page_name": "本省新闻",
   "page_sequence": 5,
@@ -55,7 +55,27 @@
       "evidence": "在海口举行"
     }
   ],
-  "topics": [
+  "topic_profile": {
+    "primary": {
+      "name": "城乡建设零碳评价",
+      "evidence": "《博鳌评价：城乡建设零碳评价指南（试行）》发布"
+    },
+    "secondary": []
+  },
+  "resolved_topics": [
+    {
+      "topic_id": "zero-carbon-urban-rural-assessment",
+      "name": "城乡建设零碳评价",
+      "relation": "primary",
+      "path": [
+        "生态与气候",
+        "城乡建设零碳评价"
+      ],
+      "evidence": "《博鳌评价：城乡建设零碳评价指南（试行）》发布"
+    }
+  ],
+  "content_form": "news",
+  "legacy_topics": [
     {
       "topic_id": "ecology",
       "name": "生态环境",

@@ -1,8 +1,8 @@
 {
-  "schema_version": 8,
+  "schema_version": 9,
   "item_id": "hndaily-20260720-58469-19717558",
   "published_date": "2026-07-20",
-  "collected_date": "2026-07-20",
+  "collected_date": "2026-07-21",
   "page_number": "006",
   "page_name": "世界新闻",
   "page_sequence": 5,
@@ -20,7 +20,27 @@
     }
   ],
   "locations": [],
-  "topics": [
+  "topic_profile": {
+    "primary": {
+      "name": "加拿大森林火灾",
+      "evidence": "加拿大多地野火持续蔓延"
+    },
+    "secondary": []
+  },
+  "resolved_topics": [
+    {
+      "topic_id": "canada-wildfires",
+      "name": "加拿大森林火灾",
+      "relation": "primary",
+      "path": [
+        "应急与安全",
+        "加拿大森林火灾"
+      ],
+      "evidence": "加拿大多地野火持续蔓延"
+    }
+  ],
+  "content_form": "news",
+  "legacy_topics": [
     {
       "topic_id": "ecology",
       "name": "生态环境",

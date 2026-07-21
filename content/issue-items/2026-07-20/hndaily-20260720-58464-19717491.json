@@ -1,8 +1,8 @@
 {
-  "schema_version": 8,
+  "schema_version": 9,
   "item_id": "hndaily-20260720-58464-19717491",
   "published_date": "2026-07-20",
-  "collected_date": "2026-07-20",
+  "collected_date": "2026-07-21",
   "page_number": "001",
   "page_name": "头版",
   "page_sequence": 1,
@@ -28,7 +28,27 @@
       "evidence": "海南省“十五五”综合交通运输（公路水路）发展规划"
     }
   ],
-  "topics": [
+  "topic_profile": {
+    "primary": {
+      "name": "海南综合交通规划",
+      "evidence": "千亿投资推进“人享其行、物畅其流”"
+    },
+    "secondary": []
+  },
+  "resolved_topics": [
+    {
+      "topic_id": "hainan-integrated-transport-planning",
+      "name": "海南综合交通规划",
+      "relation": "primary",
+      "path": [
+        "交通与城市",
+        "海南综合交通规划"
+      ],
+      "evidence": "千亿投资推进“人享其行、物畅其流”"
+    }
+  ],
+  "content_form": "analysis",
+  "legacy_topics": [
     {
       "topic_id": "urban-rural",
       "name": "城乡建设",

@@ -1,8 +1,8 @@
 {
-  "schema_version": 8,
+  "schema_version": 9,
   "item_id": "hndaily-20260719-58465-19716163",
   "published_date": "2026-07-19",
-  "collected_date": "2026-07-20",
+  "collected_date": "2026-07-21",
   "page_number": "002",
   "page_name": "本省新闻",
   "page_sequence": 1,
@@ -35,7 +35,27 @@
       "evidence": "开幕式在三亚举行"
     }
   ],
-  "topics": [
+  "topic_profile": {
+    "primary": {
+      "name": "生物医学工程创新",
+      "evidence": "第十一届全国大学生生物医学\n工程创新设计竞赛三亚开幕"
+    },
+    "secondary": []
+  },
+  "resolved_topics": [
+    {
+      "topic_id": "biomedical-engineering-innovation",
+      "name": "生物医学工程创新",
+      "relation": "primary",
+      "path": [
+        "科技与创新",
+        "生物医学工程创新"
+      ],
+      "evidence": "第十一届全国大学生生物医学\n工程创新设计竞赛三亚开幕"
+    }
+  ],
+  "content_form": "news",
+  "legacy_topics": [
     {
       "topic_id": "education-talent",
       "name": "教育人才",

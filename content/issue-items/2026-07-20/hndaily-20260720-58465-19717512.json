@@ -1,8 +1,8 @@
 {
-  "schema_version": 8,
+  "schema_version": 9,
   "item_id": "hndaily-20260720-58465-19717512",
   "published_date": "2026-07-20",
-  "collected_date": "2026-07-20",
+  "collected_date": "2026-07-21",
   "page_number": "002",
   "page_name": "本省新闻",
   "page_sequence": 4,
@@ -35,7 +35,27 @@
       "evidence": "在昌江黎族自治县举办"
     }
   ],
-  "topics": [
+  "topic_profile": {
+    "primary": {
+      "name": "黎陶非遗传承",
+      "evidence": "两岸匠人共探黎陶魅力"
+    },
+    "secondary": []
+  },
+  "resolved_topics": [
+    {
+      "topic_id": "li-pottery-heritage",
+      "name": "黎陶非遗传承",
+      "relation": "primary",
+      "path": [
+        "文化与历史",
+        "黎陶非遗传承"
+      ],
+      "evidence": "两岸匠人共探黎陶魅力"
+    }
+  ],
+  "content_form": "news",
+  "legacy_topics": [
     {
       "topic_id": "culture-tourism-sports",
       "name": "文旅体育",

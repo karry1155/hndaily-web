@@ -1,0 +1,75 @@
+{
+  "topic_id": "grassroots-fire-rescue-teams",
+  "name": "基层消防队伍建设",
+  "parent_id": "emergency-safety",
+  "article_count": 1,
+  "primary_count": 1,
+  "detail_path": "/topics/grassroots-fire-rescue-teams/",
+  "definition": "聚合以“基层消防队伍建设”为主要议题的报道、进展与解释。",
+  "primary_items": [
+    {
+      "item_id": "hndaily-20260720-58466-19717525",
+      "published_date": "2026-07-20",
+      "page_number": "003",
+      "page_name": "民生新闻",
+      "page_sequence": 4,
+      "title": "一场场“诸葛亮会”，带出了队伍的精气神",
+      "ai_summary": "儋州中心大道消防救援站通过常态化集体议事，让队员参与训练和管理决策，改善队伍士气与协作。",
+      "scope": "hainan",
+      "enrichment_status": "complete",
+      "subjects": [
+        {
+          "subject_id": "subject-8f893fde2ae085",
+          "name": "邹雷",
+          "type": "person",
+          "role": "儋州市中心大道消防救援站党支部书记、政治指导员",
+          "evidence": "党支部书记、政治指导员邹雷说"
+        },
+        {
+          "subject_id": "subject-4c1dc2ec8418f0",
+          "name": "儋州市中心大道消防救援站",
+          "type": "organization",
+          "role": "队伍管理改革单位",
+          "evidence": "儋州市中心大道消防救援站"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "海南日报全媒体记者"
+        },
+        {
+          "location_id": "hainan-danzhou",
+          "name": "儋州市",
+          "code": "460400",
+          "level": "prefecture",
+          "evidence": "儋州市中心大道消防救援站"
+        }
+      ],
+      "topics": [
+        {
+          "topic_id": "grassroots-fire-rescue-teams",
+          "name": "基层消防队伍建设",
+          "relation": "primary",
+          "path": [
+            "应急与安全",
+            "基层消防队伍建设"
+          ],
+          "evidence": "一场场“诸葛亮会”，带出了队伍的精气神"
+        }
+      ],
+      "events": [
+        {
+          "name": "儋州中心大道消防救援站常态化召开“诸葛亮会”",
+          "evidence": "这是站里时常举办的“诸葛亮会”"
+        }
+      ],
+      "plans": [],
+      "detail_path": "/items/2026-07-20/hndaily-20260720-58466-19717525/"
+    }
+  ],
+  "secondary_items": []
+}

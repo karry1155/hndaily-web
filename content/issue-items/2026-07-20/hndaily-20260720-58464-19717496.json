@@ -1,8 +1,8 @@
 {
-  "schema_version": 8,
+  "schema_version": 9,
   "item_id": "hndaily-20260720-58464-19717496",
   "published_date": "2026-07-20",
-  "collected_date": "2026-07-20",
+  "collected_date": "2026-07-21",
   "page_number": "001",
   "page_name": "头版",
   "page_sequence": 5,
@@ -62,7 +62,27 @@
       "evidence": "陵水黎安国际教育创新试验区"
     }
   ],
-  "topics": [
+  "topic_profile": {
+    "primary": {
+      "name": "产业人工智能创业",
+      "evidence": "从陵水黎安起步，登上世界级AI舞台"
+    },
+    "secondary": []
+  },
+  "resolved_topics": [
+    {
+      "topic_id": "industrial-ai-entrepreneurship",
+      "name": "产业人工智能创业",
+      "relation": "primary",
+      "path": [
+        "科技与创新",
+        "产业人工智能创业"
+      ],
+      "evidence": "从陵水黎安起步，登上世界级AI舞台"
+    }
+  ],
+  "content_form": "profile",
+  "legacy_topics": [
     {
       "topic_id": "industry-projects",
       "name": "产业项目",

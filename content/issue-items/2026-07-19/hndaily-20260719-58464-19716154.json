@@ -1,8 +1,8 @@
 {
-  "schema_version": 8,
+  "schema_version": 9,
   "item_id": "hndaily-20260719-58464-19716154",
   "published_date": "2026-07-19",
-  "collected_date": "2026-07-20",
+  "collected_date": "2026-07-21",
   "page_number": "001",
   "page_name": "头版",
   "page_sequence": 5,
@@ -49,7 +49,27 @@
       "evidence": "在澄迈县，税务部门依托征纳互动平台"
     }
   ],
-  "topics": [
+  "topic_profile": {
+    "primary": {
+      "name": "税收促消费",
+      "evidence": "算好三本账，“小票据”激活“大市场”"
+    },
+    "secondary": []
+  },
+  "resolved_topics": [
+    {
+      "topic_id": "tax-supported-consumption",
+      "name": "税收促消费",
+      "relation": "primary",
+      "path": [
+        "经济与市场",
+        "税收促消费"
+      ],
+      "evidence": "算好三本账，“小票据”激活“大市场”"
+    }
+  ],
+  "content_form": "analysis",
+  "legacy_topics": [
     {
       "topic_id": "economy-data",
       "name": "经济数据",

@@ -1,8 +1,8 @@
 {
-  "schema_version": 8,
+  "schema_version": 9,
   "item_id": "hndaily-20260719-58467-19716191",
   "published_date": "2026-07-19",
-  "collected_date": "2026-07-20",
+  "collected_date": "2026-07-21",
   "page_number": "004",
   "page_name": "文化周刊",
   "page_sequence": 2,
@@ -12,7 +12,27 @@
   "scope_evidence": "在北京漂泊时，我养了一只边牧",
   "subjects": [],
   "locations": [],
-  "topics": [],
+  "topic_profile": {
+    "primary": {
+      "name": "伴侣动物与饲养责任",
+      "evidence": "远去的巴斯特"
+    },
+    "secondary": []
+  },
+  "resolved_topics": [
+    {
+      "topic_id": "companion-animal-responsibility",
+      "name": "伴侣动物与饲养责任",
+      "relation": "primary",
+      "path": [
+        "社会与公共服务",
+        "伴侣动物与饲养责任"
+      ],
+      "evidence": "远去的巴斯特"
+    }
+  ],
+  "content_form": "essay",
+  "legacy_topics": [],
   "events": [],
   "plans": [],
   "block": {

@@ -1,0 +1,48 @@
+{
+  "topic_id": "jianfengling-nature-travelogue",
+  "name": "尖峰岭自然游记",
+  "parent_id": "culture-history",
+  "article_count": 1,
+  "primary_count": 1,
+  "detail_path": "/topics/jianfengling-nature-travelogue/",
+  "definition": "聚合以“尖峰岭自然游记”为主要议题的报道、进展与解释。",
+  "primary_items": [
+    {
+      "item_id": "hndaily-20260720-58479-19718091",
+      "published_date": "2026-07-20",
+      "page_number": "016",
+      "page_name": "读图",
+      "page_sequence": 2,
+      "title": "云海日出尖峰岭",
+      "ai_summary": "作者记录在海南尖峰岭等待云海日出的登山和拍摄过程，展现雨林山地由暗夜至晨光的变化。",
+      "scope": "hainan",
+      "enrichment_status": "complete",
+      "subjects": [],
+      "locations": [
+        {
+          "location_id": "hainan-dongfang",
+          "name": "东方市",
+          "code": "469007",
+          "level": "county",
+          "evidence": "尖峰岭日出"
+        }
+      ],
+      "topics": [
+        {
+          "topic_id": "jianfengling-nature-travelogue",
+          "name": "尖峰岭自然游记",
+          "relation": "primary",
+          "path": [
+            "文化与历史",
+            "尖峰岭自然游记"
+          ],
+          "evidence": "云海日出尖峰岭"
+        }
+      ],
+      "events": [],
+      "plans": [],
+      "detail_path": "/items/2026-07-20/hndaily-20260720-58479-19718091/"
+    }
+  ],
+  "secondary_items": []
+}

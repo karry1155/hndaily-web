@@ -1,8 +1,8 @@
 {
-  "schema_version": 8,
+  "schema_version": 9,
   "item_id": "hndaily-20260719-58464-19716156",
   "published_date": "2026-07-19",
-  "collected_date": "2026-07-20",
+  "collected_date": "2026-07-21",
   "page_number": "001",
   "page_name": "头版",
   "page_sequence": 7,
@@ -49,7 +49,27 @@
       "evidence": "琼中黎族苗族自治县"
     }
   ],
-  "topics": [
+  "topic_profile": {
+    "primary": {
+      "name": "沉香林下经济",
+      "evidence": "琼中林下套种沉香，真香！"
+    },
+    "secondary": []
+  },
+  "resolved_topics": [
+    {
+      "topic_id": "agarwood-understory-economy",
+      "name": "沉香林下经济",
+      "relation": "primary",
+      "path": [
+        "农业与乡村",
+        "沉香林下经济"
+      ],
+      "evidence": "琼中林下套种沉香，真香！"
+    }
+  ],
+  "content_form": "feature",
+  "legacy_topics": [
     {
       "topic_id": "industry-projects",
       "name": "产业项目",

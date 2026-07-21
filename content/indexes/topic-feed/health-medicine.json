@@ -1,0 +1,144 @@
+{
+  "topic_id": "health-medicine",
+  "name": "医疗与健康",
+  "parent_id": null,
+  "article_count": 2,
+  "primary_count": 2,
+  "detail_path": "/topics/health-medicine/",
+  "definition": "医疗服务、公共卫生、医药技术与健康保障。",
+  "primary_items": [
+    {
+      "item_id": "hndaily-20260720-58465-19717507",
+      "published_date": "2026-07-20",
+      "page_number": "002",
+      "page_name": "本省新闻",
+      "page_sequence": 1,
+      "title": "以“微实事”托起群众“大健康”",
+      "ai_summary": "博鳌乐城更新导视、便民设备和就医服务，解决患者找路、出行和就医过程中的具体不便。",
+      "scope": "mixed",
+      "enrichment_status": "complete",
+      "subjects": [
+        {
+          "subject_id": "subject-9bbeae7686e714",
+          "name": "博鳌乐城国际医疗旅游先行区",
+          "type": "project",
+          "role": "医疗服务改善实施区域",
+          "evidence": "博鳌乐城国际医疗旅游先行区",
+          "aliases": [
+            {
+              "name": "乐城",
+              "evidence": "博鳌乐城国际医疗旅游先行区（以下简称乐城）"
+            }
+          ]
+        },
+        {
+          "subject_id": "subject-669d102b807294",
+          "name": "乐城先行区管理局党委",
+          "type": "government",
+          "role": "便民服务推动方",
+          "evidence": "乐城先行区管理局党委"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "博鳌乐城国际医疗旅游先行区"
+        }
+      ],
+      "topics": [
+        {
+          "topic_id": "lecheng-medical-services",
+          "name": "乐城就医服务",
+          "relation": "primary",
+          "path": [
+            "医疗与健康",
+            "乐城就医服务"
+          ],
+          "evidence": "以“微实事”托起群众“大健康”"
+        }
+      ],
+      "events": [
+        {
+          "name": "博鳌乐城推进就医便民服务改造",
+          "evidence": "园区不仅全域导视标识完成更新，轮椅、自助便民设备也全面投用"
+        }
+      ],
+      "plans": [],
+      "detail_path": "/items/2026-07-20/hndaily-20260720-58465-19717507/"
+    },
+    {
+      "item_id": "hndaily-20260719-58465-19716171",
+      "published_date": "2026-07-19",
+      "page_number": "002",
+      "page_name": "本省新闻",
+      "page_sequence": 9,
+      "title": "“为乡亲解决病痛，是我最开心的事”",
+      "ai_summary": "罗海生扎根白沙行医26年，通过中医特色诊疗和名医工作室培养基层医生，让更多山区群众就近获得中医服务。",
+      "scope": "hainan",
+      "enrichment_status": "complete",
+      "subjects": [
+        {
+          "subject_id": "subject-7c6ba112d7612b",
+          "name": "罗海生",
+          "type": "person",
+          "role": "白沙黎族自治县人民医院副院长、主任医师",
+          "evidence": "该院副院长、罗海生主任医师"
+        },
+        {
+          "subject_id": "subject-bceb4d3fb2e47b",
+          "name": "白沙县人民医院",
+          "type": "organization",
+          "role": "罗海生工作单位",
+          "evidence": "入职白沙县人民医院"
+        },
+        {
+          "subject_id": "subject-ceccfa3e04b04d",
+          "name": "罗海生名医工作室",
+          "type": "organization",
+          "role": "中医诊疗和人才培养工作室",
+          "evidence": "“罗海生名医工作室”挂牌以来"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "海南省第一批、第二批“名老中医药专家下基层”项目骨干"
+        },
+        {
+          "location_id": "hainan-baisha",
+          "name": "白沙黎族自治县",
+          "code": "469025",
+          "level": "county",
+          "evidence": "白沙黎族自治县人民医院"
+        }
+      ],
+      "topics": [
+        {
+          "topic_id": "grassroots-chinese-medicine",
+          "name": "基层中医",
+          "relation": "primary",
+          "path": [
+            "医疗与健康",
+            "基层中医"
+          ],
+          "evidence": "“为乡亲解决病痛，是我最开心的事”"
+        }
+      ],
+      "events": [
+        {
+          "name": "罗海生在白沙开展中医诊疗和人才培养",
+          "evidence": "将更多医疗技术和服务下沉偏远山区，让群众在“家门口”就能享受到优质中医诊疗服务"
+        }
+      ],
+      "plans": [],
+      "detail_path": "/items/2026-07-19/hndaily-20260719-58465-19716171/"
+    }
+  ],
+  "secondary_items": []
+}

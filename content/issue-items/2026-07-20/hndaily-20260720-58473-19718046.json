@@ -1,8 +1,8 @@
 {
-  "schema_version": 8,
+  "schema_version": 9,
   "item_id": "hndaily-20260720-58473-19718046",
   "published_date": "2026-07-20",
-  "collected_date": "2026-07-20",
+  "collected_date": "2026-07-21",
   "page_number": "010",
   "page_name": "封面",
   "page_sequence": 1,
@@ -70,7 +70,27 @@
       "evidence": "琼中红毛镇、长征镇的连片桑园"
     }
   ],
-  "topics": [
+  "topic_profile": {
+    "primary": {
+      "name": "海南桑蚕史",
+      "evidence": "琼岛千年蚕事"
+    },
+    "secondary": []
+  },
+  "resolved_topics": [
+    {
+      "topic_id": "hainan-sericulture-history",
+      "name": "海南桑蚕史",
+      "relation": "primary",
+      "path": [
+        "文化与历史",
+        "海南桑蚕史"
+      ],
+      "evidence": "琼岛千年蚕事"
+    }
+  ],
+  "content_form": "feature",
+  "legacy_topics": [
     {
       "topic_id": "industry-projects",
       "name": "产业项目",

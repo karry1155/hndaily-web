@@ -1,0 +1,89 @@
+{
+  "topic_id": "sericulture-study-tours",
+  "name": "桑蚕研学",
+  "parent_id": "education-youth",
+  "article_count": 1,
+  "primary_count": 1,
+  "detail_path": "/topics/sericulture-study-tours/",
+  "definition": "聚合以“桑蚕研学”为主要议题的报道、进展与解释。",
+  "primary_items": [
+    {
+      "item_id": "hndaily-20260720-58475-19718055",
+      "published_date": "2026-07-20",
+      "page_number": "012",
+      "page_name": "封面",
+      "page_sequence": 1,
+      "title": "崖州凤岭有了“蚕课堂”！",
+      "ai_summary": "三亚崖州区新丝路科创人才小院在凤岭村建设桑蚕研学基地，把养蚕课程、乡村人才培养和产业发展结合起来。",
+      "scope": "hainan",
+      "enrichment_status": "complete",
+      "subjects": [
+        {
+          "subject_id": "subject-60f9916519847f",
+          "name": "郭芾",
+          "type": "person",
+          "role": "浙江大学海南研究院副研究员、凤岭村“博士村长”",
+          "evidence": "浙江大学海南研究院副研究员、凤岭村“博士村长”郭芾"
+        },
+        {
+          "subject_id": "subject-f5063c2061b25b",
+          "name": "三亚崖州区新丝路科创人才小院",
+          "type": "project",
+          "role": "桑蚕主题研学基地建设项目",
+          "evidence": "三亚崖州区新丝路科创人才小院在这里揭牌"
+        },
+        {
+          "subject_id": "subject-54b2a3bfd6f187",
+          "name": "浙江大学海南研究院",
+          "type": "organization",
+          "role": "研学基地合作建设方",
+          "evidence": "浙江大学海南研究院和凤岭村合作"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "海南本土的桑蚕养殖传统"
+        },
+        {
+          "location_id": "hainan-sanya",
+          "name": "三亚市",
+          "code": "460200",
+          "level": "prefecture",
+          "evidence": "三亚市崖州区凤岭小学"
+        },
+        {
+          "location_id": "hainan-qiongzhong",
+          "name": "琼中黎族苗族自治县",
+          "code": "469030",
+          "level": "county",
+          "evidence": "前往琼中的桑蚕企业进行了实地考察"
+        }
+      ],
+      "topics": [
+        {
+          "topic_id": "sericulture-study-tours",
+          "name": "桑蚕研学",
+          "relation": "primary",
+          "path": [
+            "教育与青年",
+            "桑蚕研学"
+          ],
+          "evidence": "崖州凤岭有了“蚕课堂”！"
+        }
+      ],
+      "events": [
+        {
+          "name": "三亚崖州区新丝路科创人才小院揭牌",
+          "evidence": "今年5月，三亚崖州区新丝路科创人才小院在这里揭牌"
+        }
+      ],
+      "plans": [],
+      "detail_path": "/items/2026-07-20/hndaily-20260720-58475-19718055/"
+    }
+  ],
+  "secondary_items": []
+}

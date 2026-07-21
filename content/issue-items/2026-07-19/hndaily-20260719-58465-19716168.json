@@ -1,8 +1,8 @@
 {
-  "schema_version": 8,
+  "schema_version": 9,
   "item_id": "hndaily-20260719-58465-19716168",
   "published_date": "2026-07-19",
-  "collected_date": "2026-07-20",
+  "collected_date": "2026-07-21",
   "page_number": "002",
   "page_name": "本省新闻",
   "page_sequence": 6,
@@ -63,7 +63,27 @@
       "evidence": "昌江深耕“新时代‘渔夫与海’”志愿服务品牌"
     }
   ],
-  "topics": [
+  "topic_profile": {
+    "primary": {
+      "name": "海岸垃圾治理",
+      "evidence": "携手护碧海 聚力守蔚蓝"
+    },
+    "secondary": []
+  },
+  "resolved_topics": [
+    {
+      "topic_id": "coastal-waste-governance",
+      "name": "海岸垃圾治理",
+      "relation": "primary",
+      "path": [
+        "生态与气候",
+        "海岸垃圾治理"
+      ],
+      "evidence": "携手护碧海 聚力守蔚蓝"
+    }
+  ],
+  "content_form": "news",
+  "legacy_topics": [
     {
       "topic_id": "ecology",
       "name": "生态环境",

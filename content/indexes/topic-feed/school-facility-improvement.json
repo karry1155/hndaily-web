@@ -1,0 +1,68 @@
+{
+  "topic_id": "school-facility-improvement",
+  "name": "校园设施改善",
+  "parent_id": "education-youth",
+  "article_count": 1,
+  "primary_count": 1,
+  "detail_path": "/topics/school-facility-improvement/",
+  "definition": "聚合以“校园设施改善”为主要议题的报道、进展与解释。",
+  "primary_items": [
+    {
+      "item_id": "hndaily-20260720-58466-19717521",
+      "published_date": "2026-07-20",
+      "page_number": "003",
+      "page_name": "民生新闻",
+      "page_sequence": 1,
+      "title": "三亚154所中小学校教室、宿舍空调全覆盖",
+      "ai_summary": "三亚154所公办和民办中小学校已实现教室、宿舍空调全覆盖，公办学校累计安装16640台。",
+      "scope": "hainan",
+      "enrichment_status": "complete",
+      "subjects": [
+        {
+          "subject_id": "subject-5e54414d84d3fe",
+          "name": "三亚市教育局",
+          "type": "government",
+          "role": "学校空调配置工作部门",
+          "evidence": "海南日报全媒体记者从三亚市教育局获悉"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "海南日报全媒体记者"
+        },
+        {
+          "location_id": "hainan-sanya",
+          "name": "三亚市",
+          "code": "460200",
+          "level": "prefecture",
+          "evidence": "三亚已实现154所公办、民办中小学校"
+        }
+      ],
+      "topics": [
+        {
+          "topic_id": "school-facility-improvement",
+          "name": "校园设施改善",
+          "relation": "primary",
+          "path": [
+            "教育与青年",
+            "校园设施改善"
+          ],
+          "evidence": "三亚154所中小学校教室、宿舍空调全覆盖"
+        }
+      ],
+      "events": [
+        {
+          "name": "三亚中小学校教室宿舍空调全覆盖",
+          "evidence": "三亚已实现154所公办、民办中小学校教室、宿舍空调全覆盖"
+        }
+      ],
+      "plans": [],
+      "detail_path": "/items/2026-07-20/hndaily-20260720-58466-19717521/"
+    }
+  ],
+  "secondary_items": []
+}

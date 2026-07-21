@@ -1,8 +1,8 @@
 {
-  "schema_version": 8,
+  "schema_version": 9,
   "item_id": "hndaily-20260720-58466-19717525",
   "published_date": "2026-07-20",
-  "collected_date": "2026-07-20",
+  "collected_date": "2026-07-21",
   "page_number": "003",
   "page_name": "民生新闻",
   "page_sequence": 4,
@@ -42,7 +42,27 @@
       "evidence": "儋州市中心大道消防救援站"
     }
   ],
-  "topics": [
+  "topic_profile": {
+    "primary": {
+      "name": "基层消防队伍建设",
+      "evidence": "一场场“诸葛亮会”，带出了队伍的精气神"
+    },
+    "secondary": []
+  },
+  "resolved_topics": [
+    {
+      "topic_id": "grassroots-fire-rescue-teams",
+      "name": "基层消防队伍建设",
+      "relation": "primary",
+      "path": [
+        "应急与安全",
+        "基层消防队伍建设"
+      ],
+      "evidence": "一场场“诸葛亮会”，带出了队伍的精气神"
+    }
+  ],
+  "content_form": "feature",
+  "legacy_topics": [
     {
       "topic_id": "policy-governance",
       "name": "政策治理",

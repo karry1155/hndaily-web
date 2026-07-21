@@ -26,19 +26,14 @@
       "locations": [],
       "topics": [
         {
-          "topic_id": "policy-governance",
-          "name": "政策治理",
-          "evidence": "强化风险意识，确保安全可控"
-        },
-        {
-          "topic_id": "external-relations",
-          "name": "对外交流",
-          "evidence": "全球人工智能治理体系"
-        },
-        {
-          "topic_id": "industry-projects",
-          "name": "产业项目",
-          "evidence": "深度融入生产生活各领域"
+          "topic_id": "ai-safety-governance",
+          "name": "人工智能安全治理",
+          "relation": "primary",
+          "path": [
+            "科技与创新",
+            "人工智能安全治理"
+          ],
+          "evidence": "强化风险意识 确保安全可控"
         }
       ],
       "events": [
@@ -91,14 +86,14 @@
       "locations": [],
       "topics": [
         {
-          "topic_id": "external-relations",
-          "name": "对外交流",
-          "evidence": "美国与沙特阿拉伯的核协议草案"
-        },
-        {
-          "topic_id": "policy-governance",
-          "name": "政策治理",
-          "evidence": "未切实落实核不扩散制度"
+          "topic_id": "nuclear-nonproliferation",
+          "name": "核不扩散",
+          "relation": "primary",
+          "path": [
+            "治理与法治",
+            "核不扩散"
+          ],
+          "evidence": "美沙核协议草案浮出水面 搞“双标”遭质疑"
         }
       ],
       "events": [
@@ -133,14 +128,14 @@
       "locations": [],
       "topics": [
         {
-          "topic_id": "policy-governance",
-          "name": "政策治理",
-          "evidence": "内阁支持率从6月的51%跌至41%"
-        },
-        {
-          "topic_id": "economy-data",
-          "name": "经济数据",
-          "evidence": "不支持率则升至44%"
+          "topic_id": "japan-cabinet-public-opinion",
+          "name": "日本内阁民意",
+          "relation": "primary",
+          "path": [
+            "治理与法治",
+            "日本内阁民意"
+          ],
+          "evidence": "高市内阁不支持率超过支持率"
         }
       ],
       "events": [
@@ -175,14 +170,14 @@
       "locations": [],
       "topics": [
         {
-          "topic_id": "economy-data",
-          "name": "经济数据",
-          "evidence": "发行面额10卢比和20卢比的塑料钞票"
-        },
-        {
-          "topic_id": "policy-governance",
-          "name": "政策治理",
-          "evidence": "评估用其替代纸币的可行性"
+          "topic_id": "polymer-banknote-issuance",
+          "name": "塑料钞票发行",
+          "relation": "primary",
+          "path": [
+            "经济与市场",
+            "塑料钞票发行"
+          ],
+          "evidence": "印度计划试点发行小面额塑料钞票"
         }
       ],
       "events": [
@@ -209,19 +204,14 @@
       "locations": [],
       "topics": [
         {
-          "topic_id": "economy-data",
-          "name": "经济数据",
-          "evidence": "全球粮价较2022年高点明显回落"
-        },
-        {
-          "topic_id": "ecology",
-          "name": "生态环境",
-          "evidence": "新一轮厄尔尼诺现象导致极端天气频发"
-        },
-        {
-          "topic_id": "external-relations",
-          "name": "对外交流",
-          "evidence": "部分国家收紧农产品出口"
+          "topic_id": "global-food-security",
+          "name": "全球粮食安全",
+          "relation": "primary",
+          "path": [
+            "农业与乡村",
+            "全球粮食安全"
+          ],
+          "evidence": "全球粮食安全面临三大“灰犀牛”"
         }
       ],
       "events": [],
@@ -251,14 +241,14 @@
       "locations": [],
       "topics": [
         {
-          "topic_id": "ecology",
-          "name": "生态环境",
-          "evidence": "过火面积超过290万公顷"
-        },
-        {
-          "topic_id": "economy-data",
-          "name": "经济数据",
-          "evidence": "在燃野火数量达到959起"
+          "topic_id": "canada-wildfires",
+          "name": "加拿大森林火灾",
+          "relation": "primary",
+          "path": [
+            "应急与安全",
+            "加拿大森林火灾"
+          ],
+          "evidence": "加拿大多地野火持续蔓延"
         }
       ],
       "events": [
@@ -303,19 +293,14 @@
       ],
       "topics": [
         {
-          "topic_id": "urban-rural",
-          "name": "城乡建设",
-          "evidence": "全省共谋划公路水路项目223个"
-        },
-        {
-          "topic_id": "industry-projects",
-          "name": "产业项目",
-          "evidence": "总投资1363亿元"
-        },
-        {
-          "topic_id": "policy-governance",
-          "name": "政策治理",
-          "evidence": "日前已正式印发实施"
+          "topic_id": "hainan-integrated-transport-planning",
+          "name": "海南综合交通规划",
+          "relation": "primary",
+          "path": [
+            "交通与城市",
+            "海南综合交通规划"
+          ],
+          "evidence": "千亿投资推进“人享其行、物畅其流”"
         }
       ],
       "events": [
@@ -383,14 +368,14 @@
       ],
       "topics": [
         {
-          "topic_id": "culture-tourism-sports",
-          "name": "文旅体育",
-          "evidence": "跨省文旅联合推介活动"
-        },
-        {
-          "topic_id": "external-relations",
-          "name": "对外交流",
-          "evidence": "来自泰国、澳大利亚、希腊、菲律宾、巴基斯坦、埃塞俄比亚等国的旅行商代表"
+          "topic_id": "cross-regional-tourism-cooperation",
+          "name": "跨区域旅游合作",
+          "relation": "primary",
+          "path": [
+            "旅游与消费",
+            "跨区域旅游合作"
+          ],
+          "evidence": "旅游“一程多站”有了山海“联名款”"
         }
       ],
       "events": [
@@ -424,19 +409,14 @@
       "locations": [],
       "topics": [
         {
-          "topic_id": "policy-governance",
-          "name": "政策治理",
-          "evidence": "强化风险意识，确保安全可控"
-        },
-        {
-          "topic_id": "external-relations",
-          "name": "对外交流",
-          "evidence": "全球人工智能治理体系"
-        },
-        {
-          "topic_id": "industry-projects",
-          "name": "产业项目",
-          "evidence": "深度融入生产生活各领域"
+          "topic_id": "ai-safety-governance",
+          "name": "人工智能安全治理",
+          "relation": "primary",
+          "path": [
+            "科技与创新",
+            "人工智能安全治理"
+          ],
+          "evidence": "强化风险意识 确保安全可控"
         }
       ],
       "events": [
@@ -606,14 +586,14 @@
       ],
       "topics": [
         {
-          "topic_id": "culture-tourism-sports",
-          "name": "文旅体育",
-          "evidence": "海南竞技体育加速奔跑"
-        },
-        {
-          "topic_id": "education-talent",
-          "name": "教育人才",
-          "evidence": "选拔新苗、完善青训的新起点"
+          "topic_id": "hainan-competitive-sports",
+          "name": "海南竞技体育",
+          "relation": "primary",
+          "path": [
+            "体育与赛事",
+            "海南竞技体育"
+          ],
+          "evidence": "海南竞技体育再“加速”"
         }
       ],
       "events": [
@@ -693,14 +673,14 @@
       ],
       "topics": [
         {
-          "topic_id": "industry-projects",
-          "name": "产业项目",
-          "evidence": "产业AI产品体系"
-        },
-        {
-          "topic_id": "education-talent",
-          "name": "教育人才",
-          "evidence": "试验区的首批学生"
+          "topic_id": "industrial-ai-entrepreneurship",
+          "name": "产业人工智能创业",
+          "relation": "primary",
+          "path": [
+            "科技与创新",
+            "产业人工智能创业"
+          ],
+          "evidence": "从陵水黎安起步，登上世界级AI舞台"
         }
       ],
       "events": [
@@ -861,19 +841,14 @@
       ],
       "topics": [
         {
-          "topic_id": "industry-projects",
-          "name": "产业项目",
-          "evidence": "覆盖火锅、速食、休闲零食、饮品等全品类赛道"
-        },
-        {
-          "topic_id": "external-relations",
-          "name": "对外交流",
-          "evidence": "产品远销美国、加拿大、澳大利亚、新加坡等十余国"
-        },
-        {
-          "topic_id": "culture-tourism-sports",
-          "name": "文旅体育",
-          "evidence": "一碗糟粕醋，成了这趟旅途浓墨重彩的一笔"
+          "topic_id": "zaopocu-industry",
+          "name": "糟粕醋产业",
+          "relation": "primary",
+          "path": [
+            "产业与项目",
+            "糟粕醋产业"
+          ],
+          "evidence": "糟粕醋的“城市PK赛”你更看好谁？"
         }
       ],
       "events": [
@@ -929,19 +904,14 @@
       ],
       "topics": [
         {
-          "topic_id": "education-talent",
-          "name": "教育人才",
-          "evidence": "多元化课程丰富孩子们的暑期生活"
-        },
-        {
-          "topic_id": "culture-tourism-sports",
-          "name": "文旅体育",
-          "evidence": "舞龙舞狮体验课"
-        },
-        {
-          "topic_id": "health",
-          "name": "医疗健康",
-          "evidence": "融入脊柱侧弯筛查"
+          "topic_id": "summer-childcare-services",
+          "name": "暑期托管服务",
+          "relation": "primary",
+          "path": [
+            "社会与公共服务",
+            "暑期托管服务"
+          ],
+          "evidence": "暑期托管学舞龙"
         }
       ],
       "events": [
@@ -982,14 +952,14 @@
       "locations": [],
       "topics": [
         {
-          "topic_id": "external-relations",
-          "name": "对外交流",
-          "evidence": "美国与沙特阿拉伯的核协议草案"
-        },
-        {
-          "topic_id": "policy-governance",
-          "name": "政策治理",
-          "evidence": "未切实落实核不扩散制度"
+          "topic_id": "nuclear-nonproliferation",
+          "name": "核不扩散",
+          "relation": "primary",
+          "path": [
+            "治理与法治",
+            "核不扩散"
+          ],
+          "evidence": "美沙核协议草案浮出水面 搞“双标”遭质疑"
         }
       ],
       "events": [
@@ -1023,14 +993,14 @@
       "locations": [],
       "topics": [
         {
-          "topic_id": "policy-governance",
-          "name": "政策治理",
-          "evidence": "内阁支持率从6月的51%跌至41%"
-        },
-        {
-          "topic_id": "economy-data",
-          "name": "经济数据",
-          "evidence": "不支持率则升至44%"
+          "topic_id": "japan-cabinet-public-opinion",
+          "name": "日本内阁民意",
+          "relation": "primary",
+          "path": [
+            "治理与法治",
+            "日本内阁民意"
+          ],
+          "evidence": "高市内阁不支持率超过支持率"
         }
       ],
       "events": [
@@ -1064,14 +1034,14 @@
       "locations": [],
       "topics": [
         {
-          "topic_id": "economy-data",
-          "name": "经济数据",
-          "evidence": "发行面额10卢比和20卢比的塑料钞票"
-        },
-        {
-          "topic_id": "policy-governance",
-          "name": "政策治理",
-          "evidence": "评估用其替代纸币的可行性"
+          "topic_id": "polymer-banknote-issuance",
+          "name": "塑料钞票发行",
+          "relation": "primary",
+          "path": [
+            "经济与市场",
+            "塑料钞票发行"
+          ],
+          "evidence": "印度计划试点发行小面额塑料钞票"
         }
       ],
       "events": [
@@ -1097,19 +1067,14 @@
       "locations": [],
       "topics": [
         {
-          "topic_id": "economy-data",
-          "name": "经济数据",
-          "evidence": "全球粮价较2022年高点明显回落"
-        },
-        {
-          "topic_id": "ecology",
-          "name": "生态环境",
-          "evidence": "新一轮厄尔尼诺现象导致极端天气频发"
-        },
-        {
-          "topic_id": "external-relations",
-          "name": "对外交流",
-          "evidence": "部分国家收紧农产品出口"
+          "topic_id": "global-food-security",
+          "name": "全球粮食安全",
+          "relation": "primary",
+          "path": [
+            "农业与乡村",
+            "全球粮食安全"
+          ],
+          "evidence": "全球粮食安全面临三大“灰犀牛”"
         }
       ],
       "events": [],
@@ -1138,14 +1103,14 @@
       "locations": [],
       "topics": [
         {
-          "topic_id": "ecology",
-          "name": "生态环境",
-          "evidence": "过火面积超过290万公顷"
-        },
-        {
-          "topic_id": "economy-data",
-          "name": "经济数据",
-          "evidence": "在燃野火数量达到959起"
+          "topic_id": "canada-wildfires",
+          "name": "加拿大森林火灾",
+          "relation": "primary",
+          "path": [
+            "应急与安全",
+            "加拿大森林火灾"
+          ],
+          "evidence": "加拿大多地野火持续蔓延"
         }
       ],
       "events": [

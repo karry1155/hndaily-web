@@ -1,8 +1,8 @@
 {
-  "schema_version": 8,
+  "schema_version": 9,
   "item_id": "hndaily-20260720-58465-19717513",
   "published_date": "2026-07-20",
-  "collected_date": "2026-07-20",
+  "collected_date": "2026-07-21",
   "page_number": "002",
   "page_name": "本省新闻",
   "page_sequence": 5,
@@ -49,7 +49,27 @@
       "evidence": "先后前往海口、琼海、三亚等地"
     }
   ],
-  "topics": [
+  "topic_profile": {
+    "primary": {
+      "name": "两岸媒体合作",
+      "evidence": "“既看见同源温情，也看见无限机遇”"
+    },
+    "secondary": []
+  },
+  "resolved_topics": [
+    {
+      "topic_id": "cross-strait-media-cooperation",
+      "name": "两岸媒体合作",
+      "relation": "primary",
+      "path": [
+        "自贸港与开放",
+        "两岸媒体合作"
+      ],
+      "evidence": "“既看见同源温情，也看见无限机遇”"
+    }
+  ],
+  "content_form": "news",
+  "legacy_topics": [
     {
       "topic_id": "external-relations",
       "name": "对外交流",

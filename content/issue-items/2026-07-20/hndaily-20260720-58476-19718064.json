@@ -1,8 +1,8 @@
 {
-  "schema_version": 8,
+  "schema_version": 9,
   "item_id": "hndaily-20260720-58476-19718064",
   "published_date": "2026-07-20",
-  "collected_date": "2026-07-20",
+  "collected_date": "2026-07-21",
   "page_number": "013",
   "page_name": "档案",
   "page_sequence": 1,
@@ -49,7 +49,27 @@
       "evidence": "琼海县委领导曾特地登门拜访他"
     }
   ],
-  "topics": [
+  "topic_profile": {
+    "primary": {
+      "name": "周士第生平",
+      "evidence": "从农家子弟到开国上将"
+    },
+    "secondary": []
+  },
+  "resolved_topics": [
+    {
+      "topic_id": "zhou-shidi-biography",
+      "name": "周士第生平",
+      "relation": "primary",
+      "path": [
+        "文化与历史",
+        "周士第生平"
+      ],
+      "evidence": "从农家子弟到开国上将"
+    }
+  ],
+  "content_form": "profile",
+  "legacy_topics": [
     {
       "topic_id": "culture-tourism-sports",
       "name": "文旅体育",

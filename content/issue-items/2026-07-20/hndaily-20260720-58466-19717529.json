@@ -1,8 +1,8 @@
 {
-  "schema_version": 8,
+  "schema_version": 9,
   "item_id": "hndaily-20260720-58466-19717529",
   "published_date": "2026-07-20",
-  "collected_date": "2026-07-20",
+  "collected_date": "2026-07-21",
   "page_number": "003",
   "page_name": "民生新闻",
   "page_sequence": 7,
@@ -28,7 +28,27 @@
       "evidence": "海口白沙门一期污水处理厂"
     }
   ],
-  "topics": [
+  "topic_profile": {
+    "primary": {
+      "name": "城市污水处理",
+      "evidence": "新增日污水处理能力8万立方米"
+    },
+    "secondary": []
+  },
+  "resolved_topics": [
+    {
+      "topic_id": "urban-wastewater-treatment",
+      "name": "城市污水处理",
+      "relation": "primary",
+      "path": [
+        "交通与城市",
+        "城市污水处理"
+      ],
+      "evidence": "新增日污水处理能力8万立方米"
+    }
+  ],
+  "content_form": "news",
+  "legacy_topics": [
     {
       "topic_id": "urban-rural",
       "name": "城乡建设",

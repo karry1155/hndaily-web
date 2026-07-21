@@ -1,8 +1,8 @@
 {
-  "schema_version": 8,
+  "schema_version": 9,
   "item_id": "hndaily-20260719-58465-19716170",
   "published_date": "2026-07-19",
-  "collected_date": "2026-07-20",
+  "collected_date": "2026-07-21",
   "page_number": "002",
   "page_name": "本省新闻",
   "page_sequence": 8,
@@ -77,7 +77,27 @@
       "evidence": "陵水黎族自治县民族团结广场"
     }
   ],
-  "topics": [
+  "topic_profile": {
+    "primary": {
+      "name": "基层科普",
+      "evidence": "2026年海南省万名大学生\n基层科普行活动在陵水启动"
+    },
+    "secondary": []
+  },
+  "resolved_topics": [
+    {
+      "topic_id": "grassroots-science-outreach",
+      "name": "基层科普",
+      "relation": "primary",
+      "path": [
+        "教育与青年",
+        "基层科普"
+      ],
+      "evidence": "2026年海南省万名大学生\n基层科普行活动在陵水启动"
+    }
+  ],
+  "content_form": "news",
+  "legacy_topics": [
     {
       "topic_id": "education-talent",
       "name": "教育人才",

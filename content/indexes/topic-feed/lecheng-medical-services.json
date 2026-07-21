@@ -1,0 +1,74 @@
+{
+  "topic_id": "lecheng-medical-services",
+  "name": "乐城就医服务",
+  "parent_id": "health-medicine",
+  "article_count": 1,
+  "primary_count": 1,
+  "detail_path": "/topics/lecheng-medical-services/",
+  "definition": "聚合以“乐城就医服务”为主要议题的报道、进展与解释。",
+  "primary_items": [
+    {
+      "item_id": "hndaily-20260720-58465-19717507",
+      "published_date": "2026-07-20",
+      "page_number": "002",
+      "page_name": "本省新闻",
+      "page_sequence": 1,
+      "title": "以“微实事”托起群众“大健康”",
+      "ai_summary": "博鳌乐城更新导视、便民设备和就医服务，解决患者找路、出行和就医过程中的具体不便。",
+      "scope": "mixed",
+      "enrichment_status": "complete",
+      "subjects": [
+        {
+          "subject_id": "subject-9bbeae7686e714",
+          "name": "博鳌乐城国际医疗旅游先行区",
+          "type": "project",
+          "role": "医疗服务改善实施区域",
+          "evidence": "博鳌乐城国际医疗旅游先行区",
+          "aliases": [
+            {
+              "name": "乐城",
+              "evidence": "博鳌乐城国际医疗旅游先行区（以下简称乐城）"
+            }
+          ]
+        },
+        {
+          "subject_id": "subject-669d102b807294",
+          "name": "乐城先行区管理局党委",
+          "type": "government",
+          "role": "便民服务推动方",
+          "evidence": "乐城先行区管理局党委"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "博鳌乐城国际医疗旅游先行区"
+        }
+      ],
+      "topics": [
+        {
+          "topic_id": "lecheng-medical-services",
+          "name": "乐城就医服务",
+          "relation": "primary",
+          "path": [
+            "医疗与健康",
+            "乐城就医服务"
+          ],
+          "evidence": "以“微实事”托起群众“大健康”"
+        }
+      ],
+      "events": [
+        {
+          "name": "博鳌乐城推进就医便民服务改造",
+          "evidence": "园区不仅全域导视标识完成更新，轮椅、自助便民设备也全面投用"
+        }
+      ],
+      "plans": [],
+      "detail_path": "/items/2026-07-20/hndaily-20260720-58465-19717507/"
+    }
+  ],
+  "secondary_items": []
+}

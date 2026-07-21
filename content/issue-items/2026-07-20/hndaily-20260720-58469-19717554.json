@@ -1,8 +1,8 @@
 {
-  "schema_version": 8,
+  "schema_version": 9,
   "item_id": "hndaily-20260720-58469-19717554",
   "published_date": "2026-07-20",
-  "collected_date": "2026-07-20",
+  "collected_date": "2026-07-21",
   "page_number": "006",
   "page_name": "世界新闻",
   "page_sequence": 1,
@@ -27,7 +27,27 @@
     }
   ],
   "locations": [],
-  "topics": [
+  "topic_profile": {
+    "primary": {
+      "name": "核不扩散",
+      "evidence": "美沙核协议草案浮出水面 搞“双标”遭质疑"
+    },
+    "secondary": []
+  },
+  "resolved_topics": [
+    {
+      "topic_id": "nuclear-nonproliferation",
+      "name": "核不扩散",
+      "relation": "primary",
+      "path": [
+        "治理与法治",
+        "核不扩散"
+      ],
+      "evidence": "美沙核协议草案浮出水面 搞“双标”遭质疑"
+    }
+  ],
+  "content_form": "analysis",
+  "legacy_topics": [
     {
       "topic_id": "external-relations",
       "name": "对外交流",

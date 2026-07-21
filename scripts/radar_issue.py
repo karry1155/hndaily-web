@@ -17,6 +17,7 @@ from scripts.radar_contract import (
     validate_item_id,
     validate_iso_date,
 )
+from scripts.radar_model import CONTENT_FORMS
 from scripts.radar_locations import (
     find_location_candidates,
     infer_exact_location_mentions,
@@ -44,16 +45,26 @@ LEGACY_ISSUE_ITEM_FIELDS = {
     "enrichment_status", "scope", "scope_evidence", "subjects", "locations",
     "topics", "event_relation", "block",
 }
-ISSUE_ITEM_FIELDS = {
+V8_ISSUE_ITEM_FIELDS = {
     "schema_version", "item_id", "published_date", "collected_date",
     "page_number", "page_name", "page_sequence", "author",
     "enrichment_status", "scope", "scope_evidence", "subjects", "locations",
     "topics", "events", "plans", "block",
 }
+ISSUE_ITEM_FIELDS = {
+    "schema_version", "item_id", "published_date", "collected_date",
+    "page_number", "page_name", "page_sequence", "author",
+    "enrichment_status", "scope", "scope_evidence", "subjects", "locations",
+    "topic_profile", "resolved_topics", "content_form", "legacy_topics",
+    "events", "plans", "block",
+}
 SUBJECT_BASE_FIELDS = {"subject_id", "name", "type", "role", "evidence"}
 SUBJECT_ALIAS_FIELDS = {"name", "evidence"}
 LOCATION_FIELDS = {"location_id", "name", "code", "level", "evidence"}
 TOPIC_FIELDS = {"topic_id", "name", "evidence"}
+OPEN_TOPIC_FIELDS = {"name", "evidence"}
+TOPIC_PROFILE_FIELDS = {"primary", "secondary"}
+RESOLVED_TOPIC_FIELDS = {"topic_id", "name", "relation", "path", "evidence"}
 EVENT_FIELDS = {"relation", "event_id", "event_name", "evidence", "update_summary"}
 EVENT_MENTION_FIELDS = {"name", "evidence"}
 PLAN_FIELDS = {"name", "evidence"}
@@ -117,7 +128,13 @@ def validate_public_issue_item(item: dict[str, Any]) -> None:
         raise ContractError("public issue item schema_version is invalid")
     require_exact_fields(
         item,
-        LEGACY_ISSUE_ITEM_FIELDS if schema_version == 7 else ISSUE_ITEM_FIELDS,
+        (
+            LEGACY_ISSUE_ITEM_FIELDS
+            if schema_version == 7
+            else V8_ISSUE_ITEM_FIELDS
+            if schema_version == 8
+            else ISSUE_ITEM_FIELDS
+        ),
         "public issue item",
     )
     for field in ("item_id", "page_number", "page_name"):
@@ -150,10 +167,13 @@ def validate_public_issue_item(item: dict[str, Any]) -> None:
                     raise ContractError("public issue item subject alias is invalid")
     for location in item.get("locations", []):
         require_exact_fields(location, LOCATION_FIELDS, "public issue item location")
-    for topic in item.get("topics", []):
-        require_exact_fields(topic, TOPIC_FIELDS, "public issue item topic")
-    list_fields = ["subjects", "locations", "topics"]
-    if schema_version == SCHEMA_VERSION:
+    if schema_version in {7, 8}:
+        for topic in item.get("topics", []):
+            require_exact_fields(topic, TOPIC_FIELDS, "public issue item topic")
+    list_fields = ["subjects", "locations"]
+    if schema_version in {7, 8}:
+        list_fields.append("topics")
+    if schema_version in {8, SCHEMA_VERSION}:
         list_fields.extend(["events", "plans"])
         for event in item.get("events", []):
             require_exact_fields(event, EVENT_MENTION_FIELDS, "public issue item event")
@@ -168,6 +188,59 @@ def validate_public_issue_item(item: dict[str, Any]) -> None:
                 or not plan["name"].endswith("》")
             ):
                 raise ContractError("public issue item plan.name is invalid")
+    if schema_version == SCHEMA_VERSION:
+        profile = item.get("topic_profile")
+        if not isinstance(profile, dict):
+            raise ContractError("public issue item.topic_profile is invalid")
+        require_exact_fields(profile, TOPIC_PROFILE_FIELDS, "public issue item topic_profile")
+        primary = profile.get("primary")
+        if not isinstance(primary, dict):
+            raise ContractError("public issue item topic primary is invalid")
+        require_exact_fields(primary, OPEN_TOPIC_FIELDS, "public issue item topic primary")
+        if not non_empty(primary.get("name")) or not non_empty(primary.get("evidence")):
+            raise ContractError("public issue item topic primary is invalid")
+        secondary = profile.get("secondary")
+        if not isinstance(secondary, list) or len(secondary) > 3:
+            raise ContractError("public issue item topic secondary is invalid")
+        for topic in secondary:
+            require_exact_fields(topic, OPEN_TOPIC_FIELDS, "public issue item topic secondary")
+            if not non_empty(topic.get("name")) or not non_empty(topic.get("evidence")):
+                raise ContractError("public issue item topic secondary is invalid")
+        resolved_topics = item.get("resolved_topics")
+        if (
+            not isinstance(resolved_topics, list)
+            or len(resolved_topics) != 1 + len(secondary)
+        ):
+            raise ContractError("public issue item.resolved_topics is invalid")
+        primary_count = 0
+        source_topics = [primary, *secondary]
+        for index, topic in enumerate(resolved_topics):
+            require_exact_fields(topic, RESOLVED_TOPIC_FIELDS, "public issue item resolved topic")
+            expected_relation = "primary" if index == 0 else "secondary"
+            if topic.get("relation") != expected_relation:
+                raise ContractError("public issue item resolved topic relation is invalid")
+            primary_count += topic.get("relation") == "primary"
+            if (
+                not non_empty(topic.get("topic_id"))
+                or not non_empty(topic.get("name"))
+                or not non_empty(topic.get("evidence"))
+                or not isinstance(topic.get("path"), list)
+                or not topic["path"]
+                or not all(non_empty(value) for value in topic["path"])
+                or topic["path"][-1] != topic["name"]
+                or topic["evidence"] != source_topics[index]["evidence"]
+            ):
+                raise ContractError("public issue item resolved topic is invalid")
+        if primary_count != 1:
+            raise ContractError("public issue item must have one primary resolved topic")
+        if item.get("content_form") not in CONTENT_FORMS:
+            raise ContractError("public issue item.content_form is invalid")
+        legacy_topics = item.get("legacy_topics")
+        if not isinstance(legacy_topics, list):
+            raise ContractError("public issue item.legacy_topics is invalid")
+        for topic in legacy_topics:
+            require_exact_fields(topic, TOPIC_FIELDS, "public issue item legacy topic")
+        list_fields.extend(["resolved_topics", "legacy_topics"])
     if not all(isinstance(item.get(field), list) for field in list_fields):
         raise ContractError("public issue item semantic lists are invalid")
     if schema_version == 7:
@@ -234,7 +307,14 @@ def validate_public_issue(issue: dict[str, Any]) -> None:
         raise ContractError("public issue.sections is invalid")
 
 
-def build_public_issue(raw, candidates, semantic_items, _legacy_scored=None):
+def build_public_issue(
+    raw,
+    candidates,
+    semantic_items,
+    topic_resolution_items,
+    topic_catalog,
+    _legacy_scored=None,
+):
     if len(candidates) != len(semantic_items):
         raise ContractError("public issue candidate alignment mismatch")
     pages = {
@@ -245,7 +325,7 @@ def build_public_issue(raw, candidates, semantic_items, _legacy_scored=None):
         for page in raw["pages"]
     }
     locations = load_location_catalog()
-    topic_catalog = {row["topic_id"]: row for row in _catalog("config/topics.json")["topics"]}
+    from scripts.radar_topics import resolve_topic_profile
     issue_items = []
     for candidate, semantic in zip(candidates, semantic_items):
         detail_path = f'/items/{candidate["published_date"]}/{candidate["item_id"]}/'
@@ -276,14 +356,21 @@ def build_public_issue(raw, candidates, semantic_items, _legacy_scored=None):
                 {"subject_id": _subject_id(row), **row} for row in semantic["subjects"]
             ],
             "locations": resolve_location_mentions(location_mentions, location_candidates, locations),
-            "topics": [
-                {
-                    "topic_id": row["topic_id"],
-                    "name": topic_catalog[row["topic_id"]]["name"],
-                    "evidence": row["evidence"].strip(),
-                }
-                for row in semantic["topic_mentions"]
-            ],
+            "topic_profile": {
+                "primary": {
+                    "name": semantic["topic_profile"]["primary"]["name"].strip(),
+                    "evidence": semantic["topic_profile"]["primary"]["evidence"].strip(),
+                },
+                "secondary": [
+                    {"name": row["name"].strip(), "evidence": row["evidence"].strip()}
+                    for row in semantic["topic_profile"]["secondary"]
+                ],
+            },
+            "resolved_topics": resolve_topic_profile(
+                semantic["topic_profile"], topic_resolution_items, topic_catalog
+            ),
+            "content_form": semantic["content_form"],
+            "legacy_topics": [],
             "events": [
                 {"name": row["name"].strip(), "evidence": row["evidence"].strip()}
                 for row in semantic["events"]

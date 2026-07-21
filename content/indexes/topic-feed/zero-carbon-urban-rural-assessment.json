@@ -1,0 +1,93 @@
+{
+  "topic_id": "zero-carbon-urban-rural-assessment",
+  "name": "城乡建设零碳评价",
+  "parent_id": "ecology-climate",
+  "article_count": 1,
+  "primary_count": 1,
+  "detail_path": "/topics/zero-carbon-urban-rural-assessment/",
+  "definition": "聚合以“城乡建设零碳评价”为主要议题的报道、进展与解释。",
+  "primary_items": [
+    {
+      "item_id": "hndaily-20260719-58465-19716167",
+      "published_date": "2026-07-19",
+      "page_number": "002",
+      "page_name": "本省新闻",
+      "page_sequence": 5,
+      "title": "《博鳌评价：城乡建设零碳评价指南（试行）》发布",
+      "ai_summary": "海南发布城乡建设零碳评价指南，为建筑、社区和园区设置低碳、近零碳和零碳三级评价路径。",
+      "scope": "hainan",
+      "enrichment_status": "complete",
+      "subjects": [
+        {
+          "subject_id": "subject-27476f2af5360f",
+          "name": "海南省住房和城乡建设厅",
+          "type": "government",
+          "role": "发布会指导单位",
+          "evidence": "由海南省住房和城乡建设厅指导"
+        },
+        {
+          "subject_id": "subject-778644d84ed915",
+          "name": "海南省绿色低碳发展研究院",
+          "type": "organization",
+          "role": "发布会主办方",
+          "evidence": "海南省绿色低碳发展研究院（以下简称绿研院）主办",
+          "aliases": [
+            {
+              "name": "绿研院",
+              "evidence": "海南省绿色低碳发展研究院（以下简称绿研院）"
+            }
+          ]
+        },
+        {
+          "subject_id": "subject-dbc79461ce2977",
+          "name": "博鳌零碳示范区",
+          "type": "project",
+          "role": "零碳评价指南实践基础",
+          "evidence": "标志着博鳌零碳示范区实践成果转化落地"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "推动海南城乡建设绿色低碳转型"
+        },
+        {
+          "location_id": "hainan-haikou",
+          "name": "海口市",
+          "code": "460100",
+          "level": "prefecture",
+          "evidence": "在海口举行"
+        }
+      ],
+      "topics": [
+        {
+          "topic_id": "zero-carbon-urban-rural-assessment",
+          "name": "城乡建设零碳评价",
+          "relation": "primary",
+          "path": [
+            "生态与气候",
+            "城乡建设零碳评价"
+          ],
+          "evidence": "《博鳌评价：城乡建设零碳评价指南（试行）》发布"
+        }
+      ],
+      "events": [
+        {
+          "name": "《博鳌评价：城乡建设零碳评价指南（试行）》发布会暨博鳌零碳评价推介会",
+          "evidence": "《博鳌评价：城乡建设零碳评价指南（试行）》（以下简称《博鳌零碳评价指南》）发布会暨博鳌零碳评价推介会在海口举行"
+        }
+      ],
+      "plans": [
+        {
+          "name": "《博鳌评价：城乡建设零碳评价指南（试行）》",
+          "evidence": "《博鳌评价：城乡建设零碳评价指南（试行）》（以下简称《博鳌零碳评价指南》）发布会"
+        }
+      ],
+      "detail_path": "/items/2026-07-19/hndaily-20260719-58465-19716167/"
+    }
+  ],
+  "secondary_items": []
+}

@@ -1,0 +1,138 @@
+{
+  "topic_id": "high-school-admissions",
+  "name": "普通高中招生",
+  "parent_id": "education-youth",
+  "article_count": 1,
+  "primary_count": 1,
+  "detail_path": "/topics/high-school-admissions/",
+  "definition": "聚合以“普通高中招生”为主要议题的报道、进展与解释。",
+  "primary_items": [
+    {
+      "item_id": "hndaily-20260720-58466-19717523",
+      "published_date": "2026-07-20",
+      "page_number": "003",
+      "page_name": "民生新闻",
+      "page_sequence": 2,
+      "title": "海南划定普通高中学校录取最低控制分数线",
+      "ai_summary": "海南公布2026年普通高中录取最低控制分数线，不同市县考生的最低线分别为350分、380分和430分。",
+      "scope": "hainan",
+      "enrichment_status": "complete",
+      "subjects": [
+        {
+          "subject_id": "subject-2d9e4efeb3ad46",
+          "name": "省考试局",
+          "type": "government",
+          "role": "分数线划定和发布部门",
+          "evidence": "海南日报全媒体记者从省考试局获悉"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan-danzhou",
+          "name": "儋州市",
+          "code": "460400",
+          "level": "prefecture",
+          "evidence": "在儋州、五指山、昌江、陵水、白沙、保亭、琼中等市县"
+        },
+        {
+          "location_id": "hainan-wuzhishan",
+          "name": "五指山市",
+          "code": "469001",
+          "level": "county",
+          "evidence": "在儋州、五指山、昌江、陵水、白沙、保亭、琼中等市县"
+        },
+        {
+          "location_id": "hainan-dongfang",
+          "name": "东方市",
+          "code": "469007",
+          "level": "county",
+          "evidence": "在东方、定安、屯昌、临高、乐东等市县"
+        },
+        {
+          "location_id": "hainan-dingan",
+          "name": "定安县",
+          "code": "469021",
+          "level": "county",
+          "evidence": "在东方、定安、屯昌、临高、乐东等市县"
+        },
+        {
+          "location_id": "hainan-tunchang",
+          "name": "屯昌县",
+          "code": "469022",
+          "level": "county",
+          "evidence": "在东方、定安、屯昌、临高、乐东等市县"
+        },
+        {
+          "location_id": "hainan-lingao",
+          "name": "临高县",
+          "code": "469024",
+          "level": "county",
+          "evidence": "在东方、定安、屯昌、临高、乐东等市县"
+        },
+        {
+          "location_id": "hainan-baisha",
+          "name": "白沙黎族自治县",
+          "code": "469025",
+          "level": "county",
+          "evidence": "在儋州、五指山、昌江、陵水、白沙、保亭、琼中等市县"
+        },
+        {
+          "location_id": "hainan-changjiang",
+          "name": "昌江黎族自治县",
+          "code": "469026",
+          "level": "county",
+          "evidence": "在儋州、五指山、昌江、陵水、白沙、保亭、琼中等市县"
+        },
+        {
+          "location_id": "hainan-ledong",
+          "name": "乐东黎族自治县",
+          "code": "469027",
+          "level": "county",
+          "evidence": "在东方、定安、屯昌、临高、乐东等市县"
+        },
+        {
+          "location_id": "hainan-lingshui",
+          "name": "陵水黎族自治县",
+          "code": "469028",
+          "level": "county",
+          "evidence": "在儋州、五指山、昌江、陵水、白沙、保亭、琼中等市县"
+        },
+        {
+          "location_id": "hainan-baoting",
+          "name": "保亭黎族苗族自治县",
+          "code": "469029",
+          "level": "county",
+          "evidence": "在儋州、五指山、昌江、陵水、白沙、保亭、琼中等市县"
+        },
+        {
+          "location_id": "hainan-qiongzhong",
+          "name": "琼中黎族苗族自治县",
+          "code": "469030",
+          "level": "county",
+          "evidence": "在儋州、五指山、昌江、陵水、白沙、保亭、琼中等市县"
+        }
+      ],
+      "topics": [
+        {
+          "topic_id": "high-school-admissions",
+          "name": "普通高中招生",
+          "relation": "primary",
+          "path": [
+            "教育与青年",
+            "普通高中招生"
+          ],
+          "evidence": "海南划定普通高中学校录取最低控制分数线"
+        }
+      ],
+      "events": [
+        {
+          "name": "海南划定2026年普通高中录取最低控制分数线",
+          "evidence": "划定2026年海南省普通高中学校录取最低控制分数线"
+        }
+      ],
+      "plans": [],
+      "detail_path": "/items/2026-07-20/hndaily-20260720-58466-19717523/"
+    }
+  ],
+  "secondary_items": []
+}

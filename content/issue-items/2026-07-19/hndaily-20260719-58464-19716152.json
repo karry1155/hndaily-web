@@ -1,8 +1,8 @@
 {
-  "schema_version": 8,
+  "schema_version": 9,
   "item_id": "hndaily-20260719-58464-19716152",
   "published_date": "2026-07-19",
-  "collected_date": "2026-07-20",
+  "collected_date": "2026-07-21",
   "page_number": "001",
   "page_name": "头版",
   "page_sequence": 4,
@@ -56,7 +56,27 @@
       "evidence": "万宁王府井国际免税港"
     }
   ],
-  "topics": [
+  "topic_profile": {
+    "primary": {
+      "name": "文旅消费优惠",
+      "evidence": "省钱省心！欢乐节派送惠民礼包"
+    },
+    "secondary": []
+  },
+  "resolved_topics": [
+    {
+      "topic_id": "tourism-consumption-incentives",
+      "name": "文旅消费优惠",
+      "relation": "primary",
+      "path": [
+        "旅游与消费",
+        "文旅消费优惠"
+      ],
+      "evidence": "省钱省心！欢乐节派送惠民礼包"
+    }
+  ],
+  "content_form": "news",
+  "legacy_topics": [
     {
       "topic_id": "culture-tourism-sports",
       "name": "文旅体育",

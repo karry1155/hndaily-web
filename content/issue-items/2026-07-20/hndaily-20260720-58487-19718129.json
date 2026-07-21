@@ -1,8 +1,8 @@
 {
-  "schema_version": 8,
+  "schema_version": 9,
   "item_id": "hndaily-20260720-58487-19718129",
   "published_date": "2026-07-20",
-  "collected_date": "2026-07-20",
+  "collected_date": "2026-07-21",
   "page_number": "024",
   "page_name": "影视",
   "page_sequence": 1,
@@ -20,7 +20,27 @@
     }
   ],
   "locations": [],
-  "topics": [
+  "topic_profile": {
+    "primary": {
+      "name": "动画电影评论",
+      "evidence": "走进“三国”更深处"
+    },
+    "secondary": []
+  },
+  "resolved_topics": [
+    {
+      "topic_id": "animated-film-criticism",
+      "name": "动画电影评论",
+      "relation": "primary",
+      "path": [
+        "文化与历史",
+        "动画电影评论"
+      ],
+      "evidence": "走进“三国”更深处"
+    }
+  ],
+  "content_form": "film-review",
+  "legacy_topics": [
     {
       "topic_id": "culture-tourism-sports",
       "name": "文旅体育",

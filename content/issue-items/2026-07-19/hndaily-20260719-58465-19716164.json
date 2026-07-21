@@ -1,8 +1,8 @@
 {
-  "schema_version": 8,
+  "schema_version": 9,
   "item_id": "hndaily-20260719-58465-19716164",
   "published_date": "2026-07-19",
-  "collected_date": "2026-07-20",
+  "collected_date": "2026-07-21",
   "page_number": "002",
   "page_name": "本省新闻",
   "page_sequence": 2,
@@ -70,7 +70,27 @@
       "evidence": "深入琼海、万宁等重点市县实地调研"
     }
   ],
-  "topics": [
+  "topic_profile": {
+    "primary": {
+      "name": "琼台青年创业合作",
+      "evidence": "琼台青年企业家椰城共探优质合作新赛道"
+    },
+    "secondary": []
+  },
+  "resolved_topics": [
+    {
+      "topic_id": "hainan-taiwan-youth-entrepreneurship",
+      "name": "琼台青年创业合作",
+      "relation": "primary",
+      "path": [
+        "自贸港与开放",
+        "琼台青年创业合作"
+      ],
+      "evidence": "琼台青年企业家椰城共探优质合作新赛道"
+    }
+  ],
+  "content_form": "news",
+  "legacy_topics": [
     {
       "topic_id": "external-relations",
       "name": "对外交流",

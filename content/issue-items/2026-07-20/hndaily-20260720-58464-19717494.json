@@ -1,8 +1,8 @@
 {
-  "schema_version": 8,
+  "schema_version": 9,
   "item_id": "hndaily-20260720-58464-19717494",
   "published_date": "2026-07-20",
-  "collected_date": "2026-07-20",
+  "collected_date": "2026-07-21",
   "page_number": "001",
   "page_name": "头版",
   "page_sequence": 4,
@@ -147,7 +147,27 @@
       "evidence": "琼海，万泉河畔"
     }
   ],
-  "topics": [
+  "topic_profile": {
+    "primary": {
+      "name": "海南竞技体育",
+      "evidence": "海南竞技体育再“加速”"
+    },
+    "secondary": []
+  },
+  "resolved_topics": [
+    {
+      "topic_id": "hainan-competitive-sports",
+      "name": "海南竞技体育",
+      "relation": "primary",
+      "path": [
+        "体育与赛事",
+        "海南竞技体育"
+      ],
+      "evidence": "海南竞技体育再“加速”"
+    }
+  ],
+  "content_form": "analysis",
+  "legacy_topics": [
     {
       "topic_id": "culture-tourism-sports",
       "name": "文旅体育",

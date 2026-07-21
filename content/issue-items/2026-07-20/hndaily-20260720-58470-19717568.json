@@ -1,8 +1,8 @@
 {
-  "schema_version": 8,
+  "schema_version": 9,
   "item_id": "hndaily-20260720-58470-19717568",
   "published_date": "2026-07-20",
-  "collected_date": "2026-07-20",
+  "collected_date": "2026-07-21",
   "page_number": "007",
   "page_name": "文化周刊",
   "page_sequence": 2,
@@ -12,7 +12,27 @@
   "scope_evidence": "三伏天，是我国古代对一年中最炎热时期的称呼",
   "subjects": [],
   "locations": [],
-  "topics": [
+  "topic_profile": {
+    "primary": {
+      "name": "三伏民间谚语",
+      "evidence": "谚语之中迎三伏"
+    },
+    "secondary": []
+  },
+  "resolved_topics": [
+    {
+      "topic_id": "sanfu-folk-proverbs",
+      "name": "三伏民间谚语",
+      "relation": "primary",
+      "path": [
+        "文化与历史",
+        "三伏民间谚语"
+      ],
+      "evidence": "谚语之中迎三伏"
+    }
+  ],
+  "content_form": "essay",
+  "legacy_topics": [
     {
       "topic_id": "culture-tourism-sports",
       "name": "文旅体育",
