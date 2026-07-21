@@ -394,8 +394,8 @@ class HnhotPublicationTests(unittest.TestCase):
             ".radar-shell:not(.item-shell) { padding-bottom: calc(68px + env(safe-area-inset-bottom)); }",
             mobile,
         )
-        self.assertIn("styles.css?v=20260720-subject-focus-1", base)
-        self.assertIn("app.js?v=20260720-subject-focus-1", base)
+        self.assertIn("styles.css?v=20260721-responsive-context-1", base)
+        self.assertIn("app.js?v=20260721-responsive-context-1", base)
 
     def test_item_page_groups_structured_extraction_instead_of_flat_tags(self):
         project = Path(__file__).resolve().parents[1]
@@ -407,9 +407,11 @@ class HnhotPublicationTests(unittest.TestCase):
 
         self.assertIn("报道标记", rendered)
         self.assertIn("原文结构化提取", rendered)
-        self.assertIn('<details class="article-context">', rendered)
+        self.assertIn('<details class="article-context" open>', rendered)
         self.assertIn('<summary class="article-context-summary">', rendered)
-        self.assertNotIn('<details class="article-context" open>', rendered)
+        app = (project / "src/static/app.js").read_text(encoding="utf-8")
+        self.assertIn('matchMedia("(max-width: 760px)")', app)
+        self.assertIn('toggleAttribute("open", !narrowViewport.matches)', app)
         for label in ("主体", "事件", "规划文件", "地点", "主题"):
             self.assertIn(f">{label} <span>", rendered)
         self.assertIn("政府机构 · 沉香产业“两免两保”政策推出方", rendered)

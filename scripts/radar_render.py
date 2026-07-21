@@ -566,7 +566,7 @@ def render_item(item):
             f'</h3><ul class="{class_name}">{values}</ul></section>'
         )
     context_markup = (
-        '<details class="article-context">'
+        '<details class="article-context" open>'
         '<summary class="article-context-summary"><span>'
         '<span class="eyebrow">原文结构化提取</span>'
         '<span class="article-context-title">报道标记</span></span>'

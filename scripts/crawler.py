@@ -92,6 +92,13 @@ _PARA_SPLIT_RE = re.compile(r"<\s*[Pp]\b[^>]*>")
 _BR_RE = re.compile(r"<\s*br\s*/?\s*>", re.IGNORECASE)
 _WS_RE = re.compile(r"[ \t　]+")
 _PAPERINDEX_RE = re.compile(r'URL=(html/(\d{4})-(\d{2})/(\d{2})/node_1\.htm)', re.IGNORECASE)
+_BODY_BYLINE_RE = re.compile(r"^■\s*(.+)$")
+_BYLINE_CONTINUATION_RE = re.compile(
+    r"^(?:通讯员|特约记者|实习生|摄影|图[\\/]文|文[\\/]图)(?:\s|[：:])"
+)
+_DATELINE_BYLINE_RE = re.compile(
+    r"^(?:本报|新华社)[^（(\n]{0,40}?(?:讯|电)\s*[（(]\s*([^）)\n]+?)\s*[）)]"
+)
 
 
 def _clean_text(s: str) -> str:
@@ -99,6 +106,37 @@ def _clean_text(s: str) -> str:
     s = s.replace("\xa0", " ")
     s = _WS_RE.sub(" ", s)
     return s.strip()
+
+
+def _extract_fallback_author(paragraphs: list[str]) -> tuple[str, list[str]]:
+    """Extract bylines that the current epaper template embeds in article text.
+
+    Feature articles use a standalone leading ``■ ...`` paragraph. A following
+    short paragraph may continue the byline (most often with ``通讯员``). News
+    briefs instead put the byline in parentheses immediately after the dateline;
+    that text remains part of the first paragraph because removing it would also
+    rewrite the article's opening sentence.
+    """
+    if not paragraphs:
+        return "", paragraphs
+
+    body_match = _BODY_BYLINE_RE.fullmatch(paragraphs[0])
+    if body_match:
+        byline_parts = [_clean_text(body_match.group(1))]
+        body_start = 1
+        while body_start < len(paragraphs):
+            candidate = paragraphs[body_start]
+            if len(candidate) > 100 or not _BYLINE_CONTINUATION_RE.match(candidate):
+                break
+            byline_parts.append(candidate)
+            body_start += 1
+        return " ".join(byline_parts), paragraphs[body_start:]
+
+    dateline_match = _DATELINE_BYLINE_RE.match(paragraphs[0])
+    if dateline_match:
+        return _clean_text(dateline_match.group(1)), paragraphs
+
+    return "", paragraphs
 
 
 def parse_page_list(html_str: str) -> list[tuple[str, str, str]]:
@@ -150,19 +188,22 @@ def parse_article(html_str: str) -> dict:
         raw = _NPM_COMMENT_RE.sub("", m.group(1))
         author = _clean_text(_TAG_RE.sub("", raw))
 
-    content = ""
+    paragraphs: list[str] = []
     m = _CONTENT_RE.search(html_str)
     if m:
         raw = _NPM_COMMENT_RE.sub("", m.group(1))
         raw = _BR_RE.sub("\n", raw)
         parts = _PARA_SPLIT_RE.split(raw)
-        paragraphs: list[str] = []
         for p in parts:
             stripped = _TAG_RE.sub("", p)
             cleaned = _clean_text(stripped)
             if cleaned:
                 paragraphs.append(cleaned)
-        content = "\n\n".join(paragraphs)
+
+    if not author:
+        author, paragraphs = _extract_fallback_author(paragraphs)
+
+    content = "\n\n".join(paragraphs)
 
     return {"title": title, "author": author, "content": content}
 

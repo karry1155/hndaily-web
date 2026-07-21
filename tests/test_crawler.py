@@ -63,6 +63,63 @@ class CrawlerTests(unittest.TestCase):
         self.assertEqual(url, f"{crawler.BASE}/html/2026-07/18/node_1.htm")
         fetched.assert_called_once_with(f"{crawler.BASE}/paperindex.htm")
 
+    def test_extracts_standalone_body_byline_and_removes_it_from_content(self):
+        crawler = load_crawler()
+        article = """
+            <founder-title>生态修复，黑鳍鲨“如约而至”</founder-title>
+            <founder-author></founder-author>
+            <founder-content>
+                <P>　　■&nbsp;海南日报全媒体记者&nbsp;李艳玫</P>
+                <P>　　通讯员&nbsp;陈宏</P>
+                <P>　　“快看！那边有鲨鱼！”近日，游客循声望去。</P>
+            </founder-content>
+        """
+
+        self.assertEqual(
+            crawler.parse_article(article),
+            {
+                "title": "生态修复，黑鳍鲨“如约而至”",
+                "author": "海南日报全媒体记者 李艳玫 通讯员 陈宏",
+                "content": "“快看！那边有鲨鱼！”近日，游客循声望去。",
+            },
+        )
+
+    def test_extracts_parenthesized_byline_after_dateline_without_rewriting_content(self):
+        crawler = load_crawler()
+        article = """
+            <founder-title>测试消息稿</founder-title>
+            <founder-author><!--<npm:article-author>--><!--</npm:article-author>--></founder-author>
+            <founder-content>
+                <P>本报讯 （海南日报全媒体记者张琬茜 通讯员林妙莹）近日，双方签署合作协议。</P>
+                <P>第二段事实。</P>
+            </founder-content>
+        """
+
+        self.assertEqual(
+            crawler.parse_article(article),
+            {
+                "title": "测试消息稿",
+                "author": "海南日报全媒体记者张琬茜 通讯员林妙莹",
+                "content": (
+                    "本报讯 （海南日报全媒体记者张琬茜 通讯员林妙莹）"
+                    "近日，双方签署合作协议。\n\n第二段事实。"
+                ),
+            },
+        )
+
+    def test_keeps_explicit_author_in_preference_to_body_fallback(self):
+        crawler = load_crawler()
+        article = """
+            <founder-title>旧模板稿件</founder-title>
+            <founder-author>记者 测试</founder-author>
+            <founder-content><P>■ 正文中的方块行</P><P>事实。</P></founder-content>
+        """
+
+        parsed = crawler.parse_article(article)
+
+        self.assertEqual(parsed["author"], "记者 测试")
+        self.assertEqual(parsed["content"], "■ 正文中的方块行\n\n事实。")
+
     def test_main_reuses_fresh_cached_issue_without_fetching(self):
         crawler = load_crawler()
         with tempfile.TemporaryDirectory() as tmp:
