@@ -1,0 +1,79 @@
+{
+  "schema_version": 9,
+  "item_id": "hndaily-20260721-58467-19720962",
+  "published_date": "2026-07-21",
+  "collected_date": "2026-07-21",
+  "page_number": "004",
+  "page_name": "中国新闻",
+  "page_sequence": 1,
+  "author": "",
+  "enrichment_status": "complete",
+  "scope": "national",
+  "scope_evidence": "国家主席习近平任免驻外大使",
+  "subjects": [
+    {
+      "subject_id": "subject-e646b1e6febe4e",
+      "name": "习近平",
+      "type": "person",
+      "role": "中华人民共和国主席",
+      "evidence": "中华人民共和国主席习近平"
+    },
+    {
+      "subject_id": "subject-dad90985162566",
+      "name": "向波",
+      "type": "person",
+      "role": "中华人民共和国驻伊拉克共和国特命全权大使",
+      "evidence": "任命向波为中华人民共和国驻伊拉克共和国特命全权大使"
+    },
+    {
+      "subject_id": "subject-7874030b760ae2",
+      "name": "杨云东",
+      "type": "person",
+      "role": "中华人民共和国驻塞浦路斯共和国特命全权大使",
+      "evidence": "任命杨云东为中华人民共和国驻塞浦路斯共和国特命全权大使"
+    },
+    {
+      "subject_id": "subject-41bdbece7ea9f8",
+      "name": "张祥焱",
+      "type": "person",
+      "role": "中华人民共和国驻巴拿马共和国特命全权大使",
+      "evidence": "任命张祥焱为中华人民共和国驻巴拿马共和国特命全权大使"
+    }
+  ],
+  "locations": [],
+  "topic_profile": {
+    "primary": {
+      "name": "驻外大使任免",
+      "evidence": "任免驻外大使"
+    },
+    "secondary": []
+  },
+  "resolved_topics": [
+    {
+      "topic_id": "ambassador-appointments",
+      "name": "驻外大使任免",
+      "relation": "primary",
+      "path": [
+        "治理与法治",
+        "驻外大使任免"
+      ],
+      "evidence": "任免驻外大使"
+    }
+  ],
+  "content_form": "news",
+  "legacy_topics": [],
+  "events": [
+    {
+      "name": "习近平任免驻外大使",
+      "evidence": "国家主席习近平任免驻外大使"
+    }
+  ],
+  "plans": [],
+  "block": {
+    "source": "海南日报",
+    "title": "国家主席习近平任免驻外大使",
+    "content": "新华社北京7月20日电 中华人民共和国主席习近平根据全国人民代表大会常务委员会的决定任免下列驻外大使：\n\n一、免去崔巍的中华人民共和国驻伊拉克共和国特命全权大使职务；\n\n任命向波为中华人民共和国驻伊拉克共和国特命全权大使。\n\n二、免去刘彦涛的中华人民共和国驻塞浦路斯共和国特命全权大使职务；\n\n任命杨云东为中华人民共和国驻塞浦路斯共和国特命全权大使。\n\n三、免去徐学渊（女）的中华人民共和国驻巴拿马共和国特命全权大使职务；\n\n任命张祥焱为中华人民共和国驻巴拿马共和国特命全权大使。",
+    "ai_summary": "国家主席习近平任命向波、杨云东、张祥焱分别担任中国驻伊拉克、塞浦路斯和巴拿马大使。",
+    "original_url": "http://news.hndaily.cn/html/2026-07/21/content_58467_19720962.htm"
+  }
+}

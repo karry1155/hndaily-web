@@ -1,0 +1,77 @@
+{
+  "topic_id": "international-student-exchange",
+  "name": "国际学生交换",
+  "parent_id": "education-youth",
+  "article_count": 1,
+  "primary_count": 1,
+  "detail_path": "/topics/international-student-exchange/",
+  "definition": "不同国家高校之间持续开展的学生互派与联合培养。",
+  "primary_items": [
+    {
+      "item_id": "hndaily-20260721-58466-19720949",
+      "published_date": "2026-07-21",
+      "page_number": "003",
+      "page_name": "民生新闻",
+      "page_sequence": 2,
+      "title": "海南师范大学与加州大学伯克利分校建立常态化学生交换机制",
+      "ai_summary": "海南师范大学与加州大学伯克利分校建立年度学生交换机制，两校互认海外修读课程学分。",
+      "scope": "mixed",
+      "enrichment_status": "complete",
+      "subjects": [
+        {
+          "subject_id": "subject-e4bea390a345a3",
+          "name": "海南师范大学",
+          "type": "organization",
+          "role": "学生交换协议签约方",
+          "evidence": "海南师范大学与加州大学伯克利分校"
+        },
+        {
+          "subject_id": "subject-229dde9e1f3d1c",
+          "name": "加州大学伯克利分校",
+          "type": "organization",
+          "role": "学生交换协议签约方",
+          "evidence": "加州大学伯克利分校"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "海南师范大学"
+        }
+      ],
+      "topics": [
+        {
+          "topic_id": "international-student-exchange",
+          "name": "国际学生交换",
+          "relation": "primary",
+          "path": [
+            "教育与青年",
+            "国际学生交换"
+          ],
+          "evidence": "学生交换机制"
+        },
+        {
+          "topic_id": "education-youth",
+          "name": "教育与青年",
+          "relation": "secondary",
+          "path": [
+            "教育与青年"
+          ],
+          "evidence": "学分可由两校互认"
+        }
+      ],
+      "events": [
+        {
+          "name": "海南师范大学与加州大学伯克利分校签署合作协议",
+          "evidence": "海南师范大学与加州大学伯克利分校（University of California，Berkeley）签署合作协议"
+        }
+      ],
+      "plans": [],
+      "detail_path": "/items/2026-07-21/hndaily-20260721-58466-19720949/"
+    }
+  ],
+  "secondary_items": []
+}

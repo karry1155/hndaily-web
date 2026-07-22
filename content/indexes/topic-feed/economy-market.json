@@ -2,7 +2,7 @@
   "topic_id": "economy-market",
   "name": "经济与市场",
   "parent_id": null,
-  "article_count": 1,
+  "article_count": 2,
   "primary_count": 1,
   "detail_path": "/topics/economy-market/",
   "definition": "宏观经济、消费、投资、金融与市场运行。",
@@ -78,5 +78,76 @@
       "detail_path": "/items/2026-07-19/hndaily-20260719-58464-19716154/"
     }
   ],
-  "secondary_items": []
+  "secondary_items": [
+    {
+      "item_id": "hndaily-20260721-58469-19720986",
+      "published_date": "2026-07-21",
+      "page_number": "006",
+      "page_name": "教育周刊",
+      "page_sequence": 1,
+      "title": "准大学生要修财商课",
+      "ai_summary": "海南准大学生暑期消费升温，家长和高校需通过预算规划、刚需排序及风险教育帮助学生远离攀比和校园贷。",
+      "scope": "hainan",
+      "enrichment_status": "complete",
+      "subjects": [],
+      "locations": [
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "海南准大学生"
+        },
+        {
+          "location_id": "hainan-haikou",
+          "name": "海口市",
+          "code": "460100",
+          "level": "prefecture",
+          "evidence": "海口准大学生小吴"
+        },
+        {
+          "location_id": "hainan-dingan",
+          "name": "定安县",
+          "code": "469021",
+          "level": "county",
+          "evidence": "定安准大学生小黄"
+        }
+      ],
+      "topics": [
+        {
+          "topic_id": "prospective-student-financial-literacy",
+          "name": "准大学生财商教育",
+          "relation": "primary",
+          "path": [
+            "教育与青年",
+            "准大学生财商教育"
+          ],
+          "evidence": "财商启蒙课"
+        },
+        {
+          "topic_id": "post-gaokao-consumption",
+          "name": "后高考消费",
+          "relation": "secondary",
+          "path": [
+            "经济与市场",
+            "后高考消费"
+          ],
+          "evidence": "后高考消费"
+        },
+        {
+          "topic_id": "campus-loan-prevention",
+          "name": "校园贷防范",
+          "relation": "secondary",
+          "path": [
+            "治理与法治",
+            "校园贷防范"
+          ],
+          "evidence": "校园贷、非法网贷等财务陷阱"
+        }
+      ],
+      "events": [],
+      "plans": [],
+      "detail_path": "/items/2026-07-21/hndaily-20260721-58469-19720986/"
+    }
+  ]
 }

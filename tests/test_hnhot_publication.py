@@ -155,10 +155,15 @@ class HnhotPublicationTests(unittest.TestCase):
             self.assertTrue((root / "indexes/hnhot.json").is_file())
             self.assertTrue((root / f'indexes/front-page/{raw["date"]}.json').is_file())
 
-    def test_bundled_two_day_content_uses_v9_and_hainan_topic_boundary(self):
+    def test_bundled_content_uses_v9_and_hainan_topic_boundary(self):
         project = Path(__file__).resolve().parents[1]
         paths = sorted((project / "content/issue-items").glob("*/*.json"))
-        self.assertEqual(len(paths), 70)
+        issue_paths = sorted((project / "content/issues").glob("*.json"))
+        expected_count = sum(
+            json.loads(path.read_text(encoding="utf-8"))["article_count"]
+            for path in issue_paths
+        )
+        self.assertEqual(len(paths), expected_count)
         items = [json.loads(path.read_text(encoding="utf-8")) for path in paths]
         self.assertTrue(all(row["schema_version"] == 9 for row in items))
         self.assertTrue(all(len(row["resolved_topics"]) >= 1 for row in items))
@@ -207,6 +212,24 @@ class HnhotPublicationTests(unittest.TestCase):
 
     def test_bundled_content_builds_site_and_topic_routes_without_broken_links(self):
         project = Path(__file__).resolve().parents[1]
+        issues_index = json.loads(
+            (project / "content/indexes/issues.json").read_text(encoding="utf-8")
+        )
+        _, latest_month, latest_day = map(
+            int, issues_index["latest_date"].split("-")
+        )
+        latest_label = f"{latest_month}月{latest_day}日"
+        bundled_issues = [
+            json.loads(path.read_text(encoding="utf-8"))
+            for path in (project / "content/issues").glob("*.json")
+        ]
+        bundled_count = sum(issue["article_count"] for issue in bundled_issues)
+        front_page_count = sum(
+            len(page["articles"])
+            for issue in bundled_issues
+            for page in issue["pages"]
+            if page["page_name"] == "头版"
+        )
         with tempfile.TemporaryDirectory() as tmp:
             site = Path(tmp) / "site"
             build_site(project / "content", site)
@@ -278,12 +301,16 @@ class HnhotPublicationTests(unittest.TestCase):
             self.assertNotIn("每日沉淀", daily_page)
             for label in ("日报", "周报", "月报", "今天", "7月19日", "更多"):
                 self.assertIn(label, daily_page)
-            self.assertIn('data-report-value="7月20日">今天</button>', daily_page)
+            self.assertIn(
+                f'data-report-value="{latest_label}">今天</button>', daily_page
+            )
             self.assertIn('data-report-value="7月19日">7月19日</button>', daily_page)
             self.assertIn("data-report-date-tabs", daily_page)
             self.assertIn("当前先开放周期与日期浏览结构", daily_page)
             self.assertIn('<span class="eyebrow">海南日报</span><h1>报库</h1>', all_page)
-            self.assertIn("2 期 · 70 条已入库", all_page)
+            self.assertIn(
+                f'{len(issues_index["dates"])} 期 · {bundled_count} 条已入库', all_page
+            )
             self.assertIn("搜索标题、摘要或已提取的人物、地点、主题", all_page)
             self.assertIn('data-search-source="/static/data/search-articles.json"', all_page)
             self.assertNotIn("当心这种极易漏诊的罕见病", all_page)
@@ -309,7 +336,7 @@ class HnhotPublicationTests(unittest.TestCase):
             self.assertNotIn("第003版 PDF", dated_page)
             self.assertIn('data-back-to-top href="#issue-start"', dated_page)
             self.assertIn("千亿投资推进“人享其行、物畅其流”", dated_page)
-            self.assertIn("头版 · 14 条", front_page_archive)
+            self.assertIn(f"头版 · {front_page_count} 条", front_page_archive)
             self.assertIn("2026年7月20日", front_page_archive)
             self.assertIn("2026年7月19日", front_page_archive)
             self.assertNotIn("2026年7月18日", front_page_archive)
@@ -406,7 +433,7 @@ class HnhotPublicationTests(unittest.TestCase):
         rendered = render_item(item)
 
         self.assertNotIn("报道标记", rendered)
-        self.assertIn("原文结构化提取", rendered)
+        self.assertIn("文章要素", rendered)
         self.assertIn('<details class="article-context" open>', rendered)
         self.assertIn('<summary class="article-context-summary">', rendered)
         css = (project / "src/static/styles.css").read_text(encoding="utf-8")

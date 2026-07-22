@@ -2,11 +2,90 @@
   "topic_id": "culture-history",
   "name": "文化与历史",
   "parent_id": null,
-  "article_count": 13,
-  "primary_count": 13,
+  "article_count": 16,
+  "primary_count": 14,
   "detail_path": "/topics/culture-history/",
   "definition": "历史、文学、艺术、民俗、非遗与地方文化记忆。",
   "primary_items": [
+    {
+      "item_id": "hndaily-20260721-58465-19720940",
+      "published_date": "2026-07-21",
+      "page_number": "002",
+      "page_name": "本省新闻",
+      "page_sequence": 5,
+      "title": "《琼崖星火·陵水誓言》万宁首映活动举行",
+      "ai_summary": "革命后代符文牵头在万宁举办《琼崖星火·陵水誓言》首映活动，以本土影片传播琼崖革命历史。",
+      "scope": "hainan",
+      "enrichment_status": "complete",
+      "subjects": [
+        {
+          "subject_id": "subject-116e1dc5bf69b0",
+          "name": "符文",
+          "type": "person",
+          "role": "万宁首映活动发起人",
+          "evidence": "本次首映活动由76岁的革命后代符文发起"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "海南本土革命战争题材影片"
+        },
+        {
+          "location_id": "hainan-haikou",
+          "name": "海口市",
+          "code": "460100",
+          "level": "prefecture",
+          "evidence": "从海口运送宣传展板至万宁"
+        },
+        {
+          "location_id": "hainan-wanning",
+          "name": "万宁市",
+          "code": "469006",
+          "level": "county",
+          "evidence": "万宁首映活动"
+        },
+        {
+          "location_id": "hainan-lingshui",
+          "name": "陵水黎族自治县",
+          "code": "469028",
+          "level": "county",
+          "evidence": "《琼崖星火·陵水誓言》"
+        }
+      ],
+      "topics": [
+        {
+          "topic_id": "qiongya-revolutionary-culture",
+          "name": "琼崖革命文化",
+          "relation": "primary",
+          "path": [
+            "文化与历史",
+            "琼崖革命文化"
+          ],
+          "evidence": "琼崖革命故事"
+        },
+        {
+          "topic_id": "culture-history",
+          "name": "文化与历史",
+          "relation": "secondary",
+          "path": [
+            "文化与历史"
+          ],
+          "evidence": "红色题材影片"
+        }
+      ],
+      "events": [
+        {
+          "name": "《琼崖星火·陵水誓言》万宁首映活动",
+          "evidence": "《琼崖星火·陵水誓言》万宁首映活动"
+        }
+      ],
+      "plans": [],
+      "detail_path": "/items/2026-07-21/hndaily-20260721-58465-19720940/"
+    },
     {
       "item_id": "hndaily-20260720-58485-19718122",
       "published_date": "2026-07-20",
@@ -811,5 +890,133 @@
       "detail_path": "/items/2026-07-19/hndaily-20260719-58467-19716188/"
     }
   ],
-  "secondary_items": []
+  "secondary_items": [
+    {
+      "item_id": "hndaily-20260721-58469-19720990",
+      "published_date": "2026-07-21",
+      "page_number": "006",
+      "page_name": "教育周刊",
+      "page_sequence": 3,
+      "title": "林下探秘识南药",
+      "ai_summary": "屯昌在乌坡镇开展南药科普研学，20多名儿童通过识药、标本参观和植物拓印了解本土中医药文化。",
+      "scope": "hainan",
+      "enrichment_status": "complete",
+      "subjects": [
+        {
+          "subject_id": "subject-69df0b20282774",
+          "name": "屯昌县六一社会工作服务社",
+          "type": "organization",
+          "role": "科普研学志愿服务组织",
+          "evidence": "屯昌县六一社会工作服务社"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan-tunchang",
+          "name": "屯昌县",
+          "code": "469022",
+          "level": "county",
+          "evidence": "屯昌县"
+        }
+      ],
+      "topics": [
+        {
+          "topic_id": "southern-medicine-study-tours",
+          "name": "南药科普研学",
+          "relation": "primary",
+          "path": [
+            "教育与青年",
+            "南药科普研学"
+          ],
+          "evidence": "科普研学活动"
+        },
+        {
+          "topic_id": "grassroots-chinese-medicine",
+          "name": "基层中医",
+          "relation": "secondary",
+          "path": [
+            "医疗与健康",
+            "基层中医"
+          ],
+          "evidence": "传统中医药文化"
+        },
+        {
+          "topic_id": "intangible-cultural-heritage",
+          "name": "非物质文化遗产",
+          "relation": "secondary",
+          "path": [
+            "文化与历史",
+            "非物质文化遗产"
+          ],
+          "evidence": "拓印技艺"
+        }
+      ],
+      "events": [
+        {
+          "name": "“探秘南药·趣味研学”科普研学活动",
+          "evidence": "“探秘南药·趣味研学”为主题开展科普研学活动"
+        }
+      ],
+      "plans": [],
+      "detail_path": "/items/2026-07-21/hndaily-20260721-58469-19720990/"
+    },
+    {
+      "item_id": "hndaily-20260721-58465-19720938",
+      "published_date": "2026-07-21",
+      "page_number": "002",
+      "page_name": "本省新闻",
+      "page_sequence": 3,
+      "title": "海南省出版发行集团携600余册精品出版物亮相香港书展",
+      "ai_summary": "海南省出版发行集团携600余册出版物参加第36届香港书展，集中展示自贸港建设与海南历史文化成果。",
+      "scope": "mixed",
+      "enrichment_status": "complete",
+      "subjects": [
+        {
+          "subject_id": "subject-c793b0824435a9",
+          "name": "海南省出版发行集团",
+          "type": "company",
+          "role": "香港书展参展方",
+          "evidence": "海南省出版发行集团携600余册精品出版物亮相中国内地出版区"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "海南自贸港建设"
+        }
+      ],
+      "topics": [
+        {
+          "topic_id": "hainan-publishing-global",
+          "name": "海南出版走出去",
+          "relation": "primary",
+          "path": [
+            "自贸港与开放",
+            "海南出版走出去"
+          ],
+          "evidence": "开辟中国原创作品“走出去”新路径"
+        },
+        {
+          "topic_id": "culture-history",
+          "name": "文化与历史",
+          "relation": "secondary",
+          "path": [
+            "文化与历史"
+          ],
+          "evidence": "海南历史人文"
+        }
+      ],
+      "events": [
+        {
+          "name": "第36届香港书展",
+          "evidence": "第36届香港书展"
+        }
+      ],
+      "plans": [],
+      "detail_path": "/items/2026-07-21/hndaily-20260721-58465-19720938/"
+    }
+  ]
 }

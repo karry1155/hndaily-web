@@ -1,0 +1,108 @@
+{
+  "schema_version": 9,
+  "item_id": "hndaily-20260721-58466-19720957",
+  "published_date": "2026-07-21",
+  "collected_date": "2026-07-21",
+  "page_number": "003",
+  "page_name": "民生新闻",
+  "page_sequence": 10,
+  "author": "海南日报全媒体记者易宗平 通讯员梁尔格",
+  "enrichment_status": "complete",
+  "scope": "hainan",
+  "scope_evidence": "在全省各级社保医保经办机构服务大厅推出",
+  "subjects": [
+    {
+      "subject_id": "subject-c06914b2c26db6",
+      "name": "省社会保险服务中心",
+      "type": "government",
+      "role": "便民服务推出方",
+      "evidence": "省社会保险服务中心联合支付宝"
+    },
+    {
+      "subject_id": "subject-878caa176d8c7d",
+      "name": "支付宝",
+      "type": "company",
+      "role": "技术合作方",
+      "evidence": "联合支付宝"
+    }
+  ],
+  "locations": [
+    {
+      "location_id": "hainan",
+      "name": "海南省",
+      "code": "460000",
+      "level": "province",
+      "evidence": "全省各级社保医保经办机构"
+    },
+    {
+      "location_id": "hainan-haikou",
+      "name": "海口市",
+      "code": "460100",
+      "level": "prefecture",
+      "evidence": "本报海口7月20日讯"
+    }
+  ],
+  "topic_profile": {
+    "primary": {
+      "name": "社保医保数字服务",
+      "evidence": "社保医保服务“碰一下”便民举措"
+    },
+    "secondary": [
+      {
+        "name": "NFC办事",
+        "evidence": "NFC近场通信技术"
+      },
+      {
+        "name": "便民服务圈",
+        "evidence": "15分钟便民服务圈"
+      }
+    ]
+  },
+  "resolved_topics": [
+    {
+      "topic_id": "digital-social-security-services",
+      "name": "社保医保数字服务",
+      "relation": "primary",
+      "path": [
+        "社会与公共服务",
+        "社保医保数字服务"
+      ],
+      "evidence": "社保医保服务“碰一下”便民举措"
+    },
+    {
+      "topic_id": "nfc-public-services",
+      "name": "NFC办事",
+      "relation": "secondary",
+      "path": [
+        "社会与公共服务",
+        "NFC办事"
+      ],
+      "evidence": "NFC近场通信技术"
+    },
+    {
+      "topic_id": "society-public-services",
+      "name": "社会与公共服务",
+      "relation": "secondary",
+      "path": [
+        "社会与公共服务"
+      ],
+      "evidence": "15分钟便民服务圈"
+    }
+  ],
+  "content_form": "news",
+  "legacy_topics": [],
+  "events": [
+    {
+      "name": "海南上线社保医保“碰一下”服务墙",
+      "evidence": "此次上线的“碰一下”服务墙"
+    }
+  ],
+  "plans": [],
+  "block": {
+    "source": "海南日报",
+    "title": "手机“碰一下”，社保医保顺滑办",
+    "content": "本报海口7月20日讯 （海南日报全媒体记者易宗平 通讯员梁尔格）“以前办业务要找入口、点菜单，现在用手机碰一下，办事页面直接弹出来，太便利了！”7月20日，提及在省社会保险服务中心经办服务大厅的“碰一下”服务，海口市民陈女士赞不绝口。\n\n近段时间，省社会保险服务中心联合支付宝，在全省各级社保医保经办机构服务大厅推出社保医保服务“碰一下”便民举措。在服务大厅设立的“碰一下”服务墙，让30项社保医保高频服务事项实现“一碰直达”，以数智化手段让参保群众享受到更加便捷、顺畅的办事新体验。\n\n具体而言，省社会保险服务中心依托NFC近场通信技术，将原本需要“搜入口→找菜单→点进入”的多步操作，简化为手机背面对准服务墙不同业务板块轻轻一“碰”的单步操作。此次上线的“碰一下”服务墙，涵盖参保登记、待遇资格认证、参保信息查询打印、异地就医备案等30项群众日常办理的高频业务。该功能不仅支持NFC功能手机“5秒直达”，对于不支持NFC的设备，每个业务板块的下方也配备二维码，扫码同样可快速进入办理页面。\n\n近年来，省社保医保部门持续推进服务渠道下沉，通过“就近办”“一窗通办”等改革，不断拓展服务半径。此次在全省各级社保医保经办机构服务大厅设立“碰一下”服务墙，进一步丰富了“15分钟便民服务圈”的服务内涵。一方面，它与遍布全省的银行网点“就近办”专区、社区便民服务中心形成互补，构建起“大厅办+就近办+掌上办”的立体化服务网络；另一方面，以科技赋能，大幅缩短群众在大厅的等待和办理时间，提升了窗口服务效能。",
+    "ai_summary": "海南社保医保大厅上线“碰一下”服务墙，30项高频业务可通过NFC或二维码直接进入办理页面。",
+    "original_url": "http://news.hndaily.cn/html/2026-07/21/content_58466_19720957.htm"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "topic_id": "specialized-sme-development",
+  "name": "专精特新企业培育",
+  "parent_id": "industry-projects",
+  "article_count": 1,
+  "primary_count": 1,
+  "detail_path": "/topics/specialized-sme-development/",
+  "definition": "对专业化、精细化、特色化、创新型中小企业的认定和梯度培育。",
+  "primary_items": [
+    {
+      "item_id": "hndaily-20260721-58464-19720924",
+      "published_date": "2026-07-21",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 5,
+      "title": "海南认定今年首批11家专精特新中小企业",
+      "ai_summary": "海南认定2026年首批11家专精特新中小企业，并确认28家企业复核通过，资格有效期三年。",
+      "scope": "hainan",
+      "enrichment_status": "complete",
+      "subjects": [
+        {
+          "subject_id": "subject-7fe95544d921bc",
+          "name": "省工业和信息化厅",
+          "type": "government",
+          "role": "认定名单公布部门",
+          "evidence": "省工业和信息化厅公布2026年第一批海南省专精特新中小企业认定和复核通过名单"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "海南省专精特新中小企业"
+        }
+      ],
+      "topics": [
+        {
+          "topic_id": "specialized-sme-development",
+          "name": "专精特新企业培育",
+          "relation": "primary",
+          "path": [
+            "产业与项目",
+            "专精特新企业培育"
+          ],
+          "evidence": "专精特新中小企业认定"
+        }
+      ],
+      "events": [
+        {
+          "name": "海南认定2026年第一批专精特新中小企业",
+          "evidence": "认定佛照（海南）科技有限公司等11家企业为2026年第一批海南省专精特新中小企业"
+        }
+      ],
+      "plans": [],
+      "detail_path": "/items/2026-07-21/hndaily-20260721-58464-19720924/"
+    }
+  ],
+  "secondary_items": []
+}

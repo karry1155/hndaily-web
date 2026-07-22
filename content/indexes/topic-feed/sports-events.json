@@ -2,11 +2,158 @@
   "topic_id": "sports-events",
   "name": "体育与赛事",
   "parent_id": null,
-  "article_count": 1,
-  "primary_count": 1,
+  "article_count": 4,
+  "primary_count": 3,
   "detail_path": "/topics/sports-events/",
   "definition": "竞技体育、群众体育、训练体系与体育赛事。",
   "primary_items": [
+    {
+      "item_id": "hndaily-20260721-58466-19720954",
+      "published_date": "2026-07-21",
+      "page_number": "003",
+      "page_name": "民生新闻",
+      "page_sequence": 7,
+      "title": "“陵水杯”海南省青少年足球邀请赛落幕",
+      "ai_summary": "2026年“陵水杯”青少年足球邀请赛吸引海口、儋州、陵水等地27支队伍、500余名球员参赛。",
+      "scope": "hainan",
+      "enrichment_status": "complete",
+      "subjects": [
+        {
+          "subject_id": "subject-25a5a22c74c6c5",
+          "name": "陵水黎族自治县足球协会",
+          "type": "organization",
+          "role": "赛事承办方",
+          "evidence": "本届邀请赛由陵水黎族自治县足球协会承办"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "海南省青少年足球邀请赛"
+        },
+        {
+          "location_id": "hainan-haikou",
+          "name": "海口市",
+          "code": "460100",
+          "level": "prefecture",
+          "evidence": "来自海口、儋州、陵水等地"
+        },
+        {
+          "location_id": "hainan-danzhou",
+          "name": "儋州市",
+          "code": "460400",
+          "level": "prefecture",
+          "evidence": "来自海口、儋州、陵水等地"
+        },
+        {
+          "location_id": "hainan-lingshui",
+          "name": "陵水黎族自治县",
+          "code": "469028",
+          "level": "county",
+          "evidence": "陵水"
+        }
+      ],
+      "topics": [
+        {
+          "topic_id": "youth-football",
+          "name": "青少年足球",
+          "relation": "primary",
+          "path": [
+            "体育与赛事",
+            "青少年足球"
+          ],
+          "evidence": "青少年足球"
+        },
+        {
+          "topic_id": "hainan-competitive-sports",
+          "name": "海南竞技体育",
+          "relation": "secondary",
+          "path": [
+            "体育与赛事",
+            "海南竞技体育"
+          ],
+          "evidence": "培育足球后备人才"
+        }
+      ],
+      "events": [
+        {
+          "name": "2026年“陵水杯”海南省青少年足球邀请赛",
+          "evidence": "2026年“陵水杯”海南省青少年足球邀请赛"
+        }
+      ],
+      "plans": [],
+      "detail_path": "/items/2026-07-21/hndaily-20260721-58466-19720954/"
+    },
+    {
+      "item_id": "hndaily-20260721-58466-19720951",
+      "published_date": "2026-07-21",
+      "page_number": "003",
+      "page_name": "民生新闻",
+      "page_sequence": 4,
+      "title": "2026年海南五指山篮球公开赛开赛",
+      "ai_summary": "2026年海南五指山篮球公开赛吸引120名运动员，其中22名外籍球员来自15个国家，赛事覆盖儿童至成年组。",
+      "scope": "mixed",
+      "enrichment_status": "complete",
+      "subjects": [],
+      "locations": [
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "海南自贸港"
+        },
+        {
+          "location_id": "hainan-wuzhishan",
+          "name": "五指山市",
+          "code": "469001",
+          "level": "county",
+          "evidence": "五指山市文体中心"
+        }
+      ],
+      "topics": [
+        {
+          "topic_id": "international-basketball-exchange",
+          "name": "国际篮球交流",
+          "relation": "primary",
+          "path": [
+            "体育与赛事",
+            "国际篮球交流"
+          ],
+          "evidence": "中外、省内外体育交流桥梁"
+        },
+        {
+          "topic_id": "youth-basketball",
+          "name": "青少年篮球",
+          "relation": "secondary",
+          "path": [
+            "体育与赛事",
+            "青少年篮球"
+          ],
+          "evidence": "助力青少年篮球普及发展"
+        },
+        {
+          "topic_id": "sports-events",
+          "name": "体育与赛事",
+          "relation": "secondary",
+          "path": [
+            "体育与赛事"
+          ],
+          "evidence": "推动全民篮球运动提质升级"
+        }
+      ],
+      "events": [
+        {
+          "name": "2026年海南五指山篮球公开赛",
+          "evidence": "2026年海南五指山篮球公开赛"
+        }
+      ],
+      "plans": [],
+      "detail_path": "/items/2026-07-21/hndaily-20260721-58466-19720951/"
+    },
     {
       "item_id": "hndaily-20260720-58464-19717494",
       "published_date": "2026-07-20",
@@ -180,5 +327,88 @@
       "detail_path": "/items/2026-07-20/hndaily-20260720-58464-19717494/"
     }
   ],
-  "secondary_items": []
+  "secondary_items": [
+    {
+      "item_id": "hndaily-20260721-58466-19720956",
+      "published_date": "2026-07-21",
+      "page_number": "003",
+      "page_name": "民生新闻",
+      "page_sequence": 9,
+      "title": "昌江暑期多场文旅活动等你来",
+      "ai_summary": "昌江7月中旬至8月推出五子棋、羽毛球、篮球赛事及海滩派对，为暑期游客提供体育和休闲体验。",
+      "scope": "hainan",
+      "enrichment_status": "complete",
+      "subjects": [
+        {
+          "subject_id": "subject-13e96945ff34dd",
+          "name": "昌江黎族自治县旅游和文化广电体育局",
+          "type": "government",
+          "role": "暑期文旅活动信息发布部门",
+          "evidence": "昌江黎族自治县旅游和文化广电体育局"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "海南日报全媒体记者"
+        },
+        {
+          "location_id": "hainan-changjiang",
+          "name": "昌江黎族自治县",
+          "code": "469026",
+          "level": "county",
+          "evidence": "昌江黎族自治县"
+        }
+      ],
+      "topics": [
+        {
+          "topic_id": "summer-cultural-tourism",
+          "name": "暑期文旅活动",
+          "relation": "primary",
+          "path": [
+            "旅游与消费",
+            "暑期文旅活动"
+          ],
+          "evidence": "暑期文旅活动"
+        },
+        {
+          "topic_id": "sports-events",
+          "name": "体育与赛事",
+          "relation": "secondary",
+          "path": [
+            "体育与赛事"
+          ],
+          "evidence": "体育赛事"
+        },
+        {
+          "topic_id": "tourism-consumption",
+          "name": "旅游与消费",
+          "relation": "secondary",
+          "path": [
+            "旅游与消费"
+          ],
+          "evidence": "海滩派对"
+        }
+      ],
+      "events": [
+        {
+          "name": "全国五子棋青少年锦标赛",
+          "evidence": "全国五子棋青少年锦标赛"
+        },
+        {
+          "name": "昌江“木棉红杯”青少年U系列羽毛球年度积分公开赛（第三站）",
+          "evidence": "昌江“木棉红杯”青少年U系列羽毛球年度积分公开赛（第三站）"
+        },
+        {
+          "name": "昌江全民健身篮球赛",
+          "evidence": "昌江全民健身篮球赛"
+        }
+      ],
+      "plans": [],
+      "detail_path": "/items/2026-07-21/hndaily-20260721-58466-19720956/"
+    }
+  ]
 }

@@ -1,0 +1,106 @@
+{
+  "topic_id": "marine-biodiversity",
+  "name": "海洋生物多样性",
+  "parent_id": "ecology-climate",
+  "article_count": 1,
+  "primary_count": 0,
+  "detail_path": "/topics/marine-biodiversity/",
+  "definition": "海洋物种、栖息地和食物链多样性的保护与恢复。",
+  "primary_items": [],
+  "secondary_items": [
+    {
+      "item_id": "hndaily-20260721-58464-19720928",
+      "published_date": "2026-07-21",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 7,
+      "title": "生态修复，黑鳍鲨“如约而至”",
+      "ai_summary": "蜈支洲岛持续修复珊瑚礁后，活珊瑚覆盖率由不足15%升至37.08%，黑鳍鲨等珍稀生物重新稳定出现。",
+      "scope": "hainan",
+      "enrichment_status": "complete",
+      "subjects": [
+        {
+          "subject_id": "subject-d5ebaf413e9bfd",
+          "name": "蜈支洲岛旅游区",
+          "type": "organization",
+          "role": "海洋生态修复实施方",
+          "evidence": "蜈支洲岛与海南大学合作，启动热带海洋牧场建设"
+        },
+        {
+          "subject_id": "subject-fd4bc2d13c8278",
+          "name": "海南大学",
+          "type": "organization",
+          "role": "热带海洋牧场合作方",
+          "evidence": "蜈支洲岛与海南大学合作"
+        },
+        {
+          "subject_id": "subject-5cf35a002bf846",
+          "name": "海南珊瑚海海洋生态修复公益基金会",
+          "type": "organization",
+          "role": "海洋生态修复公益组织",
+          "evidence": "海南珊瑚海海洋生态修复公益基金会也于今年5月正式揭牌"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "海南珊瑚海海洋生态修复公益基金会"
+        },
+        {
+          "location_id": "hainan-sanya",
+          "name": "三亚市",
+          "code": "460200",
+          "level": "prefecture",
+          "evidence": "三亚蜈支洲岛"
+        }
+      ],
+      "topics": [
+        {
+          "topic_id": "coral-reef-restoration",
+          "name": "珊瑚礁生态修复",
+          "relation": "primary",
+          "path": [
+            "生态与气候",
+            "珊瑚礁生态修复"
+          ],
+          "evidence": "完成6.1万平方米海底生态修复"
+        },
+        {
+          "topic_id": "marine-biodiversity",
+          "name": "海洋生物多样性",
+          "relation": "secondary",
+          "path": [
+            "生态与气候",
+            "海洋生物多样性"
+          ],
+          "evidence": "海域鱼类种类恢复至265种"
+        },
+        {
+          "topic_id": "zero-carbon-islands",
+          "name": "零碳海岛",
+          "relation": "secondary",
+          "path": [
+            "生态与气候",
+            "零碳海岛"
+          ],
+          "evidence": "零碳智慧岛计划"
+        }
+      ],
+      "events": [
+        {
+          "name": "蜈支洲岛热带海洋牧场建设与珊瑚修复",
+          "evidence": "启动热带海洋牧场建设"
+        },
+        {
+          "name": "海南珊瑚海海洋生态修复公益基金会揭牌",
+          "evidence": "海南珊瑚海海洋生态修复公益基金会也于今年5月正式揭牌"
+        }
+      ],
+      "plans": [],
+      "detail_path": "/items/2026-07-21/hndaily-20260721-58464-19720928/"
+    }
+  ]
+}

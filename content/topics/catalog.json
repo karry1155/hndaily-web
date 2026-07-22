@@ -1162,6 +1162,888 @@
         "仅作为背景、例子或顺带提及的内容"
       ],
       "status": "active"
+    },
+    {
+      "topic_id": "cross-civilization-exchange",
+      "name": "文明交流互鉴",
+      "aliases": [],
+      "parent_id": "free-trade-opening",
+      "definition": "不同国家与文明借助对话、技术或合作增进理解与包容。",
+      "include": [
+        "跨文明对话、理解、互鉴与文化多样性合作"
+      ],
+      "exclude": [
+        "仅介绍单一地方文化或普通文化活动"
+      ],
+      "status": "active"
+    },
+    {
+      "topic_id": "grassroots-cadre-education",
+      "name": "基层干部教育",
+      "aliases": [],
+      "parent_id": "governance-law",
+      "definition": "面向基层党员干部的履职方法、能力与纪律教育。",
+      "include": [
+        "基层干部培训、学习教育和履职能力建设"
+      ],
+      "exclude": [
+        "普通学校教育和职业技能培训"
+      ],
+      "status": "active"
+    },
+    {
+      "topic_id": "safety-ecology-remediation",
+      "name": "安全生产与生态整改",
+      "aliases": [],
+      "parent_id": "governance-law",
+      "definition": "政府同步推进生产安全风险防范和突出生态问题整改的治理工作。",
+      "include": [
+        "安全生产部署与生态环保整改并行的综合治理"
+      ],
+      "exclude": [
+        "单一事故救援或一般自然生态观察"
+      ],
+      "status": "active"
+    },
+    {
+      "topic_id": "state-owned-enterprise-reform",
+      "name": "国企改革",
+      "aliases": [],
+      "parent_id": "governance-law",
+      "definition": "国有企业治理、布局、考核和经营机制改革。",
+      "include": [
+        "国企分类考核、治理制度和国有经济布局调整"
+      ],
+      "exclude": [
+        "国企普通经营动态和单次产品发布"
+      ],
+      "status": "active"
+    },
+    {
+      "topic_id": "international-transport-hubs",
+      "name": "国际交通枢纽",
+      "aliases": [],
+      "parent_id": "transport-cities",
+      "definition": "以航空、航运等跨境通达能力为核心的国际交通枢纽建设。",
+      "include": [
+        "国际航空枢纽、国际航运枢纽及综合通达能力"
+      ],
+      "exclude": [
+        "普通国内道路建设或单条旅游线路"
+      ],
+      "status": "active"
+    },
+    {
+      "topic_id": "international-air-routes",
+      "name": "境外航线",
+      "aliases": [],
+      "parent_id": "free-trade-opening",
+      "definition": "连接境内与境外城市的客运或货运航空航线。",
+      "include": [
+        "境外客货运航线开通、加密、客流与目标"
+      ],
+      "exclude": [
+        "境内航线和一般机场建设"
+      ],
+      "status": "active"
+    },
+    {
+      "topic_id": "low-altitude-economy",
+      "name": "低空经济",
+      "aliases": [],
+      "parent_id": "industry-projects",
+      "definition": "依托低空飞行设施和航空器发展的运输、巡检、旅游等产业。",
+      "include": [
+        "低空起降设施、无人机应用和低空产业业态"
+      ],
+      "exclude": [
+        "普通民航运输和单纯航空科普"
+      ],
+      "status": "active"
+    },
+    {
+      "topic_id": "specialized-sme-development",
+      "name": "专精特新企业培育",
+      "aliases": [],
+      "parent_id": "industry-projects",
+      "definition": "对专业化、精细化、特色化、创新型中小企业的认定和梯度培育。",
+      "include": [
+        "专精特新企业申报、认定、复核与扶持"
+      ],
+      "exclude": [
+        "一般中小企业经营新闻"
+      ],
+      "status": "active"
+    },
+    {
+      "topic_id": "cultural-infrastructure",
+      "name": "文化基础设施",
+      "aliases": [],
+      "parent_id": "industry-projects",
+      "definition": "用于文化展示、交易、公共服务与产业支撑的实体设施项目。",
+      "include": [
+        "文化场馆、文化交易平台及相关建设进展"
+      ],
+      "exclude": [
+        "普通文艺演出和文化评论"
+      ],
+      "status": "active"
+    },
+    {
+      "topic_id": "art-trading",
+      "name": "艺术品交易",
+      "aliases": [],
+      "parent_id": "industry-projects",
+      "definition": "文物艺术品的交易平台、市场和配套服务。",
+      "include": [
+        "艺术品交易中心、市场建设和交易服务"
+      ],
+      "exclude": [
+        "美术展览和作品评论"
+      ],
+      "status": "active"
+    },
+    {
+      "topic_id": "coral-reef-restoration",
+      "name": "珊瑚礁生态修复",
+      "aliases": [],
+      "parent_id": "ecology-climate",
+      "definition": "通过珊瑚移植、人工鱼礁等措施恢复珊瑚礁生态系统。",
+      "include": [
+        "珊瑚覆盖率恢复、珊瑚移植和礁体修复"
+      ],
+      "exclude": [
+        "一般海洋观光和无修复行动的生物观察"
+      ],
+      "status": "active"
+    },
+    {
+      "topic_id": "marine-biodiversity",
+      "name": "海洋生物多样性",
+      "aliases": [],
+      "parent_id": "ecology-climate",
+      "definition": "海洋物种、栖息地和食物链多样性的保护与恢复。",
+      "include": [
+        "海洋物种恢复、珍稀生物监测和栖息地质量"
+      ],
+      "exclude": [
+        "单纯海鲜消费和普通水产养殖"
+      ],
+      "status": "active"
+    },
+    {
+      "topic_id": "zero-carbon-islands",
+      "name": "零碳海岛",
+      "aliases": [],
+      "parent_id": "ecology-climate",
+      "definition": "海岛区域通过能源、运营和生态措施实现低碳或零碳运行。",
+      "include": [
+        "零碳海岛认证、规划和运行实践"
+      ],
+      "exclude": [
+        "普通海岛旅游和城乡建筑零碳评价"
+      ],
+      "status": "active"
+    },
+    {
+      "topic_id": "long-term-care-insurance",
+      "name": "长期护理保险",
+      "aliases": [],
+      "parent_id": "society-public-services",
+      "definition": "为长期失能人员提供评估、护理待遇和费用保障的社会保险制度。",
+      "include": [
+        "长护险参保、失能评估、待遇支付和服务供给"
+      ],
+      "exclude": [
+        "普通医疗保险和一般养老机构服务"
+      ],
+      "status": "active"
+    },
+    {
+      "topic_id": "disabled-elderly-care",
+      "name": "失能老人照护",
+      "aliases": [],
+      "parent_id": "health-medicine",
+      "definition": "面向失能老人的生活照料、医疗护理与家庭支持。",
+      "include": [
+        "居家上门护理、失能等级服务和照护减负"
+      ],
+      "exclude": [
+        "健康老人日常养老和普通家政服务"
+      ],
+      "status": "active"
+    },
+    {
+      "topic_id": "long-term-care-workforce",
+      "name": "长期照护师",
+      "aliases": [],
+      "parent_id": "education-youth",
+      "definition": "长期照护服务人员的培养、认证、就业和职业能力建设。",
+      "include": [
+        "长期照护师培训、考试、发证和技能认定"
+      ],
+      "exclude": [
+        "普通医护人员招聘和家庭成员照料"
+      ],
+      "status": "active"
+    },
+    {
+      "topic_id": "hainan-hong-kong-youth-exchange",
+      "name": "琼港青年交流",
+      "aliases": [],
+      "parent_id": "free-trade-opening",
+      "definition": "海南与香港青年之间的研学、产业、创业和城市合作交流。",
+      "include": [
+        "琼港青年互访、分享会和共建项目"
+      ],
+      "exclude": [
+        "海南与其他地区青年交流或一般港澳政策"
+      ],
+      "status": "active"
+    },
+    {
+      "topic_id": "youth-entrepreneurship",
+      "name": "青年创业",
+      "aliases": [],
+      "parent_id": "education-youth",
+      "definition": "青年群体的创业教育、扶持政策和创业实践。",
+      "include": [
+        "青年创业扶持、孵化、交流和资源对接"
+      ],
+      "exclude": [
+        "成熟企业普通经营和一般就业招聘"
+      ],
+      "status": "active"
+    },
+    {
+      "topic_id": "hainan-publishing-global",
+      "name": "海南出版走出去",
+      "aliases": [],
+      "parent_id": "free-trade-opening",
+      "definition": "海南出版机构和出版物通过境外平台开展国际传播与市场拓展。",
+      "include": [
+        "海南出版物境外参展、版权输出和国际传播"
+      ],
+      "exclude": [
+        "省内图书发行和普通阅读推荐"
+      ],
+      "status": "active"
+    },
+    {
+      "topic_id": "hainan-us-youth-exchange",
+      "name": "中美青少年交流",
+      "aliases": [],
+      "parent_id": "education-youth",
+      "definition": "中国与美国青少年之间的友城、学校和文化交流活动。",
+      "include": [
+        "中美青少年互访、研学和校园文化交流"
+      ],
+      "exclude": [
+        "一般中美政府外交和成年人商务往来"
+      ],
+      "status": "active"
+    },
+    {
+      "topic_id": "sister-city-cooperation",
+      "name": "友城合作",
+      "aliases": [],
+      "parent_id": "free-trade-opening",
+      "definition": "友好城市之间的人员、文化、教育与产业合作。",
+      "include": [
+        "国际友城互访、合作项目和民间交流"
+      ],
+      "exclude": [
+        "无友城关系的一般城市交流"
+      ],
+      "status": "active"
+    },
+    {
+      "topic_id": "qiongya-revolutionary-culture",
+      "name": "琼崖革命文化",
+      "aliases": [],
+      "parent_id": "culture-history",
+      "definition": "琼崖革命历史、人物与红色记忆的研究、传播和传承。",
+      "include": [
+        "琼崖革命故事、遗址、影片与纪念活动"
+      ],
+      "exclude": [
+        "非海南革命史和一般现代影视活动"
+      ],
+      "status": "active"
+    },
+    {
+      "topic_id": "party-led-technology-innovation",
+      "name": "党建引领技术创新",
+      "aliases": [],
+      "parent_id": "technology-innovation",
+      "definition": "企业或机构以党组织机制组织技术研发与创新攻关。",
+      "include": [
+        "党员攻关队、支部领题和党建赋能研发"
+      ],
+      "exclude": [
+        "普通党建活动和无党建机制的产品研发"
+      ],
+      "status": "active"
+    },
+    {
+      "topic_id": "coconut-milk-industry",
+      "name": "生椰乳产业",
+      "aliases": [],
+      "parent_id": "industry-projects",
+      "definition": "生椰乳产品的研发、生产、产能和市场发展。",
+      "include": [
+        "生椰乳技术、生产线、销售和产业链"
+      ],
+      "exclude": [
+        "普通椰子种植和其他乳制品"
+      ],
+      "status": "active"
+    },
+    {
+      "topic_id": "tropical-food-processing",
+      "name": "热带食品加工",
+      "aliases": [],
+      "parent_id": "industry-projects",
+      "definition": "以热带果蔬等资源为原料的食品研发与深加工产业。",
+      "include": [
+        "热带食品产品研发、加工技术和产能建设"
+      ],
+      "exclude": [
+        "初级农产品种植和普通餐饮消费"
+      ],
+      "status": "active"
+    },
+    {
+      "topic_id": "compulsory-education-admissions",
+      "name": "义务教育招生",
+      "aliases": [],
+      "parent_id": "education-youth",
+      "definition": "小学和初中阶段招生报名、审核、录取与学位安排。",
+      "include": [
+        "小学初中招生政策、报名时间和录取规则"
+      ],
+      "exclude": [
+        "普通高中、高校招生和校内教学活动"
+      ],
+      "status": "active"
+    },
+    {
+      "topic_id": "digital-admissions-governance",
+      "name": "机器管招生",
+      "aliases": [],
+      "parent_id": "education-youth",
+      "definition": "利用数据平台和自动核验机制管理学校招生流程。",
+      "include": [
+        "招生信息平台、线上数据审核和随机派位"
+      ],
+      "exclude": [
+        "普通网上报名和非教育政务数字化"
+      ],
+      "status": "active"
+    },
+    {
+      "topic_id": "international-student-exchange",
+      "name": "国际学生交换",
+      "aliases": [],
+      "parent_id": "education-youth",
+      "definition": "不同国家高校之间持续开展的学生互派与联合培养。",
+      "include": [
+        "高校交换生名额、校际互派和海外修读"
+      ],
+      "exclude": [
+        "短期旅游参访和教师学术会议"
+      ],
+      "status": "active"
+    },
+    {
+      "topic_id": "autism-digital-therapy",
+      "name": "孤独症数字疗法",
+      "aliases": [],
+      "parent_id": "health-medicine",
+      "definition": "利用数字系统为孤独症儿童提供评估和个性化康复训练。",
+      "include": [
+        "孤独症数字化干预、训练课程和康复系统"
+      ],
+      "exclude": [
+        "一般线上问诊和非孤独症儿童教育软件"
+      ],
+      "status": "active"
+    },
+    {
+      "topic_id": "international-basketball-exchange",
+      "name": "国际篮球交流",
+      "aliases": [],
+      "parent_id": "sports-events",
+      "definition": "有境内外球员或队伍共同参与的篮球赛事与交流。",
+      "include": [
+        "国际篮球邀请赛、外籍球员参赛和篮球文化交流"
+      ],
+      "exclude": [
+        "纯国内联赛和普通篮球训练"
+      ],
+      "status": "active"
+    },
+    {
+      "topic_id": "youth-basketball",
+      "name": "青少年篮球",
+      "aliases": [],
+      "parent_id": "sports-events",
+      "definition": "面向儿童青少年的篮球训练、普及和竞赛。",
+      "include": [
+        "青少年篮球分龄赛事、培训和后备人才"
+      ],
+      "exclude": [
+        "成年职业篮球和一般校园体育"
+      ],
+      "status": "active"
+    },
+    {
+      "topic_id": "fire-safety-night-inspections",
+      "name": "消防安全夜查",
+      "aliases": [],
+      "parent_id": "emergency-safety",
+      "definition": "消防部门在夜间集中排查场所火灾隐患的执法治理行动。",
+      "include": [
+        "消防夜查、隐患清单、整改处罚和场所检查"
+      ],
+      "exclude": [
+        "火灾现场救援和日常消防宣传"
+      ],
+      "status": "active"
+    },
+    {
+      "topic_id": "e-bike-fire-safety",
+      "name": "电动自行车安全",
+      "aliases": [],
+      "parent_id": "emergency-safety",
+      "definition": "电动自行车停放、充电、改装引发的消防与公共安全治理。",
+      "include": [
+        "电动车入楼、违规充电、改装和充电器安全"
+      ],
+      "exclude": [
+        "普通骑行交通规则和电动车产业销售"
+      ],
+      "status": "active"
+    },
+    {
+      "topic_id": "fire-access-governance",
+      "name": "消防通道治理",
+      "aliases": [],
+      "parent_id": "emergency-safety",
+      "definition": "疏散通道、安全出口和消防车通道占用堵塞的整治。",
+      "include": [
+        "消防通道清障、出口规范和登高场地治理"
+      ],
+      "exclude": [
+        "普通道路拥堵和无消防属性的物业管理"
+      ],
+      "status": "active"
+    },
+    {
+      "topic_id": "youth-football",
+      "name": "青少年足球",
+      "aliases": [],
+      "parent_id": "sports-events",
+      "definition": "面向儿童青少年的足球赛事、训练和普及。",
+      "include": [
+        "青少年足球邀请赛、分龄竞赛和训练体系"
+      ],
+      "exclude": [
+        "成年职业足球和其他球类运动"
+      ],
+      "status": "active"
+    },
+    {
+      "topic_id": "volunteer-services",
+      "name": "志愿服务",
+      "aliases": [],
+      "parent_id": "society-public-services",
+      "definition": "面向社会公众的公益志愿行动、培训和服务体系建设。",
+      "include": [
+        "志愿者服务、技能培训、成果展示和社会参与"
+      ],
+      "exclude": [
+        "有偿劳务和一般政府公共服务"
+      ],
+      "status": "active"
+    },
+    {
+      "topic_id": "summer-cultural-tourism",
+      "name": "暑期文旅活动",
+      "aliases": [],
+      "parent_id": "tourism-consumption",
+      "definition": "暑期集中推出的旅游、休闲、文化和体验活动。",
+      "include": [
+        "暑期文旅产品、节庆、派对和游客体验安排"
+      ],
+      "exclude": [
+        "与旅游无关的单项专业赛事"
+      ],
+      "status": "active"
+    },
+    {
+      "topic_id": "digital-social-security-services",
+      "name": "社保医保数字服务",
+      "aliases": [],
+      "parent_id": "society-public-services",
+      "definition": "通过数字终端和线上入口办理社保医保公共服务。",
+      "include": [
+        "社保医保线上办理、数字大厅和便民服务入口"
+      ],
+      "exclude": [
+        "医疗诊疗数字化和一般电子支付"
+      ],
+      "status": "active"
+    },
+    {
+      "topic_id": "nfc-public-services",
+      "name": "NFC办事",
+      "aliases": [],
+      "parent_id": "society-public-services",
+      "definition": "利用NFC近场通信触发政务或公共服务办理页面。",
+      "include": [
+        "碰一下办事、NFC服务墙和近场通信政务应用"
+      ],
+      "exclude": [
+        "普通扫码支付和非公共服务的NFC功能"
+      ],
+      "status": "active"
+    },
+    {
+      "topic_id": "ambassador-appointments",
+      "name": "驻外大使任免",
+      "aliases": [],
+      "parent_id": "governance-law",
+      "definition": "国家对驻外国特命全权大使的任命与免职。",
+      "include": [
+        "驻外大使任免名单和人事决定"
+      ],
+      "exclude": [
+        "一般外交访问和使馆活动"
+      ],
+      "status": "active"
+    },
+    {
+      "topic_id": "comprehensive-party-governance",
+      "name": "全面从严治党",
+      "aliases": [],
+      "parent_id": "governance-law",
+      "definition": "党的领导、监督、纪律、责任和制度体系的全面从严建设。",
+      "include": [
+        "全面从严治党部署、体系建设和管党治党实践"
+      ],
+      "exclude": [
+        "普通党建宣传和单一业务会议"
+      ],
+      "status": "active"
+    },
+    {
+      "topic_id": "intellectual-property-protection",
+      "name": "知识产权保护",
+      "aliases": [],
+      "parent_id": "governance-law",
+      "definition": "知识产权确权、执法保护、制度建设和权益保障。",
+      "include": [
+        "知识产权法律政策、保护环境和侵权治理"
+      ],
+      "exclude": [
+        "单纯科技成果发布和一般品牌营销"
+      ],
+      "status": "active"
+    },
+    {
+      "topic_id": "ai-industrialization",
+      "name": "人工智能产业化",
+      "aliases": [],
+      "parent_id": "technology-innovation",
+      "definition": "人工智能技术从研发展示走向规模化生产和行业应用。",
+      "include": [
+        "AI产品落地、商业化、规模应用和产业生态"
+      ],
+      "exclude": [
+        "纯算法研究和人工智能伦理治理"
+      ],
+      "status": "active"
+    },
+    {
+      "topic_id": "embodied-intelligence",
+      "name": "具身智能",
+      "aliases": [],
+      "parent_id": "technology-innovation",
+      "definition": "将感知、决策和行动能力结合于机器人等实体载体的人工智能。",
+      "include": [
+        "人形机器人、具身模型和实体任务执行"
+      ],
+      "exclude": [
+        "纯软件智能体和普通自动化设备"
+      ],
+      "status": "active"
+    },
+    {
+      "topic_id": "industrial-ai",
+      "name": "工业人工智能",
+      "aliases": [],
+      "parent_id": "technology-innovation",
+      "definition": "人工智能在制造流程、工业设备和生产管理中的应用。",
+      "include": [
+        "工业模型、智能产线、设备运维和制造场景AI"
+      ],
+      "exclude": [
+        "消费级AI应用和普通工业自动化"
+      ],
+      "status": "active"
+    },
+    {
+      "topic_id": "minors-online-protection",
+      "name": "未成年人网络保护",
+      "aliases": [],
+      "parent_id": "governance-law",
+      "definition": "保护未成年人免受有害网络内容、诈骗和不当推荐侵扰的治理。",
+      "include": [
+        "未成年人网络环境整治、平台责任和保护模式"
+      ],
+      "exclude": [
+        "一般网络安全和线下儿童安全教育"
+      ],
+      "status": "active"
+    },
+    {
+      "topic_id": "eu-russia-sanctions",
+      "name": "欧盟对俄制裁分歧",
+      "aliases": [],
+      "parent_id": "governance-law",
+      "definition": "欧盟内部围绕对俄罗斯制裁范围、成本和执行方式产生的政治经济分歧。",
+      "include": [
+        "欧盟对俄制裁谈判、成员国立场和制裁反作用"
+      ],
+      "exclude": [
+        "其他国家制裁和无欧盟内部分歧的俄欧关系"
+      ],
+      "status": "active"
+    },
+    {
+      "topic_id": "cross-border-crime-pursuit",
+      "name": "跨国犯罪追逃",
+      "aliases": [],
+      "parent_id": "governance-law",
+      "definition": "通过跨境协作追捕、拘押和遣返犯罪嫌疑人。",
+      "include": [
+        "红色通报、跨国缉捕、引渡或遣返"
+      ],
+      "exclude": [
+        "境内普通刑事案件和一般外交争端"
+      ],
+      "status": "active"
+    },
+    {
+      "topic_id": "international-law-enforcement-cooperation",
+      "name": "国际执法合作",
+      "aliases": [],
+      "parent_id": "governance-law",
+      "definition": "不同国家执法机关围绕案件侦办、证据和人员移交开展合作。",
+      "include": [
+        "跨国警方协作、证据共享和联合打击犯罪"
+      ],
+      "exclude": [
+        "国际司法学术交流和普通外交合作"
+      ],
+      "status": "active"
+    },
+    {
+      "topic_id": "citizen-overseas-safety",
+      "name": "公民海外安全",
+      "aliases": [],
+      "parent_id": "emergency-safety",
+      "definition": "本国公民在境外面临的人身安全风险及国家保护行动。",
+      "include": [
+        "海外绑架、伤害、撤离和领事安全保护"
+      ],
+      "exclude": [
+        "普通出境旅行服务和境内公共安全"
+      ],
+      "status": "active"
+    },
+    {
+      "topic_id": "china-russia-visa-free",
+      "name": "中俄免签政策",
+      "aliases": [],
+      "parent_id": "free-trade-opening",
+      "definition": "中国与俄罗斯之间针对对方公民的免签入境安排。",
+      "include": [
+        "中俄免签期限、适用对象和政策延长"
+      ],
+      "exclude": [
+        "其他国家免签和一般双边贸易"
+      ],
+      "status": "active"
+    },
+    {
+      "topic_id": "uk-prime-minister-transition",
+      "name": "英国首相更替",
+      "aliases": [],
+      "parent_id": "governance-law",
+      "definition": "英国首相辞任、党首选举和新政府组建过程。",
+      "include": [
+        "英国首相交接、国王授权和执政党党首更替"
+      ],
+      "exclude": [
+        "英国一般政策和其他国家领导人更替"
+      ],
+      "status": "active"
+    },
+    {
+      "topic_id": "us-gasoline-prices",
+      "name": "美国汽油价格",
+      "aliases": [],
+      "parent_id": "economy-market",
+      "definition": "美国零售汽油价格的变化、成因及经济政治影响。",
+      "include": [
+        "美国汽油均价、价格高点和消费者影响"
+      ],
+      "exclude": [
+        "其他国家油价和仅讨论原油期货的报道"
+      ],
+      "status": "active"
+    },
+    {
+      "topic_id": "us-iran-conflict",
+      "name": "美伊冲突",
+      "aliases": [],
+      "parent_id": "governance-law",
+      "definition": "美国与伊朗之间的军事冲突、互袭和谈判关系。",
+      "include": [
+        "美伊军事行动、停火谈判和冲突外溢影响"
+      ],
+      "exclude": [
+        "一般中东油价和无美伊关系的地区冲突"
+      ],
+      "status": "active"
+    },
+    {
+      "topic_id": "prospective-student-financial-literacy",
+      "name": "准大学生财商教育",
+      "aliases": [],
+      "parent_id": "education-youth",
+      "definition": "面向高中毕业生和大学新生的预算、消费、理财与风险教育。",
+      "include": [
+        "准大学生消费规划、金钱观和校园贷防范教育"
+      ],
+      "exclude": [
+        "成年人投资理财和一般高校课程"
+      ],
+      "status": "active"
+    },
+    {
+      "topic_id": "post-gaokao-consumption",
+      "name": "后高考消费",
+      "aliases": [],
+      "parent_id": "economy-market",
+      "definition": "高考结束后考生在数码、旅行、培训和社交等方面的集中消费。",
+      "include": [
+        "准大学生暑期消费、商家高考促销和消费趋势"
+      ],
+      "exclude": [
+        "普通学生日常消费和高考招生政策"
+      ],
+      "status": "active"
+    },
+    {
+      "topic_id": "campus-loan-prevention",
+      "name": "校园贷防范",
+      "aliases": [],
+      "parent_id": "governance-law",
+      "definition": "防范非法校园贷、套路贷及针对学生的金融诈骗。",
+      "include": [
+        "校园贷风险教育、非法网贷识别和学生债务防范"
+      ],
+      "exclude": [
+        "正规助学贷款和一般消费预算"
+      ],
+      "status": "active"
+    },
+    {
+      "topic_id": "southern-medicine-study-tours",
+      "name": "南药科普研学",
+      "aliases": [],
+      "parent_id": "education-youth",
+      "definition": "以海南南药识别、种植和文化体验为内容的科普研学。",
+      "include": [
+        "南药识药课程、林下观察和研学实践"
+      ],
+      "exclude": [
+        "临床中医诊疗和一般农业观光"
+      ],
+      "status": "active"
+    },
+    {
+      "topic_id": "childrens-public-classes",
+      "name": "少儿公益课堂",
+      "aliases": [],
+      "parent_id": "education-youth",
+      "definition": "公共文化或教育机构面向儿童免费提供的课外课程。",
+      "include": [
+        "少儿公益课程、暑期课堂和免费兴趣培训"
+      ],
+      "exclude": [
+        "学校常规课程和商业付费培训"
+      ],
+      "status": "active"
+    },
+    {
+      "topic_id": "sports-tourism-integration",
+      "name": "体育旅游融合",
+      "aliases": [],
+      "parent_id": "tourism-consumption",
+      "definition": "以体育赛事和运动体验带动旅游停留、消费与目的地产品开发。",
+      "include": [
+        "跟着赛事旅游、体旅产品和赛事引流消费"
+      ],
+      "exclude": [
+        "纯竞技成绩和与体育无关的普通旅游"
+      ],
+      "status": "active"
+    },
+    {
+      "topic_id": "family-sports-tourism",
+      "name": "亲子赛事旅游",
+      "aliases": [],
+      "parent_id": "tourism-consumption",
+      "definition": "家庭因参与或观看赛事形成的亲子旅行和消费。",
+      "include": [
+        "家庭参赛、亲子度假、赛后停留与研学"
+      ],
+      "exclude": [
+        "成年人单独参赛和普通亲子观光"
+      ],
+      "status": "active"
+    },
+    {
+      "topic_id": "haikou-cold-spring-tourism",
+      "name": "海口冷泉旅游",
+      "aliases": [],
+      "parent_id": "tourism-consumption",
+      "definition": "围绕海口天然冷泉形成的戏水、康养和近郊旅游体验。",
+      "include": [
+        "海口冷泉景点、游玩路线、设施和提示"
+      ],
+      "exclude": [
+        "温泉旅游和非海口地区冷泉"
+      ],
+      "status": "active"
+    },
+    {
+      "topic_id": "wetland-birdwatching",
+      "name": "湿地观鸟",
+      "aliases": [],
+      "parent_id": "ecology-climate",
+      "definition": "在湿地生态系统中观察、记录和保护鸟类的活动。",
+      "include": [
+        "湿地鸟类资源、观鸟路线和生态摄影"
+      ],
+      "exclude": [
+        "一般湿地游览和非鸟类野生动物观察"
+      ],
+      "status": "active"
     }
   ]
 }

@@ -1,0 +1,108 @@
+{
+  "schema_version": 9,
+  "item_id": "hndaily-20260721-58466-19720956",
+  "published_date": "2026-07-21",
+  "collected_date": "2026-07-21",
+  "page_number": "003",
+  "page_name": "民生新闻",
+  "page_sequence": 9,
+  "author": "海南日报全媒体记者刘阳秀",
+  "enrichment_status": "complete",
+  "scope": "hainan",
+  "scope_evidence": "昌江黎族自治县推出一系列暑期文旅活动",
+  "subjects": [
+    {
+      "subject_id": "subject-13e96945ff34dd",
+      "name": "昌江黎族自治县旅游和文化广电体育局",
+      "type": "government",
+      "role": "暑期文旅活动信息发布部门",
+      "evidence": "昌江黎族自治县旅游和文化广电体育局"
+    }
+  ],
+  "locations": [
+    {
+      "location_id": "hainan",
+      "name": "海南省",
+      "code": "460000",
+      "level": "province",
+      "evidence": "海南日报全媒体记者"
+    },
+    {
+      "location_id": "hainan-changjiang",
+      "name": "昌江黎族自治县",
+      "code": "469026",
+      "level": "county",
+      "evidence": "昌江黎族自治县"
+    }
+  ],
+  "topic_profile": {
+    "primary": {
+      "name": "暑期文旅活动",
+      "evidence": "暑期文旅活动"
+    },
+    "secondary": [
+      {
+        "name": "体育赛事",
+        "evidence": "体育赛事"
+      },
+      {
+        "name": "海滩派对",
+        "evidence": "海滩派对"
+      }
+    ]
+  },
+  "resolved_topics": [
+    {
+      "topic_id": "summer-cultural-tourism",
+      "name": "暑期文旅活动",
+      "relation": "primary",
+      "path": [
+        "旅游与消费",
+        "暑期文旅活动"
+      ],
+      "evidence": "暑期文旅活动"
+    },
+    {
+      "topic_id": "sports-events",
+      "name": "体育与赛事",
+      "relation": "secondary",
+      "path": [
+        "体育与赛事"
+      ],
+      "evidence": "体育赛事"
+    },
+    {
+      "topic_id": "tourism-consumption",
+      "name": "旅游与消费",
+      "relation": "secondary",
+      "path": [
+        "旅游与消费"
+      ],
+      "evidence": "海滩派对"
+    }
+  ],
+  "content_form": "news",
+  "legacy_topics": [],
+  "events": [
+    {
+      "name": "全国五子棋青少年锦标赛",
+      "evidence": "全国五子棋青少年锦标赛"
+    },
+    {
+      "name": "昌江“木棉红杯”青少年U系列羽毛球年度积分公开赛（第三站）",
+      "evidence": "昌江“木棉红杯”青少年U系列羽毛球年度积分公开赛（第三站）"
+    },
+    {
+      "name": "昌江全民健身篮球赛",
+      "evidence": "昌江全民健身篮球赛"
+    }
+  ],
+  "plans": [],
+  "block": {
+    "source": "海南日报",
+    "title": "昌江暑期多场文旅活动等你来",
+    "content": "本报讯 （海南日报全媒体记者刘阳秀）7月中旬至8月，昌江黎族自治县推出一系列暑期文旅活动，涵盖羽毛球、篮球、围棋等运动的多项全国性和省级体育赛事，同步开启海滩派对、非遗市集等休闲体验，为市民游客提供多元化的夏日选择。这是海南日报全媒体记者近日从昌江黎族自治县旅游和文化广电体育局获悉的。\n\n7月19日至21日，全国五子棋青少年锦标赛在棋子湾旅游度假区举行，设U8至U14多个年龄组别，来自全国各地的青少年棋手展开多轮积分对战。7月24日至7月26日，昌江“木棉红杯”青少年U系列羽毛球年度积分公开赛（第三站）将在昌江工人文化宫举行，比赛设置24个竞赛小项。同期，昌江全民健身篮球赛在昌江木棉体育公园开赛，面向该县各行各业篮球爱好者开放，不限专业门槛。\n\n海滩派对与非遗市集同步开启。7月18日至8月8日每周六晚，棋子湾旅游度假区大角公园举办“夏品芒果香·夏夜放肆嗨”海滩派对。",
+    "ai_summary": "昌江7月中旬至8月推出五子棋、羽毛球、篮球赛事及海滩派对，为暑期游客提供体育和休闲体验。",
+    "original_url": "http://news.hndaily.cn/html/2026-07/21/content_58466_19720956.htm"
+  }
+}

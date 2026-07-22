@@ -1,0 +1,86 @@
+{
+  "schema_version": 9,
+  "item_id": "hndaily-20260721-58468-19720979",
+  "published_date": "2026-07-21",
+  "collected_date": "2026-07-21",
+  "page_number": "005",
+  "page_name": "中国/世界新闻",
+  "page_sequence": 4,
+  "author": "记者赵家淞 于艾岑",
+  "enrichment_status": "complete",
+  "scope": "foreign",
+  "scope_evidence": "正式就任英国首相",
+  "subjects": [
+    {
+      "subject_id": "subject-5b76167a42cc42",
+      "name": "伯纳姆",
+      "type": "person",
+      "role": "英国工党党首、英国首相",
+      "evidence": "英国工党党首伯纳姆"
+    },
+    {
+      "subject_id": "subject-158b28503760af",
+      "name": "斯塔默",
+      "type": "person",
+      "role": "卸任英国首相",
+      "evidence": "斯塔默20日早些时候向国王递交辞呈"
+    },
+    {
+      "subject_id": "subject-69611436506659",
+      "name": "英国工党",
+      "type": "organization",
+      "role": "执政党",
+      "evidence": "英国工党"
+    }
+  ],
+  "locations": [],
+  "topic_profile": {
+    "primary": {
+      "name": "英国首相更替",
+      "evidence": "就任英国首相"
+    },
+    "secondary": [
+      {
+        "name": "英国工党",
+        "evidence": "英国工党"
+      }
+    ]
+  },
+  "resolved_topics": [
+    {
+      "topic_id": "uk-prime-minister-transition",
+      "name": "英国首相更替",
+      "relation": "primary",
+      "path": [
+        "治理与法治",
+        "英国首相更替"
+      ],
+      "evidence": "就任英国首相"
+    },
+    {
+      "topic_id": "governance-law",
+      "name": "治理与法治",
+      "relation": "secondary",
+      "path": [
+        "治理与法治"
+      ],
+      "evidence": "英国工党"
+    }
+  ],
+  "content_form": "news",
+  "legacy_topics": [],
+  "events": [
+    {
+      "name": "伯纳姆就任英国首相",
+      "evidence": "伯纳姆就任英国首相"
+    }
+  ],
+  "plans": [],
+  "block": {
+    "source": "海南日报",
+    "title": "伯纳姆就任英国首相",
+    "content": "新华社伦敦7月20日电 （记者赵家淞 于艾岑）英国工党党首伯纳姆20日在白金汉宫接受国王查尔斯三世授权组建新政府，正式就任英国首相。\n\n伯纳姆2001年首次当选议会下院议员，曾任文化大臣和卫生大臣。2017年，他辞去议员职务，出任大曼彻斯特市长，并两次获连任。今年6月，他通过补选重返议会下院。7月17日，他当选工党党首。\n\n今年5月，工党在英国地方选举中遭遇重挫，党内要求时任首相斯塔默辞职的呼声不断上升。斯塔默6月22日宣布辞去工党党首职务，并表示将在继任者产生后卸任首相。斯塔默20日早些时候向国王递交辞呈。",
+    "ai_summary": "英国工党党首伯纳姆获国王授权组建新政府并正式出任英国首相，接替辞职的斯塔默。",
+    "original_url": "http://news.hndaily.cn/html/2026-07/21/content_58468_19720979.htm"
+  }
+}

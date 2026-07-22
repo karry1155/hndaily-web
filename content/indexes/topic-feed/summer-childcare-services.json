@@ -2,11 +2,78 @@
   "topic_id": "summer-childcare-services",
   "name": "暑期托管服务",
   "parent_id": "society-public-services",
-  "article_count": 1,
-  "primary_count": 1,
+  "article_count": 2,
+  "primary_count": 2,
   "detail_path": "/topics/summer-childcare-services/",
   "definition": "聚合以“暑期托管服务”为主要议题的报道、进展与解释。",
   "primary_items": [
+    {
+      "item_id": "hndaily-20260721-58469-19720987",
+      "published_date": "2026-07-21",
+      "page_number": "006",
+      "page_name": "教育周刊",
+      "page_sequence": 2,
+      "title": "安全“童”行 快乐一“夏”",
+      "ai_summary": "五指山9个爱心托管站同步开班，为困境儿童等重点群体提供免费暑期托管，并把防溺水等安全教育作为第一课。",
+      "scope": "hainan",
+      "enrichment_status": "complete",
+      "subjects": [
+        {
+          "subject_id": "subject-92c72f66a1433f",
+          "name": "五指山市爱心托管站",
+          "type": "project",
+          "role": "公益暑期托管服务项目",
+          "evidence": "五指山市爱心托管站"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan-wuzhishan",
+          "name": "五指山市",
+          "code": "469001",
+          "level": "county",
+          "evidence": "五指山市"
+        }
+      ],
+      "topics": [
+        {
+          "topic_id": "summer-childcare-services",
+          "name": "暑期托管服务",
+          "relation": "primary",
+          "path": [
+            "社会与公共服务",
+            "暑期托管服务"
+          ],
+          "evidence": "公益性暑期托管服务"
+        },
+        {
+          "topic_id": "emergency-safety",
+          "name": "应急与安全",
+          "relation": "secondary",
+          "path": [
+            "应急与安全"
+          ],
+          "evidence": "安全教育"
+        },
+        {
+          "topic_id": "emergency-safety",
+          "name": "应急与安全",
+          "relation": "secondary",
+          "path": [
+            "应急与安全"
+          ],
+          "evidence": "防溺水教育"
+        }
+      ],
+      "events": [
+        {
+          "name": "五指山市9个爱心托管站暑期开班",
+          "evidence": "五指山市9个乡镇、社区爱心托管站同步开班"
+        }
+      ],
+      "plans": [],
+      "detail_path": "/items/2026-07-21/hndaily-20260721-58469-19720987/"
+    },
     {
       "item_id": "hndaily-20260720-58464-19717498",
       "published_date": "2026-07-20",

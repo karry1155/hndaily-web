@@ -1,0 +1,93 @@
+{
+  "schema_version": 9,
+  "item_id": "hndaily-20260721-58466-19720951",
+  "published_date": "2026-07-21",
+  "collected_date": "2026-07-21",
+  "page_number": "003",
+  "page_name": "民生新闻",
+  "page_sequence": 4,
+  "author": "海南日报全媒体记者黄富国",
+  "enrichment_status": "complete",
+  "scope": "mixed",
+  "scope_evidence": "包含韩国、匈牙利、西班牙、俄罗斯等15个国家的22名外籍篮球队员",
+  "subjects": [],
+  "locations": [
+    {
+      "location_id": "hainan",
+      "name": "海南省",
+      "code": "460000",
+      "level": "province",
+      "evidence": "海南自贸港"
+    },
+    {
+      "location_id": "hainan-wuzhishan",
+      "name": "五指山市",
+      "code": "469001",
+      "level": "county",
+      "evidence": "五指山市文体中心"
+    }
+  ],
+  "topic_profile": {
+    "primary": {
+      "name": "国际篮球交流",
+      "evidence": "中外、省内外体育交流桥梁"
+    },
+    "secondary": [
+      {
+        "name": "青少年篮球",
+        "evidence": "助力青少年篮球普及发展"
+      },
+      {
+        "name": "全民健身",
+        "evidence": "推动全民篮球运动提质升级"
+      }
+    ]
+  },
+  "resolved_topics": [
+    {
+      "topic_id": "international-basketball-exchange",
+      "name": "国际篮球交流",
+      "relation": "primary",
+      "path": [
+        "体育与赛事",
+        "国际篮球交流"
+      ],
+      "evidence": "中外、省内外体育交流桥梁"
+    },
+    {
+      "topic_id": "youth-basketball",
+      "name": "青少年篮球",
+      "relation": "secondary",
+      "path": [
+        "体育与赛事",
+        "青少年篮球"
+      ],
+      "evidence": "助力青少年篮球普及发展"
+    },
+    {
+      "topic_id": "sports-events",
+      "name": "体育与赛事",
+      "relation": "secondary",
+      "path": [
+        "体育与赛事"
+      ],
+      "evidence": "推动全民篮球运动提质升级"
+    }
+  ],
+  "content_form": "news",
+  "legacy_topics": [],
+  "events": [
+    {
+      "name": "2026年海南五指山篮球公开赛",
+      "evidence": "2026年海南五指山篮球公开赛"
+    }
+  ],
+  "plans": [],
+  "block": {
+    "source": "海南日报",
+    "title": "2026年海南五指山篮球公开赛开赛",
+    "content": "本报讯 （海南日报全媒体记者黄富国）近日，2026年海南五指山篮球公开赛在五指山市文体中心火热开赛。\n\n本次赛事吸引120名运动员同场竞技，包含韩国、匈牙利、西班牙、俄罗斯等15个国家的22名外籍篮球队员，以篮球搭建中外、省内外体育交流桥梁，彰显海南自贸港开放包容、活力无限的城市风采。\n\n赛事组别覆盖全年龄段，设U6、U7、U8、U9、U10、U11、U12以及成年组全年龄段赛事，全方位展现篮球运动魅力，助力青少年篮球普及发展，推动全民篮球运动提质升级。\n\n本次五指山篮球公开赛不仅搭建了中外体育文化交流的优质平台，更有力地推动全民健身普及，为海南自贸港文体旅高质量发展注入强劲动能。",
+    "ai_summary": "2026年海南五指山篮球公开赛吸引120名运动员，其中22名外籍球员来自15个国家，赛事覆盖儿童至成年组。",
+    "original_url": "http://news.hndaily.cn/html/2026-07/21/content_58466_19720951.htm"
+  }
+}

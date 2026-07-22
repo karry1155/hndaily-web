@@ -2,11 +2,93 @@
   "topic_id": "governance-law",
   "name": "治理与法治",
   "parent_id": null,
-  "article_count": 1,
-  "primary_count": 1,
+  "article_count": 4,
+  "primary_count": 2,
   "detail_path": "/topics/governance-law/",
   "definition": "政府治理、法治建设、监督执纪与公共制度。",
   "primary_items": [
+    {
+      "item_id": "hndaily-20260721-58464-19720922",
+      "published_date": "2026-07-21",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 3,
+      "title": "部署安全生产、生态环境保护等工作",
+      "ai_summary": "海南省政府部署地质灾害防治、安全生产和生态环保整改，并要求加快科技创新、国企改革和年度重点任务落实。",
+      "scope": "hainan",
+      "enrichment_status": "complete",
+      "subjects": [
+        {
+          "subject_id": "subject-6a6500510b9352",
+          "name": "刘小明",
+          "type": "person",
+          "role": "省长、会议主持人",
+          "evidence": "省长刘小明主持会议"
+        },
+        {
+          "subject_id": "subject-e6efb803abde7b",
+          "name": "省政府",
+          "type": "government",
+          "role": "常务会议召开方",
+          "evidence": "八届省政府第101次常务会议召开"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "守好海南生态家底"
+        },
+        {
+          "location_id": "hainan-haikou",
+          "name": "海口市",
+          "code": "460100",
+          "level": "prefecture",
+          "evidence": "本报海口7月20日讯"
+        }
+      ],
+      "topics": [
+        {
+          "topic_id": "safety-ecology-remediation",
+          "name": "安全生产与生态整改",
+          "relation": "primary",
+          "path": [
+            "治理与法治",
+            "安全生产与生态整改"
+          ],
+          "evidence": "部署安全生产、生态环境保护等工作"
+        },
+        {
+          "topic_id": "technology-innovation",
+          "name": "科技与创新",
+          "relation": "secondary",
+          "path": [
+            "科技与创新"
+          ],
+          "evidence": "奋力开创全省科技创新工作新局面"
+        },
+        {
+          "topic_id": "state-owned-enterprise-reform",
+          "name": "国企改革",
+          "relation": "secondary",
+          "path": [
+            "治理与法治",
+            "国企改革"
+          ],
+          "evidence": "扎实推进新一轮改革各项部署落地见效"
+        }
+      ],
+      "events": [
+        {
+          "name": "八届省政府第101次常务会议",
+          "evidence": "八届省政府第101次常务会议"
+        }
+      ],
+      "plans": [],
+      "detail_path": "/items/2026-07-21/hndaily-20260721-58464-19720922/"
+    },
     {
       "item_id": "hndaily-20260720-58466-19717530",
       "published_date": "2026-07-20",
@@ -57,5 +139,148 @@
       "detail_path": "/items/2026-07-20/hndaily-20260720-58466-19717530/"
     }
   ],
-  "secondary_items": []
+  "secondary_items": [
+    {
+      "item_id": "hndaily-20260721-58469-19720986",
+      "published_date": "2026-07-21",
+      "page_number": "006",
+      "page_name": "教育周刊",
+      "page_sequence": 1,
+      "title": "准大学生要修财商课",
+      "ai_summary": "海南准大学生暑期消费升温，家长和高校需通过预算规划、刚需排序及风险教育帮助学生远离攀比和校园贷。",
+      "scope": "hainan",
+      "enrichment_status": "complete",
+      "subjects": [],
+      "locations": [
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "海南准大学生"
+        },
+        {
+          "location_id": "hainan-haikou",
+          "name": "海口市",
+          "code": "460100",
+          "level": "prefecture",
+          "evidence": "海口准大学生小吴"
+        },
+        {
+          "location_id": "hainan-dingan",
+          "name": "定安县",
+          "code": "469021",
+          "level": "county",
+          "evidence": "定安准大学生小黄"
+        }
+      ],
+      "topics": [
+        {
+          "topic_id": "prospective-student-financial-literacy",
+          "name": "准大学生财商教育",
+          "relation": "primary",
+          "path": [
+            "教育与青年",
+            "准大学生财商教育"
+          ],
+          "evidence": "财商启蒙课"
+        },
+        {
+          "topic_id": "post-gaokao-consumption",
+          "name": "后高考消费",
+          "relation": "secondary",
+          "path": [
+            "经济与市场",
+            "后高考消费"
+          ],
+          "evidence": "后高考消费"
+        },
+        {
+          "topic_id": "campus-loan-prevention",
+          "name": "校园贷防范",
+          "relation": "secondary",
+          "path": [
+            "治理与法治",
+            "校园贷防范"
+          ],
+          "evidence": "校园贷、非法网贷等财务陷阱"
+        }
+      ],
+      "events": [],
+      "plans": [],
+      "detail_path": "/items/2026-07-21/hndaily-20260721-58469-19720986/"
+    },
+    {
+      "item_id": "hndaily-20260721-58464-19720921",
+      "published_date": "2026-07-21",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 2,
+      "title": "部署学习教育、建设现代化人民城市等工作",
+      "ai_summary": "海南部署推进城市体检和城市更新、改善物业与便民服务，同时继续整改学习教育突出问题。",
+      "scope": "hainan",
+      "enrichment_status": "complete",
+      "subjects": [
+        {
+          "subject_id": "subject-c16ce72a1d41ff",
+          "name": "省政府党组",
+          "type": "government",
+          "role": "会议召开方",
+          "evidence": "省政府党组（扩大）会议暨理论学习中心组学习会议召开"
+        },
+        {
+          "subject_id": "subject-6a6500510b9352",
+          "name": "刘小明",
+          "type": "person",
+          "role": "省政府党组书记、省长、会议主持人",
+          "evidence": "省政府党组书记、省长刘小明主持会议"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "海南自由贸易港"
+        },
+        {
+          "location_id": "hainan-haikou",
+          "name": "海口市",
+          "code": "460100",
+          "level": "prefecture",
+          "evidence": "本报海口7月20日讯"
+        }
+      ],
+      "topics": [
+        {
+          "topic_id": "transport-cities",
+          "name": "交通与城市",
+          "relation": "primary",
+          "path": [
+            "交通与城市"
+          ],
+          "evidence": "一体化推进城市体检和城市更新"
+        },
+        {
+          "topic_id": "grassroots-cadre-education",
+          "name": "基层干部教育",
+          "relation": "secondary",
+          "path": [
+            "治理与法治",
+            "基层干部教育"
+          ],
+          "evidence": "抓好对领导干部特别是基层党员、干部的教育培训"
+        }
+      ],
+      "events": [
+        {
+          "name": "省政府党组（扩大）会议暨理论学习中心组学习会议",
+          "evidence": "省政府党组（扩大）会议暨理论学习中心组学习会议"
+        }
+      ],
+      "plans": [],
+      "detail_path": "/items/2026-07-21/hndaily-20260721-58464-19720921/"
+    }
+  ]
 }

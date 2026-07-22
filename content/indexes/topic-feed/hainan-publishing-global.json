@@ -1,0 +1,70 @@
+{
+  "topic_id": "hainan-publishing-global",
+  "name": "海南出版走出去",
+  "parent_id": "free-trade-opening",
+  "article_count": 1,
+  "primary_count": 1,
+  "detail_path": "/topics/hainan-publishing-global/",
+  "definition": "海南出版机构和出版物通过境外平台开展国际传播与市场拓展。",
+  "primary_items": [
+    {
+      "item_id": "hndaily-20260721-58465-19720938",
+      "published_date": "2026-07-21",
+      "page_number": "002",
+      "page_name": "本省新闻",
+      "page_sequence": 3,
+      "title": "海南省出版发行集团携600余册精品出版物亮相香港书展",
+      "ai_summary": "海南省出版发行集团携600余册出版物参加第36届香港书展，集中展示自贸港建设与海南历史文化成果。",
+      "scope": "mixed",
+      "enrichment_status": "complete",
+      "subjects": [
+        {
+          "subject_id": "subject-c793b0824435a9",
+          "name": "海南省出版发行集团",
+          "type": "company",
+          "role": "香港书展参展方",
+          "evidence": "海南省出版发行集团携600余册精品出版物亮相中国内地出版区"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "海南自贸港建设"
+        }
+      ],
+      "topics": [
+        {
+          "topic_id": "hainan-publishing-global",
+          "name": "海南出版走出去",
+          "relation": "primary",
+          "path": [
+            "自贸港与开放",
+            "海南出版走出去"
+          ],
+          "evidence": "开辟中国原创作品“走出去”新路径"
+        },
+        {
+          "topic_id": "culture-history",
+          "name": "文化与历史",
+          "relation": "secondary",
+          "path": [
+            "文化与历史"
+          ],
+          "evidence": "海南历史人文"
+        }
+      ],
+      "events": [
+        {
+          "name": "第36届香港书展",
+          "evidence": "第36届香港书展"
+        }
+      ],
+      "plans": [],
+      "detail_path": "/items/2026-07-21/hndaily-20260721-58465-19720938/"
+    }
+  ],
+  "secondary_items": []
+}

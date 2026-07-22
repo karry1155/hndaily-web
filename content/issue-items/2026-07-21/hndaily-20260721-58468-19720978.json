@@ -1,0 +1,86 @@
+{
+  "schema_version": 9,
+  "item_id": "hndaily-20260721-58468-19720978",
+  "published_date": "2026-07-21",
+  "collected_date": "2026-07-21",
+  "page_number": "005",
+  "page_name": "中国/世界新闻",
+  "page_sequence": 3,
+  "author": "记者黄河",
+  "enrichment_status": "complete",
+  "scope": "foreign",
+  "scope_evidence": "俄罗斯总统普京20日签署总统令",
+  "subjects": [
+    {
+      "subject_id": "subject-8954bf1fcf4cf1",
+      "name": "普京",
+      "type": "person",
+      "role": "俄罗斯总统、总统令签署人",
+      "evidence": "俄罗斯总统普京20日签署总统令"
+    },
+    {
+      "subject_id": "subject-e01f689289aaaf",
+      "name": "俄罗斯",
+      "type": "government",
+      "role": "对中国公民延长免签政策的国家",
+      "evidence": "俄罗斯对中国公民的入境免签政策"
+    },
+    {
+      "subject_id": "subject-6ab12e7fc6b27e",
+      "name": "中国外交部",
+      "type": "government",
+      "role": "中方免签政策发布部门",
+      "evidence": "中国外交部发言人郭嘉昆"
+    }
+  ],
+  "locations": [],
+  "topic_profile": {
+    "primary": {
+      "name": "中俄免签政策",
+      "evidence": "免签政策"
+    },
+    "secondary": [
+      {
+        "name": "人员往来便利化",
+        "evidence": "便利中俄人员往来"
+      }
+    ]
+  },
+  "resolved_topics": [
+    {
+      "topic_id": "china-russia-visa-free",
+      "name": "中俄免签政策",
+      "relation": "primary",
+      "path": [
+        "自贸港与开放",
+        "中俄免签政策"
+      ],
+      "evidence": "免签政策"
+    },
+    {
+      "topic_id": "free-trade-opening",
+      "name": "自贸港与开放",
+      "relation": "secondary",
+      "path": [
+        "自贸港与开放"
+      ],
+      "evidence": "便利中俄人员往来"
+    }
+  ],
+  "content_form": "news",
+  "legacy_topics": [],
+  "events": [
+    {
+      "name": "俄罗斯延长中国公民免签政策至2027年底",
+      "evidence": "俄罗斯延长中国公民免签政策至2027年底"
+    }
+  ],
+  "plans": [],
+  "block": {
+    "source": "海南日报",
+    "title": "俄罗斯延长中国公民免签政策至2027年底",
+    "content": "新华社莫斯科7月20日电 （记者黄河）俄罗斯总统普京20日签署总统令，将俄罗斯对中国公民的入境免签政策延长至2027年12月31日。相关文件已在俄法律信息网站发布。\n\n中国外交部发言人郭嘉昆5月20日表示，为持续便利中俄人员往来，中方决定将对俄罗斯免签政策延长至2027年12月31日。",
+    "ai_summary": "俄罗斯将中国公民入境免签政策延长至2027年12月31日，中国此前也延长了对俄罗斯公民免签安排。",
+    "original_url": "http://news.hndaily.cn/html/2026-07/21/content_58468_19720978.htm"
+  }
+}

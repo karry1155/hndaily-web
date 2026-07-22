@@ -2,7 +2,7 @@
   "topic_id": "grassroots-chinese-medicine",
   "name": "基层中医",
   "parent_id": "health-medicine",
-  "article_count": 1,
+  "article_count": 2,
   "primary_count": 1,
   "detail_path": "/topics/grassroots-chinese-medicine/",
   "definition": "聚合以“基层中医”为主要议题的报道、进展与解释。",
@@ -78,5 +78,75 @@
       "detail_path": "/items/2026-07-19/hndaily-20260719-58465-19716171/"
     }
   ],
-  "secondary_items": []
+  "secondary_items": [
+    {
+      "item_id": "hndaily-20260721-58469-19720990",
+      "published_date": "2026-07-21",
+      "page_number": "006",
+      "page_name": "教育周刊",
+      "page_sequence": 3,
+      "title": "林下探秘识南药",
+      "ai_summary": "屯昌在乌坡镇开展南药科普研学，20多名儿童通过识药、标本参观和植物拓印了解本土中医药文化。",
+      "scope": "hainan",
+      "enrichment_status": "complete",
+      "subjects": [
+        {
+          "subject_id": "subject-69df0b20282774",
+          "name": "屯昌县六一社会工作服务社",
+          "type": "organization",
+          "role": "科普研学志愿服务组织",
+          "evidence": "屯昌县六一社会工作服务社"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan-tunchang",
+          "name": "屯昌县",
+          "code": "469022",
+          "level": "county",
+          "evidence": "屯昌县"
+        }
+      ],
+      "topics": [
+        {
+          "topic_id": "southern-medicine-study-tours",
+          "name": "南药科普研学",
+          "relation": "primary",
+          "path": [
+            "教育与青年",
+            "南药科普研学"
+          ],
+          "evidence": "科普研学活动"
+        },
+        {
+          "topic_id": "grassroots-chinese-medicine",
+          "name": "基层中医",
+          "relation": "secondary",
+          "path": [
+            "医疗与健康",
+            "基层中医"
+          ],
+          "evidence": "传统中医药文化"
+        },
+        {
+          "topic_id": "intangible-cultural-heritage",
+          "name": "非物质文化遗产",
+          "relation": "secondary",
+          "path": [
+            "文化与历史",
+            "非物质文化遗产"
+          ],
+          "evidence": "拓印技艺"
+        }
+      ],
+      "events": [
+        {
+          "name": "“探秘南药·趣味研学”科普研学活动",
+          "evidence": "“探秘南药·趣味研学”为主题开展科普研学活动"
+        }
+      ],
+      "plans": [],
+      "detail_path": "/items/2026-07-21/hndaily-20260721-58469-19720990/"
+    }
+  ]
 }

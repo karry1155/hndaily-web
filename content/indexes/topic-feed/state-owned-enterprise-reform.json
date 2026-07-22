@@ -1,0 +1,94 @@
+{
+  "topic_id": "state-owned-enterprise-reform",
+  "name": "国企改革",
+  "parent_id": "governance-law",
+  "article_count": 1,
+  "primary_count": 0,
+  "detail_path": "/topics/state-owned-enterprise-reform/",
+  "definition": "国有企业治理、布局、考核和经营机制改革。",
+  "primary_items": [],
+  "secondary_items": [
+    {
+      "item_id": "hndaily-20260721-58464-19720922",
+      "published_date": "2026-07-21",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 3,
+      "title": "部署安全生产、生态环境保护等工作",
+      "ai_summary": "海南省政府部署地质灾害防治、安全生产和生态环保整改，并要求加快科技创新、国企改革和年度重点任务落实。",
+      "scope": "hainan",
+      "enrichment_status": "complete",
+      "subjects": [
+        {
+          "subject_id": "subject-6a6500510b9352",
+          "name": "刘小明",
+          "type": "person",
+          "role": "省长、会议主持人",
+          "evidence": "省长刘小明主持会议"
+        },
+        {
+          "subject_id": "subject-e6efb803abde7b",
+          "name": "省政府",
+          "type": "government",
+          "role": "常务会议召开方",
+          "evidence": "八届省政府第101次常务会议召开"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "守好海南生态家底"
+        },
+        {
+          "location_id": "hainan-haikou",
+          "name": "海口市",
+          "code": "460100",
+          "level": "prefecture",
+          "evidence": "本报海口7月20日讯"
+        }
+      ],
+      "topics": [
+        {
+          "topic_id": "safety-ecology-remediation",
+          "name": "安全生产与生态整改",
+          "relation": "primary",
+          "path": [
+            "治理与法治",
+            "安全生产与生态整改"
+          ],
+          "evidence": "部署安全生产、生态环境保护等工作"
+        },
+        {
+          "topic_id": "technology-innovation",
+          "name": "科技与创新",
+          "relation": "secondary",
+          "path": [
+            "科技与创新"
+          ],
+          "evidence": "奋力开创全省科技创新工作新局面"
+        },
+        {
+          "topic_id": "state-owned-enterprise-reform",
+          "name": "国企改革",
+          "relation": "secondary",
+          "path": [
+            "治理与法治",
+            "国企改革"
+          ],
+          "evidence": "扎实推进新一轮改革各项部署落地见效"
+        }
+      ],
+      "events": [
+        {
+          "name": "八届省政府第101次常务会议",
+          "evidence": "八届省政府第101次常务会议"
+        }
+      ],
+      "plans": [],
+      "detail_path": "/items/2026-07-21/hndaily-20260721-58464-19720922/"
+    }
+  ]
+}

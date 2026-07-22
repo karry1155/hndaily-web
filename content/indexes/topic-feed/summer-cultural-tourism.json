@@ -1,0 +1,94 @@
+{
+  "topic_id": "summer-cultural-tourism",
+  "name": "暑期文旅活动",
+  "parent_id": "tourism-consumption",
+  "article_count": 1,
+  "primary_count": 1,
+  "detail_path": "/topics/summer-cultural-tourism/",
+  "definition": "暑期集中推出的旅游、休闲、文化和体验活动。",
+  "primary_items": [
+    {
+      "item_id": "hndaily-20260721-58466-19720956",
+      "published_date": "2026-07-21",
+      "page_number": "003",
+      "page_name": "民生新闻",
+      "page_sequence": 9,
+      "title": "昌江暑期多场文旅活动等你来",
+      "ai_summary": "昌江7月中旬至8月推出五子棋、羽毛球、篮球赛事及海滩派对，为暑期游客提供体育和休闲体验。",
+      "scope": "hainan",
+      "enrichment_status": "complete",
+      "subjects": [
+        {
+          "subject_id": "subject-13e96945ff34dd",
+          "name": "昌江黎族自治县旅游和文化广电体育局",
+          "type": "government",
+          "role": "暑期文旅活动信息发布部门",
+          "evidence": "昌江黎族自治县旅游和文化广电体育局"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "海南日报全媒体记者"
+        },
+        {
+          "location_id": "hainan-changjiang",
+          "name": "昌江黎族自治县",
+          "code": "469026",
+          "level": "county",
+          "evidence": "昌江黎族自治县"
+        }
+      ],
+      "topics": [
+        {
+          "topic_id": "summer-cultural-tourism",
+          "name": "暑期文旅活动",
+          "relation": "primary",
+          "path": [
+            "旅游与消费",
+            "暑期文旅活动"
+          ],
+          "evidence": "暑期文旅活动"
+        },
+        {
+          "topic_id": "sports-events",
+          "name": "体育与赛事",
+          "relation": "secondary",
+          "path": [
+            "体育与赛事"
+          ],
+          "evidence": "体育赛事"
+        },
+        {
+          "topic_id": "tourism-consumption",
+          "name": "旅游与消费",
+          "relation": "secondary",
+          "path": [
+            "旅游与消费"
+          ],
+          "evidence": "海滩派对"
+        }
+      ],
+      "events": [
+        {
+          "name": "全国五子棋青少年锦标赛",
+          "evidence": "全国五子棋青少年锦标赛"
+        },
+        {
+          "name": "昌江“木棉红杯”青少年U系列羽毛球年度积分公开赛（第三站）",
+          "evidence": "昌江“木棉红杯”青少年U系列羽毛球年度积分公开赛（第三站）"
+        },
+        {
+          "name": "昌江全民健身篮球赛",
+          "evidence": "昌江全民健身篮球赛"
+        }
+      ],
+      "plans": [],
+      "detail_path": "/items/2026-07-21/hndaily-20260721-58466-19720956/"
+    }
+  ],
+  "secondary_items": []
+}

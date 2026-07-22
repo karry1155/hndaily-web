@@ -1,0 +1,92 @@
+{
+  "topic_id": "youth-football",
+  "name": "青少年足球",
+  "parent_id": "sports-events",
+  "article_count": 1,
+  "primary_count": 1,
+  "detail_path": "/topics/youth-football/",
+  "definition": "面向儿童青少年的足球赛事、训练和普及。",
+  "primary_items": [
+    {
+      "item_id": "hndaily-20260721-58466-19720954",
+      "published_date": "2026-07-21",
+      "page_number": "003",
+      "page_name": "民生新闻",
+      "page_sequence": 7,
+      "title": "“陵水杯”海南省青少年足球邀请赛落幕",
+      "ai_summary": "2026年“陵水杯”青少年足球邀请赛吸引海口、儋州、陵水等地27支队伍、500余名球员参赛。",
+      "scope": "hainan",
+      "enrichment_status": "complete",
+      "subjects": [
+        {
+          "subject_id": "subject-25a5a22c74c6c5",
+          "name": "陵水黎族自治县足球协会",
+          "type": "organization",
+          "role": "赛事承办方",
+          "evidence": "本届邀请赛由陵水黎族自治县足球协会承办"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "海南省青少年足球邀请赛"
+        },
+        {
+          "location_id": "hainan-haikou",
+          "name": "海口市",
+          "code": "460100",
+          "level": "prefecture",
+          "evidence": "来自海口、儋州、陵水等地"
+        },
+        {
+          "location_id": "hainan-danzhou",
+          "name": "儋州市",
+          "code": "460400",
+          "level": "prefecture",
+          "evidence": "来自海口、儋州、陵水等地"
+        },
+        {
+          "location_id": "hainan-lingshui",
+          "name": "陵水黎族自治县",
+          "code": "469028",
+          "level": "county",
+          "evidence": "陵水"
+        }
+      ],
+      "topics": [
+        {
+          "topic_id": "youth-football",
+          "name": "青少年足球",
+          "relation": "primary",
+          "path": [
+            "体育与赛事",
+            "青少年足球"
+          ],
+          "evidence": "青少年足球"
+        },
+        {
+          "topic_id": "hainan-competitive-sports",
+          "name": "海南竞技体育",
+          "relation": "secondary",
+          "path": [
+            "体育与赛事",
+            "海南竞技体育"
+          ],
+          "evidence": "培育足球后备人才"
+        }
+      ],
+      "events": [
+        {
+          "name": "2026年“陵水杯”海南省青少年足球邀请赛",
+          "evidence": "2026年“陵水杯”海南省青少年足球邀请赛"
+        }
+      ],
+      "plans": [],
+      "detail_path": "/items/2026-07-21/hndaily-20260721-58466-19720954/"
+    }
+  ],
+  "secondary_items": []
+}

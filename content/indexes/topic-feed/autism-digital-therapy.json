@@ -1,0 +1,84 @@
+{
+  "topic_id": "autism-digital-therapy",
+  "name": "孤独症数字疗法",
+  "parent_id": "health-medicine",
+  "article_count": 1,
+  "primary_count": 1,
+  "detail_path": "/topics/autism-digital-therapy/",
+  "definition": "利用数字系统为孤独症儿童提供评估和个性化康复训练。",
+  "primary_items": [
+    {
+      "item_id": "hndaily-20260721-58466-19720950",
+      "published_date": "2026-07-21",
+      "page_number": "003",
+      "page_name": "民生新闻",
+      "page_sequence": 3,
+      "title": "琼海今年将为超150名孤独症患者开展数字化疗法干预",
+      "ai_summary": "琼海今年计划为不少于154名孤独症谱系障碍或全面发育迟缓儿童提供免费个性化数字疗法。",
+      "scope": "hainan",
+      "enrichment_status": "complete",
+      "subjects": [
+        {
+          "subject_id": "subject-7d2b272ae68d91",
+          "name": "琼海市卫健委",
+          "type": "government",
+          "role": "数字疗法项目推进部门",
+          "evidence": "琼海市卫健委"
+        },
+        {
+          "subject_id": "subject-c4c5108238ea34",
+          "name": "琼海市妇幼保健院",
+          "type": "organization",
+          "role": "康复服务实施机构",
+          "evidence": "琼海市妇幼保健院"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "本报讯 （海南日报全媒体记者王子豪）"
+        },
+        {
+          "location_id": "hainan-qionghai",
+          "name": "琼海市",
+          "code": "469002",
+          "level": "county",
+          "evidence": "琼海市"
+        }
+      ],
+      "topics": [
+        {
+          "topic_id": "autism-digital-therapy",
+          "name": "孤独症数字疗法",
+          "relation": "primary",
+          "path": [
+            "医疗与健康",
+            "孤独症数字疗法"
+          ],
+          "evidence": "孤独症谱系障碍儿童数字疗法干预项目"
+        },
+        {
+          "topic_id": "health-medicine",
+          "name": "医疗与健康",
+          "relation": "secondary",
+          "path": [
+            "医疗与健康"
+          ],
+          "evidence": "个性化康复训练方案"
+        }
+      ],
+      "events": [
+        {
+          "name": "琼海实施孤独症儿童数字疗法干预项目",
+          "evidence": "扎实推行0至6岁孤独症谱系障碍儿童数字化疗法干预惠民项目"
+        }
+      ],
+      "plans": [],
+      "detail_path": "/items/2026-07-21/hndaily-20260721-58466-19720950/"
+    }
+  ],
+  "secondary_items": []
+}
