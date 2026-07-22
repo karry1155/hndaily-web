@@ -394,8 +394,8 @@ class HnhotPublicationTests(unittest.TestCase):
             ".radar-shell:not(.item-shell) { padding-bottom: calc(68px + env(safe-area-inset-bottom)); }",
             mobile,
         )
-        self.assertIn("styles.css?v=20260721-responsive-context-1", base)
-        self.assertIn("app.js?v=20260721-responsive-context-1", base)
+        self.assertIn("styles.css?v=20260721-context-harmony-1", base)
+        self.assertIn("app.js?v=20260721-context-harmony-1", base)
 
     def test_item_page_groups_structured_extraction_instead_of_flat_tags(self):
         project = Path(__file__).resolve().parents[1]
@@ -405,13 +405,15 @@ class HnhotPublicationTests(unittest.TestCase):
         ).read_text(encoding="utf-8"))
         rendered = render_item(item)
 
-        self.assertIn("报道标记", rendered)
+        self.assertNotIn("报道标记", rendered)
         self.assertIn("原文结构化提取", rendered)
         self.assertIn('<details class="article-context" open>', rendered)
         self.assertIn('<summary class="article-context-summary">', rendered)
+        css = (project / "src/static/styles.css").read_text(encoding="utf-8")
+        self.assertIn("border-top: 2px solid var(--accent)", css)
+        self.assertIn("border-radius: 0", css)
         app = (project / "src/static/app.js").read_text(encoding="utf-8")
-        self.assertIn('matchMedia("(max-width: 760px)")', app)
-        self.assertIn('toggleAttribute("open", !narrowViewport.matches)', app)
+        self.assertNotIn("syncArticleContext", app)
         for label in ("主体", "事件", "规划文件", "地点", "主题"):
             self.assertIn(f">{label} <span>", rendered)
         self.assertIn("政府机构 · 沉香产业“两免两保”政策推出方", rendered)

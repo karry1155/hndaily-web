@@ -316,16 +316,6 @@ renderStarred();
 window.addEventListener("hashchange", () => activateSubject(subjectIdFromHash()));
 activateSubject(subjectIdFromHash());
 
-const articleContext = document.querySelector(".article-context");
-if (articleContext) {
-  const narrowViewport = matchMedia("(max-width: 760px)");
-  const syncArticleContext = () => {
-    articleContext.toggleAttribute("open", !narrowViewport.matches);
-  };
-  narrowViewport.addEventListener("change", syncArticleContext);
-  syncArticleContext();
-}
-
 const backToTop = document.querySelector("[data-back-to-top]");
 if (backToTop) {
   const syncBackToTop = () => {

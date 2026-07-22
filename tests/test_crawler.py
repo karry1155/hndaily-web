@@ -120,6 +120,60 @@ class CrawlerTests(unittest.TestCase):
         self.assertEqual(parsed["author"], "记者 测试")
         self.assertEqual(parsed["content"], "■ 正文中的方块行\n\n事实。")
 
+    def test_extracts_trailing_wire_byline(self):
+        crawler = load_crawler()
+        article = """
+            <founder-title>测试新华社稿件</founder-title>
+            <founder-author></founder-author>
+            <founder-content>
+                <P>第一段事实。</P>
+                <P>（新华社上海7月20日电 记者杨有宗 周蕊 唐斯琦）</P>
+            </founder-content>
+        """
+
+        parsed = crawler.parse_article(article)
+
+        self.assertEqual(parsed["author"], "记者杨有宗 周蕊 唐斯琦")
+        self.assertTrue(parsed["content"].endswith("（新华社上海7月20日电 记者杨有宗 周蕊 唐斯琦）"))
+
+    def test_extracts_trailing_photo_credit(self):
+        crawler = load_crawler()
+        article = """
+            <founder-title>测试图片稿件</founder-title>
+            <founder-author></founder-author>
+            <founder-content>
+                <P>项目已进入装饰装修收尾阶段。海南日报全媒体记者 王程龙 摄</P>
+            </founder-content>
+        """
+
+        parsed = crawler.parse_article(article)
+
+        self.assertEqual(parsed["author"], "海南日报全媒体记者 王程龙 摄")
+        self.assertEqual(
+            parsed["content"],
+            "项目已进入装饰装修收尾阶段。海南日报全媒体记者 王程龙 摄",
+        )
+
+        standalone_credit = """
+            <founder-title>测试摄影稿件</founder-title>
+            <founder-author></founder-author>
+            <founder-content><P>图片说明。</P><P>图/海南日报全媒体记者 王晖琛</P></founder-content>
+        """
+        self.assertEqual(
+            crawler.parse_article(standalone_credit)["author"],
+            "图/海南日报全媒体记者 王晖琛",
+        )
+
+        organization_credit = """
+            <founder-title>测试机构供稿</founder-title>
+            <founder-author></founder-author>
+            <founder-content><P>活动面向读者免费开放。文/图 海南省图书馆</P></founder-content>
+        """
+        self.assertEqual(
+            crawler.parse_article(organization_credit)["author"],
+            "文/图 海南省图书馆",
+        )
+
     def test_main_reuses_fresh_cached_issue_without_fetching(self):
         crawler = load_crawler()
         with tempfile.TemporaryDirectory() as tmp:

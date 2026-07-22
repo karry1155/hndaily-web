@@ -567,9 +567,8 @@ def render_item(item):
         )
     context_markup = (
         '<details class="article-context" open>'
-        '<summary class="article-context-summary"><span>'
+        '<summary class="article-context-summary">'
         '<span class="eyebrow">原文结构化提取</span>'
-        '<span class="article-context-title">报道标记</span></span>'
         '<span class="context-toggle"><span class="when-closed">展开</span>'
         '<span class="when-open">收起</span></span></summary>'
         f'<div class="context-groups">{"".join(context_groups)}</div></details>'

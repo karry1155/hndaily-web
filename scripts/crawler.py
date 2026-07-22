@@ -99,6 +99,17 @@ _BYLINE_CONTINUATION_RE = re.compile(
 _DATELINE_BYLINE_RE = re.compile(
     r"^(?:本报|新华社)[^（(\n]{0,40}?(?:讯|电)\s*[（(]\s*([^）)\n]+?)\s*[）)]"
 )
+_TRAILING_WIRE_BYLINE_RE = re.compile(
+    r"[（(]\s*新华社[^）)\n]{0,40}?电\s+([^）)\n]+?)\s*[）)]\s*$"
+)
+_TRAILING_PHOTO_CREDIT_RE = re.compile(
+    r"((?:(?:图|文)[\\/](?:图\s+)?"
+    r"(?:海南日报|海报集团)[^。！？\n]{1,80})|"
+    r"(?:(?:海南日报|海报集团)[^。！？\n]{1,80}(?:摄|摄影)))\s*$"
+)
+_TRAILING_ORG_CREDIT_RE = re.compile(
+    r"((?:图|文)[\\/](?:图|文)\s+[^。！？\n]{2,60})\s*$"
+)
 
 
 def _clean_text(s: str) -> str:
@@ -135,6 +146,18 @@ def _extract_fallback_author(paragraphs: list[str]) -> tuple[str, list[str]]:
     dateline_match = _DATELINE_BYLINE_RE.match(paragraphs[0])
     if dateline_match:
         return _clean_text(dateline_match.group(1)), paragraphs
+
+    trailing_wire_match = _TRAILING_WIRE_BYLINE_RE.search(paragraphs[-1])
+    if trailing_wire_match:
+        return _clean_text(trailing_wire_match.group(1)), paragraphs
+
+    trailing_photo_match = _TRAILING_PHOTO_CREDIT_RE.search(paragraphs[-1])
+    if trailing_photo_match:
+        return _clean_text(trailing_photo_match.group(1)), paragraphs
+
+    trailing_org_credit_match = _TRAILING_ORG_CREDIT_RE.search(paragraphs[-1])
+    if trailing_org_credit_match:
+        return _clean_text(trailing_org_credit_match.group(1)), paragraphs
 
     return "", paragraphs
 
