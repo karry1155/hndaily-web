@@ -1,0 +1,2429 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "item_id": "hndaily-20260723-58471-19727296",
+      "published_date": "2026-07-23",
+      "page_number": "008",
+      "page_name": "健康周刊",
+      "page_sequence": 5,
+      "title": "海南省医学会脑机接口与神经康复分会成立",
+      "ai_summary": "海南省医学会成立脑机接口与神经康复分会，将推动学术交流、多中心研究、临床规范、医工融合和基层继续教育。",
+      "scope": "hainan",
+      "subjects": [
+        {
+          "subject_id": "subject-organization-2a5fb023c2c57e",
+          "name": "海南省医学会脑机接口与神经康复分会",
+          "type": "organization"
+        },
+        {
+          "subject_id": "subject-person-04ae6b033123b2",
+          "name": "宋振华",
+          "type": "person"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan-haikou",
+          "name": "海口市",
+          "code": "460100",
+          "level": "prefecture",
+          "evidence": "7月18日，海南省医学会脑机接口与神经康复分会成立大会暨2026学术年会在海口召开。"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "health-medicine",
+          "category_name": "医疗与健康",
+          "evidence": "全面提升全省神经康复服务能力的同质化水平。"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-health-medicine-1846176c488bf8",
+            "name": "脑机接口",
+            "evidence": "脑机接口与神经康复领域"
+          },
+          {
+            "topic_id": "topic-health-medicine-d409eae8887dbf",
+            "name": "神经康复",
+            "evidence": "神经康复服务能力"
+          },
+          {
+            "topic_id": "topic-health-medicine-101fede58424ac",
+            "name": "医工融合",
+            "evidence": "深化医工融合机制"
+          }
+        ]
+      },
+      "events": [
+        {
+          "event_id": "event-58b79492f2fd06",
+          "name": "海南省医学会脑机接口与神经康复分会成立大会暨2026学术年会",
+          "event_type": "recurring_edition",
+          "evidence": "7月18日，海南省医学会脑机接口与神经康复分会成立大会暨2026学术年会在海口召开。",
+          "series_name": "海南省医学会脑机接口与神经康复分会学术年会",
+          "series_id": "event-series-6439dd640c3bb0",
+          "occurred_on": "2026-07-18"
+        }
+      ],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58471-19727296/"
+    },
+    {
+      "item_id": "hndaily-20260723-58471-19727295",
+      "published_date": "2026-07-23",
+      "page_number": "008",
+      "page_name": "健康周刊",
+      "page_sequence": 4,
+      "title": "当“孤独”被舞台看见",
+      "ai_summary": "孕产期身心健康戏剧巡演首次到三亚，通过互动话剧和角色工坊讨论孕检、育儿、家庭沟通与重返职场等现实压力。",
+      "scope": "domestic",
+      "subjects": [
+        {
+          "subject_id": "subject-organization-0e5237e2c3ff32",
+          "name": "复旦大学发展研究院",
+          "type": "organization"
+        },
+        {
+          "subject_id": "subject-organization-267ab8223fbfc3",
+          "name": "世界健康基金会",
+          "type": "organization"
+        },
+        {
+          "subject_id": "subject-organization-f8c50558b65bf2",
+          "name": "上海儿童医学中心海南医院",
+          "type": "organization"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan-sanya",
+          "name": "三亚市",
+          "code": "460200",
+          "level": "prefecture",
+          "evidence": "这场关于“理解”与“新生”的戏剧，第一次来到了三亚。"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "health-medicine",
+          "category_name": "医疗与健康",
+          "evidence": "以孕产期女性身心健康与社会支持为主题的健康教育戏剧巡演"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-health-medicine-513855e1b6b2fd",
+            "name": "孕产期心理健康",
+            "evidence": "孕产期女性身心健康"
+          },
+          {
+            "topic_id": "topic-health-medicine-ffdabca08046ee",
+            "name": "健康教育戏剧",
+            "evidence": "健康教育戏剧巡演"
+          },
+          {
+            "topic_id": "topic-health-medicine-923a3d9ac914d4",
+            "name": "家庭社会支持",
+            "evidence": "需要家庭支持、医疗机构与社会保障共同回应"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58471-19727295/"
+    },
+    {
+      "item_id": "hndaily-20260723-58471-19727293",
+      "published_date": "2026-07-23",
+      "page_number": "008",
+      "page_name": "健康周刊",
+      "page_sequence": 3,
+      "title": "从“翻山求医” 到“家门口诊疗”",
+      "ai_summary": "海南省人民医院托管帮扶琼中分院，使心内介入、骨科、眼科等多项诊疗在县内开展，并通过带教提升基层独立诊疗能力。",
+      "scope": "hainan",
+      "subjects": [
+        {
+          "subject_id": "subject-organization-f5d90bd3c5bc37",
+          "name": "海南省人民医院",
+          "type": "organization"
+        },
+        {
+          "subject_id": "subject-organization-8e12b21cf85165",
+          "name": "海南省人民医院琼中分院",
+          "type": "organization"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan-wuzhishan",
+          "name": "五指山市",
+          "code": "469001",
+          "level": "county",
+          "evidence": "来自琼中、定安、五指山、保亭、白沙、屯昌六家分院的医护人员"
+        },
+        {
+          "location_id": "hainan-dingan",
+          "name": "定安县",
+          "code": "469021",
+          "level": "county",
+          "evidence": "来自琼中、定安、五指山、保亭、白沙、屯昌六家分院的医护人员"
+        },
+        {
+          "location_id": "hainan-tunchang",
+          "name": "屯昌县",
+          "code": "469022",
+          "level": "county",
+          "evidence": "来自琼中、定安、五指山、保亭、白沙、屯昌六家分院的医护人员"
+        },
+        {
+          "location_id": "hainan-baisha",
+          "name": "白沙黎族自治县",
+          "code": "469025",
+          "level": "county",
+          "evidence": "来自琼中、定安、五指山、保亭、白沙、屯昌六家分院的医护人员"
+        },
+        {
+          "location_id": "hainan-baoting",
+          "name": "保亭黎族苗族自治县",
+          "code": "469029",
+          "level": "county",
+          "evidence": "来自琼中、定安、五指山、保亭、白沙、屯昌六家分院的医护人员"
+        },
+        {
+          "location_id": "hainan-qiongzhong",
+          "name": "琼中黎族苗族自治县",
+          "code": "469030",
+          "level": "county",
+          "evidence": "琼中黎族苗族自治县人民医院"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "health-medicine",
+          "category_name": "医疗与健康",
+          "evidence": "让众多此前需转诊省城的骨科疾病在县内得到有效救治。"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-health-medicine-f42aeda10e2360",
+            "name": "县域医疗帮扶",
+            "evidence": "海南省人民医院托管帮扶成效逐步体现"
+          },
+          {
+            "topic_id": "topic-health-medicine-8099e130f1d954",
+            "name": "优质医疗下沉",
+            "evidence": "医疗资源下沉的深度"
+          },
+          {
+            "topic_id": "topic-health-medicine-9749315f13684e",
+            "name": "基层诊疗能力",
+            "evidence": "切实提升了医院的技术‘造血’能力"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58471-19727293/"
+    },
+    {
+      "item_id": "hndaily-20260723-58471-19727292",
+      "published_date": "2026-07-23",
+      "page_number": "008",
+      "page_name": "健康周刊",
+      "page_sequence": 2,
+      "title": "“零关税”钇90玻璃微球的极速之旅",
+      "ai_summary": "乐城保税仓与多地海关以提前申报、预审和快速放行，将零关税钇90玻璃微球从落地海南到送达医院压缩至半天。",
+      "scope": "mixed",
+      "subjects": [
+        {
+          "subject_id": "subject-organization-52c1bd814bb04b",
+          "name": "乐城保税仓团队",
+          "type": "organization"
+        },
+        {
+          "subject_id": "subject-organization-9382ccd76699d5",
+          "name": "海口海关",
+          "type": "organization"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan-haikou",
+          "name": "海口市",
+          "code": "460100",
+          "level": "prefecture",
+          "evidence": "海口海关量身定制了“提前申报、数据预审、货到即验、快速放行”的通关模式。"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "free-trade-opening",
+          "category_name": "自贸港与开放",
+          "evidence": "面对“零关税”药械进口批次零散、临床用药时效紧迫、监管证件审核专业性要求高等痛点"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-free-trade-opening-d413a4605e27c2",
+            "name": "零关税药械通关",
+            "evidence": "“零关税”药械进口"
+          },
+          {
+            "topic_id": "topic-free-trade-opening-8ae6edd280f06f",
+            "name": "临床急需药械",
+            "evidence": "临床急需药械从申报到运抵医疗机构的时间大大缩短"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58471-19727292/"
+    },
+    {
+      "item_id": "hndaily-20260723-58471-19727291",
+      "published_date": "2026-07-23",
+      "page_number": "008",
+      "page_name": "健康周刊",
+      "page_sequence": 1,
+      "title": "乐城“零关税”钇90来了！",
+      "ai_summary": "博鳌乐城完成首批享受进口药械零关税政策的钇90玻璃微球手术，叠加特药险后可进一步降低肝癌患者自费负担。",
+      "scope": "mixed",
+      "subjects": [
+        {
+          "subject_id": "subject-organization-c66a2851265f85",
+          "name": "上海交通大学医学院附属瑞金医院海南医院（博鳌研究型医院）",
+          "type": "organization"
+        },
+        {
+          "subject_id": "subject-person-f517f0faa7c582",
+          "name": "王忠敏",
+          "type": "person"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "博鳌乐城国际医疗旅游先行区"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "health-medicine",
+          "category_name": "医疗与健康",
+          "evidence": "钇90玻璃微球主要用于治疗不可手术切除的肝癌"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-health-medicine-b60b0e6d127e03",
+            "name": "肝癌介入治疗",
+            "evidence": "肝癌介入治疗领域"
+          },
+          {
+            "topic_id": "topic-health-medicine-013533a969b356",
+            "name": "零关税药械",
+            "evidence": "进口药械“零关税”"
+          },
+          {
+            "topic_id": "topic-health-medicine-906aa94db2239d",
+            "name": "乐城特药险",
+            "evidence": "乐城全球特药险保障范围"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58471-19727291/"
+    },
+    {
+      "item_id": "hndaily-20260723-58470-19727284",
+      "published_date": "2026-07-23",
+      "page_number": "007",
+      "page_name": "中国新闻",
+      "page_sequence": 5,
+      "title": "创新“村办物业”经营模式 监督护航促发展",
+      "ai_summary": "三亚海棠区以监督规范村办物业的决策、资金和收益分配，推动村集体收益用于困难帮扶、公共设施、教育奖励和非遗传承。",
+      "scope": "hainan",
+      "subjects": [
+        {
+          "subject_id": "subject-organization-eb629bbaa01e44",
+          "name": "海棠区纪委监委",
+          "type": "organization"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan-sanya",
+          "name": "三亚市",
+          "code": "460200",
+          "level": "prefecture",
+          "evidence": "三亚市海棠区洪李村"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "governance-law",
+          "category_name": "治理与法治",
+          "evidence": "强化监督执纪与制度建设协同发力"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-governance-law-28c67f9c395553",
+            "name": "村办物业",
+            "evidence": "“村办物业”这一发展村级集体经济、促进农民增收的新路径"
+          },
+          {
+            "topic_id": "topic-governance-law-2d255186cab136",
+            "name": "农村集体经济",
+            "evidence": "新型农村集体经济发展模式"
+          },
+          {
+            "topic_id": "topic-governance-law-4e1e9c6b496203",
+            "name": "集体资金监管",
+            "evidence": "集体收益的取得、分配与使用全过程开展动态监督"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58470-19727284/"
+    },
+    {
+      "item_id": "hndaily-20260723-58470-19727283",
+      "published_date": "2026-07-23",
+      "page_number": "007",
+      "page_name": "中国新闻",
+      "page_sequence": 4,
+      "title": "让群众从“安居”迈向“宜居”",
+      "ai_summary": "三亚海棠区通过监督推动物业整治和“先试后买”选聘模式，已解决3198个服务问题，部分小区物业费降幅达30%。",
+      "scope": "hainan",
+      "subjects": [
+        {
+          "subject_id": "subject-organization-eb629bbaa01e44",
+          "name": "海棠区纪委监委",
+          "type": "organization"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan-sanya",
+          "name": "三亚市",
+          "code": "460200",
+          "level": "prefecture",
+          "evidence": "三亚海棠区某小区居民"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "governance-law",
+          "category_name": "治理与法治",
+          "evidence": "海棠区纪委监委将物业服务专项整治纳入民生监督重点"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-governance-law-9d39420a35cb90",
+            "name": "物业服务整治",
+            "evidence": "物业服务专项整治"
+          },
+          {
+            "topic_id": "topic-governance-law-2e2cbb70b40a90",
+            "name": "民生监督",
+            "evidence": "民生监督重点"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58470-19727283/"
+    },
+    {
+      "item_id": "hndaily-20260723-58470-19727279",
+      "published_date": "2026-07-23",
+      "page_number": "007",
+      "page_name": "中国新闻",
+      "page_sequence": 3,
+      "title": "促进高校毕业生等青年就业 人社部门将全力以赴",
+      "ai_summary": "人社部门将未就业高校毕业生纳入实名服务，提供岗位、指导、培训和见习，并延续企业扩岗补助、开展多轮招聘活动。",
+      "scope": "national",
+      "subjects": [
+        {
+          "subject_id": "subject-organization-b7a5c155bb3289",
+          "name": "人力资源社会保障部",
+          "type": "organization"
+        }
+      ],
+      "locations": [],
+      "topics": {
+        "primary": {
+          "category_id": "economy-market",
+          "category_name": "经济与市场",
+          "evidence": "精准保障高校毕业生等重点群体就业，是稳就业的重中之重。"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-economy-market-3c9b579e65b5c3",
+            "name": "高校毕业生就业",
+            "evidence": "如何帮助毕业生更好实现就业？"
+          },
+          {
+            "topic_id": "topic-economy-market-eceb3adbd69bb7",
+            "name": "公共就业服务",
+            "evidence": "全国就业公共服务地图"
+          },
+          {
+            "topic_id": "topic-economy-market-eba97be26087be",
+            "name": "扩岗补助",
+            "evidence": "可按每招用1人不超过1500元的标准发放一次性扩岗补助。"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [],
+      "reader_lead_count": 3,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58470-19727279/"
+    },
+    {
+      "item_id": "hndaily-20260723-58470-19727278",
+      "published_date": "2026-07-23",
+      "page_number": "007",
+      "page_name": "中国新闻",
+      "page_sequence": 2,
+      "title": "今年上半年中央企业实现利润总额1.4万亿元",
+      "ai_summary": "今年上半年中央企业实现利润总额1.4万亿元、固定资产投资同比增长4.5%，研发、产业升级、改革和重大工程建设继续推进。",
+      "scope": "national",
+      "subjects": [
+        {
+          "subject_id": "subject-organization-bd9f63c6aa5afc",
+          "name": "国务院国资委",
+          "type": "organization"
+        },
+        {
+          "subject_id": "subject-company-90135afe0ef8e3",
+          "name": "中国三峡集团",
+          "type": "company"
+        },
+        {
+          "subject_id": "subject-company-8d0fc70cea9187",
+          "name": "中国移动",
+          "type": "company"
+        }
+      ],
+      "locations": [],
+      "topics": {
+        "primary": {
+          "category_id": "economy-market",
+          "category_name": "经济与市场",
+          "evidence": "实现利润总额1.4万亿元，固定资产投资同比增长4.5%。"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-economy-market-04e68552bc0dd3",
+            "name": "中央企业经营",
+            "evidence": "中央企业生产经营稳中提质"
+          },
+          {
+            "topic_id": "topic-economy-market-9ff26bd4976a05",
+            "name": "国企科技创新",
+            "evidence": "科技攻关提速加力。"
+          },
+          {
+            "topic_id": "topic-economy-market-ae15ae40536013",
+            "name": "重大工程建设",
+            "evidence": "全力推进国家重大工程建设。"
+          }
+        ]
+      },
+      "events": [
+        {
+          "event_id": "event-8a4f8bdc0379c5",
+          "name": "中央企业负责人研讨班",
+          "event_type": "named_event",
+          "evidence": "7月21日至22日举行的中央企业负责人研讨班",
+          "occurred_on": "2026-07-21/2026-07-22"
+        }
+      ],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58470-19727278/"
+    },
+    {
+      "item_id": "hndaily-20260723-58470-19727277",
+      "published_date": "2026-07-23",
+      "page_number": "007",
+      "page_name": "中国新闻",
+      "page_sequence": 1,
+      "title": "体育强国建设“十五五”规划发布",
+      "ai_summary": "国家体育总局印发首个体育强国国家级专项规划，提出到2030年体育产业总规模突破7万亿元，并部署38项重点任务。",
+      "scope": "national",
+      "subjects": [
+        {
+          "subject_id": "subject-organization-bfd2ef46ec6899",
+          "name": "国家体育总局",
+          "type": "organization"
+        }
+      ],
+      "locations": [],
+      "topics": {
+        "primary": {
+          "category_id": "sports-events",
+          "category_name": "体育与赛事",
+          "evidence": "对“十五五”时期加快建设体育强国、推动体育高质量发展作出了系统部署。"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-sports-events-ec0a88be311d5e",
+            "name": "体育强国建设",
+            "evidence": "加快建设体育强国"
+          },
+          {
+            "topic_id": "topic-sports-events-25448570df6437",
+            "name": "全民健身",
+            "evidence": "围绕全民健身、竞技体育、青少年体育"
+          },
+          {
+            "topic_id": "topic-sports-events-cd004165f57af3",
+            "name": "体育产业",
+            "evidence": "体育产业总规模突破7万亿元。"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [
+        {
+          "plan_id": "plan-07dbd7a20f80ad",
+          "name": "《体育强国建设“十五五”规划》",
+          "mention_type": "released",
+          "evidence": "经国务院批复同意，国家体育总局近日印发《体育强国建设“十五五”规划》（以下简称《规划》）。"
+        }
+      ],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58470-19727277/"
+    },
+    {
+      "item_id": "hndaily-20260723-58469-19727269",
+      "published_date": "2026-07-23",
+      "page_number": "006",
+      "page_name": "本省新闻",
+      "page_sequence": 5,
+      "title": "来陵水，解锁夏日潮流多元玩法",
+      "ai_summary": "2026海南东南科技艺术季将于7月25日至26日在陵水举行，九大街区、科技艺术体验、论坛赛事和毕业歌会将联动文旅消费。",
+      "scope": "hainan",
+      "subjects": [
+        {
+          "subject_id": "subject-company-4ea4f7d49af229",
+          "name": "陵水黎族自治县发展控股集团有限公司",
+          "type": "company"
+        },
+        {
+          "subject_id": "subject-company-ffa7ab08e60393",
+          "name": "陵水文化广电传媒有限公司",
+          "type": "company"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan-lingshui",
+          "name": "陵水黎族自治县",
+          "code": "469028",
+          "level": "county",
+          "evidence": "2026海南东南科技艺术季将在陵水黎族自治县海归小镇开幕。"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "tourism-consumption",
+          "category_name": "旅游与消费",
+          "evidence": "构建“可看、可玩、可参与、可消费”的全场景体验。"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-tourism-consumption-a14945ec568ee9",
+            "name": "科技艺术融合",
+            "evidence": "一场科技与艺术深度融合的文旅盛会"
+          },
+          {
+            "topic_id": "topic-tourism-consumption-1bbc977aa1d532",
+            "name": "票根经济",
+            "evidence": "推动“票根经济”与文旅资源深度联动"
+          },
+          {
+            "topic_id": "topic-tourism-consumption-7777c98b163a14",
+            "name": "青年文旅消费",
+            "evidence": "精准锚定青年文旅消费需求"
+          }
+        ]
+      },
+      "events": [
+        {
+          "event_id": "event-64e468ebf78f92",
+          "name": "2026海南东南科技艺术季",
+          "event_type": "recurring_edition",
+          "evidence": "7月25日，为期2天的2026海南东南科技艺术季将在陵水黎族自治县海归小镇开幕。",
+          "series_name": "海南东南科技艺术季",
+          "series_id": "event-series-f63a28a6b23ae5",
+          "occurred_on": "2026-07-25/2026-07-26"
+        },
+        {
+          "event_id": "event-9278a968a61179",
+          "name": "2026双帆石毕业歌会",
+          "event_type": "recurring_edition",
+          "evidence": "2026双帆石\n\n毕业歌会\n\n7月25日至26日19：30—22：00",
+          "series_name": "双帆石毕业歌会",
+          "series_id": "event-series-a7f208ccd68a7a",
+          "occurred_on": "2026-07-25/2026-07-26"
+        }
+      ],
+      "plans": [],
+      "reader_lead_count": 3,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58469-19727269/"
+    },
+    {
+      "item_id": "hndaily-20260723-58469-19727266",
+      "published_date": "2026-07-23",
+      "page_number": "006",
+      "page_name": "本省新闻",
+      "page_sequence": 4,
+      "title": "全国五子棋青少年锦标赛在昌江落幕",
+      "ai_summary": "2026年全国五子棋青少年锦标赛在昌江收官，38支代表队500多名棋手参赛，并以赛事带动当地暑期文旅消费。",
+      "scope": "domestic",
+      "subjects": [
+        {
+          "subject_id": "subject-organization-1270db46928f1f",
+          "name": "昌江",
+          "type": "organization"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan-changjiang",
+          "name": "昌江黎族自治县",
+          "code": "469026",
+          "level": "county",
+          "evidence": "2026年全国五子棋青少年锦标赛在昌江黎族自治县棋子湾旅游度假区收官。"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "sports-events",
+          "category_name": "体育与赛事",
+          "evidence": "全国五子棋青少年锦标赛是我国青少年五子棋领域级别最高、规模最大、影响力最强的年度专业赛事。"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-sports-events-ccb91b335b39ac",
+            "name": "青少年五子棋",
+            "evidence": "青少年五子棋领域"
+          },
+          {
+            "topic_id": "topic-sports-events-a39c76fcdffd16",
+            "name": "赛事旅游融合",
+            "evidence": "实现“赛事+旅游”的融合发展模式"
+          }
+        ]
+      },
+      "events": [
+        {
+          "event_id": "event-35ad458c843369",
+          "name": "2026年全国五子棋青少年锦标赛",
+          "event_type": "recurring_edition",
+          "evidence": "7月22日，为期4天的2026年全国五子棋青少年锦标赛在昌江黎族自治县棋子湾旅游度假区收官。",
+          "series_name": "全国五子棋青少年锦标赛",
+          "series_id": "event-series-ef4446e1145983",
+          "occurred_on": "2026-07-19/2026-07-22"
+        }
+      ],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58469-19727266/"
+    },
+    {
+      "item_id": "hndaily-20260723-58469-19727265",
+      "published_date": "2026-07-23",
+      "page_number": "006",
+      "page_name": "本省新闻",
+      "page_sequence": 3,
+      "title": "常态化监测 守护珊瑚生态",
+      "ai_summary": "三亚珊瑚礁生态研究所对临高金牌港一期工程海域珊瑚礁群开展常态化监测，以掌握珊瑚生长和海域生态状况。",
+      "scope": "hainan",
+      "subjects": [
+        {
+          "subject_id": "subject-organization-73487c9d48f86a",
+          "name": "三亚珊瑚礁生态研究所",
+          "type": "organization"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan-lingao",
+          "name": "临高县",
+          "code": "469024",
+          "level": "county",
+          "evidence": "临高金牌港开发区"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "ecology-climate",
+          "category_name": "生态与气候",
+          "evidence": "开展常态化生态监测"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-ecology-climate-e22ad1bf98f5db",
+            "name": "珊瑚礁监测",
+            "evidence": "珊瑚礁群开展常态化生态监测"
+          },
+          {
+            "topic_id": "topic-ecology-climate-f1b853d2924b57",
+            "name": "海域生态保护",
+            "evidence": "海域生态环境状况"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58469-19727265/"
+    },
+    {
+      "item_id": "hndaily-20260723-58469-19727264",
+      "published_date": "2026-07-23",
+      "page_number": "006",
+      "page_name": "本省新闻",
+      "page_sequence": 2,
+      "title": "三亚新增一家岛内居民日用消费品免税店",
+      "ai_summary": "三亚公布第二家岛内居民日用消费品免税店，门店位于大悦城，由海南旺豪运营，将扩大本地居民进口日用品免税购物选择。",
+      "scope": "hainan",
+      "subjects": [
+        {
+          "subject_id": "subject-company-cacb0507b4fe7d",
+          "name": "海南旺豪实业有限公司",
+          "type": "company"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan-sanya",
+          "name": "三亚市",
+          "code": "460200",
+          "level": "prefecture",
+          "evidence": "门店具体选址位于三亚市吉阳区迎宾路233号大悦城B1-44号铺位"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "tourism-consumption",
+          "category_name": "旅游与消费",
+          "evidence": "进一步丰富三亚本地居民进口日用品消费选择，优化便民免税消费场景"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-tourism-consumption-770587b1d9f643",
+            "name": "居民免税购物",
+            "evidence": "岛内居民日用消费品免税店"
+          },
+          {
+            "topic_id": "topic-tourism-consumption-bdb811d6e14b35",
+            "name": "进口日用品",
+            "evidence": "可选购食品饮料、日化用品等202类进口日用商品"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [],
+      "reader_lead_count": 1,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58469-19727264/"
+    },
+    {
+      "item_id": "hndaily-20260723-58469-19727263",
+      "published_date": "2026-07-23",
+      "page_number": "006",
+      "page_name": "本省新闻",
+      "page_sequence": 1,
+      "title": "海南五部门联合开展汛期暑期专项整治",
+      "ai_summary": "海南五部门于7月至9月开展水上交通安全专项整治，重点排查港航、游艇和水上文旅风险，并实施企业自查、省级抽查和联合执法。",
+      "scope": "hainan",
+      "subjects": [
+        {
+          "subject_id": "subject-organization-45bc4b8dc80480",
+          "name": "省交通运输厅",
+          "type": "organization"
+        },
+        {
+          "subject_id": "subject-organization-db7f246dce4252",
+          "name": "海南海事局",
+          "type": "organization"
+        },
+        {
+          "subject_id": "subject-organization-c6797fffce33f4",
+          "name": "省旅游和文化广电体育厅",
+          "type": "organization"
+        },
+        {
+          "subject_id": "subject-organization-0aa7f8254c0b07",
+          "name": "省农业农村厅",
+          "type": "organization"
+        },
+        {
+          "subject_id": "subject-organization-a0844c15939f0f",
+          "name": "省海洋厅",
+          "type": "organization"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan-haikou",
+          "name": "海口市",
+          "code": "460100",
+          "level": "prefecture",
+          "evidence": "本报海口7月22日讯"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "emergency-safety",
+          "category_name": "应急与安全",
+          "evidence": "全面排查港口、航道、水路客货运输、游艇、水上文旅体验等重点领域风险隐患"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-emergency-safety-89ee20c90eb098",
+            "name": "水上交通安全",
+            "evidence": "水上交通安全专项整治行动"
+          },
+          {
+            "topic_id": "topic-emergency-safety-9cb413732e2932",
+            "name": "汛期风险防控",
+            "evidence": "聚焦汛期大风、强降雨、台风、高温极端天气安全防控"
+          }
+        ]
+      },
+      "events": [
+        {
+          "event_id": "event-0886daa4b80e29",
+          "name": "水上交通安全专项整治行动",
+          "event_type": "named_event",
+          "evidence": "定于7月至9月开展水上交通安全专项整治行动",
+          "occurred_on": "2026-07/2026-09"
+        }
+      ],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58469-19727263/"
+    },
+    {
+      "item_id": "hndaily-20260723-58468-19727255",
+      "published_date": "2026-07-23",
+      "page_number": "005",
+      "page_name": "自贸港影像志",
+      "page_sequence": 1,
+      "title": "一岛山水 一夏舒爽",
+      "ai_summary": "海南推出“夏日游海南”图片专版，推荐临高瀑布、琼中雨林、五指山漂流、定安冷泉和三亚落日等避暑体验。",
+      "scope": "hainan",
+      "subjects": [
+        {
+          "subject_id": "subject-organization-66a322e27c1ef2",
+          "name": "海南日报",
+          "type": "organization"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan-sanya",
+          "name": "三亚市",
+          "code": "460200",
+          "level": "prefecture",
+          "evidence": "相约三亚鹿回头风景区"
+        },
+        {
+          "location_id": "hainan-wuzhishan",
+          "name": "五指山市",
+          "code": "469001",
+          "level": "county",
+          "evidence": "在五指山体验峡谷漂流"
+        },
+        {
+          "location_id": "hainan-dingan",
+          "name": "定安县",
+          "code": "469021",
+          "level": "county",
+          "evidence": "前往定安久温塘火山冷泉"
+        },
+        {
+          "location_id": "hainan-lingao",
+          "name": "临高县",
+          "code": "469024",
+          "level": "county",
+          "evidence": "临高古银瀑布水流充沛、飞瀑潺潺"
+        },
+        {
+          "location_id": "hainan-qiongzhong",
+          "name": "琼中黎族苗族自治县",
+          "code": "469030",
+          "level": "county",
+          "evidence": "琼中百花岭热带雨林文化旅游区"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "tourism-consumption",
+          "category_name": "旅游与消费",
+          "evidence": "首期“夏日游海南”聚焦海南夏日之凉爽"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-tourism-consumption-539476aeb5c01f",
+            "name": "夏日避暑游",
+            "evidence": "在海南赴一场凉爽的假期。"
+          },
+          {
+            "topic_id": "topic-tourism-consumption-716353ba35f169",
+            "name": "雨林滨海旅游",
+            "evidence": "在绿意葱茏的雨林与碧波万顷的海岸间"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58468-19727255/"
+    },
+    {
+      "item_id": "hndaily-20260723-58467-19727249",
+      "published_date": "2026-07-23",
+      "page_number": "004",
+      "page_name": "民生新闻",
+      "page_sequence": 6,
+      "title": "三亚中小学学位线上申报开放",
+      "ai_summary": "三亚2026年义务教育学位线上申报于7月22日至28日开放，家长可通过海易办填报，并按后续初审、复审和录取时间办理。",
+      "scope": "hainan",
+      "subjects": [
+        {
+          "subject_id": "subject-organization-09b268830bac61",
+          "name": "三亚市教育局",
+          "type": "organization"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan-sanya",
+          "name": "三亚市",
+          "code": "460200",
+          "level": "prefecture",
+          "evidence": "三亚中小学学位线上申报开放"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "education-youth",
+          "category_name": "教育与青年",
+          "evidence": "全市中小学学位线上申报于7月22日8时至7月28日24时开放"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-education-youth-961fb677918135",
+            "name": "义务教育招生",
+            "evidence": "义务教育阶段学校招生入学工作方案"
+          },
+          {
+            "topic_id": "topic-education-youth-0caccbdab65fb6",
+            "name": "线上学位申报",
+            "evidence": "中小学学位线上申报"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [
+        {
+          "plan_id": "plan-29a56a330ac801",
+          "name": "《三亚市2026年义务教育阶段学校招生入学工作方案》",
+          "mention_type": "released",
+          "evidence": "7月21日，三亚市教育局正式对外发布《三亚市2026年义务教育阶段学校招生入学工作方案》（以下简称《方案》）"
+        }
+      ],
+      "reader_lead_count": 2,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58467-19727249/"
+    },
+    {
+      "item_id": "hndaily-20260723-58467-19727247",
+      "published_date": "2026-07-23",
+      "page_number": "004",
+      "page_name": "民生新闻",
+      "page_sequence": 5,
+      "title": "海南公布一批中招提前批投档分数线",
+      "ai_summary": "海南省考试局公布中招提前批投档分数线，涉及省属学校及多所面向全省招生的公办高中实验班。",
+      "scope": "hainan",
+      "subjects": [
+        {
+          "subject_id": "subject-organization-aaddf4ff738768",
+          "name": "省考试局",
+          "type": "organization"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan-haikou",
+          "name": "海口市",
+          "code": "460100",
+          "level": "prefecture",
+          "evidence": "本报海口7月22日讯"
+        },
+        {
+          "location_id": "hainan-sanya",
+          "name": "三亚市",
+          "code": "460200",
+          "level": "prefecture",
+          "evidence": "三亚市迎宾中学投档分数线为813.5分"
+        },
+        {
+          "location_id": "hainan-danzhou",
+          "name": "儋州市",
+          "code": "460400",
+          "level": "prefecture",
+          "evidence": "儋州市第一中学航空国防班投档分数线为842.5分"
+        },
+        {
+          "location_id": "hainan-tunchang",
+          "name": "屯昌县",
+          "code": "469022",
+          "level": "county",
+          "evidence": "屯昌县屯昌中学投档分数线为799分"
+        },
+        {
+          "location_id": "hainan-baoting",
+          "name": "保亭黎族苗族自治县",
+          "code": "469029",
+          "level": "county",
+          "evidence": "保亭黎族苗族自治县保亭中学投档分数线为757.5分"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "education-youth",
+          "category_name": "教育与青年",
+          "evidence": "我省中招还划定了一批面向全省招生的公办普通高中学校实验班投档分数线。"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-education-youth-6e23b068c96664",
+            "name": "中招投档线",
+            "evidence": "中招提前批投档分数线"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [],
+      "reader_lead_count": 1,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58467-19727247/"
+    },
+    {
+      "item_id": "hndaily-20260723-58467-19727244",
+      "published_date": "2026-07-23",
+      "page_number": "004",
+      "page_name": "民生新闻",
+      "page_sequence": 4,
+      "title": "东坡书院研学热",
+      "ai_summary": "儋州东坡书院推出暑期非遗研学课堂，以亲子共创古法竹简为特色，并计划暑期持续开展东坡文化研学。",
+      "scope": "hainan",
+      "subjects": [
+        {
+          "subject_id": "subject-organization-b267c0fd7f4e60",
+          "name": "东坡书院",
+          "type": "organization"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan-danzhou",
+          "name": "儋州市",
+          "code": "460400",
+          "level": "prefecture",
+          "evidence": "儋州市东坡书院开启首期暑期非遗研学课堂"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "culture-history",
+          "category_name": "文化与历史",
+          "evidence": "在动手实践中近距离感受传统非遗魅力。"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-culture-history-9b532f25074423",
+            "name": "东坡文化研学",
+            "evidence": "东坡文化主题研学活动"
+          },
+          {
+            "topic_id": "topic-culture-history-8f6537ee43d86c",
+            "name": "竹简制作",
+            "evidence": "以古法竹简制作为特色课程"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58467-19727244/"
+    },
+    {
+      "item_id": "hndaily-20260723-58467-19727243",
+      "published_date": "2026-07-23",
+      "page_number": "004",
+      "page_name": "民生新闻",
+      "page_sequence": 3,
+      "title": "2026世界机器人大赛华南锦标赛（三亚）开赛",
+      "ai_summary": "2026世界机器人大赛华南锦标赛在三亚举行，吸引超7000支队伍和万余名青少年选手，赛事新增海洋生态、海岛智造赛题。",
+      "scope": "mixed",
+      "subjects": [],
+      "locations": [
+        {
+          "location_id": "hainan-sanya",
+          "name": "三亚市",
+          "code": "460200",
+          "level": "prefecture",
+          "evidence": "2026世界机器人大赛华南锦标赛（三亚）在三亚红树林国际会展中心开幕。"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "sports-events",
+          "category_name": "体育与赛事",
+          "evidence": "本届参赛规模几乎翻倍，汇聚超7000支队伍、万余名青少年选手。"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-sports-events-58679237bdc296",
+            "name": "青少年机器人竞赛",
+            "evidence": "万余名青少年选手"
+          },
+          {
+            "topic_id": "topic-sports-events-0397a52123de39",
+            "name": "人工智能竞技",
+            "evidence": "覆盖人工智能、人形机器人、机甲对抗、地空协同、生态科创、工程搭建等多元方向。"
+          }
+        ]
+      },
+      "events": [
+        {
+          "event_id": "event-5afe8f9bdebd68",
+          "name": "2026世界机器人大赛华南锦标赛（三亚）",
+          "event_type": "recurring_edition",
+          "evidence": "7月21日，被誉为“机器人界奥林匹克”的2026世界机器人大赛华南锦标赛（三亚）在三亚红树林国际会展中心开幕。继2025年赛事首次落地三亚后，本届大赛全面升级，以华南区域核心锦标赛规格再度来到鹿城。\n\n本届赛事于7月20日至24日举行，为期5天。",
+          "series_name": "世界机器人大赛华南锦标赛",
+          "series_id": "event-series-83c94813c896d8",
+          "occurred_on": "2026-07-20/2026-07-24"
+        }
+      ],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58467-19727243/"
+    },
+    {
+      "item_id": "hndaily-20260723-58467-19727241",
+      "published_date": "2026-07-23",
+      "page_number": "004",
+      "page_name": "民生新闻",
+      "page_sequence": 2,
+      "title": "156人获评中职学校“海南省三好学生”",
+      "ai_summary": "海南省教育厅公布中职学校评优名单，156人获评省三好学生，78人获评省优秀学生干部。",
+      "scope": "hainan",
+      "subjects": [
+        {
+          "subject_id": "subject-organization-98752354fdf436",
+          "name": "省教育厅",
+          "type": "organization"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "中职学校“海南省三好学生”"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "education-youth",
+          "category_name": "教育与青年",
+          "evidence": "努力成长为德智体美劳全面发展的高素质技能型人才。"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-education-youth-49c2a96b6e0ce0",
+            "name": "中职学生评优",
+            "evidence": "中职学校“海南省三好学生”和“海南省优秀学生干部”评选名单"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58467-19727241/"
+    },
+    {
+      "item_id": "hndaily-20260723-58467-19727240",
+      "published_date": "2026-07-23",
+      "page_number": "004",
+      "page_name": "民生新闻",
+      "page_sequence": 1,
+      "title": "办好基础教育，海南有哪些硬招？",
+      "ai_summary": "海南通过集团化办学、设施全覆盖、特色德育、体育健康、教师培养和智慧教育平台推进基础教育扩优提质。",
+      "scope": "hainan",
+      "subjects": [
+        {
+          "subject_id": "subject-organization-192b4d7fd1e227",
+          "name": "三亚市第二小学",
+          "type": "organization"
+        },
+        {
+          "subject_id": "subject-organization-2760bbeb3a88f5",
+          "name": "海南",
+          "type": "organization"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan-haikou",
+          "name": "海口市",
+          "code": "460100",
+          "level": "prefecture",
+          "evidence": "本报海口7月22日讯"
+        },
+        {
+          "location_id": "hainan-sanya",
+          "name": "三亚市",
+          "code": "460200",
+          "level": "prefecture",
+          "evidence": "对于三亚市吉阳区红花村的家长来说"
+        },
+        {
+          "location_id": "hainan-wuzhishan",
+          "name": "五指山市",
+          "code": "469001",
+          "level": "county",
+          "evidence": "五指山市等10个县（市、区）通过国家学前教育普及普惠县评估认定"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "education-youth",
+          "category_name": "教育与青年",
+          "evidence": "海南基础教育面貌发生了全方位、开创性、格局性的变化"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-education-youth-a4c23e5a77dba4",
+            "name": "集团化办学",
+            "evidence": "集团化办学正是缩小城乡与区域差距的关键一招。"
+          },
+          {
+            "topic_id": "topic-education-youth-09529ea40bf78b",
+            "name": "智慧教育",
+            "evidence": "海南建设省级智慧教育平台"
+          },
+          {
+            "topic_id": "topic-education-youth-41f62db363b41e",
+            "name": "阳光快乐教育",
+            "evidence": "“阳光快乐”教育则是另一张名片。"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58467-19727240/"
+    },
+    {
+      "item_id": "hndaily-20260723-58466-19727234",
+      "published_date": "2026-07-23",
+      "page_number": "003",
+      "page_name": "本省新闻",
+      "page_sequence": 9,
+      "title": "伴孩子健康成长 让守岛军民安心",
+      "ai_summary": "三沙教师吴泉穗近十年驻岛执教，带领团队建立红绿蓝“三色教育”体系，并通过家长学校和课外活动支持守岛家庭。",
+      "scope": "hainan",
+      "subjects": [
+        {
+          "subject_id": "subject-person-db3d7dab2ea5da",
+          "name": "吴泉穗",
+          "type": "person"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan-sansha",
+          "name": "三沙市",
+          "code": "460300",
+          "level": "prefecture",
+          "evidence": "吴泉穗是三沙市永兴学校团支部书记、教师。"
+        },
+        {
+          "location_id": "hainan-wenchang",
+          "name": "文昌市",
+          "code": "469005",
+          "level": "county",
+          "evidence": "故事里，小蚂蚁乘船从文昌奔赴永兴岛"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "education-youth",
+          "category_name": "教育与青年",
+          "evidence": "把家国情怀、生态保护、海洋知识揉进日常。"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-education-youth-795cc26de7c3aa",
+            "name": "海岛教育",
+            "evidence": "专属海岛幼儿园的“三色教育”体系"
+          },
+          {
+            "topic_id": "topic-education-youth-6ec086f6e82ddd",
+            "name": "家校协同育人",
+            "evidence": "搭建家校协同育人桥梁"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58466-19727234/"
+    },
+    {
+      "item_id": "hndaily-20260723-58466-19727233",
+      "published_date": "2026-07-23",
+      "page_number": "003",
+      "page_name": "本省新闻",
+      "page_sequence": 8,
+      "title": "海垦昌农胡椒项目加快推进",
+      "ai_summary": "海垦昌农胡椒项目主体结构封顶并转入砌体施工，计划年底完工，投产后将形成年产1.25万吨胡椒产品加工能力。",
+      "scope": "hainan",
+      "subjects": [
+        {
+          "subject_id": "subject-company-5f7b9a4f0a85a6",
+          "name": "海南省农垦投资控股集团有限公司",
+          "type": "company"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan-haikou",
+          "name": "海口市",
+          "code": "460100",
+          "level": "prefecture",
+          "evidence": "海口国家高新技术产业开发区狮子岭工业园里"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "agriculture-rural",
+          "category_name": "农业与乡村",
+          "evidence": "昌农胡椒产业融合发展示范项目主体结构顺利封顶"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-agriculture-rural-67c52354c2a5a0",
+            "name": "胡椒加工",
+            "evidence": "年产1.25万吨胡椒系列产品的加工能力"
+          },
+          {
+            "topic_id": "topic-agriculture-rural-072a855e91e2e8",
+            "name": "农产品精深加工",
+            "evidence": "高附加值产品"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58466-19727233/"
+    },
+    {
+      "item_id": "hndaily-20260723-58466-19727232",
+      "published_date": "2026-07-23",
+      "page_number": "003",
+      "page_name": "本省新闻",
+      "page_sequence": 7,
+      "title": "“理润琼州 声动自贸”2026年省级主题示范巡回宣讲走进白沙",
+      "ai_summary": "海南省级主题示范巡回宣讲在白沙举行，约1600名干部群众和志愿者参与民族团结理论宣讲与文艺互动。",
+      "scope": "hainan",
+      "subjects": [
+        {
+          "subject_id": "subject-organization-4cc32e834cda79",
+          "name": "省委宣传部",
+          "type": "organization"
+        },
+        {
+          "subject_id": "subject-organization-664df739e6a54e",
+          "name": "省民族事务委员会",
+          "type": "organization"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan-baisha",
+          "name": "白沙黎族自治县",
+          "code": "469025",
+          "level": "county",
+          "evidence": "7月22日晚，白沙黎族自治县文化广场灯火璀璨、人头攒动"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "culture-history",
+          "category_name": "文化与历史",
+          "evidence": "一个个鲜活的宣讲案例，一段段动人的民族团结故事，让现场观众在潜移默化中深化了对中华民族共同体意识的理解与认同。"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-culture-history-87553058f14ff6",
+            "name": "民族团结宣讲",
+            "evidence": "铸牢中华民族共同体意识的理论知识入脑入心。"
+          },
+          {
+            "topic_id": "topic-culture-history-a5d86834b74706",
+            "name": "文明实践",
+            "evidence": "党的创新理论百人千场进万站文明实践活动"
+          }
+        ]
+      },
+      "events": [
+        {
+          "event_id": "event-8f1b814efa88bf",
+          "name": "“理润琼州 声动自贸”2026年省级主题示范巡回宣讲走进白沙黎族自治县暨党的创新理论百人千场进万站文明实践活动",
+          "event_type": "recurring_edition",
+          "evidence": "“理润琼州 声动自贸”2026年省级主题示范巡回宣讲走进白沙黎族自治县暨党的创新理论百人千场进万站文明实践活动在这里举行",
+          "series_name": "“理润琼州 声动自贸”省级主题示范巡回宣讲",
+          "series_id": "event-series-cc0be617361c5e",
+          "occurred_on": "2026-07-22"
+        }
+      ],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58466-19727232/"
+    },
+    {
+      "item_id": "hndaily-20260723-58466-19727231",
+      "published_date": "2026-07-23",
+      "page_number": "003",
+      "page_name": "本省新闻",
+      "page_sequence": 6,
+      "title": "三亚榴莲集中上市",
+      "ai_summary": "三亚榴莲进入集中上市旺季，多种主流品种主要销往北上广等城市并持续走俏。",
+      "scope": "hainan",
+      "subjects": [],
+      "locations": [
+        {
+          "location_id": "hainan-sanya",
+          "name": "三亚市",
+          "code": "460200",
+          "level": "prefecture",
+          "evidence": "位于三亚育才生态区的一处榴莲种植基地"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "agriculture-rural",
+          "category_name": "农业与乡村",
+          "evidence": "当前，三亚榴莲迎来集中上市旺季"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-agriculture-rural-a84e25575f9fd6",
+            "name": "榴莲种植",
+            "evidence": "三亚榴莲种植覆盖了多种主流热销品种"
+          },
+          {
+            "topic_id": "topic-agriculture-rural-4a9961a0844c73",
+            "name": "农产品销售",
+            "evidence": "主要销往北上广等一线城市"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58466-19727231/"
+    },
+    {
+      "item_id": "hndaily-20260723-58466-19727230",
+      "published_date": "2026-07-23",
+      "page_number": "003",
+      "page_name": "本省新闻",
+      "page_sequence": 5,
+      "title": "推进林草种质资源保护利用合作",
+      "ai_summary": "海南与广西林业种苗机构签署合作协议，将共建林草种质资源协同保存体系并推动特色良种跨区域试种和科研合作。",
+      "scope": "domestic",
+      "subjects": [
+        {
+          "subject_id": "subject-organization-9dd863ac3c5050",
+          "name": "海南林木种子（苗）总站",
+          "type": "organization"
+        },
+        {
+          "subject_id": "subject-organization-8e5970dc07aa43",
+          "name": "广西林业种苗站",
+          "type": "organization"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "海南林木种子（苗）总站和广西林业种苗站"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "ecology-climate",
+          "category_name": "生态与气候",
+          "evidence": "建立跨区域互为备份、冗余保存、风险共防的林草种质资源区域协同保存体系"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-ecology-climate-eefe91d4d1b530",
+            "name": "林草种质资源",
+            "evidence": "林草种质资源保护利用"
+          },
+          {
+            "topic_id": "topic-ecology-climate-fbdeb49762978f",
+            "name": "良种引种试种",
+            "evidence": "良种跨区域引种试种"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58466-19727230/"
+    },
+    {
+      "item_id": "hndaily-20260723-58466-19727229",
+      "published_date": "2026-07-23",
+      "page_number": "003",
+      "page_name": "本省新闻",
+      "page_sequence": 4,
+      "title": "我省部署“八一”期间拥军优属拥政爱民工作",
+      "ai_summary": "海南三部门部署“八一”期间双拥工作，要求开展主题活动、解决部队实际困难，并组织便民医疗和消费帮扶。",
+      "scope": "hainan",
+      "subjects": [
+        {
+          "subject_id": "subject-organization-1fbdf78e1eb624",
+          "name": "省退役军人事务厅",
+          "type": "organization"
+        },
+        {
+          "subject_id": "subject-organization-8e4ea32da9005f",
+          "name": "省军区政治工作局",
+          "type": "organization"
+        },
+        {
+          "subject_id": "subject-organization-6ca0d1322219ab",
+          "name": "省双拥办",
+          "type": "organization"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "我省部署“八一”期间拥军优属拥政爱民工作"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "society-public-services",
+          "category_name": "社会与公共服务",
+          "evidence": "要求各地各部队扎实做好“八一”期间拥军优属、拥政爱民工作"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-society-public-services-f93a701383c75d",
+            "name": "双拥工作",
+            "evidence": "拥军优属、拥政爱民工作"
+          },
+          {
+            "topic_id": "topic-society-public-services-69c00d47101587",
+            "name": "军民共建",
+            "evidence": "巩固“城连共建”“城舰共建”等军民共建机制"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [
+        {
+          "plan_id": "plan-bdcd2e2d16b325",
+          "name": "《关于做好“八一”期间拥军优属拥政爱民工作的通知》",
+          "mention_type": "released",
+          "evidence": "近日，省退役军人事务厅、省军区政治工作局、省双拥办联合印发《关于做好“八一”期间拥军优属拥政爱民工作的通知》"
+        }
+      ],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58466-19727229/"
+    },
+    {
+      "item_id": "hndaily-20260723-58466-19727228",
+      "published_date": "2026-07-23",
+      "page_number": "003",
+      "page_name": "本省新闻",
+      "page_sequence": 3,
+      "title": "初步建成以国家公园为主体的自然保护地体系",
+      "ai_summary": "海南发布林业保护利用“十五五”规划，提出到2030年森林覆盖率保持62%以上，并初步建成以国家公园为主体的自然保护地体系。",
+      "scope": "hainan",
+      "subjects": [
+        {
+          "subject_id": "subject-organization-baa206ba076c5e",
+          "name": "省林业局",
+          "type": "organization"
+        },
+        {
+          "subject_id": "subject-organization-981215adc0566e",
+          "name": "省发展改革委",
+          "type": "organization"
+        },
+        {
+          "subject_id": "subject-organization-8f63dfa4acffe0",
+          "name": "省自然资源和规划厅",
+          "type": "organization"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "《海南省林业保护利用“十五五”规划》"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "ecology-climate",
+          "category_name": "生态与气候",
+          "evidence": "全面推动生态保护与绿色发展协同共进"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-ecology-climate-9aaca39ec1eced",
+            "name": "自然保护地体系",
+            "evidence": "初步建成以国家公园为主体的自然保护地体系"
+          },
+          {
+            "topic_id": "topic-ecology-climate-1f05d9985d62d1",
+            "name": "森林质量提升",
+            "evidence": "精准提升森林质量"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [
+        {
+          "plan_id": "plan-bf3198129b48fe",
+          "name": "《海南省林业保护利用“十五五”规划》",
+          "mention_type": "released",
+          "evidence": "近日，省林业局联合省发展改革委、省自然资源和规划厅印发《海南省林业保护利用“十五五”规划》（以下简称《规划》）"
+        }
+      ],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58466-19727228/"
+    },
+    {
+      "item_id": "hndaily-20260723-58466-19727220",
+      "published_date": "2026-07-23",
+      "page_number": "003",
+      "page_name": "本省新闻",
+      "page_sequence": 2,
+      "title": "2026年下半年全省征兵工作会议召开",
+      "ai_summary": "海南部署2026年下半年征兵，重点挖掘理工类大学毕业生和技能型人才，并强化智能兵役平台、廉洁征兵和反诈骗宣传。",
+      "scope": "hainan",
+      "subjects": [],
+      "locations": [
+        {
+          "location_id": "hainan-haikou",
+          "name": "海口市",
+          "code": "460100",
+          "level": "prefecture",
+          "evidence": "本报海口7月22日讯"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "governance-law",
+          "category_name": "治理与法治",
+          "evidence": "总结上半年征兵工作成效，部署下半年征兵任务。"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-governance-law-8440c8face627e",
+            "name": "兵员征集",
+            "evidence": "着力提升兵员征集质量。"
+          },
+          {
+            "topic_id": "topic-governance-law-30971699361de6",
+            "name": "廉洁征兵",
+            "evidence": "要刚性执行廉洁征兵“十个严禁”“三十条禁令”。"
+          }
+        ]
+      },
+      "events": [
+        {
+          "event_id": "event-9bd1b53f61e4c1",
+          "name": "2026年下半年海南省征兵工作会议",
+          "event_type": "recurring_edition",
+          "evidence": "7月21日，2026年下半年海南省征兵工作会议在省军区召开。",
+          "series_name": "海南省征兵工作会议",
+          "series_id": "event-series-c380ffa522d643",
+          "occurred_on": "2026-07-21"
+        }
+      ],
+      "plans": [],
+      "reader_lead_count": 1,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58466-19727220/"
+    },
+    {
+      "item_id": "hndaily-20260723-58466-19727219",
+      "published_date": "2026-07-23",
+      "page_number": "003",
+      "page_name": "本省新闻",
+      "page_sequence": 1,
+      "title": "我省技能人才总量突破100万",
+      "ai_summary": "海南技能人才总量首次突破100万人，新五年行动方案提出到2030年总量超过140万人、高技能人才占比力争达到30%左右。",
+      "scope": "hainan",
+      "subjects": [
+        {
+          "subject_id": "subject-organization-92cb2cf3227998",
+          "name": "省政府办公厅",
+          "type": "organization"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan-haikou",
+          "name": "海口市",
+          "code": "460100",
+          "level": "prefecture",
+          "evidence": "7月22日，“海南自贸港政策解读”系列主题新闻发布会（第六十五场）——《“技能自贸港”五年行动方案（2026—2030年）》（以下简称《五年行动方案》）专场在海口举行"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "education-youth",
+          "category_name": "教育与青年",
+          "evidence": "以产业为导向，靶向培养技能人才。"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-education-youth-1224a14ffd6e11",
+            "name": "技能人才培养",
+            "evidence": "共同推动技能人才队伍建设。"
+          },
+          {
+            "topic_id": "topic-education-youth-a0b3827940fd9d",
+            "name": "职业技能培训",
+            "evidence": "推行更加灵活的“岗位需求＋技能培训＋技能评价＋就业服务”项目制培训模式"
+          }
+        ]
+      },
+      "events": [
+        {
+          "event_id": "event-d3d16f57db28d8",
+          "name": "“海南自贸港政策解读”系列主题新闻发布会（第六十五场）——《“技能自贸港”五年行动方案（2026—2030年）》",
+          "event_type": "recurring_edition",
+          "evidence": "7月22日，“海南自贸港政策解读”系列主题新闻发布会（第六十五场）——《“技能自贸港”五年行动方案（2026—2030年）》（以下简称《五年行动方案》）专场在海口举行",
+          "series_name": "“海南自贸港政策解读”系列主题新闻发布会",
+          "series_id": "event-series-0229a93eeabff3",
+          "occurred_on": "2026-07-22"
+        }
+      ],
+      "plans": [
+        {
+          "plan_id": "plan-20f97e0df56a39",
+          "name": "《“技能自贸港”五年行动方案（2026—2030年）》",
+          "mention_type": "implemented",
+          "evidence": "省政府办公厅印发实施《五年行动方案》。"
+        }
+      ],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58466-19727219/"
+    },
+    {
+      "item_id": "hndaily-20260723-58465-19727212",
+      "published_date": "2026-07-23",
+      "page_number": "002",
+      "page_name": "要闻",
+      "page_sequence": 1,
+      "title": "落实立德树人根本任务 推进基础教育扩优提质",
+      "ai_summary": "全国教育工作者围绕基础教育重要指示提出推进扩优提质、教育公平、健康教育、教师培养和协同育人的落实举措。",
+      "scope": "national",
+      "subjects": [
+        {
+          "subject_id": "subject-person-c5ed55cf74f698",
+          "name": "田祖荫",
+          "type": "person"
+        },
+        {
+          "subject_id": "subject-person-e80b04f33b564b",
+          "name": "孟晖",
+          "type": "person"
+        },
+        {
+          "subject_id": "subject-person-16a71739f3c8fb",
+          "name": "刘卫军",
+          "type": "person"
+        }
+      ],
+      "locations": [],
+      "topics": {
+        "primary": {
+          "category_id": "education-youth",
+          "category_name": "教育与青年",
+          "evidence": "大家表示，要以习近平总书记重要指示精神为指引，全面贯彻党的教育方针，凝心聚力、奋发有为，为不断开创基础教育高质量发展新局面贡献力量。"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-education-youth-4ff4bb5fb2d440",
+            "name": "教育公平",
+            "evidence": "教育公平是社会公平的重要基础。"
+          },
+          {
+            "topic_id": "topic-education-youth-b1e31598a1fa00",
+            "name": "协同育人",
+            "evidence": "基础教育是全社会的事业，需要学校、家庭、社会密切配合。"
+          }
+        ]
+      },
+      "events": [
+        {
+          "event_id": "event-e3d406f9a798d2",
+          "name": "全国基础教育工作会议",
+          "event_type": "named_event",
+          "evidence": "全国基础教育工作会议7月22日在京召开。",
+          "occurred_on": "2026-07-22"
+        }
+      ],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58465-19727212/"
+    },
+    {
+      "item_id": "hndaily-20260723-58464-19727206",
+      "published_date": "2026-07-23",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 10,
+      "title": "一岛山水 一夏舒爽",
+      "ai_summary": null,
+      "scope": "hainan",
+      "subjects": [],
+      "locations": [],
+      "topics": {
+        "primary": {
+          "category_id": "tourism-consumption",
+          "category_name": "旅游与消费",
+          "evidence": "一岛山水 一夏舒爽"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-tourism-consumption-f019076472fadd",
+            "name": "夏日避暑",
+            "evidence": "一岛山水 一夏舒爽"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58464-19727206/"
+    },
+    {
+      "item_id": "hndaily-20260723-58464-19727205",
+      "published_date": "2026-07-23",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 9,
+      "title": "办好基础教育，海南有哪些硬招？",
+      "ai_summary": null,
+      "scope": "hainan",
+      "subjects": [],
+      "locations": [
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "办好基础教育，海南有哪些硬招？"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "education-youth",
+          "category_name": "教育与青年",
+          "evidence": "办好基础教育，海南有哪些硬招？"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-education-youth-cfc280a5f4ae5a",
+            "name": "基础教育",
+            "evidence": "办好基础教育，海南有哪些硬招？"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58464-19727205/"
+    },
+    {
+      "item_id": "hndaily-20260723-58464-19727204",
+      "published_date": "2026-07-23",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 8,
+      "title": "海南“陆海”使用权首次“打包”卖",
+      "ai_summary": "东方市八所港项目以约1.56亿元成交海南首宗陆海自然资源组合供应，建设用地与海域使用权实现一体供应、同步出让。",
+      "scope": "hainan",
+      "subjects": [
+        {
+          "subject_id": "subject-company-4e971557105997",
+          "name": "海南省港航高排港港务有限公司",
+          "type": "company"
+        },
+        {
+          "subject_id": "subject-organization-8f63dfa4acffe0",
+          "name": "省自然资源和规划厅",
+          "type": "organization"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan-dongfang",
+          "name": "东方市",
+          "code": "469007",
+          "level": "county",
+          "evidence": "近日，东方市“八所港高排港区一期——码头及航道工程”项目用地用海自然资源组合供应在海南省自然资源网上交易系统挂牌成交"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "transport-cities",
+          "category_name": "交通与城市",
+          "evidence": "未来将建设通用及多用途泊位、散货船减载乘潮单向航道等，并配套码头、陆域形成、道路堆场、口岸监管仓库及水电信控等工程。"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-transport-cities-be5f75643eb451",
+            "name": "陆海组合供应",
+            "evidence": "这是海南首个“陆海”自然资源组合供应的项目"
+          },
+          {
+            "topic_id": "topic-transport-cities-d9eb0d9fff1ed5",
+            "name": "港口基础设施",
+            "evidence": "为港口基础设施类项目提供了可复制、可推广的实践经验。"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58464-19727204/"
+    },
+    {
+      "item_id": "hndaily-20260723-58464-19727203",
+      "published_date": "2026-07-23",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 7,
+      "title": "驻华使节参访海南",
+      "ai_summary": "外交部组织30余位驻华使节和国际组织代表赴海南参访，考察三亚科技产业并对接自贸港投资经贸合作。",
+      "scope": "mixed",
+      "subjects": [
+        {
+          "subject_id": "subject-organization-e74828a7bd46f8",
+          "name": "外交部",
+          "type": "organization"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan-sanya",
+          "name": "三亚市",
+          "code": "460200",
+          "level": "prefecture",
+          "evidence": "当天，代表团抵达三亚后，随即展开密集的考察交流活动。"
+        },
+        {
+          "location_id": "hainan-wuzhishan",
+          "name": "五指山市",
+          "code": "469001",
+          "level": "county",
+          "evidence": "接下来，使节团还将深入五指山、琼海、文昌等地"
+        },
+        {
+          "location_id": "hainan-qionghai",
+          "name": "琼海市",
+          "code": "469002",
+          "level": "county",
+          "evidence": "接下来，使节团还将深入五指山、琼海、文昌等地"
+        },
+        {
+          "location_id": "hainan-wenchang",
+          "name": "文昌市",
+          "code": "469005",
+          "level": "county",
+          "evidence": "接下来，使节团还将深入五指山、琼海、文昌等地"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "free-trade-opening",
+          "category_name": "自贸港与开放",
+          "evidence": "代表团出席了三亚产业对接会，围绕自贸港政策、投资经贸、热区农业、国际旅游消费等领域合作机遇，与当地政企代表进行了深入交流。"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-free-trade-opening-3dec4e0772695b",
+            "name": "驻华使节交流",
+            "evidence": "外交部组织驻华使团人员赴海南参访。"
+          },
+          {
+            "topic_id": "topic-free-trade-opening-7b02788c85e068",
+            "name": "国际投资合作",
+            "evidence": "愿积极推动本国优质资源与三亚发展需求精准对接。"
+          }
+        ]
+      },
+      "events": [
+        {
+          "event_id": "event-bad22e47a7b8dc",
+          "name": "三亚产业对接会",
+          "event_type": "named_event",
+          "evidence": "结束实地考察后，代表团出席了三亚产业对接会",
+          "occurred_on": "2026-07-22"
+        }
+      ],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58464-19727203/"
+    },
+    {
+      "item_id": "hndaily-20260723-58464-19727202",
+      "published_date": "2026-07-23",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 6,
+      "title": "亲清有道方能行稳致远",
+      "ai_summary": "评论指出海南政商交往清单以双向正负面规范推动干部主动服务、企业依法经营，并需配套监督和容错纠错机制。",
+      "scope": "hainan",
+      "subjects": [
+        {
+          "subject_id": "subject-organization-568c3d8a628b1d",
+          "name": "中共海南省委办公厅",
+          "type": "organization"
+        },
+        {
+          "subject_id": "subject-organization-f76b5474a3baf6",
+          "name": "海南省人民政府办公厅",
+          "type": "organization"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "高标准建设海南自贸港，政商关系是绕不开的话题。"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "governance-law",
+          "category_name": "治理与法治",
+          "evidence": "立规矩、明边界，双向引导方能同频共振。"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-governance-law-9aac53e670d458",
+            "name": "亲清政商关系",
+            "evidence": "良好政商交往，贵在“亲而不逾矩，清而不疏离”。"
+          },
+          {
+            "topic_id": "topic-governance-law-578c091bbbdb40",
+            "name": "监督机制",
+            "evidence": "同时，监督机制必须如影随形"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58464-19727202/"
+    },
+    {
+      "item_id": "hndaily-20260723-58464-19727200",
+      "published_date": "2026-07-23",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 5,
+      "title": "海南发布政商交往正负面清单",
+      "ai_summary": "海南印发政商交往行为指引清单，分别明确公职人员和经营主体的正负面行为，划定服务企业与廉洁交往边界。",
+      "scope": "hainan",
+      "subjects": [
+        {
+          "subject_id": "subject-organization-568c3d8a628b1d",
+          "name": "中共海南省委办公厅",
+          "type": "organization"
+        },
+        {
+          "subject_id": "subject-organization-f76b5474a3baf6",
+          "name": "海南省人民政府办公厅",
+          "type": "organization"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "《清单》的出台为政商交往明确了行为边界，既鼓励公职人员主动服务企业，又防范政商交往廉洁风险"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "governance-law",
+          "category_name": "治理与法治",
+          "evidence": "《清单》的出台为政商交往明确了行为边界"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-governance-law-26dda9b951cb30",
+            "name": "政商交往规范",
+            "evidence": "进一步厘清政商交往边界"
+          },
+          {
+            "topic_id": "topic-governance-law-5bf6000cb05611",
+            "name": "营商环境",
+            "evidence": "持续营造市场化、法治化、国际化一流营商环境。"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58464-19727200/"
+    },
+    {
+      "item_id": "hndaily-20260723-58464-19727199",
+      "published_date": "2026-07-23",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 4,
+      "title": "在生态产业化和产业生态化上下更大功夫\n探索更多更具特色更高效益的“两山”转化路径",
+      "ai_summary": "刘小明在昌江调研项目、乡村旅游与农业发展，要求统筹生态保护、文旅融合和特色产业，拓展“两山”转化路径。",
+      "scope": "hainan",
+      "subjects": [
+        {
+          "subject_id": "subject-person-84ccb15cb4e237",
+          "name": "刘小明",
+          "type": "person"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan-changjiang",
+          "name": "昌江黎族自治县",
+          "code": "469026",
+          "level": "county",
+          "evidence": "7月22日，省长刘小明在昌江黎族自治县调研经济社会发展情况。"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "ecology-climate",
+          "category_name": "生态与气候",
+          "evidence": "在生态产业化和产业生态化上下更大功夫，探索更多更具特色更高效益的“两山”转化路径。"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-ecology-climate-75a9b5d171d0ef",
+            "name": "两山转化",
+            "evidence": "听取昌江“两山”转化、农业产业发展"
+          },
+          {
+            "topic_id": "topic-ecology-climate-3d8b0bab160db2",
+            "name": "乡村旅游",
+            "evidence": "加快构建“生态+文化+体验”的乡村旅游新格局。"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58464-19727199/"
+    },
+    {
+      "item_id": "hndaily-20260723-58464-19727198",
+      "published_date": "2026-07-23",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 3,
+      "title": "高标准严要求推动学习教育走深走实\n锚定“向绿图强”扎实推动高质量发展",
+      "ai_summary": "冯飞在儋州调研学习教育与经济社会发展，要求推动绿色产业升级、建设国际海港并守牢安全生产和生态环保底线。",
+      "scope": "hainan",
+      "subjects": [
+        {
+          "subject_id": "subject-person-0c7954fba16110",
+          "name": "冯飞",
+          "type": "person"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan-danzhou",
+          "name": "儋州市",
+          "code": "460400",
+          "level": "prefecture",
+          "evidence": "7月22日，省委书记冯飞在儋州调研学习教育开展和经济社会发展情况。"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "governance-law",
+          "category_name": "治理与法治",
+          "evidence": "儋州要认认真真、扎扎实实开展好学习教育"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-governance-law-5596a8e30341ff",
+            "name": "正确政绩观教育",
+            "evidence": "结合树立和践行正确政绩观学习教育有关工作安排"
+          },
+          {
+            "topic_id": "topic-governance-law-fce097eed210e7",
+            "name": "绿色产业升级",
+            "evidence": "统筹推进传统产业绿色升级与绿色低碳产业发展"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58464-19727198/"
+    },
+    {
+      "item_id": "hndaily-20260723-58464-19727197",
+      "published_date": "2026-07-23",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 2,
+      "title": "探索走出符合实际的高质量发展之路",
+      "ai_summary": "义乌以群众首创、市场机制、政府服务和持续改革形成县域高质量发展经验，相关改革与开放模式已在更大范围推广。",
+      "scope": "national",
+      "subjects": [
+        {
+          "subject_id": "subject-person-92a054e84d6e2e",
+          "name": "习近平",
+          "type": "person"
+        },
+        {
+          "subject_id": "subject-organization-f2b483feeaa30e",
+          "name": "义乌市",
+          "type": "organization"
+        }
+      ],
+      "locations": [],
+      "topics": {
+        "primary": {
+          "category_id": "economy-market",
+          "category_name": "经济与市场",
+          "evidence": "“义乌小商品闯出大市场、做成大产业，形成‘义乌发展经验’，这是因地制宜发展县域经济的成功实践。”"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-economy-market-3af0cd95d31cbc",
+            "name": "义乌发展经验",
+            "evidence": "四十余载不凡来路，“义乌发展经验”历久弥新。"
+          },
+          {
+            "topic_id": "topic-economy-market-f4582eb752f551",
+            "name": "商贸市场改革",
+            "evidence": "义乌主动选择了内外贸并举的发展策略。"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58464-19727197/"
+    },
+    {
+      "item_id": "hndaily-20260723-58464-19727196",
+      "published_date": "2026-07-23",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 1,
+      "title": "全面贯彻党的教育方针落实立德树人根本任务\n不断开创基础教育高质量发展新局面",
+      "ai_summary": "习近平对基础教育工作作出重要指示，要求推进扩优提质、守住教育公平底线并加强高素质教师队伍建设。",
+      "scope": "national",
+      "subjects": [
+        {
+          "subject_id": "subject-person-92a054e84d6e2e",
+          "name": "习近平",
+          "type": "person"
+        },
+        {
+          "subject_id": "subject-person-b6413e1a907d63",
+          "name": "丁薛祥",
+          "type": "person"
+        }
+      ],
+      "locations": [],
+      "topics": {
+        "primary": {
+          "category_id": "education-youth",
+          "category_name": "教育与青年",
+          "evidence": "习近平强调，新征程上，要以新时代中国特色社会主义思想为指导，全面贯彻党的教育方针，落实立德树人根本任务"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-education-youth-a4176052d3b023",
+            "name": "基础教育扩优提质",
+            "evidence": "要适应人民群众新期盼，推进基础教育扩优提质，牢牢守住教育公平底线。"
+          },
+          {
+            "topic_id": "topic-education-youth-ac1ef5b97df33a",
+            "name": "教师队伍建设",
+            "evidence": "要弘扬教育家精神，加强师德师风建设，培养造就高素质专业化教师队伍。"
+          }
+        ]
+      },
+      "events": [
+        {
+          "event_id": "event-e3d406f9a798d2",
+          "name": "全国基础教育工作会议",
+          "event_type": "named_event",
+          "evidence": "全国基础教育工作会议7月22日在京召开。",
+          "occurred_on": "2026-07-22"
+        }
+      ],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58464-19727196/"
+    }
+  ]
+}

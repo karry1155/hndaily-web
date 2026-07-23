@@ -1,0 +1,112 @@
+{
+  "schema_version": 1,
+  "subject": {
+    "subject_id": "subject-person-db3d7dab2ea5da",
+    "canonical_name": "吴泉穗",
+    "type": "person",
+    "aliases": [],
+    "first_seen": "2026-07-23",
+    "last_seen": "2026-07-23"
+  },
+  "activities": [
+    {
+      "place": "永兴岛",
+      "headline": "吴泉穗带领团队建立三色教育体系",
+      "detail_kind": "object",
+      "detail": "海岛幼儿园“三色教育”体系",
+      "evidence": "她带领同事结合三沙实际，打磨出一套专属海岛幼儿园的“三色教育”体系，把家国情怀、生态保护、海洋知识揉进日常。",
+      "source": {
+        "source_item_id": "hndaily-20260723-58466-19727234",
+        "published_date": "2026-07-23",
+        "source_title": "伴孩子健康成长 让守岛军民安心",
+        "detail_path": "/items/2026-07-23/hndaily-20260723-58466-19727234/",
+        "evidence": "她带领同事结合三沙实际，打磨出一套专属海岛幼儿园的“三色教育”体系，把家国情怀、生态保护、海洋知识揉进日常。"
+      }
+    },
+    {
+      "place": "永兴岛",
+      "headline": "吴泉穗开办家长学校并丰富校园活动",
+      "detail_kind": "result",
+      "detail": "家长学校9期覆盖家长134人次",
+      "evidence": "牵头开办“家长学校”9期，覆盖家长134人次，搭建家校协同育人桥梁；连年组织开展幼儿讲故事比赛、经典诵读、爱国主义主题班会、节日文艺展演等活动",
+      "source": {
+        "source_item_id": "hndaily-20260723-58466-19727234",
+        "published_date": "2026-07-23",
+        "source_title": "伴孩子健康成长 让守岛军民安心",
+        "detail_path": "/items/2026-07-23/hndaily-20260723-58466-19727234/",
+        "evidence": "牵头开办“家长学校”9期，覆盖家长134人次，搭建家校协同育人桥梁；连年组织开展幼儿讲故事比赛、经典诵读、爱国主义主题班会、节日文艺展演等活动"
+      }
+    },
+    {
+      "occurred_on": "2017/2026",
+      "place": "永兴岛",
+      "headline": "吴泉穗长期在三沙驻岛执教",
+      "evidence": "自2017年从琼台师范学院毕业来到三沙执教，这样的生活她过了近10年。",
+      "source": {
+        "source_item_id": "hndaily-20260723-58466-19727234",
+        "published_date": "2026-07-23",
+        "source_title": "伴孩子健康成长 让守岛军民安心",
+        "detail_path": "/items/2026-07-23/hndaily-20260723-58466-19727234/",
+        "evidence": "自2017年从琼台师范学院毕业来到三沙执教，这样的生活她过了近10年。"
+      }
+    }
+  ],
+  "articles": [
+    {
+      "item_id": "hndaily-20260723-58466-19727234",
+      "published_date": "2026-07-23",
+      "page_number": "003",
+      "page_name": "本省新闻",
+      "page_sequence": 9,
+      "title": "伴孩子健康成长 让守岛军民安心",
+      "ai_summary": "三沙教师吴泉穗近十年驻岛执教，带领团队建立红绿蓝“三色教育”体系，并通过家长学校和课外活动支持守岛家庭。",
+      "scope": "hainan",
+      "subjects": [
+        {
+          "subject_id": "subject-person-db3d7dab2ea5da",
+          "name": "吴泉穗",
+          "type": "person"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan-sansha",
+          "name": "三沙市",
+          "code": "460300",
+          "level": "prefecture",
+          "evidence": "吴泉穗是三沙市永兴学校团支部书记、教师。"
+        },
+        {
+          "location_id": "hainan-wenchang",
+          "name": "文昌市",
+          "code": "469005",
+          "level": "county",
+          "evidence": "故事里，小蚂蚁乘船从文昌奔赴永兴岛"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "education-youth",
+          "category_name": "教育与青年",
+          "evidence": "把家国情怀、生态保护、海洋知识揉进日常。"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-education-youth-795cc26de7c3aa",
+            "name": "海岛教育",
+            "evidence": "专属海岛幼儿园的“三色教育”体系"
+          },
+          {
+            "topic_id": "topic-education-youth-6ec086f6e82ddd",
+            "name": "家校协同育人",
+            "evidence": "搭建家校协同育人桥梁"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58466-19727234/"
+    }
+  ]
+}

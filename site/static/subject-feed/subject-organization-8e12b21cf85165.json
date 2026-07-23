@@ -1,0 +1,142 @@
+{
+  "schema_version": 1,
+  "subject": {
+    "subject_id": "subject-organization-8e12b21cf85165",
+    "canonical_name": "海南省人民医院琼中分院",
+    "type": "organization",
+    "aliases": [
+      {
+        "name": "琼中分院",
+        "evidence": "海南省人民医院琼中分院（琼中黎族苗族自治县人民医院）（以下简称琼中分院）"
+      }
+    ],
+    "first_seen": "2026-07-23",
+    "last_seen": "2026-07-23"
+  },
+  "activities": [
+    {
+      "place": "琼中黎族苗族自治县",
+      "headline": "琼中分院常态开展白内障手术",
+      "detail_kind": "result",
+      "detail": "患者可在县内接受省级专家诊疗",
+      "evidence": "白内障手术在琼中已实现常态化开展。从过去老人无力远赴省城治疗，到如今在家门口就能接受省级专家的白内障诊疗服务",
+      "source": {
+        "source_item_id": "hndaily-20260723-58471-19727293",
+        "published_date": "2026-07-23",
+        "source_title": "从“翻山求医” 到“家门口诊疗”",
+        "detail_path": "/items/2026-07-23/hndaily-20260723-58471-19727293/",
+        "evidence": "白内障手术在琼中已实现常态化开展。从过去老人无力远赴省城治疗，到如今在家门口就能接受省级专家的白内障诊疗服务"
+      }
+    },
+    {
+      "place": "琼中黎族苗族自治县",
+      "headline": "琼中分院可独立开展部分介入手术",
+      "detail_kind": "result",
+      "detail": "能陆续独立开展白内障和冠脉介入手术",
+      "evidence": "目前，该院医生在海南省人民医院托管帮扶下，已能陆续独立开展白内障手术、冠脉介入手术等。",
+      "source": {
+        "source_item_id": "hndaily-20260723-58471-19727293",
+        "published_date": "2026-07-23",
+        "source_title": "从“翻山求医” 到“家门口诊疗”",
+        "detail_path": "/items/2026-07-23/hndaily-20260723-58471-19727293/",
+        "evidence": "目前，该院医生在海南省人民医院托管帮扶下，已能陆续独立开展白内障手术、冠脉介入手术等。"
+      }
+    }
+  ],
+  "articles": [
+    {
+      "item_id": "hndaily-20260723-58471-19727293",
+      "published_date": "2026-07-23",
+      "page_number": "008",
+      "page_name": "健康周刊",
+      "page_sequence": 3,
+      "title": "从“翻山求医” 到“家门口诊疗”",
+      "ai_summary": "海南省人民医院托管帮扶琼中分院，使心内介入、骨科、眼科等多项诊疗在县内开展，并通过带教提升基层独立诊疗能力。",
+      "scope": "hainan",
+      "subjects": [
+        {
+          "subject_id": "subject-organization-f5d90bd3c5bc37",
+          "name": "海南省人民医院",
+          "type": "organization"
+        },
+        {
+          "subject_id": "subject-organization-8e12b21cf85165",
+          "name": "海南省人民医院琼中分院",
+          "type": "organization"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan-wuzhishan",
+          "name": "五指山市",
+          "code": "469001",
+          "level": "county",
+          "evidence": "来自琼中、定安、五指山、保亭、白沙、屯昌六家分院的医护人员"
+        },
+        {
+          "location_id": "hainan-dingan",
+          "name": "定安县",
+          "code": "469021",
+          "level": "county",
+          "evidence": "来自琼中、定安、五指山、保亭、白沙、屯昌六家分院的医护人员"
+        },
+        {
+          "location_id": "hainan-tunchang",
+          "name": "屯昌县",
+          "code": "469022",
+          "level": "county",
+          "evidence": "来自琼中、定安、五指山、保亭、白沙、屯昌六家分院的医护人员"
+        },
+        {
+          "location_id": "hainan-baisha",
+          "name": "白沙黎族自治县",
+          "code": "469025",
+          "level": "county",
+          "evidence": "来自琼中、定安、五指山、保亭、白沙、屯昌六家分院的医护人员"
+        },
+        {
+          "location_id": "hainan-baoting",
+          "name": "保亭黎族苗族自治县",
+          "code": "469029",
+          "level": "county",
+          "evidence": "来自琼中、定安、五指山、保亭、白沙、屯昌六家分院的医护人员"
+        },
+        {
+          "location_id": "hainan-qiongzhong",
+          "name": "琼中黎族苗族自治县",
+          "code": "469030",
+          "level": "county",
+          "evidence": "琼中黎族苗族自治县人民医院"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "health-medicine",
+          "category_name": "医疗与健康",
+          "evidence": "让众多此前需转诊省城的骨科疾病在县内得到有效救治。"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-health-medicine-f42aeda10e2360",
+            "name": "县域医疗帮扶",
+            "evidence": "海南省人民医院托管帮扶成效逐步体现"
+          },
+          {
+            "topic_id": "topic-health-medicine-8099e130f1d954",
+            "name": "优质医疗下沉",
+            "evidence": "医疗资源下沉的深度"
+          },
+          {
+            "topic_id": "topic-health-medicine-9749315f13684e",
+            "name": "基层诊疗能力",
+            "evidence": "切实提升了医院的技术‘造血’能力"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58471-19727293/"
+    }
+  ]
+}

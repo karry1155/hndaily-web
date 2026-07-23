@@ -26,6 +26,8 @@ file under `prompts/article-enrichment/v4.3/`, and
    validation to admit an incorrect output.
 6. Run the tests, rebuild the site, and inspect the article plus subject, event,
    region, topic, plan and reader-reminder pages before reporting completion.
+7. `site/` is the versioned static deployment artifact. Keep it synchronized
+   with `content/` and include both in the same reviewed Git change.
 
 ## Contract boundary
 
@@ -53,4 +55,3 @@ labels, a second topic-resolution prompt, or a knowledge sidecar.
   `data/active-run.json`.
 - Preserve unrelated worktree changes. Never present heuristic or placeholder
   semantic data as a model result.
-

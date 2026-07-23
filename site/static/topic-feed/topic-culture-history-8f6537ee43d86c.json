@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "topic": {
+    "topic_id": "topic-culture-history-8f6537ee43d86c",
+    "name": "竹简制作",
+    "parent_id": "category-culture-history",
+    "category_id": "culture-history",
+    "article_count": 1,
+    "detail_path": "/topics/topic-culture-history-8f6537ee43d86c/"
+  },
+  "articles": [
+    {
+      "item_id": "hndaily-20260723-58467-19727244",
+      "published_date": "2026-07-23",
+      "page_number": "004",
+      "page_name": "民生新闻",
+      "page_sequence": 4,
+      "title": "东坡书院研学热",
+      "ai_summary": "儋州东坡书院推出暑期非遗研学课堂，以亲子共创古法竹简为特色，并计划暑期持续开展东坡文化研学。",
+      "scope": "hainan",
+      "subjects": [
+        {
+          "subject_id": "subject-organization-b267c0fd7f4e60",
+          "name": "东坡书院",
+          "type": "organization"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan-danzhou",
+          "name": "儋州市",
+          "code": "460400",
+          "level": "prefecture",
+          "evidence": "儋州市东坡书院开启首期暑期非遗研学课堂"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "culture-history",
+          "category_name": "文化与历史",
+          "evidence": "在动手实践中近距离感受传统非遗魅力。"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-culture-history-9b532f25074423",
+            "name": "东坡文化研学",
+            "evidence": "东坡文化主题研学活动"
+          },
+          {
+            "topic_id": "topic-culture-history-8f6537ee43d86c",
+            "name": "竹简制作",
+            "evidence": "以古法竹简制作为特色课程"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58467-19727244/"
+    }
+  ]
+}

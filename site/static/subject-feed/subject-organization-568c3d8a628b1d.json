@@ -1,0 +1,147 @@
+{
+  "schema_version": 1,
+  "subject": {
+    "subject_id": "subject-organization-568c3d8a628b1d",
+    "canonical_name": "中共海南省委办公厅",
+    "type": "organization",
+    "aliases": [],
+    "first_seen": "2026-07-23",
+    "last_seen": "2026-07-23"
+  },
+  "activities": [
+    {
+      "headline": "中共海南省委办公厅印发政商交往清单",
+      "evidence": "近日，中共海南省委办公厅、海南省人民政府办公厅印发《海南省政商交往行为指引清单》，从政、商两端列出政商交往正面、负面清单",
+      "source": {
+        "source_item_id": "hndaily-20260723-58464-19727202",
+        "published_date": "2026-07-23",
+        "source_title": "亲清有道方能行稳致远",
+        "detail_path": "/items/2026-07-23/hndaily-20260723-58464-19727202/",
+        "evidence": "近日，中共海南省委办公厅、海南省人民政府办公厅印发《海南省政商交往行为指引清单》，从政、商两端列出政商交往正面、负面清单"
+      }
+    },
+    {
+      "headline": "中共海南省委办公厅印发政商交往清单",
+      "detail_kind": "object",
+      "detail": "《海南省政商交往行为指引清单》",
+      "evidence": "近日，中共海南省委办公厅、海南省人民政府办公厅印发《海南省政商交往行为指引清单》（以下简称《清单》），列出政商交往正面、负面清单",
+      "source": {
+        "source_item_id": "hndaily-20260723-58464-19727200",
+        "published_date": "2026-07-23",
+        "source_title": "海南发布政商交往正负面清单",
+        "detail_path": "/items/2026-07-23/hndaily-20260723-58464-19727200/",
+        "evidence": "近日，中共海南省委办公厅、海南省人民政府办公厅印发《海南省政商交往行为指引清单》（以下简称《清单》），列出政商交往正面、负面清单"
+      }
+    }
+  ],
+  "articles": [
+    {
+      "item_id": "hndaily-20260723-58464-19727202",
+      "published_date": "2026-07-23",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 6,
+      "title": "亲清有道方能行稳致远",
+      "ai_summary": "评论指出海南政商交往清单以双向正负面规范推动干部主动服务、企业依法经营，并需配套监督和容错纠错机制。",
+      "scope": "hainan",
+      "subjects": [
+        {
+          "subject_id": "subject-organization-568c3d8a628b1d",
+          "name": "中共海南省委办公厅",
+          "type": "organization"
+        },
+        {
+          "subject_id": "subject-organization-f76b5474a3baf6",
+          "name": "海南省人民政府办公厅",
+          "type": "organization"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "高标准建设海南自贸港，政商关系是绕不开的话题。"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "governance-law",
+          "category_name": "治理与法治",
+          "evidence": "立规矩、明边界，双向引导方能同频共振。"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-governance-law-9aac53e670d458",
+            "name": "亲清政商关系",
+            "evidence": "良好政商交往，贵在“亲而不逾矩，清而不疏离”。"
+          },
+          {
+            "topic_id": "topic-governance-law-578c091bbbdb40",
+            "name": "监督机制",
+            "evidence": "同时，监督机制必须如影随形"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58464-19727202/"
+    },
+    {
+      "item_id": "hndaily-20260723-58464-19727200",
+      "published_date": "2026-07-23",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 5,
+      "title": "海南发布政商交往正负面清单",
+      "ai_summary": "海南印发政商交往行为指引清单，分别明确公职人员和经营主体的正负面行为，划定服务企业与廉洁交往边界。",
+      "scope": "hainan",
+      "subjects": [
+        {
+          "subject_id": "subject-organization-568c3d8a628b1d",
+          "name": "中共海南省委办公厅",
+          "type": "organization"
+        },
+        {
+          "subject_id": "subject-organization-f76b5474a3baf6",
+          "name": "海南省人民政府办公厅",
+          "type": "organization"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "《清单》的出台为政商交往明确了行为边界，既鼓励公职人员主动服务企业，又防范政商交往廉洁风险"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "governance-law",
+          "category_name": "治理与法治",
+          "evidence": "《清单》的出台为政商交往明确了行为边界"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-governance-law-26dda9b951cb30",
+            "name": "政商交往规范",
+            "evidence": "进一步厘清政商交往边界"
+          },
+          {
+            "topic_id": "topic-governance-law-5bf6000cb05611",
+            "name": "营商环境",
+            "evidence": "持续营造市场化、法治化、国际化一流营商环境。"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58464-19727200/"
+    }
+  ]
+}

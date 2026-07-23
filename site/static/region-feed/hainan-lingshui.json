@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "region": {
+    "location_id": "hainan-lingshui",
+    "name": "陵水黎族自治县",
+    "code": "469028",
+    "level": "county",
+    "article_count": 1,
+    "detail_path": "/regions/hainan-lingshui/"
+  },
+  "articles": [
+    {
+      "item_id": "hndaily-20260723-58469-19727269",
+      "published_date": "2026-07-23",
+      "page_number": "006",
+      "page_name": "本省新闻",
+      "page_sequence": 5,
+      "title": "来陵水，解锁夏日潮流多元玩法",
+      "ai_summary": "2026海南东南科技艺术季将于7月25日至26日在陵水举行，九大街区、科技艺术体验、论坛赛事和毕业歌会将联动文旅消费。",
+      "scope": "hainan",
+      "subjects": [
+        {
+          "subject_id": "subject-company-4ea4f7d49af229",
+          "name": "陵水黎族自治县发展控股集团有限公司",
+          "type": "company"
+        },
+        {
+          "subject_id": "subject-company-ffa7ab08e60393",
+          "name": "陵水文化广电传媒有限公司",
+          "type": "company"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan-lingshui",
+          "name": "陵水黎族自治县",
+          "code": "469028",
+          "level": "county",
+          "evidence": "2026海南东南科技艺术季将在陵水黎族自治县海归小镇开幕。"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "tourism-consumption",
+          "category_name": "旅游与消费",
+          "evidence": "构建“可看、可玩、可参与、可消费”的全场景体验。"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-tourism-consumption-a14945ec568ee9",
+            "name": "科技艺术融合",
+            "evidence": "一场科技与艺术深度融合的文旅盛会"
+          },
+          {
+            "topic_id": "topic-tourism-consumption-1bbc977aa1d532",
+            "name": "票根经济",
+            "evidence": "推动“票根经济”与文旅资源深度联动"
+          },
+          {
+            "topic_id": "topic-tourism-consumption-7777c98b163a14",
+            "name": "青年文旅消费",
+            "evidence": "精准锚定青年文旅消费需求"
+          }
+        ]
+      },
+      "events": [
+        {
+          "event_id": "event-64e468ebf78f92",
+          "name": "2026海南东南科技艺术季",
+          "event_type": "recurring_edition",
+          "evidence": "7月25日，为期2天的2026海南东南科技艺术季将在陵水黎族自治县海归小镇开幕。",
+          "series_name": "海南东南科技艺术季",
+          "series_id": "event-series-f63a28a6b23ae5",
+          "occurred_on": "2026-07-25/2026-07-26"
+        },
+        {
+          "event_id": "event-9278a968a61179",
+          "name": "2026双帆石毕业歌会",
+          "event_type": "recurring_edition",
+          "evidence": "2026双帆石\n\n毕业歌会\n\n7月25日至26日19：30—22：00",
+          "series_name": "双帆石毕业歌会",
+          "series_id": "event-series-a7f208ccd68a7a",
+          "occurred_on": "2026-07-25/2026-07-26"
+        }
+      ],
+      "plans": [],
+      "reader_lead_count": 3,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58469-19727269/"
+    }
+  ]
+}

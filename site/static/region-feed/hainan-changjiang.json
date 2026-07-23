@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "region": {
+    "location_id": "hainan-changjiang",
+    "name": "昌江黎族自治县",
+    "code": "469026",
+    "level": "county",
+    "article_count": 2,
+    "detail_path": "/regions/hainan-changjiang/"
+  },
+  "articles": [
+    {
+      "item_id": "hndaily-20260723-58469-19727266",
+      "published_date": "2026-07-23",
+      "page_number": "006",
+      "page_name": "本省新闻",
+      "page_sequence": 4,
+      "title": "全国五子棋青少年锦标赛在昌江落幕",
+      "ai_summary": "2026年全国五子棋青少年锦标赛在昌江收官，38支代表队500多名棋手参赛，并以赛事带动当地暑期文旅消费。",
+      "scope": "domestic",
+      "subjects": [
+        {
+          "subject_id": "subject-organization-1270db46928f1f",
+          "name": "昌江",
+          "type": "organization"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan-changjiang",
+          "name": "昌江黎族自治县",
+          "code": "469026",
+          "level": "county",
+          "evidence": "2026年全国五子棋青少年锦标赛在昌江黎族自治县棋子湾旅游度假区收官。"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "sports-events",
+          "category_name": "体育与赛事",
+          "evidence": "全国五子棋青少年锦标赛是我国青少年五子棋领域级别最高、规模最大、影响力最强的年度专业赛事。"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-sports-events-ccb91b335b39ac",
+            "name": "青少年五子棋",
+            "evidence": "青少年五子棋领域"
+          },
+          {
+            "topic_id": "topic-sports-events-a39c76fcdffd16",
+            "name": "赛事旅游融合",
+            "evidence": "实现“赛事+旅游”的融合发展模式"
+          }
+        ]
+      },
+      "events": [
+        {
+          "event_id": "event-35ad458c843369",
+          "name": "2026年全国五子棋青少年锦标赛",
+          "event_type": "recurring_edition",
+          "evidence": "7月22日，为期4天的2026年全国五子棋青少年锦标赛在昌江黎族自治县棋子湾旅游度假区收官。",
+          "series_name": "全国五子棋青少年锦标赛",
+          "series_id": "event-series-ef4446e1145983",
+          "occurred_on": "2026-07-19/2026-07-22"
+        }
+      ],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58469-19727266/"
+    },
+    {
+      "item_id": "hndaily-20260723-58464-19727199",
+      "published_date": "2026-07-23",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 4,
+      "title": "在生态产业化和产业生态化上下更大功夫\n探索更多更具特色更高效益的“两山”转化路径",
+      "ai_summary": "刘小明在昌江调研项目、乡村旅游与农业发展，要求统筹生态保护、文旅融合和特色产业，拓展“两山”转化路径。",
+      "scope": "hainan",
+      "subjects": [
+        {
+          "subject_id": "subject-person-84ccb15cb4e237",
+          "name": "刘小明",
+          "type": "person"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan-changjiang",
+          "name": "昌江黎族自治县",
+          "code": "469026",
+          "level": "county",
+          "evidence": "7月22日，省长刘小明在昌江黎族自治县调研经济社会发展情况。"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "ecology-climate",
+          "category_name": "生态与气候",
+          "evidence": "在生态产业化和产业生态化上下更大功夫，探索更多更具特色更高效益的“两山”转化路径。"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-ecology-climate-75a9b5d171d0ef",
+            "name": "两山转化",
+            "evidence": "听取昌江“两山”转化、农业产业发展"
+          },
+          {
+            "topic_id": "topic-ecology-climate-3d8b0bab160db2",
+            "name": "乡村旅游",
+            "evidence": "加快构建“生态+文化+体验”的乡村旅游新格局。"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58464-19727199/"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "topic": {
+    "topic_id": "topic-governance-law-2d255186cab136",
+    "name": "农村集体经济",
+    "parent_id": "category-governance-law",
+    "category_id": "governance-law",
+    "article_count": 1,
+    "detail_path": "/topics/topic-governance-law-2d255186cab136/"
+  },
+  "articles": [
+    {
+      "item_id": "hndaily-20260723-58470-19727284",
+      "published_date": "2026-07-23",
+      "page_number": "007",
+      "page_name": "中国新闻",
+      "page_sequence": 5,
+      "title": "创新“村办物业”经营模式 监督护航促发展",
+      "ai_summary": "三亚海棠区以监督规范村办物业的决策、资金和收益分配，推动村集体收益用于困难帮扶、公共设施、教育奖励和非遗传承。",
+      "scope": "hainan",
+      "subjects": [
+        {
+          "subject_id": "subject-organization-eb629bbaa01e44",
+          "name": "海棠区纪委监委",
+          "type": "organization"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan-sanya",
+          "name": "三亚市",
+          "code": "460200",
+          "level": "prefecture",
+          "evidence": "三亚市海棠区洪李村"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "governance-law",
+          "category_name": "治理与法治",
+          "evidence": "强化监督执纪与制度建设协同发力"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-governance-law-28c67f9c395553",
+            "name": "村办物业",
+            "evidence": "“村办物业”这一发展村级集体经济、促进农民增收的新路径"
+          },
+          {
+            "topic_id": "topic-governance-law-2d255186cab136",
+            "name": "农村集体经济",
+            "evidence": "新型农村集体经济发展模式"
+          },
+          {
+            "topic_id": "topic-governance-law-4e1e9c6b496203",
+            "name": "集体资金监管",
+            "evidence": "集体收益的取得、分配与使用全过程开展动态监督"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58470-19727284/"
+    }
+  ]
+}

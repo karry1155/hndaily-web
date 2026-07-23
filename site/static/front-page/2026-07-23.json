@@ -1,0 +1,619 @@
+{
+  "schema_version": 1,
+  "date": "2026-07-23",
+  "source": "海南日报",
+  "count": 10,
+  "national_ranking": [
+    {
+      "item_id": "hndaily-20260723-58464-19727196",
+      "published_date": "2026-07-23",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 1,
+      "title": "全面贯彻党的教育方针落实立德树人根本任务\n不断开创基础教育高质量发展新局面",
+      "ai_summary": "习近平对基础教育工作作出重要指示，要求推进扩优提质、守住教育公平底线并加强高素质教师队伍建设。",
+      "scope": "national",
+      "subjects": [
+        {
+          "subject_id": "subject-person-92a054e84d6e2e",
+          "name": "习近平",
+          "type": "person"
+        },
+        {
+          "subject_id": "subject-person-b6413e1a907d63",
+          "name": "丁薛祥",
+          "type": "person"
+        }
+      ],
+      "locations": [],
+      "topics": {
+        "primary": {
+          "category_id": "education-youth",
+          "category_name": "教育与青年",
+          "evidence": "习近平强调，新征程上，要以新时代中国特色社会主义思想为指导，全面贯彻党的教育方针，落实立德树人根本任务"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-education-youth-a4176052d3b023",
+            "name": "基础教育扩优提质",
+            "evidence": "要适应人民群众新期盼，推进基础教育扩优提质，牢牢守住教育公平底线。"
+          },
+          {
+            "topic_id": "topic-education-youth-ac1ef5b97df33a",
+            "name": "教师队伍建设",
+            "evidence": "要弘扬教育家精神，加强师德师风建设，培养造就高素质专业化教师队伍。"
+          }
+        ]
+      },
+      "events": [
+        {
+          "event_id": "event-e3d406f9a798d2",
+          "name": "全国基础教育工作会议",
+          "event_type": "named_event",
+          "evidence": "全国基础教育工作会议7月22日在京召开。",
+          "occurred_on": "2026-07-22"
+        }
+      ],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58464-19727196/",
+      "rank": 1
+    },
+    {
+      "item_id": "hndaily-20260723-58464-19727197",
+      "published_date": "2026-07-23",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 2,
+      "title": "探索走出符合实际的高质量发展之路",
+      "ai_summary": "义乌以群众首创、市场机制、政府服务和持续改革形成县域高质量发展经验，相关改革与开放模式已在更大范围推广。",
+      "scope": "national",
+      "subjects": [
+        {
+          "subject_id": "subject-person-92a054e84d6e2e",
+          "name": "习近平",
+          "type": "person"
+        },
+        {
+          "subject_id": "subject-organization-f2b483feeaa30e",
+          "name": "义乌市",
+          "type": "organization"
+        }
+      ],
+      "locations": [],
+      "topics": {
+        "primary": {
+          "category_id": "economy-market",
+          "category_name": "经济与市场",
+          "evidence": "“义乌小商品闯出大市场、做成大产业，形成‘义乌发展经验’，这是因地制宜发展县域经济的成功实践。”"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-economy-market-3af0cd95d31cbc",
+            "name": "义乌发展经验",
+            "evidence": "四十余载不凡来路，“义乌发展经验”历久弥新。"
+          },
+          {
+            "topic_id": "topic-economy-market-f4582eb752f551",
+            "name": "商贸市场改革",
+            "evidence": "义乌主动选择了内外贸并举的发展策略。"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58464-19727197/",
+      "rank": 2
+    }
+  ],
+  "world_ranking": [],
+  "items": [
+    {
+      "item_id": "hndaily-20260723-58464-19727196",
+      "published_date": "2026-07-23",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 1,
+      "title": "全面贯彻党的教育方针落实立德树人根本任务\n不断开创基础教育高质量发展新局面",
+      "ai_summary": "习近平对基础教育工作作出重要指示，要求推进扩优提质、守住教育公平底线并加强高素质教师队伍建设。",
+      "scope": "national",
+      "subjects": [
+        {
+          "subject_id": "subject-person-92a054e84d6e2e",
+          "name": "习近平",
+          "type": "person"
+        },
+        {
+          "subject_id": "subject-person-b6413e1a907d63",
+          "name": "丁薛祥",
+          "type": "person"
+        }
+      ],
+      "locations": [],
+      "topics": {
+        "primary": {
+          "category_id": "education-youth",
+          "category_name": "教育与青年",
+          "evidence": "习近平强调，新征程上，要以新时代中国特色社会主义思想为指导，全面贯彻党的教育方针，落实立德树人根本任务"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-education-youth-a4176052d3b023",
+            "name": "基础教育扩优提质",
+            "evidence": "要适应人民群众新期盼，推进基础教育扩优提质，牢牢守住教育公平底线。"
+          },
+          {
+            "topic_id": "topic-education-youth-ac1ef5b97df33a",
+            "name": "教师队伍建设",
+            "evidence": "要弘扬教育家精神，加强师德师风建设，培养造就高素质专业化教师队伍。"
+          }
+        ]
+      },
+      "events": [
+        {
+          "event_id": "event-e3d406f9a798d2",
+          "name": "全国基础教育工作会议",
+          "event_type": "named_event",
+          "evidence": "全国基础教育工作会议7月22日在京召开。",
+          "occurred_on": "2026-07-22"
+        }
+      ],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58464-19727196/"
+    },
+    {
+      "item_id": "hndaily-20260723-58464-19727197",
+      "published_date": "2026-07-23",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 2,
+      "title": "探索走出符合实际的高质量发展之路",
+      "ai_summary": "义乌以群众首创、市场机制、政府服务和持续改革形成县域高质量发展经验，相关改革与开放模式已在更大范围推广。",
+      "scope": "national",
+      "subjects": [
+        {
+          "subject_id": "subject-person-92a054e84d6e2e",
+          "name": "习近平",
+          "type": "person"
+        },
+        {
+          "subject_id": "subject-organization-f2b483feeaa30e",
+          "name": "义乌市",
+          "type": "organization"
+        }
+      ],
+      "locations": [],
+      "topics": {
+        "primary": {
+          "category_id": "economy-market",
+          "category_name": "经济与市场",
+          "evidence": "“义乌小商品闯出大市场、做成大产业，形成‘义乌发展经验’，这是因地制宜发展县域经济的成功实践。”"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-economy-market-3af0cd95d31cbc",
+            "name": "义乌发展经验",
+            "evidence": "四十余载不凡来路，“义乌发展经验”历久弥新。"
+          },
+          {
+            "topic_id": "topic-economy-market-f4582eb752f551",
+            "name": "商贸市场改革",
+            "evidence": "义乌主动选择了内外贸并举的发展策略。"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58464-19727197/"
+    },
+    {
+      "item_id": "hndaily-20260723-58464-19727198",
+      "published_date": "2026-07-23",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 3,
+      "title": "高标准严要求推动学习教育走深走实\n锚定“向绿图强”扎实推动高质量发展",
+      "ai_summary": "冯飞在儋州调研学习教育与经济社会发展，要求推动绿色产业升级、建设国际海港并守牢安全生产和生态环保底线。",
+      "scope": "hainan",
+      "subjects": [
+        {
+          "subject_id": "subject-person-0c7954fba16110",
+          "name": "冯飞",
+          "type": "person"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan-danzhou",
+          "name": "儋州市",
+          "code": "460400",
+          "level": "prefecture",
+          "evidence": "7月22日，省委书记冯飞在儋州调研学习教育开展和经济社会发展情况。"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "governance-law",
+          "category_name": "治理与法治",
+          "evidence": "儋州要认认真真、扎扎实实开展好学习教育"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-governance-law-5596a8e30341ff",
+            "name": "正确政绩观教育",
+            "evidence": "结合树立和践行正确政绩观学习教育有关工作安排"
+          },
+          {
+            "topic_id": "topic-governance-law-fce097eed210e7",
+            "name": "绿色产业升级",
+            "evidence": "统筹推进传统产业绿色升级与绿色低碳产业发展"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58464-19727198/"
+    },
+    {
+      "item_id": "hndaily-20260723-58464-19727199",
+      "published_date": "2026-07-23",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 4,
+      "title": "在生态产业化和产业生态化上下更大功夫\n探索更多更具特色更高效益的“两山”转化路径",
+      "ai_summary": "刘小明在昌江调研项目、乡村旅游与农业发展，要求统筹生态保护、文旅融合和特色产业，拓展“两山”转化路径。",
+      "scope": "hainan",
+      "subjects": [
+        {
+          "subject_id": "subject-person-84ccb15cb4e237",
+          "name": "刘小明",
+          "type": "person"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan-changjiang",
+          "name": "昌江黎族自治县",
+          "code": "469026",
+          "level": "county",
+          "evidence": "7月22日，省长刘小明在昌江黎族自治县调研经济社会发展情况。"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "ecology-climate",
+          "category_name": "生态与气候",
+          "evidence": "在生态产业化和产业生态化上下更大功夫，探索更多更具特色更高效益的“两山”转化路径。"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-ecology-climate-75a9b5d171d0ef",
+            "name": "两山转化",
+            "evidence": "听取昌江“两山”转化、农业产业发展"
+          },
+          {
+            "topic_id": "topic-ecology-climate-3d8b0bab160db2",
+            "name": "乡村旅游",
+            "evidence": "加快构建“生态+文化+体验”的乡村旅游新格局。"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58464-19727199/"
+    },
+    {
+      "item_id": "hndaily-20260723-58464-19727200",
+      "published_date": "2026-07-23",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 5,
+      "title": "海南发布政商交往正负面清单",
+      "ai_summary": "海南印发政商交往行为指引清单，分别明确公职人员和经营主体的正负面行为，划定服务企业与廉洁交往边界。",
+      "scope": "hainan",
+      "subjects": [
+        {
+          "subject_id": "subject-organization-568c3d8a628b1d",
+          "name": "中共海南省委办公厅",
+          "type": "organization"
+        },
+        {
+          "subject_id": "subject-organization-f76b5474a3baf6",
+          "name": "海南省人民政府办公厅",
+          "type": "organization"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "《清单》的出台为政商交往明确了行为边界，既鼓励公职人员主动服务企业，又防范政商交往廉洁风险"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "governance-law",
+          "category_name": "治理与法治",
+          "evidence": "《清单》的出台为政商交往明确了行为边界"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-governance-law-26dda9b951cb30",
+            "name": "政商交往规范",
+            "evidence": "进一步厘清政商交往边界"
+          },
+          {
+            "topic_id": "topic-governance-law-5bf6000cb05611",
+            "name": "营商环境",
+            "evidence": "持续营造市场化、法治化、国际化一流营商环境。"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58464-19727200/"
+    },
+    {
+      "item_id": "hndaily-20260723-58464-19727202",
+      "published_date": "2026-07-23",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 6,
+      "title": "亲清有道方能行稳致远",
+      "ai_summary": "评论指出海南政商交往清单以双向正负面规范推动干部主动服务、企业依法经营，并需配套监督和容错纠错机制。",
+      "scope": "hainan",
+      "subjects": [
+        {
+          "subject_id": "subject-organization-568c3d8a628b1d",
+          "name": "中共海南省委办公厅",
+          "type": "organization"
+        },
+        {
+          "subject_id": "subject-organization-f76b5474a3baf6",
+          "name": "海南省人民政府办公厅",
+          "type": "organization"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "高标准建设海南自贸港，政商关系是绕不开的话题。"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "governance-law",
+          "category_name": "治理与法治",
+          "evidence": "立规矩、明边界，双向引导方能同频共振。"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-governance-law-9aac53e670d458",
+            "name": "亲清政商关系",
+            "evidence": "良好政商交往，贵在“亲而不逾矩，清而不疏离”。"
+          },
+          {
+            "topic_id": "topic-governance-law-578c091bbbdb40",
+            "name": "监督机制",
+            "evidence": "同时，监督机制必须如影随形"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58464-19727202/"
+    },
+    {
+      "item_id": "hndaily-20260723-58464-19727203",
+      "published_date": "2026-07-23",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 7,
+      "title": "驻华使节参访海南",
+      "ai_summary": "外交部组织30余位驻华使节和国际组织代表赴海南参访，考察三亚科技产业并对接自贸港投资经贸合作。",
+      "scope": "mixed",
+      "subjects": [
+        {
+          "subject_id": "subject-organization-e74828a7bd46f8",
+          "name": "外交部",
+          "type": "organization"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan-sanya",
+          "name": "三亚市",
+          "code": "460200",
+          "level": "prefecture",
+          "evidence": "当天，代表团抵达三亚后，随即展开密集的考察交流活动。"
+        },
+        {
+          "location_id": "hainan-wuzhishan",
+          "name": "五指山市",
+          "code": "469001",
+          "level": "county",
+          "evidence": "接下来，使节团还将深入五指山、琼海、文昌等地"
+        },
+        {
+          "location_id": "hainan-qionghai",
+          "name": "琼海市",
+          "code": "469002",
+          "level": "county",
+          "evidence": "接下来，使节团还将深入五指山、琼海、文昌等地"
+        },
+        {
+          "location_id": "hainan-wenchang",
+          "name": "文昌市",
+          "code": "469005",
+          "level": "county",
+          "evidence": "接下来，使节团还将深入五指山、琼海、文昌等地"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "free-trade-opening",
+          "category_name": "自贸港与开放",
+          "evidence": "代表团出席了三亚产业对接会，围绕自贸港政策、投资经贸、热区农业、国际旅游消费等领域合作机遇，与当地政企代表进行了深入交流。"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-free-trade-opening-3dec4e0772695b",
+            "name": "驻华使节交流",
+            "evidence": "外交部组织驻华使团人员赴海南参访。"
+          },
+          {
+            "topic_id": "topic-free-trade-opening-7b02788c85e068",
+            "name": "国际投资合作",
+            "evidence": "愿积极推动本国优质资源与三亚发展需求精准对接。"
+          }
+        ]
+      },
+      "events": [
+        {
+          "event_id": "event-bad22e47a7b8dc",
+          "name": "三亚产业对接会",
+          "event_type": "named_event",
+          "evidence": "结束实地考察后，代表团出席了三亚产业对接会",
+          "occurred_on": "2026-07-22"
+        }
+      ],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58464-19727203/"
+    },
+    {
+      "item_id": "hndaily-20260723-58464-19727204",
+      "published_date": "2026-07-23",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 8,
+      "title": "海南“陆海”使用权首次“打包”卖",
+      "ai_summary": "东方市八所港项目以约1.56亿元成交海南首宗陆海自然资源组合供应，建设用地与海域使用权实现一体供应、同步出让。",
+      "scope": "hainan",
+      "subjects": [
+        {
+          "subject_id": "subject-company-4e971557105997",
+          "name": "海南省港航高排港港务有限公司",
+          "type": "company"
+        },
+        {
+          "subject_id": "subject-organization-8f63dfa4acffe0",
+          "name": "省自然资源和规划厅",
+          "type": "organization"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan-dongfang",
+          "name": "东方市",
+          "code": "469007",
+          "level": "county",
+          "evidence": "近日，东方市“八所港高排港区一期——码头及航道工程”项目用地用海自然资源组合供应在海南省自然资源网上交易系统挂牌成交"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "transport-cities",
+          "category_name": "交通与城市",
+          "evidence": "未来将建设通用及多用途泊位、散货船减载乘潮单向航道等，并配套码头、陆域形成、道路堆场、口岸监管仓库及水电信控等工程。"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-transport-cities-be5f75643eb451",
+            "name": "陆海组合供应",
+            "evidence": "这是海南首个“陆海”自然资源组合供应的项目"
+          },
+          {
+            "topic_id": "topic-transport-cities-d9eb0d9fff1ed5",
+            "name": "港口基础设施",
+            "evidence": "为港口基础设施类项目提供了可复制、可推广的实践经验。"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58464-19727204/"
+    },
+    {
+      "item_id": "hndaily-20260723-58464-19727205",
+      "published_date": "2026-07-23",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 9,
+      "title": "办好基础教育，海南有哪些硬招？",
+      "ai_summary": null,
+      "scope": "hainan",
+      "subjects": [],
+      "locations": [
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "办好基础教育，海南有哪些硬招？"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "education-youth",
+          "category_name": "教育与青年",
+          "evidence": "办好基础教育，海南有哪些硬招？"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-education-youth-cfc280a5f4ae5a",
+            "name": "基础教育",
+            "evidence": "办好基础教育，海南有哪些硬招？"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58464-19727205/"
+    },
+    {
+      "item_id": "hndaily-20260723-58464-19727206",
+      "published_date": "2026-07-23",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 10,
+      "title": "一岛山水 一夏舒爽",
+      "ai_summary": null,
+      "scope": "hainan",
+      "subjects": [],
+      "locations": [],
+      "topics": {
+        "primary": {
+          "category_id": "tourism-consumption",
+          "category_name": "旅游与消费",
+          "evidence": "一岛山水 一夏舒爽"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-tourism-consumption-f019076472fadd",
+            "name": "夏日避暑",
+            "evidence": "一岛山水 一夏舒爽"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58464-19727206/"
+    }
+  ]
+}

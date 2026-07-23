@@ -1,0 +1,91 @@
+{
+  "schema_version": 1,
+  "subject": {
+    "subject_id": "subject-person-84ccb15cb4e237",
+    "canonical_name": "刘小明",
+    "type": "person",
+    "aliases": [],
+    "first_seen": "2026-07-23",
+    "last_seen": "2026-07-23"
+  },
+  "activities": [
+    {
+      "place": "昌江黎族自治县",
+      "headline": "刘小明要求拓展两山转化路径",
+      "detail_kind": "goal",
+      "detail": "发展林下种养、海洋渔业、研学旅游等业态",
+      "evidence": "要充分利用林地、海洋等资源，注重因地制宜、陆海统筹，发展林下种养、海洋渔业、研学旅游等丰富业态，在生态产业化和产业生态化上下更大功夫，探索更多更具特色更高效益的“两山”转化路径。",
+      "source": {
+        "source_item_id": "hndaily-20260723-58464-19727199",
+        "published_date": "2026-07-23",
+        "source_title": "在生态产业化和产业生态化上下更大功夫\n探索更多更具特色更高效益的“两山”转化路径",
+        "detail_path": "/items/2026-07-23/hndaily-20260723-58464-19727199/",
+        "evidence": "要充分利用林地、海洋等资源，注重因地制宜、陆海统筹，发展林下种养、海洋渔业、研学旅游等丰富业态，在生态产业化和产业生态化上下更大功夫，探索更多更具特色更高效益的“两山”转化路径。"
+      }
+    },
+    {
+      "occurred_on": "2026-07-22",
+      "place": "昌江黎族自治县",
+      "headline": "刘小明调研昌江经济社会发展",
+      "evidence": "7月22日，省长刘小明在昌江黎族自治县调研经济社会发展情况。",
+      "source": {
+        "source_item_id": "hndaily-20260723-58464-19727199",
+        "published_date": "2026-07-23",
+        "source_title": "在生态产业化和产业生态化上下更大功夫\n探索更多更具特色更高效益的“两山”转化路径",
+        "detail_path": "/items/2026-07-23/hndaily-20260723-58464-19727199/",
+        "evidence": "7月22日，省长刘小明在昌江黎族自治县调研经济社会发展情况。"
+      }
+    }
+  ],
+  "articles": [
+    {
+      "item_id": "hndaily-20260723-58464-19727199",
+      "published_date": "2026-07-23",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 4,
+      "title": "在生态产业化和产业生态化上下更大功夫\n探索更多更具特色更高效益的“两山”转化路径",
+      "ai_summary": "刘小明在昌江调研项目、乡村旅游与农业发展，要求统筹生态保护、文旅融合和特色产业，拓展“两山”转化路径。",
+      "scope": "hainan",
+      "subjects": [
+        {
+          "subject_id": "subject-person-84ccb15cb4e237",
+          "name": "刘小明",
+          "type": "person"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan-changjiang",
+          "name": "昌江黎族自治县",
+          "code": "469026",
+          "level": "county",
+          "evidence": "7月22日，省长刘小明在昌江黎族自治县调研经济社会发展情况。"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "ecology-climate",
+          "category_name": "生态与气候",
+          "evidence": "在生态产业化和产业生态化上下更大功夫，探索更多更具特色更高效益的“两山”转化路径。"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-ecology-climate-75a9b5d171d0ef",
+            "name": "两山转化",
+            "evidence": "听取昌江“两山”转化、农业产业发展"
+          },
+          {
+            "topic_id": "topic-ecology-climate-3d8b0bab160db2",
+            "name": "乡村旅游",
+            "evidence": "加快构建“生态+文化+体验”的乡村旅游新格局。"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58464-19727199/"
+    }
+  ]
+}

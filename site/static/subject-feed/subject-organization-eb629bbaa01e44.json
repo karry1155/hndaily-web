@@ -1,0 +1,172 @@
+{
+  "schema_version": 1,
+  "subject": {
+    "subject_id": "subject-organization-eb629bbaa01e44",
+    "canonical_name": "海棠区纪委监委",
+    "type": "organization",
+    "aliases": [],
+    "first_seen": "2026-07-23",
+    "last_seen": "2026-07-23"
+  },
+  "activities": [
+    {
+      "place": "三亚市海棠区",
+      "headline": "海棠区纪委监委监督村办物业运行",
+      "detail_kind": "goal",
+      "detail": "保障集体资产安全并推动收益转化为民生实效",
+      "evidence": "海棠区纪委监委将监督触角延伸至决策、执行、资金管理等环节，通过列席相关会议、查阅台账资料等方式，对村办物业公司设立等开展“嵌入式”监督，推动建立规范运行机制。",
+      "source": {
+        "source_item_id": "hndaily-20260723-58470-19727284",
+        "published_date": "2026-07-23",
+        "source_title": "创新“村办物业”经营模式 监督护航促发展",
+        "detail_path": "/items/2026-07-23/hndaily-20260723-58470-19727284/",
+        "evidence": "海棠区纪委监委将监督触角延伸至决策、执行、资金管理等环节，通过列席相关会议、查阅台账资料等方式，对村办物业公司设立等开展“嵌入式”监督，推动建立规范运行机制。"
+      }
+    },
+    {
+      "place": "三亚市海棠区",
+      "headline": "海棠区纪委监委动态监督集体收益",
+      "evidence": "海棠区纪委监委围绕集体收益的取得、分配与使用全过程开展动态监督，确保集体收益真正用于公共事务和民生改善。",
+      "source": {
+        "source_item_id": "hndaily-20260723-58470-19727284",
+        "published_date": "2026-07-23",
+        "source_title": "创新“村办物业”经营模式 监督护航促发展",
+        "detail_path": "/items/2026-07-23/hndaily-20260723-58470-19727284/",
+        "evidence": "海棠区纪委监委围绕集体收益的取得、分配与使用全过程开展动态监督，确保集体收益真正用于公共事务和民生改善。"
+      }
+    },
+    {
+      "place": "三亚市海棠区",
+      "headline": "海棠区纪委监委推动物业乱象整改",
+      "detail_kind": "result",
+      "detail": "解决物业服务突出问题3198个",
+      "evidence": "截至目前，全区已解决物业服务突出问题3198个，发放整改通知书21份，约谈、通报多家企业，物业管理与服务水平显著提升",
+      "source": {
+        "source_item_id": "hndaily-20260723-58470-19727283",
+        "published_date": "2026-07-23",
+        "source_title": "让群众从“安居”迈向“宜居”",
+        "detail_path": "/items/2026-07-23/hndaily-20260723-58470-19727283/",
+        "evidence": "截至目前，全区已解决物业服务突出问题3198个，发放整改通知书21份，约谈、通报多家企业，物业管理与服务水平显著提升"
+      }
+    },
+    {
+      "place": "三亚市海棠区",
+      "headline": "海棠区纪委监委推动物业先试后买",
+      "detail_kind": "object",
+      "detail": "6个月试用服务后由居民决定签约",
+      "evidence": "他们联合住建部门与社区，成立小区物业管理委员会，选聘口碑优良的物业企业提供6个月试用服务，居民满意后再正式签订入驻协议",
+      "source": {
+        "source_item_id": "hndaily-20260723-58470-19727283",
+        "published_date": "2026-07-23",
+        "source_title": "让群众从“安居”迈向“宜居”",
+        "detail_path": "/items/2026-07-23/hndaily-20260723-58470-19727283/",
+        "evidence": "他们联合住建部门与社区，成立小区物业管理委员会，选聘口碑优良的物业企业提供6个月试用服务，居民满意后再正式签订入驻协议"
+      }
+    }
+  ],
+  "articles": [
+    {
+      "item_id": "hndaily-20260723-58470-19727284",
+      "published_date": "2026-07-23",
+      "page_number": "007",
+      "page_name": "中国新闻",
+      "page_sequence": 5,
+      "title": "创新“村办物业”经营模式 监督护航促发展",
+      "ai_summary": "三亚海棠区以监督规范村办物业的决策、资金和收益分配，推动村集体收益用于困难帮扶、公共设施、教育奖励和非遗传承。",
+      "scope": "hainan",
+      "subjects": [
+        {
+          "subject_id": "subject-organization-eb629bbaa01e44",
+          "name": "海棠区纪委监委",
+          "type": "organization"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan-sanya",
+          "name": "三亚市",
+          "code": "460200",
+          "level": "prefecture",
+          "evidence": "三亚市海棠区洪李村"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "governance-law",
+          "category_name": "治理与法治",
+          "evidence": "强化监督执纪与制度建设协同发力"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-governance-law-28c67f9c395553",
+            "name": "村办物业",
+            "evidence": "“村办物业”这一发展村级集体经济、促进农民增收的新路径"
+          },
+          {
+            "topic_id": "topic-governance-law-2d255186cab136",
+            "name": "农村集体经济",
+            "evidence": "新型农村集体经济发展模式"
+          },
+          {
+            "topic_id": "topic-governance-law-4e1e9c6b496203",
+            "name": "集体资金监管",
+            "evidence": "集体收益的取得、分配与使用全过程开展动态监督"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58470-19727284/"
+    },
+    {
+      "item_id": "hndaily-20260723-58470-19727283",
+      "published_date": "2026-07-23",
+      "page_number": "007",
+      "page_name": "中国新闻",
+      "page_sequence": 4,
+      "title": "让群众从“安居”迈向“宜居”",
+      "ai_summary": "三亚海棠区通过监督推动物业整治和“先试后买”选聘模式，已解决3198个服务问题，部分小区物业费降幅达30%。",
+      "scope": "hainan",
+      "subjects": [
+        {
+          "subject_id": "subject-organization-eb629bbaa01e44",
+          "name": "海棠区纪委监委",
+          "type": "organization"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan-sanya",
+          "name": "三亚市",
+          "code": "460200",
+          "level": "prefecture",
+          "evidence": "三亚海棠区某小区居民"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "governance-law",
+          "category_name": "治理与法治",
+          "evidence": "海棠区纪委监委将物业服务专项整治纳入民生监督重点"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-governance-law-9d39420a35cb90",
+            "name": "物业服务整治",
+            "evidence": "物业服务专项整治"
+          },
+          {
+            "topic_id": "topic-governance-law-2e2cbb70b40a90",
+            "name": "民生监督",
+            "evidence": "民生监督重点"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58470-19727283/"
+    }
+  ]
+}

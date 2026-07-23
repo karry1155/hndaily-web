@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "region": {
+    "location_id": "hainan-wanning",
+    "name": "万宁市",
+    "code": "469006",
+    "level": "county",
+    "article_count": 0,
+    "detail_path": "/regions/hainan-wanning/"
+  },
+  "articles": []
+}

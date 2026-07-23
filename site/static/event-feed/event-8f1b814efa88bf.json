@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "event": {
+    "event_id": "event-8f1b814efa88bf",
+    "name": "“理润琼州 声动自贸”2026年省级主题示范巡回宣讲走进白沙黎族自治县暨党的创新理论百人千场进万站文明实践活动",
+    "event_type": "recurring_edition",
+    "series_id": "event-series-cc0be617361c5e",
+    "article_count": 1,
+    "detail_path": "/events/event-8f1b814efa88bf/"
+  },
+  "articles": [
+    {
+      "item_id": "hndaily-20260723-58466-19727232",
+      "published_date": "2026-07-23",
+      "page_number": "003",
+      "page_name": "本省新闻",
+      "page_sequence": 7,
+      "title": "“理润琼州 声动自贸”2026年省级主题示范巡回宣讲走进白沙",
+      "ai_summary": "海南省级主题示范巡回宣讲在白沙举行，约1600名干部群众和志愿者参与民族团结理论宣讲与文艺互动。",
+      "scope": "hainan",
+      "subjects": [
+        {
+          "subject_id": "subject-organization-4cc32e834cda79",
+          "name": "省委宣传部",
+          "type": "organization"
+        },
+        {
+          "subject_id": "subject-organization-664df739e6a54e",
+          "name": "省民族事务委员会",
+          "type": "organization"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan-baisha",
+          "name": "白沙黎族自治县",
+          "code": "469025",
+          "level": "county",
+          "evidence": "7月22日晚，白沙黎族自治县文化广场灯火璀璨、人头攒动"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "culture-history",
+          "category_name": "文化与历史",
+          "evidence": "一个个鲜活的宣讲案例，一段段动人的民族团结故事，让现场观众在潜移默化中深化了对中华民族共同体意识的理解与认同。"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-culture-history-87553058f14ff6",
+            "name": "民族团结宣讲",
+            "evidence": "铸牢中华民族共同体意识的理论知识入脑入心。"
+          },
+          {
+            "topic_id": "topic-culture-history-a5d86834b74706",
+            "name": "文明实践",
+            "evidence": "党的创新理论百人千场进万站文明实践活动"
+          }
+        ]
+      },
+      "events": [
+        {
+          "event_id": "event-8f1b814efa88bf",
+          "name": "“理润琼州 声动自贸”2026年省级主题示范巡回宣讲走进白沙黎族自治县暨党的创新理论百人千场进万站文明实践活动",
+          "event_type": "recurring_edition",
+          "evidence": "“理润琼州 声动自贸”2026年省级主题示范巡回宣讲走进白沙黎族自治县暨党的创新理论百人千场进万站文明实践活动在这里举行",
+          "series_name": "“理润琼州 声动自贸”省级主题示范巡回宣讲",
+          "series_id": "event-series-cc0be617361c5e",
+          "occurred_on": "2026-07-22"
+        }
+      ],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58466-19727232/"
+    }
+  ]
+}

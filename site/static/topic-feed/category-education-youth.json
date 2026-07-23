@@ -1,0 +1,663 @@
+{
+  "schema_version": 1,
+  "topic": {
+    "topic_id": "category-education-youth",
+    "name": "教育与青年",
+    "parent_id": null,
+    "category_id": "education-youth",
+    "definition": "学校教育、招生考试、职业培训、人才培养、青年发展和校园生活。",
+    "boundary": "科研技术成果本身为核心时归入科技与创新。",
+    "article_count": 9,
+    "detail_path": "/topics/category-education-youth/"
+  },
+  "children": [
+    {
+      "topic_id": "topic-education-youth-6e23b068c96664",
+      "name": "中招投档线",
+      "parent_id": "category-education-youth",
+      "category_id": "education-youth",
+      "article_count": 1,
+      "detail_path": "/topics/topic-education-youth-6e23b068c96664/"
+    },
+    {
+      "topic_id": "topic-education-youth-49c2a96b6e0ce0",
+      "name": "中职学生评优",
+      "parent_id": "category-education-youth",
+      "category_id": "education-youth",
+      "article_count": 1,
+      "detail_path": "/topics/topic-education-youth-49c2a96b6e0ce0/"
+    },
+    {
+      "topic_id": "topic-education-youth-961fb677918135",
+      "name": "义务教育招生",
+      "parent_id": "category-education-youth",
+      "category_id": "education-youth",
+      "article_count": 1,
+      "detail_path": "/topics/topic-education-youth-961fb677918135/"
+    },
+    {
+      "topic_id": "topic-education-youth-b1e31598a1fa00",
+      "name": "协同育人",
+      "parent_id": "category-education-youth",
+      "category_id": "education-youth",
+      "article_count": 1,
+      "detail_path": "/topics/topic-education-youth-b1e31598a1fa00/"
+    },
+    {
+      "topic_id": "topic-education-youth-cfc280a5f4ae5a",
+      "name": "基础教育",
+      "parent_id": "category-education-youth",
+      "category_id": "education-youth",
+      "article_count": 1,
+      "detail_path": "/topics/topic-education-youth-cfc280a5f4ae5a/"
+    },
+    {
+      "topic_id": "topic-education-youth-a4176052d3b023",
+      "name": "基础教育扩优提质",
+      "parent_id": "category-education-youth",
+      "category_id": "education-youth",
+      "article_count": 1,
+      "detail_path": "/topics/topic-education-youth-a4176052d3b023/"
+    },
+    {
+      "topic_id": "topic-education-youth-6ec086f6e82ddd",
+      "name": "家校协同育人",
+      "parent_id": "category-education-youth",
+      "category_id": "education-youth",
+      "article_count": 1,
+      "detail_path": "/topics/topic-education-youth-6ec086f6e82ddd/"
+    },
+    {
+      "topic_id": "topic-education-youth-1224a14ffd6e11",
+      "name": "技能人才培养",
+      "parent_id": "category-education-youth",
+      "category_id": "education-youth",
+      "article_count": 1,
+      "detail_path": "/topics/topic-education-youth-1224a14ffd6e11/"
+    },
+    {
+      "topic_id": "topic-education-youth-ac1ef5b97df33a",
+      "name": "教师队伍建设",
+      "parent_id": "category-education-youth",
+      "category_id": "education-youth",
+      "article_count": 1,
+      "detail_path": "/topics/topic-education-youth-ac1ef5b97df33a/"
+    },
+    {
+      "topic_id": "topic-education-youth-4ff4bb5fb2d440",
+      "name": "教育公平",
+      "parent_id": "category-education-youth",
+      "category_id": "education-youth",
+      "article_count": 1,
+      "detail_path": "/topics/topic-education-youth-4ff4bb5fb2d440/"
+    },
+    {
+      "topic_id": "topic-education-youth-09529ea40bf78b",
+      "name": "智慧教育",
+      "parent_id": "category-education-youth",
+      "category_id": "education-youth",
+      "article_count": 1,
+      "detail_path": "/topics/topic-education-youth-09529ea40bf78b/"
+    },
+    {
+      "topic_id": "topic-education-youth-795cc26de7c3aa",
+      "name": "海岛教育",
+      "parent_id": "category-education-youth",
+      "category_id": "education-youth",
+      "article_count": 1,
+      "detail_path": "/topics/topic-education-youth-795cc26de7c3aa/"
+    },
+    {
+      "topic_id": "topic-education-youth-0caccbdab65fb6",
+      "name": "线上学位申报",
+      "parent_id": "category-education-youth",
+      "category_id": "education-youth",
+      "article_count": 1,
+      "detail_path": "/topics/topic-education-youth-0caccbdab65fb6/"
+    },
+    {
+      "topic_id": "topic-education-youth-a0b3827940fd9d",
+      "name": "职业技能培训",
+      "parent_id": "category-education-youth",
+      "category_id": "education-youth",
+      "article_count": 1,
+      "detail_path": "/topics/topic-education-youth-a0b3827940fd9d/"
+    },
+    {
+      "topic_id": "topic-education-youth-41f62db363b41e",
+      "name": "阳光快乐教育",
+      "parent_id": "category-education-youth",
+      "category_id": "education-youth",
+      "article_count": 1,
+      "detail_path": "/topics/topic-education-youth-41f62db363b41e/"
+    },
+    {
+      "topic_id": "topic-education-youth-a4c23e5a77dba4",
+      "name": "集团化办学",
+      "parent_id": "category-education-youth",
+      "category_id": "education-youth",
+      "article_count": 1,
+      "detail_path": "/topics/topic-education-youth-a4c23e5a77dba4/"
+    }
+  ],
+  "articles": [
+    {
+      "item_id": "hndaily-20260723-58467-19727249",
+      "published_date": "2026-07-23",
+      "page_number": "004",
+      "page_name": "民生新闻",
+      "page_sequence": 6,
+      "title": "三亚中小学学位线上申报开放",
+      "ai_summary": "三亚2026年义务教育学位线上申报于7月22日至28日开放，家长可通过海易办填报，并按后续初审、复审和录取时间办理。",
+      "scope": "hainan",
+      "subjects": [
+        {
+          "subject_id": "subject-organization-09b268830bac61",
+          "name": "三亚市教育局",
+          "type": "organization"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan-sanya",
+          "name": "三亚市",
+          "code": "460200",
+          "level": "prefecture",
+          "evidence": "三亚中小学学位线上申报开放"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "education-youth",
+          "category_name": "教育与青年",
+          "evidence": "全市中小学学位线上申报于7月22日8时至7月28日24时开放"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-education-youth-961fb677918135",
+            "name": "义务教育招生",
+            "evidence": "义务教育阶段学校招生入学工作方案"
+          },
+          {
+            "topic_id": "topic-education-youth-0caccbdab65fb6",
+            "name": "线上学位申报",
+            "evidence": "中小学学位线上申报"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [
+        {
+          "plan_id": "plan-29a56a330ac801",
+          "name": "《三亚市2026年义务教育阶段学校招生入学工作方案》",
+          "mention_type": "released",
+          "evidence": "7月21日，三亚市教育局正式对外发布《三亚市2026年义务教育阶段学校招生入学工作方案》（以下简称《方案》）"
+        }
+      ],
+      "reader_lead_count": 2,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58467-19727249/"
+    },
+    {
+      "item_id": "hndaily-20260723-58467-19727247",
+      "published_date": "2026-07-23",
+      "page_number": "004",
+      "page_name": "民生新闻",
+      "page_sequence": 5,
+      "title": "海南公布一批中招提前批投档分数线",
+      "ai_summary": "海南省考试局公布中招提前批投档分数线，涉及省属学校及多所面向全省招生的公办高中实验班。",
+      "scope": "hainan",
+      "subjects": [
+        {
+          "subject_id": "subject-organization-aaddf4ff738768",
+          "name": "省考试局",
+          "type": "organization"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan-haikou",
+          "name": "海口市",
+          "code": "460100",
+          "level": "prefecture",
+          "evidence": "本报海口7月22日讯"
+        },
+        {
+          "location_id": "hainan-sanya",
+          "name": "三亚市",
+          "code": "460200",
+          "level": "prefecture",
+          "evidence": "三亚市迎宾中学投档分数线为813.5分"
+        },
+        {
+          "location_id": "hainan-danzhou",
+          "name": "儋州市",
+          "code": "460400",
+          "level": "prefecture",
+          "evidence": "儋州市第一中学航空国防班投档分数线为842.5分"
+        },
+        {
+          "location_id": "hainan-tunchang",
+          "name": "屯昌县",
+          "code": "469022",
+          "level": "county",
+          "evidence": "屯昌县屯昌中学投档分数线为799分"
+        },
+        {
+          "location_id": "hainan-baoting",
+          "name": "保亭黎族苗族自治县",
+          "code": "469029",
+          "level": "county",
+          "evidence": "保亭黎族苗族自治县保亭中学投档分数线为757.5分"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "education-youth",
+          "category_name": "教育与青年",
+          "evidence": "我省中招还划定了一批面向全省招生的公办普通高中学校实验班投档分数线。"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-education-youth-6e23b068c96664",
+            "name": "中招投档线",
+            "evidence": "中招提前批投档分数线"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [],
+      "reader_lead_count": 1,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58467-19727247/"
+    },
+    {
+      "item_id": "hndaily-20260723-58467-19727241",
+      "published_date": "2026-07-23",
+      "page_number": "004",
+      "page_name": "民生新闻",
+      "page_sequence": 2,
+      "title": "156人获评中职学校“海南省三好学生”",
+      "ai_summary": "海南省教育厅公布中职学校评优名单，156人获评省三好学生，78人获评省优秀学生干部。",
+      "scope": "hainan",
+      "subjects": [
+        {
+          "subject_id": "subject-organization-98752354fdf436",
+          "name": "省教育厅",
+          "type": "organization"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "中职学校“海南省三好学生”"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "education-youth",
+          "category_name": "教育与青年",
+          "evidence": "努力成长为德智体美劳全面发展的高素质技能型人才。"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-education-youth-49c2a96b6e0ce0",
+            "name": "中职学生评优",
+            "evidence": "中职学校“海南省三好学生”和“海南省优秀学生干部”评选名单"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58467-19727241/"
+    },
+    {
+      "item_id": "hndaily-20260723-58467-19727240",
+      "published_date": "2026-07-23",
+      "page_number": "004",
+      "page_name": "民生新闻",
+      "page_sequence": 1,
+      "title": "办好基础教育，海南有哪些硬招？",
+      "ai_summary": "海南通过集团化办学、设施全覆盖、特色德育、体育健康、教师培养和智慧教育平台推进基础教育扩优提质。",
+      "scope": "hainan",
+      "subjects": [
+        {
+          "subject_id": "subject-organization-192b4d7fd1e227",
+          "name": "三亚市第二小学",
+          "type": "organization"
+        },
+        {
+          "subject_id": "subject-organization-2760bbeb3a88f5",
+          "name": "海南",
+          "type": "organization"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan-haikou",
+          "name": "海口市",
+          "code": "460100",
+          "level": "prefecture",
+          "evidence": "本报海口7月22日讯"
+        },
+        {
+          "location_id": "hainan-sanya",
+          "name": "三亚市",
+          "code": "460200",
+          "level": "prefecture",
+          "evidence": "对于三亚市吉阳区红花村的家长来说"
+        },
+        {
+          "location_id": "hainan-wuzhishan",
+          "name": "五指山市",
+          "code": "469001",
+          "level": "county",
+          "evidence": "五指山市等10个县（市、区）通过国家学前教育普及普惠县评估认定"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "education-youth",
+          "category_name": "教育与青年",
+          "evidence": "海南基础教育面貌发生了全方位、开创性、格局性的变化"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-education-youth-a4c23e5a77dba4",
+            "name": "集团化办学",
+            "evidence": "集团化办学正是缩小城乡与区域差距的关键一招。"
+          },
+          {
+            "topic_id": "topic-education-youth-09529ea40bf78b",
+            "name": "智慧教育",
+            "evidence": "海南建设省级智慧教育平台"
+          },
+          {
+            "topic_id": "topic-education-youth-41f62db363b41e",
+            "name": "阳光快乐教育",
+            "evidence": "“阳光快乐”教育则是另一张名片。"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58467-19727240/"
+    },
+    {
+      "item_id": "hndaily-20260723-58466-19727234",
+      "published_date": "2026-07-23",
+      "page_number": "003",
+      "page_name": "本省新闻",
+      "page_sequence": 9,
+      "title": "伴孩子健康成长 让守岛军民安心",
+      "ai_summary": "三沙教师吴泉穗近十年驻岛执教，带领团队建立红绿蓝“三色教育”体系，并通过家长学校和课外活动支持守岛家庭。",
+      "scope": "hainan",
+      "subjects": [
+        {
+          "subject_id": "subject-person-db3d7dab2ea5da",
+          "name": "吴泉穗",
+          "type": "person"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan-sansha",
+          "name": "三沙市",
+          "code": "460300",
+          "level": "prefecture",
+          "evidence": "吴泉穗是三沙市永兴学校团支部书记、教师。"
+        },
+        {
+          "location_id": "hainan-wenchang",
+          "name": "文昌市",
+          "code": "469005",
+          "level": "county",
+          "evidence": "故事里，小蚂蚁乘船从文昌奔赴永兴岛"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "education-youth",
+          "category_name": "教育与青年",
+          "evidence": "把家国情怀、生态保护、海洋知识揉进日常。"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-education-youth-795cc26de7c3aa",
+            "name": "海岛教育",
+            "evidence": "专属海岛幼儿园的“三色教育”体系"
+          },
+          {
+            "topic_id": "topic-education-youth-6ec086f6e82ddd",
+            "name": "家校协同育人",
+            "evidence": "搭建家校协同育人桥梁"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58466-19727234/"
+    },
+    {
+      "item_id": "hndaily-20260723-58466-19727219",
+      "published_date": "2026-07-23",
+      "page_number": "003",
+      "page_name": "本省新闻",
+      "page_sequence": 1,
+      "title": "我省技能人才总量突破100万",
+      "ai_summary": "海南技能人才总量首次突破100万人，新五年行动方案提出到2030年总量超过140万人、高技能人才占比力争达到30%左右。",
+      "scope": "hainan",
+      "subjects": [
+        {
+          "subject_id": "subject-organization-92cb2cf3227998",
+          "name": "省政府办公厅",
+          "type": "organization"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan-haikou",
+          "name": "海口市",
+          "code": "460100",
+          "level": "prefecture",
+          "evidence": "7月22日，“海南自贸港政策解读”系列主题新闻发布会（第六十五场）——《“技能自贸港”五年行动方案（2026—2030年）》（以下简称《五年行动方案》）专场在海口举行"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "education-youth",
+          "category_name": "教育与青年",
+          "evidence": "以产业为导向，靶向培养技能人才。"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-education-youth-1224a14ffd6e11",
+            "name": "技能人才培养",
+            "evidence": "共同推动技能人才队伍建设。"
+          },
+          {
+            "topic_id": "topic-education-youth-a0b3827940fd9d",
+            "name": "职业技能培训",
+            "evidence": "推行更加灵活的“岗位需求＋技能培训＋技能评价＋就业服务”项目制培训模式"
+          }
+        ]
+      },
+      "events": [
+        {
+          "event_id": "event-d3d16f57db28d8",
+          "name": "“海南自贸港政策解读”系列主题新闻发布会（第六十五场）——《“技能自贸港”五年行动方案（2026—2030年）》",
+          "event_type": "recurring_edition",
+          "evidence": "7月22日，“海南自贸港政策解读”系列主题新闻发布会（第六十五场）——《“技能自贸港”五年行动方案（2026—2030年）》（以下简称《五年行动方案》）专场在海口举行",
+          "series_name": "“海南自贸港政策解读”系列主题新闻发布会",
+          "series_id": "event-series-0229a93eeabff3",
+          "occurred_on": "2026-07-22"
+        }
+      ],
+      "plans": [
+        {
+          "plan_id": "plan-20f97e0df56a39",
+          "name": "《“技能自贸港”五年行动方案（2026—2030年）》",
+          "mention_type": "implemented",
+          "evidence": "省政府办公厅印发实施《五年行动方案》。"
+        }
+      ],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58466-19727219/"
+    },
+    {
+      "item_id": "hndaily-20260723-58465-19727212",
+      "published_date": "2026-07-23",
+      "page_number": "002",
+      "page_name": "要闻",
+      "page_sequence": 1,
+      "title": "落实立德树人根本任务 推进基础教育扩优提质",
+      "ai_summary": "全国教育工作者围绕基础教育重要指示提出推进扩优提质、教育公平、健康教育、教师培养和协同育人的落实举措。",
+      "scope": "national",
+      "subjects": [
+        {
+          "subject_id": "subject-person-c5ed55cf74f698",
+          "name": "田祖荫",
+          "type": "person"
+        },
+        {
+          "subject_id": "subject-person-e80b04f33b564b",
+          "name": "孟晖",
+          "type": "person"
+        },
+        {
+          "subject_id": "subject-person-16a71739f3c8fb",
+          "name": "刘卫军",
+          "type": "person"
+        }
+      ],
+      "locations": [],
+      "topics": {
+        "primary": {
+          "category_id": "education-youth",
+          "category_name": "教育与青年",
+          "evidence": "大家表示，要以习近平总书记重要指示精神为指引，全面贯彻党的教育方针，凝心聚力、奋发有为，为不断开创基础教育高质量发展新局面贡献力量。"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-education-youth-4ff4bb5fb2d440",
+            "name": "教育公平",
+            "evidence": "教育公平是社会公平的重要基础。"
+          },
+          {
+            "topic_id": "topic-education-youth-b1e31598a1fa00",
+            "name": "协同育人",
+            "evidence": "基础教育是全社会的事业，需要学校、家庭、社会密切配合。"
+          }
+        ]
+      },
+      "events": [
+        {
+          "event_id": "event-e3d406f9a798d2",
+          "name": "全国基础教育工作会议",
+          "event_type": "named_event",
+          "evidence": "全国基础教育工作会议7月22日在京召开。",
+          "occurred_on": "2026-07-22"
+        }
+      ],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58465-19727212/"
+    },
+    {
+      "item_id": "hndaily-20260723-58464-19727205",
+      "published_date": "2026-07-23",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 9,
+      "title": "办好基础教育，海南有哪些硬招？",
+      "ai_summary": null,
+      "scope": "hainan",
+      "subjects": [],
+      "locations": [
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "办好基础教育，海南有哪些硬招？"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "education-youth",
+          "category_name": "教育与青年",
+          "evidence": "办好基础教育，海南有哪些硬招？"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-education-youth-cfc280a5f4ae5a",
+            "name": "基础教育",
+            "evidence": "办好基础教育，海南有哪些硬招？"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58464-19727205/"
+    },
+    {
+      "item_id": "hndaily-20260723-58464-19727196",
+      "published_date": "2026-07-23",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 1,
+      "title": "全面贯彻党的教育方针落实立德树人根本任务\n不断开创基础教育高质量发展新局面",
+      "ai_summary": "习近平对基础教育工作作出重要指示，要求推进扩优提质、守住教育公平底线并加强高素质教师队伍建设。",
+      "scope": "national",
+      "subjects": [
+        {
+          "subject_id": "subject-person-92a054e84d6e2e",
+          "name": "习近平",
+          "type": "person"
+        },
+        {
+          "subject_id": "subject-person-b6413e1a907d63",
+          "name": "丁薛祥",
+          "type": "person"
+        }
+      ],
+      "locations": [],
+      "topics": {
+        "primary": {
+          "category_id": "education-youth",
+          "category_name": "教育与青年",
+          "evidence": "习近平强调，新征程上，要以新时代中国特色社会主义思想为指导，全面贯彻党的教育方针，落实立德树人根本任务"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-education-youth-a4176052d3b023",
+            "name": "基础教育扩优提质",
+            "evidence": "要适应人民群众新期盼，推进基础教育扩优提质，牢牢守住教育公平底线。"
+          },
+          {
+            "topic_id": "topic-education-youth-ac1ef5b97df33a",
+            "name": "教师队伍建设",
+            "evidence": "要弘扬教育家精神，加强师德师风建设，培养造就高素质专业化教师队伍。"
+          }
+        ]
+      },
+      "events": [
+        {
+          "event_id": "event-e3d406f9a798d2",
+          "name": "全国基础教育工作会议",
+          "event_type": "named_event",
+          "evidence": "全国基础教育工作会议7月22日在京召开。",
+          "occurred_on": "2026-07-22"
+        }
+      ],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58464-19727196/"
+    }
+  ]
+}

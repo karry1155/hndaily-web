@@ -1,0 +1,92 @@
+{
+  "schema_version": 1,
+  "subject": {
+    "subject_id": "subject-organization-8e4ea32da9005f",
+    "canonical_name": "省军区政治工作局",
+    "type": "organization",
+    "aliases": [],
+    "first_seen": "2026-07-23",
+    "last_seen": "2026-07-23"
+  },
+  "activities": [
+    {
+      "headline": "省军区政治工作局联合部署八一双拥工作",
+      "evidence": "近日，省退役军人事务厅、省军区政治工作局、省双拥办联合印发《关于做好“八一”期间拥军优属拥政爱民工作的通知》",
+      "source": {
+        "source_item_id": "hndaily-20260723-58466-19727229",
+        "published_date": "2026-07-23",
+        "source_title": "我省部署“八一”期间拥军优属拥政爱民工作",
+        "detail_path": "/items/2026-07-23/hndaily-20260723-58466-19727229/",
+        "evidence": "近日，省退役军人事务厅、省军区政治工作局、省双拥办联合印发《关于做好“八一”期间拥军优属拥政爱民工作的通知》"
+      }
+    }
+  ],
+  "articles": [
+    {
+      "item_id": "hndaily-20260723-58466-19727229",
+      "published_date": "2026-07-23",
+      "page_number": "003",
+      "page_name": "本省新闻",
+      "page_sequence": 4,
+      "title": "我省部署“八一”期间拥军优属拥政爱民工作",
+      "ai_summary": "海南三部门部署“八一”期间双拥工作，要求开展主题活动、解决部队实际困难，并组织便民医疗和消费帮扶。",
+      "scope": "hainan",
+      "subjects": [
+        {
+          "subject_id": "subject-organization-1fbdf78e1eb624",
+          "name": "省退役军人事务厅",
+          "type": "organization"
+        },
+        {
+          "subject_id": "subject-organization-8e4ea32da9005f",
+          "name": "省军区政治工作局",
+          "type": "organization"
+        },
+        {
+          "subject_id": "subject-organization-6ca0d1322219ab",
+          "name": "省双拥办",
+          "type": "organization"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "我省部署“八一”期间拥军优属拥政爱民工作"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "society-public-services",
+          "category_name": "社会与公共服务",
+          "evidence": "要求各地各部队扎实做好“八一”期间拥军优属、拥政爱民工作"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-society-public-services-f93a701383c75d",
+            "name": "双拥工作",
+            "evidence": "拥军优属、拥政爱民工作"
+          },
+          {
+            "topic_id": "topic-society-public-services-69c00d47101587",
+            "name": "军民共建",
+            "evidence": "巩固“城连共建”“城舰共建”等军民共建机制"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [
+        {
+          "plan_id": "plan-bdcd2e2d16b325",
+          "name": "《关于做好“八一”期间拥军优属拥政爱民工作的通知》",
+          "mention_type": "released",
+          "evidence": "近日，省退役军人事务厅、省军区政治工作局、省双拥办联合印发《关于做好“八一”期间拥军优属拥政爱民工作的通知》"
+        }
+      ],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58466-19727229/"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "topic": {
+    "topic_id": "topic-health-medicine-ffdabca08046ee",
+    "name": "健康教育戏剧",
+    "parent_id": "category-health-medicine",
+    "category_id": "health-medicine",
+    "article_count": 1,
+    "detail_path": "/topics/topic-health-medicine-ffdabca08046ee/"
+  },
+  "articles": [
+    {
+      "item_id": "hndaily-20260723-58471-19727295",
+      "published_date": "2026-07-23",
+      "page_number": "008",
+      "page_name": "健康周刊",
+      "page_sequence": 4,
+      "title": "当“孤独”被舞台看见",
+      "ai_summary": "孕产期身心健康戏剧巡演首次到三亚，通过互动话剧和角色工坊讨论孕检、育儿、家庭沟通与重返职场等现实压力。",
+      "scope": "domestic",
+      "subjects": [
+        {
+          "subject_id": "subject-organization-0e5237e2c3ff32",
+          "name": "复旦大学发展研究院",
+          "type": "organization"
+        },
+        {
+          "subject_id": "subject-organization-267ab8223fbfc3",
+          "name": "世界健康基金会",
+          "type": "organization"
+        },
+        {
+          "subject_id": "subject-organization-f8c50558b65bf2",
+          "name": "上海儿童医学中心海南医院",
+          "type": "organization"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan-sanya",
+          "name": "三亚市",
+          "code": "460200",
+          "level": "prefecture",
+          "evidence": "这场关于“理解”与“新生”的戏剧，第一次来到了三亚。"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "health-medicine",
+          "category_name": "医疗与健康",
+          "evidence": "以孕产期女性身心健康与社会支持为主题的健康教育戏剧巡演"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-health-medicine-513855e1b6b2fd",
+            "name": "孕产期心理健康",
+            "evidence": "孕产期女性身心健康"
+          },
+          {
+            "topic_id": "topic-health-medicine-ffdabca08046ee",
+            "name": "健康教育戏剧",
+            "evidence": "健康教育戏剧巡演"
+          },
+          {
+            "topic_id": "topic-health-medicine-923a3d9ac914d4",
+            "name": "家庭社会支持",
+            "evidence": "需要家庭支持、医疗机构与社会保障共同回应"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58471-19727295/"
+    }
+  ]
+}

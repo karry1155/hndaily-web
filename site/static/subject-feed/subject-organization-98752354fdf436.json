@@ -1,0 +1,72 @@
+{
+  "schema_version": 1,
+  "subject": {
+    "subject_id": "subject-organization-98752354fdf436",
+    "canonical_name": "省教育厅",
+    "type": "organization",
+    "aliases": [],
+    "first_seen": "2026-07-23",
+    "last_seen": "2026-07-23"
+  },
+  "activities": [
+    {
+      "headline": "省教育厅公布中职学生评优名单",
+      "detail_kind": "result",
+      "detail": "156人获评三好学生、78人获评优秀学生干部",
+      "evidence": "近日，省教育厅公布2025—2026学年度中职学校“海南省三好学生”和“海南省优秀学生干部”评选名单。经评选，张小芳等156名同学获评中职学校“海南省三好学生”，程钧晖等78名同学获评中职学校“海南省优秀学生干部”。",
+      "source": {
+        "source_item_id": "hndaily-20260723-58467-19727241",
+        "published_date": "2026-07-23",
+        "source_title": "156人获评中职学校“海南省三好学生”",
+        "detail_path": "/items/2026-07-23/hndaily-20260723-58467-19727241/",
+        "evidence": "近日，省教育厅公布2025—2026学年度中职学校“海南省三好学生”和“海南省优秀学生干部”评选名单。经评选，张小芳等156名同学获评中职学校“海南省三好学生”，程钧晖等78名同学获评中职学校“海南省优秀学生干部”。"
+      }
+    }
+  ],
+  "articles": [
+    {
+      "item_id": "hndaily-20260723-58467-19727241",
+      "published_date": "2026-07-23",
+      "page_number": "004",
+      "page_name": "民生新闻",
+      "page_sequence": 2,
+      "title": "156人获评中职学校“海南省三好学生”",
+      "ai_summary": "海南省教育厅公布中职学校评优名单，156人获评省三好学生，78人获评省优秀学生干部。",
+      "scope": "hainan",
+      "subjects": [
+        {
+          "subject_id": "subject-organization-98752354fdf436",
+          "name": "省教育厅",
+          "type": "organization"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "中职学校“海南省三好学生”"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "education-youth",
+          "category_name": "教育与青年",
+          "evidence": "努力成长为德智体美劳全面发展的高素质技能型人才。"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-education-youth-49c2a96b6e0ce0",
+            "name": "中职学生评优",
+            "evidence": "中职学校“海南省三好学生”和“海南省优秀学生干部”评选名单"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58467-19727241/"
+    }
+  ]
+}

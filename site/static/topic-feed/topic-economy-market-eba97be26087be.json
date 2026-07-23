@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "topic": {
+    "topic_id": "topic-economy-market-eba97be26087be",
+    "name": "扩岗补助",
+    "parent_id": "category-economy-market",
+    "category_id": "economy-market",
+    "article_count": 1,
+    "detail_path": "/topics/topic-economy-market-eba97be26087be/"
+  },
+  "articles": [
+    {
+      "item_id": "hndaily-20260723-58470-19727279",
+      "published_date": "2026-07-23",
+      "page_number": "007",
+      "page_name": "中国新闻",
+      "page_sequence": 3,
+      "title": "促进高校毕业生等青年就业 人社部门将全力以赴",
+      "ai_summary": "人社部门将未就业高校毕业生纳入实名服务，提供岗位、指导、培训和见习，并延续企业扩岗补助、开展多轮招聘活动。",
+      "scope": "national",
+      "subjects": [
+        {
+          "subject_id": "subject-organization-b7a5c155bb3289",
+          "name": "人力资源社会保障部",
+          "type": "organization"
+        }
+      ],
+      "locations": [],
+      "topics": {
+        "primary": {
+          "category_id": "economy-market",
+          "category_name": "经济与市场",
+          "evidence": "精准保障高校毕业生等重点群体就业，是稳就业的重中之重。"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-economy-market-3c9b579e65b5c3",
+            "name": "高校毕业生就业",
+            "evidence": "如何帮助毕业生更好实现就业？"
+          },
+          {
+            "topic_id": "topic-economy-market-eceb3adbd69bb7",
+            "name": "公共就业服务",
+            "evidence": "全国就业公共服务地图"
+          },
+          {
+            "topic_id": "topic-economy-market-eba97be26087be",
+            "name": "扩岗补助",
+            "evidence": "可按每招用1人不超过1500元的标准发放一次性扩岗补助。"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [],
+      "reader_lead_count": 3,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58470-19727279/"
+    }
+  ]
+}

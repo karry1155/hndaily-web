@@ -71,3 +71,15 @@ python3 -m scripts.preview
 
 预览地址为 `http://127.0.0.1:8765/`。
 
+## 发布
+
+`site/` 是生成后的静态网站，也是当前 GitHub/Cloudflare Pages 工作流直接发布的
+目录，因此需要纳入 Git。每次修改内容、提示词消费逻辑或前端后，应先重新生成：
+
+```bash
+python3 scripts/radar_render.py content site
+```
+
+确认页面无误后，将源文件、`content/` 和对应的 `site/` 结果放在同一次提交中，
+避免线上页面落后于当前数据。Cloudflare Pages 使用仓库根目录，构建命令可留空，
+发布目录设为 `site`。

@@ -1,5 +1,6 @@
-# Generated site and transient pipeline state
-site/
+# Transient pipeline state
+# `site/` is intentionally versioned: it is the static artifact published by
+# GitHub/Cloudflare Pages when no remote build step is configured.
 data/tmp/
 data/cache/
 .site.radar-staging/
@@ -24,4 +25,3 @@ __pycache__/
 # Local dependencies
 node_modules/
 .pnpm-store/
-

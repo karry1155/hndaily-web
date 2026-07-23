@@ -1,0 +1,89 @@
+{
+  "schema_version": 1,
+  "subject": {
+    "subject_id": "subject-person-f517f0faa7c582",
+    "canonical_name": "王忠敏",
+    "type": "person",
+    "aliases": [],
+    "first_seen": "2026-07-23",
+    "last_seen": "2026-07-23"
+  },
+  "activities": [
+    {
+      "occurred_on": "2026-07-19",
+      "place": "博鳌乐城国际医疗旅游先行区",
+      "headline": "王忠敏完成两例钇90玻璃微球手术",
+      "detail_kind": "result",
+      "detail": "两台手术均成功",
+      "evidence": "“两台手术都很成功。”走出手术室时，王忠敏额头上沁着细密的汗珠，语气中透出欣慰。",
+      "source": {
+        "source_item_id": "hndaily-20260723-58471-19727291",
+        "published_date": "2026-07-23",
+        "source_title": "乐城“零关税”钇90来了！",
+        "detail_path": "/items/2026-07-23/hndaily-20260723-58471-19727291/",
+        "evidence": "“两台手术都很成功。”走出手术室时，王忠敏额头上沁着细密的汗珠，语气中透出欣慰。"
+      }
+    }
+  ],
+  "articles": [
+    {
+      "item_id": "hndaily-20260723-58471-19727291",
+      "published_date": "2026-07-23",
+      "page_number": "008",
+      "page_name": "健康周刊",
+      "page_sequence": 1,
+      "title": "乐城“零关税”钇90来了！",
+      "ai_summary": "博鳌乐城完成首批享受进口药械零关税政策的钇90玻璃微球手术，叠加特药险后可进一步降低肝癌患者自费负担。",
+      "scope": "mixed",
+      "subjects": [
+        {
+          "subject_id": "subject-organization-c66a2851265f85",
+          "name": "上海交通大学医学院附属瑞金医院海南医院（博鳌研究型医院）",
+          "type": "organization"
+        },
+        {
+          "subject_id": "subject-person-f517f0faa7c582",
+          "name": "王忠敏",
+          "type": "person"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "博鳌乐城国际医疗旅游先行区"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "health-medicine",
+          "category_name": "医疗与健康",
+          "evidence": "钇90玻璃微球主要用于治疗不可手术切除的肝癌"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-health-medicine-b60b0e6d127e03",
+            "name": "肝癌介入治疗",
+            "evidence": "肝癌介入治疗领域"
+          },
+          {
+            "topic_id": "topic-health-medicine-013533a969b356",
+            "name": "零关税药械",
+            "evidence": "进口药械“零关税”"
+          },
+          {
+            "topic_id": "topic-health-medicine-906aa94db2239d",
+            "name": "乐城特药险",
+            "evidence": "乐城全球特药险保障范围"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58471-19727291/"
+    }
+  ]
+}

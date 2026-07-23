@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "topic": {
+    "topic_id": "topic-tourism-consumption-539476aeb5c01f",
+    "name": "夏日避暑游",
+    "parent_id": "category-tourism-consumption",
+    "category_id": "tourism-consumption",
+    "article_count": 1,
+    "detail_path": "/topics/topic-tourism-consumption-539476aeb5c01f/"
+  },
+  "articles": [
+    {
+      "item_id": "hndaily-20260723-58468-19727255",
+      "published_date": "2026-07-23",
+      "page_number": "005",
+      "page_name": "自贸港影像志",
+      "page_sequence": 1,
+      "title": "一岛山水 一夏舒爽",
+      "ai_summary": "海南推出“夏日游海南”图片专版，推荐临高瀑布、琼中雨林、五指山漂流、定安冷泉和三亚落日等避暑体验。",
+      "scope": "hainan",
+      "subjects": [
+        {
+          "subject_id": "subject-organization-66a322e27c1ef2",
+          "name": "海南日报",
+          "type": "organization"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan-sanya",
+          "name": "三亚市",
+          "code": "460200",
+          "level": "prefecture",
+          "evidence": "相约三亚鹿回头风景区"
+        },
+        {
+          "location_id": "hainan-wuzhishan",
+          "name": "五指山市",
+          "code": "469001",
+          "level": "county",
+          "evidence": "在五指山体验峡谷漂流"
+        },
+        {
+          "location_id": "hainan-dingan",
+          "name": "定安县",
+          "code": "469021",
+          "level": "county",
+          "evidence": "前往定安久温塘火山冷泉"
+        },
+        {
+          "location_id": "hainan-lingao",
+          "name": "临高县",
+          "code": "469024",
+          "level": "county",
+          "evidence": "临高古银瀑布水流充沛、飞瀑潺潺"
+        },
+        {
+          "location_id": "hainan-qiongzhong",
+          "name": "琼中黎族苗族自治县",
+          "code": "469030",
+          "level": "county",
+          "evidence": "琼中百花岭热带雨林文化旅游区"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "tourism-consumption",
+          "category_name": "旅游与消费",
+          "evidence": "首期“夏日游海南”聚焦海南夏日之凉爽"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-tourism-consumption-539476aeb5c01f",
+            "name": "夏日避暑游",
+            "evidence": "在海南赴一场凉爽的假期。"
+          },
+          {
+            "topic_id": "topic-tourism-consumption-716353ba35f169",
+            "name": "雨林滨海旅游",
+            "evidence": "在绿意葱茏的雨林与碧波万顷的海岸间"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58468-19727255/"
+    }
+  ]
+}

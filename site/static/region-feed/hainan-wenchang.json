@@ -1,0 +1,147 @@
+{
+  "schema_version": 1,
+  "region": {
+    "location_id": "hainan-wenchang",
+    "name": "文昌市",
+    "code": "469005",
+    "level": "county",
+    "article_count": 2,
+    "detail_path": "/regions/hainan-wenchang/"
+  },
+  "articles": [
+    {
+      "item_id": "hndaily-20260723-58466-19727234",
+      "published_date": "2026-07-23",
+      "page_number": "003",
+      "page_name": "本省新闻",
+      "page_sequence": 9,
+      "title": "伴孩子健康成长 让守岛军民安心",
+      "ai_summary": "三沙教师吴泉穗近十年驻岛执教，带领团队建立红绿蓝“三色教育”体系，并通过家长学校和课外活动支持守岛家庭。",
+      "scope": "hainan",
+      "subjects": [
+        {
+          "subject_id": "subject-person-db3d7dab2ea5da",
+          "name": "吴泉穗",
+          "type": "person"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan-sansha",
+          "name": "三沙市",
+          "code": "460300",
+          "level": "prefecture",
+          "evidence": "吴泉穗是三沙市永兴学校团支部书记、教师。"
+        },
+        {
+          "location_id": "hainan-wenchang",
+          "name": "文昌市",
+          "code": "469005",
+          "level": "county",
+          "evidence": "故事里，小蚂蚁乘船从文昌奔赴永兴岛"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "education-youth",
+          "category_name": "教育与青年",
+          "evidence": "把家国情怀、生态保护、海洋知识揉进日常。"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-education-youth-795cc26de7c3aa",
+            "name": "海岛教育",
+            "evidence": "专属海岛幼儿园的“三色教育”体系"
+          },
+          {
+            "topic_id": "topic-education-youth-6ec086f6e82ddd",
+            "name": "家校协同育人",
+            "evidence": "搭建家校协同育人桥梁"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58466-19727234/"
+    },
+    {
+      "item_id": "hndaily-20260723-58464-19727203",
+      "published_date": "2026-07-23",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 7,
+      "title": "驻华使节参访海南",
+      "ai_summary": "外交部组织30余位驻华使节和国际组织代表赴海南参访，考察三亚科技产业并对接自贸港投资经贸合作。",
+      "scope": "mixed",
+      "subjects": [
+        {
+          "subject_id": "subject-organization-e74828a7bd46f8",
+          "name": "外交部",
+          "type": "organization"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan-sanya",
+          "name": "三亚市",
+          "code": "460200",
+          "level": "prefecture",
+          "evidence": "当天，代表团抵达三亚后，随即展开密集的考察交流活动。"
+        },
+        {
+          "location_id": "hainan-wuzhishan",
+          "name": "五指山市",
+          "code": "469001",
+          "level": "county",
+          "evidence": "接下来，使节团还将深入五指山、琼海、文昌等地"
+        },
+        {
+          "location_id": "hainan-qionghai",
+          "name": "琼海市",
+          "code": "469002",
+          "level": "county",
+          "evidence": "接下来，使节团还将深入五指山、琼海、文昌等地"
+        },
+        {
+          "location_id": "hainan-wenchang",
+          "name": "文昌市",
+          "code": "469005",
+          "level": "county",
+          "evidence": "接下来，使节团还将深入五指山、琼海、文昌等地"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "free-trade-opening",
+          "category_name": "自贸港与开放",
+          "evidence": "代表团出席了三亚产业对接会，围绕自贸港政策、投资经贸、热区农业、国际旅游消费等领域合作机遇，与当地政企代表进行了深入交流。"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-free-trade-opening-3dec4e0772695b",
+            "name": "驻华使节交流",
+            "evidence": "外交部组织驻华使团人员赴海南参访。"
+          },
+          {
+            "topic_id": "topic-free-trade-opening-7b02788c85e068",
+            "name": "国际投资合作",
+            "evidence": "愿积极推动本国优质资源与三亚发展需求精准对接。"
+          }
+        ]
+      },
+      "events": [
+        {
+          "event_id": "event-bad22e47a7b8dc",
+          "name": "三亚产业对接会",
+          "event_type": "named_event",
+          "evidence": "结束实地考察后，代表团出席了三亚产业对接会",
+          "occurred_on": "2026-07-22"
+        }
+      ],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58464-19727203/"
+    }
+  ]
+}

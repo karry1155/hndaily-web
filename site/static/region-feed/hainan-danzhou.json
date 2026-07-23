@@ -1,0 +1,183 @@
+{
+  "schema_version": 1,
+  "region": {
+    "location_id": "hainan-danzhou",
+    "name": "儋州市",
+    "code": "460400",
+    "level": "prefecture",
+    "article_count": 3,
+    "detail_path": "/regions/hainan-danzhou/"
+  },
+  "articles": [
+    {
+      "item_id": "hndaily-20260723-58467-19727247",
+      "published_date": "2026-07-23",
+      "page_number": "004",
+      "page_name": "民生新闻",
+      "page_sequence": 5,
+      "title": "海南公布一批中招提前批投档分数线",
+      "ai_summary": "海南省考试局公布中招提前批投档分数线，涉及省属学校及多所面向全省招生的公办高中实验班。",
+      "scope": "hainan",
+      "subjects": [
+        {
+          "subject_id": "subject-organization-aaddf4ff738768",
+          "name": "省考试局",
+          "type": "organization"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan-haikou",
+          "name": "海口市",
+          "code": "460100",
+          "level": "prefecture",
+          "evidence": "本报海口7月22日讯"
+        },
+        {
+          "location_id": "hainan-sanya",
+          "name": "三亚市",
+          "code": "460200",
+          "level": "prefecture",
+          "evidence": "三亚市迎宾中学投档分数线为813.5分"
+        },
+        {
+          "location_id": "hainan-danzhou",
+          "name": "儋州市",
+          "code": "460400",
+          "level": "prefecture",
+          "evidence": "儋州市第一中学航空国防班投档分数线为842.5分"
+        },
+        {
+          "location_id": "hainan-tunchang",
+          "name": "屯昌县",
+          "code": "469022",
+          "level": "county",
+          "evidence": "屯昌县屯昌中学投档分数线为799分"
+        },
+        {
+          "location_id": "hainan-baoting",
+          "name": "保亭黎族苗族自治县",
+          "code": "469029",
+          "level": "county",
+          "evidence": "保亭黎族苗族自治县保亭中学投档分数线为757.5分"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "education-youth",
+          "category_name": "教育与青年",
+          "evidence": "我省中招还划定了一批面向全省招生的公办普通高中学校实验班投档分数线。"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-education-youth-6e23b068c96664",
+            "name": "中招投档线",
+            "evidence": "中招提前批投档分数线"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [],
+      "reader_lead_count": 1,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58467-19727247/"
+    },
+    {
+      "item_id": "hndaily-20260723-58467-19727244",
+      "published_date": "2026-07-23",
+      "page_number": "004",
+      "page_name": "民生新闻",
+      "page_sequence": 4,
+      "title": "东坡书院研学热",
+      "ai_summary": "儋州东坡书院推出暑期非遗研学课堂，以亲子共创古法竹简为特色，并计划暑期持续开展东坡文化研学。",
+      "scope": "hainan",
+      "subjects": [
+        {
+          "subject_id": "subject-organization-b267c0fd7f4e60",
+          "name": "东坡书院",
+          "type": "organization"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan-danzhou",
+          "name": "儋州市",
+          "code": "460400",
+          "level": "prefecture",
+          "evidence": "儋州市东坡书院开启首期暑期非遗研学课堂"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "culture-history",
+          "category_name": "文化与历史",
+          "evidence": "在动手实践中近距离感受传统非遗魅力。"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-culture-history-9b532f25074423",
+            "name": "东坡文化研学",
+            "evidence": "东坡文化主题研学活动"
+          },
+          {
+            "topic_id": "topic-culture-history-8f6537ee43d86c",
+            "name": "竹简制作",
+            "evidence": "以古法竹简制作为特色课程"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58467-19727244/"
+    },
+    {
+      "item_id": "hndaily-20260723-58464-19727198",
+      "published_date": "2026-07-23",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 3,
+      "title": "高标准严要求推动学习教育走深走实\n锚定“向绿图强”扎实推动高质量发展",
+      "ai_summary": "冯飞在儋州调研学习教育与经济社会发展，要求推动绿色产业升级、建设国际海港并守牢安全生产和生态环保底线。",
+      "scope": "hainan",
+      "subjects": [
+        {
+          "subject_id": "subject-person-0c7954fba16110",
+          "name": "冯飞",
+          "type": "person"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan-danzhou",
+          "name": "儋州市",
+          "code": "460400",
+          "level": "prefecture",
+          "evidence": "7月22日，省委书记冯飞在儋州调研学习教育开展和经济社会发展情况。"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "governance-law",
+          "category_name": "治理与法治",
+          "evidence": "儋州要认认真真、扎扎实实开展好学习教育"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-governance-law-5596a8e30341ff",
+            "name": "正确政绩观教育",
+            "evidence": "结合树立和践行正确政绩观学习教育有关工作安排"
+          },
+          {
+            "topic_id": "topic-governance-law-fce097eed210e7",
+            "name": "绿色产业升级",
+            "evidence": "统筹推进传统产业绿色升级与绿色低碳产业发展"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58464-19727198/"
+    }
+  ]
+}

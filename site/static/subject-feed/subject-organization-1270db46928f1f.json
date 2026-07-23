@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "subject": {
+    "subject_id": "subject-organization-1270db46928f1f",
+    "canonical_name": "昌江",
+    "type": "organization",
+    "aliases": [],
+    "first_seen": "2026-07-23",
+    "last_seen": "2026-07-23"
+  },
+  "activities": [
+    {
+      "place": "昌江黎族自治县",
+      "headline": "昌江引进体育赛事带动文旅消费",
+      "evidence": "近年来，昌江持续推动体育产业与文旅产业深度融合、双向赋能，积极引进各类国家级精品体育赛事落地棋子湾，以赛事引流激活文旅市场、拉动文旅消费",
+      "source": {
+        "source_item_id": "hndaily-20260723-58469-19727266",
+        "published_date": "2026-07-23",
+        "source_title": "全国五子棋青少年锦标赛在昌江落幕",
+        "detail_path": "/items/2026-07-23/hndaily-20260723-58469-19727266/",
+        "evidence": "近年来，昌江持续推动体育产业与文旅产业深度融合、双向赋能，积极引进各类国家级精品体育赛事落地棋子湾，以赛事引流激活文旅市场、拉动文旅消费"
+      }
+    }
+  ],
+  "articles": [
+    {
+      "item_id": "hndaily-20260723-58469-19727266",
+      "published_date": "2026-07-23",
+      "page_number": "006",
+      "page_name": "本省新闻",
+      "page_sequence": 4,
+      "title": "全国五子棋青少年锦标赛在昌江落幕",
+      "ai_summary": "2026年全国五子棋青少年锦标赛在昌江收官，38支代表队500多名棋手参赛，并以赛事带动当地暑期文旅消费。",
+      "scope": "domestic",
+      "subjects": [
+        {
+          "subject_id": "subject-organization-1270db46928f1f",
+          "name": "昌江",
+          "type": "organization"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan-changjiang",
+          "name": "昌江黎族自治县",
+          "code": "469026",
+          "level": "county",
+          "evidence": "2026年全国五子棋青少年锦标赛在昌江黎族自治县棋子湾旅游度假区收官。"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "sports-events",
+          "category_name": "体育与赛事",
+          "evidence": "全国五子棋青少年锦标赛是我国青少年五子棋领域级别最高、规模最大、影响力最强的年度专业赛事。"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-sports-events-ccb91b335b39ac",
+            "name": "青少年五子棋",
+            "evidence": "青少年五子棋领域"
+          },
+          {
+            "topic_id": "topic-sports-events-a39c76fcdffd16",
+            "name": "赛事旅游融合",
+            "evidence": "实现“赛事+旅游”的融合发展模式"
+          }
+        ]
+      },
+      "events": [
+        {
+          "event_id": "event-35ad458c843369",
+          "name": "2026年全国五子棋青少年锦标赛",
+          "event_type": "recurring_edition",
+          "evidence": "7月22日，为期4天的2026年全国五子棋青少年锦标赛在昌江黎族自治县棋子湾旅游度假区收官。",
+          "series_name": "全国五子棋青少年锦标赛",
+          "series_id": "event-series-ef4446e1145983",
+          "occurred_on": "2026-07-19/2026-07-22"
+        }
+      ],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58469-19727266/"
+    }
+  ]
+}

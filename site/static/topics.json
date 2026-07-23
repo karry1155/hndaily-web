@@ -1,0 +1,1775 @@
+{
+  "schema_version": 1,
+  "roots": [
+    {
+      "topic_id": "category-free-trade-opening",
+      "name": "自贸港与开放",
+      "parent_id": null,
+      "category_id": "free-trade-opening",
+      "definition": "海南自贸港制度、封关运作、跨境经贸投资、国际合作与对外开放。",
+      "boundary": "只有企业或产品属于海南，不足以归入本类；开放、跨境或国际联系必须是报道核心。",
+      "article_count": 2,
+      "detail_path": "/topics/category-free-trade-opening/",
+      "children": [
+        {
+          "topic_id": "topic-free-trade-opening-8ae6edd280f06f",
+          "name": "临床急需药械",
+          "parent_id": "category-free-trade-opening",
+          "category_id": "free-trade-opening",
+          "article_count": 1,
+          "detail_path": "/topics/topic-free-trade-opening-8ae6edd280f06f/"
+        },
+        {
+          "topic_id": "topic-free-trade-opening-7b02788c85e068",
+          "name": "国际投资合作",
+          "parent_id": "category-free-trade-opening",
+          "category_id": "free-trade-opening",
+          "article_count": 1,
+          "detail_path": "/topics/topic-free-trade-opening-7b02788c85e068/"
+        },
+        {
+          "topic_id": "topic-free-trade-opening-d413a4605e27c2",
+          "name": "零关税药械通关",
+          "parent_id": "category-free-trade-opening",
+          "category_id": "free-trade-opening",
+          "article_count": 1,
+          "detail_path": "/topics/topic-free-trade-opening-d413a4605e27c2/"
+        },
+        {
+          "topic_id": "topic-free-trade-opening-3dec4e0772695b",
+          "name": "驻华使节交流",
+          "parent_id": "category-free-trade-opening",
+          "category_id": "free-trade-opening",
+          "article_count": 1,
+          "detail_path": "/topics/topic-free-trade-opening-3dec4e0772695b/"
+        }
+      ]
+    },
+    {
+      "topic_id": "category-economy-market",
+      "name": "经济与市场",
+      "parent_id": null,
+      "category_id": "economy-market",
+      "definition": "宏观经济运行、财政金融、价格就业、消费市场、营商环境和综合经济数据。",
+      "boundary": "以具体企业、产业链或建设项目为核心时优先归入产业与项目。",
+      "article_count": 3,
+      "detail_path": "/topics/category-economy-market/",
+      "children": [
+        {
+          "topic_id": "topic-economy-market-04e68552bc0dd3",
+          "name": "中央企业经营",
+          "parent_id": "category-economy-market",
+          "category_id": "economy-market",
+          "article_count": 1,
+          "detail_path": "/topics/topic-economy-market-04e68552bc0dd3/"
+        },
+        {
+          "topic_id": "topic-economy-market-3af0cd95d31cbc",
+          "name": "义乌发展经验",
+          "parent_id": "category-economy-market",
+          "category_id": "economy-market",
+          "article_count": 1,
+          "detail_path": "/topics/topic-economy-market-3af0cd95d31cbc/"
+        },
+        {
+          "topic_id": "topic-economy-market-eceb3adbd69bb7",
+          "name": "公共就业服务",
+          "parent_id": "category-economy-market",
+          "category_id": "economy-market",
+          "article_count": 1,
+          "detail_path": "/topics/topic-economy-market-eceb3adbd69bb7/"
+        },
+        {
+          "topic_id": "topic-economy-market-f4582eb752f551",
+          "name": "商贸市场改革",
+          "parent_id": "category-economy-market",
+          "category_id": "economy-market",
+          "article_count": 1,
+          "detail_path": "/topics/topic-economy-market-f4582eb752f551/"
+        },
+        {
+          "topic_id": "topic-economy-market-9ff26bd4976a05",
+          "name": "国企科技创新",
+          "parent_id": "category-economy-market",
+          "category_id": "economy-market",
+          "article_count": 1,
+          "detail_path": "/topics/topic-economy-market-9ff26bd4976a05/"
+        },
+        {
+          "topic_id": "topic-economy-market-eba97be26087be",
+          "name": "扩岗补助",
+          "parent_id": "category-economy-market",
+          "category_id": "economy-market",
+          "article_count": 1,
+          "detail_path": "/topics/topic-economy-market-eba97be26087be/"
+        },
+        {
+          "topic_id": "topic-economy-market-ae15ae40536013",
+          "name": "重大工程建设",
+          "parent_id": "category-economy-market",
+          "category_id": "economy-market",
+          "article_count": 1,
+          "detail_path": "/topics/topic-economy-market-ae15ae40536013/"
+        },
+        {
+          "topic_id": "topic-economy-market-3c9b579e65b5c3",
+          "name": "高校毕业生就业",
+          "parent_id": "category-economy-market",
+          "category_id": "economy-market",
+          "article_count": 1,
+          "detail_path": "/topics/topic-economy-market-3c9b579e65b5c3/"
+        }
+      ]
+    },
+    {
+      "topic_id": "category-industry-projects",
+      "name": "产业与项目",
+      "parent_id": null,
+      "category_id": "industry-projects",
+      "definition": "具体产业、企业经营、产业链、招商投资、园区和项目建设进展。",
+      "boundary": "纯宏观经济指标归入经济与市场；农业生产为核心时归入农业与乡村。",
+      "article_count": 0,
+      "detail_path": "/topics/category-industry-projects/",
+      "children": []
+    },
+    {
+      "topic_id": "category-technology-innovation",
+      "name": "科技与创新",
+      "parent_id": null,
+      "category_id": "technology-innovation",
+      "definition": "科研成果、技术研发、数字化、人工智能、创新创业和成果转化。",
+      "boundary": "技术只是项目配套手段、并非核心变化时仍按项目所属领域归类。",
+      "article_count": 0,
+      "detail_path": "/topics/category-technology-innovation/",
+      "children": []
+    },
+    {
+      "topic_id": "category-agriculture-rural",
+      "name": "农业与乡村",
+      "parent_id": null,
+      "category_id": "agriculture-rural",
+      "definition": "农业生产、农产品、渔业、农村建设、乡村治理和农民生活。",
+      "boundary": "农产品出口以跨境开放为核心时可归入自贸港与开放。",
+      "article_count": 2,
+      "detail_path": "/topics/category-agriculture-rural/",
+      "children": [
+        {
+          "topic_id": "topic-agriculture-rural-072a855e91e2e8",
+          "name": "农产品精深加工",
+          "parent_id": "category-agriculture-rural",
+          "category_id": "agriculture-rural",
+          "article_count": 1,
+          "detail_path": "/topics/topic-agriculture-rural-072a855e91e2e8/"
+        },
+        {
+          "topic_id": "topic-agriculture-rural-4a9961a0844c73",
+          "name": "农产品销售",
+          "parent_id": "category-agriculture-rural",
+          "category_id": "agriculture-rural",
+          "article_count": 1,
+          "detail_path": "/topics/topic-agriculture-rural-4a9961a0844c73/"
+        },
+        {
+          "topic_id": "topic-agriculture-rural-a84e25575f9fd6",
+          "name": "榴莲种植",
+          "parent_id": "category-agriculture-rural",
+          "category_id": "agriculture-rural",
+          "article_count": 1,
+          "detail_path": "/topics/topic-agriculture-rural-a84e25575f9fd6/"
+        },
+        {
+          "topic_id": "topic-agriculture-rural-67c52354c2a5a0",
+          "name": "胡椒加工",
+          "parent_id": "category-agriculture-rural",
+          "category_id": "agriculture-rural",
+          "article_count": 1,
+          "detail_path": "/topics/topic-agriculture-rural-67c52354c2a5a0/"
+        }
+      ]
+    },
+    {
+      "topic_id": "category-tourism-consumption",
+      "name": "旅游与消费",
+      "parent_id": null,
+      "category_id": "tourism-consumption",
+      "definition": "旅游产品与目的地、免税购物、餐饮零售、文旅消费和游客服务。",
+      "boundary": "文化遗产本身为核心时归入文化与历史；交通建设本身为核心时归入交通与城市。",
+      "article_count": 4,
+      "detail_path": "/topics/category-tourism-consumption/",
+      "children": [
+        {
+          "topic_id": "topic-tourism-consumption-f019076472fadd",
+          "name": "夏日避暑",
+          "parent_id": "category-tourism-consumption",
+          "category_id": "tourism-consumption",
+          "article_count": 1,
+          "detail_path": "/topics/topic-tourism-consumption-f019076472fadd/"
+        },
+        {
+          "topic_id": "topic-tourism-consumption-539476aeb5c01f",
+          "name": "夏日避暑游",
+          "parent_id": "category-tourism-consumption",
+          "category_id": "tourism-consumption",
+          "article_count": 1,
+          "detail_path": "/topics/topic-tourism-consumption-539476aeb5c01f/"
+        },
+        {
+          "topic_id": "topic-tourism-consumption-770587b1d9f643",
+          "name": "居民免税购物",
+          "parent_id": "category-tourism-consumption",
+          "category_id": "tourism-consumption",
+          "article_count": 1,
+          "detail_path": "/topics/topic-tourism-consumption-770587b1d9f643/"
+        },
+        {
+          "topic_id": "topic-tourism-consumption-1bbc977aa1d532",
+          "name": "票根经济",
+          "parent_id": "category-tourism-consumption",
+          "category_id": "tourism-consumption",
+          "article_count": 1,
+          "detail_path": "/topics/topic-tourism-consumption-1bbc977aa1d532/"
+        },
+        {
+          "topic_id": "topic-tourism-consumption-a14945ec568ee9",
+          "name": "科技艺术融合",
+          "parent_id": "category-tourism-consumption",
+          "category_id": "tourism-consumption",
+          "article_count": 1,
+          "detail_path": "/topics/topic-tourism-consumption-a14945ec568ee9/"
+        },
+        {
+          "topic_id": "topic-tourism-consumption-bdb811d6e14b35",
+          "name": "进口日用品",
+          "parent_id": "category-tourism-consumption",
+          "category_id": "tourism-consumption",
+          "article_count": 1,
+          "detail_path": "/topics/topic-tourism-consumption-bdb811d6e14b35/"
+        },
+        {
+          "topic_id": "topic-tourism-consumption-716353ba35f169",
+          "name": "雨林滨海旅游",
+          "parent_id": "category-tourism-consumption",
+          "category_id": "tourism-consumption",
+          "article_count": 1,
+          "detail_path": "/topics/topic-tourism-consumption-716353ba35f169/"
+        },
+        {
+          "topic_id": "topic-tourism-consumption-7777c98b163a14",
+          "name": "青年文旅消费",
+          "parent_id": "category-tourism-consumption",
+          "category_id": "tourism-consumption",
+          "article_count": 1,
+          "detail_path": "/topics/topic-tourism-consumption-7777c98b163a14/"
+        }
+      ]
+    },
+    {
+      "topic_id": "category-transport-cities",
+      "name": "交通与城市",
+      "parent_id": null,
+      "category_id": "transport-cities",
+      "definition": "公路铁路港航机场、公共交通、城市更新、住房、园林和市政基础设施。",
+      "boundary": "灾害抢险或安全风险为核心时归入应急与安全。",
+      "article_count": 1,
+      "detail_path": "/topics/category-transport-cities/",
+      "children": [
+        {
+          "topic_id": "topic-transport-cities-d9eb0d9fff1ed5",
+          "name": "港口基础设施",
+          "parent_id": "category-transport-cities",
+          "category_id": "transport-cities",
+          "article_count": 1,
+          "detail_path": "/topics/topic-transport-cities-d9eb0d9fff1ed5/"
+        },
+        {
+          "topic_id": "topic-transport-cities-be5f75643eb451",
+          "name": "陆海组合供应",
+          "parent_id": "category-transport-cities",
+          "category_id": "transport-cities",
+          "article_count": 1,
+          "detail_path": "/topics/topic-transport-cities-be5f75643eb451/"
+        }
+      ]
+    },
+    {
+      "topic_id": "category-education-youth",
+      "name": "教育与青年",
+      "parent_id": null,
+      "category_id": "education-youth",
+      "definition": "学校教育、招生考试、职业培训、人才培养、青年发展和校园生活。",
+      "boundary": "科研技术成果本身为核心时归入科技与创新。",
+      "article_count": 9,
+      "detail_path": "/topics/category-education-youth/",
+      "children": [
+        {
+          "topic_id": "topic-education-youth-6e23b068c96664",
+          "name": "中招投档线",
+          "parent_id": "category-education-youth",
+          "category_id": "education-youth",
+          "article_count": 1,
+          "detail_path": "/topics/topic-education-youth-6e23b068c96664/"
+        },
+        {
+          "topic_id": "topic-education-youth-49c2a96b6e0ce0",
+          "name": "中职学生评优",
+          "parent_id": "category-education-youth",
+          "category_id": "education-youth",
+          "article_count": 1,
+          "detail_path": "/topics/topic-education-youth-49c2a96b6e0ce0/"
+        },
+        {
+          "topic_id": "topic-education-youth-961fb677918135",
+          "name": "义务教育招生",
+          "parent_id": "category-education-youth",
+          "category_id": "education-youth",
+          "article_count": 1,
+          "detail_path": "/topics/topic-education-youth-961fb677918135/"
+        },
+        {
+          "topic_id": "topic-education-youth-b1e31598a1fa00",
+          "name": "协同育人",
+          "parent_id": "category-education-youth",
+          "category_id": "education-youth",
+          "article_count": 1,
+          "detail_path": "/topics/topic-education-youth-b1e31598a1fa00/"
+        },
+        {
+          "topic_id": "topic-education-youth-cfc280a5f4ae5a",
+          "name": "基础教育",
+          "parent_id": "category-education-youth",
+          "category_id": "education-youth",
+          "article_count": 1,
+          "detail_path": "/topics/topic-education-youth-cfc280a5f4ae5a/"
+        },
+        {
+          "topic_id": "topic-education-youth-a4176052d3b023",
+          "name": "基础教育扩优提质",
+          "parent_id": "category-education-youth",
+          "category_id": "education-youth",
+          "article_count": 1,
+          "detail_path": "/topics/topic-education-youth-a4176052d3b023/"
+        },
+        {
+          "topic_id": "topic-education-youth-6ec086f6e82ddd",
+          "name": "家校协同育人",
+          "parent_id": "category-education-youth",
+          "category_id": "education-youth",
+          "article_count": 1,
+          "detail_path": "/topics/topic-education-youth-6ec086f6e82ddd/"
+        },
+        {
+          "topic_id": "topic-education-youth-1224a14ffd6e11",
+          "name": "技能人才培养",
+          "parent_id": "category-education-youth",
+          "category_id": "education-youth",
+          "article_count": 1,
+          "detail_path": "/topics/topic-education-youth-1224a14ffd6e11/"
+        },
+        {
+          "topic_id": "topic-education-youth-ac1ef5b97df33a",
+          "name": "教师队伍建设",
+          "parent_id": "category-education-youth",
+          "category_id": "education-youth",
+          "article_count": 1,
+          "detail_path": "/topics/topic-education-youth-ac1ef5b97df33a/"
+        },
+        {
+          "topic_id": "topic-education-youth-4ff4bb5fb2d440",
+          "name": "教育公平",
+          "parent_id": "category-education-youth",
+          "category_id": "education-youth",
+          "article_count": 1,
+          "detail_path": "/topics/topic-education-youth-4ff4bb5fb2d440/"
+        },
+        {
+          "topic_id": "topic-education-youth-09529ea40bf78b",
+          "name": "智慧教育",
+          "parent_id": "category-education-youth",
+          "category_id": "education-youth",
+          "article_count": 1,
+          "detail_path": "/topics/topic-education-youth-09529ea40bf78b/"
+        },
+        {
+          "topic_id": "topic-education-youth-795cc26de7c3aa",
+          "name": "海岛教育",
+          "parent_id": "category-education-youth",
+          "category_id": "education-youth",
+          "article_count": 1,
+          "detail_path": "/topics/topic-education-youth-795cc26de7c3aa/"
+        },
+        {
+          "topic_id": "topic-education-youth-0caccbdab65fb6",
+          "name": "线上学位申报",
+          "parent_id": "category-education-youth",
+          "category_id": "education-youth",
+          "article_count": 1,
+          "detail_path": "/topics/topic-education-youth-0caccbdab65fb6/"
+        },
+        {
+          "topic_id": "topic-education-youth-a0b3827940fd9d",
+          "name": "职业技能培训",
+          "parent_id": "category-education-youth",
+          "category_id": "education-youth",
+          "article_count": 1,
+          "detail_path": "/topics/topic-education-youth-a0b3827940fd9d/"
+        },
+        {
+          "topic_id": "topic-education-youth-41f62db363b41e",
+          "name": "阳光快乐教育",
+          "parent_id": "category-education-youth",
+          "category_id": "education-youth",
+          "article_count": 1,
+          "detail_path": "/topics/topic-education-youth-41f62db363b41e/"
+        },
+        {
+          "topic_id": "topic-education-youth-a4c23e5a77dba4",
+          "name": "集团化办学",
+          "parent_id": "category-education-youth",
+          "category_id": "education-youth",
+          "article_count": 1,
+          "detail_path": "/topics/topic-education-youth-a4c23e5a77dba4/"
+        }
+      ]
+    },
+    {
+      "topic_id": "category-health-medicine",
+      "name": "医疗与健康",
+      "parent_id": null,
+      "category_id": "health-medicine",
+      "definition": "医疗服务、公共卫生、疾病防治、药械、中医药和健康保障。",
+      "boundary": "医疗技术产品研发为核心时可归入科技与创新。",
+      "article_count": 4,
+      "detail_path": "/topics/category-health-medicine/",
+      "children": [
+        {
+          "topic_id": "topic-health-medicine-906aa94db2239d",
+          "name": "乐城特药险",
+          "parent_id": "category-health-medicine",
+          "category_id": "health-medicine",
+          "article_count": 1,
+          "detail_path": "/topics/topic-health-medicine-906aa94db2239d/"
+        },
+        {
+          "topic_id": "topic-health-medicine-8099e130f1d954",
+          "name": "优质医疗下沉",
+          "parent_id": "category-health-medicine",
+          "category_id": "health-medicine",
+          "article_count": 1,
+          "detail_path": "/topics/topic-health-medicine-8099e130f1d954/"
+        },
+        {
+          "topic_id": "topic-health-medicine-ffdabca08046ee",
+          "name": "健康教育戏剧",
+          "parent_id": "category-health-medicine",
+          "category_id": "health-medicine",
+          "article_count": 1,
+          "detail_path": "/topics/topic-health-medicine-ffdabca08046ee/"
+        },
+        {
+          "topic_id": "topic-health-medicine-101fede58424ac",
+          "name": "医工融合",
+          "parent_id": "category-health-medicine",
+          "category_id": "health-medicine",
+          "article_count": 1,
+          "detail_path": "/topics/topic-health-medicine-101fede58424ac/"
+        },
+        {
+          "topic_id": "topic-health-medicine-f42aeda10e2360",
+          "name": "县域医疗帮扶",
+          "parent_id": "category-health-medicine",
+          "category_id": "health-medicine",
+          "article_count": 1,
+          "detail_path": "/topics/topic-health-medicine-f42aeda10e2360/"
+        },
+        {
+          "topic_id": "topic-health-medicine-9749315f13684e",
+          "name": "基层诊疗能力",
+          "parent_id": "category-health-medicine",
+          "category_id": "health-medicine",
+          "article_count": 1,
+          "detail_path": "/topics/topic-health-medicine-9749315f13684e/"
+        },
+        {
+          "topic_id": "topic-health-medicine-513855e1b6b2fd",
+          "name": "孕产期心理健康",
+          "parent_id": "category-health-medicine",
+          "category_id": "health-medicine",
+          "article_count": 1,
+          "detail_path": "/topics/topic-health-medicine-513855e1b6b2fd/"
+        },
+        {
+          "topic_id": "topic-health-medicine-923a3d9ac914d4",
+          "name": "家庭社会支持",
+          "parent_id": "category-health-medicine",
+          "category_id": "health-medicine",
+          "article_count": 1,
+          "detail_path": "/topics/topic-health-medicine-923a3d9ac914d4/"
+        },
+        {
+          "topic_id": "topic-health-medicine-d409eae8887dbf",
+          "name": "神经康复",
+          "parent_id": "category-health-medicine",
+          "category_id": "health-medicine",
+          "article_count": 1,
+          "detail_path": "/topics/topic-health-medicine-d409eae8887dbf/"
+        },
+        {
+          "topic_id": "topic-health-medicine-b60b0e6d127e03",
+          "name": "肝癌介入治疗",
+          "parent_id": "category-health-medicine",
+          "category_id": "health-medicine",
+          "article_count": 1,
+          "detail_path": "/topics/topic-health-medicine-b60b0e6d127e03/"
+        },
+        {
+          "topic_id": "topic-health-medicine-1846176c488bf8",
+          "name": "脑机接口",
+          "parent_id": "category-health-medicine",
+          "category_id": "health-medicine",
+          "article_count": 1,
+          "detail_path": "/topics/topic-health-medicine-1846176c488bf8/"
+        },
+        {
+          "topic_id": "topic-health-medicine-013533a969b356",
+          "name": "零关税药械",
+          "parent_id": "category-health-medicine",
+          "category_id": "health-medicine",
+          "article_count": 1,
+          "detail_path": "/topics/topic-health-medicine-013533a969b356/"
+        }
+      ]
+    },
+    {
+      "topic_id": "category-ecology-climate",
+      "name": "生态与气候",
+      "parent_id": null,
+      "category_id": "ecology-climate",
+      "definition": "生态保护、环境治理、污染防治、海洋生态、气候与绿色低碳。",
+      "boundary": "正在发生的气象灾害和避险信息归入应急与安全。",
+      "article_count": 4,
+      "detail_path": "/topics/category-ecology-climate/",
+      "children": [
+        {
+          "topic_id": "topic-ecology-climate-75a9b5d171d0ef",
+          "name": "两山转化",
+          "parent_id": "category-ecology-climate",
+          "category_id": "ecology-climate",
+          "article_count": 1,
+          "detail_path": "/topics/topic-ecology-climate-75a9b5d171d0ef/"
+        },
+        {
+          "topic_id": "topic-ecology-climate-3d8b0bab160db2",
+          "name": "乡村旅游",
+          "parent_id": "category-ecology-climate",
+          "category_id": "ecology-climate",
+          "article_count": 1,
+          "detail_path": "/topics/topic-ecology-climate-3d8b0bab160db2/"
+        },
+        {
+          "topic_id": "topic-ecology-climate-eefe91d4d1b530",
+          "name": "林草种质资源",
+          "parent_id": "category-ecology-climate",
+          "category_id": "ecology-climate",
+          "article_count": 1,
+          "detail_path": "/topics/topic-ecology-climate-eefe91d4d1b530/"
+        },
+        {
+          "topic_id": "topic-ecology-climate-1f05d9985d62d1",
+          "name": "森林质量提升",
+          "parent_id": "category-ecology-climate",
+          "category_id": "ecology-climate",
+          "article_count": 1,
+          "detail_path": "/topics/topic-ecology-climate-1f05d9985d62d1/"
+        },
+        {
+          "topic_id": "topic-ecology-climate-f1b853d2924b57",
+          "name": "海域生态保护",
+          "parent_id": "category-ecology-climate",
+          "category_id": "ecology-climate",
+          "article_count": 1,
+          "detail_path": "/topics/topic-ecology-climate-f1b853d2924b57/"
+        },
+        {
+          "topic_id": "topic-ecology-climate-e22ad1bf98f5db",
+          "name": "珊瑚礁监测",
+          "parent_id": "category-ecology-climate",
+          "category_id": "ecology-climate",
+          "article_count": 1,
+          "detail_path": "/topics/topic-ecology-climate-e22ad1bf98f5db/"
+        },
+        {
+          "topic_id": "topic-ecology-climate-9aaca39ec1eced",
+          "name": "自然保护地体系",
+          "parent_id": "category-ecology-climate",
+          "category_id": "ecology-climate",
+          "article_count": 1,
+          "detail_path": "/topics/topic-ecology-climate-9aaca39ec1eced/"
+        },
+        {
+          "topic_id": "topic-ecology-climate-fbdeb49762978f",
+          "name": "良种引种试种",
+          "parent_id": "category-ecology-climate",
+          "category_id": "ecology-climate",
+          "article_count": 1,
+          "detail_path": "/topics/topic-ecology-climate-fbdeb49762978f/"
+        }
+      ]
+    },
+    {
+      "topic_id": "category-culture-history",
+      "name": "文化与历史",
+      "parent_id": null,
+      "category_id": "culture-history",
+      "definition": "文学艺术、文化遗产、历史研究、博物馆、出版影视和公共文化。",
+      "boundary": "以游客产品和消费活动为核心时归入旅游与消费。",
+      "article_count": 2,
+      "detail_path": "/topics/category-culture-history/",
+      "children": [
+        {
+          "topic_id": "topic-culture-history-9b532f25074423",
+          "name": "东坡文化研学",
+          "parent_id": "category-culture-history",
+          "category_id": "culture-history",
+          "article_count": 1,
+          "detail_path": "/topics/topic-culture-history-9b532f25074423/"
+        },
+        {
+          "topic_id": "topic-culture-history-a5d86834b74706",
+          "name": "文明实践",
+          "parent_id": "category-culture-history",
+          "category_id": "culture-history",
+          "article_count": 1,
+          "detail_path": "/topics/topic-culture-history-a5d86834b74706/"
+        },
+        {
+          "topic_id": "topic-culture-history-87553058f14ff6",
+          "name": "民族团结宣讲",
+          "parent_id": "category-culture-history",
+          "category_id": "culture-history",
+          "article_count": 1,
+          "detail_path": "/topics/topic-culture-history-87553058f14ff6/"
+        },
+        {
+          "topic_id": "topic-culture-history-8f6537ee43d86c",
+          "name": "竹简制作",
+          "parent_id": "category-culture-history",
+          "category_id": "culture-history",
+          "article_count": 1,
+          "detail_path": "/topics/topic-culture-history-8f6537ee43d86c/"
+        }
+      ]
+    },
+    {
+      "topic_id": "category-sports-events",
+      "name": "体育与赛事",
+      "parent_id": null,
+      "category_id": "sports-events",
+      "definition": "竞技体育、群众体育、运动员、体育场馆和各类赛事活动。",
+      "boundary": "体育旅游消费为核心时可归入旅游与消费。",
+      "article_count": 3,
+      "detail_path": "/topics/category-sports-events/",
+      "children": [
+        {
+          "topic_id": "topic-sports-events-0397a52123de39",
+          "name": "人工智能竞技",
+          "parent_id": "category-sports-events",
+          "category_id": "sports-events",
+          "article_count": 1,
+          "detail_path": "/topics/topic-sports-events-0397a52123de39/"
+        },
+        {
+          "topic_id": "topic-sports-events-cd004165f57af3",
+          "name": "体育产业",
+          "parent_id": "category-sports-events",
+          "category_id": "sports-events",
+          "article_count": 1,
+          "detail_path": "/topics/topic-sports-events-cd004165f57af3/"
+        },
+        {
+          "topic_id": "topic-sports-events-ec0a88be311d5e",
+          "name": "体育强国建设",
+          "parent_id": "category-sports-events",
+          "category_id": "sports-events",
+          "article_count": 1,
+          "detail_path": "/topics/topic-sports-events-ec0a88be311d5e/"
+        },
+        {
+          "topic_id": "topic-sports-events-25448570df6437",
+          "name": "全民健身",
+          "parent_id": "category-sports-events",
+          "category_id": "sports-events",
+          "article_count": 1,
+          "detail_path": "/topics/topic-sports-events-25448570df6437/"
+        },
+        {
+          "topic_id": "topic-sports-events-a39c76fcdffd16",
+          "name": "赛事旅游融合",
+          "parent_id": "category-sports-events",
+          "category_id": "sports-events",
+          "article_count": 1,
+          "detail_path": "/topics/topic-sports-events-a39c76fcdffd16/"
+        },
+        {
+          "topic_id": "topic-sports-events-ccb91b335b39ac",
+          "name": "青少年五子棋",
+          "parent_id": "category-sports-events",
+          "category_id": "sports-events",
+          "article_count": 1,
+          "detail_path": "/topics/topic-sports-events-ccb91b335b39ac/"
+        },
+        {
+          "topic_id": "topic-sports-events-58679237bdc296",
+          "name": "青少年机器人竞赛",
+          "parent_id": "category-sports-events",
+          "category_id": "sports-events",
+          "article_count": 1,
+          "detail_path": "/topics/topic-sports-events-58679237bdc296/"
+        }
+      ]
+    },
+    {
+      "topic_id": "category-society-public-services",
+      "name": "社会与公共服务",
+      "parent_id": null,
+      "category_id": "society-public-services",
+      "definition": "社区民生、养老托育、社会保障、志愿服务和日常公共服务。",
+      "boundary": "政府制度与执法治理为核心时归入治理与法治。",
+      "article_count": 1,
+      "detail_path": "/topics/category-society-public-services/",
+      "children": [
+        {
+          "topic_id": "topic-society-public-services-69c00d47101587",
+          "name": "军民共建",
+          "parent_id": "category-society-public-services",
+          "category_id": "society-public-services",
+          "article_count": 1,
+          "detail_path": "/topics/topic-society-public-services-69c00d47101587/"
+        },
+        {
+          "topic_id": "topic-society-public-services-f93a701383c75d",
+          "name": "双拥工作",
+          "parent_id": "category-society-public-services",
+          "category_id": "society-public-services",
+          "article_count": 1,
+          "detail_path": "/topics/topic-society-public-services-f93a701383c75d/"
+        }
+      ]
+    },
+    {
+      "topic_id": "category-governance-law",
+      "name": "治理与法治",
+      "parent_id": null,
+      "category_id": "governance-law",
+      "definition": "党政治理、政策制度、改革监督、行政执法、司法和法治建设。",
+      "boundary": "具体民生服务结果为核心时归入社会与公共服务。",
+      "article_count": 6,
+      "detail_path": "/topics/category-governance-law/",
+      "children": [
+        {
+          "topic_id": "topic-governance-law-9aac53e670d458",
+          "name": "亲清政商关系",
+          "parent_id": "category-governance-law",
+          "category_id": "governance-law",
+          "article_count": 1,
+          "detail_path": "/topics/topic-governance-law-9aac53e670d458/"
+        },
+        {
+          "topic_id": "topic-governance-law-8440c8face627e",
+          "name": "兵员征集",
+          "parent_id": "category-governance-law",
+          "category_id": "governance-law",
+          "article_count": 1,
+          "detail_path": "/topics/topic-governance-law-8440c8face627e/"
+        },
+        {
+          "topic_id": "topic-governance-law-2d255186cab136",
+          "name": "农村集体经济",
+          "parent_id": "category-governance-law",
+          "category_id": "governance-law",
+          "article_count": 1,
+          "detail_path": "/topics/topic-governance-law-2d255186cab136/"
+        },
+        {
+          "topic_id": "topic-governance-law-30971699361de6",
+          "name": "廉洁征兵",
+          "parent_id": "category-governance-law",
+          "category_id": "governance-law",
+          "article_count": 1,
+          "detail_path": "/topics/topic-governance-law-30971699361de6/"
+        },
+        {
+          "topic_id": "topic-governance-law-26dda9b951cb30",
+          "name": "政商交往规范",
+          "parent_id": "category-governance-law",
+          "category_id": "governance-law",
+          "article_count": 1,
+          "detail_path": "/topics/topic-governance-law-26dda9b951cb30/"
+        },
+        {
+          "topic_id": "topic-governance-law-28c67f9c395553",
+          "name": "村办物业",
+          "parent_id": "category-governance-law",
+          "category_id": "governance-law",
+          "article_count": 1,
+          "detail_path": "/topics/topic-governance-law-28c67f9c395553/"
+        },
+        {
+          "topic_id": "topic-governance-law-5596a8e30341ff",
+          "name": "正确政绩观教育",
+          "parent_id": "category-governance-law",
+          "category_id": "governance-law",
+          "article_count": 1,
+          "detail_path": "/topics/topic-governance-law-5596a8e30341ff/"
+        },
+        {
+          "topic_id": "topic-governance-law-2e2cbb70b40a90",
+          "name": "民生监督",
+          "parent_id": "category-governance-law",
+          "category_id": "governance-law",
+          "article_count": 1,
+          "detail_path": "/topics/topic-governance-law-2e2cbb70b40a90/"
+        },
+        {
+          "topic_id": "topic-governance-law-9d39420a35cb90",
+          "name": "物业服务整治",
+          "parent_id": "category-governance-law",
+          "category_id": "governance-law",
+          "article_count": 1,
+          "detail_path": "/topics/topic-governance-law-9d39420a35cb90/"
+        },
+        {
+          "topic_id": "topic-governance-law-578c091bbbdb40",
+          "name": "监督机制",
+          "parent_id": "category-governance-law",
+          "category_id": "governance-law",
+          "article_count": 1,
+          "detail_path": "/topics/topic-governance-law-578c091bbbdb40/"
+        },
+        {
+          "topic_id": "topic-governance-law-fce097eed210e7",
+          "name": "绿色产业升级",
+          "parent_id": "category-governance-law",
+          "category_id": "governance-law",
+          "article_count": 1,
+          "detail_path": "/topics/topic-governance-law-fce097eed210e7/"
+        },
+        {
+          "topic_id": "topic-governance-law-5bf6000cb05611",
+          "name": "营商环境",
+          "parent_id": "category-governance-law",
+          "category_id": "governance-law",
+          "article_count": 1,
+          "detail_path": "/topics/topic-governance-law-5bf6000cb05611/"
+        },
+        {
+          "topic_id": "topic-governance-law-4e1e9c6b496203",
+          "name": "集体资金监管",
+          "parent_id": "category-governance-law",
+          "category_id": "governance-law",
+          "article_count": 1,
+          "detail_path": "/topics/topic-governance-law-4e1e9c6b496203/"
+        }
+      ]
+    },
+    {
+      "topic_id": "category-emergency-safety",
+      "name": "应急与安全",
+      "parent_id": null,
+      "category_id": "emergency-safety",
+      "definition": "台风暴雨、事故灾害、消防救援、安全生产、公共风险和应急处置。",
+      "boundary": "一般生态治理或常态化气候信息归入生态与气候。",
+      "article_count": 1,
+      "detail_path": "/topics/category-emergency-safety/",
+      "children": [
+        {
+          "topic_id": "topic-emergency-safety-89ee20c90eb098",
+          "name": "水上交通安全",
+          "parent_id": "category-emergency-safety",
+          "category_id": "emergency-safety",
+          "article_count": 1,
+          "detail_path": "/topics/topic-emergency-safety-89ee20c90eb098/"
+        },
+        {
+          "topic_id": "topic-emergency-safety-9cb413732e2932",
+          "name": "汛期风险防控",
+          "parent_id": "category-emergency-safety",
+          "category_id": "emergency-safety",
+          "article_count": 1,
+          "detail_path": "/topics/topic-emergency-safety-9cb413732e2932/"
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "topic_id": "topic-free-trade-opening-3dec4e0772695b",
+      "name": "驻华使节交流",
+      "parent_id": "category-free-trade-opening",
+      "category_id": "free-trade-opening",
+      "article_count": 1,
+      "detail_path": "/topics/topic-free-trade-opening-3dec4e0772695b/"
+    },
+    {
+      "topic_id": "topic-free-trade-opening-7b02788c85e068",
+      "name": "国际投资合作",
+      "parent_id": "category-free-trade-opening",
+      "category_id": "free-trade-opening",
+      "article_count": 1,
+      "detail_path": "/topics/topic-free-trade-opening-7b02788c85e068/"
+    },
+    {
+      "topic_id": "topic-free-trade-opening-d413a4605e27c2",
+      "name": "零关税药械通关",
+      "parent_id": "category-free-trade-opening",
+      "category_id": "free-trade-opening",
+      "article_count": 1,
+      "detail_path": "/topics/topic-free-trade-opening-d413a4605e27c2/"
+    },
+    {
+      "topic_id": "topic-free-trade-opening-8ae6edd280f06f",
+      "name": "临床急需药械",
+      "parent_id": "category-free-trade-opening",
+      "category_id": "free-trade-opening",
+      "article_count": 1,
+      "detail_path": "/topics/topic-free-trade-opening-8ae6edd280f06f/"
+    },
+    {
+      "topic_id": "category-free-trade-opening",
+      "name": "自贸港与开放",
+      "parent_id": null,
+      "category_id": "free-trade-opening",
+      "definition": "海南自贸港制度、封关运作、跨境经贸投资、国际合作与对外开放。",
+      "boundary": "只有企业或产品属于海南，不足以归入本类；开放、跨境或国际联系必须是报道核心。",
+      "article_count": 2,
+      "detail_path": "/topics/category-free-trade-opening/"
+    },
+    {
+      "topic_id": "topic-economy-market-3af0cd95d31cbc",
+      "name": "义乌发展经验",
+      "parent_id": "category-economy-market",
+      "category_id": "economy-market",
+      "article_count": 1,
+      "detail_path": "/topics/topic-economy-market-3af0cd95d31cbc/"
+    },
+    {
+      "topic_id": "topic-economy-market-f4582eb752f551",
+      "name": "商贸市场改革",
+      "parent_id": "category-economy-market",
+      "category_id": "economy-market",
+      "article_count": 1,
+      "detail_path": "/topics/topic-economy-market-f4582eb752f551/"
+    },
+    {
+      "topic_id": "topic-economy-market-04e68552bc0dd3",
+      "name": "中央企业经营",
+      "parent_id": "category-economy-market",
+      "category_id": "economy-market",
+      "article_count": 1,
+      "detail_path": "/topics/topic-economy-market-04e68552bc0dd3/"
+    },
+    {
+      "topic_id": "topic-economy-market-9ff26bd4976a05",
+      "name": "国企科技创新",
+      "parent_id": "category-economy-market",
+      "category_id": "economy-market",
+      "article_count": 1,
+      "detail_path": "/topics/topic-economy-market-9ff26bd4976a05/"
+    },
+    {
+      "topic_id": "topic-economy-market-ae15ae40536013",
+      "name": "重大工程建设",
+      "parent_id": "category-economy-market",
+      "category_id": "economy-market",
+      "article_count": 1,
+      "detail_path": "/topics/topic-economy-market-ae15ae40536013/"
+    },
+    {
+      "topic_id": "topic-economy-market-3c9b579e65b5c3",
+      "name": "高校毕业生就业",
+      "parent_id": "category-economy-market",
+      "category_id": "economy-market",
+      "article_count": 1,
+      "detail_path": "/topics/topic-economy-market-3c9b579e65b5c3/"
+    },
+    {
+      "topic_id": "topic-economy-market-eceb3adbd69bb7",
+      "name": "公共就业服务",
+      "parent_id": "category-economy-market",
+      "category_id": "economy-market",
+      "article_count": 1,
+      "detail_path": "/topics/topic-economy-market-eceb3adbd69bb7/"
+    },
+    {
+      "topic_id": "topic-economy-market-eba97be26087be",
+      "name": "扩岗补助",
+      "parent_id": "category-economy-market",
+      "category_id": "economy-market",
+      "article_count": 1,
+      "detail_path": "/topics/topic-economy-market-eba97be26087be/"
+    },
+    {
+      "topic_id": "category-economy-market",
+      "name": "经济与市场",
+      "parent_id": null,
+      "category_id": "economy-market",
+      "definition": "宏观经济运行、财政金融、价格就业、消费市场、营商环境和综合经济数据。",
+      "boundary": "以具体企业、产业链或建设项目为核心时优先归入产业与项目。",
+      "article_count": 3,
+      "detail_path": "/topics/category-economy-market/"
+    },
+    {
+      "topic_id": "category-industry-projects",
+      "name": "产业与项目",
+      "parent_id": null,
+      "category_id": "industry-projects",
+      "definition": "具体产业、企业经营、产业链、招商投资、园区和项目建设进展。",
+      "boundary": "纯宏观经济指标归入经济与市场；农业生产为核心时归入农业与乡村。",
+      "article_count": 0,
+      "detail_path": "/topics/category-industry-projects/"
+    },
+    {
+      "topic_id": "category-technology-innovation",
+      "name": "科技与创新",
+      "parent_id": null,
+      "category_id": "technology-innovation",
+      "definition": "科研成果、技术研发、数字化、人工智能、创新创业和成果转化。",
+      "boundary": "技术只是项目配套手段、并非核心变化时仍按项目所属领域归类。",
+      "article_count": 0,
+      "detail_path": "/topics/category-technology-innovation/"
+    },
+    {
+      "topic_id": "topic-agriculture-rural-a84e25575f9fd6",
+      "name": "榴莲种植",
+      "parent_id": "category-agriculture-rural",
+      "category_id": "agriculture-rural",
+      "article_count": 1,
+      "detail_path": "/topics/topic-agriculture-rural-a84e25575f9fd6/"
+    },
+    {
+      "topic_id": "topic-agriculture-rural-4a9961a0844c73",
+      "name": "农产品销售",
+      "parent_id": "category-agriculture-rural",
+      "category_id": "agriculture-rural",
+      "article_count": 1,
+      "detail_path": "/topics/topic-agriculture-rural-4a9961a0844c73/"
+    },
+    {
+      "topic_id": "topic-agriculture-rural-67c52354c2a5a0",
+      "name": "胡椒加工",
+      "parent_id": "category-agriculture-rural",
+      "category_id": "agriculture-rural",
+      "article_count": 1,
+      "detail_path": "/topics/topic-agriculture-rural-67c52354c2a5a0/"
+    },
+    {
+      "topic_id": "topic-agriculture-rural-072a855e91e2e8",
+      "name": "农产品精深加工",
+      "parent_id": "category-agriculture-rural",
+      "category_id": "agriculture-rural",
+      "article_count": 1,
+      "detail_path": "/topics/topic-agriculture-rural-072a855e91e2e8/"
+    },
+    {
+      "topic_id": "category-agriculture-rural",
+      "name": "农业与乡村",
+      "parent_id": null,
+      "category_id": "agriculture-rural",
+      "definition": "农业生产、农产品、渔业、农村建设、乡村治理和农民生活。",
+      "boundary": "农产品出口以跨境开放为核心时可归入自贸港与开放。",
+      "article_count": 2,
+      "detail_path": "/topics/category-agriculture-rural/"
+    },
+    {
+      "topic_id": "topic-tourism-consumption-f019076472fadd",
+      "name": "夏日避暑",
+      "parent_id": "category-tourism-consumption",
+      "category_id": "tourism-consumption",
+      "article_count": 1,
+      "detail_path": "/topics/topic-tourism-consumption-f019076472fadd/"
+    },
+    {
+      "topic_id": "topic-tourism-consumption-539476aeb5c01f",
+      "name": "夏日避暑游",
+      "parent_id": "category-tourism-consumption",
+      "category_id": "tourism-consumption",
+      "article_count": 1,
+      "detail_path": "/topics/topic-tourism-consumption-539476aeb5c01f/"
+    },
+    {
+      "topic_id": "topic-tourism-consumption-716353ba35f169",
+      "name": "雨林滨海旅游",
+      "parent_id": "category-tourism-consumption",
+      "category_id": "tourism-consumption",
+      "article_count": 1,
+      "detail_path": "/topics/topic-tourism-consumption-716353ba35f169/"
+    },
+    {
+      "topic_id": "topic-tourism-consumption-770587b1d9f643",
+      "name": "居民免税购物",
+      "parent_id": "category-tourism-consumption",
+      "category_id": "tourism-consumption",
+      "article_count": 1,
+      "detail_path": "/topics/topic-tourism-consumption-770587b1d9f643/"
+    },
+    {
+      "topic_id": "topic-tourism-consumption-bdb811d6e14b35",
+      "name": "进口日用品",
+      "parent_id": "category-tourism-consumption",
+      "category_id": "tourism-consumption",
+      "article_count": 1,
+      "detail_path": "/topics/topic-tourism-consumption-bdb811d6e14b35/"
+    },
+    {
+      "topic_id": "topic-tourism-consumption-a14945ec568ee9",
+      "name": "科技艺术融合",
+      "parent_id": "category-tourism-consumption",
+      "category_id": "tourism-consumption",
+      "article_count": 1,
+      "detail_path": "/topics/topic-tourism-consumption-a14945ec568ee9/"
+    },
+    {
+      "topic_id": "topic-tourism-consumption-1bbc977aa1d532",
+      "name": "票根经济",
+      "parent_id": "category-tourism-consumption",
+      "category_id": "tourism-consumption",
+      "article_count": 1,
+      "detail_path": "/topics/topic-tourism-consumption-1bbc977aa1d532/"
+    },
+    {
+      "topic_id": "topic-tourism-consumption-7777c98b163a14",
+      "name": "青年文旅消费",
+      "parent_id": "category-tourism-consumption",
+      "category_id": "tourism-consumption",
+      "article_count": 1,
+      "detail_path": "/topics/topic-tourism-consumption-7777c98b163a14/"
+    },
+    {
+      "topic_id": "category-tourism-consumption",
+      "name": "旅游与消费",
+      "parent_id": null,
+      "category_id": "tourism-consumption",
+      "definition": "旅游产品与目的地、免税购物、餐饮零售、文旅消费和游客服务。",
+      "boundary": "文化遗产本身为核心时归入文化与历史；交通建设本身为核心时归入交通与城市。",
+      "article_count": 4,
+      "detail_path": "/topics/category-tourism-consumption/"
+    },
+    {
+      "topic_id": "topic-transport-cities-be5f75643eb451",
+      "name": "陆海组合供应",
+      "parent_id": "category-transport-cities",
+      "category_id": "transport-cities",
+      "article_count": 1,
+      "detail_path": "/topics/topic-transport-cities-be5f75643eb451/"
+    },
+    {
+      "topic_id": "topic-transport-cities-d9eb0d9fff1ed5",
+      "name": "港口基础设施",
+      "parent_id": "category-transport-cities",
+      "category_id": "transport-cities",
+      "article_count": 1,
+      "detail_path": "/topics/topic-transport-cities-d9eb0d9fff1ed5/"
+    },
+    {
+      "topic_id": "category-transport-cities",
+      "name": "交通与城市",
+      "parent_id": null,
+      "category_id": "transport-cities",
+      "definition": "公路铁路港航机场、公共交通、城市更新、住房、园林和市政基础设施。",
+      "boundary": "灾害抢险或安全风险为核心时归入应急与安全。",
+      "article_count": 1,
+      "detail_path": "/topics/category-transport-cities/"
+    },
+    {
+      "topic_id": "topic-education-youth-a4176052d3b023",
+      "name": "基础教育扩优提质",
+      "parent_id": "category-education-youth",
+      "category_id": "education-youth",
+      "article_count": 1,
+      "detail_path": "/topics/topic-education-youth-a4176052d3b023/"
+    },
+    {
+      "topic_id": "topic-education-youth-ac1ef5b97df33a",
+      "name": "教师队伍建设",
+      "parent_id": "category-education-youth",
+      "category_id": "education-youth",
+      "article_count": 1,
+      "detail_path": "/topics/topic-education-youth-ac1ef5b97df33a/"
+    },
+    {
+      "topic_id": "topic-education-youth-cfc280a5f4ae5a",
+      "name": "基础教育",
+      "parent_id": "category-education-youth",
+      "category_id": "education-youth",
+      "article_count": 1,
+      "detail_path": "/topics/topic-education-youth-cfc280a5f4ae5a/"
+    },
+    {
+      "topic_id": "topic-education-youth-4ff4bb5fb2d440",
+      "name": "教育公平",
+      "parent_id": "category-education-youth",
+      "category_id": "education-youth",
+      "article_count": 1,
+      "detail_path": "/topics/topic-education-youth-4ff4bb5fb2d440/"
+    },
+    {
+      "topic_id": "topic-education-youth-b1e31598a1fa00",
+      "name": "协同育人",
+      "parent_id": "category-education-youth",
+      "category_id": "education-youth",
+      "article_count": 1,
+      "detail_path": "/topics/topic-education-youth-b1e31598a1fa00/"
+    },
+    {
+      "topic_id": "topic-education-youth-1224a14ffd6e11",
+      "name": "技能人才培养",
+      "parent_id": "category-education-youth",
+      "category_id": "education-youth",
+      "article_count": 1,
+      "detail_path": "/topics/topic-education-youth-1224a14ffd6e11/"
+    },
+    {
+      "topic_id": "topic-education-youth-a0b3827940fd9d",
+      "name": "职业技能培训",
+      "parent_id": "category-education-youth",
+      "category_id": "education-youth",
+      "article_count": 1,
+      "detail_path": "/topics/topic-education-youth-a0b3827940fd9d/"
+    },
+    {
+      "topic_id": "topic-education-youth-795cc26de7c3aa",
+      "name": "海岛教育",
+      "parent_id": "category-education-youth",
+      "category_id": "education-youth",
+      "article_count": 1,
+      "detail_path": "/topics/topic-education-youth-795cc26de7c3aa/"
+    },
+    {
+      "topic_id": "topic-education-youth-6ec086f6e82ddd",
+      "name": "家校协同育人",
+      "parent_id": "category-education-youth",
+      "category_id": "education-youth",
+      "article_count": 1,
+      "detail_path": "/topics/topic-education-youth-6ec086f6e82ddd/"
+    },
+    {
+      "topic_id": "topic-education-youth-a4c23e5a77dba4",
+      "name": "集团化办学",
+      "parent_id": "category-education-youth",
+      "category_id": "education-youth",
+      "article_count": 1,
+      "detail_path": "/topics/topic-education-youth-a4c23e5a77dba4/"
+    },
+    {
+      "topic_id": "topic-education-youth-09529ea40bf78b",
+      "name": "智慧教育",
+      "parent_id": "category-education-youth",
+      "category_id": "education-youth",
+      "article_count": 1,
+      "detail_path": "/topics/topic-education-youth-09529ea40bf78b/"
+    },
+    {
+      "topic_id": "topic-education-youth-41f62db363b41e",
+      "name": "阳光快乐教育",
+      "parent_id": "category-education-youth",
+      "category_id": "education-youth",
+      "article_count": 1,
+      "detail_path": "/topics/topic-education-youth-41f62db363b41e/"
+    },
+    {
+      "topic_id": "topic-education-youth-49c2a96b6e0ce0",
+      "name": "中职学生评优",
+      "parent_id": "category-education-youth",
+      "category_id": "education-youth",
+      "article_count": 1,
+      "detail_path": "/topics/topic-education-youth-49c2a96b6e0ce0/"
+    },
+    {
+      "topic_id": "topic-education-youth-6e23b068c96664",
+      "name": "中招投档线",
+      "parent_id": "category-education-youth",
+      "category_id": "education-youth",
+      "article_count": 1,
+      "detail_path": "/topics/topic-education-youth-6e23b068c96664/"
+    },
+    {
+      "topic_id": "topic-education-youth-961fb677918135",
+      "name": "义务教育招生",
+      "parent_id": "category-education-youth",
+      "category_id": "education-youth",
+      "article_count": 1,
+      "detail_path": "/topics/topic-education-youth-961fb677918135/"
+    },
+    {
+      "topic_id": "topic-education-youth-0caccbdab65fb6",
+      "name": "线上学位申报",
+      "parent_id": "category-education-youth",
+      "category_id": "education-youth",
+      "article_count": 1,
+      "detail_path": "/topics/topic-education-youth-0caccbdab65fb6/"
+    },
+    {
+      "topic_id": "category-education-youth",
+      "name": "教育与青年",
+      "parent_id": null,
+      "category_id": "education-youth",
+      "definition": "学校教育、招生考试、职业培训、人才培养、青年发展和校园生活。",
+      "boundary": "科研技术成果本身为核心时归入科技与创新。",
+      "article_count": 9,
+      "detail_path": "/topics/category-education-youth/"
+    },
+    {
+      "topic_id": "topic-health-medicine-b60b0e6d127e03",
+      "name": "肝癌介入治疗",
+      "parent_id": "category-health-medicine",
+      "category_id": "health-medicine",
+      "article_count": 1,
+      "detail_path": "/topics/topic-health-medicine-b60b0e6d127e03/"
+    },
+    {
+      "topic_id": "topic-health-medicine-013533a969b356",
+      "name": "零关税药械",
+      "parent_id": "category-health-medicine",
+      "category_id": "health-medicine",
+      "article_count": 1,
+      "detail_path": "/topics/topic-health-medicine-013533a969b356/"
+    },
+    {
+      "topic_id": "topic-health-medicine-906aa94db2239d",
+      "name": "乐城特药险",
+      "parent_id": "category-health-medicine",
+      "category_id": "health-medicine",
+      "article_count": 1,
+      "detail_path": "/topics/topic-health-medicine-906aa94db2239d/"
+    },
+    {
+      "topic_id": "topic-health-medicine-f42aeda10e2360",
+      "name": "县域医疗帮扶",
+      "parent_id": "category-health-medicine",
+      "category_id": "health-medicine",
+      "article_count": 1,
+      "detail_path": "/topics/topic-health-medicine-f42aeda10e2360/"
+    },
+    {
+      "topic_id": "topic-health-medicine-8099e130f1d954",
+      "name": "优质医疗下沉",
+      "parent_id": "category-health-medicine",
+      "category_id": "health-medicine",
+      "article_count": 1,
+      "detail_path": "/topics/topic-health-medicine-8099e130f1d954/"
+    },
+    {
+      "topic_id": "topic-health-medicine-9749315f13684e",
+      "name": "基层诊疗能力",
+      "parent_id": "category-health-medicine",
+      "category_id": "health-medicine",
+      "article_count": 1,
+      "detail_path": "/topics/topic-health-medicine-9749315f13684e/"
+    },
+    {
+      "topic_id": "topic-health-medicine-513855e1b6b2fd",
+      "name": "孕产期心理健康",
+      "parent_id": "category-health-medicine",
+      "category_id": "health-medicine",
+      "article_count": 1,
+      "detail_path": "/topics/topic-health-medicine-513855e1b6b2fd/"
+    },
+    {
+      "topic_id": "topic-health-medicine-ffdabca08046ee",
+      "name": "健康教育戏剧",
+      "parent_id": "category-health-medicine",
+      "category_id": "health-medicine",
+      "article_count": 1,
+      "detail_path": "/topics/topic-health-medicine-ffdabca08046ee/"
+    },
+    {
+      "topic_id": "topic-health-medicine-923a3d9ac914d4",
+      "name": "家庭社会支持",
+      "parent_id": "category-health-medicine",
+      "category_id": "health-medicine",
+      "article_count": 1,
+      "detail_path": "/topics/topic-health-medicine-923a3d9ac914d4/"
+    },
+    {
+      "topic_id": "topic-health-medicine-1846176c488bf8",
+      "name": "脑机接口",
+      "parent_id": "category-health-medicine",
+      "category_id": "health-medicine",
+      "article_count": 1,
+      "detail_path": "/topics/topic-health-medicine-1846176c488bf8/"
+    },
+    {
+      "topic_id": "topic-health-medicine-d409eae8887dbf",
+      "name": "神经康复",
+      "parent_id": "category-health-medicine",
+      "category_id": "health-medicine",
+      "article_count": 1,
+      "detail_path": "/topics/topic-health-medicine-d409eae8887dbf/"
+    },
+    {
+      "topic_id": "topic-health-medicine-101fede58424ac",
+      "name": "医工融合",
+      "parent_id": "category-health-medicine",
+      "category_id": "health-medicine",
+      "article_count": 1,
+      "detail_path": "/topics/topic-health-medicine-101fede58424ac/"
+    },
+    {
+      "topic_id": "category-health-medicine",
+      "name": "医疗与健康",
+      "parent_id": null,
+      "category_id": "health-medicine",
+      "definition": "医疗服务、公共卫生、疾病防治、药械、中医药和健康保障。",
+      "boundary": "医疗技术产品研发为核心时可归入科技与创新。",
+      "article_count": 4,
+      "detail_path": "/topics/category-health-medicine/"
+    },
+    {
+      "topic_id": "topic-ecology-climate-75a9b5d171d0ef",
+      "name": "两山转化",
+      "parent_id": "category-ecology-climate",
+      "category_id": "ecology-climate",
+      "article_count": 1,
+      "detail_path": "/topics/topic-ecology-climate-75a9b5d171d0ef/"
+    },
+    {
+      "topic_id": "topic-ecology-climate-3d8b0bab160db2",
+      "name": "乡村旅游",
+      "parent_id": "category-ecology-climate",
+      "category_id": "ecology-climate",
+      "article_count": 1,
+      "detail_path": "/topics/topic-ecology-climate-3d8b0bab160db2/"
+    },
+    {
+      "topic_id": "topic-ecology-climate-9aaca39ec1eced",
+      "name": "自然保护地体系",
+      "parent_id": "category-ecology-climate",
+      "category_id": "ecology-climate",
+      "article_count": 1,
+      "detail_path": "/topics/topic-ecology-climate-9aaca39ec1eced/"
+    },
+    {
+      "topic_id": "topic-ecology-climate-1f05d9985d62d1",
+      "name": "森林质量提升",
+      "parent_id": "category-ecology-climate",
+      "category_id": "ecology-climate",
+      "article_count": 1,
+      "detail_path": "/topics/topic-ecology-climate-1f05d9985d62d1/"
+    },
+    {
+      "topic_id": "topic-ecology-climate-eefe91d4d1b530",
+      "name": "林草种质资源",
+      "parent_id": "category-ecology-climate",
+      "category_id": "ecology-climate",
+      "article_count": 1,
+      "detail_path": "/topics/topic-ecology-climate-eefe91d4d1b530/"
+    },
+    {
+      "topic_id": "topic-ecology-climate-fbdeb49762978f",
+      "name": "良种引种试种",
+      "parent_id": "category-ecology-climate",
+      "category_id": "ecology-climate",
+      "article_count": 1,
+      "detail_path": "/topics/topic-ecology-climate-fbdeb49762978f/"
+    },
+    {
+      "topic_id": "topic-ecology-climate-e22ad1bf98f5db",
+      "name": "珊瑚礁监测",
+      "parent_id": "category-ecology-climate",
+      "category_id": "ecology-climate",
+      "article_count": 1,
+      "detail_path": "/topics/topic-ecology-climate-e22ad1bf98f5db/"
+    },
+    {
+      "topic_id": "topic-ecology-climate-f1b853d2924b57",
+      "name": "海域生态保护",
+      "parent_id": "category-ecology-climate",
+      "category_id": "ecology-climate",
+      "article_count": 1,
+      "detail_path": "/topics/topic-ecology-climate-f1b853d2924b57/"
+    },
+    {
+      "topic_id": "category-ecology-climate",
+      "name": "生态与气候",
+      "parent_id": null,
+      "category_id": "ecology-climate",
+      "definition": "生态保护、环境治理、污染防治、海洋生态、气候与绿色低碳。",
+      "boundary": "正在发生的气象灾害和避险信息归入应急与安全。",
+      "article_count": 4,
+      "detail_path": "/topics/category-ecology-climate/"
+    },
+    {
+      "topic_id": "topic-culture-history-87553058f14ff6",
+      "name": "民族团结宣讲",
+      "parent_id": "category-culture-history",
+      "category_id": "culture-history",
+      "article_count": 1,
+      "detail_path": "/topics/topic-culture-history-87553058f14ff6/"
+    },
+    {
+      "topic_id": "topic-culture-history-a5d86834b74706",
+      "name": "文明实践",
+      "parent_id": "category-culture-history",
+      "category_id": "culture-history",
+      "article_count": 1,
+      "detail_path": "/topics/topic-culture-history-a5d86834b74706/"
+    },
+    {
+      "topic_id": "topic-culture-history-9b532f25074423",
+      "name": "东坡文化研学",
+      "parent_id": "category-culture-history",
+      "category_id": "culture-history",
+      "article_count": 1,
+      "detail_path": "/topics/topic-culture-history-9b532f25074423/"
+    },
+    {
+      "topic_id": "topic-culture-history-8f6537ee43d86c",
+      "name": "竹简制作",
+      "parent_id": "category-culture-history",
+      "category_id": "culture-history",
+      "article_count": 1,
+      "detail_path": "/topics/topic-culture-history-8f6537ee43d86c/"
+    },
+    {
+      "topic_id": "category-culture-history",
+      "name": "文化与历史",
+      "parent_id": null,
+      "category_id": "culture-history",
+      "definition": "文学艺术、文化遗产、历史研究、博物馆、出版影视和公共文化。",
+      "boundary": "以游客产品和消费活动为核心时归入旅游与消费。",
+      "article_count": 2,
+      "detail_path": "/topics/category-culture-history/"
+    },
+    {
+      "topic_id": "topic-sports-events-58679237bdc296",
+      "name": "青少年机器人竞赛",
+      "parent_id": "category-sports-events",
+      "category_id": "sports-events",
+      "article_count": 1,
+      "detail_path": "/topics/topic-sports-events-58679237bdc296/"
+    },
+    {
+      "topic_id": "topic-sports-events-0397a52123de39",
+      "name": "人工智能竞技",
+      "parent_id": "category-sports-events",
+      "category_id": "sports-events",
+      "article_count": 1,
+      "detail_path": "/topics/topic-sports-events-0397a52123de39/"
+    },
+    {
+      "topic_id": "topic-sports-events-ccb91b335b39ac",
+      "name": "青少年五子棋",
+      "parent_id": "category-sports-events",
+      "category_id": "sports-events",
+      "article_count": 1,
+      "detail_path": "/topics/topic-sports-events-ccb91b335b39ac/"
+    },
+    {
+      "topic_id": "topic-sports-events-a39c76fcdffd16",
+      "name": "赛事旅游融合",
+      "parent_id": "category-sports-events",
+      "category_id": "sports-events",
+      "article_count": 1,
+      "detail_path": "/topics/topic-sports-events-a39c76fcdffd16/"
+    },
+    {
+      "topic_id": "topic-sports-events-ec0a88be311d5e",
+      "name": "体育强国建设",
+      "parent_id": "category-sports-events",
+      "category_id": "sports-events",
+      "article_count": 1,
+      "detail_path": "/topics/topic-sports-events-ec0a88be311d5e/"
+    },
+    {
+      "topic_id": "topic-sports-events-25448570df6437",
+      "name": "全民健身",
+      "parent_id": "category-sports-events",
+      "category_id": "sports-events",
+      "article_count": 1,
+      "detail_path": "/topics/topic-sports-events-25448570df6437/"
+    },
+    {
+      "topic_id": "topic-sports-events-cd004165f57af3",
+      "name": "体育产业",
+      "parent_id": "category-sports-events",
+      "category_id": "sports-events",
+      "article_count": 1,
+      "detail_path": "/topics/topic-sports-events-cd004165f57af3/"
+    },
+    {
+      "topic_id": "category-sports-events",
+      "name": "体育与赛事",
+      "parent_id": null,
+      "category_id": "sports-events",
+      "definition": "竞技体育、群众体育、运动员、体育场馆和各类赛事活动。",
+      "boundary": "体育旅游消费为核心时可归入旅游与消费。",
+      "article_count": 3,
+      "detail_path": "/topics/category-sports-events/"
+    },
+    {
+      "topic_id": "topic-society-public-services-f93a701383c75d",
+      "name": "双拥工作",
+      "parent_id": "category-society-public-services",
+      "category_id": "society-public-services",
+      "article_count": 1,
+      "detail_path": "/topics/topic-society-public-services-f93a701383c75d/"
+    },
+    {
+      "topic_id": "topic-society-public-services-69c00d47101587",
+      "name": "军民共建",
+      "parent_id": "category-society-public-services",
+      "category_id": "society-public-services",
+      "article_count": 1,
+      "detail_path": "/topics/topic-society-public-services-69c00d47101587/"
+    },
+    {
+      "topic_id": "category-society-public-services",
+      "name": "社会与公共服务",
+      "parent_id": null,
+      "category_id": "society-public-services",
+      "definition": "社区民生、养老托育、社会保障、志愿服务和日常公共服务。",
+      "boundary": "政府制度与执法治理为核心时归入治理与法治。",
+      "article_count": 1,
+      "detail_path": "/topics/category-society-public-services/"
+    },
+    {
+      "topic_id": "topic-governance-law-5596a8e30341ff",
+      "name": "正确政绩观教育",
+      "parent_id": "category-governance-law",
+      "category_id": "governance-law",
+      "article_count": 1,
+      "detail_path": "/topics/topic-governance-law-5596a8e30341ff/"
+    },
+    {
+      "topic_id": "topic-governance-law-fce097eed210e7",
+      "name": "绿色产业升级",
+      "parent_id": "category-governance-law",
+      "category_id": "governance-law",
+      "article_count": 1,
+      "detail_path": "/topics/topic-governance-law-fce097eed210e7/"
+    },
+    {
+      "topic_id": "topic-governance-law-26dda9b951cb30",
+      "name": "政商交往规范",
+      "parent_id": "category-governance-law",
+      "category_id": "governance-law",
+      "article_count": 1,
+      "detail_path": "/topics/topic-governance-law-26dda9b951cb30/"
+    },
+    {
+      "topic_id": "topic-governance-law-5bf6000cb05611",
+      "name": "营商环境",
+      "parent_id": "category-governance-law",
+      "category_id": "governance-law",
+      "article_count": 1,
+      "detail_path": "/topics/topic-governance-law-5bf6000cb05611/"
+    },
+    {
+      "topic_id": "topic-governance-law-9aac53e670d458",
+      "name": "亲清政商关系",
+      "parent_id": "category-governance-law",
+      "category_id": "governance-law",
+      "article_count": 1,
+      "detail_path": "/topics/topic-governance-law-9aac53e670d458/"
+    },
+    {
+      "topic_id": "topic-governance-law-578c091bbbdb40",
+      "name": "监督机制",
+      "parent_id": "category-governance-law",
+      "category_id": "governance-law",
+      "article_count": 1,
+      "detail_path": "/topics/topic-governance-law-578c091bbbdb40/"
+    },
+    {
+      "topic_id": "topic-governance-law-8440c8face627e",
+      "name": "兵员征集",
+      "parent_id": "category-governance-law",
+      "category_id": "governance-law",
+      "article_count": 1,
+      "detail_path": "/topics/topic-governance-law-8440c8face627e/"
+    },
+    {
+      "topic_id": "topic-governance-law-30971699361de6",
+      "name": "廉洁征兵",
+      "parent_id": "category-governance-law",
+      "category_id": "governance-law",
+      "article_count": 1,
+      "detail_path": "/topics/topic-governance-law-30971699361de6/"
+    },
+    {
+      "topic_id": "topic-governance-law-9d39420a35cb90",
+      "name": "物业服务整治",
+      "parent_id": "category-governance-law",
+      "category_id": "governance-law",
+      "article_count": 1,
+      "detail_path": "/topics/topic-governance-law-9d39420a35cb90/"
+    },
+    {
+      "topic_id": "topic-governance-law-2e2cbb70b40a90",
+      "name": "民生监督",
+      "parent_id": "category-governance-law",
+      "category_id": "governance-law",
+      "article_count": 1,
+      "detail_path": "/topics/topic-governance-law-2e2cbb70b40a90/"
+    },
+    {
+      "topic_id": "topic-governance-law-28c67f9c395553",
+      "name": "村办物业",
+      "parent_id": "category-governance-law",
+      "category_id": "governance-law",
+      "article_count": 1,
+      "detail_path": "/topics/topic-governance-law-28c67f9c395553/"
+    },
+    {
+      "topic_id": "topic-governance-law-2d255186cab136",
+      "name": "农村集体经济",
+      "parent_id": "category-governance-law",
+      "category_id": "governance-law",
+      "article_count": 1,
+      "detail_path": "/topics/topic-governance-law-2d255186cab136/"
+    },
+    {
+      "topic_id": "topic-governance-law-4e1e9c6b496203",
+      "name": "集体资金监管",
+      "parent_id": "category-governance-law",
+      "category_id": "governance-law",
+      "article_count": 1,
+      "detail_path": "/topics/topic-governance-law-4e1e9c6b496203/"
+    },
+    {
+      "topic_id": "category-governance-law",
+      "name": "治理与法治",
+      "parent_id": null,
+      "category_id": "governance-law",
+      "definition": "党政治理、政策制度、改革监督、行政执法、司法和法治建设。",
+      "boundary": "具体民生服务结果为核心时归入社会与公共服务。",
+      "article_count": 6,
+      "detail_path": "/topics/category-governance-law/"
+    },
+    {
+      "topic_id": "topic-emergency-safety-89ee20c90eb098",
+      "name": "水上交通安全",
+      "parent_id": "category-emergency-safety",
+      "category_id": "emergency-safety",
+      "article_count": 1,
+      "detail_path": "/topics/topic-emergency-safety-89ee20c90eb098/"
+    },
+    {
+      "topic_id": "topic-emergency-safety-9cb413732e2932",
+      "name": "汛期风险防控",
+      "parent_id": "category-emergency-safety",
+      "category_id": "emergency-safety",
+      "article_count": 1,
+      "detail_path": "/topics/topic-emergency-safety-9cb413732e2932/"
+    },
+    {
+      "topic_id": "category-emergency-safety",
+      "name": "应急与安全",
+      "parent_id": null,
+      "category_id": "emergency-safety",
+      "definition": "台风暴雨、事故灾害、消防救援、安全生产、公共风险和应急处置。",
+      "boundary": "一般生态治理或常态化气候信息归入生态与气候。",
+      "article_count": 1,
+      "detail_path": "/topics/category-emergency-safety/"
+    }
+  ]
+}

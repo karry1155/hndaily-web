@@ -1,0 +1,77 @@
+{
+  "schema_version": 1,
+  "topic": {
+    "topic_id": "topic-economy-market-04e68552bc0dd3",
+    "name": "中央企业经营",
+    "parent_id": "category-economy-market",
+    "category_id": "economy-market",
+    "article_count": 1,
+    "detail_path": "/topics/topic-economy-market-04e68552bc0dd3/"
+  },
+  "articles": [
+    {
+      "item_id": "hndaily-20260723-58470-19727278",
+      "published_date": "2026-07-23",
+      "page_number": "007",
+      "page_name": "中国新闻",
+      "page_sequence": 2,
+      "title": "今年上半年中央企业实现利润总额1.4万亿元",
+      "ai_summary": "今年上半年中央企业实现利润总额1.4万亿元、固定资产投资同比增长4.5%，研发、产业升级、改革和重大工程建设继续推进。",
+      "scope": "national",
+      "subjects": [
+        {
+          "subject_id": "subject-organization-bd9f63c6aa5afc",
+          "name": "国务院国资委",
+          "type": "organization"
+        },
+        {
+          "subject_id": "subject-company-90135afe0ef8e3",
+          "name": "中国三峡集团",
+          "type": "company"
+        },
+        {
+          "subject_id": "subject-company-8d0fc70cea9187",
+          "name": "中国移动",
+          "type": "company"
+        }
+      ],
+      "locations": [],
+      "topics": {
+        "primary": {
+          "category_id": "economy-market",
+          "category_name": "经济与市场",
+          "evidence": "实现利润总额1.4万亿元，固定资产投资同比增长4.5%。"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-economy-market-04e68552bc0dd3",
+            "name": "中央企业经营",
+            "evidence": "中央企业生产经营稳中提质"
+          },
+          {
+            "topic_id": "topic-economy-market-9ff26bd4976a05",
+            "name": "国企科技创新",
+            "evidence": "科技攻关提速加力。"
+          },
+          {
+            "topic_id": "topic-economy-market-ae15ae40536013",
+            "name": "重大工程建设",
+            "evidence": "全力推进国家重大工程建设。"
+          }
+        ]
+      },
+      "events": [
+        {
+          "event_id": "event-8a4f8bdc0379c5",
+          "name": "中央企业负责人研讨班",
+          "event_type": "named_event",
+          "evidence": "7月21日至22日举行的中央企业负责人研讨班",
+          "occurred_on": "2026-07-21/2026-07-22"
+        }
+      ],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58470-19727278/"
+    }
+  ]
+}

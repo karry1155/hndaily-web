@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "event": {
+    "event_id": "event-series-6439dd640c3bb0",
+    "name": "海南省医学会脑机接口与神经康复分会学术年会",
+    "event_type": "series",
+    "series_id": "event-series-6439dd640c3bb0",
+    "edition_ids": [
+      "event-58b79492f2fd06"
+    ],
+    "article_count": 1,
+    "detail_path": "/events/event-series-6439dd640c3bb0/"
+  },
+  "articles": [
+    {
+      "item_id": "hndaily-20260723-58471-19727296",
+      "published_date": "2026-07-23",
+      "page_number": "008",
+      "page_name": "健康周刊",
+      "page_sequence": 5,
+      "title": "海南省医学会脑机接口与神经康复分会成立",
+      "ai_summary": "海南省医学会成立脑机接口与神经康复分会，将推动学术交流、多中心研究、临床规范、医工融合和基层继续教育。",
+      "scope": "hainan",
+      "subjects": [
+        {
+          "subject_id": "subject-organization-2a5fb023c2c57e",
+          "name": "海南省医学会脑机接口与神经康复分会",
+          "type": "organization"
+        },
+        {
+          "subject_id": "subject-person-04ae6b033123b2",
+          "name": "宋振华",
+          "type": "person"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan-haikou",
+          "name": "海口市",
+          "code": "460100",
+          "level": "prefecture",
+          "evidence": "7月18日，海南省医学会脑机接口与神经康复分会成立大会暨2026学术年会在海口召开。"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "health-medicine",
+          "category_name": "医疗与健康",
+          "evidence": "全面提升全省神经康复服务能力的同质化水平。"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-health-medicine-1846176c488bf8",
+            "name": "脑机接口",
+            "evidence": "脑机接口与神经康复领域"
+          },
+          {
+            "topic_id": "topic-health-medicine-d409eae8887dbf",
+            "name": "神经康复",
+            "evidence": "神经康复服务能力"
+          },
+          {
+            "topic_id": "topic-health-medicine-101fede58424ac",
+            "name": "医工融合",
+            "evidence": "深化医工融合机制"
+          }
+        ]
+      },
+      "events": [
+        {
+          "event_id": "event-58b79492f2fd06",
+          "name": "海南省医学会脑机接口与神经康复分会成立大会暨2026学术年会",
+          "event_type": "recurring_edition",
+          "evidence": "7月18日，海南省医学会脑机接口与神经康复分会成立大会暨2026学术年会在海口召开。",
+          "series_name": "海南省医学会脑机接口与神经康复分会学术年会",
+          "series_id": "event-series-6439dd640c3bb0",
+          "occurred_on": "2026-07-18"
+        }
+      ],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58471-19727296/"
+    }
+  ]
+}

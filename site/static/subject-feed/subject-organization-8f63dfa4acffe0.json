@@ -1,0 +1,159 @@
+{
+  "schema_version": 1,
+  "subject": {
+    "subject_id": "subject-organization-8f63dfa4acffe0",
+    "canonical_name": "省自然资源和规划厅",
+    "type": "organization",
+    "aliases": [],
+    "first_seen": "2026-07-23",
+    "last_seen": "2026-07-23"
+  },
+  "activities": [
+    {
+      "headline": "省自然资源和规划厅联合印发林业规划",
+      "evidence": "近日，省林业局联合省发展改革委、省自然资源和规划厅印发《海南省林业保护利用“十五五”规划》（以下简称《规划》）",
+      "source": {
+        "source_item_id": "hndaily-20260723-58466-19727228",
+        "published_date": "2026-07-23",
+        "source_title": "初步建成以国家公园为主体的自然保护地体系",
+        "detail_path": "/items/2026-07-23/hndaily-20260723-58466-19727228/",
+        "evidence": "近日，省林业局联合省发展改革委、省自然资源和规划厅印发《海南省林业保护利用“十五五”规划》（以下简称《规划》）"
+      }
+    },
+    {
+      "headline": "省自然资源和规划厅将拓展组合供应场景",
+      "detail_kind": "goal",
+      "detail": "探索海洋、土地、林地和矿产等多元化组合供应",
+      "evidence": "省自然资源和规划厅相关负责人表示，全省自然资源和规划系统将以此次“陆海组合”首单成交为契机，持续拓展应用场景，在“海洋+土地”“海洋+林地”“土地+林地”“土地+矿产”等领域探索多元化组合供应",
+      "source": {
+        "source_item_id": "hndaily-20260723-58464-19727204",
+        "published_date": "2026-07-23",
+        "source_title": "海南“陆海”使用权首次“打包”卖",
+        "detail_path": "/items/2026-07-23/hndaily-20260723-58464-19727204/",
+        "evidence": "省自然资源和规划厅相关负责人表示，全省自然资源和规划系统将以此次“陆海组合”首单成交为契机，持续拓展应用场景，在“海洋+土地”“海洋+林地”“土地+林地”“土地+矿产”等领域探索多元化组合供应"
+      }
+    }
+  ],
+  "articles": [
+    {
+      "item_id": "hndaily-20260723-58466-19727228",
+      "published_date": "2026-07-23",
+      "page_number": "003",
+      "page_name": "本省新闻",
+      "page_sequence": 3,
+      "title": "初步建成以国家公园为主体的自然保护地体系",
+      "ai_summary": "海南发布林业保护利用“十五五”规划，提出到2030年森林覆盖率保持62%以上，并初步建成以国家公园为主体的自然保护地体系。",
+      "scope": "hainan",
+      "subjects": [
+        {
+          "subject_id": "subject-organization-baa206ba076c5e",
+          "name": "省林业局",
+          "type": "organization"
+        },
+        {
+          "subject_id": "subject-organization-981215adc0566e",
+          "name": "省发展改革委",
+          "type": "organization"
+        },
+        {
+          "subject_id": "subject-organization-8f63dfa4acffe0",
+          "name": "省自然资源和规划厅",
+          "type": "organization"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "《海南省林业保护利用“十五五”规划》"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "ecology-climate",
+          "category_name": "生态与气候",
+          "evidence": "全面推动生态保护与绿色发展协同共进"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-ecology-climate-9aaca39ec1eced",
+            "name": "自然保护地体系",
+            "evidence": "初步建成以国家公园为主体的自然保护地体系"
+          },
+          {
+            "topic_id": "topic-ecology-climate-1f05d9985d62d1",
+            "name": "森林质量提升",
+            "evidence": "精准提升森林质量"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [
+        {
+          "plan_id": "plan-bf3198129b48fe",
+          "name": "《海南省林业保护利用“十五五”规划》",
+          "mention_type": "released",
+          "evidence": "近日，省林业局联合省发展改革委、省自然资源和规划厅印发《海南省林业保护利用“十五五”规划》（以下简称《规划》）"
+        }
+      ],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58466-19727228/"
+    },
+    {
+      "item_id": "hndaily-20260723-58464-19727204",
+      "published_date": "2026-07-23",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 8,
+      "title": "海南“陆海”使用权首次“打包”卖",
+      "ai_summary": "东方市八所港项目以约1.56亿元成交海南首宗陆海自然资源组合供应，建设用地与海域使用权实现一体供应、同步出让。",
+      "scope": "hainan",
+      "subjects": [
+        {
+          "subject_id": "subject-company-4e971557105997",
+          "name": "海南省港航高排港港务有限公司",
+          "type": "company"
+        },
+        {
+          "subject_id": "subject-organization-8f63dfa4acffe0",
+          "name": "省自然资源和规划厅",
+          "type": "organization"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan-dongfang",
+          "name": "东方市",
+          "code": "469007",
+          "level": "county",
+          "evidence": "近日，东方市“八所港高排港区一期——码头及航道工程”项目用地用海自然资源组合供应在海南省自然资源网上交易系统挂牌成交"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "transport-cities",
+          "category_name": "交通与城市",
+          "evidence": "未来将建设通用及多用途泊位、散货船减载乘潮单向航道等，并配套码头、陆域形成、道路堆场、口岸监管仓库及水电信控等工程。"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-transport-cities-be5f75643eb451",
+            "name": "陆海组合供应",
+            "evidence": "这是海南首个“陆海”自然资源组合供应的项目"
+          },
+          {
+            "topic_id": "topic-transport-cities-d9eb0d9fff1ed5",
+            "name": "港口基础设施",
+            "evidence": "为港口基础设施类项目提供了可复制、可推广的实践经验。"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58464-19727204/"
+    }
+  ]
+}

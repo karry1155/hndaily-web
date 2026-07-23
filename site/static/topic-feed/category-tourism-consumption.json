@@ -1,0 +1,315 @@
+{
+  "schema_version": 1,
+  "topic": {
+    "topic_id": "category-tourism-consumption",
+    "name": "旅游与消费",
+    "parent_id": null,
+    "category_id": "tourism-consumption",
+    "definition": "旅游产品与目的地、免税购物、餐饮零售、文旅消费和游客服务。",
+    "boundary": "文化遗产本身为核心时归入文化与历史；交通建设本身为核心时归入交通与城市。",
+    "article_count": 4,
+    "detail_path": "/topics/category-tourism-consumption/"
+  },
+  "children": [
+    {
+      "topic_id": "topic-tourism-consumption-f019076472fadd",
+      "name": "夏日避暑",
+      "parent_id": "category-tourism-consumption",
+      "category_id": "tourism-consumption",
+      "article_count": 1,
+      "detail_path": "/topics/topic-tourism-consumption-f019076472fadd/"
+    },
+    {
+      "topic_id": "topic-tourism-consumption-539476aeb5c01f",
+      "name": "夏日避暑游",
+      "parent_id": "category-tourism-consumption",
+      "category_id": "tourism-consumption",
+      "article_count": 1,
+      "detail_path": "/topics/topic-tourism-consumption-539476aeb5c01f/"
+    },
+    {
+      "topic_id": "topic-tourism-consumption-770587b1d9f643",
+      "name": "居民免税购物",
+      "parent_id": "category-tourism-consumption",
+      "category_id": "tourism-consumption",
+      "article_count": 1,
+      "detail_path": "/topics/topic-tourism-consumption-770587b1d9f643/"
+    },
+    {
+      "topic_id": "topic-tourism-consumption-1bbc977aa1d532",
+      "name": "票根经济",
+      "parent_id": "category-tourism-consumption",
+      "category_id": "tourism-consumption",
+      "article_count": 1,
+      "detail_path": "/topics/topic-tourism-consumption-1bbc977aa1d532/"
+    },
+    {
+      "topic_id": "topic-tourism-consumption-a14945ec568ee9",
+      "name": "科技艺术融合",
+      "parent_id": "category-tourism-consumption",
+      "category_id": "tourism-consumption",
+      "article_count": 1,
+      "detail_path": "/topics/topic-tourism-consumption-a14945ec568ee9/"
+    },
+    {
+      "topic_id": "topic-tourism-consumption-bdb811d6e14b35",
+      "name": "进口日用品",
+      "parent_id": "category-tourism-consumption",
+      "category_id": "tourism-consumption",
+      "article_count": 1,
+      "detail_path": "/topics/topic-tourism-consumption-bdb811d6e14b35/"
+    },
+    {
+      "topic_id": "topic-tourism-consumption-716353ba35f169",
+      "name": "雨林滨海旅游",
+      "parent_id": "category-tourism-consumption",
+      "category_id": "tourism-consumption",
+      "article_count": 1,
+      "detail_path": "/topics/topic-tourism-consumption-716353ba35f169/"
+    },
+    {
+      "topic_id": "topic-tourism-consumption-7777c98b163a14",
+      "name": "青年文旅消费",
+      "parent_id": "category-tourism-consumption",
+      "category_id": "tourism-consumption",
+      "article_count": 1,
+      "detail_path": "/topics/topic-tourism-consumption-7777c98b163a14/"
+    }
+  ],
+  "articles": [
+    {
+      "item_id": "hndaily-20260723-58469-19727269",
+      "published_date": "2026-07-23",
+      "page_number": "006",
+      "page_name": "本省新闻",
+      "page_sequence": 5,
+      "title": "来陵水，解锁夏日潮流多元玩法",
+      "ai_summary": "2026海南东南科技艺术季将于7月25日至26日在陵水举行，九大街区、科技艺术体验、论坛赛事和毕业歌会将联动文旅消费。",
+      "scope": "hainan",
+      "subjects": [
+        {
+          "subject_id": "subject-company-4ea4f7d49af229",
+          "name": "陵水黎族自治县发展控股集团有限公司",
+          "type": "company"
+        },
+        {
+          "subject_id": "subject-company-ffa7ab08e60393",
+          "name": "陵水文化广电传媒有限公司",
+          "type": "company"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan-lingshui",
+          "name": "陵水黎族自治县",
+          "code": "469028",
+          "level": "county",
+          "evidence": "2026海南东南科技艺术季将在陵水黎族自治县海归小镇开幕。"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "tourism-consumption",
+          "category_name": "旅游与消费",
+          "evidence": "构建“可看、可玩、可参与、可消费”的全场景体验。"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-tourism-consumption-a14945ec568ee9",
+            "name": "科技艺术融合",
+            "evidence": "一场科技与艺术深度融合的文旅盛会"
+          },
+          {
+            "topic_id": "topic-tourism-consumption-1bbc977aa1d532",
+            "name": "票根经济",
+            "evidence": "推动“票根经济”与文旅资源深度联动"
+          },
+          {
+            "topic_id": "topic-tourism-consumption-7777c98b163a14",
+            "name": "青年文旅消费",
+            "evidence": "精准锚定青年文旅消费需求"
+          }
+        ]
+      },
+      "events": [
+        {
+          "event_id": "event-64e468ebf78f92",
+          "name": "2026海南东南科技艺术季",
+          "event_type": "recurring_edition",
+          "evidence": "7月25日，为期2天的2026海南东南科技艺术季将在陵水黎族自治县海归小镇开幕。",
+          "series_name": "海南东南科技艺术季",
+          "series_id": "event-series-f63a28a6b23ae5",
+          "occurred_on": "2026-07-25/2026-07-26"
+        },
+        {
+          "event_id": "event-9278a968a61179",
+          "name": "2026双帆石毕业歌会",
+          "event_type": "recurring_edition",
+          "evidence": "2026双帆石\n\n毕业歌会\n\n7月25日至26日19：30—22：00",
+          "series_name": "双帆石毕业歌会",
+          "series_id": "event-series-a7f208ccd68a7a",
+          "occurred_on": "2026-07-25/2026-07-26"
+        }
+      ],
+      "plans": [],
+      "reader_lead_count": 3,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58469-19727269/"
+    },
+    {
+      "item_id": "hndaily-20260723-58469-19727264",
+      "published_date": "2026-07-23",
+      "page_number": "006",
+      "page_name": "本省新闻",
+      "page_sequence": 2,
+      "title": "三亚新增一家岛内居民日用消费品免税店",
+      "ai_summary": "三亚公布第二家岛内居民日用消费品免税店，门店位于大悦城，由海南旺豪运营，将扩大本地居民进口日用品免税购物选择。",
+      "scope": "hainan",
+      "subjects": [
+        {
+          "subject_id": "subject-company-cacb0507b4fe7d",
+          "name": "海南旺豪实业有限公司",
+          "type": "company"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan-sanya",
+          "name": "三亚市",
+          "code": "460200",
+          "level": "prefecture",
+          "evidence": "门店具体选址位于三亚市吉阳区迎宾路233号大悦城B1-44号铺位"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "tourism-consumption",
+          "category_name": "旅游与消费",
+          "evidence": "进一步丰富三亚本地居民进口日用品消费选择，优化便民免税消费场景"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-tourism-consumption-770587b1d9f643",
+            "name": "居民免税购物",
+            "evidence": "岛内居民日用消费品免税店"
+          },
+          {
+            "topic_id": "topic-tourism-consumption-bdb811d6e14b35",
+            "name": "进口日用品",
+            "evidence": "可选购食品饮料、日化用品等202类进口日用商品"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [],
+      "reader_lead_count": 1,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58469-19727264/"
+    },
+    {
+      "item_id": "hndaily-20260723-58468-19727255",
+      "published_date": "2026-07-23",
+      "page_number": "005",
+      "page_name": "自贸港影像志",
+      "page_sequence": 1,
+      "title": "一岛山水 一夏舒爽",
+      "ai_summary": "海南推出“夏日游海南”图片专版，推荐临高瀑布、琼中雨林、五指山漂流、定安冷泉和三亚落日等避暑体验。",
+      "scope": "hainan",
+      "subjects": [
+        {
+          "subject_id": "subject-organization-66a322e27c1ef2",
+          "name": "海南日报",
+          "type": "organization"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan-sanya",
+          "name": "三亚市",
+          "code": "460200",
+          "level": "prefecture",
+          "evidence": "相约三亚鹿回头风景区"
+        },
+        {
+          "location_id": "hainan-wuzhishan",
+          "name": "五指山市",
+          "code": "469001",
+          "level": "county",
+          "evidence": "在五指山体验峡谷漂流"
+        },
+        {
+          "location_id": "hainan-dingan",
+          "name": "定安县",
+          "code": "469021",
+          "level": "county",
+          "evidence": "前往定安久温塘火山冷泉"
+        },
+        {
+          "location_id": "hainan-lingao",
+          "name": "临高县",
+          "code": "469024",
+          "level": "county",
+          "evidence": "临高古银瀑布水流充沛、飞瀑潺潺"
+        },
+        {
+          "location_id": "hainan-qiongzhong",
+          "name": "琼中黎族苗族自治县",
+          "code": "469030",
+          "level": "county",
+          "evidence": "琼中百花岭热带雨林文化旅游区"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "tourism-consumption",
+          "category_name": "旅游与消费",
+          "evidence": "首期“夏日游海南”聚焦海南夏日之凉爽"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-tourism-consumption-539476aeb5c01f",
+            "name": "夏日避暑游",
+            "evidence": "在海南赴一场凉爽的假期。"
+          },
+          {
+            "topic_id": "topic-tourism-consumption-716353ba35f169",
+            "name": "雨林滨海旅游",
+            "evidence": "在绿意葱茏的雨林与碧波万顷的海岸间"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58468-19727255/"
+    },
+    {
+      "item_id": "hndaily-20260723-58464-19727206",
+      "published_date": "2026-07-23",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 10,
+      "title": "一岛山水 一夏舒爽",
+      "ai_summary": null,
+      "scope": "hainan",
+      "subjects": [],
+      "locations": [],
+      "topics": {
+        "primary": {
+          "category_id": "tourism-consumption",
+          "category_name": "旅游与消费",
+          "evidence": "一岛山水 一夏舒爽"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-tourism-consumption-f019076472fadd",
+            "name": "夏日避暑",
+            "evidence": "一岛山水 一夏舒爽"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58464-19727206/"
+    }
+  ]
+}
