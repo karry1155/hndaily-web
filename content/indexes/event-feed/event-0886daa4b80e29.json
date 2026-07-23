@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "event": {
+    "event_id": "event-0886daa4b80e29",
+    "name": "水上交通安全专项整治行动",
+    "event_type": "named_event",
+    "series_id": null,
+    "article_count": 1,
+    "detail_path": "/events/event-0886daa4b80e29/"
+  },
+  "articles": [
+    {
+      "item_id": "hndaily-20260723-58469-19727263",
+      "published_date": "2026-07-23",
+      "page_number": "006",
+      "page_name": "本省新闻",
+      "page_sequence": 1,
+      "title": "海南五部门联合开展汛期暑期专项整治",
+      "ai_summary": "海南五部门于7月至9月开展水上交通安全专项整治，重点排查港航、游艇和水上文旅风险，并实施企业自查、省级抽查和联合执法。",
+      "scope": "hainan",
+      "subjects": [
+        {
+          "subject_id": "subject-organization-45bc4b8dc80480",
+          "name": "省交通运输厅",
+          "type": "organization"
+        },
+        {
+          "subject_id": "subject-organization-db7f246dce4252",
+          "name": "海南海事局",
+          "type": "organization"
+        },
+        {
+          "subject_id": "subject-organization-c6797fffce33f4",
+          "name": "省旅游和文化广电体育厅",
+          "type": "organization"
+        },
+        {
+          "subject_id": "subject-organization-0aa7f8254c0b07",
+          "name": "省农业农村厅",
+          "type": "organization"
+        },
+        {
+          "subject_id": "subject-organization-a0844c15939f0f",
+          "name": "省海洋厅",
+          "type": "organization"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan-haikou",
+          "name": "海口市",
+          "code": "460100",
+          "level": "prefecture",
+          "evidence": "本报海口7月22日讯"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "emergency-safety",
+          "category_name": "应急与安全",
+          "evidence": "全面排查港口、航道、水路客货运输、游艇、水上文旅体验等重点领域风险隐患"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-emergency-safety-89ee20c90eb098",
+            "name": "水上交通安全",
+            "evidence": "水上交通安全专项整治行动"
+          },
+          {
+            "topic_id": "topic-emergency-safety-9cb413732e2932",
+            "name": "汛期风险防控",
+            "evidence": "聚焦汛期大风、强降雨、台风、高温极端天气安全防控"
+          }
+        ]
+      },
+      "events": [
+        {
+          "event_id": "event-0886daa4b80e29",
+          "name": "水上交通安全专项整治行动",
+          "event_type": "named_event",
+          "evidence": "定于7月至9月开展水上交通安全专项整治行动",
+          "occurred_on": "2026-07/2026-09"
+        }
+      ],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58469-19727263/"
+    }
+  ]
+}

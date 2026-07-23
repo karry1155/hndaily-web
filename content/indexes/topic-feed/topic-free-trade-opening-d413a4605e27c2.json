@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "topic": {
+    "topic_id": "topic-free-trade-opening-d413a4605e27c2",
+    "name": "零关税药械通关",
+    "parent_id": "category-free-trade-opening",
+    "category_id": "free-trade-opening",
+    "article_count": 1,
+    "detail_path": "/topics/topic-free-trade-opening-d413a4605e27c2/"
+  },
+  "articles": [
+    {
+      "item_id": "hndaily-20260723-58471-19727292",
+      "published_date": "2026-07-23",
+      "page_number": "008",
+      "page_name": "健康周刊",
+      "page_sequence": 2,
+      "title": "“零关税”钇90玻璃微球的极速之旅",
+      "ai_summary": "乐城保税仓与多地海关以提前申报、预审和快速放行，将零关税钇90玻璃微球从落地海南到送达医院压缩至半天。",
+      "scope": "mixed",
+      "subjects": [
+        {
+          "subject_id": "subject-organization-52c1bd814bb04b",
+          "name": "乐城保税仓团队",
+          "type": "organization"
+        },
+        {
+          "subject_id": "subject-organization-9382ccd76699d5",
+          "name": "海口海关",
+          "type": "organization"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan-haikou",
+          "name": "海口市",
+          "code": "460100",
+          "level": "prefecture",
+          "evidence": "海口海关量身定制了“提前申报、数据预审、货到即验、快速放行”的通关模式。"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "free-trade-opening",
+          "category_name": "自贸港与开放",
+          "evidence": "面对“零关税”药械进口批次零散、临床用药时效紧迫、监管证件审核专业性要求高等痛点"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-free-trade-opening-d413a4605e27c2",
+            "name": "零关税药械通关",
+            "evidence": "“零关税”药械进口"
+          },
+          {
+            "topic_id": "topic-free-trade-opening-8ae6edd280f06f",
+            "name": "临床急需药械",
+            "evidence": "临床急需药械从申报到运抵医疗机构的时间大大缩短"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58471-19727292/"
+    }
+  ]
+}

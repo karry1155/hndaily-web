@@ -1,0 +1,61 @@
+{
+  "schema_version": 13,
+  "date": "2026-07-23",
+  "article_count": 3,
+  "records": [
+    {
+      "candidate_id": "A001",
+      "page": "001",
+      "page_name": "头版",
+      "page_url": "https://example.test/2026-07-23/page-001",
+      "pdf_url": "https://example.test/2026-07-23/page-001.pdf",
+      "seq": 1,
+      "original_title": "刘小明在海口主持服务业例会",
+      "url": "https://example.test/2026-07-23/content_60001_20000001.htm",
+      "author": "合同示例",
+      "content": "7月20日，海南省推进服务业（第三产业）高质量发展领导小组第七次例会在海口市召开，听取全省服务业发展情况汇报，研究解决存在问题，部署下一步工作。\n\n省长、领导小组组长刘小明主持会议，部署稳住服务业基本盘、引进标志性项目并提升开放水平。",
+      "content_length": 117,
+      "length_band": "under_200",
+      "error": null,
+      "passed": true,
+      "skip_reason": null,
+      "matched_rules": []
+    },
+    {
+      "candidate_id": "A002",
+      "page": "002",
+      "page_name": "自贸港观察",
+      "page_url": "https://example.test/2026-07-23/page-002",
+      "pdf_url": "https://example.test/2026-07-23/page-002.pdf",
+      "seq": 1,
+      "original_title": "从陵水黎安起步，登上世界级AI舞台",
+      "url": "https://example.test/2026-07-23/content_60002_20000002.htm",
+      "author": "合同示例",
+      "content": "7月17日，上海。海南德工智能科技有限公司（以下简称德工智能）创始人黄贤德，带着年轻团队和产业AI产品体系亮相2026世界人工智能大会。\n\n德工智能从陵水黎族自治县黎安国际教育创新试验区起步，已开发面向医疗场景的产业AI产品。",
+      "content_length": 113,
+      "length_band": "under_200",
+      "error": null,
+      "passed": true,
+      "skip_reason": null,
+      "matched_rules": []
+    },
+    {
+      "candidate_id": "A003",
+      "page": "003",
+      "page_name": "本省新闻",
+      "page_url": "https://example.test/2026-07-23/page-003",
+      "pdf_url": "https://example.test/2026-07-23/page-003.pdf",
+      "seq": 1,
+      "original_title": "海口义务教育招生开始报名",
+      "url": "https://example.test/2026-07-23/content_60003_20000003.htm",
+      "author": "合同示例",
+      "content": "海口市教育局已于7月22日发布《海口市2026年义务教育招生工作实施细则》。符合条件的家长可于7月24日至7月28日登录“海口教育发布”微信公众号报名。",
+      "content_length": 76,
+      "length_band": "under_200",
+      "error": null,
+      "passed": true,
+      "skip_reason": null,
+      "matched_rules": []
+    }
+  ]
+}

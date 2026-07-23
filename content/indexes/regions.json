@@ -1,0 +1,165 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "location_id": "hainan",
+      "name": "海南省",
+      "code": "460000",
+      "level": "province",
+      "article_count": 8,
+      "detail_path": "/regions/hainan/"
+    },
+    {
+      "location_id": "hainan-sanya",
+      "name": "三亚市",
+      "code": "460200",
+      "level": "prefecture",
+      "article_count": 11,
+      "detail_path": "/regions/hainan-sanya/"
+    },
+    {
+      "location_id": "hainan-haikou",
+      "name": "海口市",
+      "code": "460100",
+      "level": "prefecture",
+      "article_count": 8,
+      "detail_path": "/regions/hainan-haikou/"
+    },
+    {
+      "location_id": "hainan-danzhou",
+      "name": "儋州市",
+      "code": "460400",
+      "level": "prefecture",
+      "article_count": 3,
+      "detail_path": "/regions/hainan-danzhou/"
+    },
+    {
+      "location_id": "hainan-sansha",
+      "name": "三沙市",
+      "code": "460300",
+      "level": "prefecture",
+      "article_count": 1,
+      "detail_path": "/regions/hainan-sansha/"
+    },
+    {
+      "location_id": "hainan-wuzhishan",
+      "name": "五指山市",
+      "code": "469001",
+      "level": "county",
+      "article_count": 4,
+      "detail_path": "/regions/hainan-wuzhishan/"
+    },
+    {
+      "location_id": "hainan-wenchang",
+      "name": "文昌市",
+      "code": "469005",
+      "level": "county",
+      "article_count": 2,
+      "detail_path": "/regions/hainan-wenchang/"
+    },
+    {
+      "location_id": "hainan-dingan",
+      "name": "定安县",
+      "code": "469021",
+      "level": "county",
+      "article_count": 2,
+      "detail_path": "/regions/hainan-dingan/"
+    },
+    {
+      "location_id": "hainan-tunchang",
+      "name": "屯昌县",
+      "code": "469022",
+      "level": "county",
+      "article_count": 2,
+      "detail_path": "/regions/hainan-tunchang/"
+    },
+    {
+      "location_id": "hainan-lingao",
+      "name": "临高县",
+      "code": "469024",
+      "level": "county",
+      "article_count": 2,
+      "detail_path": "/regions/hainan-lingao/"
+    },
+    {
+      "location_id": "hainan-baisha",
+      "name": "白沙黎族自治县",
+      "code": "469025",
+      "level": "county",
+      "article_count": 2,
+      "detail_path": "/regions/hainan-baisha/"
+    },
+    {
+      "location_id": "hainan-changjiang",
+      "name": "昌江黎族自治县",
+      "code": "469026",
+      "level": "county",
+      "article_count": 2,
+      "detail_path": "/regions/hainan-changjiang/"
+    },
+    {
+      "location_id": "hainan-baoting",
+      "name": "保亭黎族苗族自治县",
+      "code": "469029",
+      "level": "county",
+      "article_count": 2,
+      "detail_path": "/regions/hainan-baoting/"
+    },
+    {
+      "location_id": "hainan-qiongzhong",
+      "name": "琼中黎族苗族自治县",
+      "code": "469030",
+      "level": "county",
+      "article_count": 2,
+      "detail_path": "/regions/hainan-qiongzhong/"
+    },
+    {
+      "location_id": "hainan-qionghai",
+      "name": "琼海市",
+      "code": "469002",
+      "level": "county",
+      "article_count": 1,
+      "detail_path": "/regions/hainan-qionghai/"
+    },
+    {
+      "location_id": "hainan-dongfang",
+      "name": "东方市",
+      "code": "469007",
+      "level": "county",
+      "article_count": 1,
+      "detail_path": "/regions/hainan-dongfang/"
+    },
+    {
+      "location_id": "hainan-lingshui",
+      "name": "陵水黎族自治县",
+      "code": "469028",
+      "level": "county",
+      "article_count": 1,
+      "detail_path": "/regions/hainan-lingshui/"
+    },
+    {
+      "location_id": "hainan-wanning",
+      "name": "万宁市",
+      "code": "469006",
+      "level": "county",
+      "article_count": 0,
+      "detail_path": "/regions/hainan-wanning/"
+    },
+    {
+      "location_id": "hainan-chengmai",
+      "name": "澄迈县",
+      "code": "469023",
+      "level": "county",
+      "article_count": 0,
+      "detail_path": "/regions/hainan-chengmai/"
+    },
+    {
+      "location_id": "hainan-ledong",
+      "name": "乐东黎族自治县",
+      "code": "469027",
+      "level": "county",
+      "article_count": 0,
+      "detail_path": "/regions/hainan-ledong/"
+    }
+  ]
+}

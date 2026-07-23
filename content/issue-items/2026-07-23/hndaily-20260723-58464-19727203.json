@@ -1,0 +1,95 @@
+{
+  "schema_version": 13,
+  "item_id": "hndaily-20260723-58464-19727203",
+  "published_date": "2026-07-23",
+  "collected_date": "2026-07-23",
+  "page_number": "001",
+  "page_name": "头版",
+  "page_sequence": 7,
+  "author": "海南日报全媒体记者邱江华",
+  "enrichment_status": "complete",
+  "scope": "mixed",
+  "scope_evidence": "来自克罗地亚等国的30余位驻华大使、临时代办、国际组织代表及高级别外交官参团。",
+  "subjects": [
+    {
+      "subject_id": "subject-organization-e74828a7bd46f8",
+      "name": "外交部",
+      "type": "organization",
+      "activities": [
+        {
+          "occurred_on": "2026-07-22/2026-07-25",
+          "place": "海南",
+          "headline": "外交部组织驻华使团人员赴海南参访",
+          "evidence": "7月22日至25日，外交部组织驻华使团人员赴海南参访。"
+        }
+      ]
+    }
+  ],
+  "locations": [
+    {
+      "location_id": "hainan-sanya",
+      "name": "三亚市",
+      "code": "460200",
+      "level": "prefecture",
+      "evidence": "当天，代表团抵达三亚后，随即展开密集的考察交流活动。"
+    },
+    {
+      "location_id": "hainan-wuzhishan",
+      "name": "五指山市",
+      "code": "469001",
+      "level": "county",
+      "evidence": "接下来，使节团还将深入五指山、琼海、文昌等地"
+    },
+    {
+      "location_id": "hainan-qionghai",
+      "name": "琼海市",
+      "code": "469002",
+      "level": "county",
+      "evidence": "接下来，使节团还将深入五指山、琼海、文昌等地"
+    },
+    {
+      "location_id": "hainan-wenchang",
+      "name": "文昌市",
+      "code": "469005",
+      "level": "county",
+      "evidence": "接下来，使节团还将深入五指山、琼海、文昌等地"
+    }
+  ],
+  "topics": {
+    "primary": {
+      "category_id": "free-trade-opening",
+      "category_name": "自贸港与开放",
+      "evidence": "代表团出席了三亚产业对接会，围绕自贸港政策、投资经贸、热区农业、国际旅游消费等领域合作机遇，与当地政企代表进行了深入交流。"
+    },
+    "secondary": [
+      {
+        "topic_id": "topic-free-trade-opening-3dec4e0772695b",
+        "name": "驻华使节交流",
+        "evidence": "外交部组织驻华使团人员赴海南参访。"
+      },
+      {
+        "topic_id": "topic-free-trade-opening-7b02788c85e068",
+        "name": "国际投资合作",
+        "evidence": "愿积极推动本国优质资源与三亚发展需求精准对接。"
+      }
+    ]
+  },
+  "events": [
+    {
+      "event_id": "event-bad22e47a7b8dc",
+      "name": "三亚产业对接会",
+      "event_type": "named_event",
+      "evidence": "结束实地考察后，代表团出席了三亚产业对接会",
+      "occurred_on": "2026-07-22"
+    }
+  ],
+  "plans": [],
+  "reader_leads": [],
+  "block": {
+    "source": "海南日报",
+    "title": "驻华使节参访海南",
+    "content": "本报三亚7月22日电（海南日报全媒体记者邱江华）7月22日至25日，外交部组织驻华使团人员赴海南参访。来自克罗地亚等国的30余位驻华大使、临时代办、国际组织代表及高级别外交官参团。当天，代表团抵达三亚后，随即展开密集的考察交流活动。\n\n代表团首站来到三亚崖州湾科技城高新区，先后参访产业促进中心和中国农业科学院南繁研究院，深入了解南繁种业和深海科技领域的最新进展。作为海南自由贸易港的重点园区，崖州湾科技城高新区聚焦“南繁硅谷”和深海产业，汇聚了一批国家级科研平台和创新型企业，已成为代表中国新质生产力的重要窗口。参访中，使节们对种业自主创新等表现出浓厚兴趣，不时驻足询问技术突破与应用前景。\n\n结束实地考察后，代表团出席了三亚产业对接会，围绕自贸港政策、投资经贸、热区农业、国际旅游消费等领域合作机遇，与当地政企代表进行了深入交流。使节们纷纷表示，海南自贸港封关运作以来，政策红利持续释放，市场活力不断激发，三亚作为海南自贸港建设的前沿阵地，发展前景广阔，愿积极推动本国优质资源与三亚发展需求精准对接。\n\n据了解，此次驻华使节代表团访琼，正值海南自贸港全岛封关运作之后对外交流持续“升温”之际。接下来，使节团还将深入五指山、琼海、文昌等地，全方位感受海南自贸港建设成效与开放活力。",
+    "ai_summary": "外交部组织30余位驻华使节和国际组织代表赴海南参访，考察三亚科技产业并对接自贸港投资经贸合作。",
+    "original_url": "http://news.hndaily.cn/html/2026-07/23/content_58464_19727203.htm"
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "topic": {
+    "topic_id": "topic-sports-events-cd004165f57af3",
+    "name": "体育产业",
+    "parent_id": "category-sports-events",
+    "category_id": "sports-events",
+    "article_count": 1,
+    "detail_path": "/topics/topic-sports-events-cd004165f57af3/"
+  },
+  "articles": [
+    {
+      "item_id": "hndaily-20260723-58470-19727277",
+      "published_date": "2026-07-23",
+      "page_number": "007",
+      "page_name": "中国新闻",
+      "page_sequence": 1,
+      "title": "体育强国建设“十五五”规划发布",
+      "ai_summary": "国家体育总局印发首个体育强国国家级专项规划，提出到2030年体育产业总规模突破7万亿元，并部署38项重点任务。",
+      "scope": "national",
+      "subjects": [
+        {
+          "subject_id": "subject-organization-bfd2ef46ec6899",
+          "name": "国家体育总局",
+          "type": "organization"
+        }
+      ],
+      "locations": [],
+      "topics": {
+        "primary": {
+          "category_id": "sports-events",
+          "category_name": "体育与赛事",
+          "evidence": "对“十五五”时期加快建设体育强国、推动体育高质量发展作出了系统部署。"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-sports-events-ec0a88be311d5e",
+            "name": "体育强国建设",
+            "evidence": "加快建设体育强国"
+          },
+          {
+            "topic_id": "topic-sports-events-25448570df6437",
+            "name": "全民健身",
+            "evidence": "围绕全民健身、竞技体育、青少年体育"
+          },
+          {
+            "topic_id": "topic-sports-events-cd004165f57af3",
+            "name": "体育产业",
+            "evidence": "体育产业总规模突破7万亿元。"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [
+        {
+          "plan_id": "plan-07dbd7a20f80ad",
+          "name": "《体育强国建设“十五五”规划》",
+          "mention_type": "released",
+          "evidence": "经国务院批复同意，国家体育总局近日印发《体育强国建设“十五五”规划》（以下简称《规划》）。"
+        }
+      ],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58470-19727277/"
+    }
+  ]
+}

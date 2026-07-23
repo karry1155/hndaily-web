@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "topic": {
+    "topic_id": "topic-governance-law-9d39420a35cb90",
+    "name": "物业服务整治",
+    "parent_id": "category-governance-law",
+    "category_id": "governance-law",
+    "article_count": 1,
+    "detail_path": "/topics/topic-governance-law-9d39420a35cb90/"
+  },
+  "articles": [
+    {
+      "item_id": "hndaily-20260723-58470-19727283",
+      "published_date": "2026-07-23",
+      "page_number": "007",
+      "page_name": "中国新闻",
+      "page_sequence": 4,
+      "title": "让群众从“安居”迈向“宜居”",
+      "ai_summary": "三亚海棠区通过监督推动物业整治和“先试后买”选聘模式，已解决3198个服务问题，部分小区物业费降幅达30%。",
+      "scope": "hainan",
+      "subjects": [
+        {
+          "subject_id": "subject-organization-eb629bbaa01e44",
+          "name": "海棠区纪委监委",
+          "type": "organization"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan-sanya",
+          "name": "三亚市",
+          "code": "460200",
+          "level": "prefecture",
+          "evidence": "三亚海棠区某小区居民"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "governance-law",
+          "category_name": "治理与法治",
+          "evidence": "海棠区纪委监委将物业服务专项整治纳入民生监督重点"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-governance-law-9d39420a35cb90",
+            "name": "物业服务整治",
+            "evidence": "物业服务专项整治"
+          },
+          {
+            "topic_id": "topic-governance-law-2e2cbb70b40a90",
+            "name": "民生监督",
+            "evidence": "民生监督重点"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58470-19727283/"
+    }
+  ]
+}

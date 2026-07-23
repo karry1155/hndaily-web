@@ -1,0 +1,299 @@
+{
+  "schema_version": 1,
+  "topic": {
+    "topic_id": "category-ecology-climate",
+    "name": "生态与气候",
+    "parent_id": null,
+    "category_id": "ecology-climate",
+    "definition": "生态保护、环境治理、污染防治、海洋生态、气候与绿色低碳。",
+    "boundary": "正在发生的气象灾害和避险信息归入应急与安全。",
+    "article_count": 4,
+    "detail_path": "/topics/category-ecology-climate/"
+  },
+  "children": [
+    {
+      "topic_id": "topic-ecology-climate-75a9b5d171d0ef",
+      "name": "两山转化",
+      "parent_id": "category-ecology-climate",
+      "category_id": "ecology-climate",
+      "article_count": 1,
+      "detail_path": "/topics/topic-ecology-climate-75a9b5d171d0ef/"
+    },
+    {
+      "topic_id": "topic-ecology-climate-3d8b0bab160db2",
+      "name": "乡村旅游",
+      "parent_id": "category-ecology-climate",
+      "category_id": "ecology-climate",
+      "article_count": 1,
+      "detail_path": "/topics/topic-ecology-climate-3d8b0bab160db2/"
+    },
+    {
+      "topic_id": "topic-ecology-climate-eefe91d4d1b530",
+      "name": "林草种质资源",
+      "parent_id": "category-ecology-climate",
+      "category_id": "ecology-climate",
+      "article_count": 1,
+      "detail_path": "/topics/topic-ecology-climate-eefe91d4d1b530/"
+    },
+    {
+      "topic_id": "topic-ecology-climate-1f05d9985d62d1",
+      "name": "森林质量提升",
+      "parent_id": "category-ecology-climate",
+      "category_id": "ecology-climate",
+      "article_count": 1,
+      "detail_path": "/topics/topic-ecology-climate-1f05d9985d62d1/"
+    },
+    {
+      "topic_id": "topic-ecology-climate-f1b853d2924b57",
+      "name": "海域生态保护",
+      "parent_id": "category-ecology-climate",
+      "category_id": "ecology-climate",
+      "article_count": 1,
+      "detail_path": "/topics/topic-ecology-climate-f1b853d2924b57/"
+    },
+    {
+      "topic_id": "topic-ecology-climate-e22ad1bf98f5db",
+      "name": "珊瑚礁监测",
+      "parent_id": "category-ecology-climate",
+      "category_id": "ecology-climate",
+      "article_count": 1,
+      "detail_path": "/topics/topic-ecology-climate-e22ad1bf98f5db/"
+    },
+    {
+      "topic_id": "topic-ecology-climate-9aaca39ec1eced",
+      "name": "自然保护地体系",
+      "parent_id": "category-ecology-climate",
+      "category_id": "ecology-climate",
+      "article_count": 1,
+      "detail_path": "/topics/topic-ecology-climate-9aaca39ec1eced/"
+    },
+    {
+      "topic_id": "topic-ecology-climate-fbdeb49762978f",
+      "name": "良种引种试种",
+      "parent_id": "category-ecology-climate",
+      "category_id": "ecology-climate",
+      "article_count": 1,
+      "detail_path": "/topics/topic-ecology-climate-fbdeb49762978f/"
+    }
+  ],
+  "articles": [
+    {
+      "item_id": "hndaily-20260723-58469-19727265",
+      "published_date": "2026-07-23",
+      "page_number": "006",
+      "page_name": "本省新闻",
+      "page_sequence": 3,
+      "title": "常态化监测 守护珊瑚生态",
+      "ai_summary": "三亚珊瑚礁生态研究所对临高金牌港一期工程海域珊瑚礁群开展常态化监测，以掌握珊瑚生长和海域生态状况。",
+      "scope": "hainan",
+      "subjects": [
+        {
+          "subject_id": "subject-organization-73487c9d48f86a",
+          "name": "三亚珊瑚礁生态研究所",
+          "type": "organization"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan-lingao",
+          "name": "临高县",
+          "code": "469024",
+          "level": "county",
+          "evidence": "临高金牌港开发区"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "ecology-climate",
+          "category_name": "生态与气候",
+          "evidence": "开展常态化生态监测"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-ecology-climate-e22ad1bf98f5db",
+            "name": "珊瑚礁监测",
+            "evidence": "珊瑚礁群开展常态化生态监测"
+          },
+          {
+            "topic_id": "topic-ecology-climate-f1b853d2924b57",
+            "name": "海域生态保护",
+            "evidence": "海域生态环境状况"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58469-19727265/"
+    },
+    {
+      "item_id": "hndaily-20260723-58466-19727230",
+      "published_date": "2026-07-23",
+      "page_number": "003",
+      "page_name": "本省新闻",
+      "page_sequence": 5,
+      "title": "推进林草种质资源保护利用合作",
+      "ai_summary": "海南与广西林业种苗机构签署合作协议，将共建林草种质资源协同保存体系并推动特色良种跨区域试种和科研合作。",
+      "scope": "domestic",
+      "subjects": [
+        {
+          "subject_id": "subject-organization-9dd863ac3c5050",
+          "name": "海南林木种子（苗）总站",
+          "type": "organization"
+        },
+        {
+          "subject_id": "subject-organization-8e5970dc07aa43",
+          "name": "广西林业种苗站",
+          "type": "organization"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "海南林木种子（苗）总站和广西林业种苗站"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "ecology-climate",
+          "category_name": "生态与气候",
+          "evidence": "建立跨区域互为备份、冗余保存、风险共防的林草种质资源区域协同保存体系"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-ecology-climate-eefe91d4d1b530",
+            "name": "林草种质资源",
+            "evidence": "林草种质资源保护利用"
+          },
+          {
+            "topic_id": "topic-ecology-climate-fbdeb49762978f",
+            "name": "良种引种试种",
+            "evidence": "良种跨区域引种试种"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58466-19727230/"
+    },
+    {
+      "item_id": "hndaily-20260723-58466-19727228",
+      "published_date": "2026-07-23",
+      "page_number": "003",
+      "page_name": "本省新闻",
+      "page_sequence": 3,
+      "title": "初步建成以国家公园为主体的自然保护地体系",
+      "ai_summary": "海南发布林业保护利用“十五五”规划，提出到2030年森林覆盖率保持62%以上，并初步建成以国家公园为主体的自然保护地体系。",
+      "scope": "hainan",
+      "subjects": [
+        {
+          "subject_id": "subject-organization-baa206ba076c5e",
+          "name": "省林业局",
+          "type": "organization"
+        },
+        {
+          "subject_id": "subject-organization-981215adc0566e",
+          "name": "省发展改革委",
+          "type": "organization"
+        },
+        {
+          "subject_id": "subject-organization-8f63dfa4acffe0",
+          "name": "省自然资源和规划厅",
+          "type": "organization"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "《海南省林业保护利用“十五五”规划》"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "ecology-climate",
+          "category_name": "生态与气候",
+          "evidence": "全面推动生态保护与绿色发展协同共进"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-ecology-climate-9aaca39ec1eced",
+            "name": "自然保护地体系",
+            "evidence": "初步建成以国家公园为主体的自然保护地体系"
+          },
+          {
+            "topic_id": "topic-ecology-climate-1f05d9985d62d1",
+            "name": "森林质量提升",
+            "evidence": "精准提升森林质量"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [
+        {
+          "plan_id": "plan-bf3198129b48fe",
+          "name": "《海南省林业保护利用“十五五”规划》",
+          "mention_type": "released",
+          "evidence": "近日，省林业局联合省发展改革委、省自然资源和规划厅印发《海南省林业保护利用“十五五”规划》（以下简称《规划》）"
+        }
+      ],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58466-19727228/"
+    },
+    {
+      "item_id": "hndaily-20260723-58464-19727199",
+      "published_date": "2026-07-23",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 4,
+      "title": "在生态产业化和产业生态化上下更大功夫\n探索更多更具特色更高效益的“两山”转化路径",
+      "ai_summary": "刘小明在昌江调研项目、乡村旅游与农业发展，要求统筹生态保护、文旅融合和特色产业，拓展“两山”转化路径。",
+      "scope": "hainan",
+      "subjects": [
+        {
+          "subject_id": "subject-person-84ccb15cb4e237",
+          "name": "刘小明",
+          "type": "person"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan-changjiang",
+          "name": "昌江黎族自治县",
+          "code": "469026",
+          "level": "county",
+          "evidence": "7月22日，省长刘小明在昌江黎族自治县调研经济社会发展情况。"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "ecology-climate",
+          "category_name": "生态与气候",
+          "evidence": "在生态产业化和产业生态化上下更大功夫，探索更多更具特色更高效益的“两山”转化路径。"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-ecology-climate-75a9b5d171d0ef",
+            "name": "两山转化",
+            "evidence": "听取昌江“两山”转化、农业产业发展"
+          },
+          {
+            "topic_id": "topic-ecology-climate-3d8b0bab160db2",
+            "name": "乡村旅游",
+            "evidence": "加快构建“生态+文化+体验”的乡村旅游新格局。"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58464-19727199/"
+    }
+  ]
+}

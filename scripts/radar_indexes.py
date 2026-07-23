@@ -1,14 +1,21 @@
 from __future__ import annotations
 
+from collections import defaultdict
+
 from scripts.radar_contract import ContractError, canonicalize_source_url
 from scripts.radar_issue import validate_public_issue, validate_public_issue_item
-from scripts.radar_topics import load_topic_catalog, topic_catalog_by_id
+from scripts.radar_locations import load_location_catalog
+from scripts.radar_model import load_topic_categories
 
 
-def public_topics(article):
-    if article.get("schema_version") == 9:
-        return article.get("resolved_topics", [])
-    return article.get("topics", [])
+def _sort_articles(rows):
+    return sorted(
+        rows,
+        key=lambda row: (
+            row["published_date"], row["page_number"], row["page_sequence"], row["item_id"],
+        ),
+        reverse=True,
+    )
 
 
 def _article_summary(article):
@@ -21,177 +28,341 @@ def _article_summary(article):
         "title": article["block"]["title"],
         "ai_summary": article["block"]["ai_summary"],
         "scope": article["scope"],
-        "enrichment_status": article["enrichment_status"],
-        "subjects": article["subjects"],
-        "locations": article["locations"],
-        "topics": public_topics(article),
-        "events": article.get("events", []),
-        "plans": article.get("plans", []),
-        "detail_path": (
-            f'/items/{article["published_date"]}/{article["item_id"]}/'
-        ),
-    }
-
-
-def _build_topic_indexes(articles, catalog):
-    by_id = topic_catalog_by_id(catalog)
-    active = [row for row in catalog["topics"] if row["status"] == "active"]
-    memberships = {row["topic_id"]: {"primary": [], "secondary": []} for row in active}
-    for article in articles:
-        if article.get("schema_version") != 9 or article.get("scope") not in {"hainan", "mixed"}:
-            continue
-        article_memberships: dict[str, str] = {}
-        for resolved in article.get("resolved_topics", []):
-            relation = resolved["relation"]
-            cursor = resolved["topic_id"]
-            while cursor is not None:
-                previous = article_memberships.get(cursor)
-                if previous != "primary":
-                    article_memberships[cursor] = relation
-                cursor = by_id[cursor]["parent_id"]
-        summary = _article_summary(article)
-        for topic_id, relation in article_memberships.items():
-            if topic_id in memberships:
-                memberships[topic_id][relation].append(summary)
-    payloads = {}
-    nodes = []
-    for topic in active:
-        groups = memberships[topic["topic_id"]]
-        primary = sorted(
-            groups["primary"],
-            key=lambda row: (row["published_date"], row["page_number"], row["page_sequence"]),
-            reverse=True,
-        )
-        secondary = sorted(
-            groups["secondary"],
-            key=lambda row: (row["published_date"], row["page_number"], row["page_sequence"]),
-            reverse=True,
-        )
-        count = len(primary) + len(secondary)
-        node = {
-            "topic_id": topic["topic_id"],
-            "name": topic["name"],
-            "parent_id": topic["parent_id"],
-            "article_count": count,
-            "primary_count": len(primary),
-            "detail_path": f'/topics/{topic["topic_id"]}/',
-        }
-        nodes.append(node)
-        payloads[f'topic-feed/{topic["topic_id"]}.json'] = {
-            **node,
-            "definition": topic["definition"],
-            "primary_items": primary,
-            "secondary_items": secondary,
-        }
-    roots = []
-    children_by_parent: dict[str, list[dict]] = {}
-    for node in nodes:
-        if node["parent_id"] is None:
-            roots.append(node)
-        else:
-            children_by_parent.setdefault(node["parent_id"], []).append(node)
-    payloads["topics.json"] = {
-        "roots": [
-            {**root, "children": children_by_parent.get(root["topic_id"], [])}
-            for root in roots
+        "subjects": [
+            {"subject_id": row["subject_id"], "name": row["name"], "type": row["type"]}
+            for row in article["subjects"]
         ],
-        "nodes": nodes,
+        "locations": article["locations"],
+        "topics": article["topics"],
+        "events": article["events"],
+        "plans": article["plans"],
+        "reader_lead_count": len(article["reader_leads"]),
+        "detail_path": f'/items/{article["published_date"]}/{article["item_id"]}/',
     }
+
+
+def _source(article, evidence):
+    return {
+        "source_item_id": article["item_id"],
+        "published_date": article["published_date"],
+        "source_title": article["block"]["title"],
+        "detail_path": f'/items/{article["published_date"]}/{article["item_id"]}/',
+        "evidence": evidence,
+    }
+
+
+def _build_subject_indexes(articles, summaries):
+    grouped = {}
+    for article in articles:
+        for subject in article["subjects"]:
+            row = grouped.setdefault(subject["subject_id"], {
+                "subject": subject,
+                "article_ids": set(),
+                "dates": [],
+                "aliases": {},
+                "activities": [],
+            })
+            row["article_ids"].add(article["item_id"])
+            row["dates"].append(article["published_date"])
+            for alias in subject.get("aliases", []):
+                row["aliases"].setdefault(alias["name"], alias)
+            for activity in subject["activities"]:
+                row["activities"].append({
+                    **activity,
+                    "source": _source(article, activity["evidence"]),
+                })
+    directory, payloads = [], {}
+    for subject_id, value in grouped.items():
+        subject = value["subject"]
+        activities = sorted(
+            value["activities"],
+            key=lambda row: (
+                row.get("occurred_on") or row["source"]["published_date"],
+                row["source"]["source_item_id"],
+            ),
+            reverse=True,
+        )
+        item = {
+            "subject_id": subject_id,
+            "name": subject["name"],
+            "type": subject["type"],
+            "article_count": len(value["article_ids"]),
+            "activity_count": len(activities),
+            "first_seen": min(value["dates"]),
+            "last_seen": max(value["dates"]),
+            "detail_path": f"/subjects/{subject_id}/",
+        }
+        directory.append(item)
+        payloads[f"subject-feed/{subject_id}.json"] = {
+            "schema_version": 1,
+            "subject": {
+                "subject_id": subject_id,
+                "canonical_name": subject["name"],
+                "type": subject["type"],
+                "aliases": list(value["aliases"].values()),
+                "first_seen": item["first_seen"],
+                "last_seen": item["last_seen"],
+            },
+            "activities": activities,
+            "articles": _sort_articles([summaries[value] for value in value["article_ids"]]),
+        }
+    type_order = {"person": 0, "company": 1, "organization": 2}
+    directory.sort(
+        key=lambda row: (
+            type_order[row["type"]], -row["article_count"], -row["activity_count"], row["name"],
+        )
+    )
+    payloads["subjects.json"] = {"schema_version": 1, "items": directory}
     return payloads
 
 
-def build_hnhot_indexes(issues, articles, topic_catalog=None):
-    """Build full-publication indexes without a score or selection layer."""
+def _build_region_indexes(articles, summaries):
+    catalog = load_location_catalog()
+    grouped = {row["location_id"]: set() for row in catalog.divisions}
+    for article in articles:
+        for location in article["locations"]:
+            grouped[location["location_id"]].add(article["item_id"])
+    directory, payloads = [], {}
+    for region in catalog.divisions:
+        ids = grouped[region["location_id"]]
+        item = {
+            "location_id": region["location_id"],
+            "name": region["name"],
+            "code": region["code"],
+            "level": region["level"],
+            "article_count": len(ids),
+            "detail_path": f'/regions/{region["location_id"]}/',
+        }
+        directory.append(item)
+        payloads[f'region-feed/{region["location_id"]}.json'] = {
+            "schema_version": 1,
+            "region": item,
+            "articles": _sort_articles([summaries[value] for value in ids]),
+        }
+    level_order = {"province": 0, "prefecture": 1, "county": 2}
+    directory.sort(key=lambda row: (level_order[row["level"]], -row["article_count"], row["code"]))
+    payloads["regions.json"] = {"schema_version": 1, "items": directory}
+    return payloads
+
+
+def _build_topic_indexes(articles, summaries):
+    categories = load_topic_categories()
+    article_ids_by_category = defaultdict(set)
+    secondary = defaultdict(lambda: defaultdict(set))
+    secondary_names = {}
+    secondary_ids = {}
+    for article in articles:
+        primary = article["topics"]["primary"]
+        category_id = primary["category_id"]
+        article_ids_by_category[category_id].add(article["item_id"])
+        for topic in article["topics"]["secondary"]:
+            secondary[category_id][topic["topic_id"]].add(article["item_id"])
+            secondary_names[topic["topic_id"]] = topic["name"]
+            secondary_ids[topic["topic_id"]] = category_id
+    roots, nodes, payloads = [], [], {}
+    for category in categories:
+        category_id = category["category_id"]
+        root_id = f"category-{category_id}"
+        children = []
+        for topic_id, ids in secondary[category_id].items():
+            child = {
+                "topic_id": topic_id,
+                "name": secondary_names[topic_id],
+                "parent_id": root_id,
+                "category_id": category_id,
+                "article_count": len(ids),
+                "detail_path": f"/topics/{topic_id}/",
+            }
+            children.append(child)
+            nodes.append(child)
+            payloads[f"topic-feed/{topic_id}.json"] = {
+                "schema_version": 1,
+                "topic": child,
+                "articles": _sort_articles([summaries[value] for value in ids]),
+            }
+        children.sort(key=lambda row: (-row["article_count"], row["name"]))
+        ids = article_ids_by_category[category_id]
+        root = {
+            "topic_id": root_id,
+            "name": category["name"],
+            "parent_id": None,
+            "category_id": category_id,
+            "definition": category["definition"],
+            "boundary": category["boundary"],
+            "article_count": len(ids),
+            "detail_path": f"/topics/{root_id}/",
+            "children": children,
+        }
+        roots.append(root)
+        nodes.append({key: value for key, value in root.items() if key != "children"})
+        payloads[f"topic-feed/{root_id}.json"] = {
+            "schema_version": 1,
+            "topic": {key: value for key, value in root.items() if key != "children"},
+            "children": children,
+            "articles": _sort_articles([summaries[value] for value in ids]),
+        }
+    payloads["topics.json"] = {"schema_version": 1, "roots": roots, "nodes": nodes}
+    return payloads
+
+
+def _build_event_indexes(articles, summaries):
+    grouped, series = {}, {}
+    for article in articles:
+        for event in article["events"]:
+            row = grouped.setdefault(event["event_id"], {"event": event, "article_ids": set()})
+            row["article_ids"].add(article["item_id"])
+            if event.get("series_id"):
+                series_row = series.setdefault(event["series_id"], {
+                    "name": event["series_name"], "article_ids": set(), "editions": set(),
+                })
+                series_row["article_ids"].add(article["item_id"])
+                series_row["editions"].add(event["event_id"])
+    directory, payloads = [], {}
+    for event_id, value in grouped.items():
+        event, ids = value["event"], value["article_ids"]
+        item = {
+            "event_id": event_id,
+            "name": event["name"],
+            "event_type": event["event_type"],
+            "series_id": event.get("series_id"),
+            "article_count": len(ids),
+            "detail_path": f"/events/{event_id}/",
+        }
+        directory.append(item)
+        payloads[f"event-feed/{event_id}.json"] = {
+            "schema_version": 1,
+            "event": item,
+            "articles": _sort_articles([summaries[value] for value in ids]),
+        }
+    for series_id, value in series.items():
+        item = {
+            "event_id": series_id,
+            "name": value["name"],
+            "event_type": "series",
+            "series_id": series_id,
+            "edition_ids": sorted(value["editions"]),
+            "article_count": len(value["article_ids"]),
+            "detail_path": f"/events/{series_id}/",
+        }
+        directory.append(item)
+        payloads[f"event-feed/{series_id}.json"] = {
+            "schema_version": 1,
+            "event": item,
+            "articles": _sort_articles([summaries[value] for value in value["article_ids"]]),
+        }
+    directory.sort(key=lambda row: (-row["article_count"], row["name"]))
+    payloads["events.json"] = {"schema_version": 1, "items": directory}
+    return payloads
+
+
+def _build_plan_indexes(articles, summaries):
+    grouped = {}
+    for article in articles:
+        for plan in article["plans"]:
+            row = grouped.setdefault(plan["plan_id"], {
+                "name": plan["name"], "article_ids": set(), "mentions": [],
+            })
+            row["article_ids"].add(article["item_id"])
+            row["mentions"].append({
+                "mention_type": plan["mention_type"],
+                "source": _source(article, plan["evidence"]),
+            })
+    directory, payloads = [], {}
+    for plan_id, value in grouped.items():
+        item = {
+            "plan_id": plan_id,
+            "name": value["name"],
+            "article_count": len(value["article_ids"]),
+            "detail_path": f"/plans/{plan_id}/",
+        }
+        directory.append(item)
+        payloads[f"plan-feed/{plan_id}.json"] = {
+            "schema_version": 1,
+            "plan": item,
+            "mentions": sorted(
+                value["mentions"], key=lambda row: row["source"]["published_date"], reverse=True
+            ),
+            "articles": _sort_articles([summaries[value] for value in value["article_ids"]]),
+        }
+    directory.sort(key=lambda row: (-row["article_count"], row["name"]))
+    payloads["plans.json"] = {"schema_version": 1, "items": directory}
+    return payloads
+
+
+def _build_reader_indexes(articles):
+    rows = []
+    for article in articles:
+        for lead in article["reader_leads"]:
+            rows.append({**lead, "source": _source(article, lead["evidence"])})
+    rows.sort(key=lambda row: (row["source"]["published_date"], row["lead_id"]), reverse=True)
+    return {
+        "reader-leads.json": {
+            "schema_version": 1,
+            "count": len(rows),
+            "items": rows,
+        }
+    }
+
+
+def build_hnhot_indexes(issues, articles):
     for issue in issues:
         validate_public_issue(issue)
     for article in articles:
         validate_public_issue_item(article)
-    topic_catalog = topic_catalog or load_topic_catalog()
     ids = [article["item_id"] for article in articles]
-    if len(set(ids)) != len(ids):
-        raise ContractError("duplicate item_id in historical publication")
-    ids_by_url: dict[str, str] = {}
+    if len(ids) != len(set(ids)):
+        raise ContractError("duplicate item_id in publication")
+    ids_by_url = {}
     for article in articles:
-        canonical_url = canonicalize_source_url(article["block"]["original_url"])
-        previous_id = ids_by_url.get(canonical_url)
-        if previous_id is not None and previous_id != article["item_id"]:
-            raise ContractError(
-                f"canonical URL collision: {canonical_url} maps to both "
-                f"{previous_id} and {article['item_id']}"
-            )
-        ids_by_url[canonical_url] = article["item_id"]
+        url = canonicalize_source_url(article["block"]["original_url"])
+        if url in ids_by_url and ids_by_url[url] != article["item_id"]:
+            raise ContractError(f"canonical URL collision: {url}")
+        ids_by_url[url] = article["item_id"]
+
     dates = sorted({issue["date"] for issue in issues}, reverse=True)
     by_id = {article["item_id"]: article for article in articles}
+    summaries = {article["item_id"]: _article_summary(article) for article in articles}
+    ordered = _sort_articles(list(summaries.values()))
     payloads = {
-        "hnhot.json": {
-            "latest_date": dates[0] if dates else None,
-            "dates": dates,
-            "front_page_feeds": [
-                f"/static/front-page/{value}.json" for value in dates
-            ],
-            "issue_feeds": [f"/static/issue-feed/{value}.json" for value in dates],
-        },
-        "issues.json": {"latest_date": dates[0] if dates else None, "dates": dates},
+        "hnhot.json": {"schema_version": 1, "latest_date": dates[0] if dates else None, "dates": dates},
+        "issues.json": {"schema_version": 1, "latest_date": dates[0] if dates else None, "dates": dates},
+        "search-articles.json": {"schema_version": 1, "items": ordered},
     }
-    ordered = sorted(
-        articles,
-        key=lambda article: (
-            article["published_date"],
-            article["page_number"],
-            article["page_sequence"],
-            article["item_id"],
-        ),
-    )
-    payloads["search-articles.json"] = {
-        "items": [_article_summary(article) for article in ordered]
-    }
-    issue_by_date = {issue["date"]: issue for issue in issues}
+    issues_by_date = {issue["date"]: issue for issue in issues}
     for published_date in dates:
-        issue = issue_by_date[published_date]
-        front_page = [
-            _article_summary(by_id[item_id])
-            for item_id in issue["front_page_item_ids"]
-            if item_id in by_id
+        issue = issues_by_date[published_date]
+        front = [summaries[value] for value in issue["front_page_item_ids"] if value in summaries]
+        world_ids = [
+            article["item_id"] for page in issue["pages"] if page["page_name"] == "世界新闻"
+            for article in page["articles"]
         ]
-        world_item_ids = [
-            row["item_id"]
-            for page in issue["pages"]
-            if page["page_name"] == "世界新闻"
-            for row in page["articles"]
-        ]
-        world_news = [
-            _article_summary(by_id[item_id])
-            for item_id in world_item_ids
-            if item_id in by_id
-        ]
-        front_page_ids = {row["item_id"] for row in front_page}
-        home_items = front_page + [
-            row for row in world_news if row["item_id"] not in front_page_ids
-        ]
-        national = [row for row in front_page if row["scope"] == "national"]
+        world = [summaries[value] for value in world_ids if value in summaries]
+        front_ids = {row["item_id"] for row in front}
+        home_items = front + [row for row in world if row["item_id"] not in front_ids]
         payloads[f"front-page/{published_date}.json"] = {
+            "schema_version": 1,
             "date": published_date,
+            "source": issue["source"],
             "count": len(home_items),
-            "front_page_count": len(front_page),
-            "world_count": len(world_news),
             "national_ranking": [
-                {**row, "rank": rank} for rank, row in enumerate(national, 1)
+                {**row, "rank": rank}
+                for rank, row in enumerate([row for row in front if row["scope"] == "national"], 1)
             ],
-            "world_ranking": [
-                {**row, "rank": rank} for rank, row in enumerate(world_news, 1)
-            ],
+            "world_ranking": [{**row, "rank": rank} for rank, row in enumerate(world, 1)],
             "items": home_items,
         }
-        date_articles = [
-            _article_summary(article)
-            for article in ordered
-            if article["published_date"] == published_date
-        ]
+        date_items = [row for row in ordered if row["published_date"] == published_date]
         payloads[f"issue-feed/{published_date}.json"] = {
+            "schema_version": 1,
             "date": published_date,
-            "count": len(date_articles),
+            "count": len(date_items),
             "sections": issue["sections"],
-            "items": date_articles,
+            "items": date_items,
         }
-    payloads.update(_build_topic_indexes(articles, topic_catalog))
+    payloads.update(_build_subject_indexes(articles, summaries))
+    payloads.update(_build_region_indexes(articles, summaries))
+    payloads.update(_build_topic_indexes(articles, summaries))
+    payloads.update(_build_event_indexes(articles, summaries))
+    payloads.update(_build_plan_indexes(articles, summaries))
+    payloads.update(_build_reader_indexes(articles))
     return payloads

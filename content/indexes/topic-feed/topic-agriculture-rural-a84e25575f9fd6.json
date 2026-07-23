@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "topic": {
+    "topic_id": "topic-agriculture-rural-a84e25575f9fd6",
+    "name": "榴莲种植",
+    "parent_id": "category-agriculture-rural",
+    "category_id": "agriculture-rural",
+    "article_count": 1,
+    "detail_path": "/topics/topic-agriculture-rural-a84e25575f9fd6/"
+  },
+  "articles": [
+    {
+      "item_id": "hndaily-20260723-58466-19727231",
+      "published_date": "2026-07-23",
+      "page_number": "003",
+      "page_name": "本省新闻",
+      "page_sequence": 6,
+      "title": "三亚榴莲集中上市",
+      "ai_summary": "三亚榴莲进入集中上市旺季，多种主流品种主要销往北上广等城市并持续走俏。",
+      "scope": "hainan",
+      "subjects": [],
+      "locations": [
+        {
+          "location_id": "hainan-sanya",
+          "name": "三亚市",
+          "code": "460200",
+          "level": "prefecture",
+          "evidence": "位于三亚育才生态区的一处榴莲种植基地"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "agriculture-rural",
+          "category_name": "农业与乡村",
+          "evidence": "当前，三亚榴莲迎来集中上市旺季"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-agriculture-rural-a84e25575f9fd6",
+            "name": "榴莲种植",
+            "evidence": "三亚榴莲种植覆盖了多种主流热销品种"
+          },
+          {
+            "topic_id": "topic-agriculture-rural-4a9961a0844c73",
+            "name": "农产品销售",
+            "evidence": "主要销往北上广等一线城市"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58466-19727231/"
+    }
+  ]
+}

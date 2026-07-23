@@ -1,0 +1,448 @@
+{
+  "schema_version": 1,
+  "region": {
+    "location_id": "hainan",
+    "name": "海南省",
+    "code": "460000",
+    "level": "province",
+    "article_count": 8,
+    "detail_path": "/regions/hainan/"
+  },
+  "articles": [
+    {
+      "item_id": "hndaily-20260723-58471-19727291",
+      "published_date": "2026-07-23",
+      "page_number": "008",
+      "page_name": "健康周刊",
+      "page_sequence": 1,
+      "title": "乐城“零关税”钇90来了！",
+      "ai_summary": "博鳌乐城完成首批享受进口药械零关税政策的钇90玻璃微球手术，叠加特药险后可进一步降低肝癌患者自费负担。",
+      "scope": "mixed",
+      "subjects": [
+        {
+          "subject_id": "subject-organization-c66a2851265f85",
+          "name": "上海交通大学医学院附属瑞金医院海南医院（博鳌研究型医院）",
+          "type": "organization"
+        },
+        {
+          "subject_id": "subject-person-f517f0faa7c582",
+          "name": "王忠敏",
+          "type": "person"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "博鳌乐城国际医疗旅游先行区"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "health-medicine",
+          "category_name": "医疗与健康",
+          "evidence": "钇90玻璃微球主要用于治疗不可手术切除的肝癌"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-health-medicine-b60b0e6d127e03",
+            "name": "肝癌介入治疗",
+            "evidence": "肝癌介入治疗领域"
+          },
+          {
+            "topic_id": "topic-health-medicine-013533a969b356",
+            "name": "零关税药械",
+            "evidence": "进口药械“零关税”"
+          },
+          {
+            "topic_id": "topic-health-medicine-906aa94db2239d",
+            "name": "乐城特药险",
+            "evidence": "乐城全球特药险保障范围"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58471-19727291/"
+    },
+    {
+      "item_id": "hndaily-20260723-58467-19727241",
+      "published_date": "2026-07-23",
+      "page_number": "004",
+      "page_name": "民生新闻",
+      "page_sequence": 2,
+      "title": "156人获评中职学校“海南省三好学生”",
+      "ai_summary": "海南省教育厅公布中职学校评优名单，156人获评省三好学生，78人获评省优秀学生干部。",
+      "scope": "hainan",
+      "subjects": [
+        {
+          "subject_id": "subject-organization-98752354fdf436",
+          "name": "省教育厅",
+          "type": "organization"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "中职学校“海南省三好学生”"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "education-youth",
+          "category_name": "教育与青年",
+          "evidence": "努力成长为德智体美劳全面发展的高素质技能型人才。"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-education-youth-49c2a96b6e0ce0",
+            "name": "中职学生评优",
+            "evidence": "中职学校“海南省三好学生”和“海南省优秀学生干部”评选名单"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58467-19727241/"
+    },
+    {
+      "item_id": "hndaily-20260723-58466-19727230",
+      "published_date": "2026-07-23",
+      "page_number": "003",
+      "page_name": "本省新闻",
+      "page_sequence": 5,
+      "title": "推进林草种质资源保护利用合作",
+      "ai_summary": "海南与广西林业种苗机构签署合作协议，将共建林草种质资源协同保存体系并推动特色良种跨区域试种和科研合作。",
+      "scope": "domestic",
+      "subjects": [
+        {
+          "subject_id": "subject-organization-9dd863ac3c5050",
+          "name": "海南林木种子（苗）总站",
+          "type": "organization"
+        },
+        {
+          "subject_id": "subject-organization-8e5970dc07aa43",
+          "name": "广西林业种苗站",
+          "type": "organization"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "海南林木种子（苗）总站和广西林业种苗站"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "ecology-climate",
+          "category_name": "生态与气候",
+          "evidence": "建立跨区域互为备份、冗余保存、风险共防的林草种质资源区域协同保存体系"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-ecology-climate-eefe91d4d1b530",
+            "name": "林草种质资源",
+            "evidence": "林草种质资源保护利用"
+          },
+          {
+            "topic_id": "topic-ecology-climate-fbdeb49762978f",
+            "name": "良种引种试种",
+            "evidence": "良种跨区域引种试种"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58466-19727230/"
+    },
+    {
+      "item_id": "hndaily-20260723-58466-19727229",
+      "published_date": "2026-07-23",
+      "page_number": "003",
+      "page_name": "本省新闻",
+      "page_sequence": 4,
+      "title": "我省部署“八一”期间拥军优属拥政爱民工作",
+      "ai_summary": "海南三部门部署“八一”期间双拥工作，要求开展主题活动、解决部队实际困难，并组织便民医疗和消费帮扶。",
+      "scope": "hainan",
+      "subjects": [
+        {
+          "subject_id": "subject-organization-1fbdf78e1eb624",
+          "name": "省退役军人事务厅",
+          "type": "organization"
+        },
+        {
+          "subject_id": "subject-organization-8e4ea32da9005f",
+          "name": "省军区政治工作局",
+          "type": "organization"
+        },
+        {
+          "subject_id": "subject-organization-6ca0d1322219ab",
+          "name": "省双拥办",
+          "type": "organization"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "我省部署“八一”期间拥军优属拥政爱民工作"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "society-public-services",
+          "category_name": "社会与公共服务",
+          "evidence": "要求各地各部队扎实做好“八一”期间拥军优属、拥政爱民工作"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-society-public-services-f93a701383c75d",
+            "name": "双拥工作",
+            "evidence": "拥军优属、拥政爱民工作"
+          },
+          {
+            "topic_id": "topic-society-public-services-69c00d47101587",
+            "name": "军民共建",
+            "evidence": "巩固“城连共建”“城舰共建”等军民共建机制"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [
+        {
+          "plan_id": "plan-bdcd2e2d16b325",
+          "name": "《关于做好“八一”期间拥军优属拥政爱民工作的通知》",
+          "mention_type": "released",
+          "evidence": "近日，省退役军人事务厅、省军区政治工作局、省双拥办联合印发《关于做好“八一”期间拥军优属拥政爱民工作的通知》"
+        }
+      ],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58466-19727229/"
+    },
+    {
+      "item_id": "hndaily-20260723-58466-19727228",
+      "published_date": "2026-07-23",
+      "page_number": "003",
+      "page_name": "本省新闻",
+      "page_sequence": 3,
+      "title": "初步建成以国家公园为主体的自然保护地体系",
+      "ai_summary": "海南发布林业保护利用“十五五”规划，提出到2030年森林覆盖率保持62%以上，并初步建成以国家公园为主体的自然保护地体系。",
+      "scope": "hainan",
+      "subjects": [
+        {
+          "subject_id": "subject-organization-baa206ba076c5e",
+          "name": "省林业局",
+          "type": "organization"
+        },
+        {
+          "subject_id": "subject-organization-981215adc0566e",
+          "name": "省发展改革委",
+          "type": "organization"
+        },
+        {
+          "subject_id": "subject-organization-8f63dfa4acffe0",
+          "name": "省自然资源和规划厅",
+          "type": "organization"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "《海南省林业保护利用“十五五”规划》"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "ecology-climate",
+          "category_name": "生态与气候",
+          "evidence": "全面推动生态保护与绿色发展协同共进"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-ecology-climate-9aaca39ec1eced",
+            "name": "自然保护地体系",
+            "evidence": "初步建成以国家公园为主体的自然保护地体系"
+          },
+          {
+            "topic_id": "topic-ecology-climate-1f05d9985d62d1",
+            "name": "森林质量提升",
+            "evidence": "精准提升森林质量"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [
+        {
+          "plan_id": "plan-bf3198129b48fe",
+          "name": "《海南省林业保护利用“十五五”规划》",
+          "mention_type": "released",
+          "evidence": "近日，省林业局联合省发展改革委、省自然资源和规划厅印发《海南省林业保护利用“十五五”规划》（以下简称《规划》）"
+        }
+      ],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58466-19727228/"
+    },
+    {
+      "item_id": "hndaily-20260723-58464-19727205",
+      "published_date": "2026-07-23",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 9,
+      "title": "办好基础教育，海南有哪些硬招？",
+      "ai_summary": null,
+      "scope": "hainan",
+      "subjects": [],
+      "locations": [
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "办好基础教育，海南有哪些硬招？"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "education-youth",
+          "category_name": "教育与青年",
+          "evidence": "办好基础教育，海南有哪些硬招？"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-education-youth-cfc280a5f4ae5a",
+            "name": "基础教育",
+            "evidence": "办好基础教育，海南有哪些硬招？"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58464-19727205/"
+    },
+    {
+      "item_id": "hndaily-20260723-58464-19727202",
+      "published_date": "2026-07-23",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 6,
+      "title": "亲清有道方能行稳致远",
+      "ai_summary": "评论指出海南政商交往清单以双向正负面规范推动干部主动服务、企业依法经营，并需配套监督和容错纠错机制。",
+      "scope": "hainan",
+      "subjects": [
+        {
+          "subject_id": "subject-organization-568c3d8a628b1d",
+          "name": "中共海南省委办公厅",
+          "type": "organization"
+        },
+        {
+          "subject_id": "subject-organization-f76b5474a3baf6",
+          "name": "海南省人民政府办公厅",
+          "type": "organization"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "高标准建设海南自贸港，政商关系是绕不开的话题。"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "governance-law",
+          "category_name": "治理与法治",
+          "evidence": "立规矩、明边界，双向引导方能同频共振。"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-governance-law-9aac53e670d458",
+            "name": "亲清政商关系",
+            "evidence": "良好政商交往，贵在“亲而不逾矩，清而不疏离”。"
+          },
+          {
+            "topic_id": "topic-governance-law-578c091bbbdb40",
+            "name": "监督机制",
+            "evidence": "同时，监督机制必须如影随形"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58464-19727202/"
+    },
+    {
+      "item_id": "hndaily-20260723-58464-19727200",
+      "published_date": "2026-07-23",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 5,
+      "title": "海南发布政商交往正负面清单",
+      "ai_summary": "海南印发政商交往行为指引清单，分别明确公职人员和经营主体的正负面行为，划定服务企业与廉洁交往边界。",
+      "scope": "hainan",
+      "subjects": [
+        {
+          "subject_id": "subject-organization-568c3d8a628b1d",
+          "name": "中共海南省委办公厅",
+          "type": "organization"
+        },
+        {
+          "subject_id": "subject-organization-f76b5474a3baf6",
+          "name": "海南省人民政府办公厅",
+          "type": "organization"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "《清单》的出台为政商交往明确了行为边界，既鼓励公职人员主动服务企业，又防范政商交往廉洁风险"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "governance-law",
+          "category_name": "治理与法治",
+          "evidence": "《清单》的出台为政商交往明确了行为边界"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-governance-law-26dda9b951cb30",
+            "name": "政商交往规范",
+            "evidence": "进一步厘清政商交往边界"
+          },
+          {
+            "topic_id": "topic-governance-law-5bf6000cb05611",
+            "name": "营商环境",
+            "evidence": "持续营造市场化、法治化、国际化一流营商环境。"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58464-19727200/"
+    }
+  ]
+}

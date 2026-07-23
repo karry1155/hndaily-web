@@ -1,18 +1,56 @@
-# HNHOT agent workflow
+# HNHOT current application
 
-This repository is designed for an interactive coding agent to perform the semantic step directly. Do not add or require an external model API for the daily workflow.
+The repository root is the only active HNHOT application. It uses article
+schema 13 and `prompt_version: hnhot-v4.3`. Do not create another full runtime
+directory for a prompt, schema or UI revision.
+
+Historical full-application snapshots live outside the repository at the sibling
+path `../hndaily-web-radar-snapshots/`. They are recovery material only: never
+read their runtime data, prompts, generated content or tests unless the user
+explicitly requests a historical comparison or recovery.
+
+Before changing article semantics or importing an issue, read this file, every
+file under `prompts/article-enrichment/v4.3/`, and
+`docs/hnhot-article-enrichment-v4.3-design.md` completely.
 
 ## Importing an issue
 
-1. Run `bash scripts/run_radar_pipeline.sh YYYY-MM-DD`.
-2. When it prints `STATUS=MODEL_OUTPUT_REQUIRED`, read the printed `MODEL_INPUT_JSON`, then read every file in the printed `PROMPT_DIR` completely.
-3. Produce the complete JSON response yourself for every input item. Do not replace semantic work with keyword templates, fixed empty arrays, copied summaries, or a blanket fallback such as making every event empty.
-4. Write only the strict JSON response to `MODEL_OUTPUT_JSON`, preserving the input envelope and item order.
-5. Run the same pipeline command again. Resolve validation failures against the source evidence; do not weaken the validator to accept incorrect output.
-6. Run `python3 -m unittest discover -s tests -v` and rebuild the preview before reporting completion.
+1. Run `bash scripts/run_radar_pipeline.sh YYYY-MM-DD` from the repository root.
+2. On `STATUS=MODEL_OUTPUT_REQUIRED`, read the printed model input and the full
+   prompt package under `prompts/article-enrichment/v4.3/`.
+3. Perform the semantic extraction directly. Do not add an external model API,
+   keyword templates, copied summaries, fabricated evidence or blanket empty arrays.
+4. Write only the strict JSON response to the printed enrichment path, preserving
+   the envelope and article order, then rerun the same pipeline command.
+5. Fix validation failures against the article's exact source text. Never weaken
+   validation to admit an incorrect output.
+6. Run the tests, rebuild the site, and inspect the article plus subject, event,
+   region, topic, plan and reader-reminder pages before reporting completion.
 
-The active first-pass contract is `prompts/article-enrichment/v3/`. Versions 1 and 2 remain read-only historical documentation. First-pass enrichment describes only the current article with an open topic profile; it must not decide whether an entity deserves a future page, merge it into a long-term timeline, or force the topic into the long-term catalog. Topic normalization is a separate reviewed stage under `prompts/topic-resolution/v1/`.
+## Contract boundary
 
-The active private workspace is `data/production-json/`: crawler source, semantic input, enrichment output and audits live in separate subdirectories there. `data/json/` is a read-only archive of the earlier pipeline; never overwrite or migrate its dated files in place. Public validated content is stored under `content/`. Never describe an ad-hoc or heuristic-filled output as a model result. If a temporary fallback is unavoidable, stop publication and report the limitation instead.
+The first JSON is the only semantic response. The publisher may create stable
+technical IDs and may count, sort, group and join objects, but may not perform a
+second semantic generation.
 
-Preserve unrelated worktree changes. Human benchmark files under `evaluation/gold/` are review evidence, not model output and not a source to copy blindly; only entries marked `reviewed` are authoritative regression expectations.
+- `subjects[].activities` contains subject actions and results.
+- `location_mentions` uses only the finite Hainan administrative catalog.
+- `topics.primary` chooses one finite category; `topics.secondary` is open text.
+- `events` contains named events only, never ordinary subject actions.
+- `plans` contains explicit planning documents in Chinese book-title marks.
+- `reader_leads` contains source-backed reader actions, not generic news value.
+
+Do not introduce `observations`, article-local refs, page titles, content-form
+labels, a second topic-resolution prompt, or a knowledge sidecar.
+
+## Versioning
+
+- Use Git commits for checkpoints, short-lived branches for experiments and tags
+  for accepted releases.
+- A prompt/schema revision receives a versioned package below `prompts/`; it does
+  not receive a copied frontend.
+- Production runs live below `data/runs/`; the current contract is declared in
+  `data/active-run.json`.
+- Preserve unrelated worktree changes. Never present heuristic or placeholder
+  semantic data as a model result.
+

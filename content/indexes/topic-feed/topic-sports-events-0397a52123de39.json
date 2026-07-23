@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "topic": {
+    "topic_id": "topic-sports-events-0397a52123de39",
+    "name": "人工智能竞技",
+    "parent_id": "category-sports-events",
+    "category_id": "sports-events",
+    "article_count": 1,
+    "detail_path": "/topics/topic-sports-events-0397a52123de39/"
+  },
+  "articles": [
+    {
+      "item_id": "hndaily-20260723-58467-19727243",
+      "published_date": "2026-07-23",
+      "page_number": "004",
+      "page_name": "民生新闻",
+      "page_sequence": 3,
+      "title": "2026世界机器人大赛华南锦标赛（三亚）开赛",
+      "ai_summary": "2026世界机器人大赛华南锦标赛在三亚举行，吸引超7000支队伍和万余名青少年选手，赛事新增海洋生态、海岛智造赛题。",
+      "scope": "mixed",
+      "subjects": [],
+      "locations": [
+        {
+          "location_id": "hainan-sanya",
+          "name": "三亚市",
+          "code": "460200",
+          "level": "prefecture",
+          "evidence": "2026世界机器人大赛华南锦标赛（三亚）在三亚红树林国际会展中心开幕。"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "sports-events",
+          "category_name": "体育与赛事",
+          "evidence": "本届参赛规模几乎翻倍，汇聚超7000支队伍、万余名青少年选手。"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-sports-events-58679237bdc296",
+            "name": "青少年机器人竞赛",
+            "evidence": "万余名青少年选手"
+          },
+          {
+            "topic_id": "topic-sports-events-0397a52123de39",
+            "name": "人工智能竞技",
+            "evidence": "覆盖人工智能、人形机器人、机甲对抗、地空协同、生态科创、工程搭建等多元方向。"
+          }
+        ]
+      },
+      "events": [
+        {
+          "event_id": "event-5afe8f9bdebd68",
+          "name": "2026世界机器人大赛华南锦标赛（三亚）",
+          "event_type": "recurring_edition",
+          "evidence": "7月21日，被誉为“机器人界奥林匹克”的2026世界机器人大赛华南锦标赛（三亚）在三亚红树林国际会展中心开幕。继2025年赛事首次落地三亚后，本届大赛全面升级，以华南区域核心锦标赛规格再度来到鹿城。\n\n本届赛事于7月20日至24日举行，为期5天。",
+          "series_name": "世界机器人大赛华南锦标赛",
+          "series_id": "event-series-83c94813c896d8",
+          "occurred_on": "2026-07-20/2026-07-24"
+        }
+      ],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58467-19727243/"
+    }
+  ]
+}

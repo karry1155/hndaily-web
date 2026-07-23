@@ -1,0 +1,94 @@
+{
+  "schema_version": 13,
+  "item_id": "hndaily-20260723-58468-19727255",
+  "published_date": "2026-07-23",
+  "collected_date": "2026-07-23",
+  "page_number": "005",
+  "page_name": "自贸港影像志",
+  "page_sequence": 1,
+  "author": "",
+  "enrichment_status": "complete",
+  "scope": "hainan",
+  "scope_evidence": "海南日报今起推出“夏日游海南”系列图片专版",
+  "subjects": [
+    {
+      "subject_id": "subject-organization-66a322e27c1ef2",
+      "name": "海南日报",
+      "type": "organization",
+      "activities": [
+        {
+          "headline": "海南日报推出夏日游海南图片专版",
+          "detail_kind": "object",
+          "detail": "“夏日游海南”系列图片专版",
+          "evidence": "海南日报今起推出“夏日游海南”系列图片专版"
+        }
+      ]
+    }
+  ],
+  "locations": [
+    {
+      "location_id": "hainan-sanya",
+      "name": "三亚市",
+      "code": "460200",
+      "level": "prefecture",
+      "evidence": "相约三亚鹿回头风景区"
+    },
+    {
+      "location_id": "hainan-wuzhishan",
+      "name": "五指山市",
+      "code": "469001",
+      "level": "county",
+      "evidence": "在五指山体验峡谷漂流"
+    },
+    {
+      "location_id": "hainan-dingan",
+      "name": "定安县",
+      "code": "469021",
+      "level": "county",
+      "evidence": "前往定安久温塘火山冷泉"
+    },
+    {
+      "location_id": "hainan-lingao",
+      "name": "临高县",
+      "code": "469024",
+      "level": "county",
+      "evidence": "临高古银瀑布水流充沛、飞瀑潺潺"
+    },
+    {
+      "location_id": "hainan-qiongzhong",
+      "name": "琼中黎族苗族自治县",
+      "code": "469030",
+      "level": "county",
+      "evidence": "琼中百花岭热带雨林文化旅游区"
+    }
+  ],
+  "topics": {
+    "primary": {
+      "category_id": "tourism-consumption",
+      "category_name": "旅游与消费",
+      "evidence": "首期“夏日游海南”聚焦海南夏日之凉爽"
+    },
+    "secondary": [
+      {
+        "topic_id": "topic-tourism-consumption-539476aeb5c01f",
+        "name": "夏日避暑游",
+        "evidence": "在海南赴一场凉爽的假期。"
+      },
+      {
+        "topic_id": "topic-tourism-consumption-716353ba35f169",
+        "name": "雨林滨海旅游",
+        "evidence": "在绿意葱茏的雨林与碧波万顷的海岸间"
+      }
+    ]
+  },
+  "events": [],
+  "plans": [],
+  "reader_leads": [],
+  "block": {
+    "source": "海南日报",
+    "title": "一岛山水 一夏舒爽",
+    "content": "编者按\n\n一图一景，一版一韵。\n\n海南日报今起推出“夏日游海南”系列图片专版，让我们一起跟随镜头的流转，定格海岛夏日的曼妙时光。\n\n首期“夏日游海南”聚焦海南夏日之凉爽，且随我们的光影足迹，奔赴这场蔚蓝色的夏日之约，在绿意葱茏的雨林与碧波万顷的海岸间，寻觅一份远离喧嚣的静谧与舒爽；在清凉与热烈交织的旋律中，读懂海南的万般风情。\n\n清凉一夏，与水最亲近！\n\n盛夏之际，在海南赴一场凉爽的假期。\n\n正值雨季丰水期，临高古银瀑布水流充沛、飞瀑潺潺，林间清风习习、凉意十足。不少游客慕名沉浸式亲近自然、消暑纳凉，畅享山野间的夏日清爽。\n\n琼中百花岭热带雨林文化旅游区，游客沿溪漫步，凉意扑面而来，还有负氧离子沁润心肺。\n\n喜欢探险的，还可以在五指山体验峡谷漂流。\n\n喜欢安静的，可以前往定安久温塘火山冷泉，踏泉戏水，消暑祛热。\n\n夕阳西下，相约三亚鹿回头风景区，静待落日缓缓沉向海面。\n\n好山好水好清凉。来海南，听溪流叮咚，沐林间清风，踏碧海清波，感受清爽的海岛时光。",
+    "ai_summary": "海南推出“夏日游海南”图片专版，推荐临高瀑布、琼中雨林、五指山漂流、定安冷泉和三亚落日等避暑体验。",
+    "original_url": "http://news.hndaily.cn/html/2026-07/23/content_58468_19727255.htm"
+  }
+}

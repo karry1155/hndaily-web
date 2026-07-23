@@ -33,7 +33,7 @@ def load_issue_items(content_root: Path):
     return result
 
 
-def commit_publication(content_root: Path, issue, issue_items, indexes, topic_catalog) -> None:
+def commit_publication(content_root: Path, issue, issue_items, indexes) -> None:
     """Atomically replace one newspaper date and all derived HNHOT indexes."""
     content_root = Path(content_root)
     validate_public_issue(issue)
@@ -56,10 +56,8 @@ def commit_publication(content_root: Path, issue, issue_items, indexes, topic_ca
         )
     for relative, payload in indexes.items():
         _write_json(staging / "indexes" / relative, payload)
-    _write_json(staging / "topics" / "catalog.json", topic_catalog)
-
     swaps = []
-    targets = (
+    targets = [
         (
             staging / "issues" / f"{published_date}.json",
             content_root / "issues" / f"{published_date}.json",
@@ -68,9 +66,8 @@ def commit_publication(content_root: Path, issue, issue_items, indexes, topic_ca
             staging / "issue-items" / published_date,
             content_root / "issue-items" / published_date,
         ),
-        (staging / "topics", content_root / "topics"),
         (staging / "indexes", content_root / "indexes"),
-    )
+    ]
     try:
         for source, target in targets:
             target.parent.mkdir(parents=True, exist_ok=True)

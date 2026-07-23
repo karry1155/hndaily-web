@@ -1,15 +1,95 @@
 {
   "schema_version": 1,
-  "topics": [
-    {"topic_id": "policy-governance", "name": "政策治理", "aliases": ["政策", "政务", "治理"]},
-    {"topic_id": "industry-projects", "name": "产业项目", "aliases": ["产业", "项目", "招商"]},
-    {"topic_id": "economy-data", "name": "经济数据", "aliases": ["经济", "统计", "消费"]},
-    {"topic_id": "livelihood-services", "name": "民生服务", "aliases": ["民生", "公共服务", "办事"]},
-    {"topic_id": "urban-rural", "name": "城乡建设", "aliases": ["城市", "乡村振兴", "基础设施"]},
-    {"topic_id": "ecology", "name": "生态环境", "aliases": ["生态", "环保", "自然资源"]},
-    {"topic_id": "culture-tourism-sports", "name": "文旅体育", "aliases": ["文化", "旅游", "体育"]},
-    {"topic_id": "education-talent", "name": "教育人才", "aliases": ["教育", "人才", "就业"]},
-    {"topic_id": "health", "name": "医疗健康", "aliases": ["医疗", "健康", "卫生"]},
-    {"topic_id": "external-relations", "name": "对外交流", "aliases": ["外事", "国际", "区域合作"]}
+  "categories": [
+    {
+      "category_id": "free-trade-opening",
+      "name": "自贸港与开放",
+      "definition": "海南自贸港制度、封关运作、跨境经贸投资、国际合作与对外开放。",
+      "boundary": "只有企业或产品属于海南，不足以归入本类；开放、跨境或国际联系必须是报道核心。"
+    },
+    {
+      "category_id": "economy-market",
+      "name": "经济与市场",
+      "definition": "宏观经济运行、财政金融、价格就业、消费市场、营商环境和综合经济数据。",
+      "boundary": "以具体企业、产业链或建设项目为核心时优先归入产业与项目。"
+    },
+    {
+      "category_id": "industry-projects",
+      "name": "产业与项目",
+      "definition": "具体产业、企业经营、产业链、招商投资、园区和项目建设进展。",
+      "boundary": "纯宏观经济指标归入经济与市场；农业生产为核心时归入农业与乡村。"
+    },
+    {
+      "category_id": "technology-innovation",
+      "name": "科技与创新",
+      "definition": "科研成果、技术研发、数字化、人工智能、创新创业和成果转化。",
+      "boundary": "技术只是项目配套手段、并非核心变化时仍按项目所属领域归类。"
+    },
+    {
+      "category_id": "agriculture-rural",
+      "name": "农业与乡村",
+      "definition": "农业生产、农产品、渔业、农村建设、乡村治理和农民生活。",
+      "boundary": "农产品出口以跨境开放为核心时可归入自贸港与开放。"
+    },
+    {
+      "category_id": "tourism-consumption",
+      "name": "旅游与消费",
+      "definition": "旅游产品与目的地、免税购物、餐饮零售、文旅消费和游客服务。",
+      "boundary": "文化遗产本身为核心时归入文化与历史；交通建设本身为核心时归入交通与城市。"
+    },
+    {
+      "category_id": "transport-cities",
+      "name": "交通与城市",
+      "definition": "公路铁路港航机场、公共交通、城市更新、住房、园林和市政基础设施。",
+      "boundary": "灾害抢险或安全风险为核心时归入应急与安全。"
+    },
+    {
+      "category_id": "education-youth",
+      "name": "教育与青年",
+      "definition": "学校教育、招生考试、职业培训、人才培养、青年发展和校园生活。",
+      "boundary": "科研技术成果本身为核心时归入科技与创新。"
+    },
+    {
+      "category_id": "health-medicine",
+      "name": "医疗与健康",
+      "definition": "医疗服务、公共卫生、疾病防治、药械、中医药和健康保障。",
+      "boundary": "医疗技术产品研发为核心时可归入科技与创新。"
+    },
+    {
+      "category_id": "ecology-climate",
+      "name": "生态与气候",
+      "definition": "生态保护、环境治理、污染防治、海洋生态、气候与绿色低碳。",
+      "boundary": "正在发生的气象灾害和避险信息归入应急与安全。"
+    },
+    {
+      "category_id": "culture-history",
+      "name": "文化与历史",
+      "definition": "文学艺术、文化遗产、历史研究、博物馆、出版影视和公共文化。",
+      "boundary": "以游客产品和消费活动为核心时归入旅游与消费。"
+    },
+    {
+      "category_id": "sports-events",
+      "name": "体育与赛事",
+      "definition": "竞技体育、群众体育、运动员、体育场馆和各类赛事活动。",
+      "boundary": "体育旅游消费为核心时可归入旅游与消费。"
+    },
+    {
+      "category_id": "society-public-services",
+      "name": "社会与公共服务",
+      "definition": "社区民生、养老托育、社会保障、志愿服务和日常公共服务。",
+      "boundary": "政府制度与执法治理为核心时归入治理与法治。"
+    },
+    {
+      "category_id": "governance-law",
+      "name": "治理与法治",
+      "definition": "党政治理、政策制度、改革监督、行政执法、司法和法治建设。",
+      "boundary": "具体民生服务结果为核心时归入社会与公共服务。"
+    },
+    {
+      "category_id": "emergency-safety",
+      "name": "应急与安全",
+      "definition": "台风暴雨、事故灾害、消防救援、安全生产、公共风险和应急处置。",
+      "boundary": "一般生态治理或常态化气候信息归入生态与气候。"
+    }
   ]
 }

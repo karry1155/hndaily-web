@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "topic": {
+    "topic_id": "topic-governance-law-fce097eed210e7",
+    "name": "绿色产业升级",
+    "parent_id": "category-governance-law",
+    "category_id": "governance-law",
+    "article_count": 1,
+    "detail_path": "/topics/topic-governance-law-fce097eed210e7/"
+  },
+  "articles": [
+    {
+      "item_id": "hndaily-20260723-58464-19727198",
+      "published_date": "2026-07-23",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 3,
+      "title": "高标准严要求推动学习教育走深走实\n锚定“向绿图强”扎实推动高质量发展",
+      "ai_summary": "冯飞在儋州调研学习教育与经济社会发展，要求推动绿色产业升级、建设国际海港并守牢安全生产和生态环保底线。",
+      "scope": "hainan",
+      "subjects": [
+        {
+          "subject_id": "subject-person-0c7954fba16110",
+          "name": "冯飞",
+          "type": "person"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan-danzhou",
+          "name": "儋州市",
+          "code": "460400",
+          "level": "prefecture",
+          "evidence": "7月22日，省委书记冯飞在儋州调研学习教育开展和经济社会发展情况。"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "governance-law",
+          "category_name": "治理与法治",
+          "evidence": "儋州要认认真真、扎扎实实开展好学习教育"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-governance-law-5596a8e30341ff",
+            "name": "正确政绩观教育",
+            "evidence": "结合树立和践行正确政绩观学习教育有关工作安排"
+          },
+          {
+            "topic_id": "topic-governance-law-fce097eed210e7",
+            "name": "绿色产业升级",
+            "evidence": "统筹推进传统产业绿色升级与绿色低碳产业发展"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58464-19727198/"
+    }
+  ]
+}

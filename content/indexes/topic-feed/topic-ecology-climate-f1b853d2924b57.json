@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "topic": {
+    "topic_id": "topic-ecology-climate-f1b853d2924b57",
+    "name": "海域生态保护",
+    "parent_id": "category-ecology-climate",
+    "category_id": "ecology-climate",
+    "article_count": 1,
+    "detail_path": "/topics/topic-ecology-climate-f1b853d2924b57/"
+  },
+  "articles": [
+    {
+      "item_id": "hndaily-20260723-58469-19727265",
+      "published_date": "2026-07-23",
+      "page_number": "006",
+      "page_name": "本省新闻",
+      "page_sequence": 3,
+      "title": "常态化监测 守护珊瑚生态",
+      "ai_summary": "三亚珊瑚礁生态研究所对临高金牌港一期工程海域珊瑚礁群开展常态化监测，以掌握珊瑚生长和海域生态状况。",
+      "scope": "hainan",
+      "subjects": [
+        {
+          "subject_id": "subject-organization-73487c9d48f86a",
+          "name": "三亚珊瑚礁生态研究所",
+          "type": "organization"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan-lingao",
+          "name": "临高县",
+          "code": "469024",
+          "level": "county",
+          "evidence": "临高金牌港开发区"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "ecology-climate",
+          "category_name": "生态与气候",
+          "evidence": "开展常态化生态监测"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-ecology-climate-e22ad1bf98f5db",
+            "name": "珊瑚礁监测",
+            "evidence": "珊瑚礁群开展常态化生态监测"
+          },
+          {
+            "topic_id": "topic-ecology-climate-f1b853d2924b57",
+            "name": "海域生态保护",
+            "evidence": "海域生态环境状况"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58469-19727265/"
+    }
+  ]
+}

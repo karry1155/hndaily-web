@@ -1,0 +1,77 @@
+{
+  "schema_version": 13,
+  "item_id": "hndaily-20260723-58469-19727264",
+  "published_date": "2026-07-23",
+  "collected_date": "2026-07-23",
+  "page_number": "006",
+  "page_name": "本省新闻",
+  "page_sequence": 2,
+  "author": "海南日报全媒体记者余佳琪 通讯员陈煜",
+  "enrichment_status": "complete",
+  "scope": "hainan",
+  "scope_evidence": "三亚第二家岛内居民日用消费品免税店运营及选址信息正式公布",
+  "subjects": [
+    {
+      "subject_id": "subject-company-cacb0507b4fe7d",
+      "name": "海南旺豪实业有限公司",
+      "type": "company",
+      "activities": [
+        {
+          "place": "三亚市",
+          "headline": "海南旺豪实业有限公司运营居民免税店",
+          "detail_kind": "object",
+          "detail": "三亚第二家岛内居民日用消费品免税店",
+          "evidence": "三亚第二家岛内居民日用消费品免税店运营及选址信息正式公布，该门店由海南旺豪实业有限公司运营"
+        }
+      ]
+    }
+  ],
+  "locations": [
+    {
+      "location_id": "hainan-sanya",
+      "name": "三亚市",
+      "code": "460200",
+      "level": "prefecture",
+      "evidence": "门店具体选址位于三亚市吉阳区迎宾路233号大悦城B1-44号铺位"
+    }
+  ],
+  "topics": {
+    "primary": {
+      "category_id": "tourism-consumption",
+      "category_name": "旅游与消费",
+      "evidence": "进一步丰富三亚本地居民进口日用品消费选择，优化便民免税消费场景"
+    },
+    "secondary": [
+      {
+        "topic_id": "topic-tourism-consumption-770587b1d9f643",
+        "name": "居民免税购物",
+        "evidence": "岛内居民日用消费品免税店"
+      },
+      {
+        "topic_id": "topic-tourism-consumption-bdb811d6e14b35",
+        "name": "进口日用品",
+        "evidence": "可选购食品饮料、日化用品等202类进口日用商品"
+      }
+    ]
+  },
+  "events": [],
+  "plans": [],
+  "reader_leads": [
+    {
+      "lead_id": "lead-hndaily-20260723-58469-19727264-1",
+      "intent": "use_service",
+      "headline": "三亚新增居民日用品免税店",
+      "audience": "海南岛内居民",
+      "action": "可在每年1万元免税额度内不限次数选购规定范围的进口日用商品。",
+      "channel": "三亚市吉阳区迎宾路233号大悦城B1-44号铺位",
+      "evidence": "根据政策，海南岛内居民可享受每年1万元免税额度，购物次数不限，可选购食品饮料、日化用品等202类进口日用商品，全程免征相关进口税费。"
+    }
+  ],
+  "block": {
+    "source": "海南日报",
+    "title": "三亚新增一家岛内居民日用消费品免税店",
+    "content": "本报讯 （海南日报全媒体记者余佳琪 通讯员陈煜）近日，三亚第二家岛内居民日用消费品免税店运营及选址信息正式公布，该门店由海南旺豪实业有限公司运营，门店具体选址位于三亚市吉阳区迎宾路233号大悦城B1-44号铺位，地处城区核心商圈、人流密集地段，区位优势显著。\n\n此次三亚第二家岛内居民日用消费品免税店落地，是三亚落实海南“十五五”服务业发展规划、推进日用消费品免税店全域布局的重要举措。门店扩容将进一步丰富三亚本地居民进口日用品消费选择，优化便民免税消费场景，持续释放海南自贸港民生红利，让岛内居民切实享受便捷、实惠的免税购物服务。\n\n今年2月，海南首批岛内居民日用消费品免税店正式开业，三亚首家门店同步落地，依托自贸港专属民生福利政策，惠及广大本地居民。根据政策，海南岛内居民可享受每年1万元免税额度，购物次数不限，可选购食品饮料、日化用品等202类进口日用商品，全程免征相关进口税费。",
+    "ai_summary": "三亚公布第二家岛内居民日用消费品免税店，门店位于大悦城，由海南旺豪运营，将扩大本地居民进口日用品免税购物选择。",
+    "original_url": "http://news.hndaily.cn/html/2026-07/23/content_58469_19727264.htm"
+  }
+}

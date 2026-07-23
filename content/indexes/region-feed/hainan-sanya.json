@@ -1,0 +1,681 @@
+{
+  "schema_version": 1,
+  "region": {
+    "location_id": "hainan-sanya",
+    "name": "三亚市",
+    "code": "460200",
+    "level": "prefecture",
+    "article_count": 11,
+    "detail_path": "/regions/hainan-sanya/"
+  },
+  "articles": [
+    {
+      "item_id": "hndaily-20260723-58471-19727295",
+      "published_date": "2026-07-23",
+      "page_number": "008",
+      "page_name": "健康周刊",
+      "page_sequence": 4,
+      "title": "当“孤独”被舞台看见",
+      "ai_summary": "孕产期身心健康戏剧巡演首次到三亚，通过互动话剧和角色工坊讨论孕检、育儿、家庭沟通与重返职场等现实压力。",
+      "scope": "domestic",
+      "subjects": [
+        {
+          "subject_id": "subject-organization-0e5237e2c3ff32",
+          "name": "复旦大学发展研究院",
+          "type": "organization"
+        },
+        {
+          "subject_id": "subject-organization-267ab8223fbfc3",
+          "name": "世界健康基金会",
+          "type": "organization"
+        },
+        {
+          "subject_id": "subject-organization-f8c50558b65bf2",
+          "name": "上海儿童医学中心海南医院",
+          "type": "organization"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan-sanya",
+          "name": "三亚市",
+          "code": "460200",
+          "level": "prefecture",
+          "evidence": "这场关于“理解”与“新生”的戏剧，第一次来到了三亚。"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "health-medicine",
+          "category_name": "医疗与健康",
+          "evidence": "以孕产期女性身心健康与社会支持为主题的健康教育戏剧巡演"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-health-medicine-513855e1b6b2fd",
+            "name": "孕产期心理健康",
+            "evidence": "孕产期女性身心健康"
+          },
+          {
+            "topic_id": "topic-health-medicine-ffdabca08046ee",
+            "name": "健康教育戏剧",
+            "evidence": "健康教育戏剧巡演"
+          },
+          {
+            "topic_id": "topic-health-medicine-923a3d9ac914d4",
+            "name": "家庭社会支持",
+            "evidence": "需要家庭支持、医疗机构与社会保障共同回应"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58471-19727295/"
+    },
+    {
+      "item_id": "hndaily-20260723-58470-19727284",
+      "published_date": "2026-07-23",
+      "page_number": "007",
+      "page_name": "中国新闻",
+      "page_sequence": 5,
+      "title": "创新“村办物业”经营模式 监督护航促发展",
+      "ai_summary": "三亚海棠区以监督规范村办物业的决策、资金和收益分配，推动村集体收益用于困难帮扶、公共设施、教育奖励和非遗传承。",
+      "scope": "hainan",
+      "subjects": [
+        {
+          "subject_id": "subject-organization-eb629bbaa01e44",
+          "name": "海棠区纪委监委",
+          "type": "organization"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan-sanya",
+          "name": "三亚市",
+          "code": "460200",
+          "level": "prefecture",
+          "evidence": "三亚市海棠区洪李村"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "governance-law",
+          "category_name": "治理与法治",
+          "evidence": "强化监督执纪与制度建设协同发力"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-governance-law-28c67f9c395553",
+            "name": "村办物业",
+            "evidence": "“村办物业”这一发展村级集体经济、促进农民增收的新路径"
+          },
+          {
+            "topic_id": "topic-governance-law-2d255186cab136",
+            "name": "农村集体经济",
+            "evidence": "新型农村集体经济发展模式"
+          },
+          {
+            "topic_id": "topic-governance-law-4e1e9c6b496203",
+            "name": "集体资金监管",
+            "evidence": "集体收益的取得、分配与使用全过程开展动态监督"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58470-19727284/"
+    },
+    {
+      "item_id": "hndaily-20260723-58470-19727283",
+      "published_date": "2026-07-23",
+      "page_number": "007",
+      "page_name": "中国新闻",
+      "page_sequence": 4,
+      "title": "让群众从“安居”迈向“宜居”",
+      "ai_summary": "三亚海棠区通过监督推动物业整治和“先试后买”选聘模式，已解决3198个服务问题，部分小区物业费降幅达30%。",
+      "scope": "hainan",
+      "subjects": [
+        {
+          "subject_id": "subject-organization-eb629bbaa01e44",
+          "name": "海棠区纪委监委",
+          "type": "organization"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan-sanya",
+          "name": "三亚市",
+          "code": "460200",
+          "level": "prefecture",
+          "evidence": "三亚海棠区某小区居民"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "governance-law",
+          "category_name": "治理与法治",
+          "evidence": "海棠区纪委监委将物业服务专项整治纳入民生监督重点"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-governance-law-9d39420a35cb90",
+            "name": "物业服务整治",
+            "evidence": "物业服务专项整治"
+          },
+          {
+            "topic_id": "topic-governance-law-2e2cbb70b40a90",
+            "name": "民生监督",
+            "evidence": "民生监督重点"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58470-19727283/"
+    },
+    {
+      "item_id": "hndaily-20260723-58469-19727264",
+      "published_date": "2026-07-23",
+      "page_number": "006",
+      "page_name": "本省新闻",
+      "page_sequence": 2,
+      "title": "三亚新增一家岛内居民日用消费品免税店",
+      "ai_summary": "三亚公布第二家岛内居民日用消费品免税店，门店位于大悦城，由海南旺豪运营，将扩大本地居民进口日用品免税购物选择。",
+      "scope": "hainan",
+      "subjects": [
+        {
+          "subject_id": "subject-company-cacb0507b4fe7d",
+          "name": "海南旺豪实业有限公司",
+          "type": "company"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan-sanya",
+          "name": "三亚市",
+          "code": "460200",
+          "level": "prefecture",
+          "evidence": "门店具体选址位于三亚市吉阳区迎宾路233号大悦城B1-44号铺位"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "tourism-consumption",
+          "category_name": "旅游与消费",
+          "evidence": "进一步丰富三亚本地居民进口日用品消费选择，优化便民免税消费场景"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-tourism-consumption-770587b1d9f643",
+            "name": "居民免税购物",
+            "evidence": "岛内居民日用消费品免税店"
+          },
+          {
+            "topic_id": "topic-tourism-consumption-bdb811d6e14b35",
+            "name": "进口日用品",
+            "evidence": "可选购食品饮料、日化用品等202类进口日用商品"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [],
+      "reader_lead_count": 1,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58469-19727264/"
+    },
+    {
+      "item_id": "hndaily-20260723-58468-19727255",
+      "published_date": "2026-07-23",
+      "page_number": "005",
+      "page_name": "自贸港影像志",
+      "page_sequence": 1,
+      "title": "一岛山水 一夏舒爽",
+      "ai_summary": "海南推出“夏日游海南”图片专版，推荐临高瀑布、琼中雨林、五指山漂流、定安冷泉和三亚落日等避暑体验。",
+      "scope": "hainan",
+      "subjects": [
+        {
+          "subject_id": "subject-organization-66a322e27c1ef2",
+          "name": "海南日报",
+          "type": "organization"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan-sanya",
+          "name": "三亚市",
+          "code": "460200",
+          "level": "prefecture",
+          "evidence": "相约三亚鹿回头风景区"
+        },
+        {
+          "location_id": "hainan-wuzhishan",
+          "name": "五指山市",
+          "code": "469001",
+          "level": "county",
+          "evidence": "在五指山体验峡谷漂流"
+        },
+        {
+          "location_id": "hainan-dingan",
+          "name": "定安县",
+          "code": "469021",
+          "level": "county",
+          "evidence": "前往定安久温塘火山冷泉"
+        },
+        {
+          "location_id": "hainan-lingao",
+          "name": "临高县",
+          "code": "469024",
+          "level": "county",
+          "evidence": "临高古银瀑布水流充沛、飞瀑潺潺"
+        },
+        {
+          "location_id": "hainan-qiongzhong",
+          "name": "琼中黎族苗族自治县",
+          "code": "469030",
+          "level": "county",
+          "evidence": "琼中百花岭热带雨林文化旅游区"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "tourism-consumption",
+          "category_name": "旅游与消费",
+          "evidence": "首期“夏日游海南”聚焦海南夏日之凉爽"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-tourism-consumption-539476aeb5c01f",
+            "name": "夏日避暑游",
+            "evidence": "在海南赴一场凉爽的假期。"
+          },
+          {
+            "topic_id": "topic-tourism-consumption-716353ba35f169",
+            "name": "雨林滨海旅游",
+            "evidence": "在绿意葱茏的雨林与碧波万顷的海岸间"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58468-19727255/"
+    },
+    {
+      "item_id": "hndaily-20260723-58467-19727249",
+      "published_date": "2026-07-23",
+      "page_number": "004",
+      "page_name": "民生新闻",
+      "page_sequence": 6,
+      "title": "三亚中小学学位线上申报开放",
+      "ai_summary": "三亚2026年义务教育学位线上申报于7月22日至28日开放，家长可通过海易办填报，并按后续初审、复审和录取时间办理。",
+      "scope": "hainan",
+      "subjects": [
+        {
+          "subject_id": "subject-organization-09b268830bac61",
+          "name": "三亚市教育局",
+          "type": "organization"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan-sanya",
+          "name": "三亚市",
+          "code": "460200",
+          "level": "prefecture",
+          "evidence": "三亚中小学学位线上申报开放"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "education-youth",
+          "category_name": "教育与青年",
+          "evidence": "全市中小学学位线上申报于7月22日8时至7月28日24时开放"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-education-youth-961fb677918135",
+            "name": "义务教育招生",
+            "evidence": "义务教育阶段学校招生入学工作方案"
+          },
+          {
+            "topic_id": "topic-education-youth-0caccbdab65fb6",
+            "name": "线上学位申报",
+            "evidence": "中小学学位线上申报"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [
+        {
+          "plan_id": "plan-29a56a330ac801",
+          "name": "《三亚市2026年义务教育阶段学校招生入学工作方案》",
+          "mention_type": "released",
+          "evidence": "7月21日，三亚市教育局正式对外发布《三亚市2026年义务教育阶段学校招生入学工作方案》（以下简称《方案》）"
+        }
+      ],
+      "reader_lead_count": 2,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58467-19727249/"
+    },
+    {
+      "item_id": "hndaily-20260723-58467-19727247",
+      "published_date": "2026-07-23",
+      "page_number": "004",
+      "page_name": "民生新闻",
+      "page_sequence": 5,
+      "title": "海南公布一批中招提前批投档分数线",
+      "ai_summary": "海南省考试局公布中招提前批投档分数线，涉及省属学校及多所面向全省招生的公办高中实验班。",
+      "scope": "hainan",
+      "subjects": [
+        {
+          "subject_id": "subject-organization-aaddf4ff738768",
+          "name": "省考试局",
+          "type": "organization"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan-haikou",
+          "name": "海口市",
+          "code": "460100",
+          "level": "prefecture",
+          "evidence": "本报海口7月22日讯"
+        },
+        {
+          "location_id": "hainan-sanya",
+          "name": "三亚市",
+          "code": "460200",
+          "level": "prefecture",
+          "evidence": "三亚市迎宾中学投档分数线为813.5分"
+        },
+        {
+          "location_id": "hainan-danzhou",
+          "name": "儋州市",
+          "code": "460400",
+          "level": "prefecture",
+          "evidence": "儋州市第一中学航空国防班投档分数线为842.5分"
+        },
+        {
+          "location_id": "hainan-tunchang",
+          "name": "屯昌县",
+          "code": "469022",
+          "level": "county",
+          "evidence": "屯昌县屯昌中学投档分数线为799分"
+        },
+        {
+          "location_id": "hainan-baoting",
+          "name": "保亭黎族苗族自治县",
+          "code": "469029",
+          "level": "county",
+          "evidence": "保亭黎族苗族自治县保亭中学投档分数线为757.5分"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "education-youth",
+          "category_name": "教育与青年",
+          "evidence": "我省中招还划定了一批面向全省招生的公办普通高中学校实验班投档分数线。"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-education-youth-6e23b068c96664",
+            "name": "中招投档线",
+            "evidence": "中招提前批投档分数线"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [],
+      "reader_lead_count": 1,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58467-19727247/"
+    },
+    {
+      "item_id": "hndaily-20260723-58467-19727243",
+      "published_date": "2026-07-23",
+      "page_number": "004",
+      "page_name": "民生新闻",
+      "page_sequence": 3,
+      "title": "2026世界机器人大赛华南锦标赛（三亚）开赛",
+      "ai_summary": "2026世界机器人大赛华南锦标赛在三亚举行，吸引超7000支队伍和万余名青少年选手，赛事新增海洋生态、海岛智造赛题。",
+      "scope": "mixed",
+      "subjects": [],
+      "locations": [
+        {
+          "location_id": "hainan-sanya",
+          "name": "三亚市",
+          "code": "460200",
+          "level": "prefecture",
+          "evidence": "2026世界机器人大赛华南锦标赛（三亚）在三亚红树林国际会展中心开幕。"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "sports-events",
+          "category_name": "体育与赛事",
+          "evidence": "本届参赛规模几乎翻倍，汇聚超7000支队伍、万余名青少年选手。"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-sports-events-58679237bdc296",
+            "name": "青少年机器人竞赛",
+            "evidence": "万余名青少年选手"
+          },
+          {
+            "topic_id": "topic-sports-events-0397a52123de39",
+            "name": "人工智能竞技",
+            "evidence": "覆盖人工智能、人形机器人、机甲对抗、地空协同、生态科创、工程搭建等多元方向。"
+          }
+        ]
+      },
+      "events": [
+        {
+          "event_id": "event-5afe8f9bdebd68",
+          "name": "2026世界机器人大赛华南锦标赛（三亚）",
+          "event_type": "recurring_edition",
+          "evidence": "7月21日，被誉为“机器人界奥林匹克”的2026世界机器人大赛华南锦标赛（三亚）在三亚红树林国际会展中心开幕。继2025年赛事首次落地三亚后，本届大赛全面升级，以华南区域核心锦标赛规格再度来到鹿城。\n\n本届赛事于7月20日至24日举行，为期5天。",
+          "series_name": "世界机器人大赛华南锦标赛",
+          "series_id": "event-series-83c94813c896d8",
+          "occurred_on": "2026-07-20/2026-07-24"
+        }
+      ],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58467-19727243/"
+    },
+    {
+      "item_id": "hndaily-20260723-58467-19727240",
+      "published_date": "2026-07-23",
+      "page_number": "004",
+      "page_name": "民生新闻",
+      "page_sequence": 1,
+      "title": "办好基础教育，海南有哪些硬招？",
+      "ai_summary": "海南通过集团化办学、设施全覆盖、特色德育、体育健康、教师培养和智慧教育平台推进基础教育扩优提质。",
+      "scope": "hainan",
+      "subjects": [
+        {
+          "subject_id": "subject-organization-192b4d7fd1e227",
+          "name": "三亚市第二小学",
+          "type": "organization"
+        },
+        {
+          "subject_id": "subject-organization-2760bbeb3a88f5",
+          "name": "海南",
+          "type": "organization"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan-haikou",
+          "name": "海口市",
+          "code": "460100",
+          "level": "prefecture",
+          "evidence": "本报海口7月22日讯"
+        },
+        {
+          "location_id": "hainan-sanya",
+          "name": "三亚市",
+          "code": "460200",
+          "level": "prefecture",
+          "evidence": "对于三亚市吉阳区红花村的家长来说"
+        },
+        {
+          "location_id": "hainan-wuzhishan",
+          "name": "五指山市",
+          "code": "469001",
+          "level": "county",
+          "evidence": "五指山市等10个县（市、区）通过国家学前教育普及普惠县评估认定"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "education-youth",
+          "category_name": "教育与青年",
+          "evidence": "海南基础教育面貌发生了全方位、开创性、格局性的变化"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-education-youth-a4c23e5a77dba4",
+            "name": "集团化办学",
+            "evidence": "集团化办学正是缩小城乡与区域差距的关键一招。"
+          },
+          {
+            "topic_id": "topic-education-youth-09529ea40bf78b",
+            "name": "智慧教育",
+            "evidence": "海南建设省级智慧教育平台"
+          },
+          {
+            "topic_id": "topic-education-youth-41f62db363b41e",
+            "name": "阳光快乐教育",
+            "evidence": "“阳光快乐”教育则是另一张名片。"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58467-19727240/"
+    },
+    {
+      "item_id": "hndaily-20260723-58466-19727231",
+      "published_date": "2026-07-23",
+      "page_number": "003",
+      "page_name": "本省新闻",
+      "page_sequence": 6,
+      "title": "三亚榴莲集中上市",
+      "ai_summary": "三亚榴莲进入集中上市旺季，多种主流品种主要销往北上广等城市并持续走俏。",
+      "scope": "hainan",
+      "subjects": [],
+      "locations": [
+        {
+          "location_id": "hainan-sanya",
+          "name": "三亚市",
+          "code": "460200",
+          "level": "prefecture",
+          "evidence": "位于三亚育才生态区的一处榴莲种植基地"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "agriculture-rural",
+          "category_name": "农业与乡村",
+          "evidence": "当前，三亚榴莲迎来集中上市旺季"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-agriculture-rural-a84e25575f9fd6",
+            "name": "榴莲种植",
+            "evidence": "三亚榴莲种植覆盖了多种主流热销品种"
+          },
+          {
+            "topic_id": "topic-agriculture-rural-4a9961a0844c73",
+            "name": "农产品销售",
+            "evidence": "主要销往北上广等一线城市"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58466-19727231/"
+    },
+    {
+      "item_id": "hndaily-20260723-58464-19727203",
+      "published_date": "2026-07-23",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 7,
+      "title": "驻华使节参访海南",
+      "ai_summary": "外交部组织30余位驻华使节和国际组织代表赴海南参访，考察三亚科技产业并对接自贸港投资经贸合作。",
+      "scope": "mixed",
+      "subjects": [
+        {
+          "subject_id": "subject-organization-e74828a7bd46f8",
+          "name": "外交部",
+          "type": "organization"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan-sanya",
+          "name": "三亚市",
+          "code": "460200",
+          "level": "prefecture",
+          "evidence": "当天，代表团抵达三亚后，随即展开密集的考察交流活动。"
+        },
+        {
+          "location_id": "hainan-wuzhishan",
+          "name": "五指山市",
+          "code": "469001",
+          "level": "county",
+          "evidence": "接下来，使节团还将深入五指山、琼海、文昌等地"
+        },
+        {
+          "location_id": "hainan-qionghai",
+          "name": "琼海市",
+          "code": "469002",
+          "level": "county",
+          "evidence": "接下来，使节团还将深入五指山、琼海、文昌等地"
+        },
+        {
+          "location_id": "hainan-wenchang",
+          "name": "文昌市",
+          "code": "469005",
+          "level": "county",
+          "evidence": "接下来，使节团还将深入五指山、琼海、文昌等地"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "free-trade-opening",
+          "category_name": "自贸港与开放",
+          "evidence": "代表团出席了三亚产业对接会，围绕自贸港政策、投资经贸、热区农业、国际旅游消费等领域合作机遇，与当地政企代表进行了深入交流。"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-free-trade-opening-3dec4e0772695b",
+            "name": "驻华使节交流",
+            "evidence": "外交部组织驻华使团人员赴海南参访。"
+          },
+          {
+            "topic_id": "topic-free-trade-opening-7b02788c85e068",
+            "name": "国际投资合作",
+            "evidence": "愿积极推动本国优质资源与三亚发展需求精准对接。"
+          }
+        ]
+      },
+      "events": [
+        {
+          "event_id": "event-bad22e47a7b8dc",
+          "name": "三亚产业对接会",
+          "event_type": "named_event",
+          "evidence": "结束实地考察后，代表团出席了三亚产业对接会",
+          "occurred_on": "2026-07-22"
+        }
+      ],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58464-19727203/"
+    }
+  ]
+}

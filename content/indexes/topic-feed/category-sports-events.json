@@ -1,0 +1,238 @@
+{
+  "schema_version": 1,
+  "topic": {
+    "topic_id": "category-sports-events",
+    "name": "体育与赛事",
+    "parent_id": null,
+    "category_id": "sports-events",
+    "definition": "竞技体育、群众体育、运动员、体育场馆和各类赛事活动。",
+    "boundary": "体育旅游消费为核心时可归入旅游与消费。",
+    "article_count": 3,
+    "detail_path": "/topics/category-sports-events/"
+  },
+  "children": [
+    {
+      "topic_id": "topic-sports-events-0397a52123de39",
+      "name": "人工智能竞技",
+      "parent_id": "category-sports-events",
+      "category_id": "sports-events",
+      "article_count": 1,
+      "detail_path": "/topics/topic-sports-events-0397a52123de39/"
+    },
+    {
+      "topic_id": "topic-sports-events-cd004165f57af3",
+      "name": "体育产业",
+      "parent_id": "category-sports-events",
+      "category_id": "sports-events",
+      "article_count": 1,
+      "detail_path": "/topics/topic-sports-events-cd004165f57af3/"
+    },
+    {
+      "topic_id": "topic-sports-events-ec0a88be311d5e",
+      "name": "体育强国建设",
+      "parent_id": "category-sports-events",
+      "category_id": "sports-events",
+      "article_count": 1,
+      "detail_path": "/topics/topic-sports-events-ec0a88be311d5e/"
+    },
+    {
+      "topic_id": "topic-sports-events-25448570df6437",
+      "name": "全民健身",
+      "parent_id": "category-sports-events",
+      "category_id": "sports-events",
+      "article_count": 1,
+      "detail_path": "/topics/topic-sports-events-25448570df6437/"
+    },
+    {
+      "topic_id": "topic-sports-events-a39c76fcdffd16",
+      "name": "赛事旅游融合",
+      "parent_id": "category-sports-events",
+      "category_id": "sports-events",
+      "article_count": 1,
+      "detail_path": "/topics/topic-sports-events-a39c76fcdffd16/"
+    },
+    {
+      "topic_id": "topic-sports-events-ccb91b335b39ac",
+      "name": "青少年五子棋",
+      "parent_id": "category-sports-events",
+      "category_id": "sports-events",
+      "article_count": 1,
+      "detail_path": "/topics/topic-sports-events-ccb91b335b39ac/"
+    },
+    {
+      "topic_id": "topic-sports-events-58679237bdc296",
+      "name": "青少年机器人竞赛",
+      "parent_id": "category-sports-events",
+      "category_id": "sports-events",
+      "article_count": 1,
+      "detail_path": "/topics/topic-sports-events-58679237bdc296/"
+    }
+  ],
+  "articles": [
+    {
+      "item_id": "hndaily-20260723-58470-19727277",
+      "published_date": "2026-07-23",
+      "page_number": "007",
+      "page_name": "中国新闻",
+      "page_sequence": 1,
+      "title": "体育强国建设“十五五”规划发布",
+      "ai_summary": "国家体育总局印发首个体育强国国家级专项规划，提出到2030年体育产业总规模突破7万亿元，并部署38项重点任务。",
+      "scope": "national",
+      "subjects": [
+        {
+          "subject_id": "subject-organization-bfd2ef46ec6899",
+          "name": "国家体育总局",
+          "type": "organization"
+        }
+      ],
+      "locations": [],
+      "topics": {
+        "primary": {
+          "category_id": "sports-events",
+          "category_name": "体育与赛事",
+          "evidence": "对“十五五”时期加快建设体育强国、推动体育高质量发展作出了系统部署。"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-sports-events-ec0a88be311d5e",
+            "name": "体育强国建设",
+            "evidence": "加快建设体育强国"
+          },
+          {
+            "topic_id": "topic-sports-events-25448570df6437",
+            "name": "全民健身",
+            "evidence": "围绕全民健身、竞技体育、青少年体育"
+          },
+          {
+            "topic_id": "topic-sports-events-cd004165f57af3",
+            "name": "体育产业",
+            "evidence": "体育产业总规模突破7万亿元。"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [
+        {
+          "plan_id": "plan-07dbd7a20f80ad",
+          "name": "《体育强国建设“十五五”规划》",
+          "mention_type": "released",
+          "evidence": "经国务院批复同意，国家体育总局近日印发《体育强国建设“十五五”规划》（以下简称《规划》）。"
+        }
+      ],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58470-19727277/"
+    },
+    {
+      "item_id": "hndaily-20260723-58469-19727266",
+      "published_date": "2026-07-23",
+      "page_number": "006",
+      "page_name": "本省新闻",
+      "page_sequence": 4,
+      "title": "全国五子棋青少年锦标赛在昌江落幕",
+      "ai_summary": "2026年全国五子棋青少年锦标赛在昌江收官，38支代表队500多名棋手参赛，并以赛事带动当地暑期文旅消费。",
+      "scope": "domestic",
+      "subjects": [
+        {
+          "subject_id": "subject-organization-1270db46928f1f",
+          "name": "昌江",
+          "type": "organization"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan-changjiang",
+          "name": "昌江黎族自治县",
+          "code": "469026",
+          "level": "county",
+          "evidence": "2026年全国五子棋青少年锦标赛在昌江黎族自治县棋子湾旅游度假区收官。"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "sports-events",
+          "category_name": "体育与赛事",
+          "evidence": "全国五子棋青少年锦标赛是我国青少年五子棋领域级别最高、规模最大、影响力最强的年度专业赛事。"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-sports-events-ccb91b335b39ac",
+            "name": "青少年五子棋",
+            "evidence": "青少年五子棋领域"
+          },
+          {
+            "topic_id": "topic-sports-events-a39c76fcdffd16",
+            "name": "赛事旅游融合",
+            "evidence": "实现“赛事+旅游”的融合发展模式"
+          }
+        ]
+      },
+      "events": [
+        {
+          "event_id": "event-35ad458c843369",
+          "name": "2026年全国五子棋青少年锦标赛",
+          "event_type": "recurring_edition",
+          "evidence": "7月22日，为期4天的2026年全国五子棋青少年锦标赛在昌江黎族自治县棋子湾旅游度假区收官。",
+          "series_name": "全国五子棋青少年锦标赛",
+          "series_id": "event-series-ef4446e1145983",
+          "occurred_on": "2026-07-19/2026-07-22"
+        }
+      ],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58469-19727266/"
+    },
+    {
+      "item_id": "hndaily-20260723-58467-19727243",
+      "published_date": "2026-07-23",
+      "page_number": "004",
+      "page_name": "民生新闻",
+      "page_sequence": 3,
+      "title": "2026世界机器人大赛华南锦标赛（三亚）开赛",
+      "ai_summary": "2026世界机器人大赛华南锦标赛在三亚举行，吸引超7000支队伍和万余名青少年选手，赛事新增海洋生态、海岛智造赛题。",
+      "scope": "mixed",
+      "subjects": [],
+      "locations": [
+        {
+          "location_id": "hainan-sanya",
+          "name": "三亚市",
+          "code": "460200",
+          "level": "prefecture",
+          "evidence": "2026世界机器人大赛华南锦标赛（三亚）在三亚红树林国际会展中心开幕。"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "sports-events",
+          "category_name": "体育与赛事",
+          "evidence": "本届参赛规模几乎翻倍，汇聚超7000支队伍、万余名青少年选手。"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-sports-events-58679237bdc296",
+            "name": "青少年机器人竞赛",
+            "evidence": "万余名青少年选手"
+          },
+          {
+            "topic_id": "topic-sports-events-0397a52123de39",
+            "name": "人工智能竞技",
+            "evidence": "覆盖人工智能、人形机器人、机甲对抗、地空协同、生态科创、工程搭建等多元方向。"
+          }
+        ]
+      },
+      "events": [
+        {
+          "event_id": "event-5afe8f9bdebd68",
+          "name": "2026世界机器人大赛华南锦标赛（三亚）",
+          "event_type": "recurring_edition",
+          "evidence": "7月21日，被誉为“机器人界奥林匹克”的2026世界机器人大赛华南锦标赛（三亚）在三亚红树林国际会展中心开幕。继2025年赛事首次落地三亚后，本届大赛全面升级，以华南区域核心锦标赛规格再度来到鹿城。\n\n本届赛事于7月20日至24日举行，为期5天。",
+          "series_name": "世界机器人大赛华南锦标赛",
+          "series_id": "event-series-83c94813c896d8",
+          "occurred_on": "2026-07-20/2026-07-24"
+        }
+      ],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58467-19727243/"
+    }
+  ]
+}

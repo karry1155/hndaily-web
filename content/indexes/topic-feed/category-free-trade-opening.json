@@ -1,0 +1,181 @@
+{
+  "schema_version": 1,
+  "topic": {
+    "topic_id": "category-free-trade-opening",
+    "name": "自贸港与开放",
+    "parent_id": null,
+    "category_id": "free-trade-opening",
+    "definition": "海南自贸港制度、封关运作、跨境经贸投资、国际合作与对外开放。",
+    "boundary": "只有企业或产品属于海南，不足以归入本类；开放、跨境或国际联系必须是报道核心。",
+    "article_count": 2,
+    "detail_path": "/topics/category-free-trade-opening/"
+  },
+  "children": [
+    {
+      "topic_id": "topic-free-trade-opening-8ae6edd280f06f",
+      "name": "临床急需药械",
+      "parent_id": "category-free-trade-opening",
+      "category_id": "free-trade-opening",
+      "article_count": 1,
+      "detail_path": "/topics/topic-free-trade-opening-8ae6edd280f06f/"
+    },
+    {
+      "topic_id": "topic-free-trade-opening-7b02788c85e068",
+      "name": "国际投资合作",
+      "parent_id": "category-free-trade-opening",
+      "category_id": "free-trade-opening",
+      "article_count": 1,
+      "detail_path": "/topics/topic-free-trade-opening-7b02788c85e068/"
+    },
+    {
+      "topic_id": "topic-free-trade-opening-d413a4605e27c2",
+      "name": "零关税药械通关",
+      "parent_id": "category-free-trade-opening",
+      "category_id": "free-trade-opening",
+      "article_count": 1,
+      "detail_path": "/topics/topic-free-trade-opening-d413a4605e27c2/"
+    },
+    {
+      "topic_id": "topic-free-trade-opening-3dec4e0772695b",
+      "name": "驻华使节交流",
+      "parent_id": "category-free-trade-opening",
+      "category_id": "free-trade-opening",
+      "article_count": 1,
+      "detail_path": "/topics/topic-free-trade-opening-3dec4e0772695b/"
+    }
+  ],
+  "articles": [
+    {
+      "item_id": "hndaily-20260723-58471-19727292",
+      "published_date": "2026-07-23",
+      "page_number": "008",
+      "page_name": "健康周刊",
+      "page_sequence": 2,
+      "title": "“零关税”钇90玻璃微球的极速之旅",
+      "ai_summary": "乐城保税仓与多地海关以提前申报、预审和快速放行，将零关税钇90玻璃微球从落地海南到送达医院压缩至半天。",
+      "scope": "mixed",
+      "subjects": [
+        {
+          "subject_id": "subject-organization-52c1bd814bb04b",
+          "name": "乐城保税仓团队",
+          "type": "organization"
+        },
+        {
+          "subject_id": "subject-organization-9382ccd76699d5",
+          "name": "海口海关",
+          "type": "organization"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan-haikou",
+          "name": "海口市",
+          "code": "460100",
+          "level": "prefecture",
+          "evidence": "海口海关量身定制了“提前申报、数据预审、货到即验、快速放行”的通关模式。"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "free-trade-opening",
+          "category_name": "自贸港与开放",
+          "evidence": "面对“零关税”药械进口批次零散、临床用药时效紧迫、监管证件审核专业性要求高等痛点"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-free-trade-opening-d413a4605e27c2",
+            "name": "零关税药械通关",
+            "evidence": "“零关税”药械进口"
+          },
+          {
+            "topic_id": "topic-free-trade-opening-8ae6edd280f06f",
+            "name": "临床急需药械",
+            "evidence": "临床急需药械从申报到运抵医疗机构的时间大大缩短"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58471-19727292/"
+    },
+    {
+      "item_id": "hndaily-20260723-58464-19727203",
+      "published_date": "2026-07-23",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 7,
+      "title": "驻华使节参访海南",
+      "ai_summary": "外交部组织30余位驻华使节和国际组织代表赴海南参访，考察三亚科技产业并对接自贸港投资经贸合作。",
+      "scope": "mixed",
+      "subjects": [
+        {
+          "subject_id": "subject-organization-e74828a7bd46f8",
+          "name": "外交部",
+          "type": "organization"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan-sanya",
+          "name": "三亚市",
+          "code": "460200",
+          "level": "prefecture",
+          "evidence": "当天，代表团抵达三亚后，随即展开密集的考察交流活动。"
+        },
+        {
+          "location_id": "hainan-wuzhishan",
+          "name": "五指山市",
+          "code": "469001",
+          "level": "county",
+          "evidence": "接下来，使节团还将深入五指山、琼海、文昌等地"
+        },
+        {
+          "location_id": "hainan-qionghai",
+          "name": "琼海市",
+          "code": "469002",
+          "level": "county",
+          "evidence": "接下来，使节团还将深入五指山、琼海、文昌等地"
+        },
+        {
+          "location_id": "hainan-wenchang",
+          "name": "文昌市",
+          "code": "469005",
+          "level": "county",
+          "evidence": "接下来，使节团还将深入五指山、琼海、文昌等地"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "free-trade-opening",
+          "category_name": "自贸港与开放",
+          "evidence": "代表团出席了三亚产业对接会，围绕自贸港政策、投资经贸、热区农业、国际旅游消费等领域合作机遇，与当地政企代表进行了深入交流。"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-free-trade-opening-3dec4e0772695b",
+            "name": "驻华使节交流",
+            "evidence": "外交部组织驻华使团人员赴海南参访。"
+          },
+          {
+            "topic_id": "topic-free-trade-opening-7b02788c85e068",
+            "name": "国际投资合作",
+            "evidence": "愿积极推动本国优质资源与三亚发展需求精准对接。"
+          }
+        ]
+      },
+      "events": [
+        {
+          "event_id": "event-bad22e47a7b8dc",
+          "name": "三亚产业对接会",
+          "event_type": "named_event",
+          "evidence": "结束实地考察后，代表团出席了三亚产业对接会",
+          "occurred_on": "2026-07-22"
+        }
+      ],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58464-19727203/"
+    }
+  ]
+}

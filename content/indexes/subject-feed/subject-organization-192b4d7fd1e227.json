@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "subject": {
+    "subject_id": "subject-organization-192b4d7fd1e227",
+    "canonical_name": "三亚市第二小学",
+    "type": "organization",
+    "aliases": [],
+    "first_seen": "2026-07-23",
+    "last_seen": "2026-07-23"
+  },
+  "activities": [
+    {
+      "place": "三亚市",
+      "headline": "三亚市第二小学直管帮扶红庄小学",
+      "detail_kind": "result",
+      "detail": "推动红庄小学办学质量快速提升",
+      "evidence": "三亚市第二小学将红庄小学纳入直管，通过全员、全方位、全过程课堂教学诊断与指导系统，输送管理团队和骨干教师，推动红庄小学办学质量快速提升。",
+      "source": {
+        "source_item_id": "hndaily-20260723-58467-19727240",
+        "published_date": "2026-07-23",
+        "source_title": "办好基础教育，海南有哪些硬招？",
+        "detail_path": "/items/2026-07-23/hndaily-20260723-58467-19727240/",
+        "evidence": "三亚市第二小学将红庄小学纳入直管，通过全员、全方位、全过程课堂教学诊断与指导系统，输送管理团队和骨干教师，推动红庄小学办学质量快速提升。"
+      }
+    }
+  ],
+  "articles": [
+    {
+      "item_id": "hndaily-20260723-58467-19727240",
+      "published_date": "2026-07-23",
+      "page_number": "004",
+      "page_name": "民生新闻",
+      "page_sequence": 1,
+      "title": "办好基础教育，海南有哪些硬招？",
+      "ai_summary": "海南通过集团化办学、设施全覆盖、特色德育、体育健康、教师培养和智慧教育平台推进基础教育扩优提质。",
+      "scope": "hainan",
+      "subjects": [
+        {
+          "subject_id": "subject-organization-192b4d7fd1e227",
+          "name": "三亚市第二小学",
+          "type": "organization"
+        },
+        {
+          "subject_id": "subject-organization-2760bbeb3a88f5",
+          "name": "海南",
+          "type": "organization"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan-haikou",
+          "name": "海口市",
+          "code": "460100",
+          "level": "prefecture",
+          "evidence": "本报海口7月22日讯"
+        },
+        {
+          "location_id": "hainan-sanya",
+          "name": "三亚市",
+          "code": "460200",
+          "level": "prefecture",
+          "evidence": "对于三亚市吉阳区红花村的家长来说"
+        },
+        {
+          "location_id": "hainan-wuzhishan",
+          "name": "五指山市",
+          "code": "469001",
+          "level": "county",
+          "evidence": "五指山市等10个县（市、区）通过国家学前教育普及普惠县评估认定"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "education-youth",
+          "category_name": "教育与青年",
+          "evidence": "海南基础教育面貌发生了全方位、开创性、格局性的变化"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-education-youth-a4c23e5a77dba4",
+            "name": "集团化办学",
+            "evidence": "集团化办学正是缩小城乡与区域差距的关键一招。"
+          },
+          {
+            "topic_id": "topic-education-youth-09529ea40bf78b",
+            "name": "智慧教育",
+            "evidence": "海南建设省级智慧教育平台"
+          },
+          {
+            "topic_id": "topic-education-youth-41f62db363b41e",
+            "name": "阳光快乐教育",
+            "evidence": "“阳光快乐”教育则是另一张名片。"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58467-19727240/"
+    }
+  ]
+}

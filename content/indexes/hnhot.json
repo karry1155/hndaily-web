@@ -1,18 +1,7 @@
 {
-  "latest_date": "2026-07-21",
+  "schema_version": 1,
+  "latest_date": "2026-07-23",
   "dates": [
-    "2026-07-21",
-    "2026-07-20",
-    "2026-07-19"
-  ],
-  "front_page_feeds": [
-    "/static/front-page/2026-07-21.json",
-    "/static/front-page/2026-07-20.json",
-    "/static/front-page/2026-07-19.json"
-  ],
-  "issue_feeds": [
-    "/static/issue-feed/2026-07-21.json",
-    "/static/issue-feed/2026-07-20.json",
-    "/static/issue-feed/2026-07-19.json"
+    "2026-07-23"
   ]
 }

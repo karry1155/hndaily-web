@@ -1,0 +1,68 @@
+{
+  "schema_version": 13,
+  "item_id": "hndaily-20260723-58469-19727265",
+  "published_date": "2026-07-23",
+  "collected_date": "2026-07-23",
+  "page_number": "006",
+  "page_name": "本省新闻",
+  "page_sequence": 3,
+  "author": "",
+  "enrichment_status": "complete",
+  "scope": "hainan",
+  "scope_evidence": "对临高金牌港开发区港口及配套工程项目一期工程海域珊瑚礁群开展常态化生态监测",
+  "subjects": [
+    {
+      "subject_id": "subject-organization-73487c9d48f86a",
+      "name": "三亚珊瑚礁生态研究所",
+      "type": "organization",
+      "activities": [
+        {
+          "occurred_on": "2026-07-21",
+          "place": "临高金牌港开发区",
+          "headline": "三亚珊瑚礁生态研究所监测珊瑚礁群",
+          "detail_kind": "goal",
+          "detail": "实时掌握珊瑚生长及海域生态环境状况",
+          "evidence": "7月21日，三亚珊瑚礁生态研究所组织工作人员走进临高金牌港开发区，对临高金牌港开发区港口及配套工程项目一期工程海域珊瑚礁群开展常态化生态监测，实时掌握珊瑚生长及海域生态环境状况。"
+        }
+      ]
+    }
+  ],
+  "locations": [
+    {
+      "location_id": "hainan-lingao",
+      "name": "临高县",
+      "code": "469024",
+      "level": "county",
+      "evidence": "临高金牌港开发区"
+    }
+  ],
+  "topics": {
+    "primary": {
+      "category_id": "ecology-climate",
+      "category_name": "生态与气候",
+      "evidence": "开展常态化生态监测"
+    },
+    "secondary": [
+      {
+        "topic_id": "topic-ecology-climate-e22ad1bf98f5db",
+        "name": "珊瑚礁监测",
+        "evidence": "珊瑚礁群开展常态化生态监测"
+      },
+      {
+        "topic_id": "topic-ecology-climate-f1b853d2924b57",
+        "name": "海域生态保护",
+        "evidence": "海域生态环境状况"
+      }
+    ]
+  },
+  "events": [],
+  "plans": [],
+  "reader_leads": [],
+  "block": {
+    "source": "海南日报",
+    "title": "常态化监测 守护珊瑚生态",
+    "content": "7月21日，三亚珊瑚礁生态研究所组织工作人员走进临高金牌港开发区，对临高金牌港开发区港口及配套工程项目一期工程海域珊瑚礁群开展常态化生态监测，实时掌握珊瑚生长及海域生态环境状况。",
+    "ai_summary": "三亚珊瑚礁生态研究所对临高金牌港一期工程海域珊瑚礁群开展常态化监测，以掌握珊瑚生长和海域生态状况。",
+    "original_url": "http://news.hndaily.cn/html/2026-07/23/content_58469_19727265.htm"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "schema_version": 13,
+  "item_id": "hndaily-20260723-58464-19727206",
+  "published_date": "2026-07-23",
+  "collected_date": "2026-07-23",
+  "page_number": "001",
+  "page_name": "头版",
+  "page_sequence": 10,
+  "author": "",
+  "enrichment_status": "complete",
+  "scope": "hainan",
+  "scope_evidence": "一岛山水 一夏舒爽",
+  "subjects": [],
+  "locations": [],
+  "topics": {
+    "primary": {
+      "category_id": "tourism-consumption",
+      "category_name": "旅游与消费",
+      "evidence": "一岛山水 一夏舒爽"
+    },
+    "secondary": [
+      {
+        "topic_id": "topic-tourism-consumption-f019076472fadd",
+        "name": "夏日避暑",
+        "evidence": "一岛山水 一夏舒爽"
+      }
+    ]
+  },
+  "events": [],
+  "plans": [],
+  "reader_leads": [],
+  "block": {
+    "source": "海南日报",
+    "title": "一岛山水 一夏舒爽",
+    "content": "（A05）",
+    "ai_summary": null,
+    "original_url": "http://news.hndaily.cn/html/2026-07/23/content_58464_19727206.htm"
+  }
+}

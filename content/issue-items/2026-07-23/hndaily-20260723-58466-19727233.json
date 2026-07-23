@@ -1,0 +1,73 @@
+{
+  "schema_version": 13,
+  "item_id": "hndaily-20260723-58466-19727233",
+  "published_date": "2026-07-23",
+  "collected_date": "2026-07-23",
+  "page_number": "003",
+  "page_name": "本省新闻",
+  "page_sequence": 8,
+  "author": "海南日报全媒体记者邓钰",
+  "enrichment_status": "complete",
+  "scope": "hainan",
+  "scope_evidence": "海口国家高新技术产业开发区狮子岭工业园里",
+  "subjects": [
+    {
+      "subject_id": "subject-company-5f7b9a4f0a85a6",
+      "name": "海南省农垦投资控股集团有限公司",
+      "type": "company",
+      "activities": [
+        {
+          "place": "海口",
+          "headline": "海南省农垦投资控股集团有限公司建设胡椒项目",
+          "detail_kind": "object",
+          "detail": "昌农胡椒产业融合发展示范项目",
+          "evidence": "该项目由海南省农垦投资控股集团有限公司投资建设。"
+        },
+        {
+          "headline": "海南省农垦投资控股集团有限公司将拓展胡椒产业",
+          "detail_kind": "goal",
+          "detail": "推动产品销往全国及全球市场",
+          "evidence": "下一步，该集团将依托海南自贸港政策优势，统筹利用海南本地及东南亚优质胡椒原料，通过加工增值免关税等核心政策红利，推动产品销往全国及全球市场"
+        }
+      ]
+    }
+  ],
+  "locations": [
+    {
+      "location_id": "hainan-haikou",
+      "name": "海口市",
+      "code": "460100",
+      "level": "prefecture",
+      "evidence": "海口国家高新技术产业开发区狮子岭工业园里"
+    }
+  ],
+  "topics": {
+    "primary": {
+      "category_id": "agriculture-rural",
+      "category_name": "农业与乡村",
+      "evidence": "昌农胡椒产业融合发展示范项目主体结构顺利封顶"
+    },
+    "secondary": [
+      {
+        "topic_id": "topic-agriculture-rural-67c52354c2a5a0",
+        "name": "胡椒加工",
+        "evidence": "年产1.25万吨胡椒系列产品的加工能力"
+      },
+      {
+        "topic_id": "topic-agriculture-rural-072a855e91e2e8",
+        "name": "农产品精深加工",
+        "evidence": "高附加值产品"
+      }
+    ]
+  },
+  "events": [],
+  "plans": [],
+  "reader_leads": [],
+  "block": {
+    "source": "海南日报",
+    "title": "海垦昌农胡椒项目加快推进",
+    "content": "本报讯（海南日报全媒体记者邓钰）7月21日，海口国家高新技术产业开发区狮子岭工业园里，随着最后一方混凝土浇筑入模，昌农胡椒产业融合发展示范项目主体结构顺利封顶，项目建设由土建结构施工转入砌体施工阶段，为项目年底完工奠定坚实基础。\n\n该项目总投资约3.18亿元，占地35.76亩，总建筑面积3.3万平方米。项目规划建设胡椒加工综合中心、科研综合楼及配套环保设施，着力构建“高端化、智能化、绿色化”的现代生产体系。全面投产后，项目将形成年产1.25万吨胡椒系列产品的加工能力，产品矩阵除胡椒粒、胡椒粉等传统初加工品外，还将重点拓展胡椒精油、功能性保健品、复合调味料等高附加值产品。\n\n该项目由海南省农垦投资控股集团有限公司投资建设。下一步，该集团将依托海南自贸港政策优势，统筹利用海南本地及东南亚优质胡椒原料，通过加工增值免关税等核心政策红利，推动产品销往全国及全球市场，并将以高标准加工厂为载体，推动胡椒产业突破传统调味品定位局限，向大健康食品及生物医药领域延伸，打造国家级农业产业化龙头企业。",
+    "ai_summary": "海垦昌农胡椒项目主体结构封顶并转入砌体施工，计划年底完工，投产后将形成年产1.25万吨胡椒产品加工能力。",
+    "original_url": "http://news.hndaily.cn/html/2026-07/23/content_58466_19727233.htm"
+  }
+}

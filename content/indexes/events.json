@@ -1,0 +1,189 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "event_id": "event-e3d406f9a798d2",
+      "name": "全国基础教育工作会议",
+      "event_type": "named_event",
+      "series_id": null,
+      "article_count": 2,
+      "detail_path": "/events/event-e3d406f9a798d2/"
+    },
+    {
+      "event_id": "event-5afe8f9bdebd68",
+      "name": "2026世界机器人大赛华南锦标赛（三亚）",
+      "event_type": "recurring_edition",
+      "series_id": "event-series-83c94813c896d8",
+      "article_count": 1,
+      "detail_path": "/events/event-5afe8f9bdebd68/"
+    },
+    {
+      "event_id": "event-9278a968a61179",
+      "name": "2026双帆石毕业歌会",
+      "event_type": "recurring_edition",
+      "series_id": "event-series-a7f208ccd68a7a",
+      "article_count": 1,
+      "detail_path": "/events/event-9278a968a61179/"
+    },
+    {
+      "event_id": "event-9bd1b53f61e4c1",
+      "name": "2026年下半年海南省征兵工作会议",
+      "event_type": "recurring_edition",
+      "series_id": "event-series-c380ffa522d643",
+      "article_count": 1,
+      "detail_path": "/events/event-9bd1b53f61e4c1/"
+    },
+    {
+      "event_id": "event-35ad458c843369",
+      "name": "2026年全国五子棋青少年锦标赛",
+      "event_type": "recurring_edition",
+      "series_id": "event-series-ef4446e1145983",
+      "article_count": 1,
+      "detail_path": "/events/event-35ad458c843369/"
+    },
+    {
+      "event_id": "event-64e468ebf78f92",
+      "name": "2026海南东南科技艺术季",
+      "event_type": "recurring_edition",
+      "series_id": "event-series-f63a28a6b23ae5",
+      "article_count": 1,
+      "detail_path": "/events/event-64e468ebf78f92/"
+    },
+    {
+      "event_id": "event-series-0229a93eeabff3",
+      "name": "“海南自贸港政策解读”系列主题新闻发布会",
+      "event_type": "series",
+      "series_id": "event-series-0229a93eeabff3",
+      "edition_ids": [
+        "event-d3d16f57db28d8"
+      ],
+      "article_count": 1,
+      "detail_path": "/events/event-series-0229a93eeabff3/"
+    },
+    {
+      "event_id": "event-d3d16f57db28d8",
+      "name": "“海南自贸港政策解读”系列主题新闻发布会（第六十五场）——《“技能自贸港”五年行动方案（2026—2030年）》",
+      "event_type": "recurring_edition",
+      "series_id": "event-series-0229a93eeabff3",
+      "article_count": 1,
+      "detail_path": "/events/event-d3d16f57db28d8/"
+    },
+    {
+      "event_id": "event-8f1b814efa88bf",
+      "name": "“理润琼州 声动自贸”2026年省级主题示范巡回宣讲走进白沙黎族自治县暨党的创新理论百人千场进万站文明实践活动",
+      "event_type": "recurring_edition",
+      "series_id": "event-series-cc0be617361c5e",
+      "article_count": 1,
+      "detail_path": "/events/event-8f1b814efa88bf/"
+    },
+    {
+      "event_id": "event-series-cc0be617361c5e",
+      "name": "“理润琼州 声动自贸”省级主题示范巡回宣讲",
+      "event_type": "series",
+      "series_id": "event-series-cc0be617361c5e",
+      "edition_ids": [
+        "event-8f1b814efa88bf"
+      ],
+      "article_count": 1,
+      "detail_path": "/events/event-series-cc0be617361c5e/"
+    },
+    {
+      "event_id": "event-bad22e47a7b8dc",
+      "name": "三亚产业对接会",
+      "event_type": "named_event",
+      "series_id": null,
+      "article_count": 1,
+      "detail_path": "/events/event-bad22e47a7b8dc/"
+    },
+    {
+      "event_id": "event-series-83c94813c896d8",
+      "name": "世界机器人大赛华南锦标赛",
+      "event_type": "series",
+      "series_id": "event-series-83c94813c896d8",
+      "edition_ids": [
+        "event-5afe8f9bdebd68"
+      ],
+      "article_count": 1,
+      "detail_path": "/events/event-series-83c94813c896d8/"
+    },
+    {
+      "event_id": "event-8a4f8bdc0379c5",
+      "name": "中央企业负责人研讨班",
+      "event_type": "named_event",
+      "series_id": null,
+      "article_count": 1,
+      "detail_path": "/events/event-8a4f8bdc0379c5/"
+    },
+    {
+      "event_id": "event-series-ef4446e1145983",
+      "name": "全国五子棋青少年锦标赛",
+      "event_type": "series",
+      "series_id": "event-series-ef4446e1145983",
+      "edition_ids": [
+        "event-35ad458c843369"
+      ],
+      "article_count": 1,
+      "detail_path": "/events/event-series-ef4446e1145983/"
+    },
+    {
+      "event_id": "event-series-a7f208ccd68a7a",
+      "name": "双帆石毕业歌会",
+      "event_type": "series",
+      "series_id": "event-series-a7f208ccd68a7a",
+      "edition_ids": [
+        "event-9278a968a61179"
+      ],
+      "article_count": 1,
+      "detail_path": "/events/event-series-a7f208ccd68a7a/"
+    },
+    {
+      "event_id": "event-0886daa4b80e29",
+      "name": "水上交通安全专项整治行动",
+      "event_type": "named_event",
+      "series_id": null,
+      "article_count": 1,
+      "detail_path": "/events/event-0886daa4b80e29/"
+    },
+    {
+      "event_id": "event-series-f63a28a6b23ae5",
+      "name": "海南东南科技艺术季",
+      "event_type": "series",
+      "series_id": "event-series-f63a28a6b23ae5",
+      "edition_ids": [
+        "event-64e468ebf78f92"
+      ],
+      "article_count": 1,
+      "detail_path": "/events/event-series-f63a28a6b23ae5/"
+    },
+    {
+      "event_id": "event-series-6439dd640c3bb0",
+      "name": "海南省医学会脑机接口与神经康复分会学术年会",
+      "event_type": "series",
+      "series_id": "event-series-6439dd640c3bb0",
+      "edition_ids": [
+        "event-58b79492f2fd06"
+      ],
+      "article_count": 1,
+      "detail_path": "/events/event-series-6439dd640c3bb0/"
+    },
+    {
+      "event_id": "event-58b79492f2fd06",
+      "name": "海南省医学会脑机接口与神经康复分会成立大会暨2026学术年会",
+      "event_type": "recurring_edition",
+      "series_id": "event-series-6439dd640c3bb0",
+      "article_count": 1,
+      "detail_path": "/events/event-58b79492f2fd06/"
+    },
+    {
+      "event_id": "event-series-c380ffa522d643",
+      "name": "海南省征兵工作会议",
+      "event_type": "series",
+      "series_id": "event-series-c380ffa522d643",
+      "edition_ids": [
+        "event-9bd1b53f61e4c1"
+      ],
+      "article_count": 1,
+      "detail_path": "/events/event-series-c380ffa522d643/"
+    }
+  ]
+}

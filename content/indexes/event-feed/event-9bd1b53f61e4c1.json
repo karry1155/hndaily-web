@@ -1,0 +1,66 @@
+{
+  "schema_version": 1,
+  "event": {
+    "event_id": "event-9bd1b53f61e4c1",
+    "name": "2026年下半年海南省征兵工作会议",
+    "event_type": "recurring_edition",
+    "series_id": "event-series-c380ffa522d643",
+    "article_count": 1,
+    "detail_path": "/events/event-9bd1b53f61e4c1/"
+  },
+  "articles": [
+    {
+      "item_id": "hndaily-20260723-58466-19727220",
+      "published_date": "2026-07-23",
+      "page_number": "003",
+      "page_name": "本省新闻",
+      "page_sequence": 2,
+      "title": "2026年下半年全省征兵工作会议召开",
+      "ai_summary": "海南部署2026年下半年征兵，重点挖掘理工类大学毕业生和技能型人才，并强化智能兵役平台、廉洁征兵和反诈骗宣传。",
+      "scope": "hainan",
+      "subjects": [],
+      "locations": [
+        {
+          "location_id": "hainan-haikou",
+          "name": "海口市",
+          "code": "460100",
+          "level": "prefecture",
+          "evidence": "本报海口7月22日讯"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "governance-law",
+          "category_name": "治理与法治",
+          "evidence": "总结上半年征兵工作成效，部署下半年征兵任务。"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-governance-law-8440c8face627e",
+            "name": "兵员征集",
+            "evidence": "着力提升兵员征集质量。"
+          },
+          {
+            "topic_id": "topic-governance-law-30971699361de6",
+            "name": "廉洁征兵",
+            "evidence": "要刚性执行廉洁征兵“十个严禁”“三十条禁令”。"
+          }
+        ]
+      },
+      "events": [
+        {
+          "event_id": "event-9bd1b53f61e4c1",
+          "name": "2026年下半年海南省征兵工作会议",
+          "event_type": "recurring_edition",
+          "evidence": "7月21日，2026年下半年海南省征兵工作会议在省军区召开。",
+          "series_name": "海南省征兵工作会议",
+          "series_id": "event-series-c380ffa522d643",
+          "occurred_on": "2026-07-21"
+        }
+      ],
+      "plans": [],
+      "reader_lead_count": 1,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58466-19727220/"
+    }
+  ]
+}

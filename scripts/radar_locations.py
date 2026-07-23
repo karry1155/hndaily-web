@@ -44,6 +44,13 @@ def load_location_catalog(path: Path | None = None) -> LocationCatalog:
 
 
 def find_location_candidates(title: str, content: str, catalog: LocationCatalog) -> list[dict]:
+    """Return matches without asking the model to resolve known ancestors.
+
+    The current catalog has one province root and city/county children. A
+    specific place such as ``海口市`` often appears beside the generic word
+    ``海南``. Keep the province candidate only when no more specific Hainan
+    division is matched; distinct sibling cities and counties remain separate.
+    """
     text = "".join(f"{title}\n{content}".split())
     matched = []
     for row in catalog.divisions:
@@ -51,47 +58,10 @@ def find_location_candidates(title: str, content: str, catalog: LocationCatalog)
         hits = [term for term in terms if "".join(term.split()) in text]
         if hits:
             matched.append({key: row[key] for key in ("location_id", "name", "level")})
+    if any(row["level"] != "province" for row in matched):
+        matched = [row for row in matched if row["level"] != "province"]
     level_order = {"county": 0, "prefecture": 1, "province": 2}
     return sorted(matched, key=lambda row: (level_order[row["level"]], row["location_id"]))
-
-
-def infer_exact_location_mentions(
-    title: str,
-    content: str,
-    candidates: list[dict],
-    catalog: LocationCatalog,
-    limit: int = 5,
-) -> list[dict]:
-    """Return only unambiguous mentions of catalogued official full names.
-
-    Aliases continue to be model decisions. This deterministic pass prevents an
-    explicit name such as ``文昌市`` from disappearing when the model omits it.
-    """
-    source = f"{title}\n{content}"
-    mentions = []
-    for candidate in candidates:
-        row = catalog.by_id[candidate["location_id"]]
-        if row["name"] in source:
-            mentions.append({
-                "location_id": row["location_id"],
-                "evidence": row["name"],
-            })
-        if len(mentions) >= limit:
-            break
-    return mentions
-
-
-def merge_location_mentions(model_mentions, exact_mentions, limit: int = 12) -> list[dict]:
-    merged, seen = [], set()
-    for mention in [*model_mentions, *exact_mentions]:
-        location_id = mention.get("location_id")
-        if location_id in seen:
-            continue
-        seen.add(location_id)
-        merged.append(mention)
-        if len(merged) >= limit:
-            break
-    return merged
 
 
 def resolve_location_mentions(mentions, candidates, catalog: LocationCatalog) -> list[dict]:

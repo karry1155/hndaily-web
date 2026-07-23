@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "region": {
+    "location_id": "hainan-chengmai",
+    "name": "澄迈县",
+    "code": "469023",
+    "level": "county",
+    "article_count": 0,
+    "detail_path": "/regions/hainan-chengmai/"
+  },
+  "articles": []
+}

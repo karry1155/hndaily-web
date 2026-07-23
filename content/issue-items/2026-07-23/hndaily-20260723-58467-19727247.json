@@ -1,0 +1,100 @@
+{
+  "schema_version": 13,
+  "item_id": "hndaily-20260723-58467-19727247",
+  "published_date": "2026-07-23",
+  "collected_date": "2026-07-23",
+  "page_number": "004",
+  "page_name": "民生新闻",
+  "page_sequence": 5,
+  "author": "海南日报全媒体记者张琬茜 实习生郭玉瑛",
+  "enrichment_status": "complete",
+  "scope": "hainan",
+  "scope_evidence": "省考试局公布我省中招提前批投档分数线。",
+  "subjects": [
+    {
+      "subject_id": "subject-organization-aaddf4ff738768",
+      "name": "省考试局",
+      "type": "organization",
+      "activities": [
+        {
+          "occurred_on": "2026-07-22",
+          "headline": "省考试局公布中招提前批投档线",
+          "detail_kind": "object",
+          "detail": "中招提前批投档分数线",
+          "evidence": "7月22日，省考试局公布我省中招提前批投档分数线。"
+        }
+      ]
+    }
+  ],
+  "locations": [
+    {
+      "location_id": "hainan-haikou",
+      "name": "海口市",
+      "code": "460100",
+      "level": "prefecture",
+      "evidence": "本报海口7月22日讯"
+    },
+    {
+      "location_id": "hainan-sanya",
+      "name": "三亚市",
+      "code": "460200",
+      "level": "prefecture",
+      "evidence": "三亚市迎宾中学投档分数线为813.5分"
+    },
+    {
+      "location_id": "hainan-danzhou",
+      "name": "儋州市",
+      "code": "460400",
+      "level": "prefecture",
+      "evidence": "儋州市第一中学航空国防班投档分数线为842.5分"
+    },
+    {
+      "location_id": "hainan-tunchang",
+      "name": "屯昌县",
+      "code": "469022",
+      "level": "county",
+      "evidence": "屯昌县屯昌中学投档分数线为799分"
+    },
+    {
+      "location_id": "hainan-baoting",
+      "name": "保亭黎族苗族自治县",
+      "code": "469029",
+      "level": "county",
+      "evidence": "保亭黎族苗族自治县保亭中学投档分数线为757.5分"
+    }
+  ],
+  "topics": {
+    "primary": {
+      "category_id": "education-youth",
+      "category_name": "教育与青年",
+      "evidence": "我省中招还划定了一批面向全省招生的公办普通高中学校实验班投档分数线。"
+    },
+    "secondary": [
+      {
+        "topic_id": "topic-education-youth-6e23b068c96664",
+        "name": "中招投档线",
+        "evidence": "中招提前批投档分数线"
+      }
+    ]
+  },
+  "events": [],
+  "plans": [],
+  "reader_leads": [
+    {
+      "lead_id": "lead-hndaily-20260723-58467-19727247-1",
+      "intent": "lookup",
+      "headline": "查询海南中招提前批投档线",
+      "audience": "中招考生及家长",
+      "action": "查看省考试局公布的中招提前批投档分数线。",
+      "channel": "省考试局",
+      "evidence": "省考试局公布我省中招提前批投档分数线。"
+    }
+  ],
+  "block": {
+    "source": "海南日报",
+    "title": "海南公布一批中招提前批投档分数线",
+    "content": "本报海口7月22日讯（海南日报全媒体记者张琬茜 实习生郭玉瑛）7月22日，省考试局公布我省中招提前批投档分数线。\n\n其中，海南中学（府城校区）少数民族聚居市县投档分数线为849分，非少数民族聚居市县投档分数线为870分；海南省国兴中学少数民族聚居市县投档分数线为785.5分，非少数民族聚居市县投档分数线为803.5分；海南省农垦实验中学少数民族聚居市县投档分数线为808分，非少数民族聚居市县投档分数线为788分。\n\n我省中招还划定了一批面向全省招生的公办普通高中学校实验班投档分数线。其中，屯昌县屯昌中学投档分数线为799分，保亭黎族苗族自治县保亭中学投档分数线为757.5分，三亚市迎宾中学投档分数线为813.5分，三亚崖州湾科技城寰岛实验中学投档分数线为754.5分，苏州中学附属三亚学校投档分数线为816.5分。此外，儋州市第一中学航空国防班投档分数线为842.5分。",
+    "ai_summary": "海南省考试局公布中招提前批投档分数线，涉及省属学校及多所面向全省招生的公办高中实验班。",
+    "original_url": "http://news.hndaily.cn/html/2026-07/23/content_58467_19727247.htm"
+  }
+}

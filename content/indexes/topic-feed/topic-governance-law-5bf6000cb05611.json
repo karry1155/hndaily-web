@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "topic": {
+    "topic_id": "topic-governance-law-5bf6000cb05611",
+    "name": "营商环境",
+    "parent_id": "category-governance-law",
+    "category_id": "governance-law",
+    "article_count": 1,
+    "detail_path": "/topics/topic-governance-law-5bf6000cb05611/"
+  },
+  "articles": [
+    {
+      "item_id": "hndaily-20260723-58464-19727200",
+      "published_date": "2026-07-23",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 5,
+      "title": "海南发布政商交往正负面清单",
+      "ai_summary": "海南印发政商交往行为指引清单，分别明确公职人员和经营主体的正负面行为，划定服务企业与廉洁交往边界。",
+      "scope": "hainan",
+      "subjects": [
+        {
+          "subject_id": "subject-organization-568c3d8a628b1d",
+          "name": "中共海南省委办公厅",
+          "type": "organization"
+        },
+        {
+          "subject_id": "subject-organization-f76b5474a3baf6",
+          "name": "海南省人民政府办公厅",
+          "type": "organization"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "《清单》的出台为政商交往明确了行为边界，既鼓励公职人员主动服务企业，又防范政商交往廉洁风险"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "governance-law",
+          "category_name": "治理与法治",
+          "evidence": "《清单》的出台为政商交往明确了行为边界"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-governance-law-26dda9b951cb30",
+            "name": "政商交往规范",
+            "evidence": "进一步厘清政商交往边界"
+          },
+          {
+            "topic_id": "topic-governance-law-5bf6000cb05611",
+            "name": "营商环境",
+            "evidence": "持续营造市场化、法治化、国际化一流营商环境。"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58464-19727200/"
+    }
+  ]
+}

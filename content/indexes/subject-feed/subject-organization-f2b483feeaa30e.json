@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "subject": {
+    "subject_id": "subject-organization-f2b483feeaa30e",
+    "canonical_name": "义乌市",
+    "type": "organization",
+    "aliases": [],
+    "first_seen": "2026-07-23",
+    "last_seen": "2026-07-23"
+  },
+  "activities": [
+    {
+      "occurred_on": "1993",
+      "place": "义乌",
+      "headline": "义乌市实施以商促工贸工联动战略",
+      "detail_kind": "result",
+      "detail": "次年工业总产值由61亿元跃升至近120亿元",
+      "evidence": "这一年，义乌市作出决策，在延续“兴商建市”的基础上，实施“以商促工、贸工联动”战略，由市场出订单、商户出资本、政府出园区和政策、乡村出劳动力，推动就地转化商贸资源。义乌没有照搬传统“先建厂、再拓销路”的工业化老路，而是探索出“先有市场订单、再落地生产”的工业化新路径。\n\n1994年，义乌全市工业总产值从上一年的61亿元跃升至近120亿元。",
+      "source": {
+        "source_item_id": "hndaily-20260723-58464-19727197",
+        "published_date": "2026-07-23",
+        "source_title": "探索走出符合实际的高质量发展之路",
+        "detail_path": "/items/2026-07-23/hndaily-20260723-58464-19727197/",
+        "evidence": "这一年，义乌市作出决策，在延续“兴商建市”的基础上，实施“以商促工、贸工联动”战略，由市场出订单、商户出资本、政府出园区和政策、乡村出劳动力，推动就地转化商贸资源。义乌没有照搬传统“先建厂、再拓销路”的工业化老路，而是探索出“先有市场订单、再落地生产”的工业化新路径。\n\n1994年，义乌全市工业总产值从上一年的61亿元跃升至近120亿元。"
+      }
+    }
+  ],
+  "articles": [
+    {
+      "item_id": "hndaily-20260723-58464-19727197",
+      "published_date": "2026-07-23",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 2,
+      "title": "探索走出符合实际的高质量发展之路",
+      "ai_summary": "义乌以群众首创、市场机制、政府服务和持续改革形成县域高质量发展经验，相关改革与开放模式已在更大范围推广。",
+      "scope": "national",
+      "subjects": [
+        {
+          "subject_id": "subject-person-92a054e84d6e2e",
+          "name": "习近平",
+          "type": "person"
+        },
+        {
+          "subject_id": "subject-organization-f2b483feeaa30e",
+          "name": "义乌市",
+          "type": "organization"
+        }
+      ],
+      "locations": [],
+      "topics": {
+        "primary": {
+          "category_id": "economy-market",
+          "category_name": "经济与市场",
+          "evidence": "“义乌小商品闯出大市场、做成大产业，形成‘义乌发展经验’，这是因地制宜发展县域经济的成功实践。”"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-economy-market-3af0cd95d31cbc",
+            "name": "义乌发展经验",
+            "evidence": "四十余载不凡来路，“义乌发展经验”历久弥新。"
+          },
+          {
+            "topic_id": "topic-economy-market-f4582eb752f551",
+            "name": "商贸市场改革",
+            "evidence": "义乌主动选择了内外贸并举的发展策略。"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58464-19727197/"
+    }
+  ]
+}

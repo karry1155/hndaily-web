@@ -1,0 +1,12 @@
+{
+  "schema_version": 1,
+  "region": {
+    "location_id": "hainan-ledong",
+    "name": "乐东黎族自治县",
+    "code": "469027",
+    "level": "county",
+    "article_count": 0,
+    "detail_path": "/regions/hainan-ledong/"
+  },
+  "articles": []
+}

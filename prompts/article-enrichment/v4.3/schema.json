@@ -1,0 +1,155 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://hnhot.local/schema/article-enrichment-v4.3.json",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schema_version", "prompt_version", "input_fingerprint", "items"],
+  "properties": {
+    "schema_version": {"const": 13},
+    "prompt_version": {"const": "hnhot-v4.3"},
+    "input_fingerprint": {"type": "string", "pattern": "^[0-9a-f]{64}$"},
+    "items": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/item"}}
+  },
+  "$defs": {
+    "evidence": {
+      "type": "string",
+      "minLength": 1,
+      "maxLength": 1200,
+      "description": "当前条目标题或正文中的一段连续逐字原文。"
+    },
+    "alias": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "evidence"],
+      "properties": {
+        "name": {"type": "string", "minLength": 1, "maxLength": 40},
+        "evidence": {"$ref": "#/$defs/evidence"}
+      }
+    },
+    "activity": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["headline", "evidence"],
+      "dependentRequired": {"detail_kind": ["detail"], "detail": ["detail_kind"]},
+      "properties": {
+        "occurred_on": {"type": "string", "pattern": "^[0-9]{4}(?:-[0-9]{2}(?:-[0-9]{2})?)?(?:/[0-9]{4}(?:-[0-9]{2}(?:-[0-9]{2})?)?)?$"},
+        "place": {"type": "string", "minLength": 1, "maxLength": 40},
+        "headline": {"type": "string", "minLength": 1, "maxLength": 80},
+        "detail_kind": {"enum": ["goal", "result", "object"]},
+        "detail": {"type": "string", "minLength": 1, "maxLength": 160},
+        "evidence": {"$ref": "#/$defs/evidence"}
+      }
+    },
+    "subject": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "type", "activities"],
+      "properties": {
+        "name": {"type": "string", "minLength": 1, "maxLength": 100},
+        "type": {"enum": ["person", "company", "organization"]},
+        "role": {"type": "string", "minLength": 1, "maxLength": 120},
+        "aliases": {"type": "array", "minItems": 1, "maxItems": 6, "items": {"$ref": "#/$defs/alias"}},
+        "activities": {"type": "array", "minItems": 1, "maxItems": 8, "items": {"$ref": "#/$defs/activity"}}
+      }
+    },
+    "location": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["location_id", "evidence"],
+      "properties": {
+        "location_id": {"type": "string", "minLength": 1, "maxLength": 80},
+        "evidence": {"$ref": "#/$defs/evidence"}
+      }
+    },
+    "primaryTopic": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["category_id", "evidence"],
+      "properties": {
+        "category_id": {"enum": ["free-trade-opening", "economy-market", "industry-projects", "technology-innovation", "agriculture-rural", "tourism-consumption", "transport-cities", "education-youth", "health-medicine", "ecology-climate", "culture-history", "sports-events", "society-public-services", "governance-law", "emergency-safety"]},
+        "evidence": {"$ref": "#/$defs/evidence"}
+      }
+    },
+    "secondaryTopic": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "evidence"],
+      "properties": {
+        "name": {"type": "string", "minLength": 2, "maxLength": 20},
+        "evidence": {"$ref": "#/$defs/evidence"}
+      }
+    },
+    "topics": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["primary", "secondary"],
+      "properties": {
+        "primary": {"$ref": "#/$defs/primaryTopic"},
+        "secondary": {"type": "array", "maxItems": 3, "items": {"$ref": "#/$defs/secondaryTopic"}}
+      }
+    },
+    "event": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "event_type", "evidence"],
+      "properties": {
+        "name": {"type": "string", "minLength": 1, "maxLength": 160},
+        "event_type": {"enum": ["recurring_edition", "named_event", "incident"]},
+        "series_name": {"type": "string", "minLength": 1, "maxLength": 140},
+        "occurred_on": {"type": "string", "pattern": "^[0-9]{4}(?:-[0-9]{2}(?:-[0-9]{2})?)?(?:/[0-9]{4}(?:-[0-9]{2}(?:-[0-9]{2})?)?)?$"},
+        "evidence": {"$ref": "#/$defs/evidence"}
+      }
+    },
+    "plan": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["name", "mention_type", "evidence"],
+      "properties": {
+        "name": {"type": "string", "pattern": "^《[^《》]+》$", "maxLength": 200},
+        "mention_type": {"enum": ["proposed", "reviewed", "approved", "released", "implemented", "progress", "mentioned"]},
+        "evidence": {"$ref": "#/$defs/evidence"}
+      }
+    },
+    "readerWindow": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["text"],
+      "properties": {
+        "text": {"type": "string", "minLength": 1, "maxLength": 100},
+        "start": {"type": "string", "minLength": 10, "maxLength": 40},
+        "end": {"type": "string", "minLength": 10, "maxLength": 40}
+      }
+    },
+    "readerLead": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["intent", "headline", "action", "evidence"],
+      "properties": {
+        "intent": {"enum": ["apply", "register", "attend", "submit", "lookup", "use_service", "prepare", "avoid"]},
+        "headline": {"type": "string", "minLength": 1, "maxLength": 60},
+        "audience": {"type": "string", "minLength": 1, "maxLength": 120},
+        "action": {"type": "string", "minLength": 1, "maxLength": 240},
+        "window": {"$ref": "#/$defs/readerWindow"},
+        "channel": {"type": "string", "minLength": 1, "maxLength": 160},
+        "evidence": {"$ref": "#/$defs/evidence"}
+      }
+    },
+    "item": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["candidate_id", "ai_summary", "scope", "scope_evidence", "subjects", "location_mentions", "topics", "events", "plans", "reader_leads"],
+      "properties": {
+        "candidate_id": {"type": "string", "minLength": 1, "maxLength": 180},
+        "ai_summary": {"type": ["string", "null"], "maxLength": 300},
+        "scope": {"enum": ["hainan", "domestic", "mixed", "national", "foreign"]},
+        "scope_evidence": {"$ref": "#/$defs/evidence"},
+        "subjects": {"type": "array", "maxItems": 24, "items": {"$ref": "#/$defs/subject"}},
+        "location_mentions": {"type": "array", "maxItems": 12, "items": {"$ref": "#/$defs/location"}},
+        "topics": {"$ref": "#/$defs/topics"},
+        "events": {"type": "array", "maxItems": 8, "items": {"$ref": "#/$defs/event"}},
+        "plans": {"type": "array", "maxItems": 8, "items": {"$ref": "#/$defs/plan"}},
+        "reader_leads": {"type": "array", "maxItems": 3, "items": {"$ref": "#/$defs/readerLead"}}
+      }
+    }
+  }
+}

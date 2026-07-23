@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "plan": {
+    "plan_id": "plan-29a56a330ac801",
+    "name": "《三亚市2026年义务教育阶段学校招生入学工作方案》",
+    "article_count": 1,
+    "detail_path": "/plans/plan-29a56a330ac801/"
+  },
+  "mentions": [
+    {
+      "mention_type": "released",
+      "source": {
+        "source_item_id": "hndaily-20260723-58467-19727249",
+        "published_date": "2026-07-23",
+        "source_title": "三亚中小学学位线上申报开放",
+        "detail_path": "/items/2026-07-23/hndaily-20260723-58467-19727249/",
+        "evidence": "7月21日，三亚市教育局正式对外发布《三亚市2026年义务教育阶段学校招生入学工作方案》（以下简称《方案》）"
+      }
+    }
+  ],
+  "articles": [
+    {
+      "item_id": "hndaily-20260723-58467-19727249",
+      "published_date": "2026-07-23",
+      "page_number": "004",
+      "page_name": "民生新闻",
+      "page_sequence": 6,
+      "title": "三亚中小学学位线上申报开放",
+      "ai_summary": "三亚2026年义务教育学位线上申报于7月22日至28日开放，家长可通过海易办填报，并按后续初审、复审和录取时间办理。",
+      "scope": "hainan",
+      "subjects": [
+        {
+          "subject_id": "subject-organization-09b268830bac61",
+          "name": "三亚市教育局",
+          "type": "organization"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan-sanya",
+          "name": "三亚市",
+          "code": "460200",
+          "level": "prefecture",
+          "evidence": "三亚中小学学位线上申报开放"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "education-youth",
+          "category_name": "教育与青年",
+          "evidence": "全市中小学学位线上申报于7月22日8时至7月28日24时开放"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-education-youth-961fb677918135",
+            "name": "义务教育招生",
+            "evidence": "义务教育阶段学校招生入学工作方案"
+          },
+          {
+            "topic_id": "topic-education-youth-0caccbdab65fb6",
+            "name": "线上学位申报",
+            "evidence": "中小学学位线上申报"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [
+        {
+          "plan_id": "plan-29a56a330ac801",
+          "name": "《三亚市2026年义务教育阶段学校招生入学工作方案》",
+          "mention_type": "released",
+          "evidence": "7月21日，三亚市教育局正式对外发布《三亚市2026年义务教育阶段学校招生入学工作方案》（以下简称《方案》）"
+        }
+      ],
+      "reader_lead_count": 2,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58467-19727249/"
+    }
+  ]
+}

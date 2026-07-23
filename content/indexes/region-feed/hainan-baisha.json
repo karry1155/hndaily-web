@@ -1,0 +1,171 @@
+{
+  "schema_version": 1,
+  "region": {
+    "location_id": "hainan-baisha",
+    "name": "白沙黎族自治县",
+    "code": "469025",
+    "level": "county",
+    "article_count": 2,
+    "detail_path": "/regions/hainan-baisha/"
+  },
+  "articles": [
+    {
+      "item_id": "hndaily-20260723-58471-19727293",
+      "published_date": "2026-07-23",
+      "page_number": "008",
+      "page_name": "健康周刊",
+      "page_sequence": 3,
+      "title": "从“翻山求医” 到“家门口诊疗”",
+      "ai_summary": "海南省人民医院托管帮扶琼中分院，使心内介入、骨科、眼科等多项诊疗在县内开展，并通过带教提升基层独立诊疗能力。",
+      "scope": "hainan",
+      "subjects": [
+        {
+          "subject_id": "subject-organization-f5d90bd3c5bc37",
+          "name": "海南省人民医院",
+          "type": "organization"
+        },
+        {
+          "subject_id": "subject-organization-8e12b21cf85165",
+          "name": "海南省人民医院琼中分院",
+          "type": "organization"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan-wuzhishan",
+          "name": "五指山市",
+          "code": "469001",
+          "level": "county",
+          "evidence": "来自琼中、定安、五指山、保亭、白沙、屯昌六家分院的医护人员"
+        },
+        {
+          "location_id": "hainan-dingan",
+          "name": "定安县",
+          "code": "469021",
+          "level": "county",
+          "evidence": "来自琼中、定安、五指山、保亭、白沙、屯昌六家分院的医护人员"
+        },
+        {
+          "location_id": "hainan-tunchang",
+          "name": "屯昌县",
+          "code": "469022",
+          "level": "county",
+          "evidence": "来自琼中、定安、五指山、保亭、白沙、屯昌六家分院的医护人员"
+        },
+        {
+          "location_id": "hainan-baisha",
+          "name": "白沙黎族自治县",
+          "code": "469025",
+          "level": "county",
+          "evidence": "来自琼中、定安、五指山、保亭、白沙、屯昌六家分院的医护人员"
+        },
+        {
+          "location_id": "hainan-baoting",
+          "name": "保亭黎族苗族自治县",
+          "code": "469029",
+          "level": "county",
+          "evidence": "来自琼中、定安、五指山、保亭、白沙、屯昌六家分院的医护人员"
+        },
+        {
+          "location_id": "hainan-qiongzhong",
+          "name": "琼中黎族苗族自治县",
+          "code": "469030",
+          "level": "county",
+          "evidence": "琼中黎族苗族自治县人民医院"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "health-medicine",
+          "category_name": "医疗与健康",
+          "evidence": "让众多此前需转诊省城的骨科疾病在县内得到有效救治。"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-health-medicine-f42aeda10e2360",
+            "name": "县域医疗帮扶",
+            "evidence": "海南省人民医院托管帮扶成效逐步体现"
+          },
+          {
+            "topic_id": "topic-health-medicine-8099e130f1d954",
+            "name": "优质医疗下沉",
+            "evidence": "医疗资源下沉的深度"
+          },
+          {
+            "topic_id": "topic-health-medicine-9749315f13684e",
+            "name": "基层诊疗能力",
+            "evidence": "切实提升了医院的技术‘造血’能力"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58471-19727293/"
+    },
+    {
+      "item_id": "hndaily-20260723-58466-19727232",
+      "published_date": "2026-07-23",
+      "page_number": "003",
+      "page_name": "本省新闻",
+      "page_sequence": 7,
+      "title": "“理润琼州 声动自贸”2026年省级主题示范巡回宣讲走进白沙",
+      "ai_summary": "海南省级主题示范巡回宣讲在白沙举行，约1600名干部群众和志愿者参与民族团结理论宣讲与文艺互动。",
+      "scope": "hainan",
+      "subjects": [
+        {
+          "subject_id": "subject-organization-4cc32e834cda79",
+          "name": "省委宣传部",
+          "type": "organization"
+        },
+        {
+          "subject_id": "subject-organization-664df739e6a54e",
+          "name": "省民族事务委员会",
+          "type": "organization"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan-baisha",
+          "name": "白沙黎族自治县",
+          "code": "469025",
+          "level": "county",
+          "evidence": "7月22日晚，白沙黎族自治县文化广场灯火璀璨、人头攒动"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "culture-history",
+          "category_name": "文化与历史",
+          "evidence": "一个个鲜活的宣讲案例，一段段动人的民族团结故事，让现场观众在潜移默化中深化了对中华民族共同体意识的理解与认同。"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-culture-history-87553058f14ff6",
+            "name": "民族团结宣讲",
+            "evidence": "铸牢中华民族共同体意识的理论知识入脑入心。"
+          },
+          {
+            "topic_id": "topic-culture-history-a5d86834b74706",
+            "name": "文明实践",
+            "evidence": "党的创新理论百人千场进万站文明实践活动"
+          }
+        ]
+      },
+      "events": [
+        {
+          "event_id": "event-8f1b814efa88bf",
+          "name": "“理润琼州 声动自贸”2026年省级主题示范巡回宣讲走进白沙黎族自治县暨党的创新理论百人千场进万站文明实践活动",
+          "event_type": "recurring_edition",
+          "evidence": "“理润琼州 声动自贸”2026年省级主题示范巡回宣讲走进白沙黎族自治县暨党的创新理论百人千场进万站文明实践活动在这里举行",
+          "series_name": "“理润琼州 声动自贸”省级主题示范巡回宣讲",
+          "series_id": "event-series-cc0be617361c5e",
+          "occurred_on": "2026-07-22"
+        }
+      ],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58466-19727232/"
+    }
+  ]
+}

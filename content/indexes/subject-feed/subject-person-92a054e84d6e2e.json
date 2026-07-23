@@ -1,0 +1,138 @@
+{
+  "schema_version": 1,
+  "subject": {
+    "subject_id": "subject-person-92a054e84d6e2e",
+    "canonical_name": "习近平",
+    "type": "person",
+    "aliases": [],
+    "first_seen": "2026-07-23",
+    "last_seen": "2026-07-23"
+  },
+  "activities": [
+    {
+      "place": "义乌",
+      "headline": "习近平指导总结推广义乌发展经验",
+      "evidence": "在浙江工作期间，习近平同志十一次到义乌调研，关心推动义乌的发展，指导总结推广以“坚持兴商建市、促进产业联动、注重城乡统筹、推进和谐发展、丰厚文化底蕴、力求党政有为”为内涵的“义乌发展经验”。",
+      "source": {
+        "source_item_id": "hndaily-20260723-58464-19727197",
+        "published_date": "2026-07-23",
+        "source_title": "探索走出符合实际的高质量发展之路",
+        "detail_path": "/items/2026-07-23/hndaily-20260723-58464-19727197/",
+        "evidence": "在浙江工作期间，习近平同志十一次到义乌调研，关心推动义乌的发展，指导总结推广以“坚持兴商建市、促进产业联动、注重城乡统筹、推进和谐发展、丰厚文化底蕴、力求党政有为”为内涵的“义乌发展经验”。"
+      }
+    },
+    {
+      "headline": "习近平对基础教育工作作出重要指示",
+      "evidence": "中共中央总书记、国家主席、中央军委主席习近平近日对基础教育工作作出重要指示指出，党的十八大以来，党中央把基础教育作为基础性、先导性工作来抓，多措并举推动基础教育实现长足发展，为建设教育强国提供了有力支撑。",
+      "source": {
+        "source_item_id": "hndaily-20260723-58464-19727196",
+        "published_date": "2026-07-23",
+        "source_title": "全面贯彻党的教育方针落实立德树人根本任务\n不断开创基础教育高质量发展新局面",
+        "detail_path": "/items/2026-07-23/hndaily-20260723-58464-19727196/",
+        "evidence": "中共中央总书记、国家主席、中央军委主席习近平近日对基础教育工作作出重要指示指出，党的十八大以来，党中央把基础教育作为基础性、先导性工作来抓，多措并举推动基础教育实现长足发展，为建设教育强国提供了有力支撑。"
+      }
+    }
+  ],
+  "articles": [
+    {
+      "item_id": "hndaily-20260723-58464-19727197",
+      "published_date": "2026-07-23",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 2,
+      "title": "探索走出符合实际的高质量发展之路",
+      "ai_summary": "义乌以群众首创、市场机制、政府服务和持续改革形成县域高质量发展经验，相关改革与开放模式已在更大范围推广。",
+      "scope": "national",
+      "subjects": [
+        {
+          "subject_id": "subject-person-92a054e84d6e2e",
+          "name": "习近平",
+          "type": "person"
+        },
+        {
+          "subject_id": "subject-organization-f2b483feeaa30e",
+          "name": "义乌市",
+          "type": "organization"
+        }
+      ],
+      "locations": [],
+      "topics": {
+        "primary": {
+          "category_id": "economy-market",
+          "category_name": "经济与市场",
+          "evidence": "“义乌小商品闯出大市场、做成大产业，形成‘义乌发展经验’，这是因地制宜发展县域经济的成功实践。”"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-economy-market-3af0cd95d31cbc",
+            "name": "义乌发展经验",
+            "evidence": "四十余载不凡来路，“义乌发展经验”历久弥新。"
+          },
+          {
+            "topic_id": "topic-economy-market-f4582eb752f551",
+            "name": "商贸市场改革",
+            "evidence": "义乌主动选择了内外贸并举的发展策略。"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58464-19727197/"
+    },
+    {
+      "item_id": "hndaily-20260723-58464-19727196",
+      "published_date": "2026-07-23",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 1,
+      "title": "全面贯彻党的教育方针落实立德树人根本任务\n不断开创基础教育高质量发展新局面",
+      "ai_summary": "习近平对基础教育工作作出重要指示，要求推进扩优提质、守住教育公平底线并加强高素质教师队伍建设。",
+      "scope": "national",
+      "subjects": [
+        {
+          "subject_id": "subject-person-92a054e84d6e2e",
+          "name": "习近平",
+          "type": "person"
+        },
+        {
+          "subject_id": "subject-person-b6413e1a907d63",
+          "name": "丁薛祥",
+          "type": "person"
+        }
+      ],
+      "locations": [],
+      "topics": {
+        "primary": {
+          "category_id": "education-youth",
+          "category_name": "教育与青年",
+          "evidence": "习近平强调，新征程上，要以新时代中国特色社会主义思想为指导，全面贯彻党的教育方针，落实立德树人根本任务"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-education-youth-a4176052d3b023",
+            "name": "基础教育扩优提质",
+            "evidence": "要适应人民群众新期盼，推进基础教育扩优提质，牢牢守住教育公平底线。"
+          },
+          {
+            "topic_id": "topic-education-youth-ac1ef5b97df33a",
+            "name": "教师队伍建设",
+            "evidence": "要弘扬教育家精神，加强师德师风建设，培养造就高素质专业化教师队伍。"
+          }
+        ]
+      },
+      "events": [
+        {
+          "event_id": "event-e3d406f9a798d2",
+          "name": "全国基础教育工作会议",
+          "event_type": "named_event",
+          "evidence": "全国基础教育工作会议7月22日在京召开。",
+          "occurred_on": "2026-07-22"
+        }
+      ],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58464-19727196/"
+    }
+  ]
+}

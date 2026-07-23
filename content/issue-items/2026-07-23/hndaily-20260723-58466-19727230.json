@@ -1,0 +1,77 @@
+{
+  "schema_version": 13,
+  "item_id": "hndaily-20260723-58466-19727230",
+  "published_date": "2026-07-23",
+  "collected_date": "2026-07-23",
+  "page_number": "003",
+  "page_name": "本省新闻",
+  "page_sequence": 5,
+  "author": "海南日报全媒体记者孙慧 实习生吴俊",
+  "enrichment_status": "complete",
+  "scope": "domestic",
+  "scope_evidence": "旨在推动桂琼两省（区）种质资源保护利用、良种跨区域引种试种等方面合作交流。",
+  "subjects": [
+    {
+      "subject_id": "subject-organization-9dd863ac3c5050",
+      "name": "海南林木种子（苗）总站",
+      "type": "organization",
+      "activities": [
+        {
+          "place": "广西南宁市",
+          "headline": "海南林木种子（苗）总站签订种质资源合作协议",
+          "evidence": "近日，海南林木种子（苗）总站和广西林业种苗站在广西南宁市签订《跨区域林草种质资源保护利用战略合作框架协议》"
+        }
+      ]
+    },
+    {
+      "subject_id": "subject-organization-8e5970dc07aa43",
+      "name": "广西林业种苗站",
+      "type": "organization",
+      "activities": [
+        {
+          "place": "广西南宁市",
+          "headline": "广西林业种苗站签订种质资源合作协议",
+          "evidence": "近日，海南林木种子（苗）总站和广西林业种苗站在广西南宁市签订《跨区域林草种质资源保护利用战略合作框架协议》"
+        }
+      ]
+    }
+  ],
+  "locations": [
+    {
+      "location_id": "hainan",
+      "name": "海南省",
+      "code": "460000",
+      "level": "province",
+      "evidence": "海南林木种子（苗）总站和广西林业种苗站"
+    }
+  ],
+  "topics": {
+    "primary": {
+      "category_id": "ecology-climate",
+      "category_name": "生态与气候",
+      "evidence": "建立跨区域互为备份、冗余保存、风险共防的林草种质资源区域协同保存体系"
+    },
+    "secondary": [
+      {
+        "topic_id": "topic-ecology-climate-eefe91d4d1b530",
+        "name": "林草种质资源",
+        "evidence": "林草种质资源保护利用"
+      },
+      {
+        "topic_id": "topic-ecology-climate-fbdeb49762978f",
+        "name": "良种引种试种",
+        "evidence": "良种跨区域引种试种"
+      }
+    ]
+  },
+  "events": [],
+  "plans": [],
+  "reader_leads": [],
+  "block": {
+    "source": "海南日报",
+    "title": "推进林草种质资源保护利用合作",
+    "content": "本报讯（海南日报全媒体记者孙慧 实习生吴俊）近日，海南林木种子（苗）总站和广西林业种苗站在广西南宁市签订《跨区域林草种质资源保护利用战略合作框架协议》，旨在推动桂琼两省（区）种质资源保护利用、良种跨区域引种试种等方面合作交流。\n\n根据协议，双方将整合种质资源，建立跨区域互为备份、冗余保存、风险共防的林草种质资源区域协同保存体系，全面提升林草种质资源安全保障能力；推动科研成果转化与技术的跨区域推广，重点围绕红树林、香精香料树种等特色资源合作开展优良品种的引种试种工作，并逐步拓展其他适宜树种的引种试种合作，促进两省（区）优良品种在适宜区域的推广应用；搭建两省（区）林草种苗领域合作交流平台，鼓励双方联合申报科研项目，推动信息共享、技术交流和人才互动，共同打造林草种质资源保护利用领域的专业技术队伍。\n\n双方表示，琼桂两地地缘相近、林情相似、人文相通，同属我国南方重点林区，林业发展基础契合、优势互补，深化全方位合作具备良好条件和广阔空间。双方将以此次签约为契机，进一步拓宽合作领域、完善协作机制，共同推动两地林业高质量发展。",
+    "ai_summary": "海南与广西林业种苗机构签署合作协议，将共建林草种质资源协同保存体系并推动特色良种跨区域试种和科研合作。",
+    "original_url": "http://news.hndaily.cn/html/2026-07/23/content_58466_19727230.htm"
+  }
+}

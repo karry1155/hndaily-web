@@ -1,0 +1,67 @@
+{
+  "schema_version": 1,
+  "topic": {
+    "topic_id": "topic-transport-cities-d9eb0d9fff1ed5",
+    "name": "港口基础设施",
+    "parent_id": "category-transport-cities",
+    "category_id": "transport-cities",
+    "article_count": 1,
+    "detail_path": "/topics/topic-transport-cities-d9eb0d9fff1ed5/"
+  },
+  "articles": [
+    {
+      "item_id": "hndaily-20260723-58464-19727204",
+      "published_date": "2026-07-23",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 8,
+      "title": "海南“陆海”使用权首次“打包”卖",
+      "ai_summary": "东方市八所港项目以约1.56亿元成交海南首宗陆海自然资源组合供应，建设用地与海域使用权实现一体供应、同步出让。",
+      "scope": "hainan",
+      "subjects": [
+        {
+          "subject_id": "subject-company-4e971557105997",
+          "name": "海南省港航高排港港务有限公司",
+          "type": "company"
+        },
+        {
+          "subject_id": "subject-organization-8f63dfa4acffe0",
+          "name": "省自然资源和规划厅",
+          "type": "organization"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan-dongfang",
+          "name": "东方市",
+          "code": "469007",
+          "level": "county",
+          "evidence": "近日，东方市“八所港高排港区一期——码头及航道工程”项目用地用海自然资源组合供应在海南省自然资源网上交易系统挂牌成交"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "transport-cities",
+          "category_name": "交通与城市",
+          "evidence": "未来将建设通用及多用途泊位、散货船减载乘潮单向航道等，并配套码头、陆域形成、道路堆场、口岸监管仓库及水电信控等工程。"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-transport-cities-be5f75643eb451",
+            "name": "陆海组合供应",
+            "evidence": "这是海南首个“陆海”自然资源组合供应的项目"
+          },
+          {
+            "topic_id": "topic-transport-cities-d9eb0d9fff1ed5",
+            "name": "港口基础设施",
+            "evidence": "为港口基础设施类项目提供了可复制、可推广的实践经验。"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58464-19727204/"
+    }
+  ]
+}

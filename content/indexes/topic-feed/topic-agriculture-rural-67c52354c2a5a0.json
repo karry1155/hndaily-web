@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "topic": {
+    "topic_id": "topic-agriculture-rural-67c52354c2a5a0",
+    "name": "胡椒加工",
+    "parent_id": "category-agriculture-rural",
+    "category_id": "agriculture-rural",
+    "article_count": 1,
+    "detail_path": "/topics/topic-agriculture-rural-67c52354c2a5a0/"
+  },
+  "articles": [
+    {
+      "item_id": "hndaily-20260723-58466-19727233",
+      "published_date": "2026-07-23",
+      "page_number": "003",
+      "page_name": "本省新闻",
+      "page_sequence": 8,
+      "title": "海垦昌农胡椒项目加快推进",
+      "ai_summary": "海垦昌农胡椒项目主体结构封顶并转入砌体施工，计划年底完工，投产后将形成年产1.25万吨胡椒产品加工能力。",
+      "scope": "hainan",
+      "subjects": [
+        {
+          "subject_id": "subject-company-5f7b9a4f0a85a6",
+          "name": "海南省农垦投资控股集团有限公司",
+          "type": "company"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan-haikou",
+          "name": "海口市",
+          "code": "460100",
+          "level": "prefecture",
+          "evidence": "海口国家高新技术产业开发区狮子岭工业园里"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "agriculture-rural",
+          "category_name": "农业与乡村",
+          "evidence": "昌农胡椒产业融合发展示范项目主体结构顺利封顶"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-agriculture-rural-67c52354c2a5a0",
+            "name": "胡椒加工",
+            "evidence": "年产1.25万吨胡椒系列产品的加工能力"
+          },
+          {
+            "topic_id": "topic-agriculture-rural-072a855e91e2e8",
+            "name": "农产品精深加工",
+            "evidence": "高附加值产品"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58466-19727233/"
+    }
+  ]
+}

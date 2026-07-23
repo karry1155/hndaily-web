@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "event": {
+    "event_id": "event-d3d16f57db28d8",
+    "name": "“海南自贸港政策解读”系列主题新闻发布会（第六十五场）——《“技能自贸港”五年行动方案（2026—2030年）》",
+    "event_type": "recurring_edition",
+    "series_id": "event-series-0229a93eeabff3",
+    "article_count": 1,
+    "detail_path": "/events/event-d3d16f57db28d8/"
+  },
+  "articles": [
+    {
+      "item_id": "hndaily-20260723-58466-19727219",
+      "published_date": "2026-07-23",
+      "page_number": "003",
+      "page_name": "本省新闻",
+      "page_sequence": 1,
+      "title": "我省技能人才总量突破100万",
+      "ai_summary": "海南技能人才总量首次突破100万人，新五年行动方案提出到2030年总量超过140万人、高技能人才占比力争达到30%左右。",
+      "scope": "hainan",
+      "subjects": [
+        {
+          "subject_id": "subject-organization-92cb2cf3227998",
+          "name": "省政府办公厅",
+          "type": "organization"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan-haikou",
+          "name": "海口市",
+          "code": "460100",
+          "level": "prefecture",
+          "evidence": "7月22日，“海南自贸港政策解读”系列主题新闻发布会（第六十五场）——《“技能自贸港”五年行动方案（2026—2030年）》（以下简称《五年行动方案》）专场在海口举行"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "education-youth",
+          "category_name": "教育与青年",
+          "evidence": "以产业为导向，靶向培养技能人才。"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-education-youth-1224a14ffd6e11",
+            "name": "技能人才培养",
+            "evidence": "共同推动技能人才队伍建设。"
+          },
+          {
+            "topic_id": "topic-education-youth-a0b3827940fd9d",
+            "name": "职业技能培训",
+            "evidence": "推行更加灵活的“岗位需求＋技能培训＋技能评价＋就业服务”项目制培训模式"
+          }
+        ]
+      },
+      "events": [
+        {
+          "event_id": "event-d3d16f57db28d8",
+          "name": "“海南自贸港政策解读”系列主题新闻发布会（第六十五场）——《“技能自贸港”五年行动方案（2026—2030年）》",
+          "event_type": "recurring_edition",
+          "evidence": "7月22日，“海南自贸港政策解读”系列主题新闻发布会（第六十五场）——《“技能自贸港”五年行动方案（2026—2030年）》（以下简称《五年行动方案》）专场在海口举行",
+          "series_name": "“海南自贸港政策解读”系列主题新闻发布会",
+          "series_id": "event-series-0229a93eeabff3",
+          "occurred_on": "2026-07-22"
+        }
+      ],
+      "plans": [
+        {
+          "plan_id": "plan-20f97e0df56a39",
+          "name": "《“技能自贸港”五年行动方案（2026—2030年）》",
+          "mention_type": "implemented",
+          "evidence": "省政府办公厅印发实施《五年行动方案》。"
+        }
+      ],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58466-19727219/"
+    }
+  ]
+}

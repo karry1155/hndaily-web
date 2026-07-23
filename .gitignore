@@ -1,52 +1,27 @@
-# Dependencies
-node_modules/
-.pnpm-store/
-
-# Build output
-dist/
-build/
+# Generated site and transient pipeline state
 site/
-.worktrees/
+data/tmp/
+data/cache/
 .site.radar-staging/
 .site.radar-backup/
-.next/
-.astro/
-.vercel/
-.netlify/
-.wrangler/
 
+# Local worktrees and tools
+.worktrees/
 .superpowers/
 
-# Local generated newspaper data and intermediate artifacts
-data/json/raw/
-data/json/model-input/
-data/json/model-output/
-data/json/audits/
-data/production-json/source/
-data/production-json/input/
-data/production-json/enrichment/
-data/production-json/audit/
-data/production-json/topic-resolution-input/
-data/production-json/topic-resolution/
-data/cache/
-data/tmp/
-data/tmp/radar-*/
-data/audio/
-data/pdf/
-/tmp/
+# Runtime noise
 *.tmp
 *.log
-*.mp3
-*.pdf
-
-content/.indexes.radar-backup/
-
-# Local environment
+__pycache__/
+*.pyc
 .env
 .env.*
 !.env.example
-
-# OS/editor noise
 .DS_Store
 .idea/
 .vscode/
+
+# Local dependencies
+node_modules/
+.pnpm-store/
+

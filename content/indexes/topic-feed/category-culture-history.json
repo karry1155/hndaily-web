@@ -1,0 +1,162 @@
+{
+  "schema_version": 1,
+  "topic": {
+    "topic_id": "category-culture-history",
+    "name": "文化与历史",
+    "parent_id": null,
+    "category_id": "culture-history",
+    "definition": "文学艺术、文化遗产、历史研究、博物馆、出版影视和公共文化。",
+    "boundary": "以游客产品和消费活动为核心时归入旅游与消费。",
+    "article_count": 2,
+    "detail_path": "/topics/category-culture-history/"
+  },
+  "children": [
+    {
+      "topic_id": "topic-culture-history-9b532f25074423",
+      "name": "东坡文化研学",
+      "parent_id": "category-culture-history",
+      "category_id": "culture-history",
+      "article_count": 1,
+      "detail_path": "/topics/topic-culture-history-9b532f25074423/"
+    },
+    {
+      "topic_id": "topic-culture-history-a5d86834b74706",
+      "name": "文明实践",
+      "parent_id": "category-culture-history",
+      "category_id": "culture-history",
+      "article_count": 1,
+      "detail_path": "/topics/topic-culture-history-a5d86834b74706/"
+    },
+    {
+      "topic_id": "topic-culture-history-87553058f14ff6",
+      "name": "民族团结宣讲",
+      "parent_id": "category-culture-history",
+      "category_id": "culture-history",
+      "article_count": 1,
+      "detail_path": "/topics/topic-culture-history-87553058f14ff6/"
+    },
+    {
+      "topic_id": "topic-culture-history-8f6537ee43d86c",
+      "name": "竹简制作",
+      "parent_id": "category-culture-history",
+      "category_id": "culture-history",
+      "article_count": 1,
+      "detail_path": "/topics/topic-culture-history-8f6537ee43d86c/"
+    }
+  ],
+  "articles": [
+    {
+      "item_id": "hndaily-20260723-58467-19727244",
+      "published_date": "2026-07-23",
+      "page_number": "004",
+      "page_name": "民生新闻",
+      "page_sequence": 4,
+      "title": "东坡书院研学热",
+      "ai_summary": "儋州东坡书院推出暑期非遗研学课堂，以亲子共创古法竹简为特色，并计划暑期持续开展东坡文化研学。",
+      "scope": "hainan",
+      "subjects": [
+        {
+          "subject_id": "subject-organization-b267c0fd7f4e60",
+          "name": "东坡书院",
+          "type": "organization"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan-danzhou",
+          "name": "儋州市",
+          "code": "460400",
+          "level": "prefecture",
+          "evidence": "儋州市东坡书院开启首期暑期非遗研学课堂"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "culture-history",
+          "category_name": "文化与历史",
+          "evidence": "在动手实践中近距离感受传统非遗魅力。"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-culture-history-9b532f25074423",
+            "name": "东坡文化研学",
+            "evidence": "东坡文化主题研学活动"
+          },
+          {
+            "topic_id": "topic-culture-history-8f6537ee43d86c",
+            "name": "竹简制作",
+            "evidence": "以古法竹简制作为特色课程"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58467-19727244/"
+    },
+    {
+      "item_id": "hndaily-20260723-58466-19727232",
+      "published_date": "2026-07-23",
+      "page_number": "003",
+      "page_name": "本省新闻",
+      "page_sequence": 7,
+      "title": "“理润琼州 声动自贸”2026年省级主题示范巡回宣讲走进白沙",
+      "ai_summary": "海南省级主题示范巡回宣讲在白沙举行，约1600名干部群众和志愿者参与民族团结理论宣讲与文艺互动。",
+      "scope": "hainan",
+      "subjects": [
+        {
+          "subject_id": "subject-organization-4cc32e834cda79",
+          "name": "省委宣传部",
+          "type": "organization"
+        },
+        {
+          "subject_id": "subject-organization-664df739e6a54e",
+          "name": "省民族事务委员会",
+          "type": "organization"
+        }
+      ],
+      "locations": [
+        {
+          "location_id": "hainan-baisha",
+          "name": "白沙黎族自治县",
+          "code": "469025",
+          "level": "county",
+          "evidence": "7月22日晚，白沙黎族自治县文化广场灯火璀璨、人头攒动"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "culture-history",
+          "category_name": "文化与历史",
+          "evidence": "一个个鲜活的宣讲案例，一段段动人的民族团结故事，让现场观众在潜移默化中深化了对中华民族共同体意识的理解与认同。"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-culture-history-87553058f14ff6",
+            "name": "民族团结宣讲",
+            "evidence": "铸牢中华民族共同体意识的理论知识入脑入心。"
+          },
+          {
+            "topic_id": "topic-culture-history-a5d86834b74706",
+            "name": "文明实践",
+            "evidence": "党的创新理论百人千场进万站文明实践活动"
+          }
+        ]
+      },
+      "events": [
+        {
+          "event_id": "event-8f1b814efa88bf",
+          "name": "“理润琼州 声动自贸”2026年省级主题示范巡回宣讲走进白沙黎族自治县暨党的创新理论百人千场进万站文明实践活动",
+          "event_type": "recurring_edition",
+          "evidence": "“理润琼州 声动自贸”2026年省级主题示范巡回宣讲走进白沙黎族自治县暨党的创新理论百人千场进万站文明实践活动在这里举行",
+          "series_name": "“理润琼州 声动自贸”省级主题示范巡回宣讲",
+          "series_id": "event-series-cc0be617361c5e",
+          "occurred_on": "2026-07-22"
+        }
+      ],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58466-19727232/"
+    }
+  ]
+}

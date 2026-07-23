@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "topic": {
+    "topic_id": "category-technology-innovation",
+    "name": "科技与创新",
+    "parent_id": null,
+    "category_id": "technology-innovation",
+    "definition": "科研成果、技术研发、数字化、人工智能、创新创业和成果转化。",
+    "boundary": "技术只是项目配套手段、并非核心变化时仍按项目所属领域归类。",
+    "article_count": 0,
+    "detail_path": "/topics/category-technology-innovation/"
+  },
+  "children": [],
+  "articles": []
+}

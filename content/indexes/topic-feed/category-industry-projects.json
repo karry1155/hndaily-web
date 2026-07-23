@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "topic": {
+    "topic_id": "category-industry-projects",
+    "name": "产业与项目",
+    "parent_id": null,
+    "category_id": "industry-projects",
+    "definition": "具体产业、企业经营、产业链、招商投资、园区和项目建设进展。",
+    "boundary": "纯宏观经济指标归入经济与市场；农业生产为核心时归入农业与乡村。",
+    "article_count": 0,
+    "detail_path": "/topics/category-industry-projects/"
+  },
+  "children": [],
+  "articles": []
+}

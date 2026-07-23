@@ -1,0 +1,595 @@
+{
+  "schema_version": 1,
+  "items": [
+    {
+      "subject_id": "subject-person-92a054e84d6e2e",
+      "name": "习近平",
+      "type": "person",
+      "article_count": 2,
+      "activity_count": 2,
+      "first_seen": "2026-07-23",
+      "last_seen": "2026-07-23",
+      "detail_path": "/subjects/subject-person-92a054e84d6e2e/"
+    },
+    {
+      "subject_id": "subject-person-db3d7dab2ea5da",
+      "name": "吴泉穗",
+      "type": "person",
+      "article_count": 1,
+      "activity_count": 3,
+      "first_seen": "2026-07-23",
+      "last_seen": "2026-07-23",
+      "detail_path": "/subjects/subject-person-db3d7dab2ea5da/"
+    },
+    {
+      "subject_id": "subject-person-0c7954fba16110",
+      "name": "冯飞",
+      "type": "person",
+      "article_count": 1,
+      "activity_count": 2,
+      "first_seen": "2026-07-23",
+      "last_seen": "2026-07-23",
+      "detail_path": "/subjects/subject-person-0c7954fba16110/"
+    },
+    {
+      "subject_id": "subject-person-84ccb15cb4e237",
+      "name": "刘小明",
+      "type": "person",
+      "article_count": 1,
+      "activity_count": 2,
+      "first_seen": "2026-07-23",
+      "last_seen": "2026-07-23",
+      "detail_path": "/subjects/subject-person-84ccb15cb4e237/"
+    },
+    {
+      "subject_id": "subject-person-b6413e1a907d63",
+      "name": "丁薛祥",
+      "type": "person",
+      "article_count": 1,
+      "activity_count": 1,
+      "first_seen": "2026-07-23",
+      "last_seen": "2026-07-23",
+      "detail_path": "/subjects/subject-person-b6413e1a907d63/"
+    },
+    {
+      "subject_id": "subject-person-16a71739f3c8fb",
+      "name": "刘卫军",
+      "type": "person",
+      "article_count": 1,
+      "activity_count": 1,
+      "first_seen": "2026-07-23",
+      "last_seen": "2026-07-23",
+      "detail_path": "/subjects/subject-person-16a71739f3c8fb/"
+    },
+    {
+      "subject_id": "subject-person-e80b04f33b564b",
+      "name": "孟晖",
+      "type": "person",
+      "article_count": 1,
+      "activity_count": 1,
+      "first_seen": "2026-07-23",
+      "last_seen": "2026-07-23",
+      "detail_path": "/subjects/subject-person-e80b04f33b564b/"
+    },
+    {
+      "subject_id": "subject-person-04ae6b033123b2",
+      "name": "宋振华",
+      "type": "person",
+      "article_count": 1,
+      "activity_count": 1,
+      "first_seen": "2026-07-23",
+      "last_seen": "2026-07-23",
+      "detail_path": "/subjects/subject-person-04ae6b033123b2/"
+    },
+    {
+      "subject_id": "subject-person-f517f0faa7c582",
+      "name": "王忠敏",
+      "type": "person",
+      "article_count": 1,
+      "activity_count": 1,
+      "first_seen": "2026-07-23",
+      "last_seen": "2026-07-23",
+      "detail_path": "/subjects/subject-person-f517f0faa7c582/"
+    },
+    {
+      "subject_id": "subject-person-c5ed55cf74f698",
+      "name": "田祖荫",
+      "type": "person",
+      "article_count": 1,
+      "activity_count": 1,
+      "first_seen": "2026-07-23",
+      "last_seen": "2026-07-23",
+      "detail_path": "/subjects/subject-person-c5ed55cf74f698/"
+    },
+    {
+      "subject_id": "subject-company-5f7b9a4f0a85a6",
+      "name": "海南省农垦投资控股集团有限公司",
+      "type": "company",
+      "article_count": 1,
+      "activity_count": 2,
+      "first_seen": "2026-07-23",
+      "last_seen": "2026-07-23",
+      "detail_path": "/subjects/subject-company-5f7b9a4f0a85a6/"
+    },
+    {
+      "subject_id": "subject-company-90135afe0ef8e3",
+      "name": "中国三峡集团",
+      "type": "company",
+      "article_count": 1,
+      "activity_count": 1,
+      "first_seen": "2026-07-23",
+      "last_seen": "2026-07-23",
+      "detail_path": "/subjects/subject-company-90135afe0ef8e3/"
+    },
+    {
+      "subject_id": "subject-company-8d0fc70cea9187",
+      "name": "中国移动",
+      "type": "company",
+      "article_count": 1,
+      "activity_count": 1,
+      "first_seen": "2026-07-23",
+      "last_seen": "2026-07-23",
+      "detail_path": "/subjects/subject-company-8d0fc70cea9187/"
+    },
+    {
+      "subject_id": "subject-company-cacb0507b4fe7d",
+      "name": "海南旺豪实业有限公司",
+      "type": "company",
+      "article_count": 1,
+      "activity_count": 1,
+      "first_seen": "2026-07-23",
+      "last_seen": "2026-07-23",
+      "detail_path": "/subjects/subject-company-cacb0507b4fe7d/"
+    },
+    {
+      "subject_id": "subject-company-4e971557105997",
+      "name": "海南省港航高排港港务有限公司",
+      "type": "company",
+      "article_count": 1,
+      "activity_count": 1,
+      "first_seen": "2026-07-23",
+      "last_seen": "2026-07-23",
+      "detail_path": "/subjects/subject-company-4e971557105997/"
+    },
+    {
+      "subject_id": "subject-company-ffa7ab08e60393",
+      "name": "陵水文化广电传媒有限公司",
+      "type": "company",
+      "article_count": 1,
+      "activity_count": 1,
+      "first_seen": "2026-07-23",
+      "last_seen": "2026-07-23",
+      "detail_path": "/subjects/subject-company-ffa7ab08e60393/"
+    },
+    {
+      "subject_id": "subject-company-4ea4f7d49af229",
+      "name": "陵水黎族自治县发展控股集团有限公司",
+      "type": "company",
+      "article_count": 1,
+      "activity_count": 1,
+      "first_seen": "2026-07-23",
+      "last_seen": "2026-07-23",
+      "detail_path": "/subjects/subject-company-4ea4f7d49af229/"
+    },
+    {
+      "subject_id": "subject-organization-eb629bbaa01e44",
+      "name": "海棠区纪委监委",
+      "type": "organization",
+      "article_count": 2,
+      "activity_count": 4,
+      "first_seen": "2026-07-23",
+      "last_seen": "2026-07-23",
+      "detail_path": "/subjects/subject-organization-eb629bbaa01e44/"
+    },
+    {
+      "subject_id": "subject-organization-568c3d8a628b1d",
+      "name": "中共海南省委办公厅",
+      "type": "organization",
+      "article_count": 2,
+      "activity_count": 2,
+      "first_seen": "2026-07-23",
+      "last_seen": "2026-07-23",
+      "detail_path": "/subjects/subject-organization-568c3d8a628b1d/"
+    },
+    {
+      "subject_id": "subject-organization-f76b5474a3baf6",
+      "name": "海南省人民政府办公厅",
+      "type": "organization",
+      "article_count": 2,
+      "activity_count": 2,
+      "first_seen": "2026-07-23",
+      "last_seen": "2026-07-23",
+      "detail_path": "/subjects/subject-organization-f76b5474a3baf6/"
+    },
+    {
+      "subject_id": "subject-organization-8f63dfa4acffe0",
+      "name": "省自然资源和规划厅",
+      "type": "organization",
+      "article_count": 2,
+      "activity_count": 2,
+      "first_seen": "2026-07-23",
+      "last_seen": "2026-07-23",
+      "detail_path": "/subjects/subject-organization-8f63dfa4acffe0/"
+    },
+    {
+      "subject_id": "subject-organization-b267c0fd7f4e60",
+      "name": "东坡书院",
+      "type": "organization",
+      "article_count": 1,
+      "activity_count": 2,
+      "first_seen": "2026-07-23",
+      "last_seen": "2026-07-23",
+      "detail_path": "/subjects/subject-organization-b267c0fd7f4e60/"
+    },
+    {
+      "subject_id": "subject-organization-b7a5c155bb3289",
+      "name": "人力资源社会保障部",
+      "type": "organization",
+      "article_count": 1,
+      "activity_count": 2,
+      "first_seen": "2026-07-23",
+      "last_seen": "2026-07-23",
+      "detail_path": "/subjects/subject-organization-b7a5c155bb3289/"
+    },
+    {
+      "subject_id": "subject-organization-2760bbeb3a88f5",
+      "name": "海南",
+      "type": "organization",
+      "article_count": 1,
+      "activity_count": 2,
+      "first_seen": "2026-07-23",
+      "last_seen": "2026-07-23",
+      "detail_path": "/subjects/subject-organization-2760bbeb3a88f5/"
+    },
+    {
+      "subject_id": "subject-organization-f5d90bd3c5bc37",
+      "name": "海南省人民医院",
+      "type": "organization",
+      "article_count": 1,
+      "activity_count": 2,
+      "first_seen": "2026-07-23",
+      "last_seen": "2026-07-23",
+      "detail_path": "/subjects/subject-organization-f5d90bd3c5bc37/"
+    },
+    {
+      "subject_id": "subject-organization-8e12b21cf85165",
+      "name": "海南省人民医院琼中分院",
+      "type": "organization",
+      "article_count": 1,
+      "activity_count": 2,
+      "first_seen": "2026-07-23",
+      "last_seen": "2026-07-23",
+      "detail_path": "/subjects/subject-organization-8e12b21cf85165/"
+    },
+    {
+      "subject_id": "subject-organization-2a5fb023c2c57e",
+      "name": "海南省医学会脑机接口与神经康复分会",
+      "type": "organization",
+      "article_count": 1,
+      "activity_count": 2,
+      "first_seen": "2026-07-23",
+      "last_seen": "2026-07-23",
+      "detail_path": "/subjects/subject-organization-2a5fb023c2c57e/"
+    },
+    {
+      "subject_id": "subject-organization-09b268830bac61",
+      "name": "三亚市教育局",
+      "type": "organization",
+      "article_count": 1,
+      "activity_count": 1,
+      "first_seen": "2026-07-23",
+      "last_seen": "2026-07-23",
+      "detail_path": "/subjects/subject-organization-09b268830bac61/"
+    },
+    {
+      "subject_id": "subject-organization-192b4d7fd1e227",
+      "name": "三亚市第二小学",
+      "type": "organization",
+      "article_count": 1,
+      "activity_count": 1,
+      "first_seen": "2026-07-23",
+      "last_seen": "2026-07-23",
+      "detail_path": "/subjects/subject-organization-192b4d7fd1e227/"
+    },
+    {
+      "subject_id": "subject-organization-73487c9d48f86a",
+      "name": "三亚珊瑚礁生态研究所",
+      "type": "organization",
+      "article_count": 1,
+      "activity_count": 1,
+      "first_seen": "2026-07-23",
+      "last_seen": "2026-07-23",
+      "detail_path": "/subjects/subject-organization-73487c9d48f86a/"
+    },
+    {
+      "subject_id": "subject-organization-c66a2851265f85",
+      "name": "上海交通大学医学院附属瑞金医院海南医院（博鳌研究型医院）",
+      "type": "organization",
+      "article_count": 1,
+      "activity_count": 1,
+      "first_seen": "2026-07-23",
+      "last_seen": "2026-07-23",
+      "detail_path": "/subjects/subject-organization-c66a2851265f85/"
+    },
+    {
+      "subject_id": "subject-organization-f8c50558b65bf2",
+      "name": "上海儿童医学中心海南医院",
+      "type": "organization",
+      "article_count": 1,
+      "activity_count": 1,
+      "first_seen": "2026-07-23",
+      "last_seen": "2026-07-23",
+      "detail_path": "/subjects/subject-organization-f8c50558b65bf2/"
+    },
+    {
+      "subject_id": "subject-organization-267ab8223fbfc3",
+      "name": "世界健康基金会",
+      "type": "organization",
+      "article_count": 1,
+      "activity_count": 1,
+      "first_seen": "2026-07-23",
+      "last_seen": "2026-07-23",
+      "detail_path": "/subjects/subject-organization-267ab8223fbfc3/"
+    },
+    {
+      "subject_id": "subject-organization-f2b483feeaa30e",
+      "name": "义乌市",
+      "type": "organization",
+      "article_count": 1,
+      "activity_count": 1,
+      "first_seen": "2026-07-23",
+      "last_seen": "2026-07-23",
+      "detail_path": "/subjects/subject-organization-f2b483feeaa30e/"
+    },
+    {
+      "subject_id": "subject-organization-52c1bd814bb04b",
+      "name": "乐城保税仓团队",
+      "type": "organization",
+      "article_count": 1,
+      "activity_count": 1,
+      "first_seen": "2026-07-23",
+      "last_seen": "2026-07-23",
+      "detail_path": "/subjects/subject-organization-52c1bd814bb04b/"
+    },
+    {
+      "subject_id": "subject-organization-bd9f63c6aa5afc",
+      "name": "国务院国资委",
+      "type": "organization",
+      "article_count": 1,
+      "activity_count": 1,
+      "first_seen": "2026-07-23",
+      "last_seen": "2026-07-23",
+      "detail_path": "/subjects/subject-organization-bd9f63c6aa5afc/"
+    },
+    {
+      "subject_id": "subject-organization-bfd2ef46ec6899",
+      "name": "国家体育总局",
+      "type": "organization",
+      "article_count": 1,
+      "activity_count": 1,
+      "first_seen": "2026-07-23",
+      "last_seen": "2026-07-23",
+      "detail_path": "/subjects/subject-organization-bfd2ef46ec6899/"
+    },
+    {
+      "subject_id": "subject-organization-0e5237e2c3ff32",
+      "name": "复旦大学发展研究院",
+      "type": "organization",
+      "article_count": 1,
+      "activity_count": 1,
+      "first_seen": "2026-07-23",
+      "last_seen": "2026-07-23",
+      "detail_path": "/subjects/subject-organization-0e5237e2c3ff32/"
+    },
+    {
+      "subject_id": "subject-organization-e74828a7bd46f8",
+      "name": "外交部",
+      "type": "organization",
+      "article_count": 1,
+      "activity_count": 1,
+      "first_seen": "2026-07-23",
+      "last_seen": "2026-07-23",
+      "detail_path": "/subjects/subject-organization-e74828a7bd46f8/"
+    },
+    {
+      "subject_id": "subject-organization-8e5970dc07aa43",
+      "name": "广西林业种苗站",
+      "type": "organization",
+      "article_count": 1,
+      "activity_count": 1,
+      "first_seen": "2026-07-23",
+      "last_seen": "2026-07-23",
+      "detail_path": "/subjects/subject-organization-8e5970dc07aa43/"
+    },
+    {
+      "subject_id": "subject-organization-1270db46928f1f",
+      "name": "昌江",
+      "type": "organization",
+      "article_count": 1,
+      "activity_count": 1,
+      "first_seen": "2026-07-23",
+      "last_seen": "2026-07-23",
+      "detail_path": "/subjects/subject-organization-1270db46928f1f/"
+    },
+    {
+      "subject_id": "subject-organization-66a322e27c1ef2",
+      "name": "海南日报",
+      "type": "organization",
+      "article_count": 1,
+      "activity_count": 1,
+      "first_seen": "2026-07-23",
+      "last_seen": "2026-07-23",
+      "detail_path": "/subjects/subject-organization-66a322e27c1ef2/"
+    },
+    {
+      "subject_id": "subject-organization-9dd863ac3c5050",
+      "name": "海南林木种子（苗）总站",
+      "type": "organization",
+      "article_count": 1,
+      "activity_count": 1,
+      "first_seen": "2026-07-23",
+      "last_seen": "2026-07-23",
+      "detail_path": "/subjects/subject-organization-9dd863ac3c5050/"
+    },
+    {
+      "subject_id": "subject-organization-db7f246dce4252",
+      "name": "海南海事局",
+      "type": "organization",
+      "article_count": 1,
+      "activity_count": 1,
+      "first_seen": "2026-07-23",
+      "last_seen": "2026-07-23",
+      "detail_path": "/subjects/subject-organization-db7f246dce4252/"
+    },
+    {
+      "subject_id": "subject-organization-9382ccd76699d5",
+      "name": "海口海关",
+      "type": "organization",
+      "article_count": 1,
+      "activity_count": 1,
+      "first_seen": "2026-07-23",
+      "last_seen": "2026-07-23",
+      "detail_path": "/subjects/subject-organization-9382ccd76699d5/"
+    },
+    {
+      "subject_id": "subject-organization-45bc4b8dc80480",
+      "name": "省交通运输厅",
+      "type": "organization",
+      "article_count": 1,
+      "activity_count": 1,
+      "first_seen": "2026-07-23",
+      "last_seen": "2026-07-23",
+      "detail_path": "/subjects/subject-organization-45bc4b8dc80480/"
+    },
+    {
+      "subject_id": "subject-organization-8e4ea32da9005f",
+      "name": "省军区政治工作局",
+      "type": "organization",
+      "article_count": 1,
+      "activity_count": 1,
+      "first_seen": "2026-07-23",
+      "last_seen": "2026-07-23",
+      "detail_path": "/subjects/subject-organization-8e4ea32da9005f/"
+    },
+    {
+      "subject_id": "subject-organization-0aa7f8254c0b07",
+      "name": "省农业农村厅",
+      "type": "organization",
+      "article_count": 1,
+      "activity_count": 1,
+      "first_seen": "2026-07-23",
+      "last_seen": "2026-07-23",
+      "detail_path": "/subjects/subject-organization-0aa7f8254c0b07/"
+    },
+    {
+      "subject_id": "subject-organization-6ca0d1322219ab",
+      "name": "省双拥办",
+      "type": "organization",
+      "article_count": 1,
+      "activity_count": 1,
+      "first_seen": "2026-07-23",
+      "last_seen": "2026-07-23",
+      "detail_path": "/subjects/subject-organization-6ca0d1322219ab/"
+    },
+    {
+      "subject_id": "subject-organization-981215adc0566e",
+      "name": "省发展改革委",
+      "type": "organization",
+      "article_count": 1,
+      "activity_count": 1,
+      "first_seen": "2026-07-23",
+      "last_seen": "2026-07-23",
+      "detail_path": "/subjects/subject-organization-981215adc0566e/"
+    },
+    {
+      "subject_id": "subject-organization-4cc32e834cda79",
+      "name": "省委宣传部",
+      "type": "organization",
+      "article_count": 1,
+      "activity_count": 1,
+      "first_seen": "2026-07-23",
+      "last_seen": "2026-07-23",
+      "detail_path": "/subjects/subject-organization-4cc32e834cda79/"
+    },
+    {
+      "subject_id": "subject-organization-92cb2cf3227998",
+      "name": "省政府办公厅",
+      "type": "organization",
+      "article_count": 1,
+      "activity_count": 1,
+      "first_seen": "2026-07-23",
+      "last_seen": "2026-07-23",
+      "detail_path": "/subjects/subject-organization-92cb2cf3227998/"
+    },
+    {
+      "subject_id": "subject-organization-98752354fdf436",
+      "name": "省教育厅",
+      "type": "organization",
+      "article_count": 1,
+      "activity_count": 1,
+      "first_seen": "2026-07-23",
+      "last_seen": "2026-07-23",
+      "detail_path": "/subjects/subject-organization-98752354fdf436/"
+    },
+    {
+      "subject_id": "subject-organization-c6797fffce33f4",
+      "name": "省旅游和文化广电体育厅",
+      "type": "organization",
+      "article_count": 1,
+      "activity_count": 1,
+      "first_seen": "2026-07-23",
+      "last_seen": "2026-07-23",
+      "detail_path": "/subjects/subject-organization-c6797fffce33f4/"
+    },
+    {
+      "subject_id": "subject-organization-baa206ba076c5e",
+      "name": "省林业局",
+      "type": "organization",
+      "article_count": 1,
+      "activity_count": 1,
+      "first_seen": "2026-07-23",
+      "last_seen": "2026-07-23",
+      "detail_path": "/subjects/subject-organization-baa206ba076c5e/"
+    },
+    {
+      "subject_id": "subject-organization-664df739e6a54e",
+      "name": "省民族事务委员会",
+      "type": "organization",
+      "article_count": 1,
+      "activity_count": 1,
+      "first_seen": "2026-07-23",
+      "last_seen": "2026-07-23",
+      "detail_path": "/subjects/subject-organization-664df739e6a54e/"
+    },
+    {
+      "subject_id": "subject-organization-a0844c15939f0f",
+      "name": "省海洋厅",
+      "type": "organization",
+      "article_count": 1,
+      "activity_count": 1,
+      "first_seen": "2026-07-23",
+      "last_seen": "2026-07-23",
+      "detail_path": "/subjects/subject-organization-a0844c15939f0f/"
+    },
+    {
+      "subject_id": "subject-organization-aaddf4ff738768",
+      "name": "省考试局",
+      "type": "organization",
+      "article_count": 1,
+      "activity_count": 1,
+      "first_seen": "2026-07-23",
+      "last_seen": "2026-07-23",
+      "detail_path": "/subjects/subject-organization-aaddf4ff738768/"
+    },
+    {
+      "subject_id": "subject-organization-1fbdf78e1eb624",
+      "name": "省退役军人事务厅",
+      "type": "organization",
+      "article_count": 1,
+      "activity_count": 1,
+      "first_seen": "2026-07-23",
+      "last_seen": "2026-07-23",
+      "detail_path": "/subjects/subject-organization-1fbdf78e1eb624/"
+    }
+  ]
+}

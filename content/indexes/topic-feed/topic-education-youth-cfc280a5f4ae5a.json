@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "topic": {
+    "topic_id": "topic-education-youth-cfc280a5f4ae5a",
+    "name": "基础教育",
+    "parent_id": "category-education-youth",
+    "category_id": "education-youth",
+    "article_count": 1,
+    "detail_path": "/topics/topic-education-youth-cfc280a5f4ae5a/"
+  },
+  "articles": [
+    {
+      "item_id": "hndaily-20260723-58464-19727205",
+      "published_date": "2026-07-23",
+      "page_number": "001",
+      "page_name": "头版",
+      "page_sequence": 9,
+      "title": "办好基础教育，海南有哪些硬招？",
+      "ai_summary": null,
+      "scope": "hainan",
+      "subjects": [],
+      "locations": [
+        {
+          "location_id": "hainan",
+          "name": "海南省",
+          "code": "460000",
+          "level": "province",
+          "evidence": "办好基础教育，海南有哪些硬招？"
+        }
+      ],
+      "topics": {
+        "primary": {
+          "category_id": "education-youth",
+          "category_name": "教育与青年",
+          "evidence": "办好基础教育，海南有哪些硬招？"
+        },
+        "secondary": [
+          {
+            "topic_id": "topic-education-youth-cfc280a5f4ae5a",
+            "name": "基础教育",
+            "evidence": "办好基础教育，海南有哪些硬招？"
+          }
+        ]
+      },
+      "events": [],
+      "plans": [],
+      "reader_lead_count": 0,
+      "detail_path": "/items/2026-07-23/hndaily-20260723-58464-19727205/"
+    }
+  ]
+}

@@ -24,7 +24,7 @@ def _resolve_output_dir() -> Path:
     env = os.environ.get("HNDAILY_DATA_DIR")
     if env:
         return Path(env).expanduser().resolve()
-    return ROOT / "data/production-json/source"
+    return ROOT / "data/runs/hnhot-v4.3/source"
 
 
 def _write_json_atomic(path: Path, payload: dict) -> None:
